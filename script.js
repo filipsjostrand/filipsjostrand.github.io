@@ -279,12 +279,26 @@ if (todoThree.innerHTML === "" || todoThree.innerHTML.includes("3. ...") || todo
       }
 
       // Function to get the current week number of the year
-      function getWeekNumber(date) {
-          const startOfYear = new Date(date.getFullYear(), 0, 1);
-          const pastDaysOfYear = (date - startOfYear) / 86400000;
-          return Math.ceil((pastDaysOfYear + startOfYear.getDay() + 1) / 7);
-      }
+      //function getWeekNumber(date) {
+         //const startOfYear = new Date(date.getFullYear(), 0, 1);
+          //const pastDaysOfYear = (date - startOfYear) / 86400000;
+          //return Math.ceil((pastDaysOfYear + startOfYear.getDay() + 1) / 7);
+      //}
 
+    Date.prototype.getWeekNumber = function () {
+        var date = new Date(this.getTime());
+        date.setHours(0, 0, 0, 0);
+        // Thursday in current week decides the year.
+        date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
+        // January 4 is always in week 1.
+        var week1 = new Date(date.getFullYear(), 0, 4);
+        // Adjust to Thursday in week 1 and count number of weeks from date to week1.
+        return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000
+                              - 3 + (week1.getDay() + 6) % 7) / 7);
+    };
+
+    // Example usage:
+    var weekNumber = todayDate.getWeekNumber();
 
       // Get today's date in CET
       const today = getCETDate();
@@ -299,4 +313,5 @@ if (todoThree.innerHTML === "" || todoThree.innerHTML.includes("3. ...") || todo
 
       // Display current week number
       const weekDisplay = document.getElementById('week-display');
-      weekDisplay.textContent = `Week: ${getWeekNumber(today)}`;
+      //weekDisplay.textContent = `Week: ${getWeekNumber(today)}`;
+        weekDisplay.textContent = "Week: " + weekNumber;
