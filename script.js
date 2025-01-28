@@ -285,6 +285,8 @@ if (todoThree.innerHTML === "" || todoThree.innerHTML.includes("3. ...") || todo
           //return Math.ceil((pastDaysOfYear + startOfYear.getDay() + 1) / 7);
       //}
 
+var todayDate = new Date();
+
     Date.prototype.getWeekNumber = function () {
         var date = new Date(this.getTime());
         date.setHours(0, 0, 0, 0);
