@@ -3,75 +3,609 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo list (with Set)</title>
-    <link rel="stylesheet"    type="text/css"    href="styles.css">
+    <title>Personal Efficiency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="top3todos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <script src="website-loaded.js"></script> -->
 </head>
 <body>
-    <div class="todo-div">
-        <div class="start-container">
-            <button onclick="resetTodoSet()" class="reset-todo-button">Reset todos</button>
-            <div id="character-counter" class="character-counter"></div>
-            <div id="weekday-display"></div>
-            <div id="date-display"></div>
-            <div id="week-display"></div>
+  <!-- <div id="top-div"></div> -->
+    <div id="navbar">
+      <div class="grid-container">
+          <a href="#top"><div class="grid-item item1" id="top-todos">Todos</div></a>
+          <a href="#weekly-div"><div class="grid-item item2" id="weekly-calendar">Week</div></a>
+          <a href="#future-div"><div class="grid-item item3" id="important-dates">Future</div></a>
+          <a href="#timer-div"><div class="grid-item item4" id="timer">Timer</div></a>
+          <div class="grid-item item5" id="empty-grid-column"></div>
+          <a href="#about-div"><div class="grid-item item6" id="about-me">About</div></a>
+      </div>
+    </div>
+
+      <main>
+        <div id="todo-div-wrapper"></div>
+        <h3 id="todos-heading">Top3 Todos</h3>
+
+        <div class="start-container-wrapper">
+
+          <!-- _ _ _ Top 3 Todos (start)-->
+
+          <div class="todo-div">
+            <div class="start-container">
+                <div id="character-counter" class="character-counter"></div>
+                <div id="weekday-display"></div>
+                <div id="date-display"></div>
+                <div id="week-display"></div><br>
+                <button onclick="resetTodoSet()" class="reset-todo-button">Reset todos</button>
+            </div>
+
+            <br>
+            <input class="todo-input-v2" type="text" id="input-box-v2" placeholder="Add todo text...">
+            <label for="todo-select">Apply to:</label>
+                <select name="todos" id="todo-select">
+                <option value="" selected>Todo list</option>
+                <option value="todo-one">#1</option>
+                <option value="todo-two">#2</option>
+                <option value="todo-three">#3</option>
+                </select>
+            <button onclick="addTaskToSet()" class="add-button-v2">Add</button>
+            <br>
+
         </div>
 
+        <div id="todo-1-container">
+                <input type="checkbox" class="checkbox" id="first" name="todo" value="first" />
+                <label for="first"></label>
+            <div id="todo-1">
+                <span class="todo-text-1">1. ...</span>
+            </div>
+        </div>
+
+        <div id="todo-2-container">
+                <input type="checkbox" class="checkbox" id="second" name="todo" value="second" />
+                <label for="second"></label>
+            <div id="todo-2">
+                <span class="todo-text-2">2. ...</span>
+            </div>
+        </div>
+
+        <div id="todo-3-container">
+                <input type="checkbox" class="checkbox" id="third" name="todo" value="third" />
+                <label for="third"></label>
+            <div id="todo-3">
+                <span class="todo-text-3">3. ...</span>
+            </div>
+        </div>
         <br>
-        <input class="todo-input-v2" type="text" id="input-box-v2" placeholder="Add todo text...">
-        <label for="todo-select">Apply to:</label>
-            <select name="todos" id="todo-select">
-            <option value="" selected>Todo list</option>
-            <option value="todo-one">#1</option>
-            <option value="todo-two">#2</option>
-            <option value="todo-three">#3</option>
-            </select>
-        <button onclick="addTaskToSet()" class="add-button-v2">Add</button>
         <br>
+        <br>
+        <h3>Application information</h3>
+             <div class="info">
+             <ol>
+                 <li><b>Reset:</b> Press "Reset todos" to reactivate the application.</li><br>
+                 <li><b>Add:</b> Write a todo text and press "Add" (ensure that "Todo list" is selected in the rolldown).</li><br>
+                 <li><b>Replace: </b> Replace a todo by writing a new todo text, select a todo number "#" to replace (in the rolldown), then press "Add".</li>
+             </ol>
+                 <br>
+                     <div class="comment">Current time zone: Central European Time (CET)</div>
+             </div>
 
-    </div>
-
-    <div id="todo-1-container">
-            <input type="checkbox" class="checkbox" id="first" name="todo" value="first" />
-            <label for="first"></label>
-        <div id="todo-1">
-            <span class="todo-text-1">1. ...</span>
+        <div>
+            <p>Website under construction</p>
+            <p>Webmaster: Filip Sjöstrand (filip_sjostrand@hotmail.com)</p>
         </div>
-    </div>
 
-    <div id="todo-2-container">
-            <input type="checkbox" class="checkbox" id="second" name="todo" value="second" />
-            <label for="second"></label>
-        <div id="todo-2">
-            <span class="todo-text-2">2. ...</span>
+          <!-- _ _ _ Top 3 Todos (end) -->
+
+          <!-- <button onclick="resetTodoSet()" class="reset-todo-button">Reset todos</button> -->
+          <div id="character-counter" class="character-counter"></div>
+          <div id="weekday-display">_ _ _</div>
+          <div id="date-display"></div>
+          <div id="week-display"></div>
+      </div><br>
+
+      </main>
+
+      <section>
+        <div id="weekly-div"></div>
+        <h3 id="weekly-heading">Week plan</h3><br>
+
+        <div class="grid-day-container">
+          <div class="grid-item day1" id="mon-div">
+            <div id="mon-day">Mon</div>
+            <div id="mon-date"></div>
+          </div>
+          <div class="grid-item day2" id="tue-div">
+            <div id="tue-day">Tue</div>
+            <div id="tue-date"></div>
+          </div>
+          <div class="grid-item day3" id="wed-div">
+            <div id="wed-day">Wed</div>
+            <div id="wed-date"></div>
+          </div>
+          <div class="grid-item day4" id="thu-div">
+            <div id="thu-day">Thu</div>
+            <div id="thu-date"></div>
+          </div>
+          <div class="grid-item day5" id="fri-div">
+            <div id="fri-day">Fri</div>
+            <div id="fri-date"></div>
+          </div>
+          <div class="grid-item day6" id="sat-div">
+            <div id="sat-day">Sat</div>
+            <div id="sat-date"></div>
+          </div>
+          <div class="grid-item day7" id="sun-div">
+            <div id="sun-day">Sun</div>
+            <div id="sun-date"></div>
+          </div>
+          <div class="grid-item day1" id="mon-todo">
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+          </div>
+          <div class="grid-item day2" id="tue-todo">
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+          </div>
+          <div class="grid-item day3" id="wed-todo">
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+          </div>
+          <div class="grid-item day4" id="thu-todo">
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+          </div>
+          <div class="grid-item day5" id="fri-todo">
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+          </div>
+          <div class="grid-item day6" id="sat-todo">
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+          </div>
+          <div class="grid-item day7" id="sun-todo">
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+          </div>
         </div>
-    </div>
 
-    <div id="todo-3-container">
-            <input type="checkbox" class="checkbox" id="third" name="todo" value="third" />
-            <label for="third"></label>
-        <div id="todo-3">
-            <span class="todo-text-3">3. ...</span>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <h3>Application information</h3>
-         <div class="info">
-         <ol>
-             <li><b>Reset:</b> Press "Reset todos" to reactivate the application.</li><br>
-             <li><b>Add:</b> Write a todo text and press "Add" (ensure that "Todo list" is selected in the rolldown).</li><br>
-             <li><b>Replace: </b> Replace a todo by writing a new todo text, select a todo number "#" to replace (in the rolldown), then press "Add".</li>
-         </ol>
-             <br>
-                 <div class="comment">Current time zone: Central European Time (CET)</div>
-         </div>
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadg
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsad<br><br>
 
-    <div>
-        <p>Website under construction</p>
-        <p>Webmaster: Filip Sjöstrand (filip_sjostrand@hotmail.com)</p>
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadg
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadg<br><br>
+
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadg
+      </section>
+
+      <section>
+        <div id="future-div"></div>
+        <h3 id="future-heading">Future Plans</h3>
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadg
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadg<br><br>
+
+
+        <button onclick="loadPlan()"> Load Saved </button><br><br>
+
+        <span>Add Task (date, todo & color)</span><br>
+        <div id="add-todo-container">
+        <input type="date" id="date-input" name="date" autocomplete="off" required/>
+
+        <input id="add-todo-text" placeholder="Add todo text..." type="text" name="text"/><br><br>
+
+        <!-- Select color (from dropdown) -->
+        <form id="color-drop-down">
+              <label for="colors"></label>
+              <select name="colors" id="colors">
+                <option id="gray-color" value="grayColor"></option>
+                <option id="yellow-color" value="yellowColor"></option>
+                <option id="green-color" value="greenColor"></option>
+                <option id="blue-color" value="blueColor"></option>
+                <option id="purple-color" value="purpleColor"></option>
+                <option id="red-color" value="redColor"></option>
+              </select>
+            <!-- </form> -->
+            </div><br>
+                    <!-- <div> -->
+          <label>
+            <input id="todo-recurring-input" type="checkbox" />
+            <span id="rec-text-span">Recurring Task</span>
+        </label>
+        <br><br>
+
+        <!-- default: display: "none" (-> block) -->
+          <fieldset id="periodicity">
+            <legend>Periodicity:</legend>
+
+            <div>
+              <input type="radio" id="day" name="select-period" value="day"/>
+              <label for="day">Day-s (per week)</label>
+            </div>
+
+            <div>
+              <input type="radio" id="week" name="select-period" value="week"/>
+              <label for="week">Week</label>
+            </div>
+
+            <div>
+              <input type="radio" id="month" name="select-period" value="month"/>
+              <label for="month">Month</label>
+            </div>
+
+            <div>
+              <input type="radio" id="year" name="select-period" value="year"/>
+              <label for="year">Year</label>
+            </div>
+          </fieldset>
+
+          <fieldset id="per-weekday">
+            <legend>Day choices:</legend>
+              <div class="day-selection-container">
+                  <div class="weekday-selection-wrapper-one">
+                    <div>
+                      <input type="radio" id="day-name" name="days-periodicity" value="select"/>
+                      <label for="select">Select days</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="day-count" name="days-periodicity" value="duration"/>
+                      <label for="duration">Duration (days)</label>
+                    </div>
+                  </div>
+                  <div class="weekday-selection-wrapper-two">
+                    <div>
+                      <input type="checkbox" id="rec-mon" name="rec-mon"/>
+                      <label for="rec-mon">Mon</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="rec-tue" name="rec-tue"/>
+                      <label for="rec-tue">Tue</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="rec-wed" name="rec-wed"/>
+                      <label for="rec-wed">Wed</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="rec-thu" name="rec-thu"/>
+                      <label for="rec-thu">Thu</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="rec-fri" name="rec-fri"/>
+                      <label for="rec-fri">Fri</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="rec-sat" name="rec-sat"/>
+                      <label for="rec-sat">Sat</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="rec-sun" name="rec-sun"/>
+                      <label for="rec-sun">Sun</label>
+                    </div>
+                  </div>
+              </div>
+            <br>
+            <div>
+              <label for="rec-month-days">Event duration (days):</label>
+              <input type="number" id="rec-day-days" name="rec-days" min=1 value="1"/>
+            </div>
+            <div id="each-week">
+              <input type="checkbox" id="every-week" name="every-week"/>
+              <label for="every-week">Every week</label>
+            </div>
+          </fieldset>
+
+          <fieldset id="per-week">
+            <legend>Weekly choices:</legend>
+            <span>Every:</span>
+          <div>
+            <input type="radio" id="rec-1-week" name="select-week-periodicity" value="1"/>
+            <label for="1">1</label>
+          </div>
+
+          <div>
+            <input type="radio" id="rec-2-week" name="select-week-periodicity" value="2"/>
+            <label for="2">2</label>
+          </div>
+
+          <div>
+            <input type="radio" id="rec-3-week" name="select-week-periodicity" value="3"/>
+            <label for="3">3</label>
+          </div>
+
+          <div>
+            <input type="radio" id="rec-4-week" name="select-week-periodicity" value="4"/>
+            <label for="4">4</label>
+          </div>
+          <span>weeks</span><br><br>
+            <div>
+              <label for="rec-month-days">Event duration (days):</label>
+              <input type="number" id="rec-week-days" name="rec-week-days" min=1 max=7 value="1"/>
+            </div>
+          </fieldset>
+
+
+          <fieldset id="per-month">
+            <legend>Monthly:</legend>
+            <div>
+              <label for="rec-month-days">Event duration (days):</label>
+              <input type="number" id="rec-month-days" name="rec-month-days" min=1 max=31 value="1"/>
+            </div>
+          </fieldset>
+
+          <fieldset id="per-year">
+            <legend>Yearly:</legend>
+          <div>
+            <label for="rec-year-days">Event duration (days):</label>
+            <input type="number" id="rec-year-days" name="rec-year-days" min=1 max=365 value="1"/>
+          </div>
+        </fieldset>
+
+    <!-- </div> -->
+          </form>
+            <!-- <pre id="textarea" contenteditable></pre> -->
+            <br>
+            <button id="add-todo-button" onclick="addTaskToList()"> Add </button><br><br>
+
+            <button id="clear-all">Clear All</button><br><br>
+
+            <span>Current Plan</span><br>
+            <div id="todo-wrapper">
+              <div id="todo-container" class="todo-container-element" data-id="0">
+                <textarea id="todo-0-date" class="todo-date" type="text" placeholder="Next date..." data-id="0" data-key="date" name="date"></textarea>
+                <textarea id="todo-0-text" class="todo-text" type="text" placeholder="Planned todo..." data-id="0" data-key="todo" name="text"></textarea>
+                <div id="todo-0-color" class="todo-color" data-id="0" data-key="color" name="color"></div>
+                <div id="todo-0-rec" class="todo-rec" data-id="0" data-key="rec" name="rec"></div>
+              </div>
+              <div id="todo-container" class="todo-container-element" data-id="1">
+                <textarea id="todo-1-date" class="todo-date" type="text" data-id="1" data-key="date" name="date"></textarea>
+                <textarea id="todo-1-text" class="todo-text" type="text" data-id="1" data-key="todo" name="text"></textarea>
+                <div id="todo-1-color" class="todo-color" data-id="1" data-key="color" name="color"></div>
+                <div id="todo-1-rec" class="todo-rec" data-id="1" data-key="rec" name="rec"></div>
+              </div>
+              <div id="todo-container" class="todo-container-element" data-id="2">
+                <textarea id="todo-2-date" class="todo-date" type="text" data-id="2" data-key="date" name="date"></textarea>
+                <textarea id="todo-2-text" class="todo-text" type="text" data-id="2" data-key="todo" name="text"></textarea>
+                <div id="todo-2-color" class="todo-color" data-id="2" data-key="color" name="color"></div>
+                <div id="todo-2-rec" class="todo-rec" data-id="2" data-key="rec" name="rec"></div>
+              </div>
+            </div>
+            <p id="status">No textarea is active.</p>
+
+          <!-- Hidden color switcher panel -->
+          <div id="color-switcher-panel" class="hidden">
+            <div id="color-switcher-content">
+                <p>Change color:</p>
+                <div id="change-color-wrapper">
+                  <div class="color-option" style="background-color: rgb(150,150,150);" data-color="grayColor"></div>
+                  <div class="color-option" style="background-color: rgb(255,204,0);" data-color="yellowColor"></div>
+                  <div class="color-option" style="background-color: rgb(51,153,102);" data-color="greenColor"></div>
+                  <div class="color-option" style="background-color: rgb(51,102,255);" data-color="blueColor"></div>
+                  <div class="color-option" style="background-color: rgb(153,51,102);" data-color="purpleColor"></div>
+                  <div class="color-option" style="background-color: rgb(255,64,64);" data-color="redColor"></div>
+                </div>
+                <p>Clear row:</p>
+                <div class="color-option" id="trash-can"><i class="fa-solid fa-trash-can" id="trash-can-icon"></i></div>
+                <button id="close-panel">Close</button>
+            </div>
+          </div>
+
+          <br>
+          <span>Load Plan</span><br>
+          <button onclick="loadPlan()"> Load (Chrome) </button><br><br>
+          <input id="load" type="file" value="load" onChange="load_func()"></input><br><br>
+
+          <span>Save Plan</span><br>
+          <button onclick="saveAs()"> Save As </button>
+          <button onclick="save()"> Save (Chrome) </button><br><br>
+          <button onclick="save_func()"> Save (any browser) </button><br><br>
+
+          hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+          dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadd
+          hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+          dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadd<br><br>
+
+          hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+          dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadd<br><br>
+
+          <span id="past-plan-heading">Past Tasks</span>
+          <div id="past-plan-div">
+            <!-- <textarea id="past-tasks-input-field" readonly></textarea> -->
+            <textarea id="past-tasks-input-field"></textarea>
+          </div>
+          <button id="clear-past-tasks">Clear Past</button>
+
+      </section>
+
+      <section>
+        <div id="timer-div"></div>
+        <h3 id="timer-heading">Timer</h3>
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadd
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadd<br><br>
+
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadd
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadd<br><br>
+
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadd
+      </section>
+
+      <section>
+        <div id="about-div"></div>
+        <h3 id="about-heading">About me</h3>
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadd
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadd<br><br>
+
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadd
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadd<br><br>
+
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadd
+        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
+        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadd
+      </section>
+
+      <!-- Från chatGPT: -->
+      <!-- 2. User Input for Todos and Color Selection (Todo Form Structure): -->
+
+          <!-- Form to add new todos -->
+
+          <!-- Display current plan list -->
+
+          <!-- Each todo item will be dynamically inserted here -->
+
+          <!-- Example todo item structure -->
+
+      <!-- 2. User Input for Todos and Color Selection (Todo Form Structure):
+      <section>
+        <table id="week-plan-table">
+          <thead>
+              <tr id="weekdays-header"></tr>
+          </thead>
+          <tbody>
+              <tr id="week-content-row"></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <form id="todo-form">
+        <input type="date" id="date-input" min="2023-01-01" required>
+        <input type="text" id="todo-input" placeholder="Todo (optional time: hh:mm)" required>
+        <input type="color" id="color-input" value="#cccccc">
+        <button type="submit">Add Todo</button>
+      </form>
+
+<section id="future-plans">
+    <h2>Future Plans</h2>
+
+    Form to add new todos
+    <form id="todo-form">
+        <label for="date-input">Date:</label>
+        <input type="date" id="date-input" required>
+
+        <label for="todo-input">Todo:</label>
+        <input type="text" id="todo-input" placeholder="Enter your task" required>
+
+        <label for="color-input">Color:</label>
+        <input type="color" id="color-input" value="#cccccc">
+
+        <button type="submit">Add Todo</button>
+    </form>
+
+    Display current plan list
+    <h3>Current Plan</h3>
+    <div id="future-plan-list" class="plan-list">
+        Each todo item will be dynamically inserted here
+
+      Example todo item structure
+      <div class="todo-item">
+        <div class="todo-date">2024-10-30</div>
+        <div class="todo-text">Doctor's appointment</div>
+        <div class="todo-color" style="background-color: #ffcc00;"></div>
+        <button class="edit-btn">Edit</button>
+        <button class="delete-btn">Delete</button>
+      </div>
+
     </div>
-    
-    <script type="text/javascript"    src="script.js"></script>
+</section> -->
+
+
+      <!-- <div id="arrow-container">
+        <a href="#top-todos"><i class="fa-regular fa-circle-up" id="fontawesome-arrow-up" ></i></a>
+        <a href="#about-heading"><i class="fa-regular fa-circle-down" id="fontawesome-arrow-down" ></i></a>
+      </div> -->
+
+      <!-- <script>
+        // Run a function when the DOM has fully loaded
+        document.addEventListener("DOMContentLoaded", function () {
+
+          document.getElementById("todo-0-date").value = "";
+          document.getElementById("todo-1-date").value = "";
+          document.getElementById("todo-2-date").value = "";
+          document.getElementById("todo-0-text").value = "";
+          document.getElementById("todo-1-text").value = "";
+          document.getElementById("todo-2-text").value = "";
+
+          document.getElementById("todo-0-date").innerHTML = "";
+          document.getElementById("todo-1-date").innerHTML = "";
+          document.getElementById("todo-2-date").innerHTML = "";
+          document.getElementById("todo-0-text").innerHTML = "";
+          document.getElementById("todo-1-text").innerHTML = "";
+          document.getElementById("todo-2-text").innerHTML = "";
+
+        });
+    </script> -->
+
+
+      <!-- <script async src="future-plans.js"></script> -->
+      <script async src="top-3-todo.js"></script>
+      <script async src="future-plans.js"></script>
 </body>
 </html>
