@@ -1,0 +1,565 @@
+/* *,
+*::after,
+*::before {
+
+} */
+  /* margin: 0;
+  padding: 0; */
+
+html {
+  font-family: 'Roboto', 'sans-serif';
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(24, 24, 24);
+  color: rgb(211, 211, 211);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+/* Navbar (start) */
+
+#navbar {
+  padding-top: 7px;
+  /* width: 100%; */
+  /* height: 50px; */
+
+  /* Safari */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure navbar is above "recurring" checkbox */
+}
+
+#todo-div,
+#weekly-div,
+#future-div,
+#timer-div,
+#about-div
+{
+  width: 100%;
+  height: 60px;
+}
+
+/* Navbar (end) */
+
+/* Weekly schedule (start) */
+
+.grid-day-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-rows: auto 400px;
+  gap: 3px;
+  background-color: rgb(137 188 212);
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.grid-day-container > div,
+#mon-div,
+#tue-div,
+#wed-div,
+#thu-div,
+#fri-div,
+#sat-div,
+#sun-div {
+  background-color: rgba(58, 58, 58, 0.8);
+  color: rgb(248, 248, 248);
+  text-align: center;
+  /* padding: 3px 0; */
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.day
+{
+  grid-row-start: 2;
+}
+
+#mon-date,
+#tue-date,
+#wed-date,
+#thu-date,
+#fri-date,
+#sat-date,
+#sun-date
+ {
+  font-size: 16px;
+}
+
+#mon-todo,
+#tue-todo,
+#wed-todo,
+#thu-todo,
+#fri-todo,
+#sat-todo,
+#sun-todo{
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  gap: 1px;
+  color: rgb(0, 0, 0);
+}
+
+.monday-target-div,
+.tuesday-target-div,
+.wednesday-target-div,
+.thursday-target-div,
+.friday-target-div,
+.saturday-target-div,
+.sunday-target-div {
+  font-size: 16px;
+}
+
+.grid-item {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Weekly schedule (end) */
+
+
+/* Future plans (start) */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 3px;
+    background-color: #68a089;
+    padding: 3px;
+    border-radius: 5px;
+  }
+
+  .grid-container > div,
+  #top-todos,
+  #weekly-calendar,
+  #important-dates,
+  #timer,
+  #about-me {
+    background-color: rgba(58, 58, 58, 0.8);
+    color: rgb(248, 248, 248);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .item1:hover,
+  .item2:hover,
+  .item3:hover,
+  .item4:hover,
+  .item5:hover,
+  .item6:hover {
+    opacity: 0.7;
+  }
+
+  .item1
+  {
+    grid-row: 1 / span 1;
+  }
+
+  #empty-grid-column {
+    background-color: rgb(24, 24, 24);
+    border: none;
+  }
+
+/* Remove field - save to file (start) */
+
+#textarea {
+  display: flex;
+  width: 300px;
+  height: 22px;
+  background-color: rgb(228, 228, 228);
+  color: rgb(24, 24, 24);
+  border: 2px solid;
+  border-color: rgb(65, 105, 65)
+}
+
+/* Remove field - save to file (end) */
+
+#rec-text-span {
+  text-decoration-line: underline;
+  text-decoration-color: rgba(0,117,255,0.5);
+  text-decoration-thickness: 3px;
+}
+
+.highlight {
+  /* background-color: lightyellow; */
+  background-color: rgb(240, 240, 231);
+}
+
+.todo-color {
+  width: 30px;
+  height: 34px;
+  background-color: rgb(221, 221, 221);
+  border: solid 1px rgb(196, 196, 196);
+  cursor: pointer;
+}
+
+#add-todo-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30px;
+}
+
+#todo-container {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+#colors {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.todo-rec {
+  width: 7px;
+  height: 30px;
+}
+
+#todo-container-one {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30px;
+}
+
+.edit-date-button {
+  display: none;
+  /* display: flex; */
+  width: 35px;
+  height: 32px;
+  background-color: orange;
+  color: rgb(36, 36, 36);
+  border: none;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+/* #color-palette-container {
+  position: absolute;
+  margin: auto;
+  width: 50%;
+  background-color: black;
+} */
+
+    /* Color palette container */
+    /* #color-palette {
+      display: none;
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #333;
+      width: 160px;
+      justify-content: center;
+      flex-wrap: wrap;
+    } */
+
+    /* Color options */
+    /* .color-swatch {
+      width: 30px;
+      height: 30px;
+      margin: 5px;
+      cursor: pointer;
+      border: 1px solid #333;
+      border-radius: 50%;
+    } */
+
+    #todo-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+.todo-date,
+.todo-text {
+  /* background-color: rgb(69 69 69);
+  color: rgb(232 232 232); */
+  background-color: rgb(202, 202, 202);
+  color: rgb(0, 0, 0);
+}
+
+    /* Hide the color palette when not needed */
+    /* .hidden {
+      display: none;
+    } */
+
+
+/* Initially hide the color switcher */
+.hidden {
+  display: none;
+}
+
+/* #change-color-wrapper {
+  display: none;
+  width: 100px;
+  height: 300px;
+
+} */
+
+/* Color switcher panel style */
+#color-switcher-panel {
+/* #change-color-wrapper { */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgb(32 32 32);
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  z-index: 1000;
+}
+
+/* Color panel options */
+.color-option {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.color-option i {
+  font-size: 50px;
+  color: rgb(119, 119, 119);
+}
+
+/* close color panel button */
+#close-panel {
+  margin-top: 10px;
+}
+
+#todo-recurring-input {
+  /* transform gör att checkbox hamnar över navbar!? */
+  position: relative; /* Keep it positioned */
+  transform: scale(1.75);
+  z-index: 1; /* Keep below navbar */
+}
+
+#periodicity, #per-weekday, #per-week, #per-month, #per-year {
+  display: none;
+}
+
+.day-selection-container {
+  display: flex;
+}
+
+.weekday-selection-wrapper-one {
+  display: flex;
+  flex-direction: column;
+}
+
+.weekday-selection-wrapper-two {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5em;
+}
+
+#each-week {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+#rec-day-days, #rec-week-days, #rec-month-days, #rec-year-days {
+  width: 23px;
+}
+
+#past-plan-heading {
+  display:flex;
+  /* justify-content: center; */
+}
+
+#past-plan-div {
+  display: flex;
+  justify-content: center;
+}
+
+#past-tasks-input-field {
+  width: 70vh;
+  height: 400px;
+  background-color: rgb(119, 119, 119);
+}
+
+/* Future plans (end) */
+
+/* _ _ _
+_ _ _ */
+
+/* .plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.todo-date {
+  flex: 1;
+  font-weight: bold;
+}
+
+.todo-text {
+  flex: 3;
+}
+
+.todo-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 5px 10px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.edit-btn:hover {
+  background-color: #ddd;
+}
+
+.delete-btn:hover {
+  background-color: #ffcccc;
+} */
+
+
+/* _ _ _
+_ _ _ */
+
+
+/* Computer screens and larger (start) */
+@media screen and (min-width: 1024px) {
+
+  .color-switcher-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 17px;
+  }
+
+  #trash-can {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #trash-can-icon .fas {
+  /* .fa-solid { */
+    color: blue;
+  }
+
+  #close-panel {
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+/* Computer screens and larger (end) */
+
+/* Tablets and larger screens (start) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+/* Tablets and larger screens (end) */
+
+/* Mobile screens (start) */
+@media screen and (max-width: 767px) {
+  #add-todo-text {
+    width: 100%;
+  }
+
+  #close-panel {
+    width: 100%;
+    height: 26px;
+    margin-top: 15px;
+  }
+}
+/* Mobile screens (end) */
+
+
+/* _ _ _ (scroll functionality with arrows) */
+
+  /* #fontawesome-arrow-up,
+  #fontawesome-arrow-down {
+    width: 50px;
+    height: 50px;
+    color: rgb(230, 230, 230);
+    position: absolute;
+    bottom: 7rem;
+    padding: 1rem;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 40px;
+    animation-name: show-arrows;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    visibility: hidden;
+  }
+
+  #fontawesome-arrow-up {
+    top: 15%;
+    left: 90%;
+  }
+
+  #fontawesome-arrow-down {
+    top: 25%;
+    left: 90%;
+  }
+
+#arrow-container {
+  width: 50px;
+  height: 500px;
+  position: sticky;
+  bottom: 0%;
+  left: 70%;
+}
+
+  @keyframes show-arrows {
+    0%   {
+        opacity: 1;
+        display: block;
+        }
+    25%  {
+        opacity: 1;
+        visibility: visible;
+        }
+    50%  {
+        opacity: 1;
+        visibility: visible;
+        }
+    80%  {
+        opacity: 1;
+        visibility: visible;
+        }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        }
+  } */
