@@ -1044,6 +1044,8 @@ const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
     dateInput.min = dateDisplay.textContent
 
+    dateInput.value = dateDisplay.textContent;
+
 // let currentDay = todayDate.getDay();
 // let firstDayOfWeek = new Date(todayDate.setDate(todayDate.getDate() - currentDay + (currentDay === 0 ? -6 : 1))); // Adjust if today is Sunday
 
