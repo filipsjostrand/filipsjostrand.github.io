@@ -235,7 +235,7 @@ a {
   height: 100%;
   cursor: pointer;
 }
-/* Make the color picker more rectangular */
+/* Add this CSS to make the color picker more rectangular */
 #color-drop-down select {
   border-radius: 4px; /* Adjust this value to make it less round */
 }
@@ -495,13 +495,6 @@ _ _ _ */
     width: 300px;
   }
 
-  /* #date-input {
-    height: 32px;
-  }
-  #add-todo-text {
-    height: 30px;
-  } */
-
   .color-switcher-content {
     display: flex;
     flex-direction: row;
@@ -534,19 +527,12 @@ _ _ _ */
   #text-wrapper {
     width: 300px;
   }
+
 }
 /* Tablets and larger screens (end) */
 
 /* Mobile screens (start) */
 @media screen and (max-width: 767px) {
-  /* #date-input {
-    height: 32px;
-  } */
-      /* height: 30px; */
-  /* #add-todo-text {
-    height: 30px;
-  } */
-      /* width: 100%; */
 
   #close-panel {
     width: 100%;
