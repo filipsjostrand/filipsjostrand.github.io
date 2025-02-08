@@ -233,30 +233,44 @@
       <section>
         <div id="future-div"></div>
         <h3 id="future-heading">Future Plans</h3>
-        hfghfg fgh fghfgh fghfgf f ffg fgh fghfghfghfgh dfjassfasjfsalödj sadöjljsadöasl
-        dfsd fds fsdsfsd fsdf sdf fgf f ffg fgh fghfghfghfgh dfjassfasj sadsadsadasdsadg<br><br>
+        Handle <u>Future Plans</u> and watch <u>Past tasks</u>.
+        <ul>
+          <li>Load saved file (with "Load Saved" button).</li>
+          <li>Save current plan (with the Save button).</li>
+          <li>Edit current plan (in the table).</li>
+          <li>Copy/clear past tasks.</li>
+        </ul>
+        <br>
 
 
         <!-- <button onclick="loadPlan()"> Load Saved </button><br><br> -->
 
         <span>Add Task (date, todo & color)</span><br>
         <div id="add-todo-container">
-        <input type="date" id="date-input" name="date" autocomplete="off" required/>
-
-        <input id="add-todo-text" placeholder="Add todo text..." type="text" name="text"/><br><br>
-
-        <!-- Select color (from dropdown) -->
-        <form id="color-drop-down">
-              <label for="colors"></label>
-              <select name="colors" id="colors">
-                <option id="gray-color" value="grayColor" style="color:rgb(150,150,150)">-</option>
-                <option id="yellow-color" value="yellowColor" style="color:rgb(255,204,0)">Yellow</option>
-                <option id="green-color" value="greenColor" style="color:rgb(51,153,102)">Green</option>
-                <option id="blue-color" value="blueColor" style="color:rgb(51,102,255)">Blue</option>
-                <option id="purple-color" value="purpleColor" style="color:rgb(153,51,102)">Purple</option>
-                <option id="red-color" value="redColor" style="color:rgb(255,64,64)">Red</option>
-              </select>
-            <!-- </form> -->
+                <div id="date-wrapper">
+                    <label for="date-input">Date</label>
+                    <input type="date" id="date-input" name="date" autocomplete="off" required/>
+                </div>
+    
+              <div id="text-wrapper">
+                <label for="add-todo-text">Todo Text</label>
+                <input id="add-todo-text" placeholder="Add todo text..." type="text" name="text"/><br><br>
+              </div>
+    
+              <!-- Select color (from dropdown) -->
+              <div id="color-wrapper">
+                <label for="colors">Color</label>
+                <form id="color-drop-down">
+                      <label for="colors"></label>
+                      <select name="colors" id="colors">
+                        <option id="gray-color" value="grayColor" style="color:rgb(150,150,150)">-</option>
+                        <option id="yellow-color" value="yellowColor" style="color:rgb(255,204,0)">Yellow</option>
+                        <option id="green-color" value="greenColor" style="color:rgb(51,153,102)">Green</option>
+                        <option id="blue-color" value="blueColor" style="color:rgb(51,102,255)">Blue</option>
+                        <option id="purple-color" value="purpleColor" style="color:rgb(153,51,102)">Purple</option>
+                        <option id="red-color" value="redColor" style="color:rgb(255,64,64)">Red</option>
+                      </select>
+                </div><br>
             </div><br>
                     <!-- <div> -->
           <label>
