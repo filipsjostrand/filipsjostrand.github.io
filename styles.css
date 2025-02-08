@@ -476,6 +476,17 @@ _ _ _ */
 /* Computer screens and larger (start) */
 @media screen and (min-width: 1024px) {
 
+  #text-wrapper {
+    width: 300px;
+  }
+
+  #date-input {
+    height: 32px;
+  }
+  #add-todo-text {
+    height: 30px;
+  }
+
   .color-switcher-content {
     display: flex;
     flex-direction: row;
@@ -504,6 +515,18 @@ _ _ _ */
 
 /* Tablets and larger screens (start) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  
+  #text-wrapper {
+    width: 300px;
+  }
+
+  #date-input {
+    height: 32px;
+  }
+  #add-todo-text {
+    height: 30px;
+  }
+
 }
 /* Tablets and larger screens (end) */
 
