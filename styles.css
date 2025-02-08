@@ -174,7 +174,7 @@ a {
 #textarea {
   display: flex;
   width: 300px;
-  height: 22px;
+  /* height: 22px; */
   background-color: rgb(228, 228, 228);
   color: rgb(24, 24, 24);
   border: 2px solid;
@@ -206,7 +206,16 @@ a {
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 50px;
   /* height: 30px; */
+}
+
+#date-input {
+  height: 100%;
+}
+
+#add-todo-text {
+  height: 100%;
 }
 
 #todo-container {
@@ -217,11 +226,13 @@ a {
   margin-bottom: 3px;
 }
 
+#color-drop-down {
+  height: 100%;
+}
+
 #colors {
-  /* width: 30px; */
   width: 100%;
-  /* height: 30px; */
-  height: 35.8px;
+  height: 100%;
   cursor: pointer;
 }
 
@@ -480,12 +491,12 @@ _ _ _ */
     width: 300px;
   }
 
-  #date-input {
+  /* #date-input {
     height: 32px;
   }
   #add-todo-text {
     height: 30px;
-  }
+  } */
 
   .color-switcher-content {
     display: flex;
@@ -515,31 +526,31 @@ _ _ _ */
 
 /* Tablets and larger screens (start) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  
+
   #text-wrapper {
     width: 300px;
   }
 
-  #date-input {
+  /* #date-input {
     height: 32px;
   }
   #add-todo-text {
     height: 30px;
-  }
+  } */
 
 }
 /* Tablets and larger screens (end) */
 
 /* Mobile screens (start) */
 @media screen and (max-width: 767px) {
-  #date-input {
-    /* height: 30px; */
+  /* #date-input {
     height: 32px;
-  }
-  #add-todo-text {
-    /* width: 100%; */
+  } */
+      /* height: 30px; */
+  /* #add-todo-text {
     height: 30px;
-  }
+  } */
+      /* width: 100%; */
 
   #close-panel {
     width: 100%;
