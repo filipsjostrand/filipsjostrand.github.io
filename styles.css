@@ -234,7 +234,10 @@ a {
   width: 100%;
   height: 100%;
   cursor: pointer;
-  border-radius: 2px;
+}
+/* Make the color picker more rectangular */
+#color-drop-down select {
+  border-radius: 4px; /* Adjust this value to make it less round */
 }
 
 #add-todo-container label {
