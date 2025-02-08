@@ -218,6 +218,10 @@ a {
   height: 100%;
 }
 
+#add-todo-text input {
+  height: 100%;
+}
+
 #todo-container {
   display: flex;
   width: 100%;
