@@ -6318,7 +6318,7 @@ function save_func() {
         var anchor = document.createElement("a");
         // I want to create a file from this location: "file:///C:/Users/filip/Desktop/Personal_Efficiency_App/index.html"
         anchor.href = URL.createObjectURL(file);
-        anchor.download = "saved_plans.txt";
+        anchor.download = fullFileName;
         anchor.click();
 
     // _ _ _
