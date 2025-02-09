@@ -6274,6 +6274,18 @@ let weekTodos = [];
 function save_func() {
     // var data_string = JSON.stringify(plannedTodos)
 
+    // Get the file name from the input field
+    var fileName = document.getElementById('file-name').value;
+    console.log("fileName (1.0) = " + fileName);
+    var fullFileName = fileName + ".txt";
+    console.log("fullFileName (1) = " + fullFileName);
+
+    // Check if the file name is not empty
+    if (!fileName) {
+        alert("Please enter a file name.");
+        return;
+    }
+    
     // _ _ _
 
     // if (pastPlanStringToSave != undefined || pastPlanStringToSave != null) {
@@ -6503,7 +6515,7 @@ function readFile(file) {
         // console.log("past_data (2) = " + past_data)
 
         if (past_data != '') {
-            pastPlanStringToSaveUpdate = past_data + ", " + pastPlanStringToSave;
+            pastPlanStringToSaveUpdate = past_data + "" + pastPlanStringToSave;
             console.log("pastPlanStringToSave = " + pastPlanStringToSave)
             console.log("pastPlanStringToSaveUpdate (1)  = " + pastPlanStringToSaveUpdate)
             pastTasksSet.add(past_data)
@@ -6516,9 +6528,10 @@ function readFile(file) {
 
         let inputString = pastPlanStringToSaveUpdate;
 
-        // Replace commas with newline characters
-        // let outputString = inputString.replace(/,/g, '\n');
-        let outputString = inputString.replace(/,\s*/g, '\n');
+        // Add newline characters
+        let outputString = inputString.replace(/(2025-\d{2}-\d{2})/g, '\n$1');
+        outputString = outputString.trim();
+        
         // Log the result
         console.log(outputString);
 
@@ -6533,7 +6546,12 @@ function readFile(file) {
 
         pastPlanStringToSave = `${pastPlansTextArea.innerHTML}`
 
+        var filePath = document.getElementById('load').value;
 
+        // Extract the file name from the path
+        var loadedFileName = filePath.split('\\').pop().split('.')[0];
+        console.log("loadedFileName = " + loadedFileName);
+        document.getElementById('file-name').value = loadedFileName;
 
         // // Original string with commas
         // let dataString = "2024-01-14, bbbbb, yellow, 2024-01-15, aaaaa, gray";
