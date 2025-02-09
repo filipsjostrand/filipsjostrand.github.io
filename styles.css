@@ -487,6 +487,12 @@ _ _ _ */
   background-color: #ffcccc;
 } */
 
+#file-name-label {
+  font-size: 14px;
+}
+#file-name {
+  width: 70%;
+}
 
 /* _ _ _
 _ _ _ */
