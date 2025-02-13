@@ -6371,15 +6371,98 @@ function save_func() {
 // _ _ _
 
 async function save() {
-    let stream = await fileHandle.createWritable();
-    await stream.write(JSON.stringify(plannedTodos));
-    await stream.close();
+    try {
+        // Get the file name from the input field
+        const fileNameElement = document.getElementById('file-name');
+        if (!fileNameElement) {
+            alert("File name element not found.");
+            return;
+        }
+
+        // const fileName = fileNameElement.innerText || fileNameElement.textContent;
+        const fileName = fileNameElement.value;
+        if (!fileName) {
+            alert("Please enter a file name.");
+            return;
+        }
+
+        const fullFileName = fileName.trim() + ".txt";
+        console.log("fullFileName = " + fullFileName);
+
+        // Create the options object for the save file picker
+        const options = {
+            suggestedName: fullFileName,
+            types: [{
+                description: 'Text Files',
+                accept: {
+                    'text/plain': ['.txt'],
+                },
+            }],
+        };
+
+        // Open the save file picker and get the file handle
+        const fileHandle = await window.showSaveFilePicker(options);
+
+        // Prepare the data to be saved
+        const planned_data = JSON.stringify(plannedTodos);
+        const past_data = pastPlanStringToSave;
+        const combinedString = planned_data + delimiter + past_data;
+
+        // Create a writable stream and write the data to the file
+        const writableStream = await fileHandle.createWritable();
+        await writableStream.write(combinedString);
+        await writableStream.close();
+
+        console.log("File saved successfully!");
+    } catch (error) {
+        console.error("An error occurred while saving the file:", error);
+    }
 }
 
 // saveAs plan
+// saveAs plan
 async function saveAs() {
-    fileHandle = await window.showSaveFilePicker();
-    save();
+    try {
+        // Prompt the user to select a file location and name
+        const options = {
+            types: [{
+                description: 'Text Files',
+                accept: {
+                    'text/plain': ['.txt'],
+                },
+            }],
+        };
+
+        const fileHandle = await window.showSaveFilePicker(options);
+
+        // Get the file name from the input field
+        var fileName = document.getElementById('file-name').value;
+        console.log("fileName (1.0) = " + fileName);
+        var fullFileName = fileName + ".txt";
+        console.log("fullFileName (1) = " + fullFileName);
+
+        // Check if the file name is not empty
+        if (!fileName) {
+            alert("Please enter a file name.");
+            return;
+        }
+
+        var planned_data = JSON.stringify(plannedTodos);
+        var past_data = pastPlanStringToSave;
+        let combinedString = planned_data + delimiter + past_data;
+
+        // Create a writable stream
+        const writableStream = await fileHandle.createWritable();
+
+        // Write the combined data to the file
+        await writableStream.write(combinedString);
+
+        // Close the writable stream
+        await writableStream.close();
+        console.log("File saved successfully!");
+    } catch (error) {
+        console.error("An error occurred while saving the file:", error);
+    }
 }
 
 // _ _ _
