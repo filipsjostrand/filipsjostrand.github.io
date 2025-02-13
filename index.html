@@ -459,11 +459,19 @@
           <input id="load" type="file" value="load" onChange="load_func()"></input><br><br>
 
           <span>Save Plan</span><br>
-          <!--<button onclick="saveAs()"> Save As </button>-->
-          <!--<button onclick="save()"> Save (Chrome) </button><br><br>-->
           <label id="file-name-label" for="file-name">File Name:</label>
           <input type="text" id="file-name" name="file-name"><br>
-          <button onclick="save_func()"> Save (any browser) </button><br><br>
+
+          <p id="dl-1"><b>Download (option 1):</b></p>
+          <p id="browser-compatibility">✅ Chrome, Edge, Opera, Samsung Internet</p>
+          <p id="browser-compatibility">❌ Firefox, Safari</p>
+          <button onclick="saveAs()"> Save As (any name) </button>
+          <button onclick="save()"> Save As (loaded name) </button><br><br>
+
+          <p id="browser-compatibility"><b>Download (option 2):</b></p>
+          <p id="browser-compatibility">✅ Any browser</p>
+          <button onclick="save_func()"> Save (to downloads) </button>
+          <br><br>
 
           <span id="past-plan-heading">Past Tasks</span>
               <div id="past-tasks-text">
