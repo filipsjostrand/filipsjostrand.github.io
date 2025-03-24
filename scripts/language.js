@@ -87,20 +87,12 @@
   var dailyAbbreviation;
 
 function getTodaysDayAbbreviation(todaysWeekdayAbbNr) {
-  console.log("getTodaysDayAbbreviation() körs");
-
-  console.log("selectedLanguage = " + selectedLanguage);
-
-  console.log("todaysWeekdayAbbNr = " + todaysWeekdayAbbNr);
-
-  console.log("typeof todaysWeekdayAbbNr = " + typeof todaysWeekdayAbbNr);
 
   if (todaysWeekdayAbbNr === 0) {
     dailyAbbreviation = sunDayAbb[selectedLanguage];
   }
   else if (todaysWeekdayAbbNr === 1) {
     dailyAbbreviation = monDayAbb[selectedLanguage];
-    console.log("dailyAbbreviation = " + dailyAbbreviation);
   }
   else if (todaysWeekdayAbbNr === 2) {
     dailyAbbreviation = tueDayAbb[selectedLanguage];
@@ -127,20 +119,12 @@ function getTodaysDayAbbreviation(todaysWeekdayAbbNr) {
  var dailyAbbreviation;
 
 function getTodaysDayAbbreviation(todaysWeekdayAbbNr) {
- console.log("getTodaysDayAbbreviation() körs");
-
- console.log("selectedLanguage = " + selectedLanguage);
-
- console.log("todaysWeekdayAbbNr = " + todaysWeekdayAbbNr);
-
- console.log("typeof todaysWeekdayAbbNr = " + typeof todaysWeekdayAbbNr);
 
  if (todaysWeekdayAbbNr === 0) {
    dailyAbbreviation = sunDayAbb[selectedLanguage];
  }
  else if (todaysWeekdayAbbNr === 1) {
    dailyAbbreviation = monDayAbb[selectedLanguage];
-   console.log("dailyAbbreviation = " + dailyAbbreviation);
  }
  else if (todaysWeekdayAbbNr === 2) {
    dailyAbbreviation = tueDayAbb[selectedLanguage];
