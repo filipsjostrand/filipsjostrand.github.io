@@ -9,6 +9,7 @@
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    color: black;
 }
 
 #startButton {
@@ -57,6 +58,7 @@
 #countMode {
     margin-left: 48px;
     cursor: pointer;
+    color: black;
 }
 
 .timerDisplay {
