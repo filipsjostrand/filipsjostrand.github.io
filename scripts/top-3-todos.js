@@ -329,7 +329,7 @@ var todayDate = new Date();
       toggleLink.addEventListener("click", function (event) {
           event.preventDefault(); // Prevent the anchor from navigating or refreshing the page
           if (content.style.display === "none") {
-              content.style.display = "block"; // Show the content as flex
+              content.style.display = "flex"; // Show the content as flex
           } else {
               content.style.display = "none"; // Hide the content
           }
