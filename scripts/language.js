@@ -112,38 +112,6 @@ function getTodaysDayAbbreviation(todaysWeekdayAbbNr) {
   return dailyAbbreviation;
 }
 
- // Get the current day number of the week (0 = Sunday, 1 = Monday, ...)
- var todaysWeekdayAbbNr = new Date().getDay();
-
- // Day id variable
- var dailyAbbreviation;
-
-function getTodaysDayAbbreviation(todaysWeekdayAbbNr) {
-
- if (todaysWeekdayAbbNr === 0) {
-   dailyAbbreviation = sunDayAbb[selectedLanguage];
- }
- else if (todaysWeekdayAbbNr === 1) {
-   dailyAbbreviation = monDayAbb[selectedLanguage];
- }
- else if (todaysWeekdayAbbNr === 2) {
-   dailyAbbreviation = tueDayAbb[selectedLanguage];
- }
- else if (todaysWeekdayAbbNr === 3) {
-   dailyAbbreviation = wedDayAbb[selectedLanguage];
- }
- else if (todaysWeekdayAbbNr === 4) {
-   dailyAbbreviation = thuDayAbb[selectedLanguage];
- }
- else if (todaysWeekdayAbbNr === 5) {
-   dailyAbbreviation = friDayAbb[selectedLanguage];
- }
- else if (todaysWeekdayAbbNr === 6) {
-   dailyAbbreviation = satDayAbb[selectedLanguage];
- }
- return dailyAbbreviation;
-}
-
 // Översättning Top3 Todos
 
 const top3Todos = {
