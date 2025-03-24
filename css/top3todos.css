@@ -102,10 +102,6 @@
     cursor: pointer;
 }
 
-.checkbox {
-    transform: scale(1.75);
-}
-
 .comment {
     font-size: 12px;
 }
@@ -130,6 +126,10 @@
         display: flex;
         flex-direction: column;
     }
+
+    .checkbox {
+        transform: scale(1.75);
+    }
 }
 
 /* Tablets and larger screens */
@@ -145,11 +145,16 @@
         display: flex;
         flex-direction: column;
     }
-  }
-  /* Tablets and larger screens (end) */
 
+    .checkbox {
+        transform: scale(1.3);
+    }
+}
+/* Tablets and larger screens (end) */
 
-  /* Mobile screens */
-  /* @media screen and (max-width: 767px) {
-  } */
-  /* Mobile screens (end) */
+/* Mobile screens */
+@media screen and (max-width: 767px) {
+    .checkbox {
+        transform: scale(1.1);
+    }
+}
