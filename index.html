@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Efficiency</title>
+    <link rel="canonical" href="https://www.filipsjostrand.github.io" />
+    <link rel="icon" href="./media/img/sun_fun.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/top3todos.css">
+    <link rel="stylesheet" href="./css/timerstyle.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
+
+</head>
+<body>
+    <div id="navbar">
+      <div class="grid-container">
+          <a href="#top"><div class="grid-item item1" id="top-todos">Todos</div></a>
+          <a href="#weekly-div"><div class="grid-item item2" id="weekly-calendar">Week</div></a>
+          <a href="#future-div"><div class="grid-item item3" id="important-dates">Future</div></a>
+          <a href="#timer-div"><div class="grid-item item4" id="timer">Timer</div></a>
+          <div class="grid-item item5" id="empty-grid-column"></div>
+          <a href="#about-div"><div class="grid-item item6" id="about-me">About</div></a>
+      </div>
+    </div>
+
+      <main id="main-section">
+        <div id="main-section-wrapper">
+
+          <div class="start-container-wrapper">
+
+            <!-- _ _ _ Top 3 Todos (start)-->
+
+            <div class="todo-div">
+
+              <div id="todo-header-container">
+
+                <div id="todo-header-wrapper">
+                  <div class="start-container">
+                      <div id="character-counter" class="character-counter"></div>
+                      <div id="weekday-display"></div>
+                      <div id="date-display"></div>
+                      <div id="week-display"></div><br>
+
+                      <h3 id="todos-heading">Top 3 Todos</h3>
+
+                      <button onclick="resetTodoSet()" class="reset-todo-button">
+                        <p id="top3-todo-buton-text">Start&#10;<sub>Reset</sub></p>
+                      </button>
+                  </div>
+                </div>
+
+                <div id="language-selector-wrapper">
+                  <div id="language-selector-container">
+                    <div id="language-wrapper">
+                        <i id="language-icon" class="fa-solid fa-globe"></i>
+                        <select class="language-selector">
+                          <option value="sv">Svenska</option>
+                            <option value="en">English</option>
+                        </select>
+                            <div class="flag-div">
+                              <div class="flag-img">
+                              </div>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br>
+              <input class="todo-input-v2" type="text" id="input-box-v2" placeholder="Add todo text...">
+              <label for="todo-select" id="top3-label">Apply to:</label>
+                  <select name="todos" id="todo-select">
+                  <option value="" selected>Top3 list</option>
+                  <option value="todo-one">#1</option>
+                  <option value="todo-two">#2</option>
+                  <option value="todo-three">#3</option>
+                  </select>
+              <button onclick="addTaskToSet()" class="add-button-v2">Add Todo</button>
+              <br>
+
+          </div>
+
+          <div id="todo-1-container">
+                  <input type="checkbox" class="checkbox" id="first" name="todo" value="first" />
+                  <label for="first"></label>
+              <div id="todo-1">
+                  <span class="todo-text-1">1. ...</span>
+              </div>
+          </div>
+
+          <div id="todo-2-container">
+                  <input type="checkbox" class="checkbox" id="second" name="todo" value="second" />
+                  <label for="second"></label>
+              <div id="todo-2">
+                  <span class="todo-text-2">2. ...</span>
+              </div>
+          </div>
+
+          <div id="todo-3-container">
+                  <input type="checkbox" class="checkbox" id="third" name="todo" value="third" />
+                  <label for="third"></label>
+              <div id="todo-3">
+                  <span class="todo-text-3">3. ...</span>
+              </div>
+          </div>
+          <br>
+          <h4 id="app-info">Application information</h4>
+              <div class="info">
+              <ol>
+                  <li><b>Reset:</b> &nbsp Press "Start Reset" (application reactivates).</li><br>
+                  <li><b>Add:</b> &nbsp Write a todo text &nbsp &nbsp → &nbsp &nbsp press "Add Todo" (ensure "Top3 list" is selected in rolldown).</li><br>
+                  <li><b>Replace: </b> &nbsp Write a new todo text &nbsp &nbsp → &nbsp &nbsp select "#" (to replace) in rolldown &nbsp &nbsp → &nbsp &nbsp press "Add Todo".</li>
+              </ol>
+                  <br>
+
+              </div>
+
+            <!-- _ _ _ Top 3 Todos (end) -->
+        </div>
+      </main>
+
+      <section>
+        <div id="weekly-div"></div>
+        <h3 id="weekly-heading" class="app-heading">Week Schedule</h3>
+        <div id="week-plan-info">
+          <p id="weekly-desc">
+            Check current week schedule
+            <ul>
+              <li id="go-future-plans">Go to "Future Plans" (to add tasks)</li>
+              <ul>
+                <li id="go-future-navbar">Scroll down or click "Future" (navbar)</li>
+              </ul>
+            </ul>
+          </p>
+          <div id="week-display-2"></div>
+        </div>
+
+        <div class="grid-day-container">
+          <div class="grid-item day1" id="mon-div">
+            <div id="mon-day">Mon</div>
+            <div id="mon-date"></div>
+          </div>
+          <div class="grid-item day2" id="tue-div">
+            <div id="tue-day">Tue</div>
+            <div id="tue-date"></div>
+          </div>
+          <div class="grid-item day3" id="wed-div">
+            <div id="wed-day">Wed</div>
+            <div id="wed-date"></div>
+          </div>
+          <div class="grid-item day4" id="thu-div">
+            <div id="thu-day">Thu</div>
+            <div id="thu-date"></div>
+          </div>
+          <div class="grid-item day5" id="fri-div">
+            <div id="fri-day">Fri</div>
+            <div id="fri-date"></div>
+          </div>
+          <div class="grid-item day6" id="sat-div">
+            <div id="sat-day">Sat</div>
+            <div id="sat-date"></div>
+          </div>
+          <div class="grid-item day7" id="sun-div">
+            <div id="sun-day">Sun</div>
+            <div id="sun-date"></div>
+          </div>
+          <div class="grid-item day1" id="mon-todo">
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+            <div class="monday-target-div" data-date="0"></div>
+          </div>
+          <div class="grid-item day2" id="tue-todo">
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+            <div class="tuesday-target-div" data-date="1"></div>
+          </div>
+          <div class="grid-item day3" id="wed-todo">
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+            <div class="wednesday-target-div" data-date="2"></div>
+          </div>
+          <div class="grid-item day4" id="thu-todo">
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+            <div class="thursday-target-div" data-date="3"></div>
+          </div>
+          <div class="grid-item day5" id="fri-todo">
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+            <div class="friday-target-div" data-date="4"></div>
+          </div>
+          <div class="grid-item day6" id="sat-todo">
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+            <div class="saturday-target-div" data-date="5"></div>
+          </div>
+          <div class="grid-item day7" id="sun-todo">
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+            <div class="sunday-target-div" data-date="6"></div>
+          </div>
+        </div>
+      </section><br>
+      <div class="comment">Aktuell tidszon: Central European Standard Time (CET)</div>
+
+      <section id="future-plans-section">
+        <div id="future-plans-wrapper">
+          <div id="future-div"></div>
+          <h3 id="future-heading" class="app-heading">Future Plans</h3>
+
+          <p id="future-desc"><u id="current-plan-words"></u><u id="past-tasks-words"></u>.
+            <ul>
+            </ul>
+          </p>
+          <br>
+
+          <span>➕ <u id="add-task-span">Add Task (below)</u></span><br>
+          <div id="add-todo-container">
+            <div id="date-wrapper">
+              <label id="add-date-label" for="date-input">Date</label>
+              <input type="date" id="date-input" name="date" autocomplete="off" required/>
+            </div>
+
+            <div id="text-wrapper">
+              <label id="add-todo-label" for="add-todo-text">Task</label>
+              <input id="add-todo-text" placeholder="Add task text..." type="text" name="text"/>
+            </div>
+
+            <!-- Select color (from dropdown) -->
+            <div id="color-wrapper">
+              <label id="add-color-label" for="colors">Color</label>
+              <form id="color-drop-down">
+                    <label for="colors"></label>
+                    <select name="colors" id="colors">
+                      <option id="gray-color" value="grayColor" style="color:rgb(150,150,150)">-</option>
+                      <option id="yellow-color" value="yellowColor" style="color:rgb(255,204,0)">Yellow</option>
+                      <option id="green-color" value="greenColor" style="color:rgb(51,153,102)">Green</option>
+                      <option id="blue-color" value="blueColor" style="color:rgb(51,102,255)">Blue</option>
+                      <option id="purple-color" value="purpleColor" style="color:rgb(153,51,102)">Purple</option>
+                      <option id="red-color" value="redColor" style="color:rgb(255,64,64)">Red</option>
+                    </select>
+            </div><br>
+          </div><br>
+
+          <label id="rec-task">
+              <input id="todo-recurring-input" type="checkbox" />
+              <span id="rec-text-span">Recurring Task 🔁</span>
+          </label>
+          <br>
+
+          <!-- default: display: "none" (-> block) -->
+          <fieldset id="periodicity">
+            <legend id="periodicity-header">Periodicity:</legend>
+
+            <div>
+              <input type="radio" id="day" name="select-period" value="day"/>
+              <label id="day-period" for="day">Day-s (per week)</label>
+            </div>
+
+            <div>
+              <input type="radio" id="week" name="select-period" value="week"/>
+              <label id="week-period" for="week">Week</label>
+            </div>
+
+            <div>
+              <input type="radio" id="month" name="select-period" value="month"/>
+              <label id="month-period" for="month">Month</label>
+            </div>
+
+            <div>
+              <input type="radio" id="year" name="select-period" value="year"/>
+              <label id="year-period" for="year">Year</label>
+            </div>
+          </fieldset>
+
+          <fieldset id="per-weekday">
+            <legend id="day-choices">Day choices:</legend>
+              <div class="day-selection-container">
+                  <div class="weekday-selection-wrapper-one">
+                    <div>
+                      <input type="radio" id="day-name" name="days-periodicity" value="select"/>
+                      <label id="select-days" for="select">Select days &nbsp [D]</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="day-count" name="days-periodicity" value="duration"/>
+                      <label id="select-duration" for="duration">Duration (days) &nbsp [#D]</label>
+                    </div>
+                  </div>
+                  <div class="weekday-selection-wrapper-two">
+                    <div>
+                      <input type="checkbox" id="rec-mon" name="rec-mon"/>
+                      <label id="rec-mon-day" for="rec-mon">Mon</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="rec-tue" name="rec-tue"/>
+                      <label id="rec-tue-day" for="rec-tue">Tue</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="rec-wed" name="rec-wed"/>
+                      <label id="rec-wed-day" for="rec-wed">Wed</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="rec-thu" name="rec-thu"/>
+                      <label id="rec-thu-day" for="rec-thu">Thu</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="rec-fri" name="rec-fri"/>
+                      <label id="rec-fri-day" for="rec-fri">Fri</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="rec-sat" name="rec-sat"/>
+                      <label id="rec-sat-day" for="rec-sat">Sat</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="rec-sun" name="rec-sun"/>
+                      <label id="rec-sun-day" for="rec-sun">Sun</label>
+                    </div>
+                  </div>
+              </div>
+            <br>
+            <div>
+              <label id="event-duration-day" for="rec-month-days">Event duration (days):</label>
+              <input type="number" id="rec-day-days" name="rec-days" min=1 value="1"/>
+            </div>
+            <div id="each-week">
+              <input type="checkbox" id="every-week" name="every-week"/>
+              <label id="every-week" for="every-week">Every week</label>
+            </div>
+          </fieldset>
+
+          <fieldset id="per-week">
+            <legend id="week-header">Weekly choices:</legend>
+            <span id="week-intervall-every">Every:</span>
+          <div>
+            <input type="radio" id="rec-1-week" name="select-week-periodicity" value="1"/>
+            <label for="1">1 &nbsp [W1]</label>
+          </div>
+
+          <div>
+            <input type="radio" id="rec-2-week" name="select-week-periodicity" value="2"/>
+            <label for="2">2 &nbsp [W2]</label>
+          </div>
+
+          <div>
+            <input type="radio" id="rec-3-week" name="select-week-periodicity" value="3"/>
+            <label for="3">3 &nbsp [W3]</label>
+          </div>
+
+          <div>
+            <input type="radio" id="rec-4-week" name="select-week-periodicity" value="4"/>
+            <label for="4">4 &nbsp [W4]</label>
+          </div>
+          <span id="week-intervall-weeks">weeks</span><br><br>
+            <div>
+              <label id="event-duration-week" for="rec-month-days">Event duration (days):</label>
+              <input type="number" id="rec-week-days" name="rec-week-days" min=1 max=7 value="1"/>
+            </div>
+          </fieldset>
+
+
+          <fieldset id="per-month">
+            <legend id="month-header">Monthly:</legend>
+            <div>
+              <label id="event-duration-month" for="rec-month-days">[M] &nbsp Event duration (days):</label>
+              <input type="number" id="rec-month-days" name="rec-month-days" min=1 max=31 value="1"/>
+            </div>
+          </fieldset>
+
+          <fieldset id="per-year">
+              <legend id="year-header">Yearly:</legend>
+            <div>
+              <label id="event-duration-year" for="rec-year-days">[Y] &nbsp Event duration (days):</label>
+              <input type="number" id="rec-year-days" name="rec-year-days" min=1 max=365 value="1"/>
+            </div>
+          </fieldset>
+
+          </form>
+            <button id="add-todo-button" onclick="addTaskToList()"> Add Task </button><br>
+
+            <span id="current-plan-header">📝<u id="current-plan-text">Current Plan</u></span><br>
+            <div id="todo-wrapper">
+              <div id="todo-container" class="todo-container-element" data-id="0" tabindex="0">
+                <textarea id="todo-0-date" class="todo-date" type="text" placeholder="Next date..." data-id="0" data-key="date" name="date"></textarea>
+                <textarea id="todo-0-text" class="todo-text" type="text" placeholder="Planned todo... (Add Task)" data-id="0" data-key="todo" name="text"></textarea>
+                <div id="todo-0-color" class="todo-color" data-id="0" data-key="color" name="color">⚙️</div>
+                <div id="todo-0-rec" class="todo-rec" data-id="0" data-key="rec" name="rec"></div>
+              </div>
+              <div id="todo-container" class="todo-container-element" data-id="1">
+                <textarea id="todo-1-date" class="todo-date" type="text" data-id="1" data-key="date" name="date"></textarea>
+                <textarea id="todo-1-text" class="todo-text" type="text" data-id="1" data-key="todo" name="text"></textarea>
+                <div id="todo-1-color" class="todo-color" data-id="1" data-key="color" name="color"></div>
+                <div id="todo-1-rec" class="todo-rec" data-id="1" data-key="rec" name="rec"></div>
+              </div>
+              <div id="todo-container" class="todo-container-element" data-id="2">
+                <textarea id="todo-2-date" class="todo-date" type="text" data-id="2" data-key="date" name="date"></textarea>
+                <textarea id="todo-2-text" class="todo-text" type="text" data-id="2" data-key="todo" name="text"></textarea>
+                <div id="todo-2-color" class="todo-color" data-id="2" data-key="color" name="color"></div>
+                <div id="todo-2-rec" class="todo-rec" data-id="2" data-key="rec" name="rec"></div>
+              </div>
+            </div>
+            <!-- Clear All (button) -->
+            <button id="clear-all" onclick="clearAll()">Clear All</button>
+            <p id="status">No textarea is active.</p>
+
+          <!-- Hidden color switcher panel -->
+          <div id="color-switcher-panel" class="hidden">
+            <div id="color-switcher-content">
+                <p id="color-switcher-heading">Change color:</p>
+                <div id="change-color-wrapper">
+                  <div class="color-option" style="background-color: rgb(150,150,150);" data-color="grayColor" text="Gray"></div>
+                  <div class="color-option" style="background-color: rgb(255,204,0);" data-color="yellowColor" text="Yellow"></div>
+                  <div class="color-option" style="background-color: rgb(51,153,102);" data-color="greenColor" text="Green"></div>
+                  <div class="color-option" style="background-color: rgb(51,102,255);" data-color="blueColor" text="Blue"></div>
+                  <div class="color-option" style="background-color: rgb(153,51,102);" data-color="purpleColor" text="Purple"></div>
+                  <div class="color-option" style="background-color: rgb(255,64,64);" data-color="redColor" text="Red"></div>
+                </div>
+                <p id="clear-row">Clear row:</p>
+                <div class="color-option" id="trash-can"><i class="fa-solid fa-trash-can" id="trash-can-icon"></i></div>
+                <button id="close-panel">Store Current</button>
+            </div>
+          </div>
+
+          <!-- Load Plan -->
+          <span>📁<u id="load-plan-heading">Load Plan</u> </span><br>
+
+
+          <input id="load" class="custom-file-button" type="file" value="load" onChange="load_func()">
+
+          <!-- Loading delay, .custom-file-button (load file) -->
+          <label id="load-file-button" for="load" class="custom-file-label">Load File</label><br><br><br>
+
+          <span>💾<u id="save-plan-heading">Save Plan</u></span><br>
+          <label id="file-name-label" for="file-name">File Name:</label>
+          <input type="text" id="file-name" name="file-name"><br>
+
+          <!-- Save As (loaded name) -->
+          <p id="dl-1">Download (option <b>1</b>):</p>
+          <p id="browser-compatibility">✅ <i>PC/Android</i></p>
+          <p id="browser-compatibility">❌ <i id="incompatible-devices">Firefox, iOS devices</i></p>
+          <button id="save-as-anywhere" onclick="saveAs()"> Save As (anywhere) </button><br><br>
+
+          <p id="dl-2">Download (option <b>2</b>):</p>
+          <p id="browser-compatibility">✅ <i id="any-browser-dl">Any browser</i></p>
+          <button id="save-to-downloads" onclick="save_func()"> Save (to downloads) </button>
+          <br><br>
+
+          <div id="past-plan-container">
+              <div id="past-plan-wrapper">
+                <span id="past-plan-heading">📄<u id="past-tasks"> Past Tasks</u></span>
+                <div id="past-tasks-text">
+                  <p id="copy-or-clear-past">
+                    Copy or clear (past tasks).
+                  </p>
+                </div>
+                <div id="past-plan-div">
+                  <textarea id="past-tasks-input-field"></textarea>
+                </div>
+                  <button id="clear-past-tasks">Clear Past</button>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="timer-section">
+        <div class="timer-container">
+          <div class="timer-wrapper">
+            <div id="timer-div"></div>
+            <h3 id="timer-heading" class="app-heading">Timer</h3>
+            <p id="timer-limit">Set a time limit:</p>
+            <ul>
+              <li id="hours-list">hours,</li>
+              <li id="minutes-list">minutes,</li>
+              <li id="seconds-list">seconds,</li>
+              <li id="tenths-list">tenths.</li>
+            </ul>
+            <br>
+
+            <div>
+              <label id="hours-label" for="hours">Hours:</label>
+              <input type="number" id="hours" placeholder="0" min="0"><br>
+              <label id="minutes-label" for="minutes">Minutes:</label>
+              <input type="number" id="minutes" placeholder="0" min="0" max="59"><br>
+              <label id="seconds-label" for="seconds">Seconds:</label>
+              <input type="number" id="seconds" placeholder="0" min="0" max="59"><br>
+              <label id="tenths-label" for="tenths">Tenths:</label>
+              <input type="number" id="tenths" placeholder="0" min="0" max="9">
+            </div>
+
+            <div>
+                <label id="timer-mode" for="countMode">Mode:</label>
+                <select id="countMode">
+                    <option id="countdown" value="countdown">Countdown</option>
+                    <option id="countup" value="countup">Count Up</option>
+                </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="timer-button-wrapper">
+          <button id="startButton">Start</button>
+          <button id="pauseButton">Pause</button>
+          <button id="resetButton">Reset</button>
+        </div>
+
+
+      <div>
+          <h2 class="timerDisplay"><p id="timer-time">Time:</p>&nbsp;<span id="timerDisplay">00:00:00:0</span></h2>
+      </div><br>
+
+      <!-- youtube-iframe-divs (Start) -->
+
+      <div class="iframe-box-container">
+        <div id="iframe-container-f">
+            <iframe
+                id="music-player-lofi-girl"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/V0Ddn6Ldcuc?list=PLokZxVutIzTQMMoDsz1qrLSYywgswhz3Q"
+                title="Beautiful Life - Summer Fruits | @RFM_NCM"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div id="iframe-container-e">
+            <iframe
+                id="music-player-lofi-girl"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/jfKfPfyJRdk?si=td3bTazQj1cdCoa-"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+      </div>
+
+      <!-- youtube-iframe-divs (end) -->
+
+      <audio
+          id="alarmSound"
+          title='"Oversimplified", by Lesiakower'
+          src="oversimplified-alarm-clock-113180.mp3"
+          alt="Oversimplified [ALARM CLOCK], by Lesiakower, from: https://pixabay.com/sound-effects/oversimplified-alarm-clock-113180/"
+          preload="auto">
+      </audio>
+
+      </section>
+
+      <section id="about-section">
+        <div id="about-section-wrapper">
+          <div id="about-div"></div>
+          <h3 id="about-heading" class="app-heading">About</h3>
+
+          <div id="basic-info-container">
+            <div id="filip-info">
+              <p>Namn: Filip Sjöstrand</p>
+              <span>Födelseår: 1985</span><br>
+              <span>Bostadsort: Växjö</span><br>
+              <a href="#contact-info-div" alt="link to contact info"><p>Kontakt: ⬇️</p></a>
+
+            </div>
+            <div id="image-container">
+              <div id="image-wrapper">
+                  <img id="daily-image" src="" alt="Image of the Day">
+              </div>
+            </div>
+          </div>
+
+          <p id="filip-desc">Konsult | Programmerare | Ingenjör | Läxhjälpare | Lagledare | Författare</p>
+
+          <div id="button-container">
+            <div id="button-wrapper">
+              <a href="https://docs.google.com/spreadsheets/d/16xyzQTj4lv9sda_N9nL30jtmY8T9ZH0oOfohrC-cC28/edit?usp=sharing" target="_blank">
+              <button id="consultant-button">Konsultande</button>
+              </a>
+
+              <a href="https://docs.google.com/spreadsheets/d/1T0DDac-9PDkUwS2AKMkAtCVaMUD3Jr90eSSdtlDtXDs/edit?usp=sharing" target="_blank">
+               <button id="employment-button">Anställningar</button>
+              </a>
+
+              <a href="https://docs.google.com/spreadsheets/d/1HCQZwjj94Enwtw1rmGBZ2c_m_4JdIsiP6t1LmY--i0Q/edit?usp=sharing" target="_blank">
+              <button id="edu-button">Utbildning</button>
+              </a>
+
+              <a href="https://docs.google.com/spreadsheets/d/1vHtHscZ18Da1uZVxSNdHWXDzbaOMAoG3G2GmjtpevF0/edit?usp=sharing" target="_blank">
+              <button id="ref-button">Referenser</button>
+              </a>
+
+              <br><br>
+            </div>
+          </div>
+
+          <b>Är</b>
+          <ul>
+            <li>Hjälpsam</li>
+            <li>Analytisk</li>
+            <li>Energiingenjör</li>
+            <li>Lösningsfokuserad</li>
+            <li>Programmeringskunnig.</li>
+          </ul>
+          <br>
+
+          <b>Vill</b>
+          <ul>
+            <li>Göra gott</li>
+            <li>Spara energi</li>
+            <li>Hitta glädje & enkelhet.</li>
+          </ul>
+          <br>
+
+          <b>Kan</b>
+          <ul>
+            <li>Blåställsarbeta,</li>
+            <li>Omvandla</li>
+              <ul>
+              <li class="list-term">text,</li>
+              <li class="list-term">siffror,</li>
+              <li class="list-term">kod</li>
+              <li class="list-term">till praktisk nytta.</li>
+            </ul>
+          </ul>
+          <br>
+
+          <p id="i-like-div">Gillar att dela kunskap, glädje och att lösa problem tillsammans med andra.</p><br><br>
+
+          <div id="tools-wrapper">
+            <div><p><u>Verktyg:</u></p></div>
+            <div id="tool-list-container"><p>
+              <ul>
+                <li>C#</li>
+                <li>Git</li>
+                <li>SQL</li>
+                <li>CSS</li>
+                <li>Java</li>
+                <li>Gimp</li>
+                <li>Node</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>SolidWorks</li>
+                <li>Visual Studio</li>
+                <li>Ruby (on Rails)</li>
+                <li>Microsoft Office</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+
+          <p><u>Språk:</u>	  Svenska, Engelska, (Franska, Spanska)</p>
+
+          <p><u>Körkort:</u> 	A1 & B</p>
+
+          <p><u>LinkedIn:</u><a class="linkedin" href="https://linkedin.com/in/filip-sjöstrand/" target="_blank" alt="linkedin (Filip Sjöstrand)">
+            <img src="./media/img/linkedin-original.svg" width="40px" height="25px" viewBox="0 0 120 80">
+          </a></p>
+
+          <div id="github-container"><p><u>GitHub:</u><a class="github" href="https://github.com/filipsjostrand/" target="_blank" alt="github (filipsjostrand)">
+            <div id="github-img-container">
+              <img id="github-img" src="./media/img/github.svg" width="40px" height="30px" viewBox="0 0 120 80">
+            </div>
+          </a></p>
+        </div>
+
+        </div>
+      </section>
+<div id="about-section-divider-1"></div>
+<div id="about-section-divider-2"></div>
+<div id="about-section-divider-3"></div>
+<div id="efficiency-image-container">
+  <img src="./media/img/sun_big_fun.png" id="efficiency-image" alt="sun">
+  <div id="link-wrapper">
+    <a class="bg-photograph-link" href="https://www.pexels.com/photo/painting-of-red-planet-87611/" target="_blank" alt="Pixabay (pexels.com)">Photo: Pixabay (pexels.com)</a>
+  </div>
+</div>
+
+<!-- Footer (start) -->
+<div id="main-footer-container">
+
+  <div class="footer-contact" id="contact-info-div">
+      <h3>Contact</h3>
+      <a href="mailto: filip_sjostrand@hotmail.com" title="filip_sjostrand@hotmail.com">Send e-mail <i class="fa-solid fa-envelope"></i></a>
+
+      <!-- Contact Form -->
+      <a class="get-contact-form" id="form-button" title="Contact Form">Contact Form <i class="fa-solid fa-pencil"></i></a>
+       <form>
+          <div id="myForm" class="form">
+
+              <!-- Form content -->
+              <div class="form-content">
+                  <div class="form-top-container">
+                      <h3 class="contact-form-title">Contact Form</h3>
+                      <span class="close-form" id="form-closer" onclick="closeForm()">&times;</span>
+                  </div>
+
+                  <div class="form-content-container">
+                      <div class="name-container">
+                          <label id="name-label" for="user-name">Name</label>
+                          <input type="text" id="user-name" name="user-name" placeholder="Please write name..." minlength="2" maxlength="50">
+                      </div>
+                      <div class="email-container">
+                          <label id="email-label" for="user-email">Email</label>
+                          <input type="text" id="user-email" name="email-address" placeholder="my.email@domain.com" minlength="8" maxlength="255" disabled>
+                      </div>
+                      <div class="message-container">
+                          <label id="message-label" for="user-message">Message</label>
+                          <div class="subject-container">
+                              <textarea id="subject" name="subject" placeholder="Subject..." style="height:40px;" minlength="1" maxlength="80" disabled></textarea>
+                          </div>
+                          <textarea id="user-message" name="user-message" placeholder="(Please write something anything :)..." style="height:200px;" minlength="1" maxlength="1000" disabled></textarea>
+                          <div id="char-counter" class="char-counter-text">Characters (current/max): 0/1000</div>
+                      </div>
+                      <button class="send-form-button" id="send-button" disabled>Send</button>
+                      <!-- Bear alert-text emoji from: https://textemoji.net/bear/ -->
+                  </div>
+              </div>
+
+          </div>
+      </form>
+  </div>
+
+  <div class="copyright">
+      <p class="all-rights-reserved"></p>
+  </div>
+</div>
+
+      <script async src="./scripts/language.js"></script>
+      <script async src="./scripts/top-3-todos.js"></script>
+      <script async src="./scripts/future-plans.js"></script>
+      <script async src="./scripts/timer-app.js"></script>
+      <script src="./scripts/photo-script.js"></script>
+      <script async src="./scripts/footer.js"></script>
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script>emailjs.init("uXilaKD1gHjMOC_Fk");</script>
+      <script async src="./scripts/contact-form.js"></script>
+</body>
+</html>
