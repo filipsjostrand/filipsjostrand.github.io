@@ -1,0 +1,139 @@
+.timer-section {
+    margin-bottom: 80px;
+}
+
+#startButton,
+#pauseButton,
+#resetButton {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startButton {
+    background-color: rgb(108, 158, 108);
+}
+
+#pauseButton {
+    background-color: rgb(218, 151, 89);
+}
+
+#resetButton {
+    background-color: rgb(136, 136, 136);
+}
+
+#hours,
+#minutes,
+#seconds,
+#tenths,
+#countMode {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0.85;
+}
+
+#hours {
+    width: 41px;
+    margin-left: 27px;
+}
+
+#minutes {
+    width: 40px;
+    margin-left: 27px;
+}
+
+#seconds {
+    width: 41px;
+    margin-left: 15px;
+}
+
+#tenths {
+    width: 42px;
+    margin-left: 15px;
+}
+
+#countMode {
+    margin-left: 48px;
+    cursor: pointer;
+}
+
+.timerDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 5px;
+}
+
+#timer-time {
+    margin-top: 0px;
+}
+
+#media-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#iframe-container-e,
+#iframe-container-f {
+    display: flex;
+    margin-top: 25px;
+    border-radius: 20px;
+    background-color: rgb(24, 24, 24);
+    overflow: hidden;
+}
+
+a:hover {
+    color: rgb(211, 211, 211);
+    cursor: pointer;
+}
+
+a:link, a:visited {
+    color: rgb(211, 211, 211);
+}
+
+a:link:active, a:visited:active {
+    color: rgb(85, 75, 107);
+  }
+
+  .timer-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+/* Computer screens and larger (start) */
+@media screen and (min-width: 1024px) {
+
+    .timer-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .timer-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+}
+
+/* Tablets and larger screens */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .timer-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .timer-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+}
+
+  /* Tablets and larger screens (end) */
+
+/* Mobile screens (start) */
+/* @media screen and (max-width: 767px) {
+} */
