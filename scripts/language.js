@@ -51,10 +51,114 @@
   document.getElementById('timer').innerHTML = navbarTimer[selectedLanguage];
   document.getElementById('about-me').innerHTML = navbarAbout[selectedLanguage];
 
-  const weekdayDisplayText = {
+  const monDayAbb = {
+    sv: "Mån",
+    en: "Mon",
+  }
+  const tueDayAbb = {
+    sv: "Tis",
+    en: "Tue",
+  }
+  const wedDayAbb = {
     sv: "Ons",
     en: "Wed",
   }
+  const thuDayAbb = {
+    sv: "Tor",
+    en: "Thu",
+  }
+  const friDayAbb = {
+    sv: "Fre",
+    en: "Fri",
+  }
+  const satDayAbb = {
+    sv: "Lör",
+    en: "Sat",
+  }
+  const sunDayAbb = {
+    sv: "Sön",
+    en: "Sun",
+  }
+
+  // Get the current day of the week (0 = Sunday, 1 = Monday, ...)
+  var todaysWeekdayAbbNr = new Date().getDay();
+
+  // Get the image element by its ID
+  var dailyAbbreviation;
+
+function getTodaysDayAbbreviation(todaysWeekdayAbbNr) {
+  console.log("getTodaysDayAbbreviation() körs");
+
+  console.log("selectedLanguage = " + selectedLanguage);
+
+  console.log("todaysWeekdayAbbNr = " + todaysWeekdayAbbNr);
+
+  console.log("typeof todaysWeekdayAbbNr = " + typeof todaysWeekdayAbbNr);
+
+  if (todaysWeekdayAbbNr === 0) {
+    dailyAbbreviation = sunDayAbb[selectedLanguage];
+  }
+  else if (todaysWeekdayAbbNr === 1) {
+    dailyAbbreviation = monDayAbb[selectedLanguage];
+    console.log("dailyAbbreviation = " + dailyAbbreviation);
+  }
+  else if (todaysWeekdayAbbNr === 2) {
+    dailyAbbreviation = tueDayAbb[selectedLanguage];
+  }
+  else if (todaysWeekdayAbbNr === 3) {
+    dailyAbbreviation = wedDayAbb[selectedLanguage];
+  }
+  else if (todaysWeekdayAbbNr === 4) {
+    dailyAbbreviation = thuDayAbb[selectedLanguage];
+  }
+  else if (todaysWeekdayAbbNr === 5) {
+    dailyAbbreviation = friDayAbb[selectedLanguage];
+  }
+  else if (todaysWeekdayAbbNr === 6) {
+    dailyAbbreviation = satDayAbb[selectedLanguage];
+  }
+  return dailyAbbreviation;
+}
+
+ // Get the current day number of the week (0 = Sunday, 1 = Monday, ...)
+ var todaysWeekdayAbbNr = new Date().getDay();
+
+ // Day id variable
+ var dailyAbbreviation;
+
+function getTodaysDayAbbreviation(todaysWeekdayAbbNr) {
+ console.log("getTodaysDayAbbreviation() körs");
+
+ console.log("selectedLanguage = " + selectedLanguage);
+
+ console.log("todaysWeekdayAbbNr = " + todaysWeekdayAbbNr);
+
+ console.log("typeof todaysWeekdayAbbNr = " + typeof todaysWeekdayAbbNr);
+
+ if (todaysWeekdayAbbNr === 0) {
+   dailyAbbreviation = sunDayAbb[selectedLanguage];
+ }
+ else if (todaysWeekdayAbbNr === 1) {
+   dailyAbbreviation = monDayAbb[selectedLanguage];
+   console.log("dailyAbbreviation = " + dailyAbbreviation);
+ }
+ else if (todaysWeekdayAbbNr === 2) {
+   dailyAbbreviation = tueDayAbb[selectedLanguage];
+ }
+ else if (todaysWeekdayAbbNr === 3) {
+   dailyAbbreviation = wedDayAbb[selectedLanguage];
+ }
+ else if (todaysWeekdayAbbNr === 4) {
+   dailyAbbreviation = thuDayAbb[selectedLanguage];
+ }
+ else if (todaysWeekdayAbbNr === 5) {
+   dailyAbbreviation = friDayAbb[selectedLanguage];
+ }
+ else if (todaysWeekdayAbbNr === 6) {
+   dailyAbbreviation = satDayAbb[selectedLanguage];
+ }
+ return dailyAbbreviation;
+}
 
 // Översättning Top3 Todos
 
@@ -285,7 +389,7 @@ const recTue = {
 }
 const recWed = {
   sv: 'Ons',
-  en: 'wed',
+  en: 'Wed',
 }
 const recThu = {
   sv: 'Tor',
@@ -301,7 +405,7 @@ const recSat = {
 }
 const recSun = {
   sv: 'Sön',
-  en: 'Sön',
+  en: 'Sun',
 }
 
 const eventDurationDay = {
@@ -628,7 +732,7 @@ const userMessagePlaceholder = {
           document.getElementById('about-me').innerHTML = navbarAbout[selectedLanguage];
           document.querySelector('.info').innerHTML = infoBullets[selectedLanguage];
 
-          document.getElementById('weekday-display').innerHTML = weekdayDisplayText[selectedLanguage];
+          document.getElementById('weekday-display').innerHTML = getTodaysDayAbbreviation(todaysWeekdayAbbNr);
 
           document.querySelector('.add-button-v2').innerHTML = addButton2[selectedLanguage];
           document.getElementById('top3-label').innerHTML = top3Label[selectedLanguage];
