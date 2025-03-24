@@ -223,12 +223,12 @@ const futureHeading = {
 }
 
 const futureDesc = {
-  sv: `Hantera <u id="current-plan-words">Framtidsplaner</u> och visa <u id="past-tasks-words">Tidigare uppgifter</u>:
+  sv: `Hantera <u id="current-plan-words">Framtidsplaner</u> och visa <u id="past-tasks-words">Tidigare händelser</u>:
     <ul>
       <li id="add-list">Lägg till uppgift / Ladda fil (Schema).</li>
       <li id="save-list">Spara (Schema).</li>
       <li id="edit-list">Redigera (i tabell).</li>
-      <li id="copy-clear-list">Kopiera/rensa (tidigare uppgifter).</li>
+      <li id="copy-clear-list">Kopiera/rensa (tidigare händelser).</li>
     </ul>
   `,
   en: `Handle <u id="current-plan-words">"Future Plans"</u> and watch <u id="past-tasks-words">Past tasks</u>:
