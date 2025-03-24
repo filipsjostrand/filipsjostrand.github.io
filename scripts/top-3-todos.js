@@ -321,3 +321,16 @@ var todayDate = new Date();
       // Display current week number
       const weekDisplayTop3 = document.getElementById('week-display');
         weekDisplayTop3.textContent = "Week: " + weekNumber;
+
+      // Toggle info-div
+      const toggleLink = document.getElementById("toggle-link");
+      const content = document.getElementById("content");
+
+      toggleLink.addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent the anchor from navigating or refreshing the page
+          if (content.style.display === "none") {
+              content.style.display = "block"; // Show the content as flex
+          } else {
+              content.style.display = "none"; // Hide the content
+          }
+      });
