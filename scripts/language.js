@@ -750,7 +750,7 @@ const userMessagePlaceholder = {
           document.getElementById('sun-day').innerHTML = recSun[selectedLanguage];
 
           document.getElementById('event-duration-day').innerHTML = eventDurationDay[selectedLanguage];
-         document.getElementById('every-week-label').innerHTML = eachWeek[selectedLanguage]; = eachWeek[selectedLanguage];
+         document.getElementById('every-week-label').innerHTML = eachWeek[selectedLanguage];
 
           document.getElementById('event-duration-week').innerHTML = eventDurationWeek[selectedLanguage];
           document.getElementById('event-duration-month').innerHTML = eventDurationMonth[selectedLanguage];
