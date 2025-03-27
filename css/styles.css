@@ -408,6 +408,8 @@ h3 {
   opacity: 0.9;
   border-radius: 0 !important;
   border-color: rgb(190, 189, 189);
+  border-top-color:rgb(165, 165, 165);
+  border-bottom-color:rgb(165, 165, 165);
 }
 
 #todo-container {
