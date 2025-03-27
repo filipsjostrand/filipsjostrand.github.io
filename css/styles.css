@@ -632,7 +632,9 @@ h3 {
   height: 34px;
   background-color: rgb(202, 202, 202);
   color: rgb(0, 0, 0);
-  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 3px;
 }
 
 /* Initially hide the color switcher */
