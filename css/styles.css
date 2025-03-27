@@ -356,6 +356,7 @@ h3 {
 
 .todo-color {
   height: 34px;
+  background-color: rgb(228, 228, 228);
   border-color: rgb(154, 154, 154);
   border: solid 1px rgb(196, 196, 196);
   cursor: pointer;
