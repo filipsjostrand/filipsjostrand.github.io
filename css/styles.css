@@ -629,8 +629,10 @@ h3 {
 
 .todo-date,
 .todo-text {
+  height: 34px;
   background-color: rgb(202, 202, 202);
   color: rgb(0, 0, 0);
+  padding: 0px;
 }
 
 /* Initially hide the color switcher */
