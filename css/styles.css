@@ -406,7 +406,7 @@ h3 {
   height: 100%;
   opacity: 0.9;
   border-radius: 0 !important;
-  border-color: white;
+  border-color: rgb(190, 189, 189);
 }
 
 #todo-container {
