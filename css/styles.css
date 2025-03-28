@@ -318,6 +318,8 @@ h3 {
 .todo-text {
   scrollbar-width: none;
   border-radius: 0 !important;
+  padding-left: 6px;
+  border-color: rgb(114, 114, 114);
 }
 
 .grid-item {
@@ -631,6 +633,8 @@ h3 {
       border-bottom-right-radius: 0 !important;
       border-right: 0 !important;
       padding-left: 6px;
+      border-top-color: rgb(114, 114, 114);
+      border-bottom-color: rgb(114, 114, 114);
     }
 
     #status {
@@ -644,7 +648,6 @@ h3 {
   color: rgb(0, 0, 0);
   padding-top: 1px;
   padding-bottom: 0px;
-  border-color: rgb(114, 114, 114);
 }
 
 /* Initially hide the color switcher */
