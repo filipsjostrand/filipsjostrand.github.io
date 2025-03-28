@@ -358,8 +358,7 @@ h3 {
   height: 34px;
   line-height: 34px;
   background-color: rgb(228, 228, 228);
-  border-color: rgb(154, 154, 154);
-  border: solid 1px rgb(196, 196, 196);
+  border: solid 1px rgb(151, 151, 151);
   cursor: pointer;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -792,6 +791,10 @@ h3 {
 
   /* Future plans (start) */
 
+  #add-todo-text {
+    border-top-color:rgb(255, 255, 255);
+  }
+  
   #future-plans-section {
     display: flex;
     align-items: center;
@@ -939,6 +942,10 @@ h3 {
     width: 350px;
   }
 
+  #add-todo-text {
+    border-top-color:rgb(255, 255, 255);
+  }
+  
   #future-plans-section {
     width: 100vw;
     display: flex;
