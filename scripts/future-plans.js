@@ -531,6 +531,18 @@ const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
         return new Date(cetTime);
     }
 
+        // _ _ _
+        // Function to get the current date in CET (Format: YYYY-MM-DD)
+        function getCETDateYYYYMMDD() {
+            const now = new Date();
+            return new Intl.DateTimeFormat("sv-SE", {
+                timeZone: "Europe/Berlin", // CET Timezone
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit"
+            }).format(now);
+        }
+        // _ _ _
 
     function capitalizeFirstLetter(str) {
         if (!str) return ''; // Handle empty strings
@@ -551,7 +563,7 @@ const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
       // Display today's date
       const dateDisplay = document.getElementById('date-display');
-      dateDisplay.textContent = `${formatDate(today)}`;
+      dateDisplay.textContent = getCETDateYYYYMMDD();
 
 
 
