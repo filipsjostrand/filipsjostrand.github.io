@@ -111,7 +111,7 @@
               </div>
           </div>
           <br>
-          
+
           <div id="top-3-info-header">
             <a href="#" id="toggle-link"><h4 id="app-info">Application information </h4><div id="info-symbol">ℹ️</div></a>
           </div>
@@ -135,12 +135,20 @@
         <div id="week-plan-info">
           <p id="weekly-desc">
             Check current week schedule
-            <ul>
-              <li id="go-future-plans">Go to "Future Plans" (to add tasks)</li>
-              <ul>
-                <li id="go-future-navbar">Scroll down or click "Future" (navbar)</li>
-              </ul>
-            </ul>
+            
+            <div id="week-info-header">
+              <a href="#" id="toggle-link-week"><h4 id="app-info-week">Application information </h4><div id="info-symbol-week">ℹ️</div></a>
+            </div>
+              <div class="info-week" id="content-week" style="display: none;">
+                <ul>
+                  <li id="go-future-plans">Go to "Future Plans" (to add tasks)</li>
+                  <ul>
+                    <li id="go-future-navbar">Scroll down or click "Future" (navbar)</li>
+                  </ul>
+                </ul>
+                    <br>
+
+              </div>
           </p>
           <div id="week-display-2"></div>
         </div>
@@ -267,11 +275,21 @@
           <div id="future-div"></div>
           <h3 id="future-heading" class="app-heading">Future Plans</h3>
 
-          <p id="future-desc"><u id="current-plan-words"></u><u id="past-tasks-words"></u>.
-            <ul>
-            </ul>
-          </p>
-          <br>
+          <p id="future-remember-save">Save changes!</p>
+
+          <div id="future-info-header">
+            <a href="#" id="toggle-link-future"><h4 id="app-info-future">Application information </h4><div id="info-symbol-future">ℹ️
+
+          </div></a>
+          </div>
+              <div class="info-future" id="content-future" style="display: none;">
+                <p id="future-desc"><u id="current-plan-words"></u><u id="past-tasks-words"></u>.
+                  <ul>
+                  </ul>
+                </p>
+                  <br>
+
+            </div>
 
           <span>➕ <u id="add-task-span">Add Task (below)</u></span><br>
           <div id="add-todo-container">
@@ -516,6 +534,11 @@
                 </div>
                   <button id="clear-past-tasks">Clear Past</button>
               </div>
+<!--
+            </div>
+                <button id="clear-app-data">Clear All (App data)</button>
+            </div> -->
+
           </div>
         </div>
       </section>
