@@ -135,9 +135,20 @@ const addButton2 = {
 }
 
 const appInfo = {
-  sv: `App-information`,
-  en: `Application information`,
+  sv: `App-information (Fixa)`,
+  en: `Application information (Top3)`,
 }
+
+const appInfoWeek = {
+  sv: `App-information (Vecka)`,
+  en: `Application information (Week)`,
+}
+
+const appInfoFuture = {
+  sv: `App-information (Plan)`,
+  en: `Application information (Future)`,
+}
+
 
 const infoBullets = {
   sv: `<ol>
@@ -220,6 +231,11 @@ const sunWeekSchedule = {
 const futureHeading = {
   sv: `Framtidsplaner`,
   en: `Future Plans`,
+}
+
+const futureRememberSave = {
+  sv: `- Kom ihåg att spara!`,
+  en: `- Remember to save!`,
 }
 
 const futureDesc = {
@@ -504,6 +520,11 @@ const clearPastTasksButtonTranslate = {
   en: 'Clear Past',
 }
 
+// const clearAllAppDataButtonTranslate = {
+//   sv: 'Rensa data (web-app)',
+//   en: 'Clear All (App data)',
+// }
+
 // Timer
 const timerLimit = {
   sv: 'Välj en tidsgräns:',
@@ -711,6 +732,8 @@ const userMessagePlaceholder = {
           // Framtidsplaner
           document.getElementById('future-heading').innerHTML = futureHeading[selectedLanguage];
           document.getElementById('future-desc').innerHTML = futureDesc[selectedLanguage];
+          document.getElementById('app-info-week').innerHTML = appInfoWeek[selectedLanguage];
+          document.getElementById('app-info-future').innerHTML = appInfoFuture[selectedLanguage];
 
           document.getElementById('add-task-span').innerHTML = addTaskSpan[selectedLanguage];
 
@@ -750,7 +773,7 @@ const userMessagePlaceholder = {
           document.getElementById('sun-day').innerHTML = recSun[selectedLanguage];
 
           document.getElementById('event-duration-day').innerHTML = eventDurationDay[selectedLanguage];
-         document.getElementById('every-week-label').innerHTML = eachWeek[selectedLanguage];
+          document.getElementById('every-week-label').innerHTML = eachWeek[selectedLanguage];
 
           document.getElementById('event-duration-week').innerHTML = eventDurationWeek[selectedLanguage];
           document.getElementById('event-duration-month').innerHTML = eventDurationMonth[selectedLanguage];
@@ -795,6 +818,7 @@ const userMessagePlaceholder = {
           document.getElementById('past-tasks').innerHTML = pastTasks[selectedLanguage];
           document.getElementById('copy-or-clear-past').innerHTML = copyOrClearPast[selectedLanguage];
           document.getElementById('clear-past-tasks').innerHTML = clearPastTasksButtonTranslate[selectedLanguage];
+          // document.getElementById('clear-app-data').innerHTML = clearAllAppDataButtonTranslate[selectedLanguage];
 
 
           // Timer
