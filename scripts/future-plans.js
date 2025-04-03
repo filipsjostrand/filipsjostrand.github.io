@@ -1,5 +1,31 @@
 "use strict"
 
+// Toggle info-div (week schedule)
+const toggleLinkWeek = document.getElementById("toggle-link-week");
+const contentWeek = document.getElementById("content-week");
+
+toggleLinkWeek.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent the anchor from navigating or refreshing the page
+    if (contentWeek.style.display === "none") {
+        contentWeek.style.display = "flex"; // Show the content as flex
+    } else {
+        contentWeek.style.display = "none"; // Hide the content
+    }
+});
+
+// Toggle info-div (future plans)
+const toggleLinkFuture = document.getElementById("toggle-link-future");
+const contentFuture = document.getElementById("content-future");
+
+toggleLinkFuture.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent the anchor from navigating or refreshing the page
+    if (contentFuture.style.display === "none") {
+        contentFuture.style.display = "flex"; // Show the content as flex
+    } else {
+        contentFuture.style.display = "none"; // Hide the content
+    }
+});
+
 let fileHandle;
 const dateInput = document.getElementById('date-input');
 
