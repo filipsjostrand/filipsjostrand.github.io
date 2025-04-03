@@ -135,18 +135,18 @@ const addButton2 = {
 }
 
 const appInfo = {
-  sv: `App-information (Fixa)`,
-  en: `Application information (Top3)`,
+  sv: `Fixa`,
+  en: `Top3`,
 }
 
 const appInfoWeek = {
-  sv: `App-information (Vecka)`,
-  en: `Application information (Week)`,
+  sv: `Vecka`,
+  en: `Week`,
 }
 
 const appInfoFuture = {
-  sv: `App-information (Plan)`,
-  en: `Application information (Future)`,
+  sv: `Plan`,
+  en: `Future`,
 }
 
 
