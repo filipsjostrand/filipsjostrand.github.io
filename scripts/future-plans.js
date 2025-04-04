@@ -1,5 +1,7 @@
 "use strict"
 
+selectedLanguage = localStorage.getItem("languageVariable");
+
 // Toggle info-div (week schedule)
 const toggleLinkWeek = document.getElementById("toggle-link-week");
 const contentWeek = document.getElementById("content-week");
