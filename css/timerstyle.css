@@ -107,6 +107,10 @@ a:link:active, a:visited:active {
     justify-content: center;
   }
 
+  #trigger-action-relaxation {
+    margin-bottom: 0px;
+}
+
 /* Computer screens and larger (start) */
 @media screen and (min-width: 1024px) {
 
