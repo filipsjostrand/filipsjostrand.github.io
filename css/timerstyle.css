@@ -107,8 +107,10 @@ a:link:active, a:visited:active {
     justify-content: center;
   }
 
-  #trigger-action-relaxation {
-    margin-bottom: 0px;
+  #trigger-action-relaxation,
+  #trigger-act {
+    display: flex;
+    justify-content: center;
 }
 
 /* Computer screens and larger (start) */
