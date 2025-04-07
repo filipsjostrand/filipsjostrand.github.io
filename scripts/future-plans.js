@@ -1,5 +1,73 @@
 "use strict"
 
+// selectedLanguage = localStorage.getItem("languageVariable");
+
+// Alert message translations
+const emptyTaskAlert = {
+    sv: `Lägg till uppgift först d.,.`,
+    en: `Please add todos before editing.`,
+    }
+
+const copyAlreadyExists = {
+    sv: `Aktuell todo finns redan.`,
+    en: `Current todo already exists.`,
+    }
+
+const recurringMonthDateAlert = {
+    sv: `Kan inte lägga till återkommande månads(-datum) efter den 28:e.`,
+    en: `Can´t add recurring month (dates) after the 28th.`,
+    }
+
+const copyExistsInInterval = {
+    sv: `Todo-kopia finns redan på intervallet.`,
+    en: `Todo duplicate exists in the interval.`,
+}
+
+const durationDayNumberLargerThanFourteen = {
+    sv: `Maximalt antal dagar för återkommande uppgifter är satt till 14 (lägg till fler datum för fler repetitioner). `,
+    en: `Maximum duration day number set to 14 (Add multiple dates if duration > 14 days).`,
+}
+
+const cantPlanThePast = {
+    sv: `Gårdagen kan inte planeras :|. `,
+    en: `You can't make plans for yesterdays :).`,
+}
+
+const selectRecurringDaysOrDuration = {
+    sv: `Gör ett val (välj dagar eller varaktighet)`,
+    en: `Please make a selection (Select days or duration).`,
+}
+
+const selectRecurringNumberOfWeeks = {
+    sv: `Gör ett val (välj vecko-intervall)`,
+    en: `Please make a selection (Number of weeks).`,
+}
+
+const alertAddBeforeEdit = {
+    sv: `Lägg till uppgift (innan ändringar görs).`,
+    en: `Add tasks before editing.`,
+}
+
+const alertCheckValidDate = {
+    sv: `Ogiltigt (otillåtet) värde. Föregående inlagt datum läggs in i stället.`,
+    en: `Invalid date. Assigning default date.`,
+}
+
+const alertEnterFileName = {
+    sv: `Vänligen välj ett filnamn.`,
+    en: `Please enter a file name.`,
+}
+
+const alertFileNameElementNotFound = {
+    sv: `Filnamn saknas.`,
+    en: `File name element not found.`,
+}
+
+const alertEnterFileName2 = {
+    sv: `Vänligen välj ett filnamn.`,
+    en: `Please enter a file name.`,
+}
+
 selectedLanguage = localStorage.getItem("languageVariable");
 
 // Toggle info-div (week schedule)
@@ -570,7 +638,8 @@ const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
                 day: "2-digit"
             }).format(now);
         }
-        // _ _ _
+            // _ _ _
+
 
     function capitalizeFirstLetter(str) {
         if (!str) return ''; // Handle empty strings
@@ -848,7 +917,7 @@ function extractTimeFromTodo(todo) {
 // Function to handle clicks
 function handleClickWhenEmpty(e) {
     if (plannedTodos.length === 0 || plannedTodos.length === undefined) {
-        alert("Please add todos before editing.");
+        alert(emptyTaskAlert[selectedLanguage]);
     } else {
     }
 }
@@ -1479,7 +1548,7 @@ let plannedTodosObjectsArray = [];
         }
 
         if (plannedTodos.length > 0 && isCopy === true) {
-            alert("Current todo already exists.");
+            alert(copyAlreadyExists[selectedLanguage]);
             return 0;
         }
         // Add todo-object to plannedTodos (object array)
@@ -1524,7 +1593,7 @@ let plannedTodosObjectsArray = [];
                             isCopy = true;
                         }
                         if (isCopy === true) {
-                            alert("Todo duplicate exists in the interval.");
+                            alert(copyExistsInInterval[selectedLanguage]);
                             return 0;
                         }
                         // isCopy exists(?)
@@ -1609,7 +1678,7 @@ let plannedTodosObjectsArray = [];
                         isCopy = true;
                     }
                     if (isCopy === true) {
-                        alert("Todo duplicate exists in the interval.");
+                        alert(copyExistsInInterval[selectedLanguage]);
                         return 0;
                     }
                 })
@@ -1658,7 +1727,7 @@ let plannedTodosObjectsArray = [];
         }
         // Don´t add monthly recurring todos if date > 28
         else if (newTodo.date >= dateDisplay.textContent && newTodo.isRecurring === true && newTodo.recurringType === 'm' && isDayLessThan29(newTodo.date) === false) {
-            alert('Can´t add recurring month dates > 28');
+            alert(recurringMonthDateAlert[selectedLanguage]);
         }
 
         // Add weekly recurring todo
@@ -1700,7 +1769,7 @@ let plannedTodosObjectsArray = [];
                             isCopy = true;
                         }
                         if (isCopy === true) {
-                            alert("Todo duplicate exists in the interval.");
+                            alert(copyExistsInInterval[selectedLanguage]);
                             return 0;
                         }
                         // isCopy exists(?) (2)
@@ -2121,7 +2190,7 @@ let plannedTodosObjectsArray = [];
                         let durationDaysNumber = Number(dayInput.value);
 
                         if (durationDaysNumber > 14) {
-                            alert("Duration set to 14 (Add multiple todos if duration > 14 days)")
+                            alert(durationDayNumberLargerThanFourteen[selectedLanguage])
                             durationDaysNumber = 14;
                         }
 
@@ -2184,7 +2253,7 @@ let plannedTodosObjectsArray = [];
 
         // Past dates should not be added!?
         else if (plannedTodos.length >= 0 && isCopy === false && newTodo.date < dateDisplay.textContent) {
-            alert("You can't make plans for yesterdays :)");
+            alert(cantPlanThePast[selectedLanguage]);
         }
 
         // _ _ _
@@ -2215,12 +2284,12 @@ let plannedTodosObjectsArray = [];
 
     // Get an alert if recurring day-s radio button is selected (but 'Select days' or 'Duration (days) are unchecked)
     if (isRecurringDayRadioButton.checked === true && isRecurringWeekDayNameRadioButton.checked === false && isRecurringWeekDayNumberRadioButton.checked === false) {
-        alert('Please make a selection (Select days or duration)');
+        alert(selectRecurringDaysOrDuration[selectedLanguage]);
     }
 
     // Get an alert if recurring day-s radio button is selected (but 'Select days' or 'Duration (days) are unchecked)
     if (isRecurringWeekRadioButton.checked === true && isRecurringWeekNrOneRadioButton.checked === false && isRecurringWeekNrTwoRadioButton.checked === false && isRecurringWeekNrThreeRadioButton.checked === false && isRecurringWeekNrFourRadioButton.checked === false) {
-        alert('Please make a selection (Number of weeks)');
+        alert(selectRecurringNumberOfWeeks[selectedLanguage]);
     }
 
     recurringYearDayDurationInput.value = 1;
@@ -2321,7 +2390,7 @@ function updateRecurringPlannedTodos(plannedTodos) {
                 const todoValue = todoTextArea.value;
 
                 if (plannedTodos.length === 0) {
-                    alert("Add tasks before editing");
+                    alert(alertAddBeforeEdit[selectedLanguage]);
                     todoTextArea.blur();
                     textInputValue.focus();
                 } else if (plannedTodos.length > 0) {
@@ -2400,7 +2469,7 @@ function updateRecurringPlannedTodos(plannedTodos) {
                 }
             } else if (newDate === undefined || regexA.test(newDate) === false || regexB.test(newDate) === false || isValidDateExceptFebruary(newDate) === false || isValidFebruaryDate(newDate) === false) {
                 // If invalid or not today or later, assign defaultDate
-                alert("Invalid date. Assigning default date.");
+                alert(alertCheckValidDate[selectedLanguage]);
 
                 newDate = defaultDate;
                 dateCollection[dataId].value = defaultDate;
@@ -2591,7 +2660,6 @@ function updateRecurringPlannedTodos(plannedTodos) {
                         updateCurrentWeekSchedule(true)
                     }
                     else if (dateInputString = '') {
-                        // alert("Add dates before editing")
                     }
                     // status.textContent = 'No Date textarea is active.';
 
@@ -2725,7 +2793,8 @@ function checkIfDateAndTextAreEmpty() {
             plannedTodos[dataId].date = '';
             plannedTodos[dataId].todo = '';
             plannedTodos[dataId].color = '';
-            todoColorCollection[dataId].style.backgroundColor = 'rgb(221, 221, 221)';
+            // todoColorCollection[dataId].style.backgroundColor = 'rgb(221, 221, 221)';
+            todoColorCollection[dataId].style.backgroundColor = 'rgb(228, 228, 228)';
             plannedTodos[dataId].isEmpty = true;
         }
     }
@@ -2814,7 +2883,6 @@ function checkIfDateAndTextAreEmpty() {
                         || dateCollection[dataId].value !== '' && dateCollection[dataId].value === weekDates[6]
                     ) {
                         dateCollection[dataId].value = '';
-                        alert('Unavailable selection: The task limit has been reached for that day.')
                     }
                 });
             });
@@ -4729,7 +4797,6 @@ function addDynamicTodoContainer(dynamicContainerToken, dynamicContainerDataId) 
                 || dateCollection[dataId].value !== '' && dateCollection[dataId].value === weekDates[6]
             ) {
                 dateCollection[dataId].value = '';
-                alert('Unavailable selection: The task limit has been reached for that day.')
             }
 
             // Edit date (1-3 plannedTodos, index: 0-2) (2 start)
@@ -4767,11 +4834,7 @@ function addDynamicTodoContainer(dynamicContainerToken, dynamicContainerDataId) 
 
             // Edit plannedTodos (object) when todo (DOM-list) is changed
 
-            if (todoCollection[dataId].value === "ooa") {
-
-            }
-
-            else if (todoCollection[dataId].value !== '') {
+            if (todoCollection[dataId].value !== '') {
 
                 // Om måndag-array-objekt finns, gå igenom alla måndags-objekt,    OM måndags-objekt-datum är lika plannedTodos-objekt-datum     &&  måndags-objekt-todo är lika plannedTodos-objekt-todo (för aktuell todo-liste-rad)  DÅ  (Hämta todo-värden från DOM-raden och lägg in i week schedule (för måndags-objekten i tur och ordning, efter "i"))
                 if (currentMondayTodos.length > 0) {
@@ -5078,7 +5141,7 @@ function save_func() {
 
     // Check if the file name is not empty
     if (!fileName) {
-        alert("Please enter a file name.");
+        alert(alertEnterFileName[selectedLanguage]);
         return;
     }
 
@@ -5094,7 +5157,6 @@ function save_func() {
 
         let combinedString = planned_data + delimiter + past_data;
 
-        // alert("Test save-button");
         var file = new Blob([combinedString],{type:"text/plain"})
         var anchor = document.createElement("a");
         // I want to create a file from this location: "file:///C:/Users/filip/Desktop/Personal_Efficiency_App/index.html"
@@ -5111,14 +5173,14 @@ async function saveAs() {
         // Get the file name from the input field
         const fileNameElement = document.getElementById('file-name');
         if (!fileNameElement) {
-            alert("File name element not found.");
+            alert(alertFileNameElementNotFound[selectedLanguage]);
             return;
         }
 
         // const fileName = fileNameElement.innerText || fileNameElement.textContent;
         const fileName = fileNameElement.value;
         if (!fileName) {
-            alert("Please enter a file name.");
+            alert(alertEnterFileName2[selectedLanguage]);
             return;
         }
 
