@@ -70,7 +70,7 @@ const alertEnterFileName2 = {
 
 if (selectedLanguage === undefined) {
 selectedLanguage = 'sv';
-} else if (typeof(selectedLanguage) === string && typeof(languageVariable) === string) {
+} else if (typeof(selectedLanguage) === "string" && typeof(languageVariable) === "string") {
     selectedLanguage = localStorage.getItem("languageVariable");
 }
 
