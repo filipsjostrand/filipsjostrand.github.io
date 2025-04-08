@@ -68,7 +68,11 @@ const alertEnterFileName2 = {
     en: `Please enter a file name.`,
 }
 
-selectedLanguage = localStorage.getItem("languageVariable");
+if (selectedLanguage === undefined) {
+selectedLanguage = 'sv';
+} else if (typeof(selectedLanguage) === string && typeof(languageVariable) === string) {
+    selectedLanguage = localStorage.getItem("languageVariable");
+}
 
 // Toggle info-div (week schedule)
 const toggleLinkWeek = document.getElementById("toggle-link-week");
