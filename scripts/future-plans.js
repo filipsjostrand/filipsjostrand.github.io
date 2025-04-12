@@ -1,11 +1,14 @@
 "use strict"
 
-// selectedLanguage = localStorage.getItem("languageVariable");
-
 // Alert message translations
 const emptyTaskAlert = {
     sv: `Lägg till uppgift först d.,.`,
     en: `Please add todos before editing.`,
+    }
+
+const ifDurationGreaterThanTwentyEight = {
+    sv: `Maxgräns för antal återkommande uppgifter är 28.`,
+    en: `The upper limit for the number of recurring tasks is 28.`,
     }
 
 const copyAlreadyExists = {
@@ -1380,12 +1383,28 @@ let plannedTodosObjectsArray = [];
         }
         else if (selectedPeriod === 'week') {
             duration = weekInput.value;
+            if (weekInput.value > 28) {
+                alert(ifDurationGreaterThanTwentyEight[selectedLanguage]);
+                weekInput.value = 28;
+                duration = 28;
+            }
         }
         else if (selectedPeriod === 'month') {
             duration = monthInput.value;
+            if (monthInput.value > 28) {
+                alert(ifDurationGreaterThanTwentyEight[selectedLanguage]);
+                monthInput.value = 28;
+                duration = 28;
+            }
         }
         else if (selectedPeriod === 'year') {
-            duration = yearInput.value; }
+            duration = yearInput.value;
+            if (yearInput.value > 28) {
+                alert(ifDurationGreaterThanTwentyEight[selectedLanguage]);
+                yearInput.value = 28;
+                duration = 28;
+            }
+        }
         else {
             duration = "1"; // Default value if no period is selected
         }
