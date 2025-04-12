@@ -76,6 +76,11 @@ const alertEnterFileName2 = {
     en: `Please enter a file name.`,
 }
 
+const confirmRemoveAllCopiesOfRecurringTask = {
+    sv: `Ta bort den här samt alla kopior av den här återkommande uppgiften?`,
+    en: `Remove this task and all the copies of this recurring task?`,
+}
+
 if (selectedLanguage === undefined) {
 selectedLanguage = 'sv';
 } else if (typeof(selectedLanguage) === "string" && typeof(languageVariable) === "string") {
@@ -3208,7 +3213,7 @@ let specificTodoContainer = wrapperContainer.getElementsByClassName('todo-contai
 
     function removeAllRecurringCopies() {
         // Display a confirm dialog box
-        let userResponse = confirm("Remove all copies of this recurring task?");
+        let userResponse = confirm(confirmRemoveAllCopiesOfRecurringTask[selectedLanguage]);
 
         // Check the user's response
         if (userResponse) {
