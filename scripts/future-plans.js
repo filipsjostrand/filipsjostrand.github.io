@@ -6,6 +6,11 @@ const emptyTaskAlert = {
     en: `Please add todos before editing.`,
     }
 
+const ifDurationGreaterThanSeven = {
+    sv: `Maxgräns för återkommande vecko-uppgifter är 7 dagar.`,
+    en: `The upper limit for recurring week tasks is 7 days.`,
+    }
+
 const ifDurationGreaterThanTwentyEight = {
     sv: `Maxgräns för antal återkommande uppgifter är 28.`,
     en: `The upper limit for the number of recurring tasks is 28.`,
@@ -1383,10 +1388,10 @@ let plannedTodosObjectsArray = [];
         }
         else if (selectedPeriod === 'week') {
             duration = weekInput.value;
-            if (weekInput.value > 28) {
-                alert(ifDurationGreaterThanTwentyEight[selectedLanguage]);
-                weekInput.value = 28;
-                duration = 28;
+            if (weekInput.value > 7) {
+                alert(ifDurationGreaterThanSeven[selectedLanguage]);
+                weekInput.value = 7;
+                duration = 7;
             }
         }
         else if (selectedPeriod === 'month') {
