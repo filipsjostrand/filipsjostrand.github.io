@@ -224,7 +224,10 @@ const sunWeekSchedule = {
   sv: `Sön`,
   en: `Sun`,
 }
-
+const currentTimeZone = {
+  sv: `Aktuell tidszon: Central European Standard Time (CET)`,
+  en: `Current Time Zone: Central European Standard Time (CET)`,
+}
 
 // Översättning (Future plans)
 
@@ -593,6 +596,10 @@ const aboutHeading = {
   en: 'About',
 }
 
+const aboutName = {
+  sv: `Namn: Filip Sjöstrand`,
+  en: `Name: Filip Sjöstrand`,
+}
 const aboutYob = {
   sv: `Födelseår: 1985`,
   en: `Birthyear: 1985`,
@@ -855,7 +862,7 @@ const userMessagePlaceholder = {
           document.getElementById('rec-fri-day').innerHTML = friWeekSchedule[selectedLanguage];
           document.getElementById('rec-sat-day').innerHTML = satWeekSchedule[selectedLanguage];
           document.getElementById('rec-sun-day').innerHTML = sunWeekSchedule[selectedLanguage];
-
+          document.getElementById('current-time-zone').innerHTML = currentTimeZone[selectedLanguage];
 
 
           // Framtidsplaner
@@ -976,6 +983,7 @@ const userMessagePlaceholder = {
           // Om
           document.getElementById('about-heading').innerHTML = aboutHeading[selectedLanguage];
 
+          document.getElementById('about-name').innerHTML = aboutName[selectedLanguage];
           document.getElementById('about-yob').innerHTML = aboutYob[selectedLanguage];
           document.getElementById('about-por').innerHTML = aboutPor[selectedLanguage];
           document.getElementById('about-contact-info').innerHTML = aboutContactInfo[selectedLanguage];
