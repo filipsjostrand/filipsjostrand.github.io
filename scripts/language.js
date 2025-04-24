@@ -18,6 +18,26 @@
 
  var languageSelectId = document.getElementById("select-language");
 
+  // _ _ _
+
+ var selectedLanguage;
+
+ // Select the dropdown element
+ var languageSelectElement = document.querySelector('.language-selector');
+ var languageSelectVariable;
+ var languageVariable = 'sv';
+ sessionStorage.setItem("languageVariable", languageVariable);
+ var selectedValue;
+
+      languageSelectElement.value = 'sv'
+
+      if (!selectedLanguage) {
+        // HERE!!
+        selectedLanguage = 'sv';
+        runTranslation(selectedLanguage);
+      }
+
+
   //Översättning (navbar)
 
   const navbarTodo = {
@@ -789,22 +809,8 @@ const userMessagePlaceholder = {
   en: "(Please write something anything :)...",
 }
 
-        var selectedLanguage;
-
-        // Select the dropdown element
-        var languageSelectElement = document.querySelector('.language-selector');
-        var languageSelectVariable;
-        var languageVariable = 'sv';
-        sessionStorage.setItem("languageVariable", languageVariable);
-        var selectedValue;
-
-      languageSelectElement.value = 'sv'
-
-      if (!selectedLanguage) {
-        // HERE!!
-        selectedLanguage = 'sv';
-        runTranslation(selectedLanguage);
-      }
+    // _ _ _
+    // _ _ _
 
         // Add a 'change' event listener to the dropdown
         languageSelectElement.addEventListener('change', function() {
