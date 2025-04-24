@@ -14,11 +14,7 @@
     `<img class="flag-img" src="./media/img/${languageFlagImage[selectedLanguage]}" alt="language flag image | https://uxwing.com/tag/country-flag-icons/">`
   };
 
-  // _ _ _
-
  var languageSelectId = document.getElementById("select-language");
-
-  // _ _ _
 
  var selectedLanguage;
 
@@ -59,12 +55,6 @@ selectedLanguage = sessionStorage.getItem("languageVariable");
     sv: "Om",
     en: "About",
   }
-
-  document.getElementById('top-todos').innerHTML = navbarTodo[selectedLanguage];
-  document.getElementById('weekly-calendar').innerHTML = navbarWeek[selectedLanguage];
-  document.getElementById('important-dates').innerHTML = navbarPlan[selectedLanguage];
-  document.getElementById('timer').innerHTML = navbarTimer[selectedLanguage];
-  document.getElementById('about-me').innerHTML = navbarAbout[selectedLanguage];
 
   const monDayAbb = {
     sv: "Mån",
@@ -177,14 +167,6 @@ const infoBullets = {
       <li><b>Replace: </b> &nbsp Write a new todo text &nbsp &nbsp → &nbsp &nbsp select "#" (to replace) in rolldown &nbsp &nbsp → &nbsp &nbsp press "Add Todo".</li>
       </ol>`,
   }
-
-
-document.querySelector('.info').innerHTML = infoBullets[selectedLanguage];
-document.querySelector('.add-button-v2').innerHTML = addButton2[selectedLanguage];
-document.getElementById('top3-label').innerHTML = top3Label[selectedLanguage];
-document.getElementById('input-box-v2').placeholder = placeholderTop3Text[selectedLanguage];
-document.getElementById('app-info').innerHTML = appInfo[selectedLanguage];
-document.getElementById('todos-heading').innerHTML = top3Todos[selectedLanguage];
 
 // Översättning (veckoschema)
 // week schedule
@@ -846,7 +828,7 @@ const userMessagePlaceholder = {
           document.getElementById('timer').innerHTML = navbarTimer[selectedLanguage];
           document.getElementById('about-me').innerHTML = navbarAbout[selectedLanguage];
           document.querySelector('.info').innerHTML = infoBullets[selectedLanguage];
-
+          
           document.getElementById('weekday-display').innerHTML = getTodaysDayAbbreviation(todaysWeekdayAbbNr);
 
           document.querySelector('.add-button-v2').innerHTML = addButton2[selectedLanguage];
@@ -854,7 +836,7 @@ const userMessagePlaceholder = {
           document.getElementById('input-box-v2').placeholder = placeholderTop3Text[selectedLanguage];
           document.getElementById('app-info').innerHTML = appInfo[selectedLanguage];
           document.getElementById('todos-heading').innerHTML = top3Todos[selectedLanguage];
-
+          
           // Veckoschema
           document.getElementById('weekly-heading').innerHTML = weekHeading[selectedLanguage];
           document.getElementById('weekly-desc').innerHTML = weekPDesc[selectedLanguage];
@@ -1043,5 +1025,3 @@ const userMessagePlaceholder = {
 
           changeFlagImage();
         }
-
-runTranslation(selectedLanguage);
