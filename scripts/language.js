@@ -31,12 +31,6 @@
 
       languageSelectElement.value = 'sv'
 
-      if (!selectedLanguage) {
-        // HERE!!
-        selectedLanguage = 'sv';
-        runTranslation(selectedLanguage);
-      }
-
 selectedLanguage = sessionStorage.getItem("languageVariable");
 
   //Översättning (navbar)
@@ -811,6 +805,11 @@ const userMessagePlaceholder = {
 }
 
     // _ _ _
+      if (!selectedLanguage) {
+        // HERE!!
+        selectedLanguage = 'sv';
+        runTranslation(selectedLanguage);
+      }
     // _ _ _
 
         // Add a 'change' event listener to the dropdown
