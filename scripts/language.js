@@ -1043,3 +1043,5 @@ const userMessagePlaceholder = {
 
           changeFlagImage();
         }
+
+runTranslation(selectedLanguage);
