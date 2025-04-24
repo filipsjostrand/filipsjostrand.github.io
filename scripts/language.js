@@ -37,6 +37,7 @@
         runTranslation(selectedLanguage);
       }
 
+selectedLanguage = sessionStorage.getItem("languageVariable");
 
   //Översättning (navbar)
 
