@@ -174,8 +174,6 @@ const infoBullets = {
 const weekHeading = {
   sv: `Veckoschema`,
   en: `Week schedule`,
-  // sv: veckoSchemaSV,
-  // en: weekScheduleEN,
 }
 
 const weekPDesc = {
@@ -522,11 +520,6 @@ const clearPastTasksButtonTranslate = {
   en: 'Clear Past',
 }
 
-// const clearAllAppDataButtonTranslate = {
-//   sv: 'Rensa data (web-app)',
-//   en: 'Clear All (App data)',
-// }
-
 // Timer
 const timerLimit = {
   sv: 'Välj en tidsgräns:',
@@ -788,7 +781,6 @@ const userMessagePlaceholder = {
 
     // _ _ _
       if (!selectedLanguage) {
-        // HERE!!
         selectedLanguage = 'sv';
         runTranslation(selectedLanguage);
       }
