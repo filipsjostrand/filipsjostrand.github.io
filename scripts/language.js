@@ -20,7 +20,6 @@
    var selectedValue;
   
     languageSelectElement.value = 'sv'
-    console.log("languageSelectElement.value (r23) = " + languageSelectElement.value)
   
     selectedLanguage = sessionStorage.getItem("languageVariable");
   
@@ -32,11 +31,8 @@
 
   changeFlagImage();
 
-console.log("#1")
-console.log("selectedLanguage #1 = " + selectedLanguage)
       if (!selectedLanguage) {
         selectedLanguage = 'sv';
-        console.log("selectedLanguage #2 = " + selectedLanguage)
         runTranslation(selectedLanguage);
       }
 
@@ -823,8 +819,6 @@ const userMessagePlaceholder = {
 
         // runTranslation(selectedLanguage);
         function runTranslation(selectedLanguage) {
-
-          console.log("selectedLanguage (i runTranslation(selectedLanguage)) = "+ selectedLanguage);
           
           // Navbar
           document.getElementById('top-todos').innerHTML = navbarTodo[selectedLanguage];
@@ -1029,7 +1023,6 @@ const userMessagePlaceholder = {
           document.getElementById('user-message').placeholder = userMessagePlaceholder[selectedLanguage];
 
           changeFlagImage();
-          console.log("changeFlagImage() har körts: " + changeFlagImage());
         }
 
 runTranslation(selectedLanguage);
