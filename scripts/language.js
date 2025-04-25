@@ -31,6 +31,7 @@
 
   changeFlagImage();
 
+console.log("#1")
       if (!selectedLanguage) {
         selectedLanguage = 'sv';
         runTranslation(selectedLanguage);
