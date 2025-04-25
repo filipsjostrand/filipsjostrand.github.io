@@ -83,7 +83,7 @@ const confirmRemoveAllCopiesOfRecurringTask = {
 
 console.log("selectedLanguage (future-plans test) = " + selectedLanguage)
 
-if (selectedLanguage === undefined) {
+if (selectedLanguage === undefined || selectedLanguage === null) {
 selectedLanguage = 'sv';
 } else if (typeof(selectedLanguage) === "string" && typeof(languageVariable) === "string") {
     selectedLanguage = localStorage.getItem("languageVariable");
