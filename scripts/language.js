@@ -20,6 +20,7 @@
    var selectedValue;
   
     languageSelectElement.value = 'sv'
+    console.log("languageSelectElement.value (r23) = " + languageSelectElement.value)
   
     selectedLanguage = sessionStorage.getItem("languageVariable");
   
