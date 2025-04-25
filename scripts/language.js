@@ -29,6 +29,8 @@
       `<img class="flag-img" src="./media/img/${languageFlagImage[selectedLanguage]}" alt="language flag image | https://uxwing.com/tag/country-flag-icons/">`
     };
 
+  changeFlagImage();
+
   //Översättning (navbar)
 
   const navbarTodo = {
