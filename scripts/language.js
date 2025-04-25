@@ -31,6 +31,11 @@
 
   changeFlagImage();
 
+      if (!selectedLanguage) {
+        selectedLanguage = 'sv';
+        runTranslation(selectedLanguage);
+      }
+
   //Översättning (navbar)
 
   const navbarTodo = {
