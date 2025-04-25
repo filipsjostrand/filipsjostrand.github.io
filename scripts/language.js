@@ -8,26 +8,26 @@
   const dynamicLanguageImage = document.querySelector(".flag-div");
   const fetchLanguageImage = document.querySelector(".flag-div").innerHTML;
 
-  function changeFlagImage() {
-    dynamicLanguageImage.innerHTML =
-    fetchLanguageImage +
-    `<img class="flag-img" src="./media/img/${languageFlagImage[selectedLanguage]}" alt="language flag image | https://uxwing.com/tag/country-flag-icons/">`
-  };
-
- var languageSelectId = document.getElementById("select-language");
-
- var selectedLanguage;
-
- // Select the dropdown element
- var languageSelectElement = document.querySelector('.language-selector');
- var languageSelectVariable;
- var languageVariable = 'sv';
- sessionStorage.setItem("languageVariable", languageVariable);
- var selectedValue;
-
-      languageSelectElement.value = 'sv'
-
-selectedLanguage = sessionStorage.getItem("languageVariable");
+   var languageSelectId = document.getElementById("select-language");
+  
+   var selectedLanguage;
+  
+   // Select the dropdown element
+   var languageSelectElement = document.querySelector('.language-selector');
+   var languageSelectVariable;
+   var languageVariable = 'sv';
+   sessionStorage.setItem("languageVariable", languageVariable);
+   var selectedValue;
+  
+    languageSelectElement.value = 'sv'
+  
+    selectedLanguage = sessionStorage.getItem("languageVariable");
+  
+    function changeFlagImage() {
+      dynamicLanguageImage.innerHTML =
+      fetchLanguageImage +
+      `<img class="flag-img" src="./media/img/${languageFlagImage[selectedLanguage]}" alt="language flag image | https://uxwing.com/tag/country-flag-icons/">`
+    };
 
   //Översättning (navbar)
 
