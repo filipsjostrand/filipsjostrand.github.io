@@ -32,8 +32,10 @@
   changeFlagImage();
 
 console.log("#1")
+console.log("selectedLanguage #1 = " + selectedLanguage)
       if (!selectedLanguage) {
         selectedLanguage = 'sv';
+        console.log("selectedLanguage #2 = " + selectedLanguage)
         runTranslation(selectedLanguage);
       }
 
