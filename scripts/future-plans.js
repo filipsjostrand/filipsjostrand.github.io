@@ -81,8 +81,6 @@ const confirmRemoveAllCopiesOfRecurringTask = {
     en: `Remove this task and all the copies of this recurring task?`,
 }
 
-console.log("selectedLanguage (future-plans test) = " + selectedLanguage)
-
 if (selectedLanguage === undefined || selectedLanguage === null) {
 selectedLanguage = 'sv';
 } else if (typeof(selectedLanguage) === "string" && typeof(languageVariable) === "string") {
@@ -1845,21 +1843,9 @@ let plannedTodosObjectsArray = [];
                             dynamicContainerToken = "addTaskToList";
                             addDynamicTodoContainer(dynamicContainerToken, dynamicContainerDataId);
                         }
-
-                // _ _ _
-
                     }
                 }
-
-
-
-            // _ _ _
-            // _ _ _
         }
-
-        // _ _ _
-        // _ _ _
-        // _ _ _
         // _ _ _
 
         // Add daily recurring todo (Every week)
@@ -1870,13 +1856,6 @@ let plannedTodosObjectsArray = [];
             newTodo.recurringType === 'd' &&
             isRecurringWeekDayNameRadioButton.checked === true &&
             recurringDayEveryWeekCheckBox.checked === true) {
-            // plannedTodos.push(newTodo);
-            // Handle duration >= 1
-
-
-            //stringToNumber
-            // let dailyRecDurationStringToNumber = Number(newTodo.duration);
-            // console.log("weeklyRecdurationStringToNumber = " + dailyRecDurationStringToNumber);
 
             let ifRecDaySpecificDaysAddToTodoText = "🔁D ";
 
@@ -2023,10 +2002,6 @@ let plannedTodosObjectsArray = [];
             newTodo.recurringType === 'd' &&
             isRecurringWeekDayNameRadioButton.checked === true &&
             recurringDayEveryWeekCheckBox.checked === false) {
-
-            //stringToNumber
-            // let dailyRecDurationStringToNumber = Number(newTodo.duration);
-            // console.log("weeklyRecdurationStringToNumber = " + dailyRecDurationStringToNumber);
 
             // duration === 1
 
