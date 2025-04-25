@@ -81,6 +81,10 @@ const confirmRemoveAllCopiesOfRecurringTask = {
     en: `Remove this task and all the copies of this recurring task?`,
 }
 
+if (languageVariable === 'sv' || languageVariable === 'en') {
+    selectedLanguage = localStorage.getItem("languageVariable");
+}
+
 if (selectedLanguage === undefined) {
 selectedLanguage = 'sv';
 } else if (typeof(selectedLanguage) === "string" && typeof(languageVariable) === "string") {
