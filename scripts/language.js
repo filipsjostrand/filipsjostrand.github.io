@@ -813,6 +813,8 @@ const userMessagePlaceholder = {
         // runTranslation(selectedLanguage);
         function runTranslation(selectedLanguage) {
 
+          console.log("selectedLanguage (i runTranslation(selectedLanguage)) = "+ selectedLanguage);
+          
           // Navbar
           document.getElementById('top-todos').innerHTML = navbarTodo[selectedLanguage];
           document.getElementById('weekly-calendar').innerHTML = navbarWeek[selectedLanguage];
