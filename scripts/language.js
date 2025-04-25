@@ -31,11 +31,6 @@
 
   changeFlagImage();
 
-      if (!selectedLanguage) {
-        selectedLanguage = 'sv';
-        runTranslation(selectedLanguage);
-      }
-
   //Översättning (navbar)
 
   const navbarTodo = {
@@ -813,7 +808,6 @@ const userMessagePlaceholder = {
                 sessionStorage.setItem("languageVariable", languageVariable);
                 languageSelectVariable = languageSelectElement.options[1].text
                 runTranslation(selectedLanguage);
-
             }
           });
 
