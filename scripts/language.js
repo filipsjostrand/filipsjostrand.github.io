@@ -1031,3 +1031,5 @@ const userMessagePlaceholder = {
           changeFlagImage();
           console.log("changeFlagImage() har körts: " + changeFlagImage());
         }
+
+runTranslation(selectedLanguage);
