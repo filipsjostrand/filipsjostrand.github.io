@@ -1018,4 +1018,5 @@ const userMessagePlaceholder = {
           document.getElementById('user-message').placeholder = userMessagePlaceholder[selectedLanguage];
 
           changeFlagImage();
+          console.log("changeFlagImage() har körts: " + changeFlagImage());
         }
