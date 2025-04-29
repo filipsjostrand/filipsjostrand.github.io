@@ -694,17 +694,26 @@ const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 // _ _ _
 
-languageSelectElement.addEventListener('change', function() {
+document.addEventListener('DOMContentLoaded', function () {
+    const languageSelectElement = document.getElementById('language-select'); // or querySelector('.your-class')
+
+    if (!languageSelectElement) {
+        console.warn('languageSelectElement not found');
+        return;
+    }
+
+    languageSelectElement.addEventListener('change', function (event) {
+        const selectedValue = event.target.value;
 
         if (selectedValue === 'sv') {
             selectedLanguage = 'sv';
             putInSelectedLanguageMultipleTimes(selectedLanguage);
-        }
-        else if (selectedValue === 'en') {
+        } else if (selectedValue === 'en') {
             selectedLanguage = 'en';
             putInSelectedLanguageMultipleTimes(selectedLanguage);
-    }
-})
+        }
+    });
+});
 
 // _ _ _
 
