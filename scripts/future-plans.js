@@ -696,6 +696,8 @@ const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 document.addEventListener('DOMContentLoaded', function () {
 
+languageSelectElement = window.languageSelectElement;
+    
     if (!languageSelectElement) {
         console.warn('languageSelectElement not found');
         return;
