@@ -1,3 +1,7 @@
+This is an application that can be used for planning. 
+It is also a portfolio website with information about me.
+<br><br>
+
 ![Fixa (Todo)](media/img/fixa-img.jpeg "Fixa")
 
 Add 1-3 Todo:s
