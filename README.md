@@ -7,3 +7,7 @@
 ![Timer (Timer)](media/img/timer-img.jpeg "Timer")
 
 ![Om (About)](media/img/om-img.jpeg "Om")
+
+
+Test
+![Logo](https://example.com/logo.png "Company Logo")
