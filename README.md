@@ -1,9 +1,9 @@
-![Fixa (Todo)](media/img/fixa-img.jpeg "Fixa ooa")
+![Fixa (Todo)](media/img/fixa-img.jpeg "Fixa")
 
-![Vecka (Week)](media/img/vecka-img.jpeg "Vecka ooa")
+![Vecka (Week)](media/img/vecka-img.jpeg "Vecka")
 
-![Plan (Plan)](media/img/plan-img.jpeg "Plan ooa")
+![Plan (Plan)](media/img/plan-img.jpeg "Plan")
 
-![Timer (Timer)](media/img/timer-img.jpeg "Timer ooa")
+![Timer (Timer)](media/img/timer-img.jpeg "Timer")
 
-![Om (About)](media/img/om-img.jpeg "Om ooa")
+![Om (About)](media/img/om-img.jpeg "Om")
