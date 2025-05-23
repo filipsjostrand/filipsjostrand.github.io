@@ -18,7 +18,7 @@ It is programmed in JavaScript (with HTML & CSS).
 
 ![Fixa (Todos)](media/img/fixa-img.jpeg "Fixa")
 
-Add 1-3 Todos
+Add 1-3 Todos.
 <br><br>
 
 ![Vecka (Week)](media/img/vecka-img.jpeg "Vecka")
