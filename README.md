@@ -1,7 +1,10 @@
 # filipsjostrand.github.io
 
 This is an application that can be used for planning. <br>
-It is also a portfolio website with information about me.
+It is also a portfolio website with information about me. <br><br>
+
+The website is programmed in JavaScript (with some HTML & CSS).
+
 <br><br>
 
 ## Application Headers (Description) 
