@@ -20,7 +20,7 @@ Add 1-3 Todos
 
 ![Vecka (Week)](media/img/vecka-img.jpeg "Vecka")
 
-View the current week plan
+View the current week plan.
 <br><br>
 
 ![Plan (Plan)](media/img/plan-img.jpeg "Plan")
@@ -32,7 +32,7 @@ Make plans (add/edit/remove)
 
 ![Timer (Timer)](media/img/timer-img.jpeg "Timer")
 
-Start a count-up och countdown timer
+Start a count-up or countdown timer
 - Start up-beat/slow music
 <br>
 
