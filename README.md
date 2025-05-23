@@ -1,12 +1,12 @@
 ![Fixa (Todo)](media/img/fixa-img.jpeg "Fixa")
 
 Add 1-3 Todo:s
-<br>
+<br><br>
 
 ![Vecka (Week)](media/img/vecka-img.jpeg "Vecka")
 
 View the current week plan
-<br>
+<br><br>
 
 ![Plan (Plan)](media/img/plan-img.jpeg "Plan")
 
