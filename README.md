@@ -4,11 +4,18 @@ This is an application that can be used for planning. <br>
 It is also a portfolio website with information about me.
 <br><br>
 
-## Application Headers (Description) <br><br>
+## Application Headers (Description) 
+- Fixa (Todos)
+- Vecka (Week)
+- Plan (Plan)
+- Timer (Timer)
+- Om (About)
+<br><br>
 
-![Fixa (Todo)](media/img/fixa-img.jpeg "Fixa")
 
-Add 1-3 Todo:s
+![Fixa (Todos)](media/img/fixa-img.jpeg "Fixa")
+
+Add 1-3 Todos
 <br><br>
 
 ![Vecka (Week)](media/img/vecka-img.jpeg "Vecka")
