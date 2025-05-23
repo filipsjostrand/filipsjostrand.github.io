@@ -1,6 +1,6 @@
 # filipsjostrand.github.io
 
-This is an application that can be used for planning. 
+This is an application that can be used for planning. <br>
 It is also a portfolio website with information about me.
 <br><br>
 
