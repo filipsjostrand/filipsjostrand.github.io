@@ -2,7 +2,7 @@
 
 The website is a 
 - planning application. <br>
-- portfolio website (info about me). <br>
+- portfolio website (about me). <br>
 
 It is programmed in JavaScript (with HTML & CSS).
 <br><br>
