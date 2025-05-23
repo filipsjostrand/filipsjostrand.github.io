@@ -1,6 +1,6 @@
 # filipsjostrand.github.io
 
-This website is a 
+The website is a 
 - planning application. <br>
 - portfolio website (info about me). <br>
 
