@@ -312,24 +312,3 @@ function checkKey(e) {
 
   // Activate arrow-key-press inside the opened form
     checkKey();
-
-// _ _ _
-
-// // Send form to email
-// function sendFormEmail() {
-//     selectedLanguage = sessionStorage.getItem("languageVariable");
-
-//     let user_name = usernameField.value;
-//     let message = "Email: " + userEmailField.value + "\nSubject: " + userSubjectField.value + "\n\nMessage:\n" + userMessageField.value;
-
-//     emailjs.send("service_qes9d4k", "template_cmihpce", {
-//         from_name: user_name,
-//         message: message,
-//     }).then(function(response) {
-//     }, function(error) {
-//     });
-
-//     alert(formThankYouMessage[0].formMessage[selectedLanguage]);
-//     resetForm();
-//     closeForm()
-// }
