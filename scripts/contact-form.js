@@ -1,3 +1,35 @@
+function sendFormEmail() {
+    selectedLanguage = sessionStorage.getItem("languageVariable");
+
+    let user_name = usernameField.value;
+    let user_email = userEmailField.value;
+    let user_subject = userSubjectField.value;
+    let user_message = userMessageField.value;
+
+    // Constructing message data
+    let templateParams = {
+        from_name: user_name,
+        from_email: user_email,  // Ensure this is included for reply-to functionality
+        subject: user_subject,
+        message: user_message,
+    };
+
+    // Sending the email using EmailJS
+    emailjs.send("service_qes9d4k", "template_cmihpce", templateParams)
+        .then(function(response) {
+            console.log("Email successfully sent!", response.status, response.text);
+            alert(formThankYouMessage[0].formMessage[selectedLanguage]); // Success message
+            resetForm();
+            closeForm();
+        })
+        .catch(function(error) {
+            console.error("Email failed to send:", error);
+            alert("Failed to send email. Please try again.");
+        });
+}
+
+//_ _ _
+
 // Formulär [Översättning]
 
 selectedLanguage = sessionStorage.getItem("languageVariable");
@@ -281,21 +313,23 @@ function checkKey(e) {
   // Activate arrow-key-press inside the opened form
     checkKey();
 
-// Send form to email
-function sendFormEmail() {
-    selectedLanguage = sessionStorage.getItem("languageVariable");
+// _ _ _
 
-    let user_name = usernameField.value;
-    let message = "Email: " + userEmailField.value + "\nSubject: " + userSubjectField.value + "\n\nMessage:\n" + userMessageField.value;
+// // Send form to email
+// function sendFormEmail() {
+//     selectedLanguage = sessionStorage.getItem("languageVariable");
 
-    emailjs.send("service_qes9d4k", "template_cmihpce", {
-        from_name: user_name,
-        message: message,
-    }).then(function(response) {
-    }, function(error) {
-    });
+//     let user_name = usernameField.value;
+//     let message = "Email: " + userEmailField.value + "\nSubject: " + userSubjectField.value + "\n\nMessage:\n" + userMessageField.value;
 
-    alert(formThankYouMessage[0].formMessage[selectedLanguage]);
-    resetForm();
-    closeForm()
-}
+//     emailjs.send("service_qes9d4k", "template_cmihpce", {
+//         from_name: user_name,
+//         message: message,
+//     }).then(function(response) {
+//     }, function(error) {
+//     });
+
+//     alert(formThankYouMessage[0].formMessage[selectedLanguage]);
+//     resetForm();
+//     closeForm()
+// }
