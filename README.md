@@ -31,6 +31,7 @@ View the current week plan.
 Make plans (add/edit/remove)
 - Save plan
 - Load plan
+- (tasks can be ordered if it starts with a time [format: hh:mm])
 <br>
 
 ![Timer (Timer)](media/img/timer-img.jpeg "Timer")
