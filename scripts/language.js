@@ -137,7 +137,7 @@ const top3Label = {
 }
 
 const addButton2 = {
-  sv: `Lägg till (fix) 📝`,
+  sv: `Lägg till 📝`,
   en: `Add Todo 📝`,
 }
 
