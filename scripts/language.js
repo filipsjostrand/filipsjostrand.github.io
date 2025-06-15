@@ -421,8 +421,8 @@ const yearHeader = {
   en: 'Yearly:',
 }
 const addTaskToScheduleButton = {
-  sv: 'Lägg till',
-  en: 'Add Task',
+  sv: 'Lägg till 📅',
+  en: 'Add Task 📅',
 }
 
 // Edit current plan (in the table).
