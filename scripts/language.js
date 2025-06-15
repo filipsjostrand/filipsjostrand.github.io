@@ -443,8 +443,8 @@ const currentPlanTodoPlaceholder = {
 }
 
 const clearAllButtonTranslate = {
-  sv: 'Rensa allt',
-  en: 'Clear All',
+  sv: 'Rensa allt 🗑️',
+  en: 'Clear All 🗑️',
 }
 
 const colorSwitcherHeading = {
@@ -518,8 +518,8 @@ const copyOrClearPast = {
 }
 
 const clearPastTasksButtonTranslate = {
-  sv: 'Töm utfört',
-  en: 'Clear Past',
+  sv: 'Töm utfört 🗑️',
+  en: 'Clear Past 🗑️',
 }
 
 // Timer
