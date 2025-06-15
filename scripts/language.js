@@ -137,8 +137,8 @@ const top3Label = {
 }
 
 const addButton2 = {
-  sv: `Lägg till (fix)`,
-  en: `Add Todo`,
+  sv: `Lägg till (fix) 📝`,
+  en: `Add Todo 📝`,
 }
 
 const appInfo = {
