@@ -537,7 +537,7 @@ h3 {
 /* Style the custom file button */
 .custom-file-label {
   display: inline-block;
-  width: 90px;
+  width: 100px;
   margin-top: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -582,7 +582,7 @@ h3 {
 }
 
 #save-to-downloads {
-  width: 160px;
+  width: 190px;
   height: 40px;
   display:flex;
   flex-direction: row;
