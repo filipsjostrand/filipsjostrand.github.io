@@ -467,8 +467,8 @@ const loadPlanHeading = {
   en: 'Load Plan',
 }
 const loadFileButton = {
-  sv: 'Hämta fil',
-  en: 'Load File',
+  sv: 'Hämta fil 🔄',
+  en: 'Load File 🔄',
 }
 
 // Save
@@ -489,8 +489,8 @@ const incompatibleDevices = {
   en: 'Firefox, iOS devices',
 }
 const saveAsAnywhere = {
-  sv: 'Spara som (välj)',
-  en: 'Save As (anywhere)',
+  sv: 'Spara som (välj) ⬇️',
+  en: 'Save As (anywhere) ⬇️',
 }
 
 const downloadOpt2 = {
@@ -502,8 +502,8 @@ const anyBrowserDl = {
   en: 'Any browser',
 }
 const saveToDownloads = {
-  sv: 'Spara (hämtade filer)',
-  en: 'Save (to downloads)',
+  sv: 'Spara (hämtade filer) ⬇️',
+  en: 'Save (to downloads) ⬇️',
 }
 
 // Copy/clear past tasks.
