@@ -496,7 +496,7 @@ h3 {
 }
 
 #clear-all {
-  width: 85px;
+  width: 100px;
   height: 30px;
   display:flex;
   align-items: center;
@@ -602,7 +602,7 @@ h3 {
 }
 
 #clear-past-tasks {
-  width: 90px;
+  width: 105px;
   height: 30px;
   display:flex;
   align-items: center;
