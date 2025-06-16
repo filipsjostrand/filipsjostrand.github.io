@@ -494,7 +494,7 @@ const saveAsAnywhere = {
 }
 
 const downloadOpt2 = {
-  sv: 'Nedladdning (Alt 1):',
+  sv: 'Nedladdning (Alt 2):',
   en: 'Download (option 2):',
 }
 const anyBrowserDl = {
