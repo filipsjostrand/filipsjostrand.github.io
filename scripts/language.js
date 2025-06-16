@@ -498,8 +498,8 @@ const downloadOpt2 = {
   en: 'Download (option 2):',
 }
 const anyBrowserDl = {
-  sv: 'Alla webbläsare',
-  en: 'Any browser',
+  sv: 'Alla webbläsare (Firefox, Safari)',
+  en: 'Any browser (Firefox, Safari)',
 }
 const saveToDownloads = {
   sv: 'Spara (hämtade filer) ⬇️',
