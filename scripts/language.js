@@ -401,8 +401,8 @@ const eventDurationYear = {
 }
 
 const recEvery = {
-  sv: 'År emellan (återkommande):',
-  en: 'Every:',
+  sv: 'Varaktighet (dagar)',
+  en: 'Event duration (days):',
 }
 const recWeek = {
   sv: 'vecka',
