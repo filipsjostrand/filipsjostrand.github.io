@@ -478,7 +478,7 @@ h3 {
 }
 
 #add-todo-button {
-  width: 105px;
+  width: auto;
   height: 30px;
   display:flex;
   align-items: center;
