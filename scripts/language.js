@@ -246,13 +246,15 @@ const futureDesc = {
           <li>Tider sorteras (Format: tt:mm)</li>
           <li>Återkommande uppgifter kan läggas till
               <ul>
-                <li>för veckodag</li>
-                <li>veckor</li>
-                <li>månad</li>
-                <li>år</li>
+                <li>för veckodag,</li>
+                <li>veckor,</li>
+                <li>månad,</li>
+                <li>år,</li>
                 <li>Samt: antal dagars varaktighet</li>
               </ul>
           </li>
+          <li>Tillagda uppgifter tas bort via färg-knappen</li>
+          <li>Om "Aktuell plan" inte uppdateras korrekt: Lägg till (och ta bort) ny uppgift</li>
         </ul>
       <li id="save-list">Spara fil (Schema).</li>
       <li id="dl-list">Ladda ner fil (Schema).</li>
@@ -265,7 +267,22 @@ const futureDesc = {
       <li id="add-list">Add Task / Upload File (Schedule).</li>
         <ul>
           <li>Times are sorted (Format: hh:mm)</li>
-          <li>Recurring tasks can be added (day of week, weeks, month, year + number of days duration)</li>
+          <li>Recurring tasks can be added (, , ,  + number of days duration)
+              <ul>
+                <li>for day of week,</li>
+                <li>weeks,</li>
+                <li>month,</li>
+                <li>year,</li>
+                <li>Together with: number of days duration</li>
+              </ul>
+          </li>
+          <li>Added tasks can be removed through the color button</li>
+          <li>If the "Current Plan" doesn't update correctly: Add (and remove) new task</li>
+        </ul>
+      <li id="save-list">Spara fil (Schema).</li>
+      <li id="dl-list">Ladda ner fil (Schema).</li>
+      <li id="edit-list">Redigera schema (i tabell).</li>
+      <li id="copy-clear-list">Kopiera/rensa (tidigare händelser).</li>
         </ul>
       <li id="save-list">Save file (Schedule).</li>
       <li id="dl-list">Download file (Schedule).</li>
