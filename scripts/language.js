@@ -281,11 +281,6 @@ const futureDesc = {
           <li>If the "Current Plan" doesn't update correctly: Add (and remove) new task.</li>
           <li>Tasks (non-recurring) in the past end up in "Past Tasks."</li>
         </ul>
-      <li id="save-list">Spara fil (Schema).</li>
-      <li id="dl-list">Ladda ner fil (Schema).</li>
-      <li id="edit-list">Redigera schema (i tabell).</li>
-      <li id="copy-clear-list">Kopiera/rensa (tidigare händelser).</li>
-        </ul>
       <li id="save-list">Save file (Schedule).</li>
       <li id="dl-list">Download file (Schedule).</li>
       <li id="edit-list">Edit schedule (in table).</li>
