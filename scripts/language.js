@@ -244,7 +244,15 @@ const futureDesc = {
       <li id="add-list">Lägg till uppgift / Ladda upp fil (Schema).</li>
         <ul>
           <li>Tider sorteras (Format: tt:mm)</li>
-          <li>Återkommande uppgifter kan läggas till (veckodag, veckor, månad, år + antal dagars varaktighet)</li>
+          <li>Återkommande uppgifter kan läggas till
+              <ul>
+                <li>för veckodag</li>
+                <li>veckor</li>
+                <li>månad</li>
+                <li>år</li>
+                <li>Samt: antal dagars varaktighet</li>
+              </ul>
+          </li>
         </ul>
       <li id="save-list">Spara fil (Schema).</li>
       <li id="dl-list">Ladda ner fil (Schema).</li>
