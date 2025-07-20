@@ -244,7 +244,7 @@ const futureDesc = {
       <li id="add-list">Lägg till uppgift / Ladda upp fil (Schema).</li>
         <ul class="bullet-point-size-two">
           <li>Tider (i "Text") sorteras (Format: tt:mm)</li>
-          <li>Återkommande uppgifter kan läggas till
+          <li>Återkommande uppgifter kan läggas till (checka i)
               <ul>
                 <li>för veckodag,</li>
                 <li>veckor,</li>
@@ -267,7 +267,7 @@ const futureDesc = {
       <li id="add-list">Add Task / Upload File (Schedule).</li>
         <ul class="bullet-point-size-two">
           <li>Times (in "Task") are sorted (Format: hh:mm)</li>
-          <li>Recurring tasks can be added
+          <li>Recurring tasks can be added (use checkbox)
               <ul>
                 <li>for day of week,</li>
                 <li>weeks,</li>
