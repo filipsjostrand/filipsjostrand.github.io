@@ -263,8 +263,12 @@ h3 {
   box-sizing: border-box; /* Adjust width to include padding */
 }
 
+.bullet-point-size-two, ul {
+    font-size: 98%;
+}
+
 .bullet-point-size-two, li {
-    font-size: 97%;
+    font-size: 96%;
 }
 
 .grid-day-container {
