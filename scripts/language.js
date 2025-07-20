@@ -242,7 +242,7 @@ const futureDesc = {
   sv: `Hantera <u id="current-plan-words">Framtidsplaner</u> och visa <u id="past-tasks-words">Tidigare händelser</u>:
     <ul>
       <li id="add-list">Lägg till uppgift / Ladda upp fil (Schema).</li>
-        <ul>
+        <ul class="bullet-point-size-two">
           <li>Tider sorteras (Format: tt:mm)</li>
           <li>Återkommande uppgifter kan läggas till
               <ul>
@@ -265,7 +265,7 @@ const futureDesc = {
   en: `Handle <u id="current-plan-words">"Future Plans"</u> and watch <u id="past-tasks-words">Past tasks</u>:
     <ul>
       <li id="add-list">Add Task / Upload File (Schedule).</li>
-        <ul>
+        <ul class="bullet-point-size-two">
           <li>Times are sorted (Format: hh:mm)</li>
           <li>Recurring tasks can be added (, , ,  + number of days duration)
               <ul>
