@@ -261,7 +261,10 @@ h3 {
   margin-bottom: 15px;
   max-width: 100%; /* Avoid content overflow */
   box-sizing: border-box; /* Adjust width to include padding */
+}
 
+.bullet-point-size-two, li {
+    font-size: 97%;
 }
 
 .grid-day-container {
