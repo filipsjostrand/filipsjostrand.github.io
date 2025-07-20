@@ -253,8 +253,9 @@ const futureDesc = {
                 <li>Samt: antal dagars varaktighet</li>
               </ul>
           </li>
-          <li>Tillagda uppgifter tas bort via färg-knappen</li>
-          <li>Om "Aktuell plan" inte uppdateras korrekt: Lägg till (och ta bort) ny uppgift</li>
+          <li>Tillagda uppgifter tas bort via färg-knappen.</li>
+          <li>Om "Aktuell plan" inte uppdateras korrekt: Lägg till (och ta bort) ny uppgift.</li>
+          <li>Utförda (ej återkommande) uppgifter hamnar i "Tidigare händelser".</li>
         </ul>
       <li id="save-list">Spara fil (Schema).</li>
       <li id="dl-list">Ladda ner fil (Schema).</li>
@@ -276,8 +277,9 @@ const futureDesc = {
                 <li>Together with: number of days duration</li>
               </ul>
           </li>
-          <li>Added tasks can be removed through the color button</li>
-          <li>If the "Current Plan" doesn't update correctly: Add (and remove) new task</li>
+          <li>Added tasks can be removed through the color button.</li>
+          <li>If the "Current Plan" doesn't update correctly: Add (and remove) new task.</li>
+          <li>Tasks (non-recurring) in the past end up in "Past Tasks."</li>
         </ul>
       <li id="save-list">Spara fil (Schema).</li>
       <li id="dl-list">Ladda ner fil (Schema).</li>
