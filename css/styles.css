@@ -263,21 +263,17 @@ h3 {
   box-sizing: border-box; /* Adjust width to include padding */
 }
 
-.bullet-point-size-two {
+ul.bullet-point-size-two {
   font-family: 'Verdana';
   color: rgb(180, 180, 180);
 }
 
 .bullet-point-size-two, ul {
   font-size: 97.5%;
-  font-family: 'Verdana';
-  color: rgb(180, 180, 180);
 }
 
 .bullet-point-size-two, li {
   font-size: 96%;
-  font-family: 'Verdana';
-  color: rgb(180, 180, 180);
 }
 
 .grid-day-container {
