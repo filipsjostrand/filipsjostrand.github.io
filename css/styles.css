@@ -263,6 +263,10 @@ h3 {
   box-sizing: border-box; /* Adjust width to include padding */
 }
 
+.bullet-point-size-two {
+  font-family: 'TikTok Sans';
+}
+
 .bullet-point-size-two, ul {
     font-size: 97.5%;
 }
