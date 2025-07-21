@@ -264,15 +264,12 @@ h3 {
 }
 
 ul.bullet-point-size-two {
-  font-family: 'Verdana';
+  font-family: 'Helvetica';
   color: rgb(180, 180, 180);
+  font-size: 97%;
 }
 
-.bullet-point-size-two, ul {
-  font-size: 97.5%;
-}
-
-.bullet-point-size-two, li {
+li.bullet-point-size-two, li {
   font-size: 96%;
 }
 
