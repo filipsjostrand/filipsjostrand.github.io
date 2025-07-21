@@ -243,8 +243,8 @@ const futureDesc = {
     <ul>
       <li id="add-list">Lägg till uppgift / Ladda upp fil (Schema).</li>
         <ul class="bullet-point-size-two">
-          <li>Tider (i "Text") sorteras (Format: tt:mm)</li>
-          <li>Återkommande uppgifter kan läggas till (checka i)
+          <li>Lägg till tider (i "Text", sorteras med format: tt:mm)</li>
+          <li>Lägg till återkommande uppgifter (checka i)
               <ul>
                 <li>för veckodag,</li>
                 <li>veckor,</li>
@@ -253,8 +253,8 @@ const futureDesc = {
                 <li>Samt: antal dagars varaktighet</li>
               </ul>
           </li>
-          <li>Tillagda uppgifter tas bort via färg-knappen.</li>
-          <li>Om "Aktuell plan" inte uppdateras korrekt: Lägg till (och ta bort) ny uppgift.</li>
+          <li>Ta bort tillagda uppgifter via färg-knappen.</li>
+          <li>Lägg till (och ta bort) en ny uppgift, om "Aktuell plan" inte uppdateras korrekt.</li>
           <li>Utförda (ej återkommande) uppgifter hamnar i "Tidigare händelser".</li>
         </ul>
       <li id="save-list">Spara fil (Schema).</li>
@@ -267,8 +267,8 @@ const futureDesc = {
     <ul>
       <li id="add-list">Add Task / Upload File (Schedule).</li>
         <ul class="bullet-point-size-two">
-          <li>Times (in "Task") are sorted (Format: hh:mm)</li>
-          <li>Recurring tasks can be added (use checkbox)
+          <li>Add times (in "Task", sorted with format: hh:mm)</li>
+          <li>Add recurring tasks (use checkbox)
               <ul>
                 <li>for day of week,</li>
                 <li>weeks,</li>
@@ -277,9 +277,9 @@ const futureDesc = {
                 <li>Together with: number of days duration</li>
               </ul>
           </li>
-          <li>Added tasks can be removed through the color button.</li>
-          <li>If the "Current Plan" doesn't update correctly: Add (and remove) new task.</li>
-          <li>Tasks (non-recurring) in the past end up in "Past Tasks."</li>
+          <li>Remove added tasks through the color button.</li>
+          <li>Add (and remove) a new task, if the "Current Plan" doesn't update correctly.</li>
+          <li>Non-recurring tasks in the past end up in "Past Tasks."</li>
         </ul>
       <li id="save-list">Save file (Schedule).</li>
       <li id="dl-list">Download file (Schedule).</li>
