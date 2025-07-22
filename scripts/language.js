@@ -239,8 +239,8 @@ const futureHeading = {
 }
 
 const futureRememberSave = {
-  sv: `- Kom ihåg att spara!`,
-  en: `- Remember to save!`,
+  sv: `"Lägg till" uppgifter eller "Hämta fil" (planering) - Kom ihåg att spara!`,
+  en: `"Add Task" or "Load File" (plan) - Remember to save!`,
 }
 
 const futureDesc = {
