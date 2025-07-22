@@ -34,7 +34,7 @@
   //Översättning (navbar)
 
   const navbarTodo = {
-    sv: "Fixa",
+    sv: "Todos",
     en: "Todos",
   }
 
