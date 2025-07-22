@@ -178,6 +178,11 @@ const weekHeading = {
   en: `Week schedule`,
 }
 
+const todosPDesc = {
+  sv: `Lista todos med högst prioritet.`,
+  en: `List todos with the highest priority.`,
+}
+
 const weekPDesc = {
   sv: `Lägg till uppgifter (eller "Hämta fil") i avsnitt "Plan". Planeringen presenteras i "veckoschema",`,
   en: `Add tasks (or "Load File") in the "Plan" section. The plan is presented in the "week schedule",`,
@@ -859,6 +864,8 @@ const userMessagePlaceholder = {
           document.getElementById('input-box-v2').placeholder = placeholderTop3Text[selectedLanguage];
           document.getElementById('app-info').innerHTML = appInfo[selectedLanguage];
           document.getElementById('todos-heading').innerHTML = top3Todos[selectedLanguage];
+
+          document.getElementById('todos-desc').innerHTML = todosPDesc[selectedLanguage];
           
           // Veckoschema
           document.getElementById('weekly-heading').innerHTML = weekHeading[selectedLanguage];
