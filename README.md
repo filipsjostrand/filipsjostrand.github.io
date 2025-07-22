@@ -8,7 +8,7 @@ It is programmed in JavaScript (with HTML & CSS).
 <br><br>
 
 ## Application Headers (Description) 
-- Fixa (Todos)
+- Todos (Todos)
 - Vecka (Week)
 - Plan (Plan)
 - Timer (Timer)
