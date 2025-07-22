@@ -179,8 +179,8 @@ const weekHeading = {
 }
 
 const todosPDesc = {
-  sv: `Lista todos med högst prioritet.`,
-  en: `List todos with the highest priority.`,
+  sv: `Lista viktigaste todos:`,
+  en: `List important todos:`,
 }
 
 const weekPDesc = {
