@@ -16,7 +16,7 @@ It is programmed in JavaScript (with HTML & CSS).
 <br><br>
 
 
-![Fixa (Todos)](media/img/fixa-img.jpeg "Fixa")
+![Todos (Todos)](media/img/Todos.jpg "Todos")
 
 Add 1-3 Todos.
 <br><br>
