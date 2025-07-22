@@ -122,8 +122,8 @@ function getTodaysDayAbbreviation(todaysWeekdayAbbNr) {
 // Översättning Top3 Todos
 
 const top3Todos = {
-  sv: `Top3 Todos`,
-  en: `Top3 Todos`,
+  sv: `Todos (Top3)`,
+  en: `Todos (Top3)`,
 }
 
 const placeholderTop3Text = {
