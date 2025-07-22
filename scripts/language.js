@@ -179,8 +179,8 @@ const weekHeading = {
 }
 
 const weekPDesc = {
-  sv: `Nedan följer aktuellt veckoschema,`,
-  en: `Check current week schedule,`,
+  sv: `Lägg till uppgifter (eller "Hämta fil") i avsnitt "Plan". Planeringen presenteras i "veckoschema",`,
+  en: `Add tasks (or "Load File") in the "Plan" section. The plan is presented in the "week schedule",`,
 }
 
 const goFuturePlans = {
