@@ -115,6 +115,10 @@
     margin-bottom: 20px;
 }
 
+#todos-desc {
+    margin-top: 10px;
+}
+
 #info-symbol {
     display: flex;
     align-items: center;
