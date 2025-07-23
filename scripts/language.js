@@ -184,8 +184,8 @@ const todosPDesc = {
 }
 
 const weekPDesc = {
-  sv: `Lägg till uppgifter (eller "Hämta fil") i avsnitt "Plan". <br>Planeringen presenteras i "veckoschema" (nedan):`,
-  en: `Add tasks (or "Load File") in the "Plan" section. <br>The plan is presented in the "week schedule" (below):`,
+  sv: `Lägg till uppgifter (eller "Hämta fil") i avsnitt "Framtidsplaner". <br>Planeringen presenteras i "veckoschema" (nedan):`,
+  en: `Add tasks (or "Load File") in the "Future Plans" section. <br>The plan is presented in the "week schedule" (below):`,
 }
 
 const goFuturePlans = {
