@@ -179,8 +179,8 @@ const weekHeading = {
 }
 
 const todosPDesc = {
-  sv: `Lista viktigaste todos:`,
-  en: `List important todos:`,
+  sv: `"Lägg till" top3 todos:`,
+  en: `Add top3 todos:`,
 }
 
 const weekPDesc = {
