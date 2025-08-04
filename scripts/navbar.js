@@ -18,7 +18,6 @@ let isNavbarRolledUp = false;
       console.log("Scroll listener re-enabled");
     }, 10); // change this delay to suit your needs
   });
-  })
 
 window.addEventListener('scroll', function () {
   const currentScrollPos = window.pageYOffset;
