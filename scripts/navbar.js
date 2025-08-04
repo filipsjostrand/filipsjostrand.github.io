@@ -70,7 +70,7 @@ const currentScrollPos = window.pageYOffset;
     //navbar.style.top = "0";
   //}
   
-      console.log("scrolling start");
+      //console.log("scrolling start");
   //if (isNavbarRolledUp === 
   //let scrollStartValue = window.scrollY;
   //const currentScrollPos = window.pageYOffset;
