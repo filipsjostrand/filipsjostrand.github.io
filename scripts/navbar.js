@@ -20,4 +20,4 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", function () {
     navbar.style.top = "0";
   });
-}
+})
