@@ -1,30 +1,32 @@
-  let prevScrollPos = window.pageYOffset;
-  const navbar = document.getElementById("navbar");
-  let isScrolling = false;
+let prevScrollPos = window.pageYOffset;
+const navbar = document.getElementById("navbar");
 
-  function checkIsScrolling(isScrolling) {
-    if (isScrolling === false) {
-      navbar.style.top = "0";
-    } else if (isScrolling === true) {
-      navbar.style.top = "-100px";
-    }
-  }
+let isScrolling;
 
-  window.addEventListener("scroll", function () {
-    const currentScrollPos = window.pageYOffset;
+window.addEventListener('scroll', function () {
+  const currentScrollPos = window.pageYOffset;
 
-    console.log("isScrolling = true")
-    isScrolling = true
-    
     if (prevScrollPos > currentScrollPos) {
-      // Scrolling up or no scroll — show navbar
+      // Scrolling up — show navbar
       navbar.style.top = "0";
-    } else if (prevScrollPos < currentScrollPos){
+    } else {
       // Scrolling down — hide navbar
       navbar.style.top = "-100px"; // adjust based on navbar height
-    } else if (prevScrollPos === currentScrollPos){
-      navbar.style.top = "0";
     }
+  
+  window.clearTimeout(isScrolling);
 
-    prevScrollPos = currentScrollPos;
-  });
+  isScrolling = setTimeout(function () {
+    // Scrolling has stopped!
+    console.log('User has stopped scrolling');
+    
+    // You can call a function here, like:
+    showNavbar(); 
+  }, 300); // adjust delay as needed (300ms is typical)
+  prevScrollPos = currentScrollPos;
+});
+
+function showNavbar() {
+  const navbar = document.getElementById("navbar");
+  navbar.style.top = "0"; // or fade it in, etc.
+}
