@@ -9,6 +9,14 @@ const aboutNav = document.getElementById("about-me");
 let isScrolling;
 let isNavbarRolledUp = false;
 
+function showNavbar(isNavbarRolledUp) {
+  if (isNavbarRolledUp === true) {
+  console.log("showNavbar starts")
+  navbar.style.top = "0"; //fade it in...
+  isNavbarRolledUp = false;
+  }
+}
+
   navbar.addEventListener('click', function() {
     console.log("show navbar");
     setTimeout(() => {
@@ -18,8 +26,8 @@ let isNavbarRolledUp = false;
 
 window.addEventListener('scroll', function () {
       console.log("scrolling start");
+  let scrollStartValue = window.scrollY;
   const currentScrollPos = window.pageYOffset;
-  isNavbarRolledUp = false;
   // Scrolling — hide navbar
     if (prevScrollPos > currentScrollPos) {
       // Scrolling up — hide navbar
@@ -38,13 +46,13 @@ window.addEventListener('scroll', function () {
   //}, 10); // adjust delay as needed (300ms is typical)
   
   prevScrollPos = currentScrollPos;
-  navbar.style.top = "0";
-    console.log("scrolling end");
+  isNavbarRolledUp = true;
+  let scrollEndValue = window.scrollY;
+  if (scrollStartValue = scrollEndValue) {
+    showNavbar(isNavbarRolledUp)
+  }
 });
 
-function showNavbar() {
-  console.log("showNavbar starts")
-  navbar.style.top = "0"; //fade it in...
-}
+
 
 
