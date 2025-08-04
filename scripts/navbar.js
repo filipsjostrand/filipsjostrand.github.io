@@ -49,13 +49,22 @@ function showNavbar(isNavbarRolledUp) {
 window.addEventListener('scroll', function () {
   isScrolling = true;
 
+const currentScrollPos = window.pageYOffset;
+  
 //if (isScrolling === false && isNavbarClicked === true) {
-  if (isNavbarClicked === true) {
+  // Navbar button pressed  -> scroll (show nav)
+  if (isNavbarClicked === true && prevScrollPos > currentScrollPos) {
     navbar.style.top = "0";
     isNavbarRolledUp = false;
-  } else { 
-    isNavbarClicked === false;
-         }
+  } 
+  else if (isNavbarClicked === true && prevScrollPos < currentScrollPos) {
+    navbar.style.top = "0";
+    isNavbarRolledUp = false;
+  } 
+  // !Navbar button pressed  -> scroll (!show nav)
+  //else { 
+    //isNavbarClicked === false;
+         //}
   
   //if (isScrolling === true && isNavbarClicked === true) {
     //navbar.style.top = "0";
@@ -64,9 +73,9 @@ window.addEventListener('scroll', function () {
       console.log("scrolling start");
   //if (isNavbarRolledUp === 
   //let scrollStartValue = window.scrollY;
-  const currentScrollPos = window.pageYOffset;
+  //const currentScrollPos = window.pageYOffset;
   // Scrolling — hide navbar
-    if (isNavbarClicked === false && prevScrollPos > currentScrollPos) {
+    else if (isNavbarClicked === false && prevScrollPos > currentScrollPos) {
       // Scrolling up — hide navbar
       navbar.style.top = "-45px";
       isNavbarRolledUp = true;
