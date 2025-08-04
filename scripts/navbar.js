@@ -10,8 +10,14 @@ let isScrolling;
 let isNavbarRolledUp = false;
 
   navbar.addEventListener('click', function() {
+    window.removeEventListener("scroll", scrollHandler);
     navbar.style.top = "0";
     console.log("show navbar");
+    setTimeout(() => {
+      window.addEventListener("scroll", scrollHandler);
+      console.log("Scroll listener re-enabled");
+    }, 10); // change this delay to suit your needs
+  });
   })
 
 window.addEventListener('scroll', function () {
