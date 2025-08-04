@@ -16,7 +16,7 @@ window.addEventListener('scroll', function () {
     // Scrolling has stopped!
     // Call showNavbar function:
     showNavbar(); 
-  }, 4000); // adjust delay as needed (300ms is typical)
+  }, 1000); // adjust delay as needed (300ms is typical)
   prevScrollPos = currentScrollPos;
 });
 
@@ -33,5 +33,5 @@ function showNavbar() {
     } else if (opacity === 1) {
       clearInterval(fadeIn); // stop the interval when done
     }
-  }, 40); // adjust timing for smoothness (lower = smoother)
+  }, 10); // adjust timing for smoothness (lower = smoother)
 }
