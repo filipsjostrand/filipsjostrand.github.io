@@ -6,8 +6,9 @@ const planNav = document.getElementById("important-dates");
 const timerNav = document.getElementById("timer");
 const aboutNav = document.getElementById("about-me");
 
-let isScrolling;
+let isScrolling = false;
 let isNavbarRolledUp = false;
+let isNavbarClicked = false;
 
 function showNavbar(isNavbarRolledUp) {
   if (isNavbarRolledUp === true) {
@@ -18,21 +19,34 @@ function showNavbar(isNavbarRolledUp) {
 }
 
   navbar.addEventListener('click', function() {
-    console.log("show navbar");
+    isNavbarClicked = true;
+
     setTimeout(() => {
-      navbar.style.top = "0";
-    }, 10); // change this delay to suit your needs
+      isNavbarClicked = false;
+    }, 300); // change this delay to suit your needs
+    
+    //console.log("show navbar");
+    //setTimeout(() => {
+      //navbar.style.top = "0";
+    //}, 10); // change this delay to suit your needs
   });
 
 window.addEventListener('scroll', function () {
+  isScrolling = true;
+
+  if (isScrolling === true && isNavbarClicked === true) {
+    navbar.style.top = "0";
+  }
+  
       console.log("scrolling start");
-  let scrollStartValue = window.scrollY;
+  //if (isNavbarRolledUp === 
+  //let scrollStartValue = window.scrollY;
   const currentScrollPos = window.pageYOffset;
   // Scrolling — hide navbar
-    if (prevScrollPos > currentScrollPos) {
+    if (isNavbarClicked === false && prevScrollPos > currentScrollPos) {
       // Scrolling up — hide navbar
       navbar.style.top = "-45px";
-    } else {
+    } else if (isNavbarClicked === false && prevScrollPos < currentScrollPos) {
       // Scrolling down — hide navbar
       navbar.style.top = "-45px"; // adjust based on navbar height
     }
@@ -46,10 +60,10 @@ window.addEventListener('scroll', function () {
   //}, 10); // adjust delay as needed (300ms is typical)
   
   prevScrollPos = currentScrollPos;
-  isNavbarRolledUp = true;
-  let scrollEndValue = window.scrollY;
-  if (scrollStartValue = scrollEndValue) {
-    showNavbar(isNavbarRolledUp)
+  //isNavbarRolledUp = true;
+  //let scrollEndValue = window.scrollY;
+  //if (scrollStartValue = scrollEndValue) {
+    //showNavbar(isNavbarRolledUp)
   }
 });
 
