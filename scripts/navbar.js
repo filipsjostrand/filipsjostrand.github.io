@@ -14,7 +14,7 @@ let lastScroll = "none";
 function showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling, lastScroll) {
   // After 1st manual scroll (navbar rolled up)
   if (isNavbarRolledUp === true && isNavbarClicked === false && isScrolling === true && lastScroll === "none") {
-    console.log("showNavbar 1st manual")
+    console.log("showNavbar 1st manual (1)")
     navbar.style.top = "-45px";
     isNavbarRolledUp = true;
     isScrolling = true;
@@ -22,7 +22,7 @@ function showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling, lastScroll) 
   }
   // After 1st button scroll (navbar rolled down)
   else if (isNavbarRolledUp === false && isNavbarClicked === true && isScrolling === false && lastScroll === "none") {
-    console.log("showNavbar 1st button")
+    console.log("showNavbar 1st button (2)")
     navbar.style.top = "0"; //show navbar
     isNavbarRolledUp = false;
     isScrolling = false;
@@ -30,7 +30,7 @@ function showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling, lastScroll) 
   } 
   // Button scroll - after manual scroll (navbar rolled up)
   else if (isNavbarRolledUp === true && isNavbarClicked === true && isScrolling === false && lastScroll === "manual") {
-    console.log("showNavbar++ button - after manual")
+    console.log("showNavbar++ button - after manual (3)")
     navbar.style.top = "0"; //show navbar
     isNavbarRolledUp = false;
     isScrolling = false;
@@ -38,7 +38,7 @@ function showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling, lastScroll) 
   }
   // Manual scroll - after button scroll (navbar rolled down)
   else if (isNavbarRolledUp === false && isNavbarClicked === true && isScrolling === false && lastScroll === "button") {
-    console.log("showNavbar++ button - after button")
+    console.log("showNavbar++ button - after button (4)")
     navbar.style.top = "-45px"; //show navbar
     isNavbarRolledUp = true;
     isScrolling = true;
@@ -60,6 +60,7 @@ function showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling, lastScroll) 
     //isScrolling = false
     isNavbarRolledUp = false;
     isNavbarClicked = true;
+    lastScroll = "button";
 
     console.log("navbar clicked, isNavbarClicked = " + isNavbarClicked);
 
