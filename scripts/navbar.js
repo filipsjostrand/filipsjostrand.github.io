@@ -28,10 +28,10 @@ function showNavbar() {
         console.log("fadeIn starts")
     navbar.style.top = "0"; //fade it in...
     if (opacity < 1) {
-      opacity += 0.01; // adjust step size for speed
+      opacity += 0.05; // adjust step size for speed
       navbar.style.opacity = opacity;
     } else if (opacity >= 1) {
       clearInterval(fadeIn); // stop the interval when done
     }
-  }, 10); // adjust timing for smoothness (lower = smoother)
+  }, 50); // adjust timing for smoothness (lower = smoother)
 }
