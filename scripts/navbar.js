@@ -10,22 +10,22 @@ let isScrolling;
 let isNavbarRolledUp = false;
 
   navbar.addEventListener('click', function() {
-    showNavbar();
+    navbar.style.top = "0";
   })
   todosNav.addEventListener('click', function() {
-    showNavbar();
+    navbar.style.top = "0";
   })
    weekNav.addEventListener('click', function() {
-    showNavbar();
+    navbar.style.top = "0";
   })
   planNav.addEventListener('click', function() {
-    showNavbar();
+    navbar.style.top = "0";
   })
   timerNav.addEventListener('click', function() {
-    showNavbar();
+    navbar.style.top = "0";
   })
    aboutNav.addEventListener('click', function() {
-    showNavbar();
+    navbar.style.top = "0";
   })
 
 window.addEventListener('scroll', function () {
@@ -35,10 +35,10 @@ window.addEventListener('scroll', function () {
 
     if (prevScrollPos > currentScrollPos) {
       // Scrolling up — hide navbar
-      navbar.style.top = "-40px";
+      navbar.style.top = "-45px";
     } else {
       // Scrolling down — hide navbar
-      navbar.style.top = "-40px"; // adjust based on navbar height
+      navbar.style.top = "-45px"; // adjust based on navbar height
     }
   
   //window.clearTimeout(isScrolling);
