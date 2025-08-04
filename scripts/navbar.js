@@ -4,7 +4,7 @@
   window.addEventListener("scroll", function () {
     const currentScrollPos = window.pageYOffset;
 
-    if (prevScrollPos > currentScrollPos) {
+    if (prevScrollPos >= currentScrollPos) {
       // Scrolling up — show navbar
       navbar.style.top = "0";
     } else {
