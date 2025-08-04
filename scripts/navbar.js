@@ -1,29 +1,47 @@
 const navbar = document.getElementById("navbar");
+const weekNav = document.getElementById("weekly-calendar");
+const planNav = document.getElementById("important-dates");
+const timerNav = document.getElementById("timer");
+const aboutNav = document.getElementById("about-me");
 
 let prevScrollPos = window.pageYOffset;
 
-let anchorClicked = false;
+var navbarClicked = false;
 
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener("click", function () {
-    anchorClicked = true;
-    navbar.style.top = "0";
+weekNav.addEventListener('click', function () {
+  navbarClicked = true;
+  navbar.style.top = "0";
+})
 
-    setTimeout(() => {
-      anchorClicked = false;
-    }, 300); // adjust delay as needed
-  });
-});
+planNav.addEventListener('click', function () {
+  navbarClicked = true;
+  navbar.style.top = "0";
+})
 
-window.addEventListener("scroll", function () {
-  if (anchorClicked) return; // ⛔ skip scroll logic briefly
+timerNav.addEventListener('click', function () {
+  navbarClicked = true;
+  navbar.style.top = "0";
+})
 
+aboutNav.addEventListener('click', function () {
+  navbarClicked = true;
+  navbar.style.top = "0";
+})
+
+window.addEventListener("scroll", function (), navbarClicked {
+  
   const currentScrollPos = window.pageYOffset;
 
   if (prevScrollPos > currentScrollPos) {
-    navbar.style.top = "0";
-  } else if (prevScrollPos < currentScrollPos) {
-    navbar.style.top = "-59px";
+    navbar.style.top = "0"; //scrolling up - show scrollbar
+  } 
+    else if (navbarClicked === true) {
+      navbar.style.top = "0";
+      prevScrollPos = currentScrollPos;
+      navbarClicked = false;
+    }
+  else if (prevScrollPos < currentScrollPos) {
+    navbar.style.top = "-59px"; //scrolling down - hide scrollbar
   }
 
   prevScrollPos = currentScrollPos;
