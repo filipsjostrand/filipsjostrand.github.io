@@ -2,6 +2,7 @@ let prevScrollPos = window.pageYOffset;
 const navbar = document.getElementById("navbar");
 
 let isScrolling;
+let opacity = 0;
 
 window.addEventListener('scroll', function () {
   const currentScrollPos = window.pageYOffset;
@@ -15,22 +16,22 @@ window.addEventListener('scroll', function () {
     // Scrolling has stopped!
     // Call showNavbar function:
     showNavbar(); 
-  }, 1000); // adjust delay as needed (300ms is typical)
+  }, 4000); // adjust delay as needed (300ms is typical)
   prevScrollPos = currentScrollPos;
 });
 
 function showNavbar() {
+  console.log("showNavbar starts")
   const navbar = document.getElementById("navbar");
-  let opacity = 0; // reset each time
-  navbar.style.top = "0";
-  navbar.style.opacity = "0";
 
-  const fadeIn = setInterval(() => {
-    opacity += 0.02; // smoother fade
-    navbar.style.opacity = opacity;
-
-    if (opacity >= 1) {
-      clearInterval(fadeIn);
+    const fadeIn = setInterval(() => {
+        console.log("fadeIn starts")
+    navbar.style.top = "0"; //fade it in...
+    if (opacity < 1) {
+      opacity += 0.01; // adjust step size for speed
+      navbar.style.opacity = opacity;
+    } else if (opacity === 1) {
+      clearInterval(fadeIn); // stop the interval when done
     }
-  }, 20); // adjust speed as needed
+  }, 40); // adjust timing for smoothness (lower = smoother)
 }
