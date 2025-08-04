@@ -22,6 +22,8 @@ function showNavbar(isNavbarRolledUp) {
   navbar.addEventListener('click', function() {
     isNavbarClicked = true;
 
+    console.log("navbar clicked, isNavbarClicked = " + isNavbarClicked);
+    
     setTimeout(() => {
       showNavbar(isNavbarRolledUp);
     }, 300); // change this delay to suit your needs
