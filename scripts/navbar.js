@@ -11,28 +11,13 @@ let isNavbarRolledUp = false;
 
   navbar.addEventListener('click', function() {
     navbar.style.top = "0";
-  })
-  todosNav.addEventListener('click', function() {
-    navbar.style.top = "0";
-  })
-   weekNav.addEventListener('click', function() {
-    navbar.style.top = "0";
-  })
-  planNav.addEventListener('click', function() {
-    navbar.style.top = "0";
-  })
-  timerNav.addEventListener('click', function() {
-    navbar.style.top = "0";
-  })
-   aboutNav.addEventListener('click', function() {
-    navbar.style.top = "0";
+    e.preventDefault();
   })
 
 window.addEventListener('scroll', function () {
   const currentScrollPos = window.pageYOffset;
 
   // Scrolling — hide navbar
-
     if (prevScrollPos > currentScrollPos) {
       // Scrolling up — hide navbar
       navbar.style.top = "-45px";
