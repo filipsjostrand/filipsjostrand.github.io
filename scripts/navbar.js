@@ -13,13 +13,13 @@ let isNavbarRolledUp = false;
     console.log("show navbar");
     setTimeout(() => {
       navbar.style.top = "0";
-      console.log("Scroll listener re-enabled");
     }, 10); // change this delay to suit your needs
   });
 
 window.addEventListener('scroll', function () {
+      console.log("scrolling start");
   const currentScrollPos = window.pageYOffset;
-
+  isNavbarRolledUp = false;
   // Scrolling — hide navbar
     if (prevScrollPos > currentScrollPos) {
       // Scrolling up — hide navbar
@@ -38,6 +38,8 @@ window.addEventListener('scroll', function () {
   //}, 10); // adjust delay as needed (300ms is typical)
   
   prevScrollPos = currentScrollPos;
+  navbar.style.top = "0";
+    console.log("scrolling end");
 });
 
 function showNavbar() {
