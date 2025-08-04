@@ -11,7 +11,7 @@ let isNavbarRolledUp = false;
 
   navbar.addEventListener('click', function() {
     navbar.style.top = "0";
-    e.preventDefault();
+    console.log("show navbar);
   })
 
 window.addEventListener('scroll', function () {
