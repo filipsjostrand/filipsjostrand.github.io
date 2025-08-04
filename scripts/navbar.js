@@ -9,7 +9,7 @@ const aboutNav = document.getElementById("about-me");
 let isScrolling = false;
 let isNavbarRolledUp = false;
 let isNavbarClicked = false;
-let lastScroll = "none";
+var lastScroll = "none";
 
 function showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling, lastScroll) {
   // After 1st manual scroll (navbar rolled up)
