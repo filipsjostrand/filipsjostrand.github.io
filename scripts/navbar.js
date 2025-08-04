@@ -9,6 +9,7 @@ window.addEventListener('scroll', function () {
     if (prevScrollPos > currentScrollPos) {
       // Scrolling up — show navbar
       navbar.style.top = "0";
+      navbar.style.opacity = 0;
     } else {
       // Scrolling down — hide navbar
       navbar.style.top = "-100px"; // adjust based on navbar height
@@ -28,5 +29,14 @@ window.addEventListener('scroll', function () {
 
 function showNavbar() {
   const navbar = document.getElementById("navbar");
-  navbar.style.top = "0"; // or fade it in, etc.
+
+    const fadeIn = setInterval(() => {
+    navbar.style.top = "0"; // or fade it in, etc.
+    if (opacity < 1) {
+      opacity += 0.05; // adjust step size for speed
+      navbar.style.opacity = opacity;
+    } else {
+      clearInterval(fadeIn); // stop the interval when done
+    }
+  }, 50); // adjust timing for smoothness (lower = smoother)
 }
