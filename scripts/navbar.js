@@ -11,13 +11,20 @@ let isNavbarRolledUp = false;
 let isNavbarClicked = false;
 
 function showNavbar(isNavbarRolledUp) {
-  if (isNavbarRolledUp === true) {
+  if (isNavbarRolledUp === true && isNavbarClicked === false) {
+    navbar.style.top = "-45px";
+      isNavbarRolledUp = true;
+      isScrolling = false;
+  }
+  else if (isNavbarRolledUp === true && isNavbarClicked === true) {
   console.log("showNavbar starts")
-  navbar.style.top = "0"; //fade it in...
+  navbar.style.top = "0"; //show navbar
   isNavbarRolledUp = false;
   isScrolling = false;
-  } else if (
-}
+  } 
+  //else if (isNavbarRolledUp === false) {
+    //navbar.style.top = "0";
+  //}
 
   navbar.addEventListener('click', function() {
     //isScrolling = false
