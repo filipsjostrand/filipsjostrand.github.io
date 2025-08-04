@@ -13,7 +13,7 @@
   window.addEventListener("scroll", function () {
     const currentScrollPos = window.pageYOffset;
 
-    console.log("isScrolling = true)
+    console.log("isScrolling = true")
     isScrolling = true
     
     if (prevScrollPos > currentScrollPos) {
