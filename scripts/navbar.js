@@ -21,6 +21,7 @@ function showNavbar(isNavbarRolledUp) {
 
   navbar.addEventListener('click', function() {
     isNavbarClicked = true;
+    isScrolling = false
 
     console.log("navbar clicked, isNavbarClicked = " + isNavbarClicked);
 
