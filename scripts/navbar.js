@@ -2,6 +2,7 @@ let prevScrollPos = window.pageYOffset;
 const navbar = document.getElementById("navbar");
 
 let isScrolling;
+let opacity = 0;
 
 window.addEventListener('scroll', function () {
   const currentScrollPos = window.pageYOffset;
