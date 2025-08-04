@@ -60,7 +60,6 @@ function showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling, lastScroll) 
     //isScrolling = false
     isNavbarRolledUp = false;
     isNavbarClicked = true;
-    lastScroll = "button";
 
     console.log("navbar clicked, isNavbarClicked = " + isNavbarClicked);
 
