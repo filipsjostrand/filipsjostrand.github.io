@@ -16,7 +16,7 @@ window.addEventListener('scroll', function () {
     // Scrolling has stopped!
     // Call showNavbar function:
     showNavbar(); 
-  }, 400); // adjust delay as needed (300ms is typical)
+  }, 4000); // adjust delay as needed (300ms is typical)
   prevScrollPos = currentScrollPos;
 });
 
@@ -26,10 +26,10 @@ function showNavbar() {
     const fadeIn = setInterval(() => {
     navbar.style.top = "0"; //fade it in...
     if (opacity < 1) {
-      opacity += 0.05; // adjust step size for speed
+      opacity += 0.01; // adjust step size for speed
       navbar.style.opacity = opacity;
     } else {
       clearInterval(fadeIn); // stop the interval when done
     }
-  }, 25); // adjust timing for smoothness (lower = smoother)
+  }, 40); // adjust timing for smoothness (lower = smoother)
 }
