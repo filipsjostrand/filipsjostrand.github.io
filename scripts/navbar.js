@@ -1,6 +1,6 @@
 const navbar = document.getElementById("navbar");
 
-let prevScrollPos = window.pageYOffset;
+var prevScrollPos = window.pageYOffset;
 
 function handleScroll() {
   const currentScrollPos = window.pageYOffset;
