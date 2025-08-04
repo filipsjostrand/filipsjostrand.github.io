@@ -1,26 +1,31 @@
 const navbar = document.getElementById("navbar");
 
-var prevScrollPos = window.pageYOffset;
+let prevScrollPos = window.pageYOffset;
 
-function handleScroll() {
+let anchorClicked = false;
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", function () {
+    anchorClicked = true;
+    navbar.style.top = "0";
+
+    setTimeout(() => {
+      anchorClicked = false;
+    }, 300); // adjust delay as needed
+  });
+});
+
+window.addEventListener("scroll", function () {
+  if (anchorClicked) return; // ⛔ skip scroll logic briefly
+
   const currentScrollPos = window.pageYOffset;
 
   if (prevScrollPos > currentScrollPos) {
     navbar.style.top = "0";
-  } else {
+  } else if (prevScrollPos < currentScrollPos) {
     navbar.style.top = "-59px";
   }
 
-  prevScrollPos = currentScrollPos; // nu uppdateras globalt värde korrekt
-}
-
-window.addEventListener("scroll", handleScroll);
-
-// 🎯 Show navbar when any anchor link is clicked
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener("click", function () {
-    window.removeEventListener("scroll", handleScroll);
-    navbar.style.top = "0";
-    window.addEventListener("scroll", handleScroll);
-  });
+  prevScrollPos = currentScrollPos;
 });
+
