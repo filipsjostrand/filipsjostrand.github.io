@@ -30,7 +30,7 @@ function showNavbar() {
     if (opacity < 1) {
       opacity += 0.05; // adjust step size for speed
       navbar.style.opacity = opacity;
-    } else if (opacity >= 1) {
+    } else {
       clearInterval(fadeIn); // stop the interval when done
     }
   }, 50); // adjust timing for smoothness (lower = smoother)
