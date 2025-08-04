@@ -13,6 +13,7 @@
   window.addEventListener("scroll", function () {
     const currentScrollPos = window.pageYOffset;
 
+    console.log("isScrolling = true)
     isScrolling = true
     
     if (prevScrollPos > currentScrollPos) {
@@ -21,6 +22,8 @@
     } else if (prevScrollPos < currentScrollPos){
       // Scrolling down — hide navbar
       navbar.style.top = "-100px"; // adjust based on navbar height
+    } else if (prevScrollPos === currentScrollPos){
+      navbar.style.top = "0";
     }
 
     prevScrollPos = currentScrollPos;
