@@ -74,7 +74,7 @@ window.addEventListener('scroll', function () {
     //showNavbar(isNavbarRolledUp)
     
   setTimeout(() => {
-    console.log("navbar clicked set to false - setTimeout);
+    console.log("navbar clicked set to false - setTimeout");
       isNavbarClicked = false;
     }, 500); // change this delay to suit your needs
 });
