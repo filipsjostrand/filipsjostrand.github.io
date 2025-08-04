@@ -28,7 +28,7 @@ aboutNav.addEventListener('click', function () {
   navbar.style.top = "0";
 })
 
-window.addEventListener("scroll", function (), navbarClicked {
+window.addEventListener("scroll", function () {
   
   const currentScrollPos = window.pageYOffset;
 
