@@ -17,7 +17,7 @@ window.addEventListener('scroll', function () {
     // Scrolling has stopped!
     // Call showNavbar function:
     showNavbar(); 
-  }, 1000); // adjust delay as needed (300ms is typical)
+  }, 300); // adjust delay as needed (300ms is typical)
   prevScrollPos = currentScrollPos;
 });
 
