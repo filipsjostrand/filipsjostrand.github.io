@@ -10,13 +10,13 @@ let isScrolling = false;
 let isNavbarRolledUp = false;
 let isNavbarClicked = false;
 
-function showNavbar(isNavbarRolledUp) {
-  if (isNavbarRolledUp === true && isNavbarClicked === false) {
+function showNavbar(isNavbarRolledUp, isNavbarClicked) {
+  if (isNavbarRolledUp === true && isNavbarClicked === false && isScrolling === true) {
     navbar.style.top = "-45px";
       isNavbarRolledUp = true;
       isScrolling = false;
   }
-  else if (isNavbarRolledUp === true && isNavbarClicked === true) {
+  else if (isNavbarRolledUp === true && isNavbarClicked === true && isScrolling === false) {
   console.log("showNavbar starts")
   navbar.style.top = "0"; //show navbar
   isNavbarRolledUp = false;
@@ -47,7 +47,7 @@ function showNavbar(isNavbarRolledUp) {
   });
 
 window.addEventListener('scroll', function () {
-  isScrolling = true;
+  //isScrolling = true;
 
 const currentScrollPos = window.pageYOffset;
   
@@ -56,10 +56,12 @@ const currentScrollPos = window.pageYOffset;
   if (isNavbarClicked === true && prevScrollPos > currentScrollPos) {
     navbar.style.top = "0";
     isNavbarRolledUp = false;
+    isScrolling = false;
   } 
   else if (isNavbarClicked === true && prevScrollPos < currentScrollPos) {
     navbar.style.top = "0";
     isNavbarRolledUp = false;
+    isScrolling = false;
   } 
   // !Navbar button pressed  -> scroll (!show nav)
   //else { 
@@ -79,10 +81,12 @@ const currentScrollPos = window.pageYOffset;
       // Scrolling up — hide navbar
       navbar.style.top = "-45px";
       isNavbarRolledUp = true;
+      isScrolling = true;
     } else if (isNavbarClicked === false && prevScrollPos < currentScrollPos) {
       // Scrolling down — hide navbar
       navbar.style.top = "-45px"; // adjust based on navbar height
       isNavbarRolledUp = true;
+      isScrolling = true;
     }
   
   //window.clearTimeout(isScrolling);
@@ -103,8 +107,8 @@ const currentScrollPos = window.pageYOffset;
     console.log("navbar clicked set to false - setTimeout");
       //isNavbarClicked = false;
       //isNavbarRolledUp = false;
-      showNavbar(isNavbarRolledUp) 
-    }, 500); // change this delay to suit your needs
+      showNavbar(isNavbarRolledUp, isNavbarClicked) 
+    }, 300); // change this delay to suit your needs
 });
 
 
