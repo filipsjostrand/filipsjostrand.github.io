@@ -32,14 +32,13 @@ window.addEventListener("scroll", function () {
   
   const currentScrollPos = window.pageYOffset;
 
-  if (prevScrollPos > currentScrollPos) {
+  if (navbarClicked === false && prevScrollPos > currentScrollPos) {
     navbar.style.top = "0"; //scrolling up - show scrollbar
     console.log("scroll up ... show navbar (1)")
   } 
-  else if (navbarClicked === true) {
+  else if (navbarClicked === true && prevScrollPos > currentScrollPos || navbarClicked === true && prevScrollPos < currentScrollPos) {
     console.log("navbarClicked === true (i scroll) -> navbar.style.top = '0' ... show navbar (2)")
   navbar.style.top = "0";
-  navbarClicked = false;
   }  else  {
     console.log("else ... hide navbar (3)")
     navbar.style.top = "-59px"; // - hide scrollbar
