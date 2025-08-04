@@ -43,7 +43,7 @@ window.addEventListener("scroll", function () {
     console.log("else ... hide navbar (3)")
     navbar.style.top = "-59px"; // - hide scrollbar
   }
-
+  navbarClicked = false;
   prevScrollPos = currentScrollPos;
 });
 
