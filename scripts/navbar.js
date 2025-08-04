@@ -6,9 +6,9 @@ const planNav = document.getElementById("important-dates");
 const timerNav = document.getElementById("timer");
 const aboutNav = document.getElementById("about-me");
 
-let isScrolling = false;
-let isNavbarRolledUp = false;
-let isNavbarClicked = false;
+var isScrolling = false;
+var isNavbarRolledUp = false;
+var isNavbarClicked = false;
 var lastScroll = "none";
 
 function showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling, lastScroll) {
