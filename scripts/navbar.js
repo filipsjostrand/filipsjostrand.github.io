@@ -35,14 +35,14 @@ window.addEventListener("scroll", function () {
   if (prevScrollPos > currentScrollPos) {
     navbar.style.top = "0"; //scrolling up - show scrollbar
   } 
-    else if (navbarClicked === true) {
-      navbar.style.top = "0";
-      prevScrollPos = currentScrollPos;
-      navbarClicked = false;
-    }
   else if (prevScrollPos < currentScrollPos) {
     navbar.style.top = "-59px"; //scrolling down - hide scrollbar
   }
+  else if (navbarClicked === true) {
+  navbar.style.top = "0";
+  prevScrollPos = currentScrollPos;
+  navbarClicked = false;
+}
 
   prevScrollPos = currentScrollPos;
 });
