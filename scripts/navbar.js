@@ -64,7 +64,6 @@ window.addEventListener('scroll', function () {
   //let scrollEndValue = window.scrollY;
   //if (scrollStartValue = scrollEndValue) {
     //showNavbar(isNavbarRolledUp)
-  }
 });
 
 
