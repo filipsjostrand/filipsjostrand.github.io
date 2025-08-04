@@ -9,7 +9,7 @@
       navbar.style.top = "0";
     } else {
       // Scrolling down — hide navbar
-      navbar.style.top = "-45px"; // adjust based on navbar height
+      navbar.style.top = "-55px"; // adjust based on navbar height
     }
 
     prevScrollPos = currentScrollPos;
