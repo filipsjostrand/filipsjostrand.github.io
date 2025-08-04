@@ -1,31 +1,36 @@
- let prevScrollPos = window.pageYOffset;
+let prevScrollPos = window.pageYOffset;
+const navbar = document.getElementById("navbar");
+
+let isScrolling;
+
+window.addEventListener('scroll', function () {
+  const currentScrollPos = window.pageYOffset;
+
+      // Scrolling — hide navbar
+      navbar.style.top = "-100px"; // adjust based on navbar height
+  
+  window.clearTimeout(isScrolling);
+
+  isScrolling = setTimeout(function () {
+    // Scrolling has stopped!
+    // Call showNavbar function:
+    showNavbar(); 
+  }, 1000); // adjust delay as needed (300ms is typical)
+  prevScrollPos = currentScrollPos;
+});
+
+function showNavbar() {
   const navbar = document.getElementById("navbar");
-  let isScrolling;
+  let opacity = 0; // reset each time
+  navbar.style.top = "0";
+  navbar.style.opacity = "0";
 
-  window.addEventListener('scroll', function () {
-    const currentScrollPos = window.pageYOffset;
+  const fadeIn = setInterval(() => {
+    opacity += 0.02; // smoother fade
+    navbar.style.opacity = opacity;
 
-    // Hide navbar immediately
-    navbar.style.top = "-100px";
-
-    window.clearTimeout(isScrolling);
-    isScrolling = setTimeout(showNavbar, 4000);
-    prevScrollPos = currentScrollPos;
-  });
-
-  function showNavbar() {
-    let opacity = 0;
-
-    navbar.style.top = "0";
-    navbar.style.opacity = "0"; // Reset opacity for each show
-
-    function fade() {
-      opacity += 0.01;
-      if (opacity <= 1) {
-        navbar.style.opacity = opacity;
-        requestAnimationFrame(fade);
-      }
+    if (opacity >= 1) {
+      clearInterval(fadeIn);
     }
-
-    fade();
-  }
+  }, 20); // adjust speed as needed
+}
