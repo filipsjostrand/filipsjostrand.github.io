@@ -11,16 +11,25 @@ let isNavbarRolledUp = false;
 let isNavbarClicked = false;
 
 function showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling) {
+  // After manual scroll (navbar rolled up)
   if (isNavbarRolledUp === true && isNavbarClicked === false && isScrolling === true) {
     navbar.style.top = "-45px";
       isNavbarRolledUp = true;
       isScrolling = true;
   }
+  // After button scroll (navbar rolled down)
   else if (isNavbarRolledUp === true && isNavbarClicked === true && isScrolling === false) {
   console.log("showNavbar starts")
   navbar.style.top = "0"; //show navbar
   isNavbarRolledUp = false;
   isScrolling = false;
+  } 
+  // After button scroll (navbar roll up)  
+  else if (isNavbarRolledUp === false && isNavbarClicked === true && isScrolling === false) {
+  console.log("showNavbar starts")
+  navbar.style.top = "-45px"; //hide navbar
+  isNavbarRolledUp = true;
+  isScrolling = true;
   } 
 }
   //else if (isNavbarRolledUp === false) {
