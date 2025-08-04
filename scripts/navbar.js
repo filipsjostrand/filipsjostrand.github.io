@@ -19,9 +19,7 @@ window.addEventListener('scroll', function () {
 
   isScrolling = setTimeout(function () {
     // Scrolling has stopped!
-    console.log('User has stopped scrolling');
-    
-    // You can call a function here, like:
+    // Call showNavbar function:
     showNavbar(); 
   }, 300); // adjust delay as needed (300ms is typical)
   prevScrollPos = currentScrollPos;
@@ -31,12 +29,12 @@ function showNavbar() {
   const navbar = document.getElementById("navbar");
 
     const fadeIn = setInterval(() => {
-    navbar.style.top = "0"; // or fade it in, etc.
+    navbar.style.top = "0"; //fade it in...
     if (opacity < 1) {
       opacity += 0.05; // adjust step size for speed
       navbar.style.opacity = opacity;
     } else {
       clearInterval(fadeIn); // stop the interval when done
     }
-  }, 50); // adjust timing for smoothness (lower = smoother)
+  }, 25); // adjust timing for smoothness (lower = smoother)
 }
