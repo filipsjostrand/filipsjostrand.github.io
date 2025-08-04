@@ -22,6 +22,7 @@ function showNavbar(isNavbarRolledUp) {
   isNavbarRolledUp = false;
   isScrolling = false;
   } 
+}
   //else if (isNavbarRolledUp === false) {
     //navbar.style.top = "0";
   //}
