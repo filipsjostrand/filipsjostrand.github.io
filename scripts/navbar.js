@@ -23,41 +23,46 @@ function hideNavbar(source = "manual") {
   console.log(`Navbar hidden via ${source}`);
 }
 
-navbar.addEventListener('click', () => {
-  // Show navbar instantly
-  navbar.style.top = "0";
+let isScrollLocked = false;
 
-  // Update state to reflect this is a button-triggered reveal
+navbar.addEventListener("click", () => {
+  navbar.style.top = "0";
   isNavbarRolledUp = false;
   isNavbarClicked = true;
   lastScroll = "button";
+  isScrollLocked = true; // block scroll action temporarily
 
-  console.log("Navbar clicked — forced to show");
+  console.log("Navbar clicked — showing and locking scroll behavior");
 
-  // Optionally reset the 'clicked' state after some time to allow scroll behavior again
+  // Unlock after a delay
   setTimeout(() => {
+    isScrollLocked = false;
     isNavbarClicked = false;
-    console.log("Navbar clicked state reset");
-  }, 500); // tweak this delay as needed
+    console.log("Scroll behavior re-enabled");
+  }, 1000); // increase if needed for smoother UX
 });
+
 
 
 // Scroll listener
 window.addEventListener("scroll", () => {
-  const currentScrollPos = window.pageYOffset;
-
-  const scrollingUp = currentScrollPos < prevScrollPos;
-  const scrollingDown = currentScrollPos > prevScrollPos;
-
-  if (isNavbarClicked) {
-    // If clicked recently, ignore scroll behavior
+  if (isScrollLocked) {
+    // Don't do anything while locked
     return;
   }
 
+  const currentScrollPos = window.pageYOffset;
+  const scrollingDown = currentScrollPos > prevScrollPos;
+
   if (scrollingDown) {
-    hideNavbar("manual");
-  } else if (scrollingUp) {
-    hideNavbar("manual");
+    navbar.style.top = "-45px";
+    isNavbarRolledUp = true;
+    lastScroll = "manual";
+  } else {
+    // optional: show on scroll up
+    navbar.style.top = "0";
+    isNavbarRolledUp = false;
+    lastScroll = "manual";
   }
 
   prevScrollPos = currentScrollPos;
