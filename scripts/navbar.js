@@ -7,7 +7,7 @@ window.addEventListener('scroll', function () {
   const currentScrollPos = window.pageYOffset;
 
   // Scrolling — hide navbar
-  navbar.style.top = "-100px"; // adjust based on navbar height
+  navbar.style.top = "-50px"; // adjust based on navbar height
   
   window.clearTimeout(isScrolling);
 
@@ -15,7 +15,7 @@ window.addEventListener('scroll', function () {
     // Scrolling has stopped!
     // Call showNavbar function:
     showNavbar(); 
-  }, 300); // adjust delay as needed (300ms is typical)
+  }, 10); // adjust delay as needed (300ms is typical)
   prevScrollPos = currentScrollPos;
 });
 
