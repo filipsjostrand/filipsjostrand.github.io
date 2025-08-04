@@ -23,16 +23,24 @@ function hideNavbar(source = "manual") {
   console.log(`Navbar hidden via ${source}`);
 }
 
-// Click listener — user wants to reveal it manually
 navbar.addEventListener('click', () => {
-  showNavbar("button");
+  // Show navbar instantly
+  navbar.style.top = "0";
 
-  // Optionally reset click state after a delay
+  // Update state to reflect this is a button-triggered reveal
+  isNavbarRolledUp = false;
+  isNavbarClicked = true;
+  lastScroll = "button";
+
+  console.log("Navbar clicked — forced to show");
+
+  // Optionally reset the 'clicked' state after some time to allow scroll behavior again
   setTimeout(() => {
     isNavbarClicked = false;
-    console.log("Navbar click state reset");
-  }, 500);
+    console.log("Navbar clicked state reset");
+  }, 500); // tweak this delay as needed
 });
+
 
 // Scroll listener
 window.addEventListener("scroll", () => {
