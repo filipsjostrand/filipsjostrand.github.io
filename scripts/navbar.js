@@ -6,15 +6,15 @@ const planNav = document.getElementById("important-dates");
 const timerNav = document.getElementById("timer");
 const aboutNav = document.getElementById("about-me");
 
-let isScrolling = false;
+let isScrolling = true;
 let isNavbarRolledUp = false;
 let isNavbarClicked = false;
 
-function showNavbar(isNavbarRolledUp, isNavbarClicked) {
+function showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling) {
   if (isNavbarRolledUp === true && isNavbarClicked === false && isScrolling === true) {
     navbar.style.top = "-45px";
       isNavbarRolledUp = true;
-      isScrolling = false;
+      isScrolling = true;
   }
   else if (isNavbarRolledUp === true && isNavbarClicked === true && isScrolling === false) {
   console.log("showNavbar starts")
@@ -107,7 +107,7 @@ const currentScrollPos = window.pageYOffset;
     console.log("navbar clicked set to false - setTimeout");
       //isNavbarClicked = false;
       //isNavbarRolledUp = false;
-      showNavbar(isNavbarRolledUp, isNavbarClicked) 
+      showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling) 
     }, 300); // change this delay to suit your needs
 });
 
