@@ -32,7 +32,14 @@ window.addEventListener('scroll', function () {
   const currentScrollPos = window.pageYOffset;
 
   // Scrolling — hide navbar
-  navbar.style.top = "-60px"; // adjust based on navbar height
+
+    if (prevScrollPos > currentScrollPos) {
+      // Scrolling up — hide navbar
+      navbar.style.top = "-60px";
+    } else {
+      // Scrolling down — hide navbar
+      navbar.style.top = "-60px"; // adjust based on navbar height
+    }
   
   //window.clearTimeout(isScrolling);
 
