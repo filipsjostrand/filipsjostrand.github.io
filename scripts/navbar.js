@@ -2,10 +2,10 @@ let prevScrollPos = window.pageYOffset;
 const navbar = document.getElementById("navbar");
 
 let isScrolling;
-// let opacity = 0;
+let opacity = 1;
 
 window.addEventListener('scroll', function () {
-  let opacity = 0;
+  opacity = 0;
   const currentScrollPos = window.pageYOffset;
 
       // Scrolling — hide navbar
