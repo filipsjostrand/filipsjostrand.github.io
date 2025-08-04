@@ -51,6 +51,8 @@ function showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling, lastScroll) 
   //isNavbarRolledUp = true;
   //isScrolling = true;
   //} 
+
+  console.log("isNavbarRolledUp, isNavbarClicked, isScrolling, lastScroll" = + isNavbarRolledUp + ", " + isNavbarClicked + ", " + isScrolling + ", " + lastScroll)
 }
   //else if (isNavbarRolledUp === false) {
     //navbar.style.top = "0";
