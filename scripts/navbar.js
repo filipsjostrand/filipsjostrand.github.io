@@ -2,55 +2,34 @@ const weekNav = document.getElementById("weekly-calendar");
 const planNav = document.getElementById("important-dates");
 const timerNav = document.getElementById("timer");
 const aboutNav = document.getElementById("about-me");
+const navbar = document.getElementById("navbar");
 
-let scrollPositionWeek, scrollPositionPlan, scrollPositionTimer, scrollPositionAbout;
+let prevScrollPos = window.pageYOffset;
 
-// Helper function to compare scrollTop and window.scrollY
-function checkScrollMatch(element, label) {
-  if (element.scrollTop === window.scrollY) {
-    console.log(`${label} matches window.scrollY`);
-    return window.scrollY;
-  } 
-  
-  //else {
-    //console.log(`${label} does not match window.scrollY`);
-    //return null;
-  //}
+// Helper: check if element is near top of view
+function isElementNearTop(element, offset = 50) {
+  const elementTop = element.getBoundingClientRect().top;
+  return elementTop >= 0 && elementTop <= offset;
 }
 
-// Run comparisons
-scrollPositionWeek = checkScrollMatch(weekNav, "WeekNav");
-scrollPositionPlan = checkScrollMatch(planNav, "PlanNav");
-scrollPositionTimer = checkScrollMatch(timerNav, "TimerNav");
-scrollPositionAbout = checkScrollMatch(aboutNav, "AboutNav");
+window.addEventListener("scroll", function () {
+  const currentScrollPos = window.pageYOffset;
 
-  let prevScrollPos = window.pageYOffset;
-  const navbar = document.getElementById("navbar");
+  // Basic scroll direction behavior
+  if (prevScrollPos > currentScrollPos) {
+    navbar.style.top = "0"; // scroll up — show navbar
+  } else {
+    navbar.style.top = "-59px"; // scroll down — hide navbar
+  }
+  prevScrollPos = currentScrollPos;
 
-  //let scrollPositionWeek;
-
-  window.addEventListener("scroll", function () {
-    const currentScrollPos = window.pageYOffset;
-
-    if (prevScrollPos > currentScrollPos) {
-      // Scrolling up — show navbar
-      navbar.style.top = "0";
-    } else if (prevScrollPos < currentScrollPos){
-      // Scrolling down — hide navbar
-      navbar.style.top = "-59px"; // adjust based on navbar height
-    }
-
-    prevScrollPos = currentScrollPos;
-
-    const myDiv = document.getElementById("myDiv");
-    
-    // Compare scroll values
-    if (weekNav.scrollTop === window.scrollY) {
-      console.log("Scroll positions match!");
-      scrollPositionWeek = window.scrollY;
-    }
-    
-    if (window.scrollY === scrollPositionWeek || window.scrollY === scrollPositionPlan || window.scrollY === scrollPositionTimer || window.scrollY === scrollPositionAbout) {
-      navbar.style.top = "0";
-    }
-  });
+  // Section-specific reveal logic
+  if (
+    isElementNearTop(weekNav) ||
+    isElementNearTop(planNav) ||
+    isElementNearTop(timerNav) ||
+    isElementNearTop(aboutNav)
+  ) {
+    navbar.style.top = "0"; // make navbar visible when a section hits top
+  }
+});
