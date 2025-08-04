@@ -11,22 +11,22 @@ let isNavbarRolledUp = false;
 
   navbar.addEventListener('click', function() {
     showNavbar();
-  }
+  })
   todosNav.addEventListener('click', function() {
     showNavbar();
-  }
+  })
    weekNav.addEventListener('click', function() {
     showNavbar();
-  }
+  })
   planNav.addEventListener('click', function() {
     showNavbar();
-  }
+  })
   timerNav.addEventListener('click', function() {
     showNavbar();
-  }
+  })
    aboutNav.addEventListener('click', function() {
     showNavbar();
-  }
+  })
 
 window.addEventListener('scroll', function () {
   const currentScrollPos = window.pageYOffset;
