@@ -35,10 +35,10 @@ window.addEventListener('scroll', function () {
 
     if (prevScrollPos > currentScrollPos) {
       // Scrolling up — hide navbar
-      navbar.style.top = "-60px";
+      navbar.style.top = "-40px";
     } else {
       // Scrolling down — hide navbar
-      navbar.style.top = "-60px"; // adjust based on navbar height
+      navbar.style.top = "-40px"; // adjust based on navbar height
     }
   
   //window.clearTimeout(isScrolling);
