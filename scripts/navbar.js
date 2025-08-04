@@ -15,7 +15,7 @@ function showNavbar(isNavbarRolledUp) {
   console.log("showNavbar starts")
   navbar.style.top = "0"; //fade it in...
   isNavbarRolledUp = false;
-  isNavbarClicked = false;
+  isScrolling = false;
   }
 }
 
@@ -23,10 +23,12 @@ function showNavbar(isNavbarRolledUp) {
     isNavbarClicked = true;
 
     console.log("navbar clicked, isNavbarClicked = " + isNavbarClicked);
+
+    showNavbar(isNavbarRolledUp);
     
-    setTimeout(() => {
-      showNavbar(isNavbarRolledUp);
-    }, 300); // change this delay to suit your needs
+    //setTimeout(() => {
+      //showNavbar(isNavbarRolledUp);
+    //}, 500); // change this delay to suit your needs
     
     //console.log("show navbar");
     //setTimeout(() => {
@@ -69,6 +71,10 @@ window.addEventListener('scroll', function () {
   //let scrollEndValue = window.scrollY;
   //if (scrollStartValue = scrollEndValue) {
     //showNavbar(isNavbarRolledUp)
+    
+  setTimeout(() => {
+      isNavbarClicked = false;
+    }, 500); // change this delay to suit your needs
 });
 
 
