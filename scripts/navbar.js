@@ -81,7 +81,7 @@ window.addEventListener('scroll', function () {
 const currentScrollPos = window.pageYOffset;
   
 //if (isScrolling === false && isNavbarClicked === true) {
-  // Navbar button pressed  -> scroll (show nav)
+  // Button scroll (start) -> scroll (show nav)
   if (isNavbarClicked === true && lastScroll === "none" && prevScrollPos > currentScrollPos) {
     navbar.style.top = "0";
     isNavbarRolledUp = false;
@@ -91,7 +91,8 @@ const currentScrollPos = window.pageYOffset;
     navbar.style.top = "0";
     isNavbarRolledUp = false;
     isScrolling = false;
-  } 
+  }
+    // Button scroll after manual scroll
   else if (isNavbarClicked === true && lastScroll === "manual" && prevScrollPos > currentScrollPos) {
     navbar.style.top = "0";
     isNavbarRolledUp = false;
@@ -101,7 +102,7 @@ const currentScrollPos = window.pageYOffset;
     navbar.style.top = "0";
     isNavbarRolledUp = false;
     isScrolling = false;
-  } 
+  }
   // !Navbar button pressed  -> scroll (!show nav)
   //else { 
     //isNavbarClicked === false;
@@ -116,6 +117,7 @@ const currentScrollPos = window.pageYOffset;
   //let scrollStartValue = window.scrollY;
   //const currentScrollPos = window.pageYOffset;
   // Scrolling — hide navbar
+  // Manual scroll (start) -> scroll (show nav)
     else if (isNavbarClicked === false && lastScroll === "none"  && prevScrollPos > currentScrollPos) {
       // Scrolling up — hide navbar
       navbar.style.top = "-45px";
@@ -126,6 +128,19 @@ const currentScrollPos = window.pageYOffset;
       navbar.style.top = "-45px"; // adjust based on navbar height
       isNavbarRolledUp = true;
       isScrolling = true;
+    }
+    // Manual scroll after button scroll
+    else if (isNavbarClicked === true && lastScroll === "button"  && prevScrollPos > currentScrollPos) {
+      // Scrolling up — hide navbar
+      navbar.style.top = "-45px";
+      isNavbarRolledUp = false;
+      isScrolling = false;
+    }
+    else if (isNavbarClicked === true && lastScroll === "button"  && prevScrollPos < currentScrollPos) {
+      // Scrolling up — hide navbar
+      navbar.style.top = "-45px";
+      isNavbarRolledUp = false;
+      isScrolling = false;
     }
   
   //window.clearTimeout(isScrolling);
