@@ -44,8 +44,8 @@ window.addEventListener("scroll", function () {
   else if (navbarClicked === true && prevScrollPos > currentScrollPos || navbarClicked === true && prevScrollPos < currentScrollPos) {
     console.log("navbarClicked === true (i scroll) -> navbar.style.top = '0' ... show navbar (3)")
   navbar.style.top = "0";
-  
+  }
+    
   prevScrollPos = currentScrollPos;
   navbarClicked = false;
 });
-
