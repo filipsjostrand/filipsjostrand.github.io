@@ -9,24 +9,9 @@ const aboutNav = document.getElementById("about-me");
 let isScrolling;
 let isNavbarRolledUp = false;
 
-window.addEventListener('scroll', function () {
-  const currentScrollPos = window.pageYOffset;
-
-  // Scrolling — hide navbar
-  navbar.style.top = "-60px"; // adjust based on navbar height
-  
-  window.clearTimeout(isScrolling);
-
-  //isScrolling = setTimeout(function () {
-    // Scrolling has stopped!
-    // Call showNavbar function:
-    //showNavbar(); 
-  //}, 10); // adjust delay as needed (300ms is typical)
-
   navbar.addEventListener('click', function() {
     showNavbar();
   }
-
   todosNav.addEventListener('click', function() {
     showNavbar();
   }
@@ -42,6 +27,20 @@ window.addEventListener('scroll', function () {
    aboutNav.addEventListener('click', function() {
     showNavbar();
   }
+
+window.addEventListener('scroll', function () {
+  const currentScrollPos = window.pageYOffset;
+
+  // Scrolling — hide navbar
+  navbar.style.top = "-60px"; // adjust based on navbar height
+  
+  //window.clearTimeout(isScrolling);
+
+  //isScrolling = setTimeout(function () {
+    // Scrolling has stopped!
+    // Call showNavbar function:
+    //showNavbar(); 
+  //}, 10); // adjust delay as needed (300ms is typical)
   
   prevScrollPos = currentScrollPos;
 });
