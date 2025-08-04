@@ -6,31 +6,51 @@ const planNav = document.getElementById("important-dates");
 const timerNav = document.getElementById("timer");
 const aboutNav = document.getElementById("about-me");
 
-let isScrolling = true;
+let isScrolling = false;
 let isNavbarRolledUp = false;
 let isNavbarClicked = false;
+let lastScroll = "none";
 
-function showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling) {
-  // After manual scroll (navbar rolled up)
-  if (isNavbarRolledUp === true && isNavbarClicked === false && isScrolling === true) {
+function showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling, lastScroll) {
+  // After 1st manual scroll (navbar rolled up)
+  if (isNavbarRolledUp === true && isNavbarClicked === false && isScrolling === true && lastScroll === "none") {
+    console.log("showNavbar 1st manual")
     navbar.style.top = "-45px";
-      isNavbarRolledUp = true;
-      isScrolling = true;
+    isNavbarRolledUp = true;
+    isScrolling = true;
+    lastScroll = "manual";
   }
-  // After button scroll (navbar rolled down)
-  else if (isNavbarRolledUp === true && isNavbarClicked === true && isScrolling === false) {
-  console.log("showNavbar starts")
-  navbar.style.top = "0"; //show navbar
-  isNavbarRolledUp = false;
-  isScrolling = false;
+  // After 1st button scroll (navbar rolled down)
+  else if (isNavbarRolledUp === false && isNavbarClicked === true && isScrolling === false && lastScroll === "none") {
+    console.log("showNavbar 1st button")
+    navbar.style.top = "0"; //show navbar
+    isNavbarRolledUp = false;
+    isScrolling = false;
+    lastScroll = "button";
   } 
-  // After button scroll (navbar roll up)  
-  else if (isNavbarRolledUp === false && isNavbarClicked === true && isScrolling === false) {
-  console.log("showNavbar starts")
-  navbar.style.top = "-45px"; //hide navbar
-  isNavbarRolledUp = true;
-  isScrolling = true;
+  // Button scroll - after manual scroll (navbar rolled up)
+  else if (isNavbarRolledUp === true && isNavbarClicked === true && isScrolling === false && lastScroll === "manual") {
+    console.log("showNavbar++ button - after manual")
+    navbar.style.top = "0"; //show navbar
+    isNavbarRolledUp = false;
+    isScrolling = false;
+    lastScroll = "button";
+  }
+  // Manual scroll - after button scroll (navbar rolled down)
+  else if (isNavbarRolledUp === false && isNavbarClicked === true && isScrolling === false && lastScroll === "button") {
+    console.log("showNavbar++ button - after button")
+    navbar.style.top = "-45px"; //show navbar
+    isNavbarRolledUp = true;
+    isScrolling = true;
+    lastScroll = "manual";
   } 
+  // Manual scroll, After button scroll (navbar roll up)  
+  //else if (isNavbarRolledUp === false && isNavbarClicked === true && isScrolling === false) {
+  //console.log("showNavbar starts")
+  //navbar.style.top = "-45px"; //hide navbar
+  //isNavbarRolledUp = true;
+  //isScrolling = true;
+  //} 
 }
   //else if (isNavbarRolledUp === false) {
     //navbar.style.top = "0";
@@ -62,12 +82,22 @@ const currentScrollPos = window.pageYOffset;
   
 //if (isScrolling === false && isNavbarClicked === true) {
   // Navbar button pressed  -> scroll (show nav)
-  if (isNavbarClicked === true && prevScrollPos > currentScrollPos) {
+  if (isNavbarClicked === true && lastScroll === "none" && prevScrollPos > currentScrollPos) {
     navbar.style.top = "0";
     isNavbarRolledUp = false;
     isScrolling = false;
   } 
-  else if (isNavbarClicked === true && prevScrollPos < currentScrollPos) {
+  else if (isNavbarClicked === true && lastScroll === "none" && prevScrollPos < currentScrollPos) {
+    navbar.style.top = "0";
+    isNavbarRolledUp = false;
+    isScrolling = false;
+  } 
+  else if (isNavbarClicked === true && lastScroll === "manual" && prevScrollPos > currentScrollPos) {
+    navbar.style.top = "0";
+    isNavbarRolledUp = false;
+    isScrolling = false;
+  } 
+  else if (isNavbarClicked === true && lastScroll === "manual" && prevScrollPos < currentScrollPos) {
     navbar.style.top = "0";
     isNavbarRolledUp = false;
     isScrolling = false;
@@ -86,12 +116,12 @@ const currentScrollPos = window.pageYOffset;
   //let scrollStartValue = window.scrollY;
   //const currentScrollPos = window.pageYOffset;
   // Scrolling — hide navbar
-    else if (isNavbarClicked === false && prevScrollPos > currentScrollPos) {
+    else if (isNavbarClicked === false && lastScroll === "none"  && prevScrollPos > currentScrollPos) {
       // Scrolling up — hide navbar
       navbar.style.top = "-45px";
       isNavbarRolledUp = true;
       isScrolling = true;
-    } else if (isNavbarClicked === false && prevScrollPos < currentScrollPos) {
+    } else if (isNavbarClicked === false && lastScroll === "none" && prevScrollPos < currentScrollPos) {
       // Scrolling down — hide navbar
       navbar.style.top = "-45px"; // adjust based on navbar height
       isNavbarRolledUp = true;
