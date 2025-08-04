@@ -86,22 +86,26 @@ const currentScrollPos = window.pageYOffset;
     navbar.style.top = "0";
     isNavbarRolledUp = false;
     isScrolling = false;
+    lastScroll = "none";
   } 
   else if (isNavbarClicked === true && lastScroll === "none" && prevScrollPos < currentScrollPos) {
     navbar.style.top = "0";
     isNavbarRolledUp = false;
     isScrolling = false;
+    lastScroll = "none";
   }
     // Button scroll after manual scroll
   else if (isNavbarClicked === true && lastScroll === "manual" && prevScrollPos > currentScrollPos) {
     navbar.style.top = "0";
     isNavbarRolledUp = false;
     isScrolling = false;
+    lastScroll = "manual";
   } 
   else if (isNavbarClicked === true && lastScroll === "manual" && prevScrollPos < currentScrollPos) {
     navbar.style.top = "0";
     isNavbarRolledUp = false;
     isScrolling = false;
+    lastScroll = "manual";
   }
   // !Navbar button pressed  -> scroll (!show nav)
   //else { 
@@ -123,11 +127,13 @@ const currentScrollPos = window.pageYOffset;
       navbar.style.top = "-45px";
       isNavbarRolledUp = true;
       isScrolling = true;
+      lastScroll = "none";
     } else if (isNavbarClicked === false && lastScroll === "none" && prevScrollPos < currentScrollPos) {
       // Scrolling down — hide navbar
       navbar.style.top = "-45px"; // adjust based on navbar height
       isNavbarRolledUp = true;
       isScrolling = true;
+      lastScroll = "none";
     }
     // Manual scroll after button scroll
     else if (isNavbarClicked === true && lastScroll === "button"  && prevScrollPos > currentScrollPos) {
@@ -135,12 +141,14 @@ const currentScrollPos = window.pageYOffset;
       navbar.style.top = "-45px";
       isNavbarRolledUp = false;
       isScrolling = false;
+      lastScroll = "button";
     }
     else if (isNavbarClicked === true && lastScroll === "button"  && prevScrollPos < currentScrollPos) {
       // Scrolling up — hide navbar
       navbar.style.top = "-45px";
       isNavbarRolledUp = false;
       isScrolling = false;
+      lastScroll = "button";
     }
   
   //window.clearTimeout(isScrolling);
@@ -161,7 +169,7 @@ const currentScrollPos = window.pageYOffset;
     console.log("navbar clicked set to false - setTimeout");
       //isNavbarClicked = false;
       //isNavbarRolledUp = false;
-      showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling) 
+      showNavbar(isNavbarRolledUp, isNavbarClicked, isScrolling, lastScroll) 
     }, 300); // change this delay to suit your needs
 });
 
