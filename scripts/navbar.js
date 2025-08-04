@@ -92,7 +92,7 @@ window.addEventListener('scroll', function () {
     
   setTimeout(() => {
     console.log("navbar clicked set to false - setTimeout");
-      isNavbarClicked = false;
+      //isNavbarClicked = false;
       //isNavbarRolledUp = false;
       showNavbar(isNavbarRolledUp) 
     }, 500); // change this delay to suit your needs
