@@ -4,6 +4,19 @@ const weekNav = document.getElementById("weekly-calendar");
 const planNav = document.getElementById("important-dates");
 const timerNav = document.getElementById("timer");
 const aboutNav = document.getElementById("about-me");
+//const navbarHideText = document.getElementById("hide-nav-text");
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.getElementById("navbar");
+  const hideText = document.getElementById("hideNavbarText");
+
+  if (navbar && hideText) {
+    hideText.addEventListener("click", function () {
+      navbar.style.top = "-59px"; // hides navbar
+      hideText.style.display = "none"; // hides the text
+    });
+  }
+});
 
 var navClicked = false;
 
@@ -71,12 +84,12 @@ aboutNav.addEventListener('click', function () {
     console.log("scroll down - std ... show navbar (3)")
     navbar.style.top = "0"; //scrolling up - show scrollbar
     //navClicked = false;
-    navClicked = !navClicked;
+    //navClicked = !navClicked;
   }
   else if (prevScrollPos < currentScrollPos && navClicked === false) {
     console.log("scroll down - std ... hide navbar (4)")
     navbar.style.top = "-59px"; // - hide scrollbar
-    navClicked = !navClicked;
+    //navClicked = !navClicked;
   } 
   //else if (prevScrollPos === currentScrollPos) {
     //navbar.style.top = "0"; //scrolling up - show scrollbar
