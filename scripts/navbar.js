@@ -62,7 +62,7 @@ window.addEventListener("scroll", function () {
   
   const currentScrollPos = window.pageYOffset;
 
-  if (myFlag === false && navStart === false prevScrollPos > currentScrollPos) {
+  if (myFlag === false && navStart === false && prevScrollPos > currentScrollPos) {
     navbar.style.top = "0"; //scrolling up - show scrollbar
     console.log("scroll up - std ... show navbar (1)")
   }  
