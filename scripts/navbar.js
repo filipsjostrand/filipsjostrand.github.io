@@ -6,63 +6,29 @@ const timerNav = document.getElementById("timer");
 const aboutNav = document.getElementById("about-me");
 
 document.addEventListener("DOMContentLoaded", function () {
-    const navbar = document.getElementById("navbar");
-    const hideText = document.getElementById("hide-nav-text");
-    let lastScrollTop = 0;
-    let isNavInActive = false;
-    let isManuallyToggled = false;
-    let scrollTimeout;
+  const navbar = document.getElementById("navbar");
+  const hideText = document.getElementById("hide-nav-text");
+  let isNavInActive = false;
 
-    // Manual toggle
-    if (navbar && hideText) {
-      hideText.addEventListener("click", function () {
-        console.log("hideText clicked");
+  if (navbar && hideText) {
+    hideText.addEventListener("click", function () {
+      console.log("hideText.addEventListener click");
+      isNavInActive = !isNavInActive;
 
-        isNavInActive = !isNavInActive;
-        isManuallyToggled = true;
-
-        if (isNavInActive) {
-          navbar.style.top = "-59px";
-          hideText.innerText = "☰";
-          hideText.style.fontSize = "20px";
-        } else {
-          navbar.style.top = "0";
-          hideText.innerText = "❌ Navbar";
-          hideText.style.fontSize = "16px";
-        }
-
-        // Temporarily disable scroll logic
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-          isManuallyToggled = false;
-        }, 1500); // Delay before scroll regains control
-      });
-    }
-
-    // Scroll logic
-    window.addEventListener("scroll", function () {
-      if (isManuallyToggled) return; // Skip scroll behavior if manually toggled recently
-
-      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-      if (currentScroll > lastScrollTop) {
-        // Scrolling down
-        navbar.style.top = "-59px";
+      if (isNavInActive) {
+        // Show navbar
+        navbar.style.top = "0";
+        hideText.innerText = "❌ Navbar";
+        hideText.style.fontSize = "16px";
       } else {
-        // Scrolling up
-        navbar.style.top = "0";
+        // Hide navbar
+        navbar.style.top = "-59px";
+        hideText.innerText = "☰";
+        hideText.style.fontSize = "20px";
       }
-
-      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
-
-    // Show navbar when clicking anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function () {
-        navbar.style.top = "0";
-      });
-    });
-  });
+  }
+});
 
 
 var navClicked = false;
