@@ -82,6 +82,6 @@ aboutNav.addEventListener('click', function () {
     //console.log("scroll up - std ... show navbar (5)")
   //} 
 
-  navClicked = true
+  navClicked = false;
   prevScrollPos = currentScrollPos;
 });
