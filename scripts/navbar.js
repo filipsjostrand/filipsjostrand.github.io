@@ -6,13 +6,18 @@ const planNav = document.getElementById("important-dates");
 const timerNav = document.getElementById("timer");
 const aboutNav = document.getElementById("about-me");
 
+function showNavbar() {
+  navbar.style.top = "0"; 
+}
+
 todosNav.addEventListener('click', function () {
   console.log("top-todos div was clicked!");
     // Add your click logic here
   todosNav.scrollIntoView({
     behavior: "smooth" // adds a smooth animation
   });
-  navbar.style.top = "0"; 
+  //navbar.style.top = "0"; 
+  showNavbar();
   // Add your click logic here
 });
 
@@ -22,7 +27,8 @@ weekNav.addEventListener('click', function () {
   weekNav.scrollIntoView({
     behavior: "smooth" // adds a smooth animation
   });
-  navbar.style.top = "0"; 
+  //navbar.style.top = "0";
+  showNavbar();
 });
 planNav.addEventListener('click', function () {
   console.log("plan div was clicked!");
@@ -30,7 +36,8 @@ planNav.addEventListener('click', function () {
     planNav.scrollIntoView({
     behavior: "smooth" // adds a smooth animation
   });
-  navbar.style.top = "0"; 
+  //navbar.style.top = "0";
+  showNavbar();
 });
 timerNav.addEventListener('click', function () {
   console.log("timer div was clicked!");
@@ -38,7 +45,8 @@ timerNav.addEventListener('click', function () {
     timerNav.scrollIntoView({
     behavior: "smooth" // adds a smooth animation
   });
-  navbar.style.top = "0"; 
+  //navbar.style.top = "0";
+  showNavbar();
 });
 aboutNav.addEventListener('click', function () {
   console.log("about div was clicked!");
@@ -46,7 +54,8 @@ aboutNav.addEventListener('click', function () {
     aboutNav.scrollIntoView({
     behavior: "smooth" // adds a smooth animation
   });
-  navbar.style.top = "0"; 
+  //navbar.style.top = "0";
+  showNavbar();
 });
 
 let prevScrollPos = window.pageYOffset;
