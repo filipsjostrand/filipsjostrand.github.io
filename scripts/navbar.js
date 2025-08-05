@@ -6,49 +6,62 @@ const aboutNav = document.getElementById("about-me");
 
 let prevScrollPos = window.pageYOffset;
 
-var navbarClicked = false;
-var navbarReset = false;
+//var navbarClicked = false;
+
+var myFlag = false;
+
+// Trigger some behavior
+function activateFlag() {
+  myFlag = true;
+  console.log("Flag set to TRUE");
+
+  // Automatically reset after 2 seconds (2000 ms)
+  setTimeout(() => {
+    myFlag = false;
+    //navbarClicked = false;
+    console.log("Flag reset to FALSE after timeout");
+  }, 2000);
+}
 
 weekNav.addEventListener('click', function () {
-  navbarClicked = true;
+  //navbarClicked = true;
   navbar.style.top = "0";
+  activateFlag();
 })
 
 planNav.addEventListener('click', function () {
-  navbarClicked = true;
+  //navbarClicked = true;
   navbar.style.top = "0";
+  activateFlag();
 })
 
 timerNav.addEventListener('click', function () {
-  navbarClicked = true;
+  //navbarClicked = true;
   navbar.style.top = "0";
+  activateFlag();
 })
 
 aboutNav.addEventListener('click', function () {
   navbarClicked = true;
   navbar.style.top = "0";
+  activateFlag();
 })
 
 window.addEventListener("scroll", function () {
   
   const currentScrollPos = window.pageYOffset;
 
-  if (navbarClicked === false && prevScrollPos > currentScrollPos) {
+  if (myFlag === false && prevScrollPos > currentScrollPos) {
     navbar.style.top = "0"; //scrolling up - show scrollbar
     console.log("scroll up - std ... show navbar (1)")
   }  
-  else if (navbarClicked === false && navbarReset === false && prevScrollPos < currentScrollPos) {
+  else if (myFlag === false && prevScrollPos < currentScrollPos) {
     console.log("scroll down - std ... hide navbar (2)")
     navbar.style.top = "-59px"; // - hide scrollbar
   } 
-  else if (navbarClicked === true && navbarReset === true && prevScrollPos < currentScrollPos) {
-    console.log("scroll down - ef navClick ... hide navbar (3)")
-    navbar.style.top = "-59px";
-  }
-  else if (navbarClicked === true && prevScrollPos > currentScrollPos || navbarClicked === true && prevScrollPos < currentScrollPos) {
-    console.log("navbarClicked === true (i scroll) -> navbar.style.top = '0' ... show navbar (4)")
+  else if (myFlag === true && prevScrollPos > currentScrollPos || myFlag === true && prevScrollPos < currentScrollPos) {
+    console.log("myFlag === true (i scroll) -> navbar.style.top = '0' ... show navbar (4)")
     navbar.style.top = "0";
-    navbarReset = true;
   }
   
   prevScrollPos = currentScrollPos;
