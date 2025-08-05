@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
       isNavActive = !isNavActive;
       if (isNavActive === true) {
         hideText.addEventListener("click", function () {
-          if (hideText.innerHTML === "❌ Navbar") {
+          if (hideText.innerText === "❌ Navbar") {
             navbar.style.top = "-59px"; // hides navbar
             hideText.style.fontSize = "16px";
             //hideText.style.display = "none"; // hides the text
         } else if (isNavActive === false) {
             navbar.style.top = "0"; // hides navbar
-            hideText.innerHTML = "☰";
+            hideText.innerText = "☰";
             hideText.style.fontSize = "20px";
           }
         });
