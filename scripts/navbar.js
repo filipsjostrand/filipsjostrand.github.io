@@ -43,17 +43,21 @@ aboutNav.addEventListener('click', function () {
     else if (prevScrollPos > currentScrollPos && navClicked = true) {
     console.log("prevScrollPos > currentScrollPos (i scroll) = " + prevScrollPos > currentScrollPos)
     navbar.style.top = "0"; //scrolling up - show scrollbar
-    console.log("scroll up - std ... show navbar (1)")
+    console.log("scroll up - std ... show navbar (2)")
   }
   else if (prevScrollPos < currentScrollPos && navClicked = true; {
-    console.log("scroll down - std ... show navbar (2)")
+    console.log("scroll down - std ... show navbar (3)")
     navbar.style.top = "0"; //scrolling up - show scrollbar
-    prevScrollPos = currentScrollPos+1;
+    prevScrollPos = currentScrollPos;
     navClicked = false;
   }
     else if (prevScrollPos < currentScrollPos && navClicked = false) {
-    console.log("scroll down - std ... hide navbar (3)")
+    console.log("scroll down - std ... hide navbar (4)")
     navbar.style.top = "-59px"; // - hide scrollbar
+  } 
+    else if (prevScrollPos === currentScrollPos && navClicked = false) {
+    navbar.style.top = "0"; //scrolling up - show scrollbar
+    console.log("scroll up - std ... show navbar (5)")
   } 
   
   prevScrollPos = currentScrollPos;
