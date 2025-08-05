@@ -45,7 +45,7 @@ aboutNav.addEventListener('click', function () {
     navbar.style.top = "0"; //scrolling up - show scrollbar
     console.log("scroll up - std ... show navbar (2)")
   }
-  else if (prevScrollPos < currentScrollPos && navClicked === true; {
+  else if (prevScrollPos < currentScrollPos && navClicked === true) {
     console.log("scroll down - std ... show navbar (3)")
     navbar.style.top = "0"; //scrolling up - show scrollbar
     prevScrollPos = currentScrollPos;
