@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
   
   if (prevScrollPos > currentScrollPos) {
     navbar.style.top = "0"; //scrolling up - show scrollbar
-
+  }
   else {
     navbar.style.top = "-59px"; // - hide scrollbar
   } 
