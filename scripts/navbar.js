@@ -6,78 +6,35 @@ const aboutNav = document.getElementById("about-me");
 
 let prevScrollPos = window.pageYOffset;
 
-var navStart = true;
-
-var myFlag = false;
-
-// Trigger some behavior
-function activateFlag() {
-  myFlag = true;
-  console.log("Flag set to TRUE");
-
-  // Automatically reset after 2 seconds (2000 ms)
-  setTimeout(() => {
-    myFlag = false;
-    //navbarClicked = false;
-    console.log("Flag reset to FALSE after timeout");
-  }, 2000);
-}
-
-function deActivateNavStart() {
-  console.log("navStart is TRUE");
-
-  // Automatically reset after 2 seconds (2000 ms)
-  setTimeout(() => {
-   navStart = false;
-    //navbarClicked = false;
-    console.log("navStart resets to FALSE after timeout");
-  }, 2000);
-}
 
 weekNav.addEventListener('click', function () {
-  //navbarClicked = true;
-  navbar.style.top = "0";
-  activateFlag();
+  prevScrollPos = 563;
 })
 
 planNav.addEventListener('click', function () {
-  //navbarClicked = true;
-  navbar.style.top = "0";
-  activateFlag();
+  prevScrollPos = 1595;
 })
 
 timerNav.addEventListener('click', function () {
-  //navbarClicked = true;
-  navbar.style.top = "0";
-  activateFlag();
+  prevScrollPos = 1595;
 })
 
 aboutNav.addEventListener('click', function () {
-  //navbarClicked = true;
-  navbar.style.top = "0";
-  activateFlag();
+  prevScrollPos = 3203;
 })
 
 window.addEventListener("scroll", function () {
   
   const currentScrollPos = window.pageYOffset;
 
-  if (myFlag === false && navStart === false && prevScrollPos > currentScrollPos) {
+  if (prevScrollPos > currentScrollPos) {
     navbar.style.top = "0"; //scrolling up - show scrollbar
     console.log("scroll up - std ... show navbar (1)")
   }  
-  else if (myFlag === false && navStart === false && prevScrollPos < currentScrollPos) {
+  else {
     console.log("scroll down - std ... hide navbar (2)")
     navbar.style.top = "-59px"; // - hide scrollbar
   } 
-  else if (myFlag === true && prevScrollPos > currentScrollPos || myFlag === true && prevScrollPos < currentScrollPos) {
-    console.log("myFlag === true (i scroll) -> navbar.style.top = '0' ... show navbar (4)")
-    navbar.style.top = "0";
-  }
-    else if (navStart === true && prevScrollPos > currentScrollPos || navStart === true && prevScrollPos < currentScrollPos) {
-    console.log("navStart === true (i scroll) -> navbar.style.top = '0' ... show navbar (4)")
-    navbar.style.top = "0";
-  }
   
   prevScrollPos = currentScrollPos;
 });
