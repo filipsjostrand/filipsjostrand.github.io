@@ -11,6 +11,7 @@ function showNavbar() {
 
     if (navbar) {
     navbar.style.top = "0";
+  }
 }
 
 todosNav.addEventListener('click', function () {
