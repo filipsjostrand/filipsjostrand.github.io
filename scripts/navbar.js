@@ -4,31 +4,31 @@ const weekNav = document.getElementById("weekly-calendar");
 const planNav = document.getElementById("important-dates");
 const timerNav = document.getElementById("timer");
 const aboutNav = document.getElementById("about-me");
-//const navbarHideText = document.getElementById("hide-nav-text");
 
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("navbar");
   const hideText = document.getElementById("hide-nav-text");
-  var isNavActive = true;
+  let isNavActive = true;
 
   if (navbar && hideText) {
-      hideText.addEventListener("click", function () {
-          isNavActive = !isNavActive;
-          if (isNavActive === true) {
-          if (hideText.innerText === "❌ Navbar") {
-              navbar.style.top = "-59px"; // hides navbar
-              hideText.style.fontSize = "16px";
-              //hideText.style.display = "none"; // hides the text
-          } else if (isNavActive === false) {
-              navbar.style.top = "0"; // hides navbar
-              hideText.innerText = "☰";
-              hideText.style.fontSize = "20px";
-          }
-          }
-      });
+    hideText.addEventListener("click", function () {
+      isNavActive = !isNavActive;
 
-    }
+      if (isNavActive) {
+        // Show navbar
+        navbar.style.top = "0";
+        hideText.innerText = "❌ Navbar";
+        hideText.style.fontSize = "16px";
+      } else {
+        // Hide navbar
+        navbar.style.top = "-59px";
+        hideText.innerText = "☰";
+        hideText.style.fontSize = "20px";
+      }
+    });
+  }
 });
+
 
 var navClicked = false;
 
