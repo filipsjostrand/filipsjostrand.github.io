@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (navbar && hideText) {
     hideText.addEventListener("click", function () {
+      console.log("hideText.addEventListener click");
       isNavActive = !isNavActive;
 
       if (isNavActive) {
