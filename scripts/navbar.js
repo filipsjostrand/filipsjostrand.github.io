@@ -6,7 +6,7 @@ const planNav = document.getElementById("important-dates");
 const timerNav = document.getElementById("timer");
 const aboutNav = document.getElementById("about-me");
 
-const todosNav.addEventListener('click', function () {
+todosNav.addEventListener('click', function () {
   console.log("top-todos div was clicked!");
     // Add your click logic here
   todosNav.scrollIntoView({
@@ -14,9 +14,9 @@ const todosNav.addEventListener('click', function () {
   });
   navbar.style.top = "0"; 
   // Add your click logic here
-});)
+});
 
-const weekNav.addEventListener('click', function () {
+weekNav.addEventListener('click', function () {
   console.log("week div was clicked!");
   // Add your click logic here
   weekNav.scrollIntoView({
@@ -24,7 +24,7 @@ const weekNav.addEventListener('click', function () {
   });
   navbar.style.top = "0"; 
 });
-const planNav.addEventListener('click', function () {
+planNav.addEventListener('click', function () {
   console.log("plan div was clicked!");
   // Add your click logic here
     planNav.scrollIntoView({
@@ -32,7 +32,7 @@ const planNav.addEventListener('click', function () {
   });
   navbar.style.top = "0"; 
 });
-const timerNav.addEventListener('click', function () {
+timerNav.addEventListener('click', function () {
   console.log("timer div was clicked!");
   // Add your click logic here
     timerNav.scrollIntoView({
@@ -40,7 +40,7 @@ const timerNav.addEventListener('click', function () {
   });
   navbar.style.top = "0"; 
 });
-const aboutNav.addEventListener('click', function () {
+aboutNav.addEventListener('click', function () {
   console.log("about div was clicked!");
   // Add your click logic here
     aboutNav.scrollIntoView({
