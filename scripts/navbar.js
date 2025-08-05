@@ -1,4 +1,4 @@
-const navbar = document.getElementById("navbar");
+//const navbar = document.getElementById("navbar");
 
 const todosNav = document.getElementById("top-todos");
 const weekNav = document.getElementById("weekly-calendar");
@@ -7,7 +7,10 @@ const timerNav = document.getElementById("timer");
 const aboutNav = document.getElementById("about-me");
 
 function showNavbar() {
-  navbar.style.top = "0"; 
+  const navbar = document.getElementById("navbar");
+
+    if (navbar) {
+    navbar.style.top = "0";
 }
 
 todosNav.addEventListener('click', function () {
