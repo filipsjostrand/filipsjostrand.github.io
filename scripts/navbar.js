@@ -15,8 +15,8 @@ function showNavbar() {
 function handleNavClick(section, name) {
   section.addEventListener("click", function () {
     console.log(`${name} div was clicked!`);
+    showNavbar(); // Ensure navbar is visible
     section.scrollIntoView({ behavior: "smooth" });
-    showNavbar();
   });
 }
 
