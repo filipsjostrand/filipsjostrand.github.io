@@ -49,7 +49,7 @@ aboutNav.addEventListener('click', function () {
     console.log("prevScrollPos > currentScrollPos (i scroll) = " + prevScrollPos > currentScrollPos)
     navbar.style.top = "0"; //scrolling up - show scrollbar
     console.log("scroll up - std ... show navbar (2)")
-    navClicked = false;
+    //navClicked = false;
   }
   else if (prevScrollPos < currentScrollPos && navClicked === true) {
     console.log("scroll down - std ... show navbar (3)")
