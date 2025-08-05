@@ -71,10 +71,12 @@ aboutNav.addEventListener('click', function () {
     console.log("scroll down - std ... show navbar (3)")
     navbar.style.top = "0"; //scrolling up - show scrollbar
     //navClicked = false;
+    navClicked = !navClicked;
   }
   else if (prevScrollPos < currentScrollPos && navClicked === false) {
     console.log("scroll down - std ... hide navbar (4)")
     navbar.style.top = "-59px"; // - hide scrollbar
+    navClicked = !navClicked;
   } 
   //else if (prevScrollPos === currentScrollPos) {
     //navbar.style.top = "0"; //scrolling up - show scrollbar
@@ -82,6 +84,6 @@ aboutNav.addEventListener('click', function () {
     //console.log("scroll up - std ... show navbar (5)")
   //} 
 
-  navClicked = false;
+  //navClicked = false;
   prevScrollPos = currentScrollPos;
 });
