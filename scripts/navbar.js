@@ -14,32 +14,43 @@ window.addEventListener("scroll", function () {
   const currentScrollPos = window.pageYOffset;
 
 todosNav.addEventListener('click', function () {
-  prevScrollPos = 3400;
-  navClicked = !navClicked;
+  //prevScrollPos = 3400;
+    //navClicked = !navClicked;
+  if (prevScrollPos < currentScrollPos) {
+    navClicked = true
+  }
   //navClicked = true;
   console.log("A")
 })
 weekNav.addEventListener('click', function () {
-  prevScrollPos = 3400;
-  navClicked = !navClicked;
+  //prevScrollPos = 3400;
+    if (prevScrollPos < currentScrollPos) {
+    navClicked = true
+  }
   //navClicked = true;
   console.log("B")
 })
 planNav.addEventListener('click', function () {
-  prevScrollPos = 3400;
-  navClicked = !navClicked;
+  //prevScrollPos = 3400;
+    if (prevScrollPos < currentScrollPos) {
+    navClicked = true
+  }
   //navClicked = true;
   console.log("C")
 })
 timerNav.addEventListener('click', function () {
-  prevScrollPos = 3400;
-  navClicked = !navClicked;
+  //prevScrollPos = 3400;
+    if (prevScrollPos < currentScrollPos) {
+    navClicked = true
+  }
   //navClicked = true;
   console.log("D")
 })
 aboutNav.addEventListener('click', function () {
-  prevScrollPos = 3400;
-  navClicked = !navClicked;
+  //prevScrollPos = 3400;
+   if (prevScrollPos < currentScrollPos) {
+    navClicked = true
+  }
   //navClicked = true;
   console.log("E")
 })
