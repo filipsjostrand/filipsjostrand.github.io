@@ -49,13 +49,6 @@ aboutNav.addEventListener('click', function () {
   navbar.style.top = "0"; 
 });
 
-
-
-const todosNav.addEventListener('click', function () {
-  console.log("top-todos div was clicked!");
-  // Add your click logic here
-});)
-
 let prevScrollPos = window.pageYOffset;
 
 window.addEventListener("scroll", function () {
