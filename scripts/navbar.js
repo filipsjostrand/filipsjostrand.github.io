@@ -12,20 +12,21 @@ document.addEventListener("DOMContentLoaded", function () {
   var isNavActive = true;
 
   if (navbar && hideText) {
-    isNavActive = !isNavActive;
-    if (isNavActive === true) {
-    hideText.addEventListener("click", function () {
-      if (hideText.innerHTML === "❌ Navbar") {
-        navbar.style.top = "-59px"; // hides navbar
-        hideText.style.fontSize = "16px";
-        //hideText.style.display = "none"; // hides the text
-    } else if (isNavActive === false) {
-        navbar.style.top = "0"; // hides navbar
-        hideText.innerHTML = "☰";
-        hideText.style.fontSize = "20px";
+      isNavActive = !isNavActive;
+      if (isNavActive === true) {
+        hideText.addEventListener("click", function () {
+          if (hideText.innerHTML === "❌ Navbar") {
+            navbar.style.top = "-59px"; // hides navbar
+            hideText.style.fontSize = "16px";
+            //hideText.style.display = "none"; // hides the text
+        } else if (isNavActive === false) {
+            navbar.style.top = "0"; // hides navbar
+            hideText.innerHTML = "☰";
+            hideText.style.fontSize = "20px";
+          }
+        });
       }
-    });
-  }
+    }
 });
 
 var navClicked = false;
