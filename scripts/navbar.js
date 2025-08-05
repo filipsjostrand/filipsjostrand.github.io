@@ -1,5 +1,5 @@
 const navbar = document.getElementById("navbar");
-//const todosNav = document.getElementById("top-todos");
+const todosNav = document.getElementById("top-todos");
 const weekNav = document.getElementById("weekly-calendar");
 const planNav = document.getElementById("important-dates");
 const timerNav = document.getElementById("timer");
@@ -11,29 +11,20 @@ window.addEventListener("scroll", function () {
 
   const currentScrollPos = window.pageYOffset;
 
-//todosNav.addEventListener('click', function () {
-  //prevScrollPos = 563;
-  //currentScrollPos = Math.expm1(prevScrollPos);
-//})
-  
+todosNav.addEventListener('click', function () {
+  prevScrollPos = 3400;
+})
 weekNav.addEventListener('click', function () {
-  prevScrollPos = 563;
-  currentScrollPos = Math.expm1(prevScrollPos);
+  prevScrollPos = 3400;
 })
-
 planNav.addEventListener('click', function () {
-  prevScrollPos = 1595;
-  currentScrollPos = Math.expm1(prevScrollPos);
+  prevScrollPos = 3400;
 })
-
 timerNav.addEventListener('click', function () {
-  prevScrollPos = 1595;
-  currentScrollPos = Math.expm1(prevScrollPos);
+  prevScrollPos = 3400;
 })
-
 aboutNav.addEventListener('click', function () {
-  prevScrollPos = 3203;
-  currentScrollPos = Math.expm1(prevScrollPos);
+  prevScrollPos = 3400;
 })
   
 
