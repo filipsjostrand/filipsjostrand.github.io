@@ -8,12 +8,22 @@ const aboutNav = document.getElementById("about-me");
 
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("navbar");
-  const hideText = document.getElementById("hideNavbarText");
+  const hideText = document.getElementById("hide-nav-text");
+  var isNavActive = true;
 
   if (navbar && hideText) {
+    isNavActive = !isNavActive;
+    if (isNavActive === true) {
     hideText.addEventListener("click", function () {
-      navbar.style.top = "-59px"; // hides navbar
-      hideText.style.display = "none"; // hides the text
+      if (hideText.innerHTML === "❌ Navbar") {
+        navbar.style.top = "-59px"; // hides navbar
+        hideText.style.fontSize = "16px";
+        //hideText.style.display = "none"; // hides the text
+    } else if (isNavActive === false) {
+        navbar.style.top = "0"; // hides navbar
+        hideText.innerHTML = "☰";
+        hideText.style.fontSize = "20px";
+      }
     });
   }
 });
