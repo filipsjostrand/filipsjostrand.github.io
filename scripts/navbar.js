@@ -8,14 +8,14 @@ const aboutNav = document.getElementById("about-me");
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("navbar");
   const hideText = document.getElementById("hide-nav-text");
-  let isNavActive = true;
+  let isNavInActive = false;
 
   if (navbar && hideText) {
     hideText.addEventListener("click", function () {
       console.log("hideText.addEventListener click");
-      isNavActive = !isNavActive;
+      isNavInActive = !isNavInActive;
 
-      if (isNavActive) {
+      if (isNavInActive) {
         // Show navbar
         navbar.style.top = "0";
         hideText.innerText = "❌ Navbar";
