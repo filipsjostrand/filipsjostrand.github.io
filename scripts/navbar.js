@@ -6,38 +6,53 @@ const planNav = document.getElementById("important-dates");
 const timerNav = document.getElementById("timer");
 const aboutNav = document.getElementById("about-me");
 
+let isNavTemporarilyLocked = false;
+let scrollTimeout;
+let prevScrollPos = window.pageYOffset;
+
 function showNavbar() {
   if (navbar) {
     navbar.style.top = "0";
   }
 }
 
-function handleNavClick(section, name) {
-  section.addEventListener("click", function () {
-    console.log(`${name} div was clicked!`);
-    showNavbar(); // Ensure navbar is visible
-    section.scrollIntoView({ behavior: "smooth" });
+// Prevent scroll from hiding navbar temporarily
+function temporarilyLockNavbar() {
+  isNavTemporarilyLocked = true;
+  showNavbar(); // ensure it's visible
+
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    isNavTemporarilyLocked = false;
+  }, 1500); // lock for 1.5 seconds
+}
+
+// Generalized nav click handler
+function setupNavClick(element, name) {
+  element.addEventListener("click", function () {
+    console.log(`${name} clicked`);
+    element.scrollIntoView({ behavior: "smooth" });
+    temporarilyLockNavbar(); // prevent scroll from hiding it right after
   });
 }
 
-// Apply handlers
-handleNavClick(todosNav, "top-todos");
-handleNavClick(weekNav, "week");
-handleNavClick(planNav, "plan");
-handleNavClick(timerNav, "timer");
-handleNavClick(aboutNav, "about");
+// Setup each nav click
+setupNavClick(todosNav, "Todos");
+setupNavClick(weekNav, "Week");
+setupNavClick(planNav, "Plan");
+setupNavClick(timerNav, "Timer");
+setupNavClick(aboutNav, "About");
 
-let prevScrollPos = window.pageYOffset;
-
+// Scroll behavior
 window.addEventListener("scroll", function () {
+  if (isNavTemporarilyLocked) return;
+
   const currentScrollPos = window.pageYOffset;
 
   if (prevScrollPos > currentScrollPos) {
-    // Scrolling up
-    navbar.style.top = "0";
+    showNavbar(); // scrolling up
   } else {
-    // Scrolling down
-    navbar.style.top = "-59px";
+    navbar.style.top = "-59px"; // scrolling down
   }
 
   prevScrollPos = currentScrollPos;
