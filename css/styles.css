@@ -256,6 +256,12 @@ h3 {
 
 /* Weekly schedule (start) */
 
+#week-desc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #week-plan-info {
   overflow: visible; /* Ensure content is visible */
   margin-bottom: 15px;
@@ -1093,3 +1099,4 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
