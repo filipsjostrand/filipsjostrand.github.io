@@ -256,8 +256,13 @@ h3 {
 
 /* Weekly schedule (start) */
 
+#week-desc-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #week-desc-container {
-  width: 55%;
   display: flex;
   flex-direction: column;
 }
@@ -1099,5 +1104,6 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
 
 
