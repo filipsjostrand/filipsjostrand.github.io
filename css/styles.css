@@ -782,7 +782,7 @@ li.bullet-point-size-two, li {
 }
 
 #past-tasks-input-field {
-  width: 70vh;
+  width: 100%;
   height: 400px;
   background-color: rgb(119, 119, 119);
 }
@@ -915,7 +915,6 @@ li.bullet-point-size-two, li {
 
   #past-plan-container {
     display: flex;
-    justify-content: center;
   }
 
   #past-plan-wrapper {
@@ -1122,6 +1121,7 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
 
 
 
