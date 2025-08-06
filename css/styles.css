@@ -267,6 +267,10 @@ h3 {
   flex-direction: column;
 }
 
+#week-display-2 {
+  padding-bottom: 5px;
+}
+
 #week-plan-info {
   overflow: visible; /* Ensure content is visible */
   margin-bottom: 15px;
@@ -1117,6 +1121,7 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
 
 
 
