@@ -857,6 +857,7 @@ li.bullet-point-size-two, li {
     flex-direction: column;
   }
   #future-plans-wrapper {
+    width: 55%;
     display: flex;
     flex-direction: column;
   }
@@ -1121,6 +1122,7 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
 
 
 
