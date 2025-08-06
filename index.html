@@ -131,30 +131,33 @@
       </main>
 
       <section>
-          <div id="week-desc-container">
-                <div id="weekly-div"></div>
-                <h3 id="weekly-heading" class="app-heading">Week Schedule</h3>
-                <div id="week-plan-info">
-                  <p id="weekly-desc">
-                    Check current week schedule
-
-                    <div id="week-info-header">
-                      <a href="#" id="toggle-link-week"><h4 id="app-info-week">Application information </h4><div id="info-symbol-week">ℹ️</div></a>
+          <div id="week-desc-wrapper">
+              <div id="week-desc-container">
+                    <div id="weekly-div"></div>
+                    <h3 id="weekly-heading" class="app-heading">Week Schedule</h3>
+                    <div id="week-plan-info">
+                      <p id="weekly-desc">
+                        Check current week schedule
+    
+                        <div id="week-info-header">
+                          <a href="#" id="toggle-link-week"><h4 id="app-info-week">Application information </h4><div id="info-symbol-week">ℹ️</div></a>
+                        </div>
+                          <div class="info-week" id="content-week" style="display: none;">
+                            <ul>
+                              <li id="go-future-plans">Go to "Future Plans" (to add tasks)</li>
+                              <ul>
+                                <li id="go-future-navbar">Scroll down or click "Future" (navbar)</li>
+                              </ul>
+                            </ul>
+                                <br>
+    
+                          </div>
+                      </p>
+                      <div id="week-display-2"></div>
                     </div>
-                      <div class="info-week" id="content-week" style="display: none;">
-                        <ul>
-                          <li id="go-future-plans">Go to "Future Plans" (to add tasks)</li>
-                          <ul>
-                            <li id="go-future-navbar">Scroll down or click "Future" (navbar)</li>
-                          </ul>
-                        </ul>
-                            <br>
-
-                      </div>
-                  </p>
-                  <div id="week-display-2"></div>
                 </div>
-            </div>
+              </div>
+          
         <div class="grid-day-container">
           <div class="grid-item day1" id="mon-div">
             <div id="mon-day">Mon</div>
@@ -833,3 +836,4 @@
     <script async src="./scripts/contact-form.js"></script>
 </body>
 </html>
+
