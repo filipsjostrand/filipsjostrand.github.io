@@ -263,7 +263,6 @@ h3 {
 }
 
 #week-desc-container {
-  width: 55%;
   display: flex;
   flex-direction: column;
 }
@@ -833,6 +832,10 @@ li.bullet-point-size-two, li {
     width: 300px;
   }
 
+  #week-desc-container {
+    width: 55%;
+  }
+  
   .grid-day-container {
     grid-template-columns: calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7);
     /* grid-template-columns: auto auto auto auto auto auto auto; */
@@ -954,6 +957,10 @@ li.bullet-point-size-two, li {
     grid-template-columns: calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7);
   } */
 
+  #week-desc-container {
+    width: 55%;
+  }
+  
   .grid-day-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
@@ -999,7 +1006,7 @@ li.bullet-point-size-two, li {
   #add-todo-text {
     border-top-color:rgb(255, 255, 255);
   }
-
+  
   #future-plans-section {
     width: 100vw;
     display: flex;
@@ -1007,10 +1014,15 @@ li.bullet-point-size-two, li {
     flex-direction: column;
   }
   #future-plans-wrapper {
+    width: 55%;
     display: flex;
     flex-direction: column;
   }
 
+  #past-tasks-input-field {
+      width: 100%;
+  }
+  
   .iframe-box-container {
     display:flex;
     flex-direction: column;
@@ -1105,6 +1117,7 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
 
 
 
