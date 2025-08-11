@@ -151,10 +151,10 @@ const appInfoWeek = {
   en: `Week`,
 }
 
-const appInfoWeekNr = {
-  sv: `Vecka: `,
-  en: `Week: `,
-}
+//const appInfoWeekNr = {
+  //sv: `Vecka: `,
+  //en: `Week: `,
+//}
 
 const appInfoFuture = {
   sv: `Plan`,
@@ -863,7 +863,7 @@ const userMessagePlaceholder = {
           document.querySelector('.info').innerHTML = infoBullets[selectedLanguage];
           
           document.getElementById('weekday-display').innerHTML = getTodaysDayAbbreviation(todaysWeekdayAbbNr);
-          document.getElementById('week-display').innerHTML = appInfoWeekNr[selectedLanguage];
+          //document.getElementById('week-display').innerHTML = appInfoWeekNr[selectedLanguage];
 
           document.querySelector('.add-button-v2').innerHTML = addButton2[selectedLanguage];
           document.getElementById('top3-label').innerHTML = top3Label[selectedLanguage];
