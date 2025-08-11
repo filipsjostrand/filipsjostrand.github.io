@@ -41,9 +41,6 @@ function updateCheckboxStateStart(checkboxStateX, savedCheckboxStateLocalX, todo
         checkboxStateX.checked = false;
         todoX.style.textDecoration = 'none';
     }
-    const isChecked = savedState === "true";
-  checkbox.checked = isChecked;
-  todoElement.style.textDecoration = isChecked ? "line-through" : "none";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -392,6 +389,7 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
 
