@@ -720,15 +720,15 @@ languageSelectElement = window.languageSelectElement;
 
     putInSelectedLanguageMultipleTimes(selectedLanguage);
 
-    function putInSelectedLanguageMultipleTimes(selectedLanguage) {
+    //function putInSelectedLanguageMultipleTimes(selectedLanguage) {
 
 
-    var weekDisplay = document.getElementById('week-display');
-      weekDisplay.textContent = weekInfo[selectedLanguage] + weekNumber;
+    //var weekDisplay = document.getElementById('week-display');
+      //weekDisplay.textContent = weekInfo[selectedLanguage] + weekNumber;
 
-      document.getElementById('week-display-2').innerHTML = weekInfo2[selectedLanguage] + weekNumber;
+      //document.getElementById('week-display-2').innerHTML = weekInfo2[selectedLanguage] + weekNumber;
 
-    }
+    //}
 
     // _ _ _
 
