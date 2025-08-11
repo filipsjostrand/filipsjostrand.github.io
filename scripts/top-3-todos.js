@@ -407,7 +407,6 @@ var todayDate = new Date();
       dateDisplayTop3.textContent = `${formatDateTopTodos(todayTop3)}`;
 
       // Display current week number
-      //const weekDisplayTop3 = document.getElementById('week-display');
       const weekDisplayTop3 = document.getElementById('week-nr-paragraph');
       weekDisplayTop3.textContent = ': ' + weekNumber;
 
@@ -423,5 +422,3 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
-
-
