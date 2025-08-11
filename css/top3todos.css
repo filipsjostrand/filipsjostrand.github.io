@@ -63,6 +63,11 @@
     display: flex;
 }
 
+#weekday-display-container {
+    display: flex;
+    flex-direction: row;
+}
+
 #week-display {
     width: 70px;
     height: 20px;
@@ -188,3 +193,4 @@
         transform: scale(1.1);
     }
 }
+
