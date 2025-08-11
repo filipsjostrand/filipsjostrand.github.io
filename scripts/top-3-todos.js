@@ -36,10 +36,12 @@ function updateCheckboxStateStart(checkboxStateX, savedCheckboxStateLocalX, todo
     if (savedCheckboxStateLocalX === "true") {
         checkboxStateX.checked = true;
         todoX.style.textDecoration = 'line-through';
+        console.log("set localStorage variable X to line through" + checkboxStateX);
       } 
     else {
         checkboxStateX.checked = false;
         todoX.style.textDecoration = 'none';
+        console.log("set localStorage variable X to none" + checkboxStateX);
     }
 }
 
@@ -389,6 +391,7 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
 
