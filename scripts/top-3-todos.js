@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const savedCheckboxStateOne = localStorage.getItem("locVarCheckBoxOneState");
     
   const checkboxTwo = document.getElementById("second");
-  const savedCheckboxStateOne = localStorage.getItem("locVarCheckBoxTwoState");
+  const savedCheckboxStateTwo = localStorage.getItem("locVarCheckBoxTwoState");
     
   const checkboxThree = document.getElementById("third");
   const savedCheckboxStatThree = localStorage.getItem("locVarCheckBoThreeState");
