@@ -32,13 +32,14 @@ let limitedTodoSet = new Set();
 //let checkboxThree = document.getElementById("third");
 
 
-function updateCheckboxStateStart(checkboxStateX, savedCheckboxStateLocalX) {
+function updateCheckboxStateStart(checkboxStateX, savedCheckboxStateLocalX, todoX) {
     if (savedCheckboxStateLocalX === "true") {
         checkboxStateX.checked = true;
-        //todoX.style.textDecoration = 'line-through';
+        todoX.style.textDecoration = 'line-through';
       } 
     else {
         checkboxStateX.checked = false;
+        todoX.style.textDecoration = 'none';
     }
 }
 
@@ -52,9 +53,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const checkboxThree = document.getElementById("third");
   const savedCheckboxStateThree = localStorage.getItem("locVarCheckboxThreeState");
 
-    updateCheckboxStateStart(checkboxOne, savedCheckboxStateOne);
-    updateCheckboxStateStart(checkboxTwo, savedCheckboxStateTwo);
-    updateCheckboxStateStart(checkboxThree, savedCheckboxStateThree);
+    updateCheckboxStateStart(checkboxOne, savedCheckboxStateOne, todoOne);
+    updateCheckboxStateStart(checkboxTwo, savedCheckboxStateTwo, todoTwo);
+    updateCheckboxStateStart(checkboxThree, savedCheckboxStateThree, todoThree);
 
     console.log("get localStorage variable One, two, three");
   //if (savedCheckboxStateOne === "true") {
@@ -384,5 +385,6 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
