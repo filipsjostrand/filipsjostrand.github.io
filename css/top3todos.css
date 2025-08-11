@@ -72,6 +72,7 @@
     height: 20px;
     display: flex;
     margin-bottom: 12px;
+    padding-right: 0.2rem;
 }
 
 .todo-input-v2 {
@@ -192,6 +193,7 @@
         transform: scale(1.1);
     }
 }
+
 
 
 
