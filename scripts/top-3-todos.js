@@ -91,24 +91,14 @@ checkboxOne.addEventListener('change', function() {
 
 checkboxTwo.addEventListener('change', function() {
 
-    if (checkboxTwo.checked) {
-      todoTwo.style.textDecoration = 'line-through';
-    } else {
-      todoTwo.style.textDecoration = 'none';
-    }
-    console.log("set localStorage variable Two");
-    localStorage.setItem("locVarCheckboxTwoState", checkboxTwo.checked);
+    todoTwo.style.textDecoration = checkboxTwo.checked ? 'line-through' : 'none';
+        localStorage.setItem("locVarCheckboxTwoState", checkboxTwo.checked);
 });
 
 checkboxThree.addEventListener('change', function() {
     
-    if (checkboxThree.checked) {
-      todoThree.style.textDecoration = 'line-through';
-    } else {
-      todoThree.style.textDecoration = 'none';
-    }
-    console.log("set localStorage variable Three");
-    localStorage.setItem("locVarCheckboxThreeState", checkboxThree.checked);
+    todoThree.style.textDecoration = checkboxThree.checked ? 'line-through' : 'none';
+        localStorage.setItem("locVarCheckboxThreeState", checkboxThree.checked);
 });
 
 
@@ -394,6 +384,7 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
 
