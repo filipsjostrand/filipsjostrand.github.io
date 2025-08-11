@@ -27,33 +27,81 @@ let limitedTodoSet = new Set();
 
 // _ _ _
 
-let checkboxOne = document.getElementById("first");
-let checkboxTwo = document.getElementById("second");
-let checkboxThree = document.getElementById("third");
+//let checkboxOne = document.getElementById("first");
+//let checkboxTwo = document.getElementById("second");
+//let checkboxThree = document.getElementById("third");
+
+let checkBoxStateX;
+let savedCheckboxStateLocalX;
+
+function updateCheckboxStateStart(checkboxStateX, savedCheckboxStateLocalX) {
+    if (checkboxStateX === "true") {
+        savedCheckboxStateLocalX.checked = true;
+        //todoX.style.textDecoration = 'line-through';
+      } 
+    else {
+        savedCheckboxStateLocalX.checked = false;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const checkboxOne = document.getElementById("first");
+  const savedCheckboxStateOne = localStorage.getItem("locVarCheckBoxOneState");
+    
+  const checkboxTwo = document.getElementById("second");
+  const savedCheckboxStateOne = localStorage.getItem("locVarCheckBoxTwoState");
+    
+  const checkboxThree = document.getElementById("third");
+  const savedCheckboxStatThree = localStorage.getItem("locVarCheckBoThreeState");
+
+    updateCheckboxStateStart(checkboxOne, savedCheckboxStateOne);
+    updateCheckboxStateStart(checkboxTwo, savedCheckboxStateTwo);
+    updateCheckboxStateStart(checkboxThree, savedCheckboxStateThree);
+
+    console.log("get localStorage variable One, two, three");
+  //if (savedCheckboxStateOne === "true") {
+    //checkboxOne.checked = true;
+  //} else {
+    //checkboxOne.checked = false;
+  //}
+});
+
 
 // Optionally, add an event listener to handle the checkbox state
 checkboxOne.addEventListener('change', function() {
+    const checkboxOne = document.getElementById("first");
+
     if (checkboxOne.checked) {
       todoOne.style.textDecoration = 'line-through';
     } else {
       todoOne.style.textDecoration = 'none';
     }
+    console.log("set localStorage variable One");
+    localStorage.setItem("locVarCheckboxOneState", checkboxOne.checked);
   });
 
 checkboxTwo.addEventListener('change', function() {
+    const checkboxTwo = document.getElementById("second");
+
     if (checkboxTwo.checked) {
       todoTwo.style.textDecoration = 'line-through';
     } else {
       todoTwo.style.textDecoration = 'none';
     }
+    console.log("set localStorage variable Two");
+    localStorage.setItem("locVarCheckboxTwoState", checkboxTwo.checked);
 });
 
 checkboxThree.addEventListener('change', function() {
+    const checkboxThree = document.getElementById("third");
+    
     if (checkboxThree.checked) {
       todoThree.style.textDecoration = 'line-through';
     } else {
       todoThree.style.textDecoration = 'none';
     }
+    console.log("set localStorage variable Three");
+    localStorage.setItem("locVarCheckboxThreeState", checkboxThree.checked);
 });
 
 // _ _ _
