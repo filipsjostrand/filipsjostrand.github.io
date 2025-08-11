@@ -427,8 +427,3 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
-
-
-
-
-
