@@ -406,10 +406,10 @@ var todayDate = new Date();
       const dateDisplayTop3 = document.getElementById('date-display');
       dateDisplayTop3.textContent = `${formatDateTopTodos(todayTop3)}`;
 
-    console.log(document.getElementById('week-nr-paragraph')); // Should not be null
+    console.log(document.getElementById('week-nr-div')); // Should not be null
 
       // Display current week number
-      const weekDisplayTop3 = document.getElementById('week-nr-paragraph');
+      const weekDisplayTop3 = document.getElementById('week-nr-div');
       weekDisplayTop3.textContent = weekNumber;
 
       // Toggle info-div
@@ -424,5 +424,6 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
