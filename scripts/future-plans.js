@@ -680,8 +680,6 @@ const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
       dateDisplay.textContent = getCETDateYYYYMMDD();
 
 
-
-
     const weekInfo = {
         sv: `Vecka: `,
         en: `Week: `,
@@ -5808,4 +5806,5 @@ function load_func(delimiter) {
     readFile(file);
 
     };
+
 
