@@ -267,6 +267,11 @@ h3 {
   flex-direction: column;
 }
 
+#week-display-container {
+  display: flex;
+  flex-direction: row;
+}
+
 #week-display-2 {
   padding-bottom: 5px;
 }
@@ -1121,6 +1126,7 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
 
 
 
