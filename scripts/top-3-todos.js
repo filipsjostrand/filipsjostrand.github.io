@@ -36,12 +36,12 @@ function updateCheckboxStateStart(checkboxStateX, savedCheckboxStateLocalX, todo
     if (savedCheckboxStateLocalX === "true") {
         checkboxStateX.checked = true;
         todoX.style.textDecoration = 'line-through';
-        console.log("set localStorage variable X to line through , variable:" + checkboxStateX);
+        console.log("set localStorage variable X to line through , variable:" + checkboxStateX.checked);
       } 
     else {
         checkboxStateX.checked = false;
         todoX.style.textDecoration = 'none';
-        console.log("set localStorage variable X to none , variable:" + checkboxStateX);
+        console.log("set localStorage variable X to none , variable:" + checkboxStateX.checked);
     }
 }
 
@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", () => {
     
   const checkboxThreeStart = document.getElementById("third");
   const savedCheckboxStateThree = localStorage.getItem("locVarCheckboxThreeState");
-  const todoThreetart = document.getElementById("todo-3");
+  const todoThreeStart = document.getElementById("todo-3");
 
     updateCheckboxStateStart(checkboxOneStart, savedCheckboxStateOne, todoOneStart);
     updateCheckboxStateStart(checkboxTwoStart, savedCheckboxStateTwo, todoTwoStart);
-    updateCheckboxStateStart(checkboxThreeStart, savedCheckboxStateThree, todoThreetart);
+    updateCheckboxStateStart(checkboxThreeStart, savedCheckboxStateThree, todoThreeStart);
 
     console.log("get localStorage variable One, two, three");
   //if (savedCheckboxStateOne === "true") {
@@ -394,6 +394,7 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
 
