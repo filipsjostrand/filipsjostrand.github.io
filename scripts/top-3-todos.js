@@ -323,8 +323,8 @@ var todayDate = new Date();
       dateDisplayTop3.textContent = `${formatDateTopTodos(todayTop3)}`;
 
       // Display current week number
-      const weekDisplayTop3 = document.getElementById('week-display');
-        weekDisplayTop3.textContent = appInfoWeek[selectedLanguage] + ": " + weekNumber;
+      const weekDisplayNr = document.getElementById('week-display-nr');
+        weekDisplayNr.textContent = weekNumber;
 
       // Toggle info-div
       const toggleLink = document.getElementById("toggle-link");
@@ -338,4 +338,3 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
-
