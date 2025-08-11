@@ -31,9 +31,6 @@ let limitedTodoSet = new Set();
 //let checkboxTwo = document.getElementById("second");
 //let checkboxThree = document.getElementById("third");
 
-let checkBoxStateX;
-let savedCheckboxStateLocalX;
-
 
 function updateCheckboxStateStart(checkboxStateX, savedCheckboxStateLocalX) {
     if (savedCheckboxStateLocalX === "true") {
@@ -47,13 +44,13 @@ function updateCheckboxStateStart(checkboxStateX, savedCheckboxStateLocalX) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const checkboxOne = document.getElementById("first");
-  const savedCheckboxStateOne = localStorage.getItem("locVarCheckBoxOneState");
+  const savedCheckboxStateOne = localStorage.getItem("locVarCheckboxOneState");
     
   const checkboxTwo = document.getElementById("second");
-  const savedCheckboxStateTwo = localStorage.getItem("locVarCheckBoxTwoState");
+  const savedCheckboxStateTwo = localStorage.getItem("locVarCheckboxTwoState");
     
   const checkboxThree = document.getElementById("third");
-  const savedCheckboxStatThree = localStorage.getItem("locVarCheckBoThreeState");
+  const savedCheckboxStateThree = localStorage.getItem("locVarCheckboxThreeState");
 
     updateCheckboxStateStart(checkboxOne, savedCheckboxStateOne);
     updateCheckboxStateStart(checkboxTwo, savedCheckboxStateTwo);
@@ -387,4 +384,5 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
