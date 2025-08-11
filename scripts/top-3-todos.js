@@ -31,31 +31,34 @@ let limitedTodoSet = new Set();
 //let checkboxTwo = document.getElementById("second");
 //let checkboxThree = document.getElementById("third");
 
+// DOM content loaded helper function
+function updateCheckboxStateStart(checkboxStateX, savedCheckboxStateLocalX, todoX) {
+    if (savedCheckboxStateLocalX === "true") {
+        checkboxStateX.checked = true;
+        todoX.style.textDecoration = 'line-through';
+      } 
+    else {
+        checkboxStateX.checked = false;
+        todoX.style.textDecoration = 'none';
+    }
+    const isChecked = savedState === "true";
+  checkbox.checked = isChecked;
+  todoElement.style.textDecoration = isChecked ? "line-through" : "none";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-  const checkboxOne = document.getElementById("first");
+  const checkboxOneStart = document.getElementById("first");
   const savedCheckboxStateOne = localStorage.getItem("locVarCheckboxOneState");
   const todoOneStart = document.getElementById("todo-1");
     
-  const checkboxTwo = document.getElementById("second");
+  const checkboxTwoStart = document.getElementById("second");
   const savedCheckboxStateTwo = localStorage.getItem("locVarCheckboxTwoState");
   const todoTwoStart = document.getElementById("todo-2");
     
-  const checkboxThree = document.getElementById("third");
+  const checkboxThreeStart = document.getElementById("third");
   const savedCheckboxStateThree = localStorage.getItem("locVarCheckboxThreeState");
   const todoThreetart = document.getElementById("todo-3");
 
-    // DOM content loaded helper function
-    function updateCheckboxStateStart(checkboxStateX, savedCheckboxStateLocalX, todoX) {
-        if (savedCheckboxStateLocalX === "true") {
-            checkboxStateX.checked = true;
-            todoX.style.textDecoration = 'line-through';
-          } 
-        else {
-            checkboxStateX.checked = false;
-            todoX.style.textDecoration = 'none';
-        }
-    }
-        
     updateCheckboxStateStart(checkboxOne, savedCheckboxStateOne, todoOneStart);
     updateCheckboxStateStart(checkboxTwo, savedCheckboxStateTwo, todoTwoStart);
     updateCheckboxStateStart(checkboxThree, savedCheckboxStateThree, todoThreetart);
@@ -68,9 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
   //}
 });
 
-const checkboxOne = document.getElementById("first");
-const checkboxTwo = document.getElementById("second");
-const checkboxThree = document.getElementById("third");
+let checkboxOne = document.getElementById("first");
+let checkboxTwo = document.getElementById("second");
+let checkboxThree = document.getElementById("third");
 
 // Optionally, add an event listener to handle the checkbox state
 checkboxOne.addEventListener('change', function() {
@@ -389,6 +392,7 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
 
