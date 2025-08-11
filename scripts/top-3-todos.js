@@ -411,9 +411,12 @@ var todayDate = new Date();
       const dateDisplayTop3 = document.getElementById('date-display');
       dateDisplayTop3.textContent = `${formatDateTopTodos(todayTop3)}`;
 
-      // Display current week number
-      const weekNrDisplay = document.getElementById('week-nr-div');
-      weekNrDisplay.textContent = weekNumber;
+        function showWeekNrTop() {
+          // Display current week number
+          const weekNrDisplay = document.getElementById('week-nr-div');
+          weekNrDisplay.textContent = weekNumber;
+        }
+        showWeekNrTop();
 
       // Toggle info-div
       const toggleLink = document.getElementById("toggle-link");
