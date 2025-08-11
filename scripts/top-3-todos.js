@@ -219,12 +219,31 @@ function addTaskToSet() {
   }
 }
 
-// Save tasks
-function saveTask(todo, checkbox, todoKey, checkboxKey, textKey) {
-  localStorage.setItem(todoKey, todo.innerHTML);
-  localStorage.setItem(checkboxKey, checkbox.checked);
-  localStorage.setItem(textKey, todo.style.textDecoration);
+function saveTaskOne() {
+  localStorage.setItem("todoOneStore", todoOne.innerHTML);
+  localStorage.setItem("checkBoxOneStore", checkboxOne.checked);
+  localStorage.setItem("todoOneLineThroughStore", todoOne.style.textDecoration);
 }
+
+function saveTaskTwo() {
+  localStorage.setItem("todoTwoStore", todoTwo.innerHTML);
+  localStorage.setItem("checkBoxTwoStore", checkboxTwo.checked);
+  localStorage.setItem("todoTwoLineThroughStore", todoTwo.style.textDecoration);
+}
+
+function saveTaskThree() {
+  localStorage.setItem("todoThreeStore", todoThree.innerHTML);
+  localStorage.setItem("checkBoxThreeStore", checkboxThree.checked);
+  localStorage.setItem("todoThreeLineThroughStore", todoThree.style.textDecoration);
+}
+
+
+// Save tasks
+//function saveTask(todo, checkbox, todoKey, checkboxKey, textKey) {
+  //localStorage.setItem(todoKey, todo.innerHTML);
+  //localStorage.setItem(checkboxKey, checkbox.checked);
+  //localStorage.setItem(textKey, todo.style.textDecoration);
+//}
 
 // Restore tasks
 function showTask() {
@@ -320,8 +339,8 @@ var todayDate = new Date();
       dateDisplayTop3.textContent = `${formatDateTopTodos(todayTop3)}`;
 
       // Display current week number
-      const weekNrDisplay = document.getElementById('week-nr-div');
-      weekNrDisplay.textContent = weekNumber + " ooa";
+      //const weekNrDisplay = document.getElementById('week-nr-div');
+      //weekNrDisplay.textContent = weekNumber + " ooa";
 
       // Toggle info-div
       const toggleLink = document.getElementById("toggle-link");
@@ -335,6 +354,3 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
-
-
-
