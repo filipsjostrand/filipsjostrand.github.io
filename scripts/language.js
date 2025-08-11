@@ -146,7 +146,7 @@ const appInfo = {
   en: `Todos`,
 }
 
-const appInfoWeek = {
+var appInfoWeek = {
   sv: `Vecka`,
   en: `Week`,
 }
@@ -1057,3 +1057,4 @@ const userMessagePlaceholder = {
         }
 
 runTranslation(selectedLanguage);
+
