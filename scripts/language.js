@@ -152,8 +152,8 @@ const appInfoWeek = {
 }
 
 const appInfoWeekText = {
-  sv: `Vecka: `,
-  en: `Week: `,
+  sv: `Vecka:`,
+  en: `Week:`,
 }
 
 const appInfoFuture = {
