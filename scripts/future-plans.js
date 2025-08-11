@@ -721,8 +721,8 @@ languageSelectElement = window.languageSelectElement;
     function putInSelectedLanguageMultipleTimes(selectedLanguage) {
 
 
-    var weekDisplay = document.getElementById('week-display');
-      weekDisplay.textContent = weekInfo[selectedLanguage] + weekNumber;
+    //var weekDisplay = document.getElementById('week-display');
+      //weekDisplay.textContent = weekInfo[selectedLanguage] + weekNumber;
 
       document.getElementById('week-display-2').innerHTML = weekInfo2[selectedLanguage] + weekNumber;
 
@@ -5806,5 +5806,3 @@ function load_func(delimiter) {
     readFile(file);
 
     };
-
-
