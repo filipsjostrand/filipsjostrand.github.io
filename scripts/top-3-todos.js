@@ -27,13 +27,23 @@ let checkboxOne = document.getElementById("first");
 let checkboxTwo = document.getElementById("second");
 let checkboxThree = document.getElementById("third");
 
-// Optionally, add an event listener to handle the checkbox state
-checkboxOne.addEventListener('change', function() {
-    if (checkboxOne.checked) {
+function changeCheckBoxOne(checkboxOne) {
+    if (checkboxOne.checked === false) {
       todoOne.style.textDecoration = 'line-through';
-    } else {
+    } else if (checkboxOne.checked === true) {
       todoOne.style.textDecoration = 'none';
     }
+}
+
+
+// Optionally, add an event listener to handle the checkbox state
+checkboxOne.addEventListener('change', function() {
+    changeCheckBoxOne(checkboxOne);
+    //if (checkboxOne.checked) {
+      //todoOne.style.textDecoration = 'line-through';
+    //} else {
+      //todoOne.style.textDecoration = 'none';
+    //}
   });
 
 checkboxTwo.addEventListener('change', function() {
@@ -224,12 +234,18 @@ function addTaskToSet() {
 // Save todo-data to localStorage
 function saveTaskOne() {
   localStorage.setItem("todoOneStore", todoOne.innerHTML);
+    localStorage.setItem("checkBoxOneStore", checkboxOne.checked);
+    localStorage.setItem("todoOneLineThroughStore", todoOne.style.textDecoration);
 }
 function saveTaskTwo() {
   localStorage.setItem("todoTwoStore", todoTwo.innerHTML);
+    localStorage.setItem("checkBoxTwoStore", checkboTwo.checked);
+    localStorage.setItem("todoTwoLineThroughStore", todoTwo.style.textDecoration);
 }
 function saveTaskThree() {
   localStorage.setItem("todoThreeStore", todoThree.innerHTML);
+    localStorage.setItem("checkBoxThreeStore", checkboxThree.checked);
+    localStorage.setItem("todoThreeLineThroughStore", todoThree.style.textDecoration);
 }
 
 // Get todo-data from localStorage
@@ -334,4 +350,5 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
