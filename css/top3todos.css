@@ -69,7 +69,6 @@
 }
 
 #week-display {
-    width: 70px;
     height: 20px;
     display: flex;
     margin-bottom: 12px;
@@ -193,4 +192,5 @@
         transform: scale(1.1);
     }
 }
+
 
