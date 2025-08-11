@@ -34,13 +34,14 @@ let limitedTodoSet = new Set();
 let checkBoxStateX;
 let savedCheckboxStateLocalX;
 
+
 function updateCheckboxStateStart(checkboxStateX, savedCheckboxStateLocalX) {
-    if (checkboxStateX === "true") {
-        savedCheckboxStateLocalX.checked = true;
+    if (savedCheckboxStateLocalX === "true") {
+        checkboxStateX.checked = true;
         //todoX.style.textDecoration = 'line-through';
       } 
     else {
-        savedCheckboxStateLocalX.checked = false;
+        checkboxStateX.checked = false;
     }
 }
 
@@ -66,11 +67,13 @@ document.addEventListener("DOMContentLoaded", () => {
   //}
 });
 
+const checkboxOne = document.getElementById("first");
+const checkboxTwo = document.getElementById("second");
+const checkboxThree = document.getElementById("third");
 
 // Optionally, add an event listener to handle the checkbox state
 checkboxOne.addEventListener('change', function() {
-    const checkboxOne = document.getElementById("first");
-
+    
     if (checkboxOne.checked) {
       todoOne.style.textDecoration = 'line-through';
     } else {
@@ -81,7 +84,6 @@ checkboxOne.addEventListener('change', function() {
   });
 
 checkboxTwo.addEventListener('change', function() {
-    const checkboxTwo = document.getElementById("second");
 
     if (checkboxTwo.checked) {
       todoTwo.style.textDecoration = 'line-through';
@@ -93,7 +95,6 @@ checkboxTwo.addEventListener('change', function() {
 });
 
 checkboxThree.addEventListener('change', function() {
-    const checkboxThree = document.getElementById("third");
     
     if (checkboxThree.checked) {
       todoThree.style.textDecoration = 'line-through';
@@ -386,3 +387,4 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
