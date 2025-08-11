@@ -249,18 +249,18 @@ function addTaskToSet() {
 // Save todo-data to localStorage
 function saveTaskOne() {
   localStorage.setItem("todoOneS", todoOne.innerHTML);
-  localStorage.setItem("checkBoxOne", checkboxOne.checked);
-  localStorage.setItem("todoOneLineThrough", todoOneTextDecoration);
+  //localStorage.setItem("checkBoxOne", checkboxOne.checked);
+  //localStorage.setItem("todoOneLineThrough", todoOneTextDecoration);
 }
 function saveTaskTwo() {
   localStorage.setItem("todoTwo", todoTwo.innerHTML);
-  localStorage.setItem("checkBoxTwo", checkboxTwo.checked);
-  localStorage.setItem("todoTwoLineThrough", todoTwoTextDecoration);
+  //localStorage.setItem("checkBoxTwo", checkboxTwo.checked);
+  //localStorage.setItem("todoTwoLineThrough", todoTwoTextDecoration);
 }
 function saveTaskThree() {
   localStorage.setItem("todoThree", todoThree.innerHTML);
-  localStorage.setItem("checkBoxThree", checkboxThree.checked);
-  localStorage.setItem("todoThreeLineThrough", todoThreeTextDecoration);
+  //localStorage.setItem("checkBoxThree", checkboxThree.checked);
+  //localStorage.setItem("todoThreeLineThrough", todoThreeTextDecoration);
 }
 
 // Get todo-data from localStorage
@@ -401,3 +401,4 @@ toggleLink.addEventListener("click", function (event) {
     content.style.display = "none"; // Hide the content
   }
 });
+
