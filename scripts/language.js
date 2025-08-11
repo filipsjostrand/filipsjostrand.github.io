@@ -151,6 +151,11 @@ const appInfoWeek = {
   en: `Week`,
 }
 
+const appInfoWeekText = {
+  sv: `Vecka: `,
+  en: `Week: `,
+}
+
 const appInfoFuture = {
   sv: `Plan`,
   en: `Future`,
@@ -858,7 +863,7 @@ const userMessagePlaceholder = {
           document.querySelector('.info').innerHTML = infoBullets[selectedLanguage];
           
           document.getElementById('weekday-display').innerHTML = getTodaysDayAbbreviation(todaysWeekdayAbbNr);
-          document.getElementById('week-display').innerHTML = appInfoWeek[selectedLanguage];
+          document.getElementById('week-display').innerHTML = appInfoWeekText[selectedLanguage];
 
           document.querySelector('.add-button-v2').innerHTML = addButton2[selectedLanguage];
           document.getElementById('top3-label').innerHTML = top3Label[selectedLanguage];
@@ -1058,4 +1063,3 @@ const userMessagePlaceholder = {
         }
 
 runTranslation(selectedLanguage);
-
