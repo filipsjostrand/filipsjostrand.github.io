@@ -46,16 +46,19 @@ function updateCheckboxStateStart(checkboxStateX, savedCheckboxStateLocalX, todo
 document.addEventListener("DOMContentLoaded", () => {
   const checkboxOne = document.getElementById("first");
   const savedCheckboxStateOne = localStorage.getItem("locVarCheckboxOneState");
+  const todoOneStart = document.getElementById("todo-1");
     
   const checkboxTwo = document.getElementById("second");
   const savedCheckboxStateTwo = localStorage.getItem("locVarCheckboxTwoState");
+  const todoTwoStart = document.getElementById("todo-2");
     
   const checkboxThree = document.getElementById("third");
   const savedCheckboxStateThree = localStorage.getItem("locVarCheckboxThreeState");
+  const todoThreetart = document.getElementById("todo-3");
 
-    updateCheckboxStateStart(checkboxOne, savedCheckboxStateOne, todoOne);
-    updateCheckboxStateStart(checkboxTwo, savedCheckboxStateTwo, todoTwo);
-    updateCheckboxStateStart(checkboxThree, savedCheckboxStateThree, todoThree);
+    updateCheckboxStateStart(checkboxOne, savedCheckboxStateOne, todoOneStart);
+    updateCheckboxStateStart(checkboxTwo, savedCheckboxStateTwo, todoTwoStart);
+    updateCheckboxStateStart(checkboxThree, savedCheckboxStateThree, todoThreetart);
 
     console.log("get localStorage variable One, two, three");
   //if (savedCheckboxStateOne === "true") {
@@ -385,6 +388,7 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
 
