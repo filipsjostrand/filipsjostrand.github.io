@@ -724,7 +724,7 @@ languageSelectElement = window.languageSelectElement;
 
 
     var weekDisplay = document.getElementById('week-display');
-      weekDisplay.textContent = weekInfo[selectedLanguage] + weekNumber + "ooooa";
+      weekDisplay.textContent = weekInfo[selectedLanguage] + weekNumber;
 
       document.getElementById('week-display-2').innerHTML = weekInfo2[selectedLanguage] + weekNumber;
 
@@ -5808,3 +5808,4 @@ function load_func(delimiter) {
     readFile(file);
 
     };
+
