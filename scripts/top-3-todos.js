@@ -13,6 +13,8 @@ let newTodo;
 var dropDownSelection = document.getElementById("todo-select");
 var dropDownText;
 let editTodoOne;
+let editTodoTwo;
+let editTodoThree;
 
 // 2024-07-15, Nästa gång:
 //  1. Fixa CSS
@@ -336,3 +338,4 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
