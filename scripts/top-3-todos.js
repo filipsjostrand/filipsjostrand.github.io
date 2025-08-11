@@ -31,18 +31,6 @@ let limitedTodoSet = new Set();
 //let checkboxTwo = document.getElementById("second");
 //let checkboxThree = document.getElementById("third");
 
-
-function updateCheckboxStateStart(checkboxStateX, savedCheckboxStateLocalX, todoX) {
-    if (savedCheckboxStateLocalX === "true") {
-        checkboxStateX.checked = true;
-        todoX.style.textDecoration = 'line-through';
-      } 
-    else {
-        checkboxStateX.checked = false;
-        todoX.style.textDecoration = 'none';
-    }
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   const checkboxOne = document.getElementById("first");
   const savedCheckboxStateOne = localStorage.getItem("locVarCheckboxOneState");
@@ -56,6 +44,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const savedCheckboxStateThree = localStorage.getItem("locVarCheckboxThreeState");
   const todoThreetart = document.getElementById("todo-3");
 
+    // DOM content loaded helper function
+    function updateCheckboxStateStart(checkboxStateX, savedCheckboxStateLocalX, todoX) {
+        if (savedCheckboxStateLocalX === "true") {
+            checkboxStateX.checked = true;
+            todoX.style.textDecoration = 'line-through';
+          } 
+        else {
+            checkboxStateX.checked = false;
+            todoX.style.textDecoration = 'none';
+        }
+    }
+        
     updateCheckboxStateStart(checkboxOne, savedCheckboxStateOne, todoOneStart);
     updateCheckboxStateStart(checkboxTwo, savedCheckboxStateTwo, todoTwoStart);
     updateCheckboxStateStart(checkboxThree, savedCheckboxStateThree, todoThreetart);
@@ -105,6 +105,7 @@ checkboxThree.addEventListener('change', function() {
     console.log("set localStorage variable Three");
     localStorage.setItem("locVarCheckboxThreeState", checkboxThree.checked);
 });
+
 
 // _ _ _
 
@@ -388,6 +389,7 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
 
