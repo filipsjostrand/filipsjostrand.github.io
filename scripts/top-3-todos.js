@@ -268,15 +268,14 @@ function showTask() {
   todoOne.innerHTML = localStorage.getItem("todoOne");
     localStorage.getItem("checkBoxOne"),
     localStorage.getItem("todoOneTextDecoration")
-  );
+  
   todoTwo.innerHTML = localStorage.getItem("todoTwo");
     localStorage.getItem("checkBoxTwo"),
     localStorage.getItem("todoTwoTextDecoration")
-  );
+
   todoThree.innerHTML = localStorage.getItem("todoThree");
     localStorage.getItem("checkBoxThree"),
     localStorage.getItem("todoThreeTextDecoration")
-  );
 }
 
 //checkboxThree.addEventListener('change', function() {
@@ -402,3 +401,4 @@ toggleLink.addEventListener("click", function (event) {
     content.style.display = "none"; // Hide the content
   }
 });
+
