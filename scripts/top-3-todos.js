@@ -386,8 +386,8 @@ const dateDisplayTop3 = document.getElementById("date-display");
 dateDisplayTop3.textContent = `${formatDateTopTodos(todayTop3)}`;
 
 // Display current week number
-const weekNrDisplay = document.getElementById("week-nr-div");
-weekNrDisplay.textContent = weekNumber + " ooa";
+//const weekNrDisplay = document.getElementById("week-nr-div");
+//weekNrDisplay.textContent = weekNumber + " ooa";
 
 // Toggle info-div
 const toggleLink = document.getElementById("toggle-link");
@@ -401,4 +401,3 @@ toggleLink.addEventListener("click", function (event) {
     content.style.display = "none"; // Hide the content
   }
 });
-
