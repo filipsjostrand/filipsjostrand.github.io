@@ -311,9 +311,9 @@ function saveTaskThree() {
 // Get todo-data from localStorage
 function showTask() {
   todoOne.innerHTML = localStorage.getItem("todoOneStore");
-    changeCheckBoxThree(localStorage.getItem("checkBoxThreeStore"), localStorage.getItem("todoThreeTextDecoration"));
+    changeCheckBoxOne(localStorage.getItem("checkBoxOneStore"), localStorage.getItem("todoOneTextDecoration"));
   todoTwo.innerHTML = localStorage.getItem("todoTwoStore");
-    changeCheckBoxThree(localStorage.getItem("checkBoxThreeStore"), localStorage.getItem("todoThreeTextDecoration"));
+    changeCheckBoxTwo(localStorage.getItem("checkBoxTwoStore"), localStorage.getItem("todoTwoTextDecoration"));
   todoThree.innerHTML = localStorage.getItem("todoThreeStore");
     changeCheckBoxThree(localStorage.getItem("checkBoxThreeStore"), localStorage.getItem("todoThreeTextDecoration"));
 }
@@ -423,4 +423,5 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
