@@ -76,14 +76,17 @@ let checkboxThree = document.getElementById("third");
 
 // Optionally, add an event listener to handle the checkbox state
 checkboxOne.addEventListener('change', function() {
+
+    todoOne.style.textDecoration = checkboxOne.checked ? 'line-through' : 'none';
+        localStorage.setItem("locVarCheckboxOneState", checkboxOne.checked);
     
-    if (checkboxOne.checked) {
-      todoOne.style.textDecoration = 'line-through';
-    } else {
-      todoOne.style.textDecoration = 'none';
-    }
-    console.log("set localStorage variable One");
-    localStorage.setItem("locVarCheckboxOneState", checkboxOne.checked);
+    //if (checkboxOne.checked) {
+      //todoOne.style.textDecoration = 'line-through';
+    //} else {
+      //todoOne.style.textDecoration = 'none';
+    //}
+    //console.log("set localStorage variable One");
+    //localStorage.setItem("locVarCheckboxOneState", checkboxOne.checked);
   });
 
 checkboxTwo.addEventListener('change', function() {
@@ -391,6 +394,7 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
 
