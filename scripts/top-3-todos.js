@@ -409,7 +409,7 @@ var todayDate = new Date();
       // Display current week number
       //const weekDisplayTop3 = document.getElementById('week-display');
       const weekDisplayTop3 = document.getElementById('week-nr-paragraph');
-      weekDisplayTop3.textContent = weekNumber;
+      weekDisplayTop3.textContent = ': ' + weekNumber;
 
       // Toggle info-div
       const toggleLink = document.getElementById("toggle-link");
@@ -423,3 +423,4 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
