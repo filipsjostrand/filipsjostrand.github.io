@@ -40,14 +40,14 @@ let todoThreeTextDecoration = todoThree.style.textDecoration;
 //let checkboxThreeCheckedInfoSetStore = localStorage.setItem("checkBoxThreeStore", checkboxThree.checked);
 //let checkboxThreeCheckedLineThroughSetStore = localStorage.setItem("todoThreeLineThroughStore", todoThreeTextDecoration);
 
-    localStorage.setItem("checkBoxOneStore", checkboxOne.checked);
-    localStorage.setItem("todoOneLineThroughStore", todoOneTextDecoration);
+    //localStorage.setItem("checkBoxOneStore", checkboxOne.checked);
+    //localStorage.setItem("todoOneLineThroughStore", todoOneTextDecoration);
 
-    localStorage.setItem("checkBoxTwoStore", checkboxTwo.checked);
-    localStorage.setItem("todoTwoLineThroughStore", todoTwoTextDecoration);
+    //localStorage.setItem("checkBoxTwoStore", checkboxTwo.checked);
+    //localStorage.setItem("todoTwoLineThroughStore", todoTwoTextDecoration);
 
-    localStorage.setItem("checkBoxThreeStore", checkboxThree.checked);
-    localStorage.setItem("todoThreeLineThroughStore", todoThreeTextDecoration);
+    //localStorage.setItem("checkBoxThreeStore", checkboxThree.checked);
+    //localStorage.setItem("todoThreeLineThroughStore", todoThreeTextDecoration);
 
 
 function changeCheckBoxOne(checkboxOne, todoOneTextDecoration) {
