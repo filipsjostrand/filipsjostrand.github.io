@@ -28,13 +28,28 @@ let checkboxTwo = document.getElementById("second");
 let checkboxThree = document.getElementById("third");
 
 function changeCheckBoxOne(checkboxOne) {
-    if (checkboxOne.checked === false) {
+    if (checkboxOne.checked === true) {
       todoOne.style.textDecoration = 'line-through';
-    } else if (checkboxOne.checked === true) {
+    } else if (checkboxOne.checked === false) {
       todoOne.style.textDecoration = 'none';
     }
 }
 
+function changeCheckBoxTwo(checkboxTwo) {
+    if (checkboxTwo.checked === true) {
+      todoTwo.style.textDecoration = 'line-through';
+    } else if (checkboxTwo.checked === false) {
+      todoTwo.style.textDecoration = 'none';
+    }
+}
+
+function changeCheckBoxThree(checkboxThree) {
+    if (checkboxThree.checked === true) {
+      todoThree.style.textDecoration = 'line-through';
+    } else if (checkboxThree.checked === false) {
+      todoThree.style.textDecoration = 'none';
+    }
+}
 
 // Optionally, add an event listener to handle the checkbox state
 checkboxOne.addEventListener('change', function() {
@@ -47,20 +62,22 @@ checkboxOne.addEventListener('change', function() {
   });
 
 checkboxTwo.addEventListener('change', function() {
-    if (checkboxTwo.checked) {
-      todoTwo.style.textDecoration = 'line-through';
-    } else {
-      todoTwo.style.textDecoration = 'none';
-    }
+    changeCheckBoxTwo(checkboxTwo);
+    //if (checkboxTwo.checked) {
+      //todoTwo.style.textDecoration = 'line-through';
+    //} else {
+      //todoTwo.style.textDecoration = 'none';
+    //}
 });
 
 checkboxThree.addEventListener('change', function() {
-    if (checkboxThree.checked) {
-      todoThree.style.textDecoration = 'line-through';
-    } else {
-      todoThree.style.textDecoration = 'none';
-    }
-});
+    changeCheckBoxThree(checkboxThree);
+    //if (checkboxThree.checked) {
+      //todoThree.style.textDecoration = 'line-through';
+    //} else {
+      //todoThree.style.textDecoration = 'none';
+    //}
+//});
 
 // _ _ _
 
@@ -239,7 +256,7 @@ function saveTaskOne() {
 }
 function saveTaskTwo() {
   localStorage.setItem("todoTwoStore", todoTwo.innerHTML);
-    localStorage.setItem("checkBoxTwoStore", checkboTwo.checked);
+    localStorage.setItem("checkBoxTwoStore", checkboxTwo.checked);
     localStorage.setItem("todoTwoLineThroughStore", todoTwo.style.textDecoration);
 }
 function saveTaskThree() {
@@ -350,5 +367,6 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
