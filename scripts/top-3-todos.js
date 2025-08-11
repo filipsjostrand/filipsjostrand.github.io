@@ -29,10 +29,6 @@ const checkboxOne = document.getElementById("first");
 const checkboxTwo = document.getElementById("second");
 const checkboxThree = document.getElementById("third");
 
-const todoOne = document.getElementById("todo-one");
-const todoTwo = document.getElementById("todo-two");
-const todoThree = document.getElementById("todo-three");
-
 // Change checkbox and update DOM + localStorage
 function changeCheckBox(checkbox, todo, checkboxKey, textKey) {
   const isChecked = checkbox.checked;
@@ -339,5 +335,6 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
