@@ -1,3 +1,4 @@
+"use strict";
 
 // Top3 "Todos"
 
@@ -53,6 +54,7 @@ let todoThreeTextDecoration = todoThree.style.textDecoration;
 function changeCheckBoxOne(checkboxOne, todoOneTextDecoration) {
     if (checkboxOne.checked === true) {
       todoOneTextDecoration = 'line-through';
+         todoOne.style.textDecoration = 'line-through';
     } else if (checkboxOne.checked === false) {
       todoOneTextDecoration = 'none';
     }
@@ -65,6 +67,7 @@ function changeCheckBoxOne(checkboxOne, todoOneTextDecoration) {
 function changeCheckBoxTwo(checkboxTwo, todoTwoTextDecoration) {
     if (checkboxTwo.checked === true) {
       todoTwoTextDecoration = 'line-through';
+        todoTwo.style.textDecoration = 'line-through';
     } else if (checkboxTwo.checked === false) {
       todoTwoTextDecoration = 'none';
     }
@@ -74,8 +77,10 @@ function changeCheckBoxTwo(checkboxTwo, todoTwoTextDecoration) {
 
 function changeCheckBoxThree(checkboxThree, todoThreeTextDecoration) {
     if (checkboxThree.checked === true) {
+        todoThreeTextDecoration = 'line-through';
       todoThree.style.textDecoration = 'line-through';
     } else if (checkboxThree.checked === false) {
+        todoThreeTextDecoration = 'none';
       todoThree.style.textDecoration = 'none';
     }
     localStorage.setItem("checkBoxThreeStore", checkboxThree.checked);
@@ -422,6 +427,7 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
 
