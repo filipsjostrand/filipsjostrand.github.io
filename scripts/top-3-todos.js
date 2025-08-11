@@ -56,6 +56,8 @@ function changeCheckBoxOne(checkboxOne, todoOneTextDecoration) {
     } else if (checkboxOne.checked === false) {
       todoOneTextDecoration = 'none';
     }
+    localStorage.setItem("checkBoxOneStore", checkboxOne.checked);
+    localStorage.setItem("todoOneLineThroughStore", todoOneTextDecoration);
     //checkboxOneCheckedInfoSetStore = checkboxOne.checked;
     //checkboxOneCheckedLineThroughSetStore = todoOneTextDecoration;
 }
@@ -66,21 +68,25 @@ function changeCheckBoxTwo(checkboxTwo, todoTwoTextDecoration) {
     } else if (checkboxTwo.checked === false) {
       todoTwoTextDecoration = 'none';
     }
+    localStorage.setItem("checkBoxTwoStore", checkboxTwo.checked);
+    localStorage.setItem("todoTwoLineThroughStore", todoTwoTextDecoration);
 }
 
-function changeCheckBoxThree(checkboxThree, todoThree) {
+function changeCheckBoxThree(checkboxThree, todoThreeTextDecoration) {
     if (checkboxThree.checked === true) {
       todoThree.style.textDecoration = 'line-through';
     } else if (checkboxThree.checked === false) {
       todoThree.style.textDecoration = 'none';
     }
+    localStorage.setItem("checkBoxThreeStore", checkboxThree.checked);
+    localStorage.setItem("todoThreeLineThroughStore", todoThreeTextDecoration);
 }
 
 // Optionally, add an event listener to handle the checkbox state
 checkboxOne.addEventListener('change', function() {
     changeCheckBoxOne(checkboxOne, todoOneTextDecoration);
-    localStorage.setItem("checkBoxOneStore", checkboxOne.checked);
-    localStorage.setItem("todoOneLineThroughStore", todoOneTextDecoration);
+    //localStorage.setItem("checkBoxOneStore", checkboxOne.checked);
+    //localStorage.setItem("todoOneLineThroughStore", todoOneTextDecoration);
     //checkboxOneCheckedInfoSetStore = checkboxOne.checked;
     //checkboxOneCheckedLineThroughSetStore = todoOneTextDecoration;
     //if (checkboxOne.checked) {
@@ -417,12 +423,3 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
-
-
-
-
-
-
-
-
-
