@@ -858,6 +858,7 @@ const userMessagePlaceholder = {
           document.querySelector('.info').innerHTML = infoBullets[selectedLanguage];
           
           document.getElementById('weekday-display').innerHTML = getTodaysDayAbbreviation(todaysWeekdayAbbNr);
+          document.getElementById('week-display').innerHTML = appInfoWeek[selectedLanguage];
 
           document.querySelector('.add-button-v2').innerHTML = addButton2[selectedLanguage];
           document.getElementById('top3-label').innerHTML = top3Label[selectedLanguage];
@@ -888,7 +889,6 @@ const userMessagePlaceholder = {
           document.getElementById('future-remember-save').innerHTML = futureRememberSave[selectedLanguage];
           document.getElementById('future-desc').innerHTML = futureDesc[selectedLanguage];
           document.getElementById('app-info-week').innerHTML = appInfoWeek[selectedLanguage];
-          document.getElementById('app-info-week-display').innerHTML = appInfoWeek[selectedLanguage];
           document.getElementById('app-info-future').innerHTML = appInfoFuture[selectedLanguage];
 
           document.getElementById('add-task-span').innerHTML = addTaskSpan[selectedLanguage];
@@ -1058,5 +1058,6 @@ const userMessagePlaceholder = {
         }
 
 runTranslation(selectedLanguage);
+
 
 
