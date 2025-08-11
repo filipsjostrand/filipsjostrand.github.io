@@ -77,7 +77,7 @@ checkboxThree.addEventListener('change', function() {
     //} else {
       //todoThree.style.textDecoration = 'none';
     //}
-//});
+});
 
 // _ _ _
 
@@ -367,6 +367,7 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
 
