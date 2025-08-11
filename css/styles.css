@@ -267,7 +267,12 @@ h3 {
   flex-direction: column;
 }
 
-#week-display-container {
+/*#week-display-container {
+  display: flex;
+  flex-direction: row;
+} */
+
+#week-display {
   display: flex;
   flex-direction: row;
 }
@@ -1126,12 +1131,3 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
-
-
-
-
-
-
-
-
-
