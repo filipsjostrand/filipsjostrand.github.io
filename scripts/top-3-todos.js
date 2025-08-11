@@ -411,12 +411,9 @@ var todayDate = new Date();
       const dateDisplayTop3 = document.getElementById('date-display');
       dateDisplayTop3.textContent = `${formatDateTopTodos(todayTop3)}`;
 
-        function showWeekNrTop() {
-          // Display current week number
-          const weekNrDisplay = document.getElementById('week-nr-div');
-          weekNrDisplay.textContent = weekNumber;
-        }
-        showWeekNrTop();
+      // Display current week number
+      const weekNrDisplay = document.getElementById('week-nr-div');
+      weekNrDisplay.textContent = weekNumber + " ooa";
 
       // Toggle info-div
       const toggleLink = document.getElementById("toggle-link");
@@ -430,3 +427,4 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
