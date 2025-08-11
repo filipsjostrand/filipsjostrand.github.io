@@ -31,14 +31,24 @@ let todoOneTextDecoration = todoOne.style.textDecoration;
 let todoTwoTextDecoration = todoTwo.style.textDecoration;
 let todoThreeTextDecoration = todoThree.style.textDecoration;
 
-let checkboxOneCheckedInfo = localStorage.setItem("checkBoxOneStore", checkboxOne.checked);
-let checkboxOneCheckedLineThrough = localStorage.setItem("todoOneLineThroughStore", todoOneTextDecoration);
+//let checkboxOneCheckedInfoSetStore = localStorage.setItem("checkBoxOneStore", checkboxOne.checked);
+//let checkboxOneCheckedLineThroughSetStore = localStorage.setItem("todoOneLineThroughStore", todoOneTextDecoration);
 
-let checkboxTwoCheckedInfo = localStorage.setItem("checkBoxTwoStore", checkboxTwo.checked);
-let checkboxTwoCheckedLineThrough = localStorage.setItem("todoTwoLineThroughStore", todoTwoTextDecoration);
+//let checkboxTwoCheckedInfoSetStore = localStorage.setItem("checkBoxTwoStore", checkboxTwo.checked);
+//let checkboxTwoCheckedLineThroughSetStore = localStorage.setItem("todoTwoLineThroughStore", todoTwoTextDecoration);
 
-let checkboxThreeCheckedInfo = localStorage.setItem("checkBoxThreeStore", checkboxThree.checked);
-let checkboxThreeCheckedLineThrough = localStorage.setItem("todoThreeLineThroughStore", todoThreeTextDecoration);
+//let checkboxThreeCheckedInfoSetStore = localStorage.setItem("checkBoxThreeStore", checkboxThree.checked);
+//let checkboxThreeCheckedLineThroughSetStore = localStorage.setItem("todoThreeLineThroughStore", todoThreeTextDecoration);
+
+    localStorage.setItem("checkBoxOneStore", checkboxOne.checked);
+    localStorage.setItem("todoOneLineThroughStore", todoOneTextDecoration);
+
+    localStorage.setItem("checkBoxTwoStore", checkboxTwo.checked);
+    localStorage.setItem("todoTwoLineThroughStore", todoTwoTextDecoration);
+
+    localStorage.setItem("checkBoxThreeStore", checkboxThree.checked);
+    localStorage.setItem("todoThreeLineThroughStore", todoThreeTextDecoration);
+
 
 function changeCheckBoxOne(checkboxOne, todoOneTextDecoration) {
     if (checkboxOne.checked === true) {
@@ -46,6 +56,8 @@ function changeCheckBoxOne(checkboxOne, todoOneTextDecoration) {
     } else if (checkboxOne.checked === false) {
       todoOneTextDecoration = 'none';
     }
+    //checkboxOneCheckedInfoSetStore = checkboxOne.checked;
+    //checkboxOneCheckedLineThroughSetStore = todoOneTextDecoration;
 }
 
 function changeCheckBoxTwo(checkboxTwo, todoTwoTextDecoration) {
@@ -67,8 +79,10 @@ function changeCheckBoxThree(checkboxThree, todoThree) {
 // Optionally, add an event listener to handle the checkbox state
 checkboxOne.addEventListener('change', function() {
     changeCheckBoxOne(checkboxOne, todoOneTextDecoration);
-    checkboxOneCheckedInfo = checkboxOne.checked;
-    checkboxOneCheckedLineThrough = todoOneTextDecoration;
+    localStorage.setItem("checkBoxOneStore", checkboxOne.checked);
+    localStorage.setItem("todoOneLineThroughStore", todoOneTextDecoration);
+    //checkboxOneCheckedInfoSetStore = checkboxOne.checked;
+    //checkboxOneCheckedLineThroughSetStore = todoOneTextDecoration;
     //if (checkboxOne.checked) {
       //todoOne.style.textDecoration = 'line-through';
     //} else {
@@ -78,8 +92,10 @@ checkboxOne.addEventListener('change', function() {
 
 checkboxTwo.addEventListener('change', function() {
     changeCheckBoxTwo(checkboxTwo, todoTwoTextDecoration);
-    checkboxTwoCheckedInfo = checkboxTwo.checked;
-    checkboxTwoCheckedLineThrough = todoTwoTextDecoration;
+    localStorage.setItem("checkBoxTwoStore", checkboxTwo.checked);
+    localStorage.setItem("todoTwoLineThroughStore", todoTwoTextDecoration);
+    //checkboxTwoCheckedInfoSetStore = checkboxTwo.checked;
+    //checkboxTwoCheckedLineThroughSetStore = todoTwoTextDecoration;
     //if (checkboxTwo.checked) {
       //todoTwo.style.textDecoration = 'line-through';
     //} else {
@@ -89,8 +105,10 @@ checkboxTwo.addEventListener('change', function() {
 
 checkboxThree.addEventListener('change', function() {
     changeCheckBoxThree(checkboxThree, todoThreeTextDecoration);
-    checkboxThreeCheckedInfo = checkboxThree.checked;
-    checkboxThreeCheckedLineThrough = todoThreeTextDecoration;
+    localStorage.setItem("checkBoxThreeStore", checkboxThree.checked);
+    localStorage.setItem("todoThreeLineThroughStore", todoThreeTextDecoration);
+    //checkboxThreeCheckedInfoSetStore = checkboxThree.checked;
+    //checkboxThreeCheckedLineThroughSetStore = todoThreeTextDecoration;
     //if (checkboxThree.checked) {
       //todoThree.style.textDecoration = 'line-through';
     //} else {
@@ -399,6 +417,7 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
 
