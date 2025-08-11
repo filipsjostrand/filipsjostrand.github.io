@@ -888,6 +888,7 @@ const userMessagePlaceholder = {
           document.getElementById('future-remember-save').innerHTML = futureRememberSave[selectedLanguage];
           document.getElementById('future-desc').innerHTML = futureDesc[selectedLanguage];
           document.getElementById('app-info-week').innerHTML = appInfoWeek[selectedLanguage];
+          document.getElementById('app-info-week-display').innerHTML = appInfoWeek[selectedLanguage];
           document.getElementById('app-info-future').innerHTML = appInfoFuture[selectedLanguage];
 
           document.getElementById('add-task-span').innerHTML = addTaskSpan[selectedLanguage];
@@ -1057,4 +1058,5 @@ const userMessagePlaceholder = {
         }
 
 runTranslation(selectedLanguage);
+
 
