@@ -20,6 +20,11 @@
   // define selectedLanguage (language variable)
   let selectedLanguage = setLanguage(sessionStorage.getItem('languageVariable'));
 
+  // languageSelectVariable (later used for the language select option elements)
+   var languageSelectVariable;
+  // selectedValue (laster used to get the selected language variable value)
+   var selectedValue;
+
   var flagDiv = document.querySelector(".flag-div");
 
   const languageFlagImage = {
@@ -853,15 +858,13 @@ const userMessagePlaceholder = {
             if (selectedValue === 'sv') {
                 // You selected Svenska
                 selectedLanguage = 'sv';
-                languageVariable = selectedLanguage;
-                sessionStorage.setItem("languageVariable", languageVariable);
+                sessionStorage.setItem("languageVariable", selectedLanguage);
                 languageSelectVariable = languageSelectElement.options[0].text
                 runTranslation(selectedLanguage);
             } else if (selectedValue === 'en') {
                 // You selected English
                 selectedLanguage = 'en';
-                languageVariable = selectedLanguage;
-                sessionStorage.setItem("languageVariable", languageVariable);
+                sessionStorage.setItem("languageVariable", selectedLanguage);
                 languageSelectVariable = languageSelectElement.options[1].text
                 runTranslation(selectedLanguage);
             }
@@ -1080,3 +1083,4 @@ const userMessagePlaceholder = {
 
           changeFlagImage();
         }
+
