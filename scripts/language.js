@@ -6,19 +6,80 @@
    var languageSelectElement = document.querySelector('.language-selector');
 
    // Select the language variable
-  function setLanguage(lang) {
-    if (lang === 'en' || lang === 'sv') {
-      sessionStorage.setItem('languageVariable', lang);
-    } else if (lang !== 'en' || lang !== 'sv') {
-      console.warn('Invalid language code');
-      let defaultLanguage = 'sv';
-      lang = sessionStorage.setItem('languageVariable', defaultLanguage);
-    }
-    return lang;
+  const languageSelector = document.querySelector(".language-selector");
+
+  var selectedLanguage = sessionStorage.getItem("languageVariable");
+
+  // Set dedault language to Svenska
+  if (selectedLanguage === null || sessionStorage.getItem("languageVariable") === null || sessionStorage.getItem("languageVariable") === undefined) {
+    selectedLanguage = 'sv';
+
+    sessionStorage.setItem("languageVariable", selectedLanguage);
   }
 
-  // define selectedLanguage (language variable)
-  let selectedLanguage = setLanguage(sessionStorage.getItem('languageVariable'));
+   // Select the dropdown element
+   var languageSelectElement = document.querySelector('.language-selector');
+
+  const dynamicLanguageImage = document.querySelector(".flag-div");
+  const fetchLanguageImage = document.querySelector(".flag-div").innerHTML;
+
+  var flagDiv = document.querySelector(".flag-div");
+
+  const languageFlagImage = {
+    en: "us-uk-flag-small.png",
+    sv: "sweden-flag-icon-small.png",
+  }
+
+    // Set the language variable when the page loads
+    window.addEventListener("DOMContentLoaded", () => {
+      const languageSelectElement = document.querySelector(".language-selector");
+        // First visit? Check if this is the first visit in this session
+        if (!sessionStorage.getItem("languageInitialized")) {
+          // Set default language to English
+          languageSelectElement.value = "sv";
+          const selectedLanguage = "sv";
+          sessionStorage.setItem("languageVariable", selectedLanguage);
+          // Set a flag so this block doesn't run again
+          sessionStorage.setItem("languageInitialized", "true");
+          // set default language to English (if the languageSelectElement is overwritten at browser opening)
+    
+          // set default flag
+          if (selectedLanguage === 'sv') {
+            dynamicLanguageImage.innerHTML = fetchLanguageImage +
+            `<img class="flag-img" src="./media/img/${languageFlagImage[selectedLanguage]}"
+            alt="language flag image | https://uxwing.com/tag/country-flag-icons/">`
+          }
+    
+          // Overwrite/set default, language to Svenska & flag to Swedish flag
+          setTimeout(() => {
+            languageSelector.value = 'sv';
+            dynamicLanguageImage.innerHTML = fetchLanguageImage +
+            `<img class="flag-img" src="./media/img/${languageFlagImage[selectedLanguage]}"
+            alt="language flag image | https://uxwing.com/tag/country-flag-icons/">`
+          }, 300);
+        }
+        // Not first visit?
+        else {
+        // Restore previously selected language (if changing languages in the dropdown, in the languageSelectElement - in the DOM)
+        const savedLanguage = sessionStorage.getItem("languageVariable");
+        if (savedLanguage) {
+          languageSelectElement.value = savedLanguage;
+        }
+      }
+    });
+
+    // Set language variable in the application
+    function setLanguage(lang) {
+      if (lang === 'en' || lang === 'sv') {
+        sessionStorage.setItem('languageVariable', lang);
+      } else if (lang !== 'en' || lang !== 'sv') {
+        console.warn('Invalid language code');
+
+        let defaultLanguage = 'sv';
+        lang = sessionStorage.setItem('languageVariable', defaultLanguage);
+      }
+      return lang;
+    }
 
   // languageSelectVariable (later used for the language select option elements)
    var languageSelectVariable;
@@ -1075,6 +1136,7 @@ const userMessagePlaceholder = {
 
           changeFlagImage();
         }
+
 
 
 
