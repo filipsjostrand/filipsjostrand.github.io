@@ -33,103 +33,106 @@
       <main id="main-section">
         <div id="main-section-wrapper">
 
-            <!-- _ _ _ Top 3 Todo (start)-->
+          <div class="start-container-wrapper">
 
-            <div class="todo-div">
+              <!-- _ _ _ Top 3 Todos (start)-->
 
-              <div id="todo-header-container">
+              <div class="todo-div">
 
-                <div id="todo-header-wrapper">
-                  <div class="start-container">
-                      <div id="character-counter" class="character-counter"></div>
-                      <div id="weekday-display"></div>
-                      <div id="date-display"></div>
-                      <div id="week-display-container">
-                          <div id="week-display"></div>
-                          <div id="week-display-nr"></div>
-                      </div><br>
+                  <div id="todo-header-container">
 
-                      <h3 id="todos-heading">Todo - Top3</h3>
-                        <p id="todos-desc"></p>
+                    <div id="todo-header-wrapper">
+                      <div class="start-container">
+                          <div id="character-counter" class="character-counter"></div>
+                          <div id="weekday-display"></div>
+                          <div id="date-display"></div>
+                          <div id="week-display-container">
+                              <div id="week-display"></div>
+                              <div id="week-display-nr"></div>
+                          </div><br>
 
-              <div id="top-3-info-header">
-                <a href="#" id="toggle-link"><h4 id="app-info">Application information </h4><div id="info-symbol">ℹ️</div></a>
-              </div>
-                <div class="info" id="content" style="display: none;">
-                  <ol>
-                      <li><b>Reset:</b> &nbsp Press "Start Reset" (application reactivates).</li><br>
-                      <li><b>Add:</b> &nbsp Write a todo text &nbsp &nbsp → &nbsp &nbsp press "Add Todo" (ensure "Top3 list" is selected in rolldown).</li><br>
-                      <li><b>Replace: </b> &nbsp Write a new todo text &nbsp &nbsp → &nbsp &nbsp select "#" (to replace) in rolldown &nbsp &nbsp → &nbsp &nbsp press "Add Todo".</li>
-                  </ol>
-                      <br>
+                          <h3 id="todos-heading">Todo - Top3</h3>
+                            <p id="todos-desc"></p>
 
-                </div>
-
-                      <button onclick="resetTodoSet()" class="reset-todo-button">
-                        <p id="top3-todo-buton-text">Start&#10;<sub>Reset</sub></p>
-                      </button>
+                  <div id="top-3-info-header">
+                    <a href="#" id="toggle-link"><h4 id="app-info">Application information </h4><div id="info-symbol">ℹ️</div></a>
                   </div>
-                </div>
+                    <div class="info" id="content" style="display: none;">
+                      <ol>
+                          <li><b>Reset:</b> &nbsp Press "Start Reset" (application reactivates).</li><br>
+                          <li><b>Add:</b> &nbsp Write a todo text &nbsp &nbsp → &nbsp &nbsp press "Add Todo" (ensure "Top3 list" is selected in rolldown).</li><br>
+                          <li><b>Replace: </b> &nbsp Write a new todo text &nbsp &nbsp → &nbsp &nbsp select "#" (to replace) in rolldown &nbsp &nbsp → &nbsp &nbsp press "Add Todo".</li>
+                      </ol>
+                          <br>
 
-                <div id="language-selector-wrapper">
-                  <div id="language-selector-container">
-                    <div id="language-wrapper">
-                        <i id="language-icon" class="fa-solid fa-globe"></i>
-                        <select class="language-selector">
-                          <option value="sv">Svenska</option>
-                            <option value="en">English</option>
-                        </select>
-                            <div class="flag-div">
-                              <div class="flag-img">
-                              </div>
-                            </div>
+                    </div>
+
+                          <button onclick="resetTodoSet()" class="reset-todo-button">
+                            <p id="top3-todo-buton-text">Start&#10;<sub>Reset</sub></p>
+                          </button>
+                      </div>
+                    </div>
+
+                    <div id="language-selector-wrapper">
+                      <div id="language-selector-container">
+                        <div id="language-wrapper">
+                            <i id="language-icon" class="fa-solid fa-globe"></i>
+                            <select class="language-selector">
+                              <option value="sv">Svenska</option>
+                                <option value="en">English</option>
+                            </select>
+                                <div class="flag-div">
+                                  <div class="flag-img">
+                                  </div>
+                                </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
+
+                  <br>
+                  <div id="todo-selection-container">
+                    <input class="todo-input-v2" type="text" id="input-box-v2" placeholder="Add todo text...">
+                    <label for="todo-select" id="top3-label">Apply to:</label>
+                        <select name="todo" id="todo-select">
+                        <option value="" selected>Top3 list</option>
+                        <option value="todo-one">#1</option>
+                        <option value="todo-two">#2</option>
+                        <option value="todo-three">#3</option>
+                        </select>
+                    <button onclick="addTaskToSet()" class="add-button-v2">Add Todo</button>
+                  </div>
+                  <br>
+
               </div>
 
+              <div id="todo-1-container">
+                      <input type="checkbox" class="checkbox" id="first" name="todo" value="first" />
+                      <label for="first"></label>
+                  <div id="todo-1">
+                      <span class="todo-text-1">1. ...</span>
+                  </div>
+              </div>
+
+              <div id="todo-2-container">
+                      <input type="checkbox" class="checkbox" id="second" name="todo" value="second" />
+                      <label for="second"></label>
+                  <div id="todo-2">
+                      <span class="todo-text-2">2. ...</span>
+                  </div>
+              </div>
+
+              <div id="todo-3-container">
+                      <input type="checkbox" class="checkbox" id="third" name="todo" value="third" />
+                      <label for="third"></label>
+                  <div id="todo-3">
+                      <span class="todo-text-3">3. ...</span>
+                  </div>
+              </div>
               <br>
-              <div id="todo-selection-container">
-                <input class="todo-input-v2" type="text" id="input-box-v2" placeholder="Add todo text...">
-                <label for="todo-select" id="top3-label">Apply to:</label>
-                    <select name="todo" id="todo-select">
-                    <option value="" selected>Top3 list</option>
-                    <option value="todo-one">#1</option>
-                    <option value="todo-two">#2</option>
-                    <option value="todo-three">#3</option>
-                    </select>
-                <button onclick="addTaskToSet()" class="add-button-v2">Add Todo</button>
-              </div>
-              <br>
 
+                <!-- _ _ _ Top 3 Todos (end) -->
           </div>
-
-          <div id="todo-1-container">
-                  <input type="checkbox" class="checkbox" id="first" name="todo" value="first" />
-                  <label for="first"></label>
-              <div id="todo-1">
-                  <span class="todo-text-1">1. ...</span>
-              </div>
-          </div>
-
-          <div id="todo-2-container">
-                  <input type="checkbox" class="checkbox" id="second" name="todo" value="second" />
-                  <label for="second"></label>
-              <div id="todo-2">
-                  <span class="todo-text-2">2. ...</span>
-              </div>
-          </div>
-
-          <div id="todo-3-container">
-                  <input type="checkbox" class="checkbox" id="third" name="todo" value="third" />
-                  <label for="third"></label>
-              <div id="todo-3">
-                  <span class="todo-text-3">3. ...</span>
-              </div>
-          </div>
-          <br>
-
-            <!-- _ _ _ Top 3 Todos (end) -->
         </div>
       </main>
 
@@ -834,3 +837,4 @@
     <script async src="./scripts/contact-form.js"></script>
 </body>
 </html>
+
