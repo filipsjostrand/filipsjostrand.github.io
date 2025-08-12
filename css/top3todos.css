@@ -84,6 +84,7 @@
 
 .todo-input-v2 {
     border-radius: 5px;
+    margin-right: 2px;
     padding: 5px;
     background-color: rgb(243, 239, 239);
 }
@@ -209,4 +210,5 @@
         width: 115px;
     }
 }
+
 
