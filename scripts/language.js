@@ -196,17 +196,16 @@ const appInfoFuture = {
   en: `Future`,
 }
 
-
 const infoBullets = {
   sv: `<ol>
-      <li><b>Återställ:</b> &nbsp Tryck "Start Reset" (applikationen startas om).</li><br>
-      <li><b>Lägg till:</b> &nbsp Skriv text &nbsp &nbsp → &nbsp &nbsp tryck "Lägg till" ("Top3 list" ska stå i rullisten).</li><br>
-      <li><b>Ersätt: </b> &nbsp Skriv text &nbsp &nbsp → &nbsp &nbsp Välj "#" (att ersätta) i rullisten &nbsp &nbsp → &nbsp &nbsp tryck "Lägg till".</li>
+      <li><b>Återställ:</b> &nbsp Tryck "Start Reset ☀️" (applikationen startas om).</li><br>
+      <li><b>Lägg till:</b> &nbsp Skriv text &nbsp &nbsp → &nbsp &nbsp tryck "Todo📝+" ("Top3 list" ska stå i rullisten).</li><br>
+      <li><b>Ersätt: </b> &nbsp Skriv text &nbsp &nbsp → &nbsp &nbsp Välj "#" (att ersätta) i rullisten &nbsp &nbsp → &nbsp &nbsp tryck "Todo📝+".</li>
       </ol>`,
   en: `<ol>
-      <li><b>Reset:</b> &nbsp Press "Start Reset" (application reactivates).</li><br>
-      <li><b>Add:</b> &nbsp Write a todo text &nbsp &nbsp → &nbsp &nbsp press "Add Todo" (ensure "Top3 list" is selected in rolldown).</li><br>
-      <li><b>Replace: </b> &nbsp Write a new todo text &nbsp &nbsp → &nbsp &nbsp select "#" (to replace) in rolldown &nbsp &nbsp → &nbsp &nbsp press "Add Todo".</li>
+      <li><b>Reset:</b> &nbsp Press "Start Reset ☀️" (application reactivates).</li><br>
+      <li><b>Add:</b> &nbsp Write a todo text &nbsp &nbsp → &nbsp &nbsp press "Todo📝+" (ensure "Top3 list" is selected in rolldown).</li><br>
+      <li><b>Replace: </b> &nbsp Write a new todo text &nbsp &nbsp → &nbsp &nbsp select "#" (to replace) in rolldown &nbsp &nbsp → &nbsp &nbsp press "Todo📝+".</li>
       </ol>`,
   }
 
@@ -219,7 +218,7 @@ const weekHeading = {
 }
 
 const todosPDesc = {
-  sv: `"Lägg till" top3 todo:`,
+  sv: `Lägg till top3 todo:`,
   en: `Add top3 todo:`,
 }
 
@@ -1098,6 +1097,7 @@ const userMessagePlaceholder = {
         }
 
 runTranslation(selectedLanguage);
+
 
 
 
