@@ -201,8 +201,13 @@
     }
 }
 
+/* Mobile screens (small) */
+@media screen and (max-width: 345px) {
+    .checkbox {
+        transform: scale(1.1);
 
-
-
-
-
+    }
+    .todo-input-v2 {
+        width: 115px;
+    }
+}
