@@ -805,7 +805,7 @@ li.bullet-point-size-two, li {
   margin-top: 10px;
 }
 
-#browser-compatibility {
+.browser-compatibility {
   font-size: 14px;
   margin: 0;
 }
@@ -1121,3 +1121,4 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
