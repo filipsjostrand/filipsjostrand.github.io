@@ -660,7 +660,7 @@ const triggerActionRelaxation = {
 
 // Om
 const aboutHeading = {
-  sv: 'Om mig',
+  sv: 'Om',
   en: 'About',
 }
 
@@ -1099,6 +1099,7 @@ const userMessagePlaceholder = {
         }
 
 runTranslation(selectedLanguage);
+
 
 
 
