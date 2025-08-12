@@ -320,11 +320,6 @@ const futureDesc = {
   `,
 }
 
-const addTaskSpan = {
-  sv: 'Lägg till (nedan)',
-  en: 'Add Task (below)',
-}
-
 const addDateLabel = {
   sv: 'Datum',
   en: 'Date',
@@ -918,8 +913,6 @@ const userMessagePlaceholder = {
           document.getElementById('app-info-week').innerHTML = appInfoWeek[selectedLanguage];
           document.getElementById('app-info-future').innerHTML = appInfoFuture[selectedLanguage];
 
-          document.getElementById('add-task-span').innerHTML = addTaskSpan[selectedLanguage];
-
           document.getElementById('add-date-label').innerHTML = addDateLabel[selectedLanguage];
           document.getElementById('add-todo-label').innerHTML = addTodoLabel[selectedLanguage];
 
@@ -1083,4 +1076,5 @@ const userMessagePlaceholder = {
 
           changeFlagImage();
         }
+
 
