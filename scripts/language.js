@@ -86,16 +86,6 @@
   // selectedValue (laster used to get the selected language variable value)
    var selectedValue;
 
-  var flagDiv = document.querySelector(".flag-div");
-
-  const languageFlagImage = {
-    en: "us-uk-flag-small.png",
-    sv: "sweden-flag-icon-small.png",
-  }
-
-  const dynamicLanguageImage = document.querySelector(".flag-div");
-  const fetchLanguageImage = document.querySelector(".flag-div").innerHTML;
-
 // _ _ _
 
     function changeFlagImage() {
@@ -212,8 +202,6 @@ const top3Label = {
 }
 
 const addButton2 = {
-  // sv: `Lägg till 📝`,
-  // en: `Add Todo 📝`,
   sv: `Todo📝+`,
   en: `Todo📝+`,
 }
@@ -1136,6 +1124,7 @@ const userMessagePlaceholder = {
 
           changeFlagImage();
         }
+
 
 
 
