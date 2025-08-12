@@ -81,12 +81,6 @@ const confirmRemoveAllCopiesOfRecurringTask = {
     en: `Remove this task and all the copies of this recurring task?`,
 }
 
-if (selectedLanguage === undefined || selectedLanguage === null) {
-selectedLanguage = 'sv';
-} else if (typeof(selectedLanguage) === "string" && typeof(languageVariable) === "string") {
-    selectedLanguage = localStorage.getItem("languageVariable");
-}
-
 // Toggle info-div (week schedule)
 const toggleLinkWeek = document.getElementById("toggle-link-week");
 const contentWeek = document.getElementById("content-week");
@@ -552,7 +546,6 @@ const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
     // Function to get the current weekday as a three-letter abbreviation
     function getWeekday(date) {
-        // const weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
         return weekdays[date.getDay()];
     }
 
@@ -1742,7 +1735,6 @@ let plannedTodosObjectsArray = [];
                 }
             }
 
-
         // _ _ _
         }
         // Don´t add monthly recurring todos if date > 28
@@ -2238,7 +2230,6 @@ let plannedTodosObjectsArray = [];
             sortPlannedTodos(plannedTodos);
 
         }
-
 
         // Add container (if plannedTodoos > 3)
         // add div
@@ -5785,3 +5776,4 @@ function load_func(delimiter) {
     readFile(file);
 
     };
+
