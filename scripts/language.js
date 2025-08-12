@@ -265,8 +265,8 @@ const futureHeading = {
 }
 
 const futureRememberSave = {
-  sv: `"Lägg till" uppgifter eller "Hämta fil" (planering)<br> - Kom ihåg att spara!`,
-  en: `"Add Task" or "Load File" (plan)<br> - Remember to save!`,
+  sv: `"Lägg till" 📅 uppgifter eller "Hämta fil" 🔁 (planering)<br> - Kom ihåg att spara! 💾`,
+  en: `"Add Task" 📅 or "Load File" 🔁 (plan)<br> - Remember to save! 💾`,
 }
 
 const futureDesc = {
@@ -537,8 +537,8 @@ const saveFileName = {
   en: 'File Name:',
 }
 const downloadOpt1 = {
-  sv: 'Nedladdning (Alt 1):',
-  en: 'Download (option 1):',
+  sv: 'Nedladdning (Dynamisk fil):',
+  en: 'Download (Dynamic file):',
 }
 const incompatibleDevices = {
   sv: 'Firefox, iOS-enheter (Apple-enheter)',
@@ -548,10 +548,9 @@ const saveAsAnywhere = {
   sv: 'Spara som (välj) ⬇️',
   en: 'Save As (anywhere) ⬇️',
 }
-
 const downloadOpt2 = {
-  sv: 'Nedladdning (Alt 2):',
-  en: 'Download (option 2):',
+  sv: 'Nedladdning (Till nedladdade filer):',
+  en: 'Download (to Downloads):',
 }
 const anyBrowserDl = {
   sv: 'Alla webbläsare (Firefox, Safari)',
@@ -1076,5 +1075,6 @@ const userMessagePlaceholder = {
 
           changeFlagImage();
         }
+
 
 
