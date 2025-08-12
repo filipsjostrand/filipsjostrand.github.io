@@ -1,62 +1,24 @@
 "use strict";
-// Language.js (translation)
-const languageSelector = document.querySelector(".language-selector");
 
-  var selectedLanguage = sessionStorage.getItem("selectedLanguage");
-
-  if (selectedLanguage === null || sessionStorage.getItem("selectedLanguage") === null || sessionStorage.getItem("selectedLanguage") === undefined) {
-    selectedLanguage = 'sv';
-
-    sessionStorage.setItem("selectedLanguage", selectedLanguage);
-  }
-
-// _ _ _
-// _ _ _
+  // Language.js (translation)
 
    // Select the dropdown element
    var languageSelectElement = document.querySelector('.language-selector');
-   var languageSelectVariable;
-   var languageVariable = 'sv';
-   sessionStorage.setItem("selectedLanguage", languageVariable);
-   var selectedValue;
 
-    languageSelectElement.value = 'sv'
-
-    selectedLanguage = sessionStorage.getItem("selectedLanguage");
-
-// _ _ _
-// _ _ _
-
-// Update the language variable (once - when opening the browser & when changing the language)
-
-window.addEventListener("DOMContentLoaded", () => {
-  const languageSelectElement = document.querySelector(".language-selector");
-    // First visit? Check if this is the first visit in this session
-    if (!sessionStorage.getItem("languageInitialized")) {
-      // Set default language to Swedish
-      languageSelectElement.value = "sv";
-      const selectedLanguage = "sv";
-      sessionStorage.setItem("selectedLanguage", selectedLanguage);
-      // Set a flag so this block doesn't run again
-      sessionStorage.setItem("languageInitialized", "true");
-      // set default language to Swedish (if the languageSelectElement is overwritten at browser opening)
-
-      // Overwrite/set default, language to Swedish
-      setTimeout(() => {
-        languageSelector.value = 'sv';
-      }, 300);
+   // Select the language variable
+  function setLanguage(lang) {
+    if (lang === 'en' || lang === 'sv') {
+      sessionStorage.setItem('languageVariable', lang);
+    } else if (lang !== 'en' || lang !== 'sv') {
+      console.warn('Invalid language code');
+      let defaultLanguage = 'sv';
+      lang = sessionStorage.setItem('languageVariable', defaultLanguage);
     }
-    // Not first visit?
-    else {
-    // Restore previously selected language (if changing languages in the dropdown, in the languageSelectElement - in the DOM)
-    const savedLanguage = sessionStorage.getItem("selectedLanguage");
-    if (savedLanguage) {
-      languageSelectElement.value = savedLanguage;
-      selectedLanguage = savedLanguage;
-    }
+    return lang;
   }
-  runTranslation(selectedLanguage);
-});
+
+  // define selectedLanguage (language variable)
+  let selectedLanguage = setLanguage(sessionStorage.getItem('languageVariable'));
 
   var flagDiv = document.querySelector(".flag-div");
 
@@ -68,7 +30,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const dynamicLanguageImage = document.querySelector(".flag-div");
   const fetchLanguageImage = document.querySelector(".flag-div").innerHTML;
 
-// _ _ _
 // _ _ _
 
     function changeFlagImage() {
@@ -185,6 +146,8 @@ const top3Label = {
 }
 
 const addButton2 = {
+  // sv: `Lägg till 📝`,
+  // en: `Add Todo 📝`,
   sv: `Todo📝+`,
   en: `Todo📝+`,
 }
@@ -519,6 +482,7 @@ const addTaskToScheduleButton = {
 }
 
 // Edit current plan (in the table).
+
 const currentPlanHeader = {
   sv: 'Aktuell plan',
   en: 'Current Plan',
@@ -903,8 +867,12 @@ const userMessagePlaceholder = {
             }
           });
 
-        // runTranslation(selectedLanguage);
+        runTranslation(selectedLanguage);
+
+        // runTranslation (translates text with language variable)
         function runTranslation(selectedLanguage) {
+
+          console.log("selectedLanguage (i runTranslation) = " + selectedLanguage);
 
           // Navbar
           document.getElementById('top-todos').innerHTML = navbarTodo[selectedLanguage];
@@ -1032,6 +1000,7 @@ const userMessagePlaceholder = {
           document.getElementById('past-tasks').innerHTML = pastTasks[selectedLanguage];
           document.getElementById('copy-or-clear-past').innerHTML = copyOrClearPast[selectedLanguage];
           document.getElementById('clear-past-tasks').innerHTML = clearPastTasksButtonTranslate[selectedLanguage];
+          // document.getElementById('clear-app-data').innerHTML = clearAllAppDataButtonTranslate[selectedLanguage];
 
 
           // Timer
@@ -1113,5 +1082,3 @@ const userMessagePlaceholder = {
 
           changeFlagImage();
         }
-
-runTranslation(selectedLanguage);
