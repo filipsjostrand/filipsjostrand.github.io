@@ -1,6 +1,6 @@
 "use strict";
 
-// Top3 "Todos"
+// Top3 "Todo"
 
 let todoInput = document.getElementById("input-box-v2");
 let todoOne = document.getElementById("todo-1");
@@ -338,6 +338,7 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
 
