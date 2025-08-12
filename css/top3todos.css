@@ -90,6 +90,7 @@
 
 #todo-select {
     border-radius: 5px;
+    margin-left: 1px;
     padding: 4px;
     background-color: rgb(243, 239, 239);
     color: black;
@@ -104,14 +105,13 @@
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 7px;
-    margin-left: 2px;
+    margin-left: 5px;
     flex-direction: row;
     border: 1px solid rgb(82, 82, 82);
     background-color: rgba(79, 129, 115, 0.815);
     color: rgb(207 207 207);
     font-weight: bold;
     font-size: 15px;
-    padding: 10px;
     border-radius: 6px;
     cursor: pointer;
 }
@@ -200,6 +200,7 @@
         transform: scale(1.1);
     }
 }
+
 
 
 
