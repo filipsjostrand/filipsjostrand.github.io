@@ -8,21 +8,55 @@
   const dynamicLanguageImage = document.querySelector(".flag-div");
   const fetchLanguageImage = document.querySelector(".flag-div").innerHTML;
 
-   var languageSelectId = document.getElementById("select-language");
-  
-   var selectedLanguage;
-  
-   // Select the dropdown element
-   var languageSelectElement = document.querySelector('.language-selector');
-   var languageSelectVariable;
-   var languageVariable = 'sv';
-   sessionStorage.setItem("languageVariable", languageVariable);
-   var selectedValue;
-  
-    languageSelectElement.value = 'sv'
-  
-    selectedLanguage = sessionStorage.getItem("languageVariable");
-  
+  const languageSelector = document.querySelector(".language-selector");
+
+    var selectedLanguage = sessionStorage.getItem("selectedLanguage");
+
+    if (selectedLanguage === null || sessionStorage.getItem("selectedLanguage") === null || sessionStorage.getItem("selectedLanguage") === undefined) {
+      selectedLanguage = 'en';
+
+      sessionStorage.setItem("selectedLanguage", selectedLanguage);
+    }
+
+    // Select the dropdown element
+    var languageSelectElement = document.querySelector('.language-selector');
+    var languageSelectVariable;
+    var languageVariable = 'sv';
+    sessionStorage.setItem("selectedLanguage", languageVariable);
+    var selectedValue;
+
+      languageSelectElement.value = 'sv'
+
+      selectedLanguage = sessionStorage.getItem("selectedLanguage");
+
+    // Update the language variable (once - when opening the browser & when changing the language)
+    window.addEventListener("DOMContentLoaded", () => {
+      const languageSelectElement = document.querySelector(".language-selector");
+        // First visit? Check if this is the first visit in this session
+        if (!sessionStorage.getItem("languageInitialized")) {
+          // Set default language to Swedish
+          languageSelectElement.value = "sv";
+          const selectedLanguage = "sv";
+          sessionStorage.setItem("selectedLanguage", selectedLanguage);
+          // Set a flag so this block doesn't run again
+          sessionStorage.setItem("languageInitialized", "true");
+          // set default language to Swedish (if the languageSelectElement is overwritten at browser opening)
+
+          // Overwrite/set default, language to Swedish
+          setTimeout(() => {
+            languageSelector.value = 'sv';
+          }, 300);
+        }
+        // Not first visit?
+        else {
+        // Restore previously selected language (if changing languages in the dropdown, in the languageSelectElement - in the DOM)
+        const savedLanguage = sessionStorage.getItem("selectedLanguage");
+        if (savedLanguage) {
+          languageSelectElement.value = savedLanguage;
+        }
+      }
+    });
+
     function changeFlagImage() {
       dynamicLanguageImage.innerHTML =
       fetchLanguageImage +
@@ -853,7 +887,7 @@ const userMessagePlaceholder = {
 
         // runTranslation(selectedLanguage);
         function runTranslation(selectedLanguage) {
-          
+
           // Navbar
           document.getElementById('top-todos').innerHTML = navbarTodo[selectedLanguage];
           document.getElementById('weekly-calendar').innerHTML = navbarWeek[selectedLanguage];
@@ -861,7 +895,7 @@ const userMessagePlaceholder = {
           document.getElementById('timer').innerHTML = navbarTimer[selectedLanguage];
           document.getElementById('about-me').innerHTML = navbarAbout[selectedLanguage];
           document.querySelector('.info').innerHTML = infoBullets[selectedLanguage];
-          
+
           document.getElementById('weekday-display').innerHTML = getTodaysDayAbbreviation(todaysWeekdayAbbNr);
           document.getElementById('week-display').innerHTML = appInfoWeekText[selectedLanguage];
 
@@ -872,7 +906,7 @@ const userMessagePlaceholder = {
           document.getElementById('todos-heading').innerHTML = top3Todos[selectedLanguage];
 
           document.getElementById('todos-desc').innerHTML = todosPDesc[selectedLanguage];
-          
+
           // Veckoschema
           document.getElementById('weekly-heading').innerHTML = weekHeading[selectedLanguage];
           document.getElementById('weekly-desc').innerHTML = weekPDesc[selectedLanguage];
@@ -1063,3 +1097,4 @@ const userMessagePlaceholder = {
         }
 
 runTranslation(selectedLanguage);
+
