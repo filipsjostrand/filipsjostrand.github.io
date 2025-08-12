@@ -168,12 +168,12 @@ const placeholderTop3Text = {
 
 const top3Label = {
   sv: `i:`,
-  en: `Apply to:`,
+  en: `to:`,
 }
 
 const addButton2 = {
-  sv: `Lägg till 📝`,
-  en: `Add Todo 📝`,
+  sv: `Todo📝+`,
+  en: `Todo📝+`,
 }
 
 const appInfo = {
@@ -1098,6 +1098,7 @@ const userMessagePlaceholder = {
         }
 
 runTranslation(selectedLanguage);
+
 
 
 
