@@ -706,31 +706,15 @@ languageSelectElement = window.languageSelectElement;
 
         if (selectedValue === 'sv') {
             selectedLanguage = 'sv';
-            putInSelectedLanguageMultipleTimes(selectedLanguage);
         } else if (selectedValue === 'en') {
             selectedLanguage = 'en';
-            putInSelectedLanguageMultipleTimes(selectedLanguage);
         }
     });
 });
 
 // _ _ _
 
-    putInSelectedLanguageMultipleTimes(selectedLanguage);
-
-    function putInSelectedLanguageMultipleTimes(selectedLanguage) {
-
-
-    //var weekDisplay = document.getElementById('week-display');
-      //weekDisplay.textContent = weekInfo[selectedLanguage] + weekNumber;
-
-      document.getElementById('week-display-2').innerHTML = weekInfo2[selectedLanguage] + weekNumber;
-
-    }
-
-    // _ _ _
-
-      document.getElementById('week-display-2').innerHTML = weekInfo2[selectedLanguage] + ' ' + weekNumber;
+document.getElementById('week-display-2-number').innerHTML = weekNumber;
 
     // _ _ _
 
@@ -5806,3 +5790,4 @@ function load_func(delimiter) {
     readFile(file);
 
     };
+
