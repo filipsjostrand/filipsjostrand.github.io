@@ -1,64 +1,75 @@
+"use strict";
 // Language.js (translation)
-
 const languageSelector = document.querySelector(".language-selector");
 
-    var selectedLanguage = sessionStorage.getItem("selectedLanguage");
+  var selectedLanguage = sessionStorage.getItem("selectedLanguage");
 
-    if (selectedLanguage === null || sessionStorage.getItem("selectedLanguage") === null || sessionStorage.getItem("selectedLanguage") === undefined) {
-      selectedLanguage = 'sv';
+  if (selectedLanguage === null || sessionStorage.getItem("selectedLanguage") === null || sessionStorage.getItem("selectedLanguage") === undefined) {
+    selectedLanguage = 'sv';
 
+    sessionStorage.setItem("selectedLanguage", selectedLanguage);
+  }
+
+// _ _ _
+// _ _ _
+
+   // Select the dropdown element
+   var languageSelectElement = document.querySelector('.language-selector');
+   var languageSelectVariable;
+   var languageVariable = 'sv';
+   sessionStorage.setItem("selectedLanguage", languageVariable);
+   var selectedValue;
+
+    languageSelectElement.value = 'sv'
+
+    selectedLanguage = sessionStorage.getItem("selectedLanguage");
+
+// _ _ _
+// _ _ _
+
+// Update the language variable (once - when opening the browser & when changing the language)
+
+window.addEventListener("DOMContentLoaded", () => {
+  const languageSelectElement = document.querySelector(".language-selector");
+    // First visit? Check if this is the first visit in this session
+    if (!sessionStorage.getItem("languageInitialized")) {
+      // Set default language to Swedish
+      languageSelectElement.value = "sv";
+      const selectedLanguage = "sv";
       sessionStorage.setItem("selectedLanguage", selectedLanguage);
+      // Set a flag so this block doesn't run again
+      sessionStorage.setItem("languageInitialized", "true");
+      // set default language to Swedish (if the languageSelectElement is overwritten at browser opening)
+
+      // Overwrite/set default, language to Swedish
+      setTimeout(() => {
+        languageSelector.value = 'sv';
+      }, 300);
     }
-
-    // Select the dropdown element
-    var languageSelectElement = document.querySelector('.language-selector');
-    var languageSelectVariable;
-    var languageVariable = 'sv';
-    sessionStorage.setItem("selectedLanguage", languageVariable);
-    var selectedValue;
-
-      languageSelectElement.value = 'sv'
-
-      selectedLanguage = sessionStorage.getItem("selectedLanguage");
-
-    // Update the language variable (once - when opening the browser & when changing the language)
-    window.addEventListener("DOMContentLoaded", () => {
-      const languageSelectElement = document.querySelector(".language-selector");
-        // First visit? Check if this is the first visit in this session
-        if (!sessionStorage.getItem("languageInitialized")) {
-          // Set default language to Swedish
-          languageSelectElement.value = "sv";
-          const selectedLanguage = "sv";
-          sessionStorage.setItem("selectedLanguage", selectedLanguage);
-          // Set a flag so this block doesn't run again
-          sessionStorage.setItem("languageInitialized", "true");
-          // set default language to Swedish (if the languageSelectElement is overwritten at browser opening)
-
-          // Overwrite/set default, language to Swedish
-          setTimeout(() => {
-            languageSelector.value = 'sv';
-          }, 300);
-        }
-        // Not first visit?
-        else {
-        // Restore previously selected language (if changing languages in the dropdown, in the languageSelectElement - in the DOM)
-        const savedLanguage = sessionStorage.getItem("selectedLanguage");
-        if (savedLanguage) {
-          languageSelectElement.value = savedLanguage;
-        }
-      }
-      runTranslation(selectedLanguage);
-    });
-
-    var flagDiv = document.querySelector(".flag-div");
-  
-    const languageFlagImage = {
-      en: "us-uk-flag-small.png",
-      sv: "sweden-flag-icon-small.png",
+    // Not first visit?
+    else {
+    // Restore previously selected language (if changing languages in the dropdown, in the languageSelectElement - in the DOM)
+    const savedLanguage = sessionStorage.getItem("selectedLanguage");
+    if (savedLanguage) {
+      languageSelectElement.value = savedLanguage;
+      selectedLanguage = savedLanguage;
     }
-  
-    const dynamicLanguageImage = document.querySelector(".flag-div");
-    const fetchLanguageImage = document.querySelector(".flag-div").innerHTML;
+  }
+  runTranslation(selectedLanguage);
+});
+
+  var flagDiv = document.querySelector(".flag-div");
+
+  const languageFlagImage = {
+    en: "us-uk-flag-small.png",
+    sv: "sweden-flag-icon-small.png",
+  }
+
+  const dynamicLanguageImage = document.querySelector(".flag-div");
+  const fetchLanguageImage = document.querySelector(".flag-div").innerHTML;
+
+// _ _ _
+// _ _ _
 
     function changeFlagImage() {
       dynamicLanguageImage.innerHTML =
@@ -193,10 +204,16 @@ const appInfoWeekText = {
   en: `Week:`,
 }
 
+const weekInfo2 = {
+  sv: `v.&nbsp`,
+  en: `wk.&nbsp`,
+}
+
 const appInfoFuture = {
   sv: `Plan`,
-  en: `Future`,
+  en: `Plan`,
 }
+
 
 const infoBullets = {
   sv: `<ol>
@@ -220,23 +237,23 @@ const weekHeading = {
 }
 
 const todosPDesc = {
-  sv: `Lägg till top3 todo:`,
-  en: `Add top3 todo:`,
+  sv: `Lägg till top3 todos:`,
+  en: `Add top3 todos:`,
 }
 
 const weekPDesc = {
-  sv: `Lägg till uppgifter (eller "Hämta fil") i avsnitt "Framtidsplaner". <br>Planeringen presenteras i "veckoschema" (nedan):`,
-  en: `Add tasks (or "Load File") in the "Future Plans" section. <br>The plan is presented in the "week schedule" (below):`,
+  sv: `Lägg till uppgifter 📅 (eller "Hämta fil" 🔁) i avsnitt "Framtidsplaner". <br>Planeringen presenteras i "veckoschema" (nedan):`,
+  en: `Add tasks 📅 (or "Load File" 🔁) in the "Future Plans" section. <br>The plan is presented in the "week schedule" (below):`,
 }
 
 const goFuturePlans = {
-  sv: `Lägg till uppgifter i "Framtidsplaner",`,
-  en: `Go to "Future Plans" (to add tasks)`,
+  sv: `Lägg till uppgifter 📅 i "Framtidsplaner",`,
+  en: `Go to "Future Plans" (to add tasks 📅)`,
 }
 
 const goFutureNavbar = {
   sv: `Scrolla ner eller klicka "Plan" (i navbar)`,
-  en: `Scroll down or click "Future" (navbar)`,
+  en: `Scroll down or click "Plan" (navbar)`,
 }
 
 const monWeekSchedule = {
@@ -287,7 +304,7 @@ const futureRememberSave = {
 const futureDesc = {
   sv: `Hantera <u id="current-plan-words">Framtidsplaner</u> och visa <u id="past-tasks-words">Tidigare händelser</u>:
     <ul>
-      <li id="add-list">Lägg till uppgift / Ladda upp fil (Schema).</li>
+      <li id="add-list">Lägg till uppgift 📅 / Ladda upp fil (Schema) 🔁.</li>
         <ul class="bullet-point-size-two">
           <li>Lägg till tider (i "Text", sorteras med format: tt:mm)</li>
           <li>Lägg till återkommande uppgifter (checka i)
@@ -303,15 +320,15 @@ const futureDesc = {
           <li>Lägg till (och ta bort) en ny uppgift, om "Aktuell plan" inte uppdateras korrekt.</li>
           <li>Utförda (ej återkommande) uppgifter hamnar i "Tidigare händelser".</li>
         </ul>
-      <li id="save-list">Spara fil (Schema).</li>
-      <li id="dl-list">Ladda ner fil (Schema).</li>
+      <li id="save-list">Spara fil (Schema) 💾.</li>
+      <li id="dl-list">Ladda ner fil (Schema) ⬇️.</li>
       <li id="edit-list">Redigera schema (i tabell).</li>
       <li id="copy-clear-list">Kopiera/rensa (tidigare händelser).</li>
     </ul>
   `,
   en: `Handle <u id="current-plan-words">"Future Plans"</u> and watch <u id="past-tasks-words">Past tasks</u>:
     <ul>
-      <li id="add-list">Add Task / Upload File (Schedule).</li>
+      <li id="add-list">Add Task 📅 / Upload File (Schedule) 🔁.</li>
         <ul class="bullet-point-size-two">
           <li>Add times (in "Task", sorted with format: hh:mm)</li>
           <li>Add recurring tasks (use checkbox)
@@ -327,8 +344,8 @@ const futureDesc = {
           <li>Add (and remove) a new task, if the "Current Plan" doesn't update correctly.</li>
           <li>Non-recurring tasks in the past end up in "Past Tasks."</li>
         </ul>
-      <li id="save-list">Save file (Schedule).</li>
-      <li id="dl-list">Download file (Schedule).</li>
+      <li id="save-list">Save file (Schedule) 💾.</li>
+      <li id="dl-list">Download file (Schedule) ⬇️.</li>
       <li id="edit-list">Edit schedule (in table).</li>
       <li id="copy-clear-list">Copy/clear (past tasks).</li>
     </ul>
@@ -502,7 +519,6 @@ const addTaskToScheduleButton = {
 }
 
 // Edit current plan (in the table).
-
 const currentPlanHeader = {
   sv: 'Aktuell plan',
   en: 'Current Plan',
@@ -900,6 +916,7 @@ const userMessagePlaceholder = {
 
           document.getElementById('weekday-display').innerHTML = getTodaysDayAbbreviation(todaysWeekdayAbbNr);
           document.getElementById('week-display').innerHTML = appInfoWeekText[selectedLanguage];
+          document.getElementById('week-display-2').innerHTML = weekInfo2[selectedLanguage];
 
           document.querySelector('.add-button-v2').innerHTML = addButton2[selectedLanguage];
           document.getElementById('top3-label').innerHTML = top3Label[selectedLanguage];
@@ -1015,7 +1032,6 @@ const userMessagePlaceholder = {
           document.getElementById('past-tasks').innerHTML = pastTasks[selectedLanguage];
           document.getElementById('copy-or-clear-past').innerHTML = copyOrClearPast[selectedLanguage];
           document.getElementById('clear-past-tasks').innerHTML = clearPastTasksButtonTranslate[selectedLanguage];
-          // document.getElementById('clear-app-data').innerHTML = clearAllAppDataButtonTranslate[selectedLanguage];
 
 
           // Timer
