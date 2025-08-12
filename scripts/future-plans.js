@@ -685,11 +685,6 @@ const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
         en: `Week: `,
       }
 
-      const weekInfo2 = {
-        sv: `v. `,
-        en: `wk. `,
-      }
-
 // _ _ _
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -5790,4 +5785,3 @@ function load_func(delimiter) {
     readFile(file);
 
     };
-
