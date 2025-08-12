@@ -13,7 +13,7 @@
     var selectedLanguage = sessionStorage.getItem("selectedLanguage");
 
     if (selectedLanguage === null || sessionStorage.getItem("selectedLanguage") === null || sessionStorage.getItem("selectedLanguage") === undefined) {
-      selectedLanguage = 'en';
+      selectedLanguage = 'sv';
 
       sessionStorage.setItem("selectedLanguage", selectedLanguage);
     }
@@ -1097,4 +1097,5 @@ const userMessagePlaceholder = {
         }
 
 runTranslation(selectedLanguage);
+
 
