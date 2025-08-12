@@ -69,8 +69,8 @@
   //Översättning (navbar)
 
   const navbarTodo = {
-    sv: "Todos",
-    en: "Todos",
+    sv: "Todo",
+    en: "Todo",
   }
 
   const navbarWeek = {
@@ -90,7 +90,7 @@
 
   const navbarAbout = {
     sv: "Om",
-    en: "About",
+    en: "Me",
   }
 
   const monDayAbb = {
@@ -157,8 +157,8 @@ function getTodaysDayAbbreviation(todaysWeekdayAbbNr) {
 // Översättning Top3 Todos
 
 const top3Todos = {
-  sv: `Todos - Top3`,
-  en: `Todos - Top3`,
+  sv: `Todo - Top3`,
+  en: `Todo - Top3`,
 }
 
 const placeholderTop3Text = {
@@ -177,8 +177,8 @@ const addButton2 = {
 }
 
 const appInfo = {
-  sv: `Todos`,
-  en: `Todos`,
+  sv: `Todo`,
+  en: `Todo`,
 }
 
 const appInfoWeek = {
@@ -219,8 +219,8 @@ const weekHeading = {
 }
 
 const todosPDesc = {
-  sv: `"Lägg till" top3 todos:`,
-  en: `Add top3 todos:`,
+  sv: `"Lägg till" top3 todo:`,
+  en: `Add top3 todo:`,
 }
 
 const weekPDesc = {
@@ -659,7 +659,7 @@ const triggerActionRelaxation = {
 
 // Om
 const aboutHeading = {
-  sv: 'Om',
+  sv: 'Om mig',
   en: 'About',
 }
 
@@ -1098,6 +1098,7 @@ const userMessagePlaceholder = {
         }
 
 runTranslation(selectedLanguage);
+
 
 
 
