@@ -267,6 +267,21 @@ h3 {
   flex-direction: column;
 }
 
+#week-display-2-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#week-display-2 {
+  display: flex;
+  padding-bottom: 5px;
+}
+
+#week-display-2-number {
+  display: flex;
+  padding-bottom: 5px;
+}
+
 #week-display-2 {
   padding-bottom: 5px;
 }
@@ -1123,5 +1138,6 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
 
 
