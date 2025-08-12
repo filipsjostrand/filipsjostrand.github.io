@@ -319,6 +319,7 @@
             <!-- Select color (from dropdown) -->
             <div id="color-wrapper">
               <label id="add-color-label" for="colors">Color</label>
+                <form id="color-drop-down">
                     <label for="colors"></label>
                     <select name="colors" id="colors">
                       <option id="gray-color" value="grayColor" style="color:rgb(150,150,150)">-</option>
@@ -462,7 +463,7 @@
               <input type="number" id="rec-year-days" name="rec-year-days" min=1 max=365 value="1"/>
             </div>
           </fieldset>
-
+          </form>
             <button id="add-todo-button" onclick="addTaskToList()"> Add Task </button><br>
 
             <span id="current-plan-header">📝<u id="current-plan-text">Current Plan</u></span><br>
@@ -837,4 +838,5 @@
     <script async src="./scripts/contact-form.js"></script>
 </body>
 </html>
+
 
