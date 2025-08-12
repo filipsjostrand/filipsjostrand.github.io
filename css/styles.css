@@ -713,6 +713,7 @@ li.bullet-point-size-two, li {
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: rgb(32 32 32);
+  border-radius: 5px;
   padding-top: 5px;
   padding-bottom: 15px;
   padding-left: 30px;
@@ -726,6 +727,7 @@ li.bullet-point-size-two, li {
   display: inline-block;
   cursor: pointer;
   margin: 5px;
+  border-radius: 4px;
 }
 
 .color-option i {
@@ -1121,4 +1123,5 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
 
