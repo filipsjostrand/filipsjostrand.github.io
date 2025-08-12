@@ -55,6 +55,7 @@
           languageSelectElement.value = savedLanguage;
         }
       }
+      runTranslation(selectedLanguage);
     });
 
     function changeFlagImage() {
@@ -1097,5 +1098,6 @@ const userMessagePlaceholder = {
         }
 
 runTranslation(selectedLanguage);
+
 
 
