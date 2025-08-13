@@ -56,7 +56,7 @@
             dynamicLanguageImage.innerHTML = fetchLanguageImage +
             `<img class="flag-img" src="./media/img/${languageFlagImage[selectedLanguage]}"
             alt="language flag image | https://uxwing.com/tag/country-flag-icons/">`
-          }, 300);
+          }, 60);
         }
         // Not first visit?
         else {
@@ -1124,6 +1124,7 @@ const userMessagePlaceholder = {
 
           changeFlagImage();
         }
+
 
 
 
