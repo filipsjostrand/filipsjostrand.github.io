@@ -806,14 +806,14 @@
                       </div>
                       <div class="email-container">
                           <label id="email-label" for="user-email">Email</label>
-                          <input type="text" id="user-email" name="email-address" placeholder="my.email@domain.com" minlength="8" maxlength="255" disabled>
+                          <input type="text" id="user-email" name="email-address" placeholder="my.email@domain.com" minlength="8" maxlength="255" readOnly>
                       </div>
                       <div class="message-container">
                           <label id="message-label" for="user-message">Message</label>
                           <div class="subject-container">
-                              <textarea id="subject" name="subject" placeholder="Subject..." style="height:40px;" minlength="1" maxlength="80" disabled></textarea>
+                              <textarea id="subject" name="subject" placeholder="Subject..." style="height:40px;" minlength="1" maxlength="80" readOnly></textarea>
                           </div>
-                          <textarea id="user-message" name="user-message" placeholder="(Please write something anything :)..." style="height:200px;" minlength="1" maxlength="1000" disabled></textarea>
+                          <textarea id="user-message" name="user-message" placeholder="(Please write something anything :)..." style="height:200px;" minlength="1" maxlength="1000" readOnly></textarea>
                           <div id="char-counter" class="char-counter-text">Characters (current/max): 0/1000</div>
                       </div>
                       <button class="send-form-button" id="send-button" disabled>Send</button>
@@ -838,10 +838,10 @@
     <script src="./scripts/photo-script.js"></script>
     <script async src="./scripts/footer.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="./scripts/email-init.js"></script>
     <script async src="./scripts/contact-form.js"></script>
 </body>
 </html>
+
 
 
 
