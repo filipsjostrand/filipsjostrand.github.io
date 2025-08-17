@@ -12,6 +12,16 @@
     padding-bottom: 15px;
 }
 
+.hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
 #first,
 #second,
 #third {
@@ -211,4 +221,5 @@
         width: 115px;
     }
 }
+
 
