@@ -15,9 +15,12 @@ let editTodoOne;
 let editTodoTwo;
 let editTodoThree;
 
-// 2024-07-15, Nästa gång:
-//  1. Fixa CSS
-//  2. Skriv ReadMe.txt
+const todoSelectionGroup = document.getElementById("todo-selection-container");
+const todoContainerGroup = [
+  document.getElementById("todo-1-container"),
+  document.getElementById("todo-2-container"),
+  document.getElementById("todo-3-container")
+];
 
 const characterCounter = document.getElementById('character-counter');
 const maximumChars = 50;
@@ -29,6 +32,38 @@ let limitedTodoSet = new Set();
 let checkboxOne = document.getElementById("first");
 let checkboxTwo = document.getElementById("second");
 let checkboxThree = document.getElementById("third");
+
+function allTodosEmpty() {
+  return todoContainerGroup.every(container => container.innerText.trim() === "");
+}
+
+function updateOpacity() {
+  if (allTodosEmpty()) {
+    todoSelectionGroup.classList.add("hidden");
+    todoSelectionGroup.classList.remove("visible");
+    todoContainerGroup.forEach(container => {
+      container.classList.add("hidden");
+      container.classList.remove("visible");
+    });
+  }
+}
+
+function showAllTodos() {
+  todoSelectionGroup.classList.add("visible");
+  todoSelectionGroup.classList.remove("hidden");
+  todoContainerGroup.forEach(container => {
+    container.classList.add("visible");
+    container.classList.remove("hidden");
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (allTodosEmpty() === true) {
+    updateOpacity()
+  } else if (allTodosEmpty() === false) {
+    showAllTodos()
+  }
+});
 
 // Optionally, add an event listener to handle the checkbox state
 checkboxOne.addEventListener('change', function() {
@@ -104,7 +139,7 @@ function resetTodoSet() {
   todoOne.style.textDecoration = 'none';
   todoTwo.style.textDecoration = 'none';
   todoThree.style.textDecoration = 'none';
-//   window.location.reload();
+  showAllTodos()
 }
 
 // Common code for all todos (#1, #2, #3) (when editing)
@@ -338,6 +373,7 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
 
