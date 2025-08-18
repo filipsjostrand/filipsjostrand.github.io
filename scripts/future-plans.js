@@ -554,6 +554,10 @@ const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     // currentWeekDayToBeHandled = "mon" / "tue" / "wed" / ... / "sun"
     function getCurrentWeekDayForSelectedLanguage(currentWeekDayToBeHandled) {
 
+        if (selectedLanguage === undefined && sessionStorage.getItem("languageVariable") !== '' || selectedLanguage === null && sessionStorage.getItem("languageVariable") !== '') {
+            selectedLanguage = sessionStorage.getItem("languageVariable");
+        }
+        
         let getCurrentWeekDay;
 
         if (selectedLanguage === 'sv') {
@@ -5774,5 +5778,6 @@ function load_func(delimiter) {
     readFile(file);
 
     };
+
 
 
