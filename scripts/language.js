@@ -586,8 +586,8 @@ const saveFileName = {
   en: 'File Name:',
 }
 const downloadOpt1 = {
-  sv: 'Nedladdning (Dynamisk fil):',
-  en: 'Download (Dynamic file):',
+  sv: 'Nedladdning #1 (Dynamisk fil):',
+  en: 'Download #1 (Dynamic file):',
 }
 const incompatibleDevices = {
   sv: 'Firefox, iOS-enheter (Apple-enheter)',
@@ -598,8 +598,8 @@ const saveAsAnywhere = {
   en: 'Save As (anywhere) ⬇️',
 }
 const downloadOpt2 = {
-  sv: 'Nedladdning (Till nedladdade filer):',
-  en: 'Download (to Downloads):',
+  sv: 'Nedladdning #2 (Till nedladdade filer):',
+  en: 'Download #2 (to Downloads):',
 }
 const anyBrowserDl = {
   sv: 'Alla webbläsare (Firefox, Safari)',
@@ -1124,6 +1124,7 @@ const userMessagePlaceholder = {
 
           changeFlagImage();
         }
+
 
 
 
