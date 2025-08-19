@@ -33,6 +33,46 @@ let checkboxOne = document.getElementById("first");
 let checkboxTwo = document.getElementById("second");
 let checkboxThree = document.getElementById("third");
 
+// Add an event listener to handle the checkbox state (and the line-through)
+checkboxOne.addEventListener("change", function () {
+  console.log("checkboxOne.addEventListener körs");
+  if (checkboxOne.checked) {
+    todoOne.style.textDecoration = "line-through";
+    localStorage.setItem("todoOneStrike", "strike");
+    localStorage.setItem("todoOneChecked", "yes");
+  } else {
+    todoOne.style.textDecoration = "none";
+    localStorage.setItem("todoOneStrike", "no-strike");
+    localStorage.setItem("todoOneChecked", "no");
+  }
+});
+
+checkboxTwo.addEventListener("change", function () {
+  console.log("checkboxTwo.addEventListener körs");
+  if (checkboxTwo.checked) {
+    todoTwo.style.textDecoration = "line-through";
+    localStorage.setItem("todoTwoStrike", "strike");
+    localStorage.setItem("todoTwoChecked", "yes");
+  } else {
+    todoTwo.style.textDecoration = "none";
+    localStorage.setItem("todoTwoStrike", "no-strike");
+    localStorage.setItem("todoTwoChecked", "no");
+  }
+});
+
+checkboxThree.addEventListener("change", function () {
+  console.log("checkboxThree.addEventListener körs");
+  if (checkboxThree.checked) {
+    todoThree.style.textDecoration = "line-through";
+    localStorage.setItem("todoThreeStrike", "strike");
+    localStorage.setItem("todoThreeChecked", "yes");
+  } else {
+    todoThree.style.textDecoration = "none";
+    localStorage.setItem("todoThreeStrike", "no-strike");
+    localStorage.setItem("todoThreeChecked", "no");
+  }
+});
+
 function allTodosEmpty() {
   return todoContainerGroup.every(container => container.innerText.trim() === "");
 }
@@ -57,40 +97,42 @@ function showAllTodos() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  if (allTodosEmpty() === true) {
-    updateOpacity()
-  } else if (allTodosEmpty() === false) {
-    showAllTodos()
-  }
-});
-
-// Optionally, add an event listener to handle the checkbox state
-checkboxOne.addEventListener('change', function() {
-    if (checkboxOne.checked) {
-      todoOne.style.textDecoration = 'line-through';
-    } else {
-      todoOne.style.textDecoration = 'none';
-    }
-  });
-
-checkboxTwo.addEventListener('change', function() {
-    if (checkboxTwo.checked) {
-      todoTwo.style.textDecoration = 'line-through';
-    } else {
-      todoTwo.style.textDecoration = 'none';
-    }
-});
-
-checkboxThree.addEventListener('change', function() {
-    if (checkboxThree.checked) {
-      todoThree.style.textDecoration = 'line-through';
-    } else {
-      todoThree.style.textDecoration = 'none';
-    }
-});
-
 // _ _ _
+
+function setStrikeAndCheckboxFromStorage(keyBase, checkbox, todo) {
+  const strike = localStorage.getItem(`${keyBase}Strike`); // "strike" | "no-strike" | null
+  const checked = localStorage.getItem(`${keyBase}Checked`); // "yes" | "no" | null
+
+  // consider either flag enough to mark checked
+  const isChecked = strike === "strike" || checked === "yes";
+
+  checkbox.checked = !!isChecked;
+  todo.style.textDecoration = isChecked ? "line-through" : "";
+}
+
+function initTop3Todos() {
+  if (allTodosEmpty()) {
+    updateOpacity();
+  } else {
+    showAllTodos();
+  }
+
+  setStrikeAndCheckboxFromStorage("todoOne", checkboxOne, todoOne);
+  setStrikeAndCheckboxFromStorage("todoTwo", checkboxTwo, todoTwo);
+  setStrikeAndCheckboxFromStorage("todoThree", checkboxThree, todoThree);
+}
+
+// Run after DOM ready AND after any form-state restoration
+window.addEventListener("DOMContentLoaded", () => {
+  // 2 rAFs push execution past layout & restoration in most browsers
+  requestAnimationFrame(() => requestAnimationFrame(initTop3Todos));
+});
+
+// Also handle back/forward cache restores (Safari/iOS esp.)
+window.addEventListener("pageshow", () => {
+  initTop3Todos();
+});
+
 // _ _ _
 
 function checkNumberOfCharacters(todoInput) {
@@ -373,6 +415,7 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
 
