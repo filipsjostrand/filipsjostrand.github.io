@@ -17,15 +17,6 @@
     sessionStorage.setItem("languageVariable", selectedLanguage);
   }
 
-  // iOS default language
-    const userLang = navigator.language || navigator.userLanguage;
-    const locale = userLang.startsWith('sv') ? 'sv' : 'en';
-
-    if (locale === 'sv') {
-      selectedLanguage = 'sv';
-      sessionStorage.setItem("languageVariable", selectedLanguage);
-    }
-
    // Select the dropdown element
    var languageSelectElement = document.querySelector('.language-selector');
 
@@ -1133,6 +1124,7 @@ const userMessagePlaceholder = {
 
           changeFlagImage();
         }
+
 
 
 
