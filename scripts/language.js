@@ -324,9 +324,9 @@ const futureDesc = {
       <li id="add-list">Lägg till uppgift 📅 / Ladda upp fil (Schema) 🔁.</li>
         <ul class="bullet-point-size-two">
           <li>Lägg till tider (i "Text", sorteras med format: tt:mm)</li>
-          <li>Lägg till återkommande uppgifter (checka i)
+          <li>Lägg till återkommande uppgifter (checka i) för:
               <ul>
-                <li>för veckodag,</li>
+                <li>veckodag,</li>
                 <li>veckor,</li>
                 <li>månad,</li>
                 <li>år,</li>
@@ -348,9 +348,9 @@ const futureDesc = {
       <li id="add-list">Add Task 📅 / Upload File (Schedule) 🔁.</li>
         <ul class="bullet-point-size-two">
           <li>Add times (in "Task", sorted with format: hh:mm)</li>
-          <li>Add recurring tasks (use checkbox)
+          <li>Add recurring tasks (use checkbox) for:
               <ul>
-                <li>for day of week,</li>
+                <li>day of week,</li>
                 <li>weeks,</li>
                 <li>month,</li>
                 <li>year,</li>
@@ -1124,6 +1124,7 @@ const userMessagePlaceholder = {
 
           changeFlagImage();
         }
+
 
 
 
