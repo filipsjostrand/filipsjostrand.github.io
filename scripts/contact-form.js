@@ -24,8 +24,6 @@ function sendFormEmail(event) {
     message: user_message,
   };
 
-  alert("JSON.stringify(templateParams) = " + JSON.stringify(templateParams));
-
   // Sending the email using EmailJS
   emailjs
     .send("service_qes9d4k", "template_cmihpce", templateParams)
@@ -37,7 +35,7 @@ function sendFormEmail(event) {
     })
     .catch(function (error) {
       console.error("FAILED", error);
-      alert("Message failed.\n" + JSON.stringify(error));
+      alert("Error, failed to send message");
     });
 }
 
@@ -351,3 +349,4 @@ function checkKey(e) {
 
 // Activate arrow-key-press inside the opened form
 checkKey();
+
