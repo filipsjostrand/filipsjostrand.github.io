@@ -35,7 +35,6 @@ let checkboxThree = document.getElementById("third");
 
 // Add an event listener to handle the checkbox state (and the line-through)
 checkboxOne.addEventListener("change", function () {
-  console.log("checkboxOne.addEventListener körs");
   if (checkboxOne.checked) {
     todoOne.style.textDecoration = "line-through";
     localStorage.setItem("todoOneStrike", "strike");
@@ -48,7 +47,6 @@ checkboxOne.addEventListener("change", function () {
 });
 
 checkboxTwo.addEventListener("change", function () {
-  console.log("checkboxTwo.addEventListener körs");
   if (checkboxTwo.checked) {
     todoTwo.style.textDecoration = "line-through";
     localStorage.setItem("todoTwoStrike", "strike");
@@ -61,7 +59,6 @@ checkboxTwo.addEventListener("change", function () {
 });
 
 checkboxThree.addEventListener("change", function () {
-  console.log("checkboxThree.addEventListener körs");
   if (checkboxThree.checked) {
     todoThree.style.textDecoration = "line-through";
     localStorage.setItem("todoThreeStrike", "strike");
@@ -415,6 +412,7 @@ var todayDate = new Date();
               content.style.display = "none"; // Hide the content
           }
       });
+
 
 
 
