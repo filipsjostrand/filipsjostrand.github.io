@@ -11,6 +11,9 @@ var userMessageField = document.getElementById("user-message");
 function sendFormEmail(event) {
   if (event) event.preventDefault(); // stop form from reloading
 
+  const loader = document.getElementById("form-loader");
+  loader.style.display = "block"; // 🔄 Show loader
+  
   let user_name = usernameField.value;
   let user_email = userEmailField.value;
   let user_subject = userSubjectField.value;
@@ -35,7 +38,10 @@ function sendFormEmail(event) {
     })
     .catch(function (error) {
       console.error("FAILED", error);
-      alert("Error, failed to send message");
+      alert("Error, Failed to send message");
+    })
+    .finally(() => {
+      loader.style.display = "none"; // Hide loader
     });
 }
 
@@ -166,7 +172,7 @@ usernameField.addEventListener("input", function () {
 
   // Check if the controller field has a certain value or condition
   // For example, let's enable the userEmail field when the username field is passes the usernamePattern-test and has more than 1 character.
-  if (usernamePattern.test(username)) {
+  if (usernamePattern.test(username) && username.length >= 2)) {
     isUserNameValid = true;
     userEmailField.style.backgroundColor = "#fefefe";
     usernameField.style.backgroundColor = "#fefefe";
@@ -349,4 +355,5 @@ function checkKey(e) {
 
 // Activate arrow-key-press inside the opened form
 checkKey();
+
 
