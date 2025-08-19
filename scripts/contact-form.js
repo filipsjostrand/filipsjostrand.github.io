@@ -172,7 +172,7 @@ usernameField.addEventListener("input", function () {
 
   // Check if the controller field has a certain value or condition
   // For example, let's enable the userEmail field when the username field is passes the usernamePattern-test and has more than 1 character.
-  if (usernamePattern.test(username) && username.length >= 2)) {
+  if (usernamePattern.test(username) && username.length >= 2) {
     isUserNameValid = true;
     userEmailField.style.backgroundColor = "#fefefe";
     usernameField.style.backgroundColor = "#fefefe";
@@ -355,5 +355,3 @@ function checkKey(e) {
 
 // Activate arrow-key-press inside the opened form
 checkKey();
-
-
