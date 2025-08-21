@@ -509,7 +509,8 @@ const dailyQuotes = [
   // '71
   {
     quote:
-        `“You know you're in love when you can't fall asleep \n because reality is finally better than your dreams.”`,
+        `“You know you're in love when you can't fall asleep \n 
+        because reality is finally better than your dreams.”`,
     author: "— Dr. Seuss",
   },
 
