@@ -1088,7 +1088,7 @@ const dailyQuotes = [
   // '153
   {
     quote:
-        `June \n "Far up in the deep blue sky, \n Great white clouds are floating by, \n All the world is dressed in green, \n Many happy birds are seen, \n Roses bright and sunshine clear, \n Show that lovely June is here.”`,
+        `June \n “Far up in the deep blue sky, \n Great white clouds are floating by, \n All the world is dressed in green, \n Many happy birds are seen, \n Roses bright and sunshine clear, \n Show that lovely June is here.”`,
         author: "— F.G. Sanders",
   },
 
