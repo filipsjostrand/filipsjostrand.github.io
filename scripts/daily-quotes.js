@@ -1103,7 +1103,9 @@ const dailyQuotes = [
 
 // '337 December
 ];
-const dailyQuoteContainer = document.getElementById("daily-quote");
+
+const dailyQuoteContainer = document.getElementById("todo-quote-container");
+const dailyQuoteParagraph = document.getElementById("daily-quote");
 const dailyQuoteAuthor = document.getElementById("quote-author");
 
 // Get todays day of the year (-1)
@@ -1133,9 +1135,20 @@ function getQuoteForToday() {
     dailyQuoteToPrint = dailyQuotes[todayIndex];
   }
 
-  dailyQuoteContainer.innerText = dailyQuoteToPrint.quote;
+  dailyQuoteParagraph.innerText = dailyQuoteToPrint.quote;
   dailyQuoteAuthor.innerText = dailyQuoteToPrint.author;
 
 }
 
 getQuoteForToday();
+
+function getRandomDailyQuote() {
+ let randomQuoteIndexNumber = getRandomDailyQuotesIndexNumber(dailyQuotesIndexMax)
+
+dailyQuoteParagraph.innerText = dailyQuotes[randomQuoteIndexNumber].quote;
+dailyQuoteAuthor.innerText = dailyQuotes[randomQuoteIndexNumber].author;
+}
+
+dailyQuoteContainer.addEventListener("click", function (e) {
+  getRandomDailyQuote()
+});
