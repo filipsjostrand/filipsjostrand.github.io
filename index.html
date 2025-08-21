@@ -39,72 +39,84 @@
 
               <div class="todo-div">
 
-                  <div id="todo-header-container">
+                  <div id="todo-header-container-wrapper">
 
-                    <div id="todo-header-wrapper">
-                      <div class="start-container">
-                          <div id="character-counter" class="character-counter"></div>
-                          <div id="weekday-display"></div>
-                          <div id="date-display"></div>
-                          <div id="week-display-container">
-                              <div id="week-display"></div>
-                              <div id="week-display-nr"></div>
-                          </div><br>
+                    <div id="todo-header-container-1">
 
-                          <h3 id="todos-heading">Todo - Top3</h3>
-                            <p id="todos-desc"></p>
-
-                  <div id="top-3-info-header">
-                    <a href="#" id="toggle-link"><h4 id="app-info">Application information </h4><div id="info-symbol">ℹ️</div></a>
-                  </div>
-                    <div class="info" id="content" style="display: none;">
-                      <ol>
-                          <li><b>Reset:</b> &nbsp Press "Start Reset" (application reactivates).</li><br>
-                          <li><b>Add:</b> &nbsp Write a todo text &nbsp &nbsp → &nbsp &nbsp press "Add Todo" (ensure "Top3 list" is selected in rolldown).</li><br>
-                          <li><b>Replace: </b> &nbsp Write a new todo text &nbsp &nbsp → &nbsp &nbsp select "#" (to replace) in rolldown &nbsp &nbsp → &nbsp &nbsp press "Add Todo".</li>
-                      </ol>
-                          <br>
-
-                    </div>
-
-                          <button onclick="resetTodoSet()" class="reset-todo-button">
-                            <p id="top3-todo-buton-text">Start&#10;<sub>Reset</sub></p>
-                          </button>
-                      </div>
-                    </div>
-
-                    <div id="language-selector-wrapper">
-                      <div id="language-selector-container">
-                        <div id="language-wrapper">
-                            <i id="language-icon" class="fa-solid fa-globe"></i>
-                            <select class="language-selector">
-                              <option value="sv">Svenska</option>
-                                <option value="en">English</option>
-                            </select>
-                                <div class="flag-div">
-                                  <div class="flag-img">
+                      <div id="todo-header-wrapper">
+                          <div class="start-container">
+                            <div id="start-container-date">
+                              <div id="character-counter" class="character-counter"></div>
+                              <div id="weekday-display"></div>
+                              <div id="date-display"></div>
+                              <div id="week-display-container">
+                                  <div id="week-display"></div>
+                                  <div id="week-display-nr"></div>
+                              </div><br>
+                            </div>
+                            <div id="start-container-flag">
+                                <div id="language-selector-wrapper">
+                                  <div id="language-selector-container">
+                                    <div id="language-wrapper">
+                                        <i id="language-icon" class="fa-solid fa-globe"></i>
+                                        <select class="language-selector">
+                                          <option value="sv">Svenska</option>
+                                            <option value="en">English</option>
+                                        </select>
+                                            <div class="flag-div">
+                                              <div class="flag-img">
+                                              </div>
+                                            </div>
+                                    </div>
                                   </div>
                                 </div>
-                        </div>
+                            </div>
+                          </div>
                       </div>
                     </div>
-                  </div>
 
-                  <br>
-                  <div id="todo-selection-container">
-                    <input class="todo-input-v2" type="text" id="input-box-v2" placeholder="Add todo text...">
-                    <label for="todo-select" id="top3-label">Apply to:</label>
-                        <select name="todo" id="todo-select">
-                        <option value="" selected>Top3 list</option>
-                        <option value="todo-one">#1</option>
-                        <option value="todo-two">#2</option>
-                        <option value="todo-three">#3</option>
-                        </select>
-                    <button onclick="addTaskToSet()" class="add-button-v2">Add Todo</button>
-                  </div>
-                  <br>
 
-              </div>
+
+                    <div id="todo-header-container-2">
+
+                            <h3 id="todos-heading">Todo - Top3</h3>
+                              <p id="todos-desc"></p>
+
+                        <div id="top-3-info-header">
+                          <a href="#" id="toggle-link"><h4 id="app-info">Application information </h4><div id="info-symbol">ℹ️</div></a>
+                        </div>
+                        <div class="info" id="content" style="display: none;">
+                          <ol>
+                              <li><b>Reset:</b> &nbsp Press "Start Reset" (application reactivates).</li><br>
+                              <li><b>Add:</b> &nbsp Write a todo text &nbsp &nbsp → &nbsp &nbsp press "Add Todo" (ensure "Top3 list" is selected in rolldown).</li><br>
+                              <li><b>Replace: </b> &nbsp Write a new todo text &nbsp &nbsp → &nbsp &nbsp select "#" (to replace) in rolldown &nbsp &nbsp → &nbsp &nbsp press "Add Todo".</li>
+                          </ol>
+                              <br>
+
+                        </div>
+
+                        <button onclick="resetTodoSet()" class="reset-todo-button">
+                          <p id="top3-todo-buton-text">Start&#10;<sub>Reset</sub></p>
+                        </button>
+                    </div>
+
+                      </div>
+
+                      <br>
+                      <div id="todo-selection-container">
+                        <input class="todo-input-v2" type="text" id="input-box-v2" placeholder="Add todo text...">
+                        <label for="todo-select" id="top3-label">Apply to:</label>
+                            <select name="todo" id="todo-select">
+                            <option value="" selected>Top3 list</option>
+                            <option value="todo-one">#1</option>
+                            <option value="todo-two">#2</option>
+                            <option value="todo-three">#3</option>
+                            </select>
+                        <button onclick="addTaskToSet()" class="add-button-v2">Add Todo</button>
+                      </div>
+                      <br>
+
+                    </div>
 
               <div id="todo-1-container">
                       <input type="checkbox" class="checkbox" id="first" name="todo" value="first" />
@@ -132,6 +144,17 @@
               <br>
 
                 <!-- _ _ _ Top 3 Todos (end) -->
+
+                <div id="todo-quote-container">
+                  <blockquote id="block-quote">
+                    <p id="daily-quote">
+                    </p>
+                    <footer id="quote-author">
+                    </footer>
+                  </blockquote>
+
+                </div>
+
           </div>
         </div>
       </main>
@@ -843,3 +866,4 @@
     <script async src="./scripts/contact-form.js"></script>
 </body>
 </html>
+
