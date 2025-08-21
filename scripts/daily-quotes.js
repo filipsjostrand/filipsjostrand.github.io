@@ -13,7 +13,6 @@ const dailyQuotes = [
   {
     quote:
         `“Im going to make \n The rest of my life, \n The best of my life.”`,
-    // author: "— Unknown",
         author: "",
   },
 
@@ -28,7 +27,6 @@ const dailyQuotes = [
   {
     quote:
         `“To let yourself become happy again, \n can be the biggest comeback.”`,
-    // author: "— Unknown",
         author: "",
   },
 
