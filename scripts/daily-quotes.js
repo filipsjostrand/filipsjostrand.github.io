@@ -572,7 +572,7 @@ const dailyQuotes = [
   // '80
   {
     quote:
-        `“Courage is resistance to fear, mastery of fear, \n not absence of it.”`,
+        `“Courage is resistance to fear, \n mastery of fear, not absence of it.”`,
     author: "— Mark Twain",
   },
 
