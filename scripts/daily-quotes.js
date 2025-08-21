@@ -1137,3 +1137,5 @@ function getQuoteForToday() {
   dailyQuoteAuthor.innerText = dailyQuoteToPrint.author;
 
 }
+
+getQuoteForToday();
