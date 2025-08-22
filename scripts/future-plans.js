@@ -3008,6 +3008,7 @@ function checkIfDateAndTextAreEmpty() {
             // Check if the clicked element is a div with the name "color"
             dataId = event.target.getAttribute('data-id');
 
+            // If color element clicked, show colorSwitcherPanel (to change color/delete task/do nothing)
             if (event.target && event.target.getAttribute('name') === 'color') {
 
                 colorSwitcherPanel.style.display = 'flex';
@@ -5779,7 +5780,3 @@ function load_func(delimiter) {
     readFile(file);
 
     };
-
-
-
-
