@@ -192,6 +192,10 @@ h3 {
   margin-bottom: 10px;
 }
 
+#subtext {
+  font-size: 12px;
+}
+
 #quote-author {
   display: flex;
   justify-content: center;
@@ -928,6 +932,11 @@ li.bullet-point-size-two, li {
   #block-quote {
     width: 350px;
   }
+
+  #subtext {
+    font-size: 13px;
+    padding-left: 3rem;
+  }
   
   #text-wrapper {
     width: 300px;
@@ -939,11 +948,9 @@ li.bullet-point-size-two, li {
   
   .grid-day-container {
     grid-template-columns: calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7);
-    /* grid-template-columns: auto auto auto auto auto auto auto; */
   }
 
   /* Future plans (start) */
-
   #add-todo-text {
     border-top-color:rgb(255, 255, 255);
   }
@@ -1054,10 +1061,20 @@ li.bullet-point-size-two, li {
 /* Tablets and larger screens (start) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
-  /* .grid-day-container {
-    grid-template-columns: calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7) calc(99%/7);
-  } */
+  #todo-quote-container {
+    margin-top: 20rem;
+  }
 
+  #block-quote {
+    width: 300px;
+  }
+
+  #subtext {
+    font-size: 10px;
+    padding-left: 2rem;
+  }
+
+  
   #week-desc-container {
     width: 55%;
   }
@@ -1238,6 +1255,7 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
 
 
 
