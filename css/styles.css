@@ -181,7 +181,7 @@ h3 {
   rgba(133, 133, 133, 0.12) 0px 4px 6px,
   rgba(105, 105, 105, 0.17) 0px 12px 13px,
   rgba(100, 100, 100, 0.09) 0px -3px 5px;
-  border-radius: 7px;
+  border-radius: 18px;
 }
 
 #daily-quote {
@@ -1238,6 +1238,7 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
 
 
 
