@@ -220,7 +220,7 @@ const dailyQuotes = [
 
   // '30
   {
-    quote: `“What you see and what you hear depends a great deal \n on where you are standing. \n It also depends on what sort of person you are.”`,
+    quote: `“What you see and what you hear depends \n a great deal on where you are standing. \n It also depends on what sort of person you are.”`,
     subtext: ``,
     author: "— C.S. Lewis",
   },
@@ -249,7 +249,7 @@ const dailyQuotes = [
 
   // '34
   {
-    quote: `“The task of the modern educator is not to cut down jungles, \n but to irrigate deserts.”`,
+    quote: `“The task of the modern educator is not to cut down jungles, but to irrigate deserts.”`,
     subtext: ``,
     author: "— C.S. Lewis",
   },
@@ -270,7 +270,7 @@ const dailyQuotes = [
 
   // '37
   {
-    quote: `“Waste no more time arguing what a good man should be. \n Be one.”`,
+    quote: `“Waste no more time arguing what a good man should be. Be one.”`,
     subtext: ``,
     author: "— Marcus Aurelius",
   },
@@ -523,7 +523,7 @@ const dailyQuotes = [
 
   // '73
   {
-    quote: `“If you want to know what a man's like, \n take a good look at how he treats his inferiors, \n not his equals.”`,
+    quote: `“If you want to know what a man's like, \n take a good look at how he treats his inferiors, not his equals.”`,
     subtext: ``,
     author: "— J.K. Rowling",
   },
@@ -586,7 +586,7 @@ const dailyQuotes = [
 
   // '82
   {
-    quote: `“Kindness is a language which the deaf can hear \n and the blind can see.”`,
+    quote: `“Kindness is a language which the deaf can hear and the blind can see.”`,
     subtext: ``,
     author: "— Mark Twain",
   },
@@ -649,7 +649,7 @@ const dailyQuotes = [
 
   // '91
   {
-    quote: `“The higher we soar, \n the smaller we appear to those who cannot fly.”`,
+    quote: `“The higher we soar, the smaller we appear to those who cannot fly.”`,
     subtext: ``,
     author: "— Friedrich Nietzsche",
   },
@@ -770,7 +770,7 @@ const dailyQuotes = [
 
   // '108
   {
-    quote: `“The only limit to our realization of tomorrow \n is our doubts of today.”`,
+    quote: `“The only limit to our realization of tomorrow is our doubts of today.”`,
     subtext: ``,
     author: "— Franklin D. Roosevelt",
   },
@@ -784,7 +784,7 @@ const dailyQuotes = [
 
   // '110
   {
-    quote: `“Well done \n is better than well said.”`,
+    quote: `“Well done is better than well said.”`,
     subtext: ``,
     author: "— Benjamin Franklin",
   },
@@ -812,14 +812,14 @@ const dailyQuotes = [
 
   // '114
   {
-    quote: `“The only way to have a friend \n is to be one.”`,
+    quote: `“The only way to have a friend is to be one.”`,
     subtext: ``,
     author: "— Ralph Waldo Emerson",
   },
 
   // '115
   {
-    quote: `“The measure of who we are \n is what we do with what we have.”`,
+    quote: `“The measure of who we are is what we do with what we have.”`,
     subtext: ``,
     author: "— Vince Lombardi",
   },
@@ -2153,9 +2153,9 @@ const dailyQuotes = [
 
   // '304
   {
-    quote: `“Always Do Your Best”`,
+    quote: `“The elevator to success is out of order. You’ll have to use the stairs, one step at a time.”`,
     subtext: ``,
-    author: "",
+    author: "— Joe Girard",
   },
 
   // '305
@@ -2190,7 +2190,7 @@ const dailyQuotes = [
   {
     quote: `“Some people just need a high-five. ”`,
     subtext: `\n In the face. \n With a chair. \n
-          (No, actually... they too probably \n just need some love. ♡)`,
+          (No, actually... they too, probably \n need a lot of love. ♡)`,
     author: "",
   },
 
@@ -2400,7 +2400,7 @@ const dailyQuotes = [
   {
     quote: `7 Habits: \n 1. Be Proactive, \n 2. Begin with the End in Mind, \n 3. Put First Things First, \n 4. Think Win-Win, \n 5. Seek First to Understand, \n Then to Be Understood \n 6. Synergize, \n 7. Sharpen the Saw`,
     subtext: ``,
-    author: "— Stephen Covey",
+    author: "— Stephen R. Covey",
   },
 
   // '340
