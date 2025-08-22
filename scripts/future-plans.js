@@ -3011,6 +3011,7 @@ function checkIfDateAndTextAreEmpty() {
             if (event.target && event.target.getAttribute('name') === 'color') {
 
                 colorSwitcherPanel.style.display = 'flex';
+                colorSwitcherPanel.classList.remove("hidden");
             }
 
             defaultDate = plannedTodos[dataId].date;
@@ -5778,6 +5779,7 @@ function load_func(delimiter) {
     readFile(file);
 
     };
+
 
 
 
