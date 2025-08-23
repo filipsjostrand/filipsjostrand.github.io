@@ -10,7 +10,6 @@ const dailyQuotes = [
   // '1
   {
     quote: `“Im going to make \n The rest of my life, \n The best of my life.”`,
-    // subtext: ``,
     author: "— Unknown",
     subtext: ``,
     author: "",
@@ -854,7 +853,7 @@ const dailyQuotes = [
 
   // '120
   {
-    quote: `“We are repeatedly what we do. \n Choose well.”`,
+    quote: `“We are repeatedly what we do. Choose well.”`,
     subtext: ``,
     author: "— Anonymous",
   },
