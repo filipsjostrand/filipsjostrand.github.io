@@ -1674,7 +1674,7 @@ const dailyQuotes = [
   {
     quote: `“Dream it. Wish it. Do it.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '237
