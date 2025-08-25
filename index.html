@@ -164,33 +164,35 @@
               <div id="week-desc-container">
                     <div id="weekly-div"></div>
                     <h3 id="weekly-heading" class="app-heading">Week Schedule</h3>
-                    <div id="week-plan-info">
-                      <p id="weekly-desc">
-                        Check current week schedule
+                      <div id="week-plan-info-container">
+                        <div id="week-plan-info">
+                          <p id="weekly-desc">
+                            Check current week schedule
 
                             <div class="arrow-info-container">
                               <div id="week-info-header">
                                 <a href="#" id="toggle-link-week"><h4 id="app-info-week">Application information </h4><div id="info-symbol-week">ℹ️</div></a>
                               </div>
-    
+
                               <a href="#future-heading"><div class="week-plan-arrow-container">
-                                <img id="week-plan-down-arrow-div" src="./media/img/computer-icons-arrow-drop-down-list-arrow-down-icon-free-7bb6eae348f2fdc1566a26c976bdf6f9.png" alt="down arrow">
+                                <img class="week-plan-down-arrow-div" src="./media/img/computer-icons-arrow-drop-down-list-arrow-down-icon-free-7bb6eae348f2fdc1566a26c976bdf6f9.png" alt="down arrow">
                               </div></a>
                             </div>
-                          
-                          <div class="info-week" id="content-week" style="display: none;">
-                            <ul>
-                              <li id="go-future-plans">Go to "Future Plans" (to add tasks)</li>
-                              <ul>
-                                <li id="go-future-navbar">Scroll down or click "Future" (navbar)</li>
-                              </ul>
-                            </ul>
-                                <br>
-    
-                          </div>
-                      </p>
 
-                    </div>
+                              <div class="info-week" id="content-week" style="display: none;">
+                                <ul>
+                                  <li id="go-future-plans">Go to "Future Plans" (to add tasks)</li>
+                                  <ul>
+                                    <li id="go-future-navbar">Scroll down or click "Future" (navbar)</li>
+                                  </ul>
+                                </ul>
+                                    <br>
+
+                              </div>
+                          </p>
+
+                        </div>
+                      </div>
                 </div>
               </div>
 
@@ -329,9 +331,14 @@
                   <a href="#" id="toggle-link-future"><h4 id="app-info-future">Application information </h4><div id="info-symbol-future">ℹ️</div></a>
                 </div>
 
-                <a href="#weekly-desc"><div class="week-plan-arrow-container">
-                  <img id="week-plan-up-arrow-div" src="./media/img/computer-icons-arrow-drop-down-list-arrow-up-icon-free-7bb6eae348f2fdc1566a26c976bdf6f9.png" alt="up arrow">
-                </div></a>
+                <div id="week-plan-arrow-container-wrapper">
+                  <a href="#weekly-desc"><div class="week-plan-arrow-container">
+                    <img class="week-plan-up-arrow-div" src="./media/img/computer-icons-arrow-drop-down-list-arrow-up-icon-free-7bb6eae348f2fdc1566a26c976bdf6f9.png" alt="up arrow">
+                  </div></a>
+                  <a href="#save-plan-heading"><div class="week-plan-arrow-container">
+                    <img class="week-plan-down-arrow-div" src="./media/img/computer-icons-arrow-drop-down-list-arrow-down-icon-free-7bb6eae348f2fdc1566a26c976bdf6f9.png" alt="down arrow">
+                  </div></a>
+                </div>
               </div>
             
               <div class="info-future" id="content-future" style="display: none;">
@@ -562,7 +569,14 @@
           <input type="text" id="file-name" name="file-name"><br>
 
           <!-- Save As (loaded name) -->
-          <p id="dl-1">Download (option <b>1</b>):</p>
+          <div class="arrow-info-container">
+            <p id="dl-1">Download (option <b>1</b>):</p>
+
+            <a href="#future-heading"><div class="week-plan-arrow-container">
+              <img class="week-plan-up-arrow-div" src="./media/img/computer-icons-arrow-drop-down-list-arrow-up-icon-free-7bb6eae348f2fdc1566a26c976bdf6f9.png" alt="up arrow">
+            </div></a>
+          </div>
+            
           <p class="browser-compatibility">✅ <i>PC/Android</i></p>
           <p class="browser-compatibility">❌ <i id="incompatible-devices">Firefox, iOS devices</i></p>
           <button id="save-as-anywhere" onclick="saveAs()"> Save As (anywhere) </button><br><br>
@@ -879,6 +893,7 @@
     <script async src="./scripts/contact-form.js"></script>
 </body>
 </html>
+
 
 
 
