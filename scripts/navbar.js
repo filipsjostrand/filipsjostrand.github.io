@@ -30,7 +30,6 @@ function temporarilyLockNavbar() {
 // Generalized nav click handler
 function setupNavClick(element, name) {
   element.addEventListener("click", function () {
-    console.log(`${name} clicked`);
     element.scrollIntoView({ behavior: "smooth" });
     temporarilyLockNavbar(); // prevent scroll from hiding it right after
   });
