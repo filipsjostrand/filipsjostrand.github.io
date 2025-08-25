@@ -386,6 +386,10 @@ h3 {
   align-items: center;
 }
 
+#week-plan-arrow-container-save {
+  margin-right: 75px;
+}
+
 .week-plan-down-arrow-div {
   width: 40px;
   height: 40px;
@@ -1288,6 +1292,7 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
 
 
 
