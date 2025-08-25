@@ -358,12 +358,6 @@ h3 {
   padding-bottom: 5px;
 }
 
-
-#week-plan-info-container {
-  display: flex;
-  flex-direction: row;
-}
-
 #week-plan-info {
   overflow: visible; /* Ensure content is visible */
   margin-bottom: 15px;
@@ -1294,6 +1288,7 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
 
 
 
