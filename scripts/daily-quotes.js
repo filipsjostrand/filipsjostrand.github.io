@@ -2187,7 +2187,7 @@ const dailyQuotes = [
 
   // '309
   {
-    quote: `“Some people just need a high-five. ”`,
+    quote: `“Some people just need a high-five.”`,
     subtext: `\n In the face. \n With a chair. \n
           (No, actually... they too, probably \n need a lot of love. ♡)`,
     author: "",
