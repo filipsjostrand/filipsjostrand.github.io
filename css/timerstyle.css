@@ -109,9 +109,23 @@ a:link:active, a:visited:active {
     justify-content: center;
 }
 
+.floating-timer {
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  background-color: rgba(34, 34, 34, 0.8);
+  color: #fff;
+  padding: 6px 12px;
+  font-family: monospace;
+  font-size: 14px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  z-index: 9999;
+  display: none; /* Hidden by default */
+}
+
 /* Computer screens and larger (start) */
 @media screen and (min-width: 1024px) {
-
     .timer-container {
         display: flex;
         justify-content: center;
