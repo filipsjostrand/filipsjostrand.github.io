@@ -1688,7 +1688,7 @@ const dailyQuotes = [
   {
     quote: `“The harder you work for something, the greater you’ll feel when you achieve it.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '239
