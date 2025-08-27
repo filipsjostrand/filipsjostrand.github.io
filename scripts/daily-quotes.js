@@ -1695,7 +1695,7 @@ const dailyQuotes = [
   {
     quote: `“Dream bigger. Do bigger.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '240
