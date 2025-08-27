@@ -12,6 +12,7 @@ const secondsInput = document.getElementById('seconds');
 const tenthsInput = document.getElementById('tenths');
 const countModeSelect = document.getElementById('countMode');
 const alarmSound = document.getElementById('alarmSound');
+const floatingTimer = document.getElementById("floatingTimer");
 
 document.getElementById('startButton').addEventListener('click', startTimer);
 document.getElementById('pauseButton').addEventListener('click', pauseTimer);
@@ -52,6 +53,15 @@ const stopVideos = () => {
     document.querySelectorAll('iframe').forEach(v => { v.src = v.src });
     document.querySelectorAll('video').forEach(v => { v.pause() });
   };
+
+function updateFloatingTimer() {
+  if (timerDisplay.innerHTML !== "00:00:00.0") {
+    floatingTimer.innerHTML = timerDisplay.innerHTML;
+    floatingTimer.style.display = "block";
+  } else {
+    floatingTimer.style.display = "none";
+  }
+}
 
 function startTimer() {
     if (countdown) {
@@ -97,6 +107,7 @@ function startTimer() {
             }
         }
         updateDisplay();
+        updateFloatingTimer();
     }, 100); // Update every 100 milliseconds (0.1 seconds)
 }
 
@@ -111,6 +122,7 @@ function resetTimer() {
     alarmSound.pause();
     alarmSound.currentTime = 0;
     setTimerToCountDown();
+    floatingTimer.style.display = "none";
 }
 
 function updateDisplay() {
@@ -128,4 +140,5 @@ function updateDisplay() {
         `${String(tenths).padStart(2, '')}`;
 
 }
+
 
