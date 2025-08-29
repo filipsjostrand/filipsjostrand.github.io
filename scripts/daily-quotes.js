@@ -1702,7 +1702,7 @@ const dailyQuotes = [
   {
     quote: `“Don’t stop when you’re tired. Stop when you’re done.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '241
