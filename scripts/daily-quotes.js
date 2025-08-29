@@ -1709,7 +1709,7 @@ const dailyQuotes = [
   {
     quote: `“Wake up with determination. Go to bed with satisfaction.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '242
