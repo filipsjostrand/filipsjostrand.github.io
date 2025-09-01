@@ -10,7 +10,7 @@ const dailyQuotes = [
   // '1
   {
     quote: `“Im going to make \n The rest of my life, \n The best of my life.”`,
-    author: "— Unknown",
+    author: "",
     subtext: ``,
     author: "",
   },
@@ -1310,7 +1310,7 @@ const dailyQuotes = [
   {
     quote: `“In July, every day feels like a celebration to life.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '185
@@ -1387,7 +1387,7 @@ const dailyQuotes = [
   {
     quote: `“The best view comes after the hardest climb.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '196
@@ -1667,7 +1667,7 @@ const dailyQuotes = [
   {
     quote: `“Great things never come from comfort zones.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '236
@@ -1681,7 +1681,7 @@ const dailyQuotes = [
   {
     quote: `“Success doesn’t just find you. You have to go out and get it.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '238
@@ -1723,14 +1723,14 @@ const dailyQuotes = [
   {
     quote: `“Little things make big days.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '244
   {
     quote: `“It’s going to be hard, but hard does not mean impossible.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '245
@@ -1807,7 +1807,7 @@ const dailyQuotes = [
   {
     quote: `“When you feel like quitting, think about why you started.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '256
@@ -1933,7 +1933,7 @@ const dailyQuotes = [
   {
     quote: `“Keep going. Everything you need will come to you at the perfect time.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '274
@@ -1947,7 +1947,7 @@ const dailyQuotes = [
   {
     quote: `“You learn more from failure than from success. Don’t let it stop you. Failure builds character.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '276 October
@@ -2288,14 +2288,14 @@ const dailyQuotes = [
   {
     quote: `“I can and I will. Watch me.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '324
   {
     quote: `“If you want to achieve greatness stop asking for permission.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '325
@@ -2330,7 +2330,7 @@ const dailyQuotes = [
   {
     quote: `“When it rains, look for rainbows. When it’s dark, look for stars.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '330
@@ -2372,7 +2372,7 @@ const dailyQuotes = [
   {
     quote: `“Hustle in silence and let your success make the noise.”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '336
@@ -2406,7 +2406,7 @@ const dailyQuotes = [
   {
     quote: `“The happiest people don’t have the best of everything; they just make the best of everything”`,
     subtext: ``,
-    author: "— Unknown",
+    author: "",
   },
 
   // '341
