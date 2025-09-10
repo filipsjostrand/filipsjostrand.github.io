@@ -7871,6 +7871,8 @@ const bibleQuotes = [
 },
 ];
 
+document.addEventListener('DOMContentLoaded', function () {
+
 // General quotes
 const dailyQuoteContainer = document.getElementById("daily-general-quote-container");
 const dailyQuoteParagraph = document.getElementById("daily-general-quote");
@@ -7966,8 +7968,6 @@ dailyBibleQuoteContainer.addEventListener("click", function (e) {
 });
 
 
-document.addEventListener('DOMContentLoaded', function () {
-
   // Get Bible quote when clicking on pidgeon icon
   bibleQuoteContainerIcon.addEventListener("click", function () {
     if (dailyBibleQuoteContainer.style.opacity === "0" || dailyBibleQuoteContainer.style.opacity === "") {
@@ -8014,8 +8014,6 @@ document.addEventListener('DOMContentLoaded', function () {
       dailyBibleQuoteContainer.style.display = "none";
     }
   });
-
-});
   
   dailyBibleQuoteParagraph.innerText = currentBibleQuote.quote[sessionStorage.getItem("languageVariable")];
   dailyBibleQuoteAuthor.innerText = currentBibleQuote.author[sessionStorage.getItem("languageVariable")];
@@ -8037,3 +8035,5 @@ document.addEventListener('DOMContentLoaded', function () {
   dailyBibleQuoteParagraph.innerText = dailyBibleQuoteToPrint.quote
   dailyBibleQuoteAuthor.innerText = dailyBibleQuoteToPrint.author;
 }
+
+});
