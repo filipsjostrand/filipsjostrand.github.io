@@ -1010,7 +1010,7 @@ li.bullet-point-size-two, li {
 /* Computer screens and larger (start) */
 @media screen and (min-width: 1024px) {
 
-  #todo-quote-container {
+  #daily-general-quote-container {
     margin-top: 20rem;
   }
 
@@ -1146,11 +1146,11 @@ li.bullet-point-size-two, li {
 /* Tablets and larger screens (start) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
-  #todo-quote-container {
+  #daily-general-quote-container {
     margin-top: 20rem;
   }
 
-  #block-quote {
+  .block-quote {
     width: 300px;
   }
 
@@ -1335,3 +1335,4 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
