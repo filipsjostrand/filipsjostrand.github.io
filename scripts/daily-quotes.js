@@ -8034,6 +8034,10 @@ dailyBibleQuoteContainer.addEventListener("click", function (e) {
   dailyBibleQuoteAuthor.innerText = dailyBibleQuoteToPrint.author;
 }
 
+bibleQuoteContainerIcon.addEventListener("click", () => {
+  console.log("Pigeon icon element active!");
+});
+
 if (!bibleQuoteContainerIcon) {
   console.warn("Pigeon icon element not found!");
 }
