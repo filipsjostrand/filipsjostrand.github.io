@@ -8041,5 +8041,4 @@ bibleQuoteContainerIcon.addEventListener("click", () => {
 
 if (!bibleQuoteContainerIcon) {
   console.warn("Pigeon icon element not found!");
-  return;
-
+}
