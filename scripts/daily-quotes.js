@@ -2577,10 +2577,5304 @@ const dailyQuotes = [
     author: "— Rainer Maria Rilke",
   },
 ];
-const dailyQuoteContainer = document.getElementById("todo-quote-container");
-const dailyQuoteParagraph = document.getElementById("daily-quote");
+
+// Object to map days of the week to image paths (Bible quotes)
+const bibleQuotes = [
+  // '0
+  {
+    quote: {
+      sv: [`“Den som är i Kristus är alltså en ny skapelse, det gamla är förbi, något nytt har kommit.”`],
+      en: [`“Therefore, if anyone is in Christ, the new creation has come: The old has gone, the new is here!”`]
+    },
+    author: {
+      sv: [`— 2 Korinthierbrevet 5:17`],
+      en: [`— 2 Corinthians 5:17`]
+    },
+    image: "new creation_clive_kim_pexels.jpg",
+    credit: "Clive Kim (Pexels.com)"
+  },
+  // '1
+  {
+    quote: {
+      sv: [`“Han ger den trötte kraft och ökar den maktlöses styrka.”`],
+      en: [`“He gives strength to the weary and increases the power of the weak.”`]
+    },
+    author: {
+      sv: [`— Jesaja 40:29`],
+      en: [`— Isaiah 40:29`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '2
+  {
+    quote: {
+      sv: [`“När du drar ut i krig mot dina fiender och får se hästar och vagnar och ett folk större än du, skall du inte bli rädd för dem, ty Herren, din Gud, som förde dig upp ur Egyptens land, är med dig.”`],
+      en: [`“When you go to war against your enemies and see horses and chariots and an army greater than yours, do not be afraid of them, because the Lord your God, who brought you up out of Egypt, will be with you.”`]
+    },
+    author: {
+      sv: [`— 5 Mosebok 20:1`],
+      en: [`— Deuteronomy 20:1`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '3
+  {
+    quote: {
+      sv: [`“Men de som hoppas på Herren får ny kraft,\n de lyfter med vingar som örnar.\n De skyndar i väg utan att mattas,\n de färdas framåt utan att bli trötta.”`],
+      en: [`“But those who hope in the Lord will \n renew their strength.\n They will soar on wings like eagles; \n they will run and not grow weary, \n they will walk and not be faint.”`]
+    },
+    author: {
+      sv: [`— Jesaja 40:31`],
+      en: [`— Isaiah 40:31`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '4
+  {
+    quote: {
+      sv: [`“Jag vet vilka tankar jag har för er, säger Herren, nämligen fridens tankar och inte ofärdens för att ge er en framtid och ett hopp.”`],
+      en: [`“For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future.”`]
+    },
+    author: {
+      sv: [`— Jeremia 29:11`],
+      en: [`— Jeremiah 29:11`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '5
+  {
+    quote: {
+      sv: [`“Ty den Ande som Gud har gett oss gör oss inte modlösa, utan är kraftens, kärlekens och självbehärskningens Ande.”`],
+      en: [`“for God gave us a spirit not of fear but of power and love and self-control.”`]
+    },
+    author: {
+      sv: [`— 2 Timotheosbrevet 1:7`],
+      en: [`— 2 Timothy 1:7`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '6
+  {
+    quote: {
+      sv: [`“Ni är ju födda på nytt, inte av en förgänglig säd, utan genom en oförgänglig, genom Guds levande ord som består.”`],
+      en: [`“For you have been born again, not of perishable seed, but of imperishable, through the living and enduring word of God.”`]
+    },
+    author: {
+      sv: [`— 1 Petrusbrevet 1:23`],
+      en: [`— 1 Peter 1:23`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '7
+  {
+    quote: {
+      sv: [`“Har jag inte befallt dig att vara stark och frimodig? Var då inte förskräckt eller förfärad, ty Herren, din Gud, är med dig vart än du går.”`],
+      en: [`“Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.”`]
+    },
+    author: {
+      sv: [`— Josua 1:9`],
+      en: [`— Joshua 1:9`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '8
+  {
+    quote: {
+      sv: [`“Du låter min lampa brinna klart. Herren, min Gud, gör mitt mörker ljust.”`],
+      en: [`“You, Lord, keep my lamp burning; my God turns my darkness into light.”`]
+    },
+    author: {
+      sv: [`— Psaltaren 18:29`],
+      en: [`— Psalm 18:28`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '9
+  {
+    quote: {
+      sv: [`“En psalm av David.
+
+          Herren är min herde,
+              mig skall intet fattas.
+            Han låter mig vila på gröna ängar,
+              han för mig till vatten där jag finner ro.
+            Han vederkvicker min själ,
+              han leder mig på rätta vägar
+          för sitt namns skull.
+            Om jag än vandrar i dödsskuggans dal,
+          fruktar jag intet ont,
+              ty du är med mig.
+          Din käpp och stav, de tröstar mig.”`],
+                en: [`“A psalm of David.
+
+          The Lord is my shepherd, I lack nothing.
+              He makes me lie down in green pastures,
+          he leads me beside quiet waters,
+              he refreshes my soul.
+          He guides me along the right paths
+              for his name’s sake.
+          Even though I walk
+              through the darkest valley,
+          I will fear no evil,
+              for you are with me;
+          your rod and your staff,
+              they comfort me.”`]
+    },
+    author: {
+      sv: [`— Psaltaren 23:1-4`],
+      en: [`— Psalm 23:1-4`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '10
+  {
+    quote: {
+      sv: [`“Välsignad vare Herren,
+          ty han har hört mina böner om nåd.
+          Herren är min styrka och min sköld,
+          på honom förtröstade mitt hjärta.
+          Jag fick hjälp och mitt hjärta gläder sig.
+          Jag vill tacka honom med min sång.”`],
+      en: [`“The Lord is my strength and my shield;
+          my heart trusts in him, and he helps me.
+          My heart leaps for joy,
+          and with my song I praise him.
+          he Lord is the strength of his people,
+          a fortress of salvation for his anointed one.”`]
+    },
+    author: {
+      sv: [`— Psaltaren 28:7-8`],
+      en: [`— Psalm 28:7-8`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '11
+  {
+    quote: {
+      sv: [`“Men Gud bevisar sin kärlek till oss genom att Kristus dog i vårt ställe, medan vi ännu var syndare.”`],
+      en: [`“But God demonstrates his own love for us in this: While we were still sinners, Christ died for us.”`]
+    },
+    author: {
+      sv: [`— Romarbrevet 5:8`],
+      en: [`— Romans 5:8`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '12
+  {
+    quote: {
+      sv: [`“Så har vi lärt känna den kärlek som Gud har till oss och tror på den. Gud är kärlek, och den som förblir i kärleken förblir i Gud och Gud i honom.”`],
+      en: [`“And so we know and rely on the love God has for us. God is love. Whoever lives in love lives in God, and God in them.”`]
+    },
+    author: {
+      sv: [`— 1 Johannesbrevet 4:16`],
+      en: [`— 1 John's Epistle 4:16`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '13
+  {
+    quote: {
+      sv: [`“Genom honom finns ni i Kristus Jesus, som har blivit vår vishet från Gud, vår rättfärdighet, vår helighet och vår frihet.”`],
+      en: [`“It is because of him that you are in Christ Jesus, who has become for us wisdom from God—that is, our righteousness, holiness and redemption.”`]
+    },
+    author: {
+      sv: [`— 1 Korinthierbrevet 1:30`],
+      en: [`— 1 Corinthians 1:30`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '14
+  {
+    quote: {
+      sv: [`“Men var var ni frimodiga, låt inte modet falla, ty ert verk ska få sin lön.”`],
+      en: [`“But as for you, be strong and do not give up, for your work will be rewarded.”`]
+    },
+    author: {
+      sv: [`— 2 Krönikerboken 15:7`],
+      en: [`— 2 Chronicles 15:7`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '15
+  {
+    quote: {
+      sv: [`“Och Gud fullbordade på sjunde dagen det verk som han hade gjort. Och han vilade på sjunde dagen från allt sitt verk som han hade gjort.”`],
+      en: [`“By the seventh day God had finished the work he had been doing; so on the seventh day he rested from all his work.”`]
+    },
+    author: {
+      sv: [`— 1 Mosebok 2:2`],
+      en: [`— Genesis 2:2`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '16
+  {
+    quote: {
+      sv: [`“Herren är min starkhet och min lovsång,
+          och han blev mig till frälsning.
+          Han är min Gud, jag vill ära honom,
+          min faders Gud, jag vill upphöja honom.”`],
+      en: [`“The Lord is my strength and my defense;
+          he has become my salvation.
+          He is my God, and I will praise him,
+          my father’s God, and I will exalt him.”`]
+    },
+    author: {
+      sv: [`— 2 Mosebok 15:2`],
+      en: [`— Exodus 15:2`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '17
+  {
+    quote: {
+      sv: [`“Ni ska inte stjäla eller ljuga eller begå svek mot varandra.”`],
+      en: [`“Do not steal.
+          “‘Do not lie.
+          “‘Do not deceive one another.”`]
+    },
+    author: {
+      sv: [`— 3 Mosebok 19:11`],
+      en: [`— Leviticus 19:11`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '18
+  {
+    quote: {
+      sv: [`“Till leviterna skall du så tala och säga: När ni av Israelse barn tar emot den tionde som jag har bestämt att ni skall få av dem som er arvedel, så skall ni av den ge en offergåva åt Herren, en tionde av tionden.
+        När ni får Israels barn att ge er tionde, ska ni ge en tionde av den till Herren som ett offer.”`],
+      en: [`“Speak to the Levites and say to them: ‘When you receive from the Israelites the tithe I give you as your inheritance, you must present a tenth of that tithe as the Lord’s offering.”`]
+    },
+    author: {
+      sv: [`— 4 Mosebok 18:26`],
+      en: [`— Numbers 18:26`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '19
+  {
+    quote: {
+      sv: [`“Du ska inte missbruka Herrens, din Guds, namn, för Herren ska inte lämna den ostraffad som missbrukar hans namn.”`],
+      en: [`“You shall not misuse the name of the Lord your God, for the Lord will not hold anyone guiltless who misuses his name.”`]
+    },
+    author: {
+      sv: [`— 5 Mosebok 5:11`],
+      en: [`— Deuteronomy 5:11`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '20
+  {
+    quote: {
+      sv: [`“Allt vi behöver för liv och gudsfruktan har hans gudomliga makt skänkt oss genom kunskapen om honom som har kallat oss med sin härlighet och godhet.”`],
+      en: [`“His divine power has given us everything we need for a godly life through our knowledge of him who called us by his own glory and goodness.”`]
+    },
+    author: {
+      sv: [`— 2 Petrusbrevet 1:3`],
+      en: [`— 2 Peter 1:3`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '21
+  {
+    quote: {
+      sv: [`“Gud är min starka borg, han gör min väg rak.”`],
+      en: [`“It is God who arms me with strength and keeps my way secure.”`]
+    },
+    author: {
+      sv: [`— 2 Samuelsboken 22:33`],
+      en: [`— 2 Samuel 22:33`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '22
+  {
+    quote: {
+      sv: [`“Men Herren stod vid min sida och gav mig kraft.”`],
+      en: [`“But the Lord stood at my side and gave me strength.”`]
+    },
+    author: {
+      sv: [`— 2 Timotheusbrevet 4:17`],
+      en: [`— 2 Timothy 4:17`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '23
+  {
+    quote: {
+      sv: [`“I honom är vi friköpta genom hans blod och har förlåtelse för våra synder, tack vare den rika nåd han lät flöda över oss.”`],
+      en: [`“In him we have redemption through his blood, the forgiveness of sins, in accordance with the riches of God’s grace.”`]
+    },
+    author: {
+      sv: [`— Efesierbrevet 1:7`],
+      en: [`— Ephesians 1:7`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '24
+  {
+    quote: {
+      sv: [`“Gläd er alltid i Herren. Än en gång säger jag: gläd er!”`],
+      en: [`“Rejoice in the Lord always. I will say it again: Rejoice!”`]
+    },
+    author: {
+      sv: [`— Filipperbrevet 4:4`],
+      en: [`— Philippians 4:4`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '25
+  {
+    quote: {
+      sv: [`“Men andens frukter är kärlek, glädje, frid, tålamod, vänlighet, godhet, trofasthet,
+        ödmjukhet och självbehärskning. Mot sådant vänder sig inte lagen.
+        De som tillhör Kristus Jesus har korsfäst sitt kött med alla dess lidelser och begär.
+        Om ni har andligt liv, låt oss då följa en andlig väg. Låt oss inte bli inbilska,
+        inte utmana varandra, inte avundas varandra.”`],
+      en: [`“But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness,
+        gentleness and self-control. Against such things there is no law.
+        Those who belong to Christ Jesus have crucified the flesh with its passions and desires.
+        Since we live by the Spirit, let us keep in step with the Spirit.
+        Let us not become conceited, provoking and envying each other.”`]
+    },
+    author: {
+      sv: [`— Galaterbrevet 5:22-26`],
+      en: [`— Galatians 5:22-26`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+
+  // '26
+  {
+    quote: {
+      sv: [`“Låt oss inte tröttna på att göra det som är rätt. När tiden är inne får vi skörda, bara vi inte ger upp. Så länge det finns tid, skall vi därför göra gott mot alla människor, framför allt mot våra trosfränder.”`],
+      en: [`“Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up. Therefore, as we have opportunity, let us do good to all people, especially to those who belong to the family of believers.”`]
+    },
+    author: {
+      sv: [`— Galaterbrevet 6:9-10`],
+      en: [`— Galatians 6:9-10`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+
+  // '27
+  {
+    quote: {
+      sv: [`“Skatta er bara lyckliga, mina bröder när ni utsätts för prövningar av olika slag. Ni vet ju att om er tro består provet ger den uthållighet.”`],
+      en: [`“Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, because you know that the testing of your faith produces perseverance.”`]
+    },
+    author: {
+      sv: [`— Jakobsbrevet 1:2-3`],
+      en: [`— James 1:2-3`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '28
+  {
+    quote: {
+      sv: [`“Det folk som vandrar i mörkret
+        ska se ett stort ljus, ja,
+        över dem som bor i dödsskuggans dal
+        skall ett ljus skina klart.
+        Du skall göra folket talrikt,
+        du skall göra dess glädje stor.
+        Inför dig skall de glädja sig,
+        som man fröjdar sig,
+        när man utskiftar byte.”`],
+      en: [`“The people walking in darkness
+            have seen a great light;
+        on those living in the land of deep darkness
+            a light has dawned.
+        You have enlarged the nation
+            and increased their joy;
+        they rejoice before you
+            as people rejoice at the harvest,
+        as warriors rejoice
+            when dividing the plunder.”`]
+    },
+    author: {
+      sv: [`— Jesaja 9:2-3`],
+      en: [`— Isaiah 9:2-3`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+
+  // '29
+  {
+    quote: {
+      sv: [`“Men sök nu förlikning och frid med
+        honom — därigenom skall lycka tillfalla dig.
+        Ta emot undervisning av hans mun,
+        och förvara hans ord i ditt hjärta.”`],
+      en: [`“Submit to God and be at peace with him;
+        in this way prosperity will come to you.
+        Accept instruction from his mouth
+        and lay up his words in your heart.”`]
+    },
+    author: {
+      sv: [`— Job 22:21-22`],
+      en: [`— Job 22:21-22`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+
+
+  // '30
+  {
+    quote: {
+      sv: [`“Orden träffade dem i hjärtat, och de frågade Petrus och de andra apostlarna: "Bröder, vad skall vi göra?"
+        Petrus svarade: "Omvänd er och låt er alla döpas i Jesu Kristi namn, så att ni får förlåtelse för era synder. Då får ni den heliga ande som gåva. Ty löftet gäller för er och era barn och alla dem långt borta som Herren vår Gud vill kalla."”`],
+      en: [`“When the people heard this, they were cut to the heart and said to Peter and the other apostles, ‘Brothers, what shall we do?’
+          Peter replied, ‘Repent and be baptised, every one of you, in the name of Jesus Christ for the forgiveness of your sins. And you will receive the gift of the Holy Spirit. 39 The promise is for you and your children and for all who are far off – for all whom the Lord our God will call.’”`]
+    },
+    author: {
+      sv: [`— Apostlagärningarna 2:37-39`],
+      en: [`— Acts 2:37-39`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+
+
+  // _ _ _
+
+  // 'Feb
+
+  // '31
+  {
+    quote: {
+      sv: [`“Barmhärtighet, frid och kärlek åt er i allt rikare mått.”`],
+      en: [`“Mercy, peace and love be yours in abundance.”`]
+    },
+    author: {
+      sv: [`— Judasbrevet 1:2`],
+      en: [`— Jude 1:2`]
+    },
+    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
+  },
+
+  // '32
+  {
+    quote: {
+      sv: [`“Herrens nåd är det att det inte är ute
+        med oss, ty det är inte slut med hans
+        barmhärtighet.
+        Den är var morgon ny, ja, stor är din
+        trofasthet.
+        Herren är min del, det säger min själ
+        mig. Därför vill jag hoppas på
+        honom.
+        Herren är god mot dem som väntar på
+        honom, mot den själ som söker
+        honom.
+        Det är gott för en man att han får bära
+        ett ok i sin ungdom.
+        Må han sitta ensam och tyst, när ett
+        sådant påläggs honom.
+        Må han sänka sin mun i stoftet,
+        kanhända finns ännu hopp.
+        Må han vända kinden till åt den som
+        slår honom och låta mätta sig med
+        vanära.”`],
+      en: [`“Because of the Lord’s great love we are not consumed,
+        for his compassions never fail.
+      They are new every morning;
+        great is your faithfulness.
+      I say to myself, ‘The Lord is my portion;
+        therefore I will wait for him.’
+
+      The Lord is good to those whose hope is in him,
+        to the one who seeks him;
+      t is good to wait quietly
+        for the salvation of the Lord.
+      It is good for a man to bear the yoke
+        while he is young.
+
+      Let him sit alone in silence,
+        for the Lord has laid it on him.
+      Let him bury his face in the dust –
+        there may yet be hope.
+      Let him offer his cheek to one who would strike him,
+        and let him be filled with disgrace.”`]
+    },
+    author: {
+      sv: [`— Klagovisorna 3:22-30`],
+      en: [`— Lamentations 3:22-30`]
+    },
+    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
+  },
+
+  // '33
+  {
+    quote: {
+      sv: [`“Ty ingenting är omöjligt för Gud.”`],
+      en: [`“For no word from God will ever fail.”`]
+    },
+    author: {
+      sv: [`— Lukasevangeliet 1:37`],
+      en: [`— Luke 1:37`]
+    },
+    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
+  },
+
+  // '34
+  {
+    quote: {
+      sv: [`“Jesus såg på dem och sade: För människor är det omöjligt, men inte för Gud. Ty för Gud är allting möjligt.”`],
+      en: [`“Jesus looked at them and said, ‘With man this is impossible, but not with God; all things are possible with God.”`]
+    },
+    author: {
+      sv: [`— Markusevangeliet 10:27`],
+      en: [`— Mark 10:27`]
+    },
+    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
+  },
+
+
+
+  // '35
+  {
+    quote: {
+      sv: [`“Saliga de som sörjer, de skall bli tröstade.
+        Saliga de ödmjuka, de skall ärva landet.
+        Saliga de som hungrar och törstar efter rättfärdigheten, de skall bli mättade.
+        Saliga de barmhärtiga, de skall möta barmhärtighet.
+        Saliga de renhjärtade, de skall se Gud.
+        Saliga de som förföljs för rättfärdighetens skull, dem tillhör himmelriket.”`],
+      en: [`“Blessed are those who mourn, for they will be comforted.
+        Blessed are the meek, for they will inherit the earth.
+        Blessed are those who hunger and thirst for righteousness, for they will be filled.
+        Blessed are the merciful, for they will be shown mercy.
+        Blessed are the pure in heart, for they will see God.
+        Blessed are the peacemakers, for they will be called children of God.
+        Blessed are those who are persecuted because of righteousness, for theirs is the kingdom of heaven”`]
+    },
+    author: {
+      sv: [`— Matteusevangeliet 5:4-10`],
+      en: [`— Matthew 5:4-10`]
+    },
+    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
+  },
+
+  // '36
+  {
+    quote: {
+      sv: [`“Men jag vill skåda efter Herren, jag vill hoppas på min frälsnings Gud, min Gud ska höra mig.”`],
+      en: [`“But as for me, I watch in hope for the Lord, I wait for God my Savior; my God will hear me.”`]
+    },
+    author: {
+      sv: [`— Mika 7:7`],
+      en: [`— Micah 7:7`]
+    },
+    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
+  },
+
+  // '37
+  {
+    quote: {
+      sv: [`“Gå bort till myuran, du late, se hur hon gör, och bli vi.”`],
+      en: [`“Go to the ant, you sluggard; consider its ways and be wise!”`]
+    },
+    author: {
+      sv: [`— Ordspråksboken 6:6`],
+      en: [`— Proverbs 6:6`]
+    },
+    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
+  },
+
+  // '38
+  {
+    quote: {
+      sv: [`“Bättre är att vara två än en, ty de två får större vinning av sin möda.”`],
+      en: [`“Two are better than one, because they have a good return for their labor.”`]
+    },
+    author: {
+      sv: [`— Predikaren 4:9`],
+      en: [`— Ecclesiastes 4:9`]
+    },
+    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
+  },
+
+  // '39
+  {
+    quote: {
+      sv: [`“I frid ska jag lägga mig ned, och i frid skall jag somna in, ty du, Herre, låter mig bo avskild och i trygghet.”`],
+      en: [`“In peace I will lie down and sleep, for you alone, Lord, make me dwell in safety.”`]
+    },
+    author: {
+      sv: [`— Psaltaren 4:9`],
+      en: [`— Psalm 4:8`]
+    },
+    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
+  },
+
+  // '40
+  {
+    quote: {
+      sv: [`“Syndens lön är döden, men Guds gåva är evigt liv i Kristus Jesus, vår Herre.”`],
+      en: [`“For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.”`]
+    },
+    author: {
+      sv: [`— Romarbrevet 6:23`],
+      en: [`— Romans 6:23`]
+    },
+    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
+  },
+
+  // '41
+  {
+    quote: {
+      sv: [`“Så må alla dina fiender förgås, o Herre. Men de som älskar honom må likna solen, när den går upp i hjältekraft.”`],
+      en: [`“So may all your enemies perish, Lord! But may all who love you be like the sun when it rises in its strength.”`]
+    },
+    author: {
+      sv: [`— Domarboken 5:31`],
+      en: [`— Judges 5:31`]
+    },
+    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
+  },
+
+  // '42
+  {
+    quote: {
+      sv: [`“Och Boas kom just då dit från Betlehem. Han sade till skördemännen: Herren vare med er. De svarade honom. Herren välsigne er.”`],
+      en: [`“Just then Boaz arrived from Bethlehem and greeted the harvesters, “The LORD be with you!” “The LORD bless you!” they answered.”`]
+    },
+    author: {
+      sv: [`— Rut 2:4`],
+      en: [`— Ruth 2:4`]
+    },
+    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
+  },
+
+  // '43
+  {
+    quote: {
+      sv: [`“Men Herren sade till Samuel: Se inte på hans utseende och på hans högväxta gestalt, ty jag har förkastat honom.
+        Ty det är inte som en människa ser. En människa ser på det som är för ögonen, men Herren ser till hjärtat.”`],
+      en: [`“But the LORD said to Samuel, ’Do not consider his appearance or his height, for I have rejected him.
+        The LORD does not look at the things people look at. People look at the outward appearance, but the LORD looks at the heart.’”`]
+    },
+    author: {
+      sv: [`— 1 Samuelsboken 16:7`],
+      en: [`— 1 Samuel 16:7`]
+    },
+    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
+  },
+
+
+
+  // '44
+  {
+    quote: {
+      sv: [`“Mina kära, låt oss älska varandra, ty kärleken kommer från Gud, och den som älskar är född av Gud och känner Gud. \n Men den som inte älskar känner inte Gud, eftersom Gud är kärlek.”`],
+      en: [`“Dear friends, let us love one another, for love comes from God. Everyone who loves has been born of God and knows God. \n Whoever does not love does not know God, because God is love.”`]
+    },
+    author: {
+      sv: [`— 1 Johannesbrevet 4:7-8`],
+      en: [`— 1 Johannesbrevet 4:7-8`]
+    },
+    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
+  },
+
+  // Alla hjärtans dag
+  // '45
+  {
+    quote: {
+      sv: [`“Så älskade Gud världen, att han gav den sin ende son, för att de som tror på honom inte ska gå under utan ha evigt liv.”`],
+      en: [`“For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.”`]
+    },
+    author: {
+      sv: [`— Johannesevangeliet 3:16`],
+      en: [`— John 3:16`]
+    },
+    image: "heart_nature_ave_calvar_martinez_pexels.jpg",
+    credit: "Ave Calvar Martinez (Pexels.com)"
+  },
+
+  // Kontrollerat hit
+      // x Ej Kontroll
+
+  // '46
+  {
+    quote: {
+      sv: [`“Kung Salomo lät föra trä från Almug-träden till templet och till kungens palats, och gjorde harpor och lyror åt sångarna.”`],
+      en: [`“King Solomon used the almug wood to make supports for the temple of the Lord and for the royal palace, and to make harps and lyres for the musicians.”`]
+    },
+    author: {
+      sv: [`— 1 Kungaboken 10:11–12`],
+      en: [`— 1 Kings 10:11–12`]
+    },
+    image: "temple_music_pixabay.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '47
+  {
+    quote: {
+      sv: [`“Befall dina verk åt Herren,
+          så har dina planer framgång.”`],
+      en: [`“Commit to the Lord whatever you do,
+          and he will establish your plans.”`]
+    },
+    author: {
+      sv: [`— Ordspråksboken 16:3`],
+      en: [`— Proverbs 16:3`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '48
+  {
+    quote: {
+      sv: [`“Förtrösta på Herren av allt ditt hjärta,
+          och förlita dig inte på ditt förstånd.
+          På alla dina vägar må du tänka på honom,
+          så skall han göra dina stigar jämna.”`],
+      en: [`“Trust in the Lord with all your heart
+          and lean not on your own understanding;
+          in all your ways submit to him,
+          and he will make your paths straight.”`]
+    },
+    author: {
+      sv: [`— Ordspråksboken 3:5-6`],
+      en: [`— Proverbs 3:5-6`]
+    },
+    image: "feb_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '49
+  {
+    quote: {
+      sv: [`“Ty, den som Gud har sänt talar Guds ord; Gud ger anden utan att mäta.”`],
+      en: [`“For the one whom God has sent speaks the words of God, for God gives the Spirit without limit.”`]
+    },
+    author: {
+      sv: [`— Johannesevangeliet 3:34`],
+      en: [`— John 3:34`]
+    },
+    image: "feb_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+    // '50
+  {
+    quote: {
+      sv: [`“... Jag har hört din bön, jag har sett dina tårar. Se, jag vill göra dig frisk. ...”`],
+      en: [`“... I have heard your prayer and seen your tears; I will heal you. ...”`]
+    },
+    author: {
+      sv: [`— 2 Kungaboken 20:5`],
+      en: [`— 2 Kings 20:5`]
+    },
+    image: "feb_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+    // '51
+  {
+    quote: {
+      sv: [`“Men Gud bevisar sin kärlek till oss g...”`],
+      en: [`“But God demonstrates his own love for us in t...”`]
+    },
+    author: {
+      sv: [`— Romarbr..`],
+      en: [`— Romans..`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+// '52
+{
+  quote: {
+    sv: [`“Var starka och tappa inte modet, för ert arbete har sin lön.”`],
+    en: [`“But as for you, be strong and do not give up, for your work will be rewarded.”`]
+  },
+  author: {
+    sv: [`— 2 Krönikeboken 15:7`],
+    en: [`— 2 Chronicles 15:7`]
+  },
+  image: "strength_reward_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// _ _ _
+
+// '53
+{
+  quote: {
+    sv: [`“Herren väckte upp andan hos Kyros, kung av Persien, så att han lät utropa...”`],
+    en: [`“The Lord moved the heart of Cyrus king of Persia to make a proclamation...”`]
+  },
+  author: {
+    sv: [`— Esra 1:1`],
+    en: [`— Ezra 1:1`]
+  },
+  image: "proclamation_scroll_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '54
+{
+  quote: {
+    sv: [`“Glädjen i Herren är er styrka.”`],
+    en: [`“The joy of the Lord is your strength.”`]
+  },
+  author: {
+    sv: [`— Nehemja 8:10`],
+    en: [`— Nehemiah 8:10`]
+  },
+  image: "joy_strength_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '55
+{
+  quote: {
+    sv: [`“Kanske har du blivit drottning just för en tid som denna.”`],
+    en: [`“And who knows but that you have come to your royal position for such a time as this?”`]
+  },
+  author: {
+    sv: [`— Ester 4:14`],
+    en: [`— Esther 4:14`]
+  },
+  image: "purpose_crown_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '56
+{
+  quote: {
+    sv: [`“Stark som döden är kärleken.”`],
+    en: [`“Love is as strong as death.”`]
+  },
+  author: {
+    sv: [`— Höga visan 8:6`],
+    en: [`— Song of Songs 8:6`]
+  },
+  image: "love_fire_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '57
+{
+  quote: {
+    sv: [`“Jag ska ge er ett nytt hjärta och låta er få en ny ande.”`],
+    en: [`“I will give you a new heart and put a new spirit in you.”`]
+  },
+  author: {
+    sv: [`— Hesekiel 36:26`],
+    en: [`— Ezekiel 36:26`]
+  },
+  image: "new_heart_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '58
+{
+  quote: {
+    sv: [`“Men folket som känner sin Gud ska stå fasta och handla.”`],
+    en: [`“But the people who know their God will firmly resist and act.”`]
+  },
+  author: {
+    sv: [`— Daniel 11:32`],
+    en: [`— Daniel 11:32`]
+  },
+  image: "faith_action_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '59
+{
+  quote: {
+    sv: [`“Jag ska hela deras avfall och älska dem av hjärtat.”`],
+    en: [`“I will heal their waywardness and love them freely.”`]
+  },
+  author: {
+    sv: [`— Hosea 14:4`],
+    en: [`— Hosea 14:4`]
+  },
+  image: "healing_love_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '60
+{
+  quote: {
+    sv: [`“Och det ska ske att var och en som åkallar Herrens namn ska bli frälst.”`],
+    en: [`“And everyone who calls on the name of the Lord will be saved.”`]
+  },
+  author: {
+    sv: [`— Joel 2:32`],
+    en: [`— Joel 2:32`]
+  },
+  image: "salvation_call_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '61
+{
+  quote: {
+    sv: [`“Sök det goda och inte det onda, så att ni får leva.”`],
+    en: [`“Seek good, not evil, that you may live.”`]
+  },
+  author: {
+    sv: [`— Amos 5:14`],
+    en: [`— Amos 5:14`]
+  },
+  image: "seek_good_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '62
+{
+  quote: {
+    sv: [`“Herrens dag är nära, den kommer som en förödelse från den Allsmäktige.”`],
+    en: [`“The day of the Lord is near for all nations. As you have done, it will be done to you.”`]
+  },
+  author: {
+    sv: [`— Obadja 1:15`],
+    en: [`— Obadiah 1:15`]
+  },
+  image: "day_of_lord_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '63
+{
+  quote: {
+    sv: [`“Men Herren lät en stor fisk sluka Jona, och han var i fiskens buk i tre dagar och tre nätter.”`],
+    en: [`“Now the Lord provided a huge fish to swallow Jonah, and Jonah was in the belly of the fish three days and three nights.”`]
+  },
+  author: {
+    sv: [`— Jona 1:17`],
+    en: [`— Jonah 1:17`]
+  },
+  image: "jonah_fish_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '64
+{
+  quote: {
+    sv: [`“Herren är god, en tillflykt på nödens dag.”`],
+    en: [`“The Lord is good, a refuge in times of trouble.”`]
+  },
+  author: {
+    sv: [`— Nahum 1:7`],
+    en: [`— Nahum 1:7`]
+  },
+  image: "refuge_storm_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '65
+{
+  quote: {
+    sv: [`“Den rättfärdige ska leva genom sin tro.”`],
+    en: [`“The righteous person will live by his faith.”`]
+  },
+  author: {
+    sv: [`— Habackuk 2:4`],
+    en: [`— Habakkuk 2:4`]
+  },
+  image: "faith_life_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '66
+{
+  quote: {
+    sv: [`“Herren din Gud är mitt ibland dig, en hjälte som frälser.”`],
+    en: [`“The Lord your God is with you, the Mighty Warrior who saves.”`]
+  },
+  author: {
+    sv: [`— Sefanja 3:17`],
+    en: [`— Zephaniah 3:17`]
+  },
+  image: "warrior_savior_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// _ _ _
+
+// '67
+{
+  quote: {
+    sv: [`“Jag är med er, säger Herren.”`],
+    en: [`“I am with you, declares the Lord.”`]
+  },
+  author: {
+    sv: [`— Haggai 1:13`],
+    en: [`— Haggai 1:13`]
+  },
+  image: "presence_light_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '68
+{
+  quote: {
+    sv: [`“Inte genom styrka, inte genom kraft, utan genom min Ande, säger Herren Sebaot.”`],
+    en: [`“Not by might nor by power, but by my Spirit,’ says the Lord Almighty.”`]
+  },
+  author: {
+    sv: [`— Sakarja 4:6`],
+    en: [`— Zechariah 4:6`]
+  },
+  image: "spirit_power_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+
+  // _ _ _
+  // ' _ _ _
+
+  // '69
+  {
+    quote: {
+      sv: [`“Vi vet att Gud på allt sätt hjälper dem som älskar honom att nå det goda, dem som han har kallat efter sin plan.”`],
+      en: [`“And we know that in all things God works for the good of those who love him, who[a] have been called according to his purpose.”`]
+    },
+    author: {
+      sv: [`— Romarbrevet 8:28`],
+      en: [`— Romans 8:28`]
+    },
+    image: "march_img.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+    // '70
+  {
+    quote: {
+      sv: [`“Och med sitt eget blod, inte med blod från bockar och kalvar, har han en gång för alla trätt in i helgedomen och vunnit befrielse åt oss för evigt.”`],
+      en: [`“He did not enter by means of the blood of goats and calves; but he entered the Most Holy Place once for all by his own blood, thus obtaining[a] eternal redemption.”`]
+    },
+    author: {
+      sv: [`— Hebreerbrevet 9:12`],
+      en: [`— Hebrews 9:12`]
+    },
+    image: "covenant_light_pixabay.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+    // '71
+  {
+    quote: {
+      sv: [`“Därför är det ett nytt förbund som Kristus förmedlar, för att de kallade ska få det utlovade eviga arvet, sedan han dött för att befria dem från överträdelserna under det förra förbundet.”`],
+      en: [`“For this reason Christ is the mediator of a new covenant, that those who are called may receive the promised eternal inheritance—now that he has died as a ransom to set them free from the sins committed under the first covenant.”`]
+    },
+    author: {
+      sv: [`— Hebreerbrevet 9:15`],
+      en: [`— Hebrews 9:15`]
+    },
+    image: "covenant_light_pixabay.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+    // '72
+  {
+    quote: {
+      sv: [`“Salig är den som håller ut då han prövas; när han har bestått provet skall han få det eviga livets segerkrans, som Gud har lovat dem som älskar honom. Ingen som blir prövad skall säga att det är Gud som frestar honom.”`],
+      en: [`“Blessed is the one who perseveres under trial because, having stood the test, that person will receive the crown of life that the Lord has promised to those who love him.”`]
+    },
+    author: {
+      sv: [`— Jakobsbrevet 1:12`],
+      en: [`— James 1:12`]
+    },
+    image: "covenant_light_pixabay.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+    // '73
+  {
+    quote: {
+      sv: [`“Allt det goda vi får, varje fullkomlig gåva kommer från ovan, från himlaljusens fader, hos vilken ingen förändring sker och ingen växling mellan ljus och mörker.”`],
+      en: [`“Every good and perfect gift is from above, coming down from the Father of the heavenly lights, who does not change like shifting shadows. 18 He chose to give us birth through the word of truth, that we might be a kind of firstfruits of all he created.”`]
+    },
+    author: {
+      sv: [`— Jakobsbrevet 1:17-18`],
+      en: [`— James 1:17-18`]
+    },
+    image: "covenant_light_pixabay.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+    // '74
+  {
+    quote: {
+      sv: [`“Jag som kallar på örnen från öster,
+        och från fjärran land på mitt rådsluts man.
+        Vad jag har talat, det låter jag också inträffa,
+        vad jag har bestämt, det sätter jag också i verket.
+
+        Så hör nu på mig, ni övermodiga,
+        ni som menar att hjälpen är långt borta.
+        Se, jag låter min hjälp närma sig,
+        den är ej långt borta, och min frälsning dröjer inte. ...”`],
+      en: [`“Calling a bird of prey from the east,
+          The man who executes My counsel, from a far country.
+          Indeed I have spoken it;
+          I will also bring it to pass.
+          I have purposed it;
+          I will also do it.
+
+          Listen to Me, you stubborn-hearted,
+          Who are far from righteousness:          I bring My righteousness near, it shall not be far off;
+          My salvation shall not linger. ...”`]
+    },
+    author: {
+      sv: [`— Jesaja 46:11-13`],
+      en: [`— Isaiah 46:11-13`]
+    },
+    image: "covenant_light_pixabay.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+      // '75
+  {
+    quote: {
+      sv: [`“I begynnelsen fanns Ordet, och Ordet fanns hos Gud, Och Ordet var Gud. Det fanns i begynnelsen hos Gud. Allt blev till genom det, och utan det blev ingenting till av allt som finns till. I ordet var liv, och livet var människornas ljus. Och ljuset lyser i mörkret, och mörkret har inte övervunnit det.”`],
+      en: [`“In the beginning was the Word, and the Word was with God, and the Word was God. He was in the beginning with God. All things were made through Him, and without Him nothing was made that was made. In Him was life, and the life was the light of men. And the light shines in the darkness, and the darkness did not comprehend it”`]
+    },
+    author: {
+      sv: [`— Johannesevangeliet 1:1-5`],
+      en: [`— John 1:1-5`]
+    },
+    image: "covenant_light_pixabay.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+      // '76
+  {
+    quote: {
+      sv: [`“När Jesus såg det blev han förargad och sade: "Låt barnen komma hit till mig och hindra dem inte: Guds rike tillhör sådana som de. Sannerligen, den som inte tar emot Guds rike som ett barn kommer aldrig dit in." Och han tog dem i famnen, lade händerna på dem och välsignade dem.”`],
+      en: [`“When Jesus saw this, he was indignant. He said to them, ‘Let the little children come to me, and do not hinder them, for the kingdom of God belongs to such as these. 15 Truly I tell you, anyone who will not receive the kingdom of God like a little child will never enter it.’ 16 And he took the children in his arms, placed his hands on them and blessed them.”`]
+    },
+    author: {
+      sv: [`— Markusevangeliet 10:14-16`],
+      en: [`— Mark 10:14-16`]
+    },
+    image: "covenant_light_pixabay.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+
+// '77
+{
+  quote: {
+    sv: [`“Herren själv ska gå före dig. Han ska vara med dig, han ska inte lämna dig eller överge dig. Var inte rädd eller förfärad.”`],
+    en: [`“And the Lord, he it is that doth go before thee; he will be with thee, he will not fail thee, neither forsake thee: fear not, neither be dismayed.”`]
+  },
+  author: {
+    sv: [`— 5 Mosebok 31:8`],
+    en: [`— Deuteronomy 31:8`]
+  },
+  image: "guidance_path_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '78
+{
+  quote: {
+    sv: [
+      `“Vaka, stå fasta i tron, var modiga och starka. Låt allt hos er ske i kärlek.”`
+    ],
+    en: [
+      `“Watch ye, stand fast in the faith, quit you like men, be strong. Let all your things be done with charity.”`
+    ]
+  },
+  author: {
+    sv: [`— 1 Korinthierbrevet 16:13–14`],
+    en: [`— 1 Corinthians 16:13–14`]
+  },
+  image: "faith_strength_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '79
+{
+  quote: {
+    sv: [`“Se alltså noga till hur ni lever, att ni inte lever som ovisa människor utan som visa.”`],
+    en: [`“See then that ye walk circumspectly, not as fools, but as wise.”`]
+  },
+  author: {
+    sv: [`— Efesierbrevet 5:15`],
+    en: [`— Ephesians 5:15`]
+  },
+  image: "wisdom_walk_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '80
+{
+  quote: {
+    sv: [`“Fadern själv älskar er, för ni har älskat mig och trott att jag har utgått från Gud.”`],
+    en: [`“For the Father himself loveth you, because ye have loved me, and have believed that I came out from God.”`]
+  },
+  author: {
+    sv: [`— Johannesevangeliet 16:27`],
+    en: [`— John 16:27`]
+  },
+  image: "father_love_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '81
+{
+  quote: {
+    sv: [`“Sök först Guds rike och hans rättfärdighet, så ska ni få allt det andra också.”`],
+    en: [`“But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 6:33`],
+    en: [`— Matthew 6:33`]
+  },
+  image: "kingdom_priority_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '82
+{
+  quote: {
+    sv: [`“Som hjorten trängtar efter vattenbäckar, så trängtar min själ efter dig, o Gud.”`],
+    en: [`“As the hart panteth after the water brooks, so panteth my soul after thee, O God.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 42:1`],
+    en: [`— Psalm 42:1`]
+  },
+  image: "longing_water_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+  // ' _ _ _
+
+  // '83
+
+  {
+    quote: {
+      sv: [`“Hos var och en framträder Anden så att den blir till nytta. Den ene får genom Anden gåvan att meddela vishet, den andre kan med samma Andes hjälp meddela kunskap. En får tron genom Anden, en annan genom samma Ande gåvan att bota,”`],
+      en: [`“Now to each one the manifestation of the Spirit is given for the common good. To one there is given through the Spirit a message of wisdom, to another a message of knowledge by means of the same Spirit, to another faith by the same Spirit, to another gifts of healing by that one Spirit,”`]
+    },
+    author: {
+      sv: [`— 1 Korinthierbrevet	12:7-9`],
+      en: [`— 1 Corinthians 12:7-9`]
+    },
+    image: "jan_pixabay_pexels.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+  // '84
+  {
+    quote: {
+      sv: [`“Frukta inte, för jag är med dig. Se dig inte ängsligt om, för jag är din Gud. Jag styrker dig, jag hjälper dig, jag stödjer dig med min rättfärdighets högra hand.”`],
+      en: [`“Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness.”`]
+    },
+    author: {
+      sv: [`— Jesaja 41:10`],
+      en: [`— Isaiah 41:10`]
+    },
+    image: "strength_hand_pixabay.jpg",
+    credit: "Pixabay (Pexels.com)"
+  },
+
+// '85
+{
+  quote: {
+    sv: [`“Om du hör Herrens, din Guds, röst och gör det som är rätt i hans ögon, lyssnar till hans bud och håller alla hans stadgar, då ska jag inte lägga på dig någon av de sjukdomar som jag lade på egyptierna, för jag är Herren, din läkare.”`],
+    en: [`“If thou wilt diligently hearken to the voice of the Lord thy God... I will put none of these diseases upon thee... for I am the Lord that healeth thee.”`]
+  },
+  author: {
+    sv: [`— 2 Mosebok 15:26`],
+    en: [`— Exodus 15:26`]
+  },
+  image: "healing_light_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '86
+{
+  quote: {
+    sv: [`“Hedra din far och din mor, så som Herren din Gud har befallt dig, för att du ska få leva länge och det ska gå dig väl i det land som Herren din Gud ger dig.”`],
+    en: [`“Honour thy father and thy mother, as the Lord thy God hath commanded thee; that thy days may be prolonged...”`]
+  },
+  author: {
+    sv: [`— 5 Mosebok 5:16`],
+    en: [`— Deuteronomy 5:16`]
+  },
+  image: "family_honor_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '87
+{
+  quote: {
+    sv: [`“Vet ni inte att ni är Guds tempel och att Guds Ande bor i er?”`],
+    en: [`“Know ye not that ye are the temple of God, and that the Spirit of God dwelleth in you?”`]
+  },
+  author: {
+    sv: [`— 1 Korinthierbrevet 3:16`],
+    en: [`— 1 Corinthians 3:16`]
+  },
+  image: "temple_spirit_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '88
+{
+  quote: {
+    sv: [`“Gör därför allt ni kan för att i er tro visa dygd, i dygden kunskap, i kunskapen självbehärskning, i självbehärskningen uthållighet, i uthålligheten gudsfruktan, i gudsfruktan broderlig omtanke, i omtanken kärlek. Om allt detta finns hos er och får växa till, gör det er inte overksamma eller utan frukt i kunskapen om vår Herre Jesus Kristus.”`],
+    en: [`“Add to your faith virtue; and to virtue knowledge; and to knowledge temperance; and to temperance patience; and to patience godliness; and to godliness brotherly kindness; and to brotherly kindness charity.”`]
+  },
+  author: {
+    sv: [`— 2 Petrusbrevet 1:5–9`],
+    en: [`— 2 Peter 1:5–9`]
+  },
+  image: "growth_faith_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '89
+{
+  quote: {
+    sv: [`“Av nåd är ni frälsta genom tron, inte av er själva, Guds gåva är det.”`],
+    en: [`“For by grace are ye saved through faith; and that not of yourselves: it is the gift of God.”`]
+  },
+  author: {
+    sv: [`— Efesierbrevet 2:8`],
+    en: [`— Ephesians 2:8`]
+  },
+  image: "grace_gift_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '90
+{
+  quote: {
+    sv: [`“Gör er inga bekymmer, utan när ni åkallar och ber, tacka då Gud och låt honom få veta alla era önskningar. Då skall Guds frid, som är långt mera värd än allt vi tänker, ge era hjärtan och era tankar skydd i Kristus Jesus.
+      Och så, mina bröder: det som är sant, det som är upphöjt, rätt och rent, det som är värt att älska och akta, allt som kallas dygd och allt som förtjänar beröm, ta fasta på allt detta.”`],
+    en: [`“Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.
+      Finally, brothers and sisters, whatever is true, whatever is noble, whatever is right, whatever is pure, whatever is lovely, whatever is admirable – if anything is excellent or praiseworthy – think about such things.”`]
+  },
+  author: {
+    sv: [`— Filipperbrevet 4:6-8`],
+    en: [`— Philippians 4:6-8`]
+  },
+  image: "prayer_peace_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '91
+{
+  quote: {
+    sv: [`“Tron är en övertygelse om det man hoppas, en visshet om det man inte ser.”`],
+    en: [`“Now faith is the substance of things hoped for, the evidence of things not seen.”`]
+  },
+  author: {
+    sv: [`— Hebreerbrevet 11:1`],
+    en: [`— Hebrews 11:1`]
+  },
+  image: "faith_hope_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '92
+{
+  quote: {
+    sv: [`“Frukta inte, för jag är med dig. Se dig inte ängsligt om, för jag är din Gud. Jag styrker dig, jag hjälper dig, jag stödjer dig med min rättfärdighets högra hand.”`],
+    en: [`“Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness.”`]
+  },
+  author: {
+    sv: [`— Jesaja 41:10`],
+    en: [`— Isaiah 41:10`]
+  },
+  image: "strength_hand_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '93
+{
+  quote: {
+    sv: [`“Om de hör och tjänar honom, får de leva sina dagar i lycka och sina år i glädje.”`],
+    en: [`“If they obey and serve him, they shall spend their days in prosperity, and their years in pleasures.”`]
+  },
+  author: {
+    sv: [`— Job 36:11`],
+    en: [`— Job 36:11`]
+  },
+  image: "obedience_prosperity_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '94
+{
+  quote: {
+    sv: [`“Jag är vinstocken, ni är grenarna. Den som förblir i mig och jag i honom, han bär rik frukt. Utan mig kan ni ingenting göra.”`],
+    en: [`“I am the vine, ye are the branches: He that abideth in me, and I in him, the same bringeth forth much fruit: for without me ye can do nothing.”`]
+  },
+  author: {
+    sv: [`— Johannesevangeliet 15:5`],
+    en: [`— John 15:5`]
+  },
+  image: "vine_branches_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '95
+{
+  quote: {
+    sv: [`“Saliga är de renhjärtade, de ska se Gud.”`],
+    en: [`“Blessed are the pure in heart: for they shall see God.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 5:8`],
+    en: [`— Matthew 5:8`]
+  },
+  image: "pure_heart_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '96
+{
+  quote: {
+    sv: [`“Som vatten speglar ansiktet, så speglar hjärtat människan.”`],
+    en: [`“As in water face answereth to face, so the heart of man to man.”`]
+  },
+  author: {
+    sv: [`— Ordspråksboken 27:19`],
+    en: [`— Proverbs 27:19`]
+  },
+  image: "reflection_heart_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '97
+{
+  quote: {
+    sv: [`“Gud ska föra varje gärning fram i domen, allt som är fördolt, vare sig det är gott eller ont.”`],
+    en: [`“For God shall bring every work into judgment, with every secret thing, whether it be good, or whether it be evil.”`]
+  },
+  author: {
+    sv: [`— Predikaren 12:14`],
+    en: [`— Ecclesiastes 12:14`]
+  },
+  image: "judgment_light_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '98
+{
+  quote: {
+    sv: [`“Herren är nära dem som har ett förkrossat hjärta, han frälser dem som har en bedrövad ande.”`],
+    en: [`“The Lord is nigh unto them that are of a broken heart; and saveth such as be of a contrite spirit.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 34:18`],
+    en: [`— Psalm 34:18`]
+  },
+  image: "broken_heart_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '99
+{
+  quote: {
+    sv: [`“Vad ska vi då säga om detta? Är Gud för oss, vem kan då vara emot oss?”`],
+    en: [`“What shall we then say to these things? If God be for us, who can be against us?”`]
+  },
+  author: {
+    sv: [`— Romarbrevet 8:31`],
+    en: [`— Romans 8:31`]
+  },
+  image: "god_for_us_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '100
+{
+  quote: {
+    sv: [`“Herren talade med Mose ansikte mot ansikte, som en människa talar med en annan. Sedan vände Mose tillbaka till lägret, men hans tjänare Josua, Nuns son, en ung man, lämnade inte tältet.”`],
+    en: [`“And the Lord spake unto Moses face to face, as a man speaketh unto his friend. And he turned again into the camp: but his servant Joshua, the son of Nun, a young man, departed not out of the tabernacle.”`]
+  },
+  author: {
+    sv: [`— 2 Mosebok 33:11`],
+    en: [`— Exodus 33:11`]
+  },
+  image: "moses_tent_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '101
+{
+  quote: {
+    sv: [`“Du ska inte mörda. Du ska inte begå äktenskapsbrott. Du ska inte stjäla. Du ska inte bära falskt vittnesbörd mot din nästa.”`],
+    en: [`“Thou shalt not kill. Neither shalt thou commit adultery. Neither shalt thou steal. Neither shalt thou bear false witness against thy neighbour.”`]
+  },
+  author: {
+    sv: [`— 5 Mosebok 5:17–20`],
+    en: [`— Deuteronomy 5:17–20`]
+  },
+  image: "commandments_stone_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '102
+{
+  quote: {
+    sv: [`“Kärleken är tålig och mild, kärleken avundas inte, den skryter inte, den är inte uppblåst.”`],
+    en: [`“Charity suffereth long, and is kind; charity envieth not; charity vaunteth not itself, is not puffed up.”`]
+  },
+  author: {
+    sv: [`— 1 Korinthierbrevet 13:4`],
+    en: [`— 1 Corinthians 13:4`]
+  },
+  image: "love_patience_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '103
+{
+  quote: {
+    sv: [`“Framför allt ska ni veta att ingen profetia i Skriften har kommit till genom egen tolkning.”`],
+    en: [`“Knowing this first, that no prophecy of the scripture is of any private interpretation.”`]
+  },
+  author: {
+    sv: [`— 2 Petrusbrevet 1:20`],
+    en: [`— 2 Peter 1:20`]
+  },
+  image: "scripture_light_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '104
+{
+  quote: {
+    sv: [`“Låt er förnyas till ande och sinne.”`],
+    en: [`“And be renewed in the spirit of your mind.”`]
+  },
+  author: {
+    sv: [`— Efesierbrevet 4:23`],
+    en: [`— Ephesians 4:23`]
+  },
+  image: "renewal_mind_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '105
+{
+  quote: {
+    sv: [`“För övrigt, bröder, allt som är sant och värdigt, rätt och rent, allt som är värt att älska och uppskatta, allt som kallas dygd och förtjänar beröm, tänk på allt sådant.”`],
+    en: [`“Finally, brethren, whatsoever things are true, whatsoever things are honest, whatsoever things are just, whatsoever things are pure... think on these things.”`]
+  },
+  author: {
+    sv: [`— Filipperbrevet 4:8`],
+    en: [`— Philippians 4:8`]
+  },
+  image: "thoughts_pure_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '106
+{
+  quote: {
+    sv: [`“Men utan tro är det omöjligt att behaga Gud. Den som vill komma till Gud måste tro att han finns och att han belönar dem som söker honom.”`],
+    en: [`“But without faith it is impossible to please him: for he that cometh to God must believe that he is, and that he is a rewarder of them that diligently seek him.”`]
+  },
+  author: {
+    sv: [`— Hebreerbrevet 11:6`],
+    en: [`— Hebrews 11:6`]
+  },
+  image: "faith_reward_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '107
+{
+  quote: {
+    sv: [`“Tänk inte på det som har hänt, bry er inte om det som förr har varit.”`],
+    en: [`“Remember ye not the former things, neither consider the things of old.”`]
+  },
+  author: {
+    sv: [`— Jesaja 43:18`],
+    en: [`— Isaiah 43:18`]
+  },
+  image: "new_beginning_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '108
+{
+  quote: {
+    sv: [`“Ingen har större kärlek än att han ger sitt liv för sina vänner.”`],
+    en: [`“Greater love hath no man than this, that a man lay down his life for his friends.”`]
+  },
+  author: {
+    sv: [`— Johannesevangeliet 15:13`],
+    en: [`— John 15:13`]
+  },
+  image: "sacrifice_love_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '109
+{
+  quote: {
+    sv: [`“Ty där din skatt är, där kommer också ditt hjärta att vara.”`],
+    en: [`“For where your treasure is, there will your heart be also.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 6:21`],
+    en: [`— Matthew 6:21`]
+  },
+  image: "treasure_heart_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '110
+{
+  quote: {
+    sv: [`“Människofruktan har med sig snaror, men den som förtröstar på Herren blir beskyddad.”`],
+    en: [`“The fear of man bringeth a snare: but whoso putteth his trust in the Lord shall be safe.”`]
+  },
+  author: {
+    sv: [`— Ordspråksboken 29:25`],
+    en: [`— Proverbs 29:25`]
+  },
+  image: "trust_safety_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '111
+{
+  quote: {
+    sv: [`“Ha din glädje i Herren, han ska ge dig vad ditt hjärta begär.”`],
+    en: [`“Delight thyself also in the Lord: and he shall give thee the desires of thine heart.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 37:4`],
+    en: [`— Psalm 37:4`]
+  },
+  image: "delight_joy_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '112
+{
+  quote: {
+    sv: [`“Var glada i hoppet, tåliga i lidandet, uthålliga i bönen.”`],
+    en: [`“Rejoicing in hope; patient in tribulation; continuing instant in prayer.”`]
+  },
+  author: {
+    sv: [`— Romarbrevet 12:12`],
+    en: [`— Romans 12:12`]
+  },
+  image: "hope_prayer_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '113
+{
+  quote: {
+    sv: [`“Du ska inte ha begär till din nästas hustru. Du ska inte ha begär till din nästas hus, hans åker, hans tjänare eller tjänarinna, hans oxe eller hans åsna eller något annat som tillhör din nästa.”`],
+    en: [`“Neither shalt thou desire thy neighbour’s wife, neither shalt thou covet thy neighbour’s house, his field, or his manservant, or his maidservant, his ox, or his ass, or any thing that is thy neighbour’s.”`]
+  },
+  author: {
+    sv: [`— 5 Mosebok 5:21`],
+    en: [`— Deuteronomy 5:21`]
+  },
+  image: "contentment_peace_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '114
+{
+  quote: {
+    sv: [`“Men genom Guds nåd är jag vad jag är, och hans nåd mot mig har inte varit förgäves.”`],
+    en: [`“But by the grace of God I am what I am: and his grace which was bestowed upon me was not in vain.”`]
+  },
+  author: {
+    sv: [`— 1 Korinthierbrevet 15:10`],
+    en: [`— 1 Corinthians 15:10`]
+  },
+  image: "grace_identity_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '115
+{
+  quote: {
+    sv: [`“Lägg bort all bitterhet, häftighet och vrede, allt skrikande och förolämpande, all annan ondska.”`],
+    en: [`“Let all bitterness, and wrath, and anger, and clamour, and evil speaking, be put away from you, with all malice.”`]
+  },
+  author: {
+    sv: [`— Efesierbrevet 4:31`],
+    en: [`— Ephesians 4:31`]
+  },
+  image: "peace_words_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '116
+{
+  quote: {
+    sv: [`“Den minste ska bli en skara på tusen, den ringaste ett mäktigt folk. Jag, Herren, ska låta det ske i sin tid, när tiden är inne.”`],
+    en: [`“A little one shall become a thousand, and a small one a strong nation: I the Lord will hasten it in his time.”`]
+  },
+  author: {
+    sv: [`— Jesaja 60:22`],
+    en: [`— Isaiah 60:22`]
+  },
+  image: "growth_nation_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '117
+{
+  quote: {
+    sv: [`“Och när han kommer, ska han överbevisa världen om synd och rättfärdighet och dom.”`],
+    en: [`“And when he is come, he will reprove the world of sin, and of righteousness, and of judgment.”`]
+  },
+  author: {
+    sv: [`— Johannesevangeliet 16:8`],
+    en: [`— John 16:8`]
+  },
+  image: "spirit_conviction_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '118
+{
+  quote: {
+    sv: [`“Se på himlens fåglar. De sår inte, de skördar inte och samlar inte i lador, och ändå föder er himmelske Far dem. Är inte ni värda mycket mer än de?”`],
+    en: [`“Behold the fowls of the air: for they sow not, neither do they reap, nor gather into barns; yet your heavenly Father feedeth them. Are ye not much better than they?”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 6:26`],
+    en: [`— Matthew 6:26`]
+  },
+  image: "birds_trust_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '119
+{
+  quote: {
+    sv: [`“Kraft och värdighet är hennes klädnad, och hon ler mot den dag som kommer.”`],
+    en: [`“Strength and honour are her clothing; and she shall rejoice in time to come.”`]
+  },
+  author: {
+    sv: [`— Ordspråksboken 31:25`],
+    en: [`— Proverbs 31:25`]
+  },
+  image: "strength_dignity_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '120
+{
+  quote: {
+    sv: [`“Herren gör en mans steg fasta, han gläds över hans väg.”`],
+    en: [`“The steps of a good man are ordered by the Lord: and he delighteth in his way.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 37:23`],
+    en: [`— Psalm 37:23`]
+  },
+  image: "path_guidance_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '121
+{
+  quote: {
+    sv: [`“Men den som har betänkligheter är dömd om han äter, eftersom det inte sker i tro. Allt som inte sker i tro är synd.”`],
+    en: [`“And he that doubteth is damned if he eat, because he eateth not of faith: for whatsoever is not of faith is sin.”`]
+  },
+  author: {
+    sv: [`— Romarbrevet 14:23`],
+    en: [`— Romans 14:23`]
+  },
+  image: "faith_conscience_pixabay.jpg",
+  credit: "Pixabay (Pexels.com)"
+},
+
+// '122
+  {
+    quote: {
+      sv: [`“Saliga är ni när man skymfar och förföljer er och på allt sätt förtalar er för min skull. Gläd er och jubla, er lön blir stor i himlen. På samma sätt förföljdes ju proferterna före er tid..”`],
+      en: [`“Blessed are you when people insult you, persecute you and falsely say all kinds of evil against you because of me. Rejoice and be glad, because great is your reward in heaven, for in the same way they persecuted the prophets who were before you..”`]
+    },
+    author: {
+      sv: [`— Matteusevangeliet 5:11-12`],
+      en: [`— Matthew 5:11-12`]
+    },
+    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
+  },
+
+// '123
+{
+  quote: {
+    sv: [`“Se vilken kärlek Fadern har skänkt oss: att vi får kallas Guds barn! Och det är vi också. Världen känner oss inte, eftersom den inte har lärt känna honom.”`],
+    en: [`“See what great love the Father has lavished on us, that we should be called children of God! And that is what we are. The reason the world does not know us is that it did not know him.”`]
+  },
+  author: {
+    sv: [`— 1 Johannesbrevet 3:1`],
+    en: [`— 1 John 3:1`]
+  },
+  image: "sunrise_mountains_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '124
+{
+  quote: {
+    sv: [`“Och vad vi än ber om får vi av honom, för vi håller hans bud och gör det som han tycker om.”`],
+    en: [`“And whatever we ask we receive from him, because we keep his commandments and do what pleases him.”`]
+  },
+  author: {
+    sv: [`— 1 Johannesbrevet 3:22`],
+    en: [`— 1 John 3:22`]
+  },
+  image: "prayer_hands_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '125
+{
+  quote: {
+    sv: [`“Mina älskade, om Gud har älskat oss så, är också vi skyldiga att älska varandra.”`],
+    en: [`“Dear friends, since God so loved us, we also ought to love one another.”`]
+  },
+  author: {
+    sv: [`— 1 Johannesbrevet 4:11`],
+    en: [`— 1 John 4:11`]
+  },
+  image: "community_embrace_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '126
+{
+  quote: {
+    sv: [`“Den som har Sonen har livet. Den som inte har Guds Son har inte livet. Detta har jag skrivit till er som tror på Guds Sons namn, för att ni ska veta att ni har evigt liv. Och detta är den tillit vi har till honom: att om vi ber om något efter hans vilja, så hör han oss.”`],
+    en: [`“Whoever has the Son has life; whoever does not have the Son of God does not have life. I write these things to you who believe in the name of the Son of God so that you may know that you have eternal life. This is the confidence we have in approaching God: that if we ask anything according to his will, he hears us.”`]
+  },
+  author: {
+    sv: [`— 1 Johannesbrevet 5:12-14`],
+    en: [`— 1 John 5:12-14`]
+  },
+  image: "eternal_light_path_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '127
+{
+  quote: {
+    sv: [`“Ingen annan frestelse har drabbat er än vad människor får möta. Och Gud är trofast, han ska inte tillåta att ni frestas över er förmåga. Samtidigt med frestelsen kommer han också att ge en utväg, så att ni kan härda ut.”`],
+    en: [`“No temptation has overtaken you except what is common to mankind. And God is faithful; he will not let you be tempted beyond what you can bear. But when you are tempted, he will also provide a way out so that you can endure it.”`]
+  },
+  author: {
+    sv: [`— 1 Korinthierbrevet 10:13`],
+    en: [`— 1 Corinthians 10:13`]
+  },
+  image: "forest_path_escape_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '128
+{
+  quote: {
+    sv: [`“Allt bär den, allt tror den, allt hoppas den, allt uthärdar den. Kärleken upphör aldrig.”`],
+    en: [`“It always protects, always trusts, always hopes, always perseveres. Love never fails.”`]
+  },
+  author: {
+    sv: [`— 1 Korinthierbrevet 13:7-8`],
+    en: [`— 1 Corinthians 13:7-8`]
+  },
+  image: "heart_in_hands_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '129
+{
+  quote: {
+    sv: [`“Var därför fasta och orubbliga, och ge er alltid helt åt Herrens verk. Ni vet ju att ert arbete i Herren inte är förgäves.”`],
+    en: [`“Therefore, my dear brothers and sisters, stand firm. Let nothing move you. Always give yourselves fully to the work of the Lord, because you know that your labor in the Lord is not in vain.”`]
+  },
+  author: {
+    sv: [`— 1 Korinthierbrevet 15:58`],
+    en: [`— 1 Corinthians 15:58`]
+  },
+  image: "sunrise_over_fields_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '130
+{
+  quote: {
+    sv: [`“Ty alla Guds löften har fått sitt ja genom honom. Därför säger vi också genom honom vårt Amen, Gud till ära.”`],
+    en: [`“For no matter how many promises God has made, they are ‘Yes’ in Christ. And so through him the ‘Amen’ is spoken by us to the glory of God.”`]
+  },
+  author: {
+    sv: [`— 2 Korinthierbrevet 1:20`],
+    en: [`— 2 Corinthians 1:20`]
+  },
+  image: "light_through_clouds_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '131
+{
+  quote: {
+    sv: [`“Herren är Anden, och där Herrens Ande är, där är frihet.”`],
+    en: [`“Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom.”`]
+  },
+  author: {
+    sv: [`— 2 Korinthierbrevet 3:17`],
+    en: [`— 2 Corinthians 3:17`]
+  },
+  image: "open_skies_freedom_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '132
+{
+  quote: {
+    sv: [`“Därför tappar vi inte modet. Även om vår yttre människa bryts ner, förnyas vår inre människa dag för dag. Vår kortvariga och lätta nöd ger oss en oändligt rik härlighet som väger oändligt mycket mer. Vi riktar inte blicken mot det synliga utan mot det osynliga. Det synliga är förgängligt, men det osynliga är evigt.”`],
+    en: [`“Therefore we do not lose heart. Though outwardly we are wasting away, yet inwardly we are being renewed day by day. For our light and momentary troubles are achieving for us an eternal glory that far outweighs them all. So we fix our eyes not on what is seen, but on what is unseen, since what is seen is temporary, but what is unseen is eternal.”`]
+  },
+  author: {
+    sv: [`— 2 Korinthierbrevet 4:16-18`],
+    en: [`— 2 Corinthians 4:16-18`]
+  },
+  image: "eternal_light_mountains_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '133
+{
+  quote: {
+    sv: [`“Allt detta har sitt upphov i Gud, som har försonat oss med sig genom Kristus och ställt oss i försoningens tjänst.”`],
+    en: [`“All this is from God, who reconciled us to himself through Christ and gave us the ministry of reconciliation.”`]
+  },
+  author: {
+    sv: [`— 2 Korinthierbrevet 5:18`],
+    en: [`— 2 Corinthians 5:18`]
+  },
+  image: "bridge_over_river_peace_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '134
+{
+  quote: {
+    sv: [`“Vi lever i tro, utan att se.”`],
+    en: [`“For we live by faith, not by sight.”`]
+  },
+  author: {
+    sv: [`— 2 Korinthierbrevet 5:7`],
+    en: [`— 2 Corinthians 5:7`]
+  },
+  image: "misty_path_faith_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '135
+{
+  quote: {
+    sv: [`“Jaebes bad till Israels Gud: ’Välsigna mig och utvidga mitt område! Var med mig och bevara mig från olycka och smärta!’ Och Gud gav honom vad han begärde.”`],
+    en: [`“Jabez cried out to the God of Israel, ‘Oh, that you would bless me and enlarge my territory! Let your hand be with me, and keep me from harm so that I will be free from pain.’ And God granted his request.”`]
+  },
+  author: {
+    sv: [`— 1 Krönikerboken 4:10`],
+    en: [`— 1 Chronicles 4:10`]
+  },
+  image: "wide_landscape_blessing_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '136
+{
+  quote: {
+    sv: [`“Och Gud såg på allt som han hade gjort, och se, det var mycket gott.”`],
+    en: [`“God saw all that he had made, and it was very good.”`]
+  },
+  author: {
+    sv: [`— 1 Mosebok 1:31`],
+    en: [`— Genesis 1:31`]
+  },
+  image: "creation_landscape_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '137
+{
+  quote: {
+    sv: [`“Finns något för svårt för Herren? Vid den bestämda tiden ska jag komma tillbaka till dig, och då ska Sara ha en son.”`],
+    en: [`“Is anything too hard for the Lord? I will return to you at the appointed time next year, and Sarah will have a son.”`]
+  },
+  author: {
+    sv: [`— 1 Mosebok 18:14`],
+    en: [`— Genesis 18:14`]
+  },
+  image: "desert_sky_promise_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '138
+{
+  quote: {
+    sv: [`“Och se, jag är med dig och skall bevara dig, varthelst du går, och jag skall föra dig tillbaka till detta land; ty jag skall icke övergiva dig, till dess jag har gjort vad jag har lovat dig.”`],
+    en: [`“I am with you and will watch over you wherever you go, and I will bring you back to this land. I will not leave you until I have done what I have promised you.”`]
+  },
+  author: {
+    sv: [`— 1 Mosebok 28:15`],
+    en: [`— Genesis 28:15`]
+  },
+  image: "journey_home_path_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '139
+{
+  quote: {
+    sv: [`“Du skall inga andra gudar hava jämte mig.”`],
+    en: [`“You shall have no other gods before me.”`]
+  },
+  author: {
+    sv: [`— 2 Mosebok 20:3`],
+    en: [`— Exodus 20:3`]
+  },
+  image: "mountain_commandments_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '140
+{
+  quote: {
+    sv: [`“Tänk på sabbatsdagen, så att du helgar den.”`],
+    en: [`“Remember the Sabbath day by keeping it holy.”`]
+  },
+  author: {
+    sv: [`— 2 Mosebok 20:8`],
+    en: [`— Exodus 20:8`]
+  },
+  image: "sabbath_rest_peace_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '141
+{
+  quote: {
+    sv: [`“Jag har gett honom förmåga att utföra allt slags arbete, och jag har lagt vishet i hjärtat på alla som är skickliga, så att de kan göra allt jag har befallt dig.”`],
+    en: [`“I have given him skill to do all kinds of work, and I have put wisdom in the hearts of all the skilled workers so they may make everything I have commanded you.”`]
+  },
+  author: {
+    sv: [`— 2 Mosebok 31:6`],
+    en: [`— Exodus 31:6`]
+  },
+  image: "hands_of_craftsmanship_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '142
+{
+  quote: {
+    sv: [`“HERREN välsigne dig och bevare dig. HERREN låte sitt ansikte lysa över dig och vare dig nådig. HERREN vände sitt ansikte till dig och give dig frid.”`],
+    en: [`“The Lord bless you and keep you; the Lord make his face shine on you and be gracious to you; the Lord turn his face toward you and give you peace.”`]
+  },
+  author: {
+    sv: [`— 4 Mosebok 6:24-26`],
+    en: [`— Numbers 6:24-26`]
+  },
+  image: "peaceful_light_blessing_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '143
+{
+  quote: {
+    sv: [`“Dessa ord som jag i dag ger dig befallning om, skall du lägga på hjärtat. Du skall inskärpa dem hos dina barn och tala om dem när du sitter i ditt hus och när du går på vägen, när du lägger dig och när du stiger upp.”`],
+    en: [`“These commandments that I give you today are to be on your hearts. Impress them on your children. Talk about them when you sit at home and when you walk along the road, when you lie down and when you get up.”`]
+  },
+  author: {
+    sv: [`— 5 Mosebok 6:6-7`],
+    en: [`— Deuteronomy 6:6-7`]
+  },
+  image: "family_walk_path_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '144
+{
+  quote: {
+    sv: [`“Var stark och frimodig! Var inte rädd eller förskräckt, för Herren din Gud går själv med dig. Han ska inte lämna dig eller överge dig.”`],
+    en: [`“Be strong and courageous. Do not be afraid or terrified because of them, for the Lord your God goes with you; he will never leave you nor forsake you.”`]
+  },
+  author: {
+    sv: [`— 5 Mosebok 31:6`],
+    en: [`— Deuteronomy 31:6`]
+  },
+  image: "mountain_strength_sunrise_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '145
+{
+  quote: {
+    sv: [`“Men ni är ett utvalt släkte, ett konungsligt prästerskap, ett heligt folk, ett Guds eget folk, för att ni skall förkunna hans härliga gärningar, han som har kallat er från mörkret till sitt underbara ljus.”`],
+    en: [`“But you are a chosen people, a royal priesthood, a holy nation, God’s special possession, that you may declare the praises of him who called you out of darkness into his wonderful light.”`]
+  },
+  author: {
+    sv: [`— 1 Petrusbrevet 2:9`],
+    en: [`— 1 Peter 2:9`]
+  },
+  image: "light_through_darkness_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '146
+{
+  quote: {
+    sv: [`“Jag ser det som min plikt att hålla er vakna med mina påminnelser så länge jag bor i detta kroppens tält.”`],
+    en: [`“I think it is right to refresh your memory as long as I live in the tent of this body.”`]
+  },
+  author: {
+    sv: [`— 2 Petrusbrevet 1:13`],
+    en: [`— 2 Peter 1:13`]
+  },
+  image: "tent_in_wilderness_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '147
+{
+  quote: {
+    sv: [`“Herren, min Gud! Du är Gud, och dina ord är sanning. Du har lovat mig dessa goda ting. Välsigna nu din tjänares hus, så att det består inför dig för evigt.”`],
+    en: [`“Sovereign Lord, you are God! Your covenant is trustworthy, and you have promised these good things to your servant. Now bless the house of your servant, that it may continue forever in your sight.”`]
+  },
+  author: {
+    sv: [`— 2 Samuelsboken 7:28-29`],
+    en: [`— 2 Samuel 7:28-29`]
+  },
+  image: "home_blessing_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '148
+{
+  quote: {
+    sv: [`“I min nöd åkallade jag Herren, jag ropade till min Gud. Från sitt tempel hörde han min röst, mitt rop nådde hans öron.”`],
+    en: [`“In my distress I called to the Lord; I called out to my God. From his temple he heard my voice; my cry came to his ears.”`]
+  },
+  author: {
+    sv: [`— 2 Samuelsboken 22:7`],
+    en: [`— 2 Samuel 22:7`]
+  },
+  image: "cry_to_heaven_temple_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '149
+{
+  quote: {
+    sv: [`“Gör allt du kan för att bestå provet inför Gud, som en arbetare som inte behöver skämmas utan rätt delar sanningens ord.”`],
+    en: [`“Do your best to present yourself to God as one approved, a worker who does not need to be ashamed and who correctly handles the word of truth.”`]
+  },
+  author: {
+    sv: [`— 2 Timotheusbrevet 2:15`],
+    en: [`— 2 Timothy 2:15`]
+  },
+  image: "study_scripture_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '150
+{
+  quote: {
+    sv: [`“Må Kristus bo i era hjärtan genom tron, och må ni stå fasta i kärlekens rot och grund. Då ska ni tillsammans med alla de heliga kunna fatta bredden och längden och höjden och djupet, och lära känna Kristi kärlek som går långt utöver all kunskap. Så ska ni bli helt uppfyllda av Guds fullhet.”`],
+    en: [`“So that Christ may dwell in your hearts through faith. And I pray that you, being rooted and established in love, may have power, together with all the Lord’s holy people, to grasp how wide and long and high and deep is the love of Christ.”`]
+  },
+  author: {
+    sv: [`— Efesierbrevet 3:17-19`],
+    en: [`— Ephesians 3:17-19`]
+  },
+  image: "heart_roots_love_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '151
+{
+  quote: {
+    sv: [`“Han som har börjat ett gott verk i er ska också fullborda det till Kristi Jesu dag.”`],
+    en: [`“He who began a good work in you will carry it on to completion until the day of Christ Jesus.”`]
+  },
+  author: {
+    sv: [`— Filipperbrevet 1:6`],
+    en: [`— Philippians 1:6`]
+  },
+  image: "sunrise_new_beginning_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '152
+{
+  quote: {
+    sv: [`“Låt det sinnelag råda hos er som också fanns hos Kristus Jesus.”`],
+    en: [`“Let this mind be in you which was also in Christ Jesus.”`]
+  },
+  author: {
+    sv: [`— Filipperbrevet 2:5`],
+    en: [`— Philippians 2:5`]
+  },
+  image: "humble_spirit_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '153
+{
+  quote: {
+    sv: [`“Arbeta med fruktan och bävan på er frälsning, inte bara som när jag var hos er utan ännu mer nu när jag är långt borta. Ty det är Gud som verkar i er så att ni både i vilja och gärning förverkligar hans syfte. Gör allting utan knot och utan förbehåll.”`],
+    en: [`“Continue to work out your salvation with fear and trembling, not only in my presence but much more in my absence. For it is God who works in you to will and to act in order to fulfill his good purpose. Do everything without grumbling or arguing.”`]
+  },
+  author: {
+    sv: [`— Filipperbrevet 2:12-14`],
+    en: [`— Philippians 2:12-14`]
+  },
+  image: "stars_in_darkness_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '154
+{
+  quote: {
+    sv: [`“Men allt det som var en vinst för mig räknar jag nu som förlust för Kristi skull. Jag räknar allt som förlust jämfört med det överlägsna i att känna Kristus Jesus, min Herre.”`],
+    en: [`“But whatever were gains to me I now consider loss for the sake of Christ. I consider everything a loss because of the surpassing worth of knowing Christ Jesus my Lord.”`]
+  },
+  author: {
+    sv: [`— Filipperbrevet 3:7-8`],
+    en: [`— Philippians 3:7-8`]
+  },
+  image: "treasure_in_field_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '155
+{
+  quote: {
+    sv: [`“Jag glömmer det som ligger bakom och sträcker mig mot det som ligger framför. Jag jagar mot målet för att vinna segerpriset, den himmelska kallelsen från Gud i Kristus Jesus.”`],
+    en: [`“Forgetting what is behind and straining toward what is ahead, I press on toward the goal to win the prize for which God has called me heavenward in Christ Jesus.”`]
+  },
+  author: {
+    sv: [`— Filipperbrevet 3:13-14`],
+    en: [`— Philippians 3:13-14`]
+  },
+  image: "runner_toward_sun_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '156
+{
+  quote: {
+    sv: [`“Alla ni som tror på Jesus Kristus och lever i gemenskap med honom är Guds barn. Om ni är döpta in i gemenskapen med Kristus, har ni ju blivit lika Kristus själv.”`],
+    en: [`“So in Christ Jesus you are all children of God through faith, for all of you who were baptized into Christ have clothed yourselves with Christ.”`]
+  },
+  author: {
+    sv: [`— Galaterbrevet 3:26-27`],
+    en: [`— Galatians 3:26-27`]
+  },
+  image: "baptism_water_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '157
+{
+  quote: {
+    sv: [`“Du är inte längre slav utan son, och är du son är du också arvinge, insatt av Gud.”`],
+    en: [`“So you are no longer a slave, but God’s child; and since you are his child, God has made you also an heir.”`]
+  },
+  author: {
+    sv: [`— Galaterbrevet 4:7`],
+    en: [`— Galatians 4:7`]
+  },
+  image: "sunrise_inheritance_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '158
+{
+  quote: {
+    sv: [`“Bröder, vi har alltså genom Jesu blod frimodighet att gå in i det allra heligaste på den nya och levande väg som han har öppnat för oss genom förhänget, det vill säga sin kropp. Vi har en stor överstepräst över Guds hus. Låt oss därför träda fram med uppriktigt hjärta i full trosvisshet, med hjärtan renade från ont samvete och kroppar tvättade i rent vatten. Låt oss orubbligt hålla fast vid hoppets bekännelse, för han som har gett oss löftet är trofast.”`],
+    en: [`“Therefore, brothers and sisters, since we have confidence to enter the Most Holy Place by the blood of Jesus, by a new and living way opened for us through the curtain, that is, his body, and since we have a great priest over the house of God, let us draw near to God with a sincere heart and with the full assurance that faith brings, having our hearts sprinkled to cleanse us from a guilty conscience and our bodies washed with pure water. Let us hold unswervingly to the hope we profess, for he who promised is faithful.”`]
+  },
+  author: {
+    sv: [`— Hebreerbrevet 10:19-23`],
+    en: [`— Hebrews 10:19-23`]
+  },
+  image: "holy_place_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '159
+{
+  quote: {
+    sv: [`“Låt oss ge akt på varandra och sporra varandra till kärlek och goda gärningar. Och låt oss inte överge våra sammankomster, så som några brukar göra, utan i stället uppmuntra varandra, och det så mycket mer som ni ser att dagen närmar sig.”`],
+    en: [`“Let us consider how we may spur one another on toward love and good deeds, not giving up meeting together, as some are in the habit of doing, but encouraging one another—and all the more as you see the Day approaching.”`]
+  },
+  author: {
+    sv: [`— Hebreerbrevet 10:24-25`],
+    en: [`— Hebrews 10:24-25`]
+  },
+  image: "community_gathering_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '160
+{
+  quote: {
+    sv: [`“Utan tro är det omöjligt att behaga Gud. Den som vill komma till honom måste tro att han finns och att han belönar dem som söker honom.”`],
+    en: [`“And without faith it is impossible to please God, because anyone who comes to him must believe that he exists and that he rewards those who earnestly seek him.”`]
+  },
+  author: {
+    sv: [`— Hebreerbrevet 11:6`],
+    en: [`— Hebrews 11:6`]
+  },
+  image: "faith_reward_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '161
+{
+  quote: {
+    sv: [`“Låt oss därför, omgivna av en sådan sky av vittnen, lägga bort allt som tynger och särskilt synden som snärjer oss så hårt, och löpa uthålligt i det lopp vi har framför oss. Låt oss ha blicken fäst vid Jesus, trons upphovsman och fullkomnare.”`],
+    en: [`“Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off everything that hinders and the sin that so easily entangles. And let us run with perseverance the race marked out for us, fixing our eyes on Jesus, the pioneer and perfecter of faith.”`]
+  },
+  author: {
+    sv: [`— Hebreerbrevet 12:1-2`],
+    en: [`— Hebrews 12:1-2`]
+  },
+  image: "race_perseverance_clouds_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '162
+{
+  quote: {
+    sv: [`“Ödmjuka er inför Herren, så ska han upphöja er.”`],
+    en: [`“Humble yourselves before the Lord, and he will lift you up.”`]
+  },
+  author: {
+    sv: [`— Jakobsbrevet 4:10`],
+    en: [`— James 4:10`]
+  },
+  image: "humble_light_rise_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '163
+{
+  quote: {
+    sv: [`“Ni vet inte hur ert liv blir i morgon. Ni är en dimma som syns en kort stund och sedan försvinner. Ni borde säga: ’Om Herren vill får vi leva och göra det eller det.’”`],
+    en: [`“You do not even know what will happen tomorrow. What is your life? You are a mist that appears for a little while and then vanishes. Instead, you ought to say, ‘If it is the Lord’s will, we will live and do this or that.’”`]
+  },
+  author: {
+    sv: [`— Jakobsbrevet 4:14-15`],
+    en: [`— James 4:14-15`]
+  },
+  image: "morning_mist_valley_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '164
+{
+  quote: {
+    sv: [`“Trons bön ska rädda den sjuke, och Herren ska resa honom upp. Har han syndat, ska han få förlåtelse. Bekänn därför era synder för varandra och be för varandra, så att ni blir botade. En rättfärdig människas bön är verksam och har kraft.”`],
+    en: [`“The prayer offered in faith will make the sick person well; the Lord will raise them up. If they have sinned, they will be forgiven. Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous person is powerful and effective.”`]
+  },
+  author: {
+    sv: [`— Jakobsbrevet 5:15-16`],
+    en: [`— James 5:15-16`]
+  },
+  image: "healing_prayer_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '165
+{
+  quote: {
+    sv: [`“Välsignad är den man som litar till Herren, som litar helt till Herren.”`],
+    en: [`“Blessed is the one who trusts in the Lord, whose confidence is in him.”`]
+  },
+  author: {
+    sv: [`— Jeremia 17:7`],
+    en: [`— Jeremiah 17:7`]
+  },
+  image: "tree_by_water_trust_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '166
+{
+  quote: {
+    sv: [`“Som leran i krukmakarens hand, så är ni i min hand.”`],
+    en: [`“Like clay in the hand of the potter, so are you in my hand.”`]
+  },
+  author: {
+    sv: [`— Jeremia 18:6`],
+    en: [`— Jeremiah 18:6`]
+  },
+  image: "potter_hands_clay_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '167
+{
+  quote: {
+    sv: [`“Ni ska kalla på mig och komma och be till mig, och jag ska lyssna på er.”`],
+    en: [`“Then you will call on me and come and pray to me, and I will listen to you.”`]
+  },
+  author: {
+    sv: [`— Jeremia 29:12`],
+    en: [`— Jeremiah 29:12`]
+  },
+  image: "prayer_connection_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '168
+{
+  quote: {
+    sv: [`“Jag skall ge dig hälsa och läka dina sår, säger Herren, ty de har kallat dig ’den fördrivna’, ’Sion som ingen frågar efter’.”`],
+    en: [`“But I will restore you to health and heal your wounds,’ declares the Lord, ‘because you are called an outcast, Zion for whom no one cares.”`]
+  },
+  author: {
+    sv: [`— Jeremia 30:17`],
+    en: [`— Jeremiah 30:17`]
+  },
+  image: "healing_sky_restoration_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '169
+{
+  quote: {
+    sv: [`“Med evig kärlek har jag älskat dig, därför har jag dragit dig till mig i trofasthet.”`],
+    en: [`“I have loved you with an everlasting love; I have drawn you with unfailing kindness.”`]
+  },
+  author: {
+    sv: [`— Jeremia 31:3`],
+    en: [`— Jeremiah 31:3`]
+  },
+  image: "eternal_love_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '170
+{
+  quote: {
+    sv: [`“Kom, låt oss gå till rätta med varandra, säger Herren. Om era synder än är blodröda, skall de bli snövita, om de än är röda som scharlakan, skall de bli vita som ull.”`],
+    en: [`“Come now, let us settle the matter,” says the Lord. “Though your sins are like scarlet, they shall be as white as snow; though they are red as crimson, they shall be like wool.”`]
+  },
+  author: {
+    sv: [`— Jesaja 1:18`],
+    en: [`— Isaiah 1:18`]
+  },
+  image: "snow_white_redemption_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '171
+{
+  quote: {
+    sv: [`“Gud är min frälsning, jag är trygg och utan fruktan. Herren är min styrka och min lovsång, han blev min frälsning.”`],
+    en: [`“Surely God is my salvation; I will trust and not be afraid. The Lord, the Lord himself, is my strength and my defense; he has become my salvation.”`]
+  },
+  author: {
+    sv: [`— Jesaja 12:2`],
+    en: [`— Isaiah 12:2`]
+  },
+  image: "strength_safety_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '172
+{
+  quote: {
+    sv: [`“Den som är ståndaktig i sitt sinne bevarar du i frid, ty han förtröstar på dig.”`],
+    en: [`“You will keep in perfect peace those whose minds are steadfast, because they trust in you.”`]
+  },
+  author: {
+    sv: [`— Jesaja 26:3`],
+    en: [`— Isaiah 26:3`]
+  },
+  image: "peaceful_mind_trust_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '173
+{
+  quote: {
+    sv: [`“I kommande dagar ska Jakob slå rot, Israel grönska och blomstra. De ska fylla hela världen med frukt.”`],
+    en: [`“In days to come Jacob will take root, Israel will bud and blossom and fill all the world with fruit.”`]
+  },
+  author: {
+    sv: [`— Jesaja 27:6`],
+    en: [`— Isaiah 27:6`]
+  },
+  image: "blossoming_tree_fruit_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '174
+{
+  quote: {
+    sv: [`“Mitt folk ska bo i fridens boning, i trygga hem och i säkra viloplatser.”`],
+    en: [`“My people will live in peaceful dwelling places, in secure homes, in undisturbed places of rest.”`]
+  },
+  author: {
+    sv: [`— Jesaja 32:18`],
+    en: [`— Isaiah 32:18`]
+  },
+  image: "peaceful_home_sunset_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '175
+{
+  quote: {
+    sv: [`“Ty jag är Herren, din Gud, som håller dig vid din högra hand och säger till dig: Frukta inte, jag hjälper dig.”`],
+    en: [`“For I am the Lord your God who takes hold of your right hand and says to you, Do not fear; I will help you.”`]
+  },
+  author: {
+    sv: [`— Jesaja 41:13`],
+    en: [`— Isaiah 41:13`]
+  },
+  image: "hand_in_hand_help_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '176
+{
+  quote: {
+    sv: [`“Jag ska föra de blinda på en väg som de inte känner, och leda dem på stigar de inte känner till. Jag ska göra mörker till ljus inför dem och krokiga vägar raka. Detta ska jag göra och inte överge dem.”`],
+    en: [`“I will lead the blind by ways they have not known, along unfamiliar paths I will guide them; I will turn the darkness into light before them and make the rough places smooth. These are the things I will do; I will not forsake them.”`]
+  },
+  author: {
+    sv: [`— Jesaja 42:16`],
+    en: [`— Isaiah 42:16`]
+  },
+  image: "light_in_dark_path_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '177
+{
+  quote: {
+    sv: [`“När du går genom vatten är jag med dig, genom strömmar ska de inte dränka dig. När du går genom eld ska du inte bli bränd, lågan ska inte skada dig.”`],
+    en: [`“When you pass through the waters, I will be with you; and when you pass through the rivers, they will not sweep over you. When you walk through the fire, you will not be burned; the flames will not set you ablaze.”`]
+  },
+  author: {
+    sv: [`— Jesaja 43:2`],
+    en: [`— Isaiah 43:2`]
+  },
+  image: "fire_and_water_protection_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '178
+{
+  quote: {
+    sv: [`“Frukta inte, var inte förskräckta. Har jag inte låtit er höra det och förkunnat det för länge sedan? Ni är mina vittnen. Finns det någon annan Gud än jag? Nej, det finns ingen annan klippa, jag vet ingen.”`],
+    en: [`“Do not tremble, do not be afraid. Did I not proclaim this and foretell it long ago? You are my witnesses. Is there any God besides me? No, there is no other Rock; I know not one.”`]
+  },
+  author: {
+    sv: [`— Jesaja 44:8`],
+    en: [`— Isaiah 44:8`]
+  },
+  image: "rock_of_refuge_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '179
+{
+  quote: {
+    sv: [`“Om än bergen viker bort och höjderna vacklar, ska min nåd inte vika från dig och mitt fredsförbund inte rubbas, säger Herren, din förbarmare.”`],
+    en: [`“Though the mountains be shaken and the hills be removed, yet my unfailing love for you will not be shaken nor my covenant of peace be removed,” says the Lord, who has compassion on you.”`]
+  },
+  author: {
+    sv: [`— Jesaja 54:10`],
+    en: [`— Isaiah 54:10`]
+  },
+  image: "mountains_unshaken_love_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '180
+{
+  quote: {
+    sv: [`“Kom, alla ni som törstar, kom hit och få vatten! Kom, även om ni inte har pengar! Köp säd och ät. Kom och köp säd utan pengar, vin och mjölk utan att betala.”`],
+    en: [`“Come, all you who are thirsty, come to the waters; and you who have no money, come, buy and eat! Come, buy wine and milk without money and without cost.”`]
+  },
+  author: {
+    sv: [`— Jesaja 55:1`],
+    en: [`— Isaiah 55:1`]
+  },
+  image: "living_water_invitation_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '181
+{
+  quote: {
+    sv: [`“Sök Herren medan han låter sig finnas, åkalla honom medan han är nära.”`],
+    en: [`“Seek the Lord while he may be found; call on him while he is near.”`]
+  },
+  author: {
+    sv: [`— Jesaja 55:6`],
+    en: [`— Isaiah 55:6`]
+  },
+  image: "sunrise_seek_god_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '182
+{
+  quote: {
+    sv: [`“När du ropar ska Herren svara. När du ropar: ’Här är jag!’ ska han säga: ’Jag är här.’”`],
+    en: [`“Then you will call, and the Lord will answer; you will cry for help, and he will say: ‘Here am I.’”`]
+  },
+  author: {
+    sv: [`— Jesaja 58:9`],
+    en: [`— Isaiah 58:9`]
+  },
+  image: "call_and_answer_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '183
+{
+  quote: {
+    sv: [`“Herrens arm är inte för svag för att rädda, hans öra inte för dövt för att höra.”`],
+    en: [`“Surely the arm of the Lord is not too short to save, nor his ear too dull to hear.”`]
+  },
+  author: {
+    sv: [`— Jesaja 59:1`],
+    en: [`— Isaiah 59:1`]
+  },
+  image: "mighty_arm_rescue_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '184
+{
+  quote: {
+    sv: [`“Innan de ropar ska jag svara, medan de ännu talar ska jag höra.”`],
+    en: [`“Before they call I will answer; while they are still speaking I will hear.”`]
+  },
+  author: {
+    sv: [`— Jesaja 65:24`],
+    en: [`— Isaiah 65:24`]
+  },
+  image: "divine_response_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '185
+{
+  quote: {
+    sv: [`“Allt vad du beslutar skall gå dig väl, och ljus skall skina på dina vägar.”`],
+    en: [`“What you decide on will be done, and light will shine on your ways.”`]
+  },
+  author: {
+    sv: [`— Job 22:28`],
+    en: [`— Job 22:28`]
+  },
+  image: "path_of_light_decision_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '186
+{
+  quote: {
+    sv: [`“Jesus sade: ’Jag är uppståndelsen och livet. Den som tror på mig ska leva om han än dör, och den som lever och tror på mig ska aldrig någonsin dö. Tror du detta?’”`],
+    en: [`“Jesus said, ‘I am the resurrection and the life. The one who believes in me will live, even though they die; and whoever lives by believing in me will never die. Do you believe this?’”`]
+  },
+  author: {
+    sv: [`— Johannesevangeliet 11:25-26`],
+    en: [`— John 11:25-26`]
+  },
+  image: "resurrection_life_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '187
+{
+  quote: {
+    sv: [`“Jesus grät.”`],
+    en: [`“Jesus wept.”`]
+  },
+  author: {
+    sv: [`— Johannesevangeliet 11:35`],
+    en: [`— John 11:35`]
+  },
+  image: "tears_of_compassion_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '188
+{
+  quote: {
+    sv: [`“Och vad ni än ber om i mitt namn skall jag göra, så att Fadern blir förhärligad genom Sonen. Om ni ber om något i mitt namn skall jag göra det.”`],
+    en: [`“And I will do whatever you ask in my name, so that the Father may be glorified in the Son. You may ask me for anything in my name, and I will do it.”`]
+  },
+  author: {
+    sv: [`— Johannesevangeliet 14:13-14`],
+    en: [`— John 14:13-14`]
+  },
+  image: "prayer_in_name_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '189
+{
+  quote: {
+    sv: [`“Men Hjälparen, den heliga anden som Fadern skall sända i mitt namn, han skall lära er allt och påminna er om allt som jag har sagt er. Frid lämnar jag kvar åt er, min frid ger jag er. Jag ger er inte det som världen ger.”`],
+    en: [`“But the Advocate, the Holy Spirit, whom the Father will send in my name, will teach you all things and will remind you of everything I have said to you. Peace I leave with you; my peace I give you. I do not give to you as the world gives.”`]
+  },
+  author: {
+    sv: [`— Johannesevangeliet 14:26-27`],
+    en: [`— John 14:26-27`]
+  },
+  image: "holy_spirit_peace_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '190
+{
+  quote: {
+    sv: [`“Men när han kommer, sanningens Ande, skall han vägleda er med hela sanningen. Han skall inte tala av sig själv, utan bara säga det han hör, och han skall förkunna för er vad som kommer.”`],
+    en: [`“But when he, the Spirit of truth, comes, he will guide you into all the truth. He will not speak on his own; he will speak only what he hears, and he will tell you what is yet to come.”`]
+  },
+  author: {
+    sv: [`— Johannesevangeliet 16:13`],
+    en: [`— John 16:13`]
+  },
+  image: "spirit_of_truth_path_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '191
+{
+  quote: {
+    sv: [`“Detta har jag sagt er för att ni skall ha frid i mig. I världen får ni lida, men var vid gott mod: jag har övervunnit världen.”`],
+    en: [`“I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world.”`]
+  },
+  author: {
+    sv: [`— Johannesevangeliet 16:33`],
+    en: [`— John 16:33`]
+  },
+  image: "overcome_world_peace_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '192
+{
+  quote: {
+    sv: [`“Han sade till honom för tredje gången: ’Simon, Johannes son, älskar du mig?’ Petrus blev bedrövad över att Jesus för tredje gången frågade: ’Älskar du mig?’ och han svarade: ’Herre, du vet allt. Du vet att jag har dig kär.’ Jesus sade: ’För mina får på bete.’”`],
+    en: [`“The third time he said to him, ‘Simon son of John, do you love me?’ Peter was hurt because Jesus asked him the third time, ‘Do you love me?’ He said, ‘Lord, you know all things; you know that I love you.’ Jesus said, ‘Feed my sheep.’”`]
+  },
+  author: {
+    sv: [`— Johannesevangeliet 21:17`],
+    en: [`— John 21:17`]
+  },
+  image: "shepherd_love_restoration_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '193
+{
+  quote: {
+    sv: [`“Ingen skall kunna stå dig emot i alla dina livsdagar. Såsom jag har varit med Mose, så skall jag ock vara med dig; jag skall icke lämna dig eller övergiva dig.”`],
+    en: [`“No one will be able to stand against you all the days of your life. As I was with Moses, so I will be with you; I will never leave you nor forsake you.”`]
+  },
+  author: {
+    sv: [`— Josua 1:5`],
+    en: [`— Joshua 1:5`]
+  },
+  image: "god_with_you_strength_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '194
+{
+  quote: {
+    sv: [`“Var tapper och stark! Följ troget den lag som min tjänare Mose gav dig. Vik inte av från den åt vare sig höger eller vänster, så får du framgång i allt vad du gör.”`],
+    en: [`“Be strong and very courageous. Be careful to obey all the law my servant Moses gave you; do not turn from it to the right or to the left, that you may be successful wherever you go.”`]
+  },
+  author: {
+    sv: [`— Josua 1:7`],
+    en: [`— Joshua 1:7`]
+  },
+  image: "courageous_path_success_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '195
+{
+  quote: {
+    sv: [`“Av allt det goda som Herren hade lovat Israels folk gick inte ett enda löfte om intet. Allt gick i uppfyllelse.”`],
+    en: [`“Not one of all the Lord’s good promises to Israel failed; every one was fulfilled.”`]
+  },
+  author: {
+    sv: [`— Josua 21:45`],
+    en: [`— Joshua 21:45`]
+  },
+  image: "fulfilled_promises_sky_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '196
+{
+  quote: {
+    sv: [`“En enda man bland er kunde jaga tusen, ty Herren, er Gud, strider för er, så som han har lovat er.”`],
+    en: [`“One of you routs a thousand, because the Lord your God fights for you, just as he promised.”`]
+  },
+  author: {
+    sv: [`— Josua 23:10`],
+    en: [`— Joshua 23:10`]
+  },
+  image: "battle_victory_god_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '197
+{
+  quote: {
+    sv: [`“Han som kan bevara er från fall och ställa er inför sin härlighet, fläckfria och jublande — honom tillhör härlighet och majestät, styrka och makt, före all tids början, nu och i all evighet. Amen.”`],
+    en: [`“To him who is able to keep you from stumbling and to present you before his glorious presence without fault and with great joy — to the only God our Savior be glory, majesty, power and authority, through Jesus Christ our Lord, before all ages, now and forevermore! Amen.”`]
+  },
+  author: {
+    sv: [`— Judasbrevet 24–25`],
+    en: [`— Jude 24–25`]
+  },
+  image: "glory_majesty_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '198
+{
+  quote: {
+    sv: [`“Döm inte, så skall ni inte bli dömda. Fördöm inte, så skall ni inte bli fördömda. Förlåt, så skall ni få förlåtelse. Ge, så skall ni få. Ett gott mått, packat, skakat och rågat skall ni få i er famn. Ty med det mått som ni mäter med skall det mätas upp åt er.”`],
+    en: [`“Do not judge, and you will not be judged. Do not condemn, and you will not be condemned. Forgive, and you will be forgiven. Give, and it will be given to you. A good measure, pressed down, shaken together and running over, will be poured into your lap. For with the measure you use, it will be measured to you.”`]
+  },
+  author: {
+    sv: [`— Lukasevangeliet 6:37–38`],
+    en: [`— Luke 6:37–38`]
+  },
+  image: "grace_and_measure_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '199
+{
+  quote: {
+    sv: [`“En gång var Jesus på en plats där han bad. När han slutade sade en av hans lärjungar till honom: ’Herre, lär oss att be, liksom Johannes lärde sina lärjungar.’”`],
+    en: [`“One day Jesus was praying in a certain place. When he finished, one of his disciples said to him, ‘Lord, teach us to pray, just as John taught his disciples.’”`]
+  },
+  author: {
+    sv: [`— Lukasevangeliet 11:1`],
+    en: [`— Luke 11:1`]
+  },
+  image: "teach_us_to_pray_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '200
+{
+  quote: {
+    sv: [`“Förlåt oss våra synder, ty också vi förlåter var och en som står i skuld till oss. Och för oss inte in i frestelse.”`],
+    en: [`“Forgive us our sins, for we also forgive everyone who sins against us. And lead us not into temptation.”`]
+  },
+  author: {
+    sv: [`— Lukasevangeliet 11:4`],
+    en: [`— Luke 11:4`]
+  },
+  image: "forgiveness_prayer_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '201
+{
+  quote: {
+    sv: [`“Jag säger er: På samma sätt blir det glädje i himlen över en enda syndare som omvänder sig, mer än över nittionio rättfärdiga som inte behöver omvända sig.”`],
+    en: [`“I tell you that in the same way there will be more rejoicing in heaven over one sinner who repents than over ninety-nine righteous persons who do not need to repent.”`]
+  },
+  author: {
+    sv: [`— Lukasevangeliet 15:7`],
+    en: [`— Luke 15:7`]
+  },
+  image: "heavenly_rejoicing_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '202
+{
+  quote: {
+    sv: [`“Mitt barn, du är alltid hos mig, och allt mitt är ditt. Men nu måste vi hålla fest och vara glada, för din bror var död och har fått liv igen, han var förlorad och är återfunnen.”`],
+    en: [`“My son, you are always with me, and everything I have is yours. But we had to celebrate and be glad, because this brother of yours was dead and is alive again; he was lost and is found.”`]
+  },
+  author: {
+    sv: [`— Lukasevangeliet 15:31–32`],
+    en: [`— Luke 15:31–32`]
+  },
+  image: "lost_found_celebration_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '203
+{
+  quote: {
+    sv: [`“Den som är trogen i det lilla är också trogen i det stora, och den som är ohederlig i det lilla är också ohederlig i det stora.”`],
+    en: [`“Whoever can be trusted with very little can also be trusted with much, and whoever is dishonest with very little will also be dishonest with much.”`]
+  },
+  author: {
+    sv: [`— Lukasevangeliet 16:10`],
+    en: [`— Luke 16:10`]
+  },
+  image: "faithful_steward_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '204
+{
+  quote: {
+    sv: [`“Guds rike kommer inte så att man kan se det med ögonen. Inte heller ska man kunna säga: ’Här är det’ eller ’Där är det’. Nej, Guds rike är mitt ibland er.”`],
+    en: [`“The kingdom of God is not something that can be observed, nor will people say, ‘Here it is,’ or ‘There it is,’ because the kingdom of God is in your midst.”`]
+  },
+  author: {
+    sv: [`— Lukasevangeliet 17:20–21`],
+    en: [`— Luke 17:20–21`]
+  },
+  image: "kingdom_within_peace_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '205
+{
+  quote: {
+    sv: [`“Två män gick upp till templet för att be, den ene var farisé och den andre tullindrivare. Farisén stod och bad för sig själv: ’Jag tackar dig, Gud, för att jag inte är som andra människor – tjuvar, bedragare, äktenskapsbrytare – eller som den där tullindrivaren.’ Men tullindrivaren stod långt borta och ville inte ens lyfta blicken mot himlen, utan slog sig för bröstet och sade: ’Gud, var nådig mot mig, en syndare.’”`],
+    en: [`“Two men went up to the temple to pray, one a Pharisee and the other a tax collector. The Pharisee stood by himself and prayed: ‘God, I thank you that I am not like other people—robbers, evildoers, adulterers—or even like this tax collector.’ But the tax collector stood at a distance. He would not even look up to heaven, but beat his breast and said, ‘God, have mercy on me, a sinner.’”`]
+  },
+  author: {
+    sv: [`— Lukasevangeliet 18:10–13`],
+    en: [`— Luke 18:10–13`]
+  },
+  image: "humble_prayer_temple_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '206
+{
+  quote: {
+    sv: [`“När han närmade sig sluttningen av Olivberget började hela skaran av lärjungar i sin glädje prisa Gud med hög röst för alla de underverk de hade sett. De sade: ’Välsignad är han som kommer, konungen, i Herrens namn! Fred i himlen och ära i höjden!’”`],
+    en: [`“When he came near the place where the road goes down the Mount of Olives, the whole crowd of disciples began joyfully to praise God in loud voices for all the miracles they had seen: ‘Blessed is the king who comes in the name of the Lord! Peace in heaven and glory in the highest!’”`]
+  },
+  author: {
+    sv: [`— Lukasevangeliet 19:37–38`],
+    en: [`— Luke 19:37–38`]
+  },
+  image: "triumphal_entry_praise_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '207
+{
+  quote: {
+    sv: [`“Jesus gick ut som vanligt till Olivberget, och lärjungarna följde honom. När han kom dit sade han till dem: ’Be att ni inte kommer i frestelse.’”`],
+    en: [`“Jesus went out as usual to the Mount of Olives, and his disciples followed him. On reaching the place, he said to them, ‘Pray that you will not fall into temptation.’”`]
+  },
+  author: {
+    sv: [`— Lukasevangeliet 22:39–40`],
+    en: [`— Luke 22:39–40`]
+  },
+  image: "garden_prayer_night_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '208
+{
+  quote: {
+    sv: [`“Vi har dömts med rätta, vi får vad vi har förtjänat. Men han har inte gjort något ont.” Och han sade: “Jesus, tänk på mig när du kommer med ditt rike.” Jesus svarade: “Sannerligen, redan i dag skall du vara med mig i paradiset.”`],
+    en: [`“We are punished justly, for we are getting what our deeds deserve. But this man has done nothing wrong.” Then he said, “Jesus, remember me when you come into your kingdom.” Jesus answered him, “Truly I tell you, today you will be with me in paradise.”`]
+  },
+  author: {
+    sv: [`— Lukasevangeliet 23:41–43`],
+    en: [`— Luke 23:41–43`]
+  },
+  image: "cross_mercy_paradise_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '209
+{
+  quote: {
+    sv: [`“Tidigt nästa morgon, medan det ännu var mörkt, gick han bort till en enslig plats, och där bad han.”`],
+    en: [`“Very early in the morning, while it was still dark, Jesus got up, left the house and went off to a solitary place, where he prayed.”`]
+  },
+  author: {
+    sv: [`— Markusevangeliet 1:35`],
+    en: [`— Mark 1:35`]
+  },
+  image: "solitary_prayer_dawn_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '210
+{
+  quote: {
+    sv: [`“Fylld av medlidande räckte Jesus ut handen, rörde vid honom och sade: ’Jag vill. Bli ren!’”`],
+    en: [`“Filled with compassion, Jesus reached out his hand and touched the man. ‘I am willing,’ he said. ‘Be clean!’”`]
+  },
+  author: {
+    sv: [`— Markusevangeliet 1:41`],
+    en: [`— Mark 1:41`]
+  },
+  image: "healing_touch_mercy_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '211
+{
+  quote: {
+    sv: [`“Jesus sade till dem: ’Ni får veta hemligheten om Guds rike, men för dem utanför sker allting i liknelser.’”`],
+    en: [`“He told them, ‘The secret of the kingdom of God has been given to you. But to those on the outside everything is said in parables.’”`]
+  },
+  author: {
+    sv: [`— Markusevangeliet 4:11`],
+    en: [`— Mark 4:11`]
+  },
+  image: "kingdom_secret_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '212
+{
+  quote: {
+    sv: [`“Han vaknade och talade strängt till vinden och sade till sjön: ’Tig! Var tyst!’ Då lade sig vinden, och det blev alldeles stilla.”`],
+    en: [`“He got up, rebuked the wind and said to the waves, ‘Quiet! Be still!’ Then the wind died down and it was completely calm.”`]
+  },
+  author: {
+    sv: [`— Markusevangeliet 4:39`],
+    en: [`— Mark 4:39`]
+  },
+  image: "storm_calm_peace_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '213
+{
+  quote: {
+    sv: [`“Men Jesus sade genast till dem: ’Var lugna, det är jag. Var inte rädda.’”`],
+    en: [`“But Jesus immediately said to them: ‘Take courage! It is I. Don’t be afraid.’”`]
+  },
+  author: {
+    sv: [`— Markusevangeliet 6:50`],
+    en: [`— Mark 6:50`]
+  },
+  image: "storm_boat_calm_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '214
+{
+  quote: {
+    sv: [`“Därför säger jag er: Allt vad ni ber om i er bön, tro att ni har fått det, så skall det bli ert.”`],
+    en: [`“Therefore I tell you, whatever you ask for in prayer, believe that you have received it, and it will be yours.”`]
+  },
+  author: {
+    sv: [`— Markusevangeliet 11:24`],
+    en: [`— Mark 11:24`]
+  },
+  image: "faith_prayer_receive_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '215
+{
+  quote: {
+    sv: [`“Men han sade till dem: ’Var inte förskräckta! Ni söker Jesus från Nasaret, den korsfäste. Han har uppstått, han är inte här. Se, här är platsen där de lade honom.’”`],
+    en: [`“Don’t be alarmed,” he said. “You are looking for Jesus the Nazarene, who was crucified. He has risen! He is not here. See the place where they laid him.”`]
+  },
+  author: {
+    sv: [`— Markusevangeliet 16:6`],
+    en: [`— Mark 16:6`]
+  },
+  image: "empty_tomb_resurrection_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '216
+{
+  quote: {
+    sv: [`“Ni är jordens salt. Men om saltet mister sin sälta, hur skall man då få det salt igen? Det duger inte till annat än att kastas bort och trampas ner av människorna.”`],
+    en: [`“You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again? It is no longer good for anything, except to be thrown out and trampled underfoot.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 5:13`],
+    en: [`— Matthew 5:13`]
+  },
+  image: "salt_of_earth_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '217
+{
+  quote: {
+    sv: [`“Ni är världens ljus. En stad som ligger på ett berg kan inte döljas.”`],
+    en: [`“You are the light of the world. A town built on a hill cannot be hidden.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 5:14`],
+    en: [`— Matthew 5:14`]
+  },
+  image: "city_on_hill_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '218
+{
+  quote: {
+    sv: [`“Så ska ni be: Vår Far i himlen, låt ditt namn bli helgat. Låt ditt rike komma. Låt din vilja ske, på jorden som i himlen. Ge oss i dag vårt dagliga bröd. Och förlåt oss våra skulder, så som vi förlåter dem som står i skuld till oss. Och för oss inte in i frestelse, utan fräls oss från det onda.”`],
+    en: [`“This, then, is how you should pray: Our Father in heaven, hallowed be your name. Your kingdom come, your will be done, on earth as it is in heaven. Give us today our daily bread. And forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us from the evil one.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 6:9–13`],
+    en: [`— Matthew 6:9–13`]
+  },
+  image: "lord_prayer_sky_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '219
+{
+  quote: {
+    sv: [`“Därför säger jag er: Bekymra er inte för ert liv, vad ni ska äta eller dricka, inte heller för er kropp, vad ni ska ha på er. Är inte livet mer än maten och kroppen mer än kläderna?”`],
+    en: [`“Therefore I tell you, do not worry about your life, what you will eat or drink; or about your body, what you will wear. Is not life more than food, and the body more than clothes?”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 6:25`],
+    en: [`— Matthew 6:25`]
+  },
+  image: "do_not_worry_lilies_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '220
+{
+  quote: {
+    sv: [`“Bekymra er alltså inte för morgondagen. Den ska själv bära sitt bekymmer. Var dag har nog av sin egen plåga.”`],
+    en: [`“Therefore do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 6:34`],
+    en: [`— Matthew 6:34`]
+  },
+  image: "sunrise_daily_grace_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '221
+{
+  quote: {
+    sv: [`“Be, så ska ni få. Sök, så ska ni finna. Bulta, så ska dörren öppnas.”`],
+    en: [`“Ask and it will be given to you; seek and you will find; knock and the door will be opened to you.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 7:7`],
+    en: [`— Matthew 7:7`]
+  },
+  image: "ask_seek_knock_door_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '222
+{
+  quote: {
+    sv: [`“Allt vad ni vill att människorna ska göra för er, det ska ni också göra för dem. Detta är lagen och profeterna.”`],
+    en: [`“So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 7:12`],
+    en: [`— Matthew 7:12`]
+  },
+  image: "golden_rule_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '223
+{
+  quote: {
+    sv: [`“Gå in genom den trånga porten. Ty den port är vid och den väg är bred som leder till fördärvet, och det är många som går in genom den. Men den port är trång och den väg är smal som leder till livet, och det är få som finner den.”`],
+    en: [`“Enter through the narrow gate. For wide is the gate and broad is the road that leads to destruction, and many enter through it. But small is the gate and narrow the road that leads to life, and only a few find it.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 7:13–14`],
+    en: [`— Matthew 7:13–14`]
+  },
+  image: "narrow_path_life_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '224
+{
+  quote: {
+    sv: [`“Den som hör dessa mina ord och handlar efter dem är som en klok man som byggde sitt hus på berggrund. Regnet öste ner, floden kom, vindarna blåste och kastade sig mot huset, men det rasade inte, eftersom det var byggt på berggrund.”`],
+    en: [`“Therefore everyone who hears these words of mine and puts them into practice is like a wise man who built his house on the rock. The rain came down, the streams rose, and the winds blew and beat against that house; yet it did not fall, because it had its foundation on the rock.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 7:24–25`],
+    en: [`— Matthew 7:24–25`]
+  },
+  image: "house_on_rock_storm_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '225
+{
+  quote: {
+    sv: [`“Säljs inte två sparvar för ett öre? Och ändå faller ingen av dem till marken utan er Faders vilja. På er är till och med alla hårstrån räknade. Var alltså inte rädda. Ni är mer värda än många sparvar.”`],
+    en: [`“Are not two sparrows sold for a penny? Yet not one of them will fall to the ground outside your Father’s care. And even the very hairs of your head are all numbered. So don’t be afraid; you are worth more than many sparrows.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 10:29–31`],
+    en: [`— Matthew 10:29–31`]
+  },
+  image: "sparrows_care_value_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '226
+{
+  quote: {
+    sv: [`“Den som hör ordet och förstår det, han bär frukt: hundrafalt, sextiofalt och trettiofalt.”`],
+    en: [`“The one who hears the word and understands it produces a crop, yielding a hundred, sixty or thirty times what was sown.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 13:23`],
+    en: [`— Matthew 13:23`]
+  },
+  image: "fruitful_field_growth_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '227
+{
+  quote: {
+    sv: [`“Himmelriket är som en skatt som ligger gömd i en åker. En man hittar den och gömmer den igen, och i sin glädje går han och säljer allt han har och köper åkern.”`],
+    en: [`“The kingdom of heaven is like treasure hidden in a field. When a man found it, he hid it again, and then in his joy went and sold all he had and bought that field.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 13:44`],
+    en: [`— Matthew 13:44`]
+  },
+  image: "hidden_treasure_field_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '228
+{
+  quote: {
+    sv: [`“Lyssna och förstå: Det är inte det som går in i munnen som gör människan oren, utan det som går ut ur munnen — det gör människan oren.”`],
+    en: [`“Listen and understand: What goes into someone’s mouth does not defile them, but what comes out of their mouth, that is what defiles them.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 15:10–11`],
+    en: [`— Matthew 15:10–11`]
+  },
+  image: "heart_and_words_purity_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '229
+{
+  quote: {
+    sv: [`“Jag är inte sänd till andra än de förlorade fåren av Israels folk.”`],
+    en: [`“I was sent only to the lost sheep of Israel.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 15:24`],
+    en: [`— Matthew 15:24`]
+  },
+  image: "lost_sheep_path_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '230
+{
+  quote: {
+    sv: [`“Om någon vill följa mig, skall han förneka sig själv och ta sitt kors och följa mig. Den som vill rädda sitt liv skall mista det, men den som mister sitt liv för min skull skall finna det.”`],
+    en: [`“Whoever wants to be my disciple must deny themselves and take up their cross and follow me. For whoever wants to save their life will lose it, but whoever loses their life for me will find it.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 16:24–25`],
+    en: [`— Matthew 16:24–25`]
+  },
+  image: "cross_discipleship_path_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '231
+{
+  quote: {
+    sv: [`“Om ni har tro som ett senapskorn, skall ni säga till detta berg: Flytta dig härifrån dit bort, och det skall flytta sig. Ingenting skall vara omöjligt för er.”`],
+    en: [`“If you have faith as small as a mustard seed, you can say to this mountain, ‘Move from here to there,’ and it will move. Nothing will be impossible for you.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 17:20`],
+    en: [`— Matthew 17:20`]
+  },
+  image: "mustard_seed_faith_mountain_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '232
+{
+  quote: {
+    sv: [`“Den som ödmjukar sig som detta barn, han är den störste i himmelriket.”`],
+    en: [`“Whoever humbles himself like this child is the greatest in the kingdom of heaven.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 18:4`],
+    en: [`— Matthew 18:4`]
+  },
+  image: "childlike_humility_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '233
+{
+  quote: {
+    sv: [`“Vad tror ni: om en man har hundra får och ett av dem kommer bort, lämnar han då inte de nittionio kvar i bergen och ger sig ut och letar efter det som är borta? Och om han lyckas hitta det, sannerligen, då gläder han sig mer över det än över de nittionio som inte har kommit bort. Så är det också er himmelske Faders vilja att ingen av dessa små skall gå förlorad.”`],
+    en: [`“What do you think? If a man owns a hundred sheep, and one of them wanders away, will he not leave the ninety-nine on the hills and go to look for the one that wandered off? And if he finds it, truly I tell you, he is happier about that one sheep than about the ninety-nine that did not wander off. In the same way your Father in heaven is not willing that any of these little ones should perish.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 18:12–14`],
+    en: [`— Matthew 18:12–14`]
+  },
+  image: "lost_sheep_found_joy_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '234
+{
+  quote: {
+    sv: [`“Vidare säger jag er: allt vad två av er kommer överens om att be om här på jorden, det skall de få av min himmelske Fader. Ty där två eller tre är samlade i mitt namn är jag mitt ibland dem.”`],
+    en: [`“Again, truly I tell you that if two of you on earth agree about anything they ask for, it will be done for them by my Father in heaven. For where two or three gather in my name, there am I with them.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 18:19–20`],
+    en: [`— Matthew 18:19–20`]
+  },
+  image: "gathered_in_prayer_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '235
+{
+  quote: {
+    sv: [`“Då kom Petrus fram till honom och sade: ’Herre, hur många gånger skall min broder kunna göra orätt mot mig och ändå få förlåtelse av mig? Så mycket som sju gånger?’ Jesus svarade: ’Jag säger dig: inte sju gånger utan sjuttiosju gånger.’”`],
+    en: [`“Then Peter came to Jesus and asked, ‘Lord, how many times shall I forgive my brother or sister who sins against me? Up to seven times?’ Jesus answered, ‘I tell you, not seven times, but seventy-seven times.’”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 18:21–22`],
+    en: [`— Matthew 18:21–22`]
+  },
+  image: "forgiveness_abundant_grace_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '236
+{
+  quote: {
+    sv: [`“En man kom fram till Jesus och frågade: ’Mästare, vad skall jag göra för att få evigt liv?’ Jesus svarade: ’Om du vill gå in i livet, håll buden.’ Mannen sade: ’Vilka?’ Jesus svarade: ’Du skall inte mörda. Du skall inte begå äktenskapsbrott. Du skall inte stjäla. Du skall inte vittna falskt. Visa aktning för din far och din mor, och älska din nästa som dig själv.’ Mannen sade: ’Allt detta har jag hållit. Vad fattas mig?’ Jesus svarade: ’Om du vill vara fullkomlig, gå och sälj allt du har och ge åt de fattiga. Då får du en skatt i himlen. Kom sedan och följ mig.’”`],
+    en: [`“A man came up to Jesus and asked, ‘Teacher, what good thing must I do to get eternal life?’ Jesus replied, ‘If you want to enter life, keep the commandments.’ ‘Which ones?’ he inquired. Jesus replied, ‘You shall not murder, you shall not commit adultery, you shall not steal, you shall not give false testimony, honor your father and mother, and love your neighbor as yourself.’ ‘All these I have kept,’ the young man said. ‘What do I still lack?’ Jesus answered, ‘If you want to be perfect, go, sell your possessions and give to the poor, and you will have treasure in heaven. Then come, follow me.’”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 19:16–21`],
+    en: [`— Matthew 19:16–21`]
+  },
+  image: "eternal_life_calling_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '237
+{
+  quote: {
+    sv: [`“Jesus såg på dem och sade: ’För människor är det omöjligt, men för Gud är allting möjligt.’”`],
+    en: [`“Jesus looked at them and said, ‘With man this is impossible, but with God all things are possible.’”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 19:26`],
+    en: [`— Matthew 19:26`]
+  },
+  image: "all_things_possible_god_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '238
+{
+  quote: {
+    sv: [`“Då sade han till en av dem: ’Min vän, jag är inte orättvis mot dig. Vi kom ju överens om en denar. Ta nu vad du skall ha och gå. Men jag vill ge den siste lika mycket som du fick. Har jag inte rätt att göra som jag vill med det som är mitt? Eller ser du med onda ögon på att jag är god?’ Så skall de sista bli först och de första sist.”`],
+    en: [`“But he answered one of them, ‘Friend, I am not being unfair to you. Didn’t you agree to work for a denarius? Take your pay and go. I want to give the one who was hired last the same as I gave you. Don’t I have the right to do what I want with my own money? Or are you envious because I am generous?’ So the last will be first, and the first will be last.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 20:13–16`],
+    en: [`— Matthew 20:13–16`]
+  },
+  image: "vineyard_workers_grace_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '239
+{
+  quote: {
+    sv: [`“Ni vet att härskarna är herrar över sina folk och att furstarna har makten över folken. Men så är det inte hos er. Den som vill vara stor bland er skall vara de andras tjänare, och den som vill vara den främste bland er skall vara de andras slav. Så har Människosonen inte kommit för att bli tjänad utan för att tjäna och ge sitt liv till lösen för många.”`],
+    en: [`“You know that the rulers of the Gentiles lord it over them, and their high officials exercise authority over them. Not so with you. Instead, whoever wants to become great among you must be your servant, and whoever wants to be first must be your slave—just as the Son of Man did not come to be served, but to serve, and to give his life as a ransom for many.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 20:25–28`],
+    en: [`— Matthew 20:25–28`]
+  },
+  image: "servant_leadership_cross_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '240
+{
+  quote: {
+    sv: [`“Allt vad ni ber om i er bön, tro att ni har fått det, så skall det bli ert.”`],
+    en: [`“If you believe, you will receive whatever you ask for in prayer.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 21:22`],
+    en: [`— Matthew 21:22`]
+  },
+  image: "faith_prayer_receive_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '241
+{
+  quote: {
+    sv: [`“En man hade två söner. Han gick till den första och sade: ’Min son, gå och arbeta i vingården i dag.’ Han svarade: ’Jag vill inte.’ Men sedan ångrade han sig och gick. Fadern gick till den andre och sade samma sak. Han svarade: ’Ja, herre’, men han gick inte. Vem av de två gjorde faderns vilja?”`],
+    en: [`“There was a man who had two sons. He went to the first and said, ‘Son, go and work today in the vineyard.’ ‘I will not,’ he answered, but later he changed his mind and went. Then the father went to the other son and said the same thing. He answered, ‘I will, sir,’ but he did not go. Which of the two did what his father wanted?”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 21:28–31`],
+    en: [`— Matthew 21:28–31`]
+  },
+  image: "obedience_change_heart_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '242
+{
+  quote: {
+    sv: [`“Har ni aldrig läst vad Gud sade till er: ’Jag är Abrahams Gud och Isaks Gud och Jakobs Gud’? Han är inte de dödas Gud utan de levandes.”`],
+    en: [`“Have you not read what God said to you, ‘I am the God of Abraham, the God of Isaac, and the God of Jacob’? He is not the God of the dead but of the living.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 22:31–32`],
+    en: [`— Matthew 22:31–32`]
+  },
+  image: "god_of_living_light_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '243
+{
+  quote: {
+    sv: [`“Mästare, vilket är det största budet i lagen?” Han svarade: “Du skall älska Herren din Gud med hela ditt hjärta och med hela din själ och med hela ditt förstånd. Det är det största och första budet. Sedan kommer ett av samma slag: Du skall älska din nästa som dig själv. På dessa två bud hänger hela lagen och profeterna.”`],
+    en: [`“Teacher, which is the greatest commandment in the Law?” Jesus replied: “‘Love the Lord your God with all your heart and with all your soul and with all your mind.’ This is the first and greatest commandment. And the second is like it: ‘Love your neighbor as yourself.’ All the Law and the Prophets hang on these two commandments.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 22:36–40`],
+    en: [`— Matthew 22:36–40`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '244
+{
+  quote: {
+    sv: [`“Den som är störst bland er skall vara de andras tjänare. Den som upphöjer sig skall bli förödmjukad, och den som ödmjukar sig skall bli upphöjd.”`],
+    en: [`“The greatest among you will be your servant. For those who exalt themselves will be humbled, and those who humble themselves will be exalted.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 23:11–12`],
+    en: [`— Matthew 23:11–12`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '245
+{
+  quote: {
+    sv: [`“Håll er därför vakna, ty ni vet inte vilken dag er Herre kommer. Tänk på detta: om husets herre visste när på natten tjuven kom, skulle han hålla sig vaken och inte låta någon bryta sig in i hans hus. Var därför beredda också ni, ty i en stund när ni inte väntar det kommer Människosonen.”`],
+    en: [`“Therefore keep watch, because you do not know on what day your Lord will come. But understand this: if the owner of the house had known at what time of night the thief was coming, he would have kept watch and would not have let his house be broken into. So you also must be ready, because the Son of Man will come at an hour when you do not expect him.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 24:42–44`],
+    en: [`— Matthew 24:42–44`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '246
+{
+  quote: {
+    sv: [`“Jag var hungrig, och ni gav mig att äta. Jag var törstig, och ni gav mig att dricka. Jag var främling, och ni tog emot mig. Jag var naken, och ni gav mig kläder. Jag var sjuk, och ni besökte mig. Jag satt i fängelse, och ni kom till mig.”`],
+    en: [`“For I was hungry and you gave me something to eat, I was thirsty and you gave me something to drink, I was a stranger and you invited me in, I needed clothes and you clothed me, I was sick and you looked after me, I was in prison and you came to visit me.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 25:35–36`],
+    en: [`— Matthew 25:35–36`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '247
+{
+  quote: {
+    sv: [`“Medan Jesus var i Betania hos Simon den spetälske, kom en kvinna fram till honom med en alabasterflaska dyrbar olja och hällde den över hans huvud där han låg till bords. När lärjungarna såg det blev de upprörda och sade: ’Vilket slöseri! Den kunde ha sålts för mycket pengar och getts åt de fattiga.’ Jesus märkte det och sade till dem: ’Varför oroar ni kvinnan? Hon har gjort en god gärning mot mig. Hon har hällt denna olja över min kropp i förväg för min begravning. Sannerligen, överallt i världen där detta evangelium förkunnas, skall man också berätta vad hon gjorde och komma ihåg henne.’”`],
+    en: [`“While Jesus was in Bethany at the home of Simon the Leper, a woman came to him with an alabaster jar of very expensive perfume, which she poured on his head as he was reclining at the table. When the disciples saw this, they were indignant. ‘Why this waste?’ they asked. ‘This perfume could have been sold at a high price and the money given to the poor.’ Aware of this, Jesus said to them, ‘Why are you bothering this woman? She has done a beautiful thing to me. When she poured this perfume on my body, she did it to prepare me for burial. Truly I tell you, wherever this gospel is preached throughout the world, what she has done will also be told, in memory of her.’”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 26:6–13`],
+    en: [`— Matthew 26:6–13`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+// '248
+{
+  quote: {
+    sv: [`“Gå därför ut och gör alla folk till lärjungar: döp dem i Faderns och Sonens och den heliga Andens namn och lär dem att hålla alla de bud jag har gett er. Och jag är med er alla dagar till tidens slut.”`],
+    en: [`“Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age.”`]
+  },
+  author: {
+    sv: [`— Matteusevangeliet 28:19–20`],
+    en: [`— Matthew 28:19–20`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '249
+{
+  quote: {
+    sv: [`“Gläd dig inte över mig, du min fiende! Ty om jag än har fallit, så reser jag mig igen. Om jag än sitter i mörker, är Herren mitt ljus.”`],
+    en: [`“Do not gloat over me, my enemy! Though I have fallen, I will rise. Though I sit in darkness, the Lord will be my light.”`]
+  },
+  author: {
+    sv: [`— Mika 7:8`],
+    en: [`— Micah 7:8`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '250
+{
+  quote: {
+    sv: [`“Låt godhet och sanning ej vika ifrån dig.
+      Bind dem omkring din hals,
+      skriv dem på ditt hjärtas tavla,
+      så skall du finna nåd och få gott förstånd,
+      i Guds och människors ögon.”`],
+    en: [`“Let love and faithfulness never leave you;
+      bind them round your neck,
+      write them on the tablet of your heart.
+      Then you will win favour and a good name
+      in the sight of God and man.”`]
+  },
+  author: {
+    sv: [`— Ordspråksboken 3:3-4`],
+    en: [`— Proverbs 3:3-4`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '251
+{
+  quote: {
+    sv: [`“Min son, låt detta inte vika ifrån dina ögon,
+      ta klokhet och och eftertänksamhet i akt,
+      så skall de bli din själ till liv och
+      bli ett smycke för din hals.
+      Då skall du vandra din väg fram i trygghet, och
+      din fot skall du då inte stöta. När du lägger dig,
+      skall ingenting förskräcka dig och
+      sedan du har lagt dig, skall du sova sött.”`],
+    en: [`“My son, do not let wisdom and understanding out of your sight,
+    preserve sound judgment and discretion;
+    they will be life for you,
+    an ornament to grace your neck.
+    Then you will go on your way in safety,
+    and your foot will not stumble.
+    When you lie down, you will not be afraid;
+    when you lie down, your sleep will be sweet.”`]
+  },
+  author: {
+    sv: [`— Ordspråksboken 3:21-24`],
+    en: [`— Proverbs 3:21-24`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '252
+{
+  quote: {
+    sv: [`“Hör, min son, och ta emot mina ord, så skall dina levnadsår bli många. Om vishetens väg undervisar jag dig, jag leder dig på det rättas stigar. När du går skall sedan ingenting vara till hinder för dina steg, och när du löper skall du inte falla. Håll bara ständigt fast vid min tuktan, bevara henne, ty hon är ditt liv.”`],
+    en: [`“Listen, my son, accept what I say, and the years of your life will be many. I instruct you in the way of wisdom and lead you along straight paths. When you walk, your steps will not be hampered; when you run, you will not stumble. Hold on to instruction, do not let it go; guard it well, for it is your life.”`]
+  },
+  author: {
+    sv: [`— Ordspråksboken 4:10-13`],
+    en: [`— Proverbs 4:10-13`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '253
+{
+  quote: {
+    sv: [`“Ett mjukt svar stillar vrede, men ett hårt ord åstadkommer harm.”`],
+    en: [`“A gentle answer turns away wrath, but a harsh word stirs up anger.”`]
+  },
+  author: {
+    sv: [`— Ordspråksboken 15:1`],
+    en: [`— Proverbs 15:1`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '254
+{
+  quote: {
+    sv: [`“Ett glatt hjärta gör ansiktet ljust, men vid hjärtesorg är modet brutet.”`],
+    en: [`“A happy heart makes the face cheerful, but heartache crushes the spirit.”`]
+  },
+  author: {
+    sv: [`— Ordspråksboken 15:13`],
+    en: [`— Proverbs 15:13`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '255
+{
+  quote: {
+    sv: [`“En väns kärlek består alltid och en broders föds till hjälp i nöden.”`],
+    en: [`“A friend loves at all times, and a brother is born for a time of adversity.”`]
+  },
+  author: {
+    sv: [`— Ordspråksboken 17:17`],
+    en: [`— Proverbs 17:17`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '256
+{
+  quote: {
+    sv: [`“Ett glatt hjärta är en god läkedom, men ett brutet mod tar märgen ur benen.”`],
+    en: [`“A cheerful heart is good medicine, but a crushed spirit dries up the bones.”`]
+  },
+  author: {
+    sv: [`— Ordspråksboken 17:22`],
+    en: [`— Proverbs 17:22`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '257
+{
+  quote: {
+    sv: [`“Den förståndiges hjärta förvärvar kunskap, och de visas öron söker kunskap.”`],
+    en: [`“An intelligent mind acquires knowledge, and the ear of the wise seeks knowledge.”`]
+  },
+  author: {
+    sv: [`— Ordspråksboken 18:15`],
+    en: [`— Proverbs 18:15`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '258
+{
+  quote: {
+    sv: [`“Förstånd gör en människa tålmodig, och det är hennes ära att förlåta vad någon har brutit.”`],
+    en: [`“One who has unreliable friends soon comes to ruin, but there is a friend who sticks closer than a brother.”`]
+  },
+  author: {
+    sv: [`— Ordspråksboken 19:11`],
+    en: [`— Proverbs 19:11`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '259
+{
+  quote: {
+    sv: [`“Den som far efter rättfärdighet och godhet, han finner liv, rättfärdighet och ära.”`],
+    en: [`“Whoever pursues righteousness and love finds life, prosperity and honor.”`]
+  },
+  author: {
+    sv: [`— Ordspråksboken 21:21`],
+    en: [`— Proverbs 21:21`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '260
+{
+  quote: {
+    sv: [`“Riva sönder har sin tid, och sy ihop har sin tid. Tiga har sin tid, och tala har sin tid.”`],
+    en: [`“A time to tear and a time to mend, a time to be silent and a time to speak.”`]
+  },
+  author: {
+    sv: [`— Predikaren 3:7`],
+    en: [`— Ecclesiastes 3:7`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '261
+{
+  quote: {
+    sv: [`“Bevara din fot, när du går till Guds hus. Att komma dit för att höra är bättre än något slaktoffer som dårarna frambär, Ty de är oförståndiga och gör vad ont är.”`],
+    en: [`“Guard your steps when you go to the house of God. Go near to listen rather than to offer the sacrifice of fools, who do not know that they do wrong.”`]
+  },
+  author: {
+    sv: [`— Predikaren 4:16`],
+    en: [`— Ecclesiastes 5:1`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '262
+{
+  quote: {
+    sv: [`“Ja, en lott har tillfallit mig i det ljuvliga, ja ett arv som behagar mig väl. Jag vill lova Herren, ty han ger mig råd. Ännu om nätterna manar mig mitt innersta. Jag har haft Herren för mina ögonen alltid, ja, han är på min högra sida, jag skall inte vackla.”`],
+    en: [`“The boundary lines have fallen for me in pleasant places; surely I have a delightful inheritance. I will praise the Lord, who counsels me; even at night my heart instructs me. I keep my eyes always on the Lord. With him at my right hand, I will not be shaken.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 16:6-8`],
+    en: [`— Psalm 16:6-8`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '263
+{
+  quote: {
+    sv: [`“Så åkallar jag nu dig, ty du, Gud, skall svara mig.
+      Böj ditt öra till mig, hör mitt tal.
+      Bevisa din underbara nåd, du som frälser undan motståndarna
+        dem som tar sin tillflykt till din högra hand.
+
+        Bevara mig som en ögonsten,
+          beskydda mig under dina vingars skugga”`],
+    en: [`“I have called upon You, for You will answer me, O God;
+         Incline Your ear to me, hear my speech.
+        Wondrously show Your lovingkindness,
+                O Savior of those who take refuge at Your right hand
+                From those who rise up against them.
+
+        Keep me as the apple of the eye;
+                Hide me in the shadow of Your wings”`]
+  },
+  author: {
+    sv: [`— Psaltaren 17:6-9`],
+    en: [`— Psalm 17:6-9`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// ok Här
+
+// '264
+{
+  quote: {
+    sv: [`“Jag älskar dig, Herre, min styrka! Herren är min klippa, min borg och min räddare, min Gud, klippan där jag tar min tillflykt, min sköld och min frälsnings horn, min fasta borg.”`],
+    en: [`“I love you, Lord, my strength. The Lord is my rock, my fortress and my deliverer; my God is my rock, in whom I take refuge, my shield and the horn of my salvation, my stronghold.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 18:1-2`],
+    en: [`— Psalm 18:1-2`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '265
+{
+  quote: {
+    sv: [`“Himlen vittnar om Guds härlighet, himlavalvet förkunnar hans händers verk.”`],
+    en: [`“The heavens declare the glory of God; the skies proclaim the work of his hands.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 19:2`],
+    en: [`— Psalm 19:2`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '266
+{
+  quote: {
+    sv: [`“Låt min muns ord och mitt hjärtas tankar behaga dig, Herre, min klippa och min återlösare.”`],
+    en: [`“May these words of my mouth and this meditation of my heart be pleasing in your sight, Lord, my Rock and my Redeemer.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 19:15`],
+    en: [`— Psalm 19:15`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '267
+{
+  quote: {
+    sv: [`“Må han ge dig vad ditt hjärta begär och fullborda alla dina planer. Vi skall jubla över din seger och i vår Guds namn resa våra fanor. Herren må uppfylla alla dina böner.”`],
+    en: [`“May he give you the desire of your heart and make all your plans succeed. May we shout for joy over your victory and lift up our banners in the name of our God. May the Lord grant all your requests.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 20:4-5`],
+    en: [`— Psalm 20:4-5`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '268
+{
+  quote: {
+    sv: [`“Herren är mitt ljus och min frälsning, för vem skulle jag frukta? Herren är mitt livs värn, för vem skulle jag vara rädd?”`],
+    en: [`“The Lord is my light and my salvation— whom shall I fear? The Lord is the stronghold of my life— of whom shall I be afraid?”`]
+  },
+  author: {
+    sv: [`— Psaltaren 27:1-2`],
+    en: [`— Psalm 27:1-2`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '269
+{
+  quote: {
+    sv: [`“När de onda kommer emot mig för att äta upp mig, mina motståndare och fiender, då är det de som snavar och faller.”`],
+    en: [`“When the wicked advance against me to devour me, it is my enemies and my foes who will stumble and fall.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 27:4`],
+    en: [`— Psalm 27:4`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '270
+{
+  quote: {
+    sv: [`“Ge mig inte i mina ovänners våld! Falska vittnen har stått upp mot mig, de andas våld.”`],
+    en: [`“Do not turn me over to the desire of my foes, for false witnesses rise up against me, spouting malicious accusations.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 27:12-14`],
+    en: [`— Psalm 27:12-14`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '271
+{
+  quote: {
+    sv: [`“Jag tror att jag skall få se Herrens godhet i de levandes land. Hoppas på Herren! Var stark och frimodig i ditt hjärta, ja, hoppas på Herren!”`],
+    en: [`“I remain confident of this: I will see the goodness of the Lord in the land of the living. Wait for the Lord; be strong and take heart and wait for the Lord.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 27:4`],
+    en: [`— Psalm 27:4`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+
+// '272
+{
+  quote: {
+    sv: [`“Ett har jag begärt av Herren, det längtar jag efter: att få bo i Herrens hus i alla mina livsdagar, att skåda Herrens ljuvlighet och söka svar i hans tempel.”`],
+    en: [`“One thing I ask from the Lord, this only do I seek: that I may dwell in the house of the Lord all the days of my life, to gaze on the beauty of the Lord and to seek him in his temple.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 29:11`],
+    en: [`— Psalm 29:11`]
+  },
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
+},
+// '273
+{
+  quote: {
+    sv: [`“Herren skall ge kraft åt sitt folk, Herren skall välsigna sitt folk med frid.”`],
+    en: [`“The Lord gives strength to his people; the Lord blesses his people with peace.”`]
+  },
+  author: {
+
+  },
+  image: "psalm_29-11_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '274
+{
+  quote: {
+    sv: [`“När jag levde i trygghet, sade jag: ‘Aldrig skall jag vackla.’”`],
+    en: [`“When I felt secure, I said, ‘I will never be shaken.’”`]
+  },
+  author: {
+    sv: [`— Psaltaren 30:6`],
+    en: [`— Psalm 30:6`]
+  },
+  image: "psalm_30-6_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '275
+{
+  quote: {
+    sv: [`“Var starka, fatta mod, alla ni som hoppas på Herren!”`],
+    en: [`“Be strong and take heart, all you who hope in the Lord.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 31:24`],
+    en: [`— Psalm 31:24`]
+  },
+  image: "psalm_31-24_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '276
+{
+  quote: {
+    sv: [`“Du är mitt beskydd, du bevarar mig från nöd, du låter jubel över räddning omge mig. Jag vill ge dig insikt och lära dig den väg du skall gå. Jag vill ge dig råd, min blick skall följa dig.”`],
+    en: [`“You are my hiding place; you will protect me from trouble and surround me with songs of deliverance. I will instruct you and teach you in the way you should go; I will counsel you with my loving eye on you.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 32:7-8`],
+    en: [`— Psalm 32:7-8`]
+  },
+  image: "psalm_32-7_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '277
+{
+  quote: {
+    sv: [`“Smaka och se att Herren är god. Salig är den människa som flyr till honom.”`],
+    en: [`“Taste and see that the Lord is good; blessed is the one who takes refuge in him.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 34:4`],
+    en: [`— Psalm 34:4`]
+  },
+  image: "psalm_34-8_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '278
+{
+  quote: {
+    sv: [`“Jag sökte Herren, och han svarade mig, han räddade mig från allt jag fruktade.”`],
+    en: [`“I sought the Lord, and he answered me; he delivered me from all my fears.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 34:8`],
+    en: [`— Psalm 34:8`]
+  },
+  image: "psalm_34-4_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '279
+{
+  quote: {
+    sv: [`“Var stilla inför Herren och vänta på honom. Upprörs inte över den som har framgång, över den som gör upp onda planer.”`],
+    en: [`“Be still before the Lord and wait patiently for him; do not fret when people succeed in their ways, when they carry out their wicked schemes.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 37:7`],
+    en: [`— Psalm 37:7`]
+  },
+  image: "psalm_37-7_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '290
+{
+  quote: {
+    sv: [`“De rättfärdigas räddning kommer från Herren, han är deras tillflykt i nödens tid. Herren hjälper dem och befriar dem, han befriar dem från de ogudaktiga och frälsar dem, ty de tar sin tillflykt till honom.”`],
+    en: [`“The salvation of the righteous comes from the Lord; he is their stronghold in time of trouble. The Lord helps them and delivers them; he delivers them from the wicked and saves them, because they take refuge in him.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 37:39-40`],
+    en: [`— Psalm 37:39-40`]
+  },
+  image: "psalm_37-39_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '281
+{
+  quote: {
+    sv: [`“Slaktoffer och matoffer begärde du inte, men du har öppnat mina öron. Brännoffer och syndoffer begärde du inte.”`],
+    en: [`“Sacrifice and offering you did not desire—but my ears you have opened—burnt offerings and sin offerings you did not require.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 40:6`],
+    en: [`— Psalm 40:6`]
+  },
+  image: "psalm_40-6_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '282
+{
+  quote: {
+    sv: [`“Min själ är bedrövad i mig, därför tänker jag på dig från Jordans land och Hermons höjder, från Misars berg.”`],
+    en: [`“My soul is downcast within me; therefore I will remember you from the land of the Jordan, the heights of Hermon—from Mount Mizar.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 42:6`],
+    en: [`— Psalm 42:6`]
+  },
+  image: "psalm_42-6_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '283
+{
+  quote: {
+    sv: [`“Jag vill säga till Gud, min klippa: Varför har du glömt mig? Varför måste jag gå sörjande, plågad av fienden?”`],
+    en: [`“I say to God my Rock, ‘Why have you forgotten me? Why must I go about mourning, oppressed by the enemy?’”`]
+  },
+  author: {
+    sv: [`— Psaltaren 42:9`],
+    en: [`— Psalm 42:9`]
+  },
+  image: "psalm_42-9_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '284
+{
+  quote: {
+    sv: [`“Gud är vår tillflykt och vår starkhet, en hjälp i nöden, väl beprövad. Därför skall vi inte frukta, om än jorden skakar och bergen störtar ner i havets djup, om än dess vågor brusar och svallar och bergen darrar vid dess uppror.”`],
+    en: [`“God is our refuge and strength, an ever-present help in trouble. Therefore we will not fear, though the earth give way and the mountains fall into the heart of the sea, though its waters roar and foam and the mountains quake with their surging.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 46:1-3`],
+    en: [`— Psalm 46:1-3`]
+  },
+  image: "psalm_46-1_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '285
+{
+  quote: {
+    sv: [`“Bli stilla och besinna att jag är Gud, upphöjd bland hednafolken, upphöjd på jorden.”`],
+    en: [`“Be still, and know that I am God; I will be exalted among the nations, I will be exalted in the earth.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 46:10-11`],
+    en: [`— Psalm 46:10-11`]
+  },
+  image: "psalm_46-10_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '286
+{
+  quote: {
+    sv: [`“Kalla på mig på nödens dag, så skall jag rädda dig, och du skall ära mig.”`],
+    en: [`“Call on me in the day of trouble; I will deliver you, and you will honor me.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 50:15`],
+    en: [`— Psalm 50:15`]
+  },
+  image: "psalm_50-15_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '287
+{
+  quote: {
+    sv: [`“Skapa i mig, Gud, ett rent hjärta, och ge mig på nytt en frimodig ande.”`],
+    en: [`“Create in me a pure heart, O God, and renew a steadfast spirit within me.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 51:10`],
+    en: [`— Psalm 51:10`]
+  },
+  image: "psalm_51-10_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '288
+{
+  quote: {
+    sv: [`“Kasta din börda på Herren, han skall uppehålla dig. Aldrig skall han låta den rättfärdige vackla. Men du, Gud, skall sänka dem ner i fördärvets brunn, blodtörstiga och falska män skall inte nå ens halv sina dagar. Men jag förtröstar på dig.”`],
+    en: [`“Cast your cares on the Lord and he will sustain you; he will never let the righteous be shaken. But you, God, will bring down the wicked into the pit of decay; the bloodthirsty and deceitful will not live out half their days. But as for me, I trust in you.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 55:22-23`],
+    en: [`— Psalm 55:22-23`]
+  },
+  image: "psalm_55-22_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '289
+{
+  quote: {
+    sv: [`“När jag är rädd, förtröstar jag på dig. På Gud, vars ord jag prisar, på Gud förtröstar jag och fruktar inte. Vad kan människor göra mig?”`],
+    en: [`“When I am afraid, I put my trust in you. In God, whose word I praise— in God I trust and am not afraid. What can mere mortals do to me?”`]
+  },
+  author: {
+    sv: [`— Psaltaren 56:3-4`],
+    en: [`— Psalm 56:3-4`]
+  },
+  image: "psalm_56-3_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '290
+{
+  quote: {
+    sv: [`“Min starkhet, dig vill jag lovsjunga, ty Gud är min borg, min nåderike Gud.”`],
+    en: [`“You are my strength, I sing praise to you; God is my fortress, my God on whom I can rely.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 59:17`],
+    en: [`— Psalm 59:17`]
+  },
+  image: "psalm_59-17_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '291
+{
+  quote: {
+    sv: [`“Han ensam är min klippa och min frälsning, min borg, jag skall inte vackla. Hos Gud är min frälsning och min ära, Gud är min starka klippa, min tillflykt. Lita alltid på honom, du folk, utgjut era hjärtan inför honom. Gud är vår tillflykt.”`],
+    en: [`“Truly he is my rock and my salvation; he is my fortress, I will not be shaken. My salvation and my honor depend on God; he is our mighty rock, my refuge. Trust in him at all times, you people; pour out your hearts to him, for God is our refuge.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 62:6-9`],
+    en: [`— Psalm 62:6-9`]
+  },
+  image: "psalm_62-6_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '292
+{
+  quote: {
+    sv: [`“Ty din nåd är bättre än liv, mina läppar skall prisa dig.”`],
+    en: [`“Because your love is better than life, my lips will glorify you.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 63:3`],
+    en: [`— Psalm 63:3`]
+  },
+  image: "psalm_63-3_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '293
+{
+  quote: {
+    sv: [`“Gud är vår tillflykt och vår styrka, en hjälp i nöden alltid närvarande.”`],
+    en: [`“God is our refuge and strength, an ever-present help in trouble.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 73:26`],
+    en: [`— Psalm 73:26`]
+  },
+  image: "psalm_46-1_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '294
+{
+  quote: {
+    sv: [`“Låt hjärtat inte frukta, vänd om och se på Herren, han är vår frälsning.”`],
+    en: [`“Let not your heart be afraid; turn and see the Lord, He is our salvation.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 90:17`],
+    en: [`— Psalm 90:17`]
+  },
+  image: "psalm_27-1_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '295
+{
+  quote: {
+    sv: [`“Bevara mig från dem som gör ont, låt mig inte falla i deras fällor. Vänta på Herren, var stark och låt ditt hjärta ta mod.”`],
+    en: [`“Keep me safe from those who do evil; let me not fall into their traps. Wait on the Lord; be strong and let your heart take courage.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 91:1`],
+    en: [`— Psalm 91:1`]
+  },
+  image: "psalm_27-12_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '296
+{
+  quote: {
+    sv: [`“En fråga jag har begärt av Herren, och det skall jag söka: att få bo i Herrens hus alla mina dagar, att se Herrens härlighet och begrunda hans tempel.”`],
+    en: [`“One thing I ask of the Lord, this I seek: to dwell in the house of the Lord all the days of my life, to gaze upon the beauty of the Lord and to seek Him in His temple.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 91:11`],
+    en: [`— Psalm 91:11`]
+  },
+  image: "psalm_27-4_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '297
+{
+  quote: {
+    sv: [`“Låt alla som söker Gud finna honom, de som älskar honom skall inte bli besvikna.”`],
+    en: [`“Let all who seek God find Him; those who love Him shall not be disappointed.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 91:14`],
+    en: [`— Psalm 91:14`]
+  },
+  image: "psalm_34-8_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '298
+{
+  quote: {
+    sv: [`“Den som sår i vrede skördar olycka, den glade hjärtats gärning ger liv.”`],
+    en: [`“He who sows in anger reaps misfortune; the work of a joyful heart gives life.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 96:11-12`],
+    en: [`— Psalm 96:11-12`]
+  },
+  image: "proverbs_15-13_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '299
+{
+  quote: {
+    sv: [`“En vän älskar alltid, och en broder föds för nöden.”`],
+    en: [`“A friend loves at all times, and a brother is born for adversity.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 100:4`],
+    en: [`— Psalm 100:4`]
+  },
+  image: "proverbs_17-17_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '300
+{
+  quote: {
+    sv: [`“Ett glatt hjärta gör gott som medicin, men ett förkrossat sinne torkar ut benen.”`],
+    en: [`“A cheerful heart is good medicine, but a crushed spirit dries up the bones.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 103:2-5`],
+    en: [`— Psalm 103:2-5`]
+  },
+  image: "proverbs_17-22_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '301
+{
+  quote: {
+    sv: [`“Den som bygger sitt hus med rättfärdighet får lycka och frid, men den som handlar våldsamt fördärvar sitt eget hem.”`],
+    en: [`“He who builds his house with righteousness finds happiness and peace, but he who acts violently destroys his own home.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 103:12`],
+    en: [`— Psalm 103:12`]
+  },
+  image: "proverbs_3-24_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '302
+{
+  quote: {
+    sv: [`“Den som tar till vara på kunskap finner liv, men den som föraktar råd lider förlust.”`],
+    en: [`“He who treasures knowledge finds life, but he who despises counsel suffers loss.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 104:34`],
+    en: [`— Psalm 104:34`]
+  },
+  image: "proverbs_4-10_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '303
+{
+  quote: {
+    sv: [`“Den milda svarar lugnar vrede, men det hårda ordet väcker vrede.”`],
+    en: [`“A gentle answer turns away wrath, but a harsh word stirs up anger.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 107:1`],
+    en: [`— Psalm 107:1`]
+  },
+  image: "proverbs_15-1_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '304
+{
+  quote: {
+    sv: [`“Den som har många vänner går miste om förtroende, men en vän står honom nära i nöd.”`],
+    en: [`“He who has many friends suffers lack of trust, but a friend sticks closer than a brother.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 107:29`],
+    en: [`— Psalm 107:29`]
+  },
+  image: "proverbs_18-24_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '305
+{
+  quote: {
+    sv: [`“Du delar mitt arv med glädje, du bevarar mitt lott i trygghet. Jag vilar i frid, ty du leder mig på rätt väg.”`],
+    en: [`“You make known to me the path of life; in your presence there is fullness of joy; at your right hand are pleasures forevermore.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 107:38`],
+    en: [`— Psalms 107:38`]
+  },
+  image: "psalms_16-6_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '306
+{
+  quote: {
+    sv: [`“Jag ropar till dig, Herre, för du tar emot mig och lyssnar till min röst.”`],
+    en: [`“I call upon you, Lord, for you hear me; incline your ear to me.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 118:24`],
+    en: [`— Psalms 118:24`]
+  },
+  image: "psalms_17-6_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '307 August
+
+// '308
+{
+  quote: {
+    sv: [`“Herren är min klippa, min borg, min räddare. Min Gud är min klippa, hos honom söker jag skydd.”`],
+    en: [`“The Lord is my rock, my fortress, and my deliverer; my God is my rock, in whom I take refuge.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 119:14`],
+    en: [`— Psalms 119:14`]
+  },
+  image: "psalms_18-1_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '309
+{
+  quote: {
+    sv: [`“Himlens himlar vittnar om Guds härlighet, himlen förkunnar hans händers verk.”`],
+    en: [`“The heavens declare the glory of God, and the sky above proclaims his handiwork.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 119:50`],
+    en: [`— Psalms 119:50`]
+  },
+  image: "psalms_19-2_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '310
+{
+  quote: {
+    sv: [`“Låt orden från min mun och tanken i mitt hjärta vara behaglig inför dig, Herre, min klippa och min frälsare.”`],
+    en: [`“Let the words of my mouth and the meditation of my heart be acceptable in your sight, O Lord, my rock and my redeemer.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 119:90`],
+    en: [`— Psalms 119:90`]
+  },
+  image: "psalms_19-15_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '311
+{
+  quote: {
+    sv: [`“Må han ge dig det som ditt hjärta önskar och låta alla dina planer lyckas.”`],
+    en: [`“May he grant you your heart’s desire and fulfill all your plans.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 121:1-4`],
+    en: [`— Psalms 121:1-4`]
+  },
+  image: "psalms_20-4_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '312
+{
+  quote: {
+    sv: [`“Herren är mitt ljus och min frälsning; vem behöver jag frukta?”`],
+    en: [`“The Lord is my light and my salvation; whom shall I fear?”`]
+  },
+  author: {
+    sv: [`— Psaltaren 122:1`],
+    en: [`— Psalms 122:1`]
+  },
+  image: "psalms_27-1_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '313
+{
+  quote: {
+    sv: [`“När de onda smider planer mot mig, litar jag på Herren.”`],
+    en: [`“Though the wicked plot against me, I trust in the Lord.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 125:1`],
+    en: [`— Psalms 125:1`]
+  },
+  image: "psalms_27-2_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '314
+{
+  quote: {
+    sv: [`“Herren bevarar min väg, leder mig på rätta stigar för sitt namns skull.”`],
+    en: [`“The Lord preserves my way and guides me in paths of righteousness for his name’s sake.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 137:1 (valfritt)`],
+    en: [`— Psalms 137:1 (optional)`]
+  },
+  image: "psalms_23-3_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '315
+{
+  quote: {
+    sv: [`“Ge mig frid, Herre, och hjälp mig stå fast i ditt löfte.”`],
+    en: [`“Give me peace, Lord, and help me stand firm in your promise.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 138:3`],
+    en: [`— Psalms 138:3`]
+  },
+  image: "psalms_37-7_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '316
+{
+  quote: {
+    sv: [`“De som väntar på Herren får ärva landet och njuta av frid.”`],
+    en: [`“The salvation of the righteous comes from the Lord; he is their stronghold in time of trouble.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 139:4-10`],
+    en: [`— Psalms 139:4-10`]
+  },
+  image: "psalms_37-39_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '317
+{
+  quote: {
+    sv: [`“Herre, du är min styrka och min klippa; jag hoppas på dig.”`],
+    en: [`“Lord, you are my strength and my rock; I put my hope in you.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 139:14`],
+    en: [`— Psalms 139:14`]
+  },
+  image: "psalms_40-6_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '318
+{
+  quote: {
+    sv: [`“Vid ditt namn lyfter jag min själ, Herre, min Gud.”`],
+    en: [`“I lift up my soul to you, Lord my God.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 139:17`],
+    en: [`— Psalms 139:17`]
+  },
+  image: "psalms_25-1_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '319
+{
+  quote: {
+    sv: [`“Hjälp mig, Herre, att hålla fast vid din väg, trots faror omkring mig.”`],
+    en: [`“Help me, Lord, to hold fast to your way, even amidst dangers around me.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 143:8`],
+    en: [`— Psalms 143:8`]
+  },
+  image: "psalms_27-12_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '320
+{
+  quote: {
+    sv: [`“Hjärtat fröjdas när man möts i vänskap, och Herren vakar över oss.”`],
+    en: [`“The heart rejoices in friendship, and the Lord watches over us.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 145:17`],
+    en: [`— Psalms 145:17`]
+  },
+  image: "psalms_17-6_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '321
+{
+  quote: {
+    sv: [`“Jag älskar dig, Herre, min styrka. Herren är min klippa, min borg och min räddare.”`],
+    en: [`“I love you, Lord, my strength. The Lord is my rock, my fortress, and my deliverer.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 145:18-19`],
+    en: [`— Psalms 145:18-19`]
+  },
+  image: "psalms_18-1_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '322
+{
+  quote: {
+    sv: [`“Himlens himlar berättar om Guds ära, himlavalvet förkunnar hans händers verk.”`],
+    en: [`“The heavens declare the glory of God; the skies proclaim the work of his hands.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 146:5-6`],
+    en: [`— Psalms 146:5-6`]
+  },
+  image: "psalms_19-2_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '323
+{
+  quote: {
+    sv: [`“Mina ord och mina tankar skall vara rena inför dig, Herre.”`],
+    en: [`“May my words and thoughts be pure before you, Lord.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 149:4`],
+    en: [`— Psalms 149:4`]
+  },
+  image: "psalms_19-15_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '324
+{
+  quote: {
+    sv: [`“Må han uppfylla dina önskningar och göra att alla dina planer lyckas.”`],
+    en: [`“May he grant you your heart’s desire and make all your plans succeed.”`]
+  },
+  author: {
+    sv: [`— Romarbrevet 1:17`],
+    en: [`— Romans 1:17`]
+  },
+  image: "psalms_20-4_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '325
+{
+  quote: {
+    sv: [`“Herren är mitt ljus och min räddning, vem skulle jag frukta?”`],
+    en: [`“The Lord is my light and my salvation—whom shall I fear?”`]
+  },
+  author: {
+    sv: [`— Romarbrevet 4:6-7`],
+    en: [`— Romans 4:6-7`]
+  },
+  image: "psalms_27-1_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '326
+{
+  quote: {
+    sv: [`“Håll dig undan från de som gör ont, för de lurar mig med sina planer.”`],
+    en: [`“Turn away from those who do evil, for they plot against me.”`]
+  },
+  author: {
+    sv: [`— Romarbrevet 8:35`],
+    en: [`— Romans 8:35`]
+  },
+  image: "psalms_27-12_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '327
+{
+  quote: {
+    sv: [`“En sak har jag begärt av Herren, det söker jag: att få bo i Herrens hus alla dagar i mitt liv, att betrakta Herrens skönhet och begrunda hans tempel.”`],
+    en: [`“One thing I ask from the Lord, this only do I seek: that I may dwell in the house of the Lord all the days of my life, to gaze on the beauty of the Lord and to seek him in his temple.”`]
+  },
+  author: {
+    sv: [`— Romarbrevet 8:38-39`],
+    en: [`— Romans 8:38-39`]
+  },
+  image: "psalms_27-4_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '328
+{
+  quote: {
+    sv: [`“Herren ger sina vänner fred, han omsluter dem med lycka.”`],
+    en: [`“The Lord gives his friends peace; he surrounds them with happiness.”`]
+  },
+  author: {
+    sv: [`— Romarbrevet 10:17`],
+    en: [`— Romans 10:17`]
+  },
+  image: "psalms_29-11_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '329
+{
+  quote: {
+    sv: [`“Fröjda dig i Herren, och han skall ge dig det du begär.”`],
+    en: [`“Delight yourself in the Lord, and he will give you the desires of your heart.”`]
+  },
+  author: {
+    sv: [`— Romarbrevet 12:3`],
+    en: [`— Romans 12:3`]
+  },
+  image: "psalms_30-6_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '330
+{
+  quote: {
+    sv: [`“Var stark och tag mod, alla ni som hoppas på Herren.”`],
+    en: [`“Be strong and take heart, all you who hope in the Lord.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 12:10`],
+    en: [`— Psalms 12:10`]
+  },
+  image: "psalms_31-24_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '331
+{
+  quote: {
+    sv: [`“Du är min tillflykt, du bevarar mig från nöd, du omsluter mig med frälsningens glädje.”`],
+    en: [`“You are my refuge; you preserve me from trouble, and surround me with the joy of salvation.”`]
+  },
+  author: {
+    sv: [`— Psaltaren 15:13`],
+    en: [`— Psalms 15:13`]
+  },
+  image: "psalms_32-7_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '332
+{
+  quote: {
+    sv: [`“Jag vill lära dig och visa dig vägen du skall gå; jag vill ge dig råd och se till dig.”`],
+    en: [`“I will instruct you and show you the way you should go; I will give you counsel and watch over you.”`]
+  },
+  author: {
+    sv: [`— Rut 2:12`],
+    en: [`— Ruth 2:12`]
+  },
+  image: "psalms_32-8_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '333
+{
+  quote: {
+    sv: [`“Småglada hjärtan ger glädje, men ett sorgset sinne bryter ner.”`],
+    en: [`“A cheerful heart brings joy, but a crushed spirit dries up the bones.”`]
+  },
+  author: {
+    sv: [`— 2 Krönikeboken 7:14`],
+    en: [`— 2 Chronicles 7:14`]
+  },
+  image: "psalms_17-13_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '334
+{
+  quote: {
+    sv: [`“Smaka och se att Herren är god, lycklig är den som tar sin tillflykt till honom.”`],
+    en: [`“Taste and see that the Lord is good; blessed is the one who takes refuge in him.”`]
+  },
+  author: {
+    sv: [`— 2 Krönikeboken 16:19`],
+    en: [`— 2 Chronicles 16:19`]
+  },
+  image: "psalms_34-8_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '335
+{
+  quote: {
+    sv: [`“Ropa till Gud i din nöd, och han skall höra dig.”`],
+    en: [`“Call to God in your distress, and He will hear you.”`]
+  },
+  author: {
+    sv: [`— 2 Krönikeboken 16:25-29`],
+    en: [`— 2 Chronicles 16:25-29`]
+  },
+  image: "psalms_34-4_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '336
+{
+  quote: {
+    sv: [`“Var stilla inför Herren och vänta på honom; bli inte upprörd över den som lyckas i sitt liv.”`],
+    en: [`“Be still before the Lord and wait for Him; do not be upset over the one who prospers in their way.”`]
+  },
+  author: {
+    sv: [`— Esra 1:1`],
+    en: [`— Ezra 1:1`]
+  },
+  image: "psalms_37-7_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '337
+{
+  quote: {
+    sv: [`“Men de rättfärdiga skall ärvas landet och få bo i evig frid.”`],
+    en: [`“But the righteous shall inherit the land and dwell in everlasting peace.”`]
+  },
+  author: {
+    sv: [`— Nehemja 1:11`],
+    en: [`— Nehemiah 1:11`]
+  },
+  image: "psalms_37-39_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '338
+{
+  quote: {
+    sv: [`“Herren hjälper dem i deras nöd, han blir deras tillflykt och räddning.”`],
+    en: [`“The Lord helps them in their trouble; He becomes their refuge and salvation.”`]
+  },
+  author: {
+    sv: [`— Nehemja 8:10`],
+    en: [`— Nehemiah 8:10`]
+  },
+  image: "psalms_37-40_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '339
+{
+  quote: {
+    sv: [`“Herre, jag vet att du hör mig, du är min styrka och min räddning.”`],
+    en: [`“Lord, I know that You hear me; You are my strength and my salvation.”`]
+  },
+  author: {
+    sv: [`— Ester 4:14`],
+    en: [`— Esther 4:14`]
+  },
+  image: "psalms_40-6_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '340
+{
+  quote: {
+    sv: [`“Vid floden där jag finner ro, vid hans vatten finner jag styrka.”`],
+    en: [`“By the river where I find rest, by His waters I find strength.”`]
+  },
+  author: {
+    sv: [`— Höga visan 8:8`],
+    en: [`— Song of Solomon 8:8`]
+  },
+  image: "psalms_42-6_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '341
+{
+  quote: {
+    sv: [`“Jag ropar till Gud, min klippa; varför glömmer du mig?”`],
+    en: [`“I cry to God, my rock; why have You forgotten me?”`]
+  },
+  author: {
+    sv: [`— Höga visan 4:13-14`],
+    en: [`— Song of Solomon 4:13-14`]
+  },
+  image: "psalms_42-9_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '342
+{
+  quote: {
+    sv: [`“Gud är vår tillflykt och styrka, en hjälp i nöden som alltid är nära.”`],
+    en: [`“God is our refuge and strength, an ever-present help in trouble.”`]
+  },
+  author: {
+    sv: [`— Hesekiel 36:26`],
+    en: [`— Ezekiel 36:26`]
+  },
+  image: "psalms_46-1_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '343
+{
+  quote: {
+    sv: [`“Därför behöver vi inte frukta, även om jorden skakar och bergen faller i havets djup.”`],
+    en: [`“Therefore we do not need to fear, even if the earth shakes and the mountains fall into the depths of the sea.”`]
+  },
+  author: {
+    sv: [`— Hesekiel 37:5`],
+    en: [`— Ezekiel 37:5`]
+  },
+  image: "psalms_46-2_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '344
+{
+  quote: {
+    sv: [`“Vattnet brusar, bergen skakar, men Herren i Sion är vår hjälp.”`],
+    en: [`“The waters roar, the mountains tremble, but the Lord in Zion is our help.”`]
+  },
+  author: {
+    sv: [`— Daniel 11:32`],
+    en: [`— Daniel 11:32`]
+  },
+  image: "psalms_46-3_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '345
+{
+  quote: {
+    sv: [`“Ring till mig på nödsdagar, jag skall rädda dig och du skall prisa mig.”`],
+    en: [`“Call upon Me in the day of trouble; I will rescue you, and you shall glorify Me.”`]
+  },
+  author: {
+    sv: [`— Hosea 4:14`],
+    en: [`— Hosea 4:14`]
+  },
+  image: "psalms_50-15_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '346
+{
+  quote: {
+    sv: [`“Skapa i mig ett rent hjärta, o Gud, och förnya en stadig ande inom mig.”`],
+    en: [`“And everyone who calls
+        on the name of the Lord will be saved;
+    for on Mount Zion and in Jerusalem
+        there will be deliverance,
+        as the Lord has said,
+    even among the survivors
+        whom the Lord calls.”`]
+  },
+  author: {
+    sv: [`— Joel 2:32`],
+    en: [`— Joel 2:32`]
+  },
+  image: "psalms_51-10_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '347
+{
+  quote: {
+    sv: [`“Kasta din börda på Herren, han skall försörja dig; han skall aldrig låta den rättfärdige vackla.”`],
+    en: [`“Cast your burden upon the Lord, He shall sustain you; He shall never let the righteous be moved.”`]
+  },
+  author: {
+    sv: [`— Amos 5:14`],
+    en: [`— Amos 5:14`]
+  },
+  image: "psalms_55-22_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '348
+{
+  quote: {
+    sv: [`“Sätt ditt hopp till Herren, håll fast vid hans väg, och han skall upphöja dig.”`],
+    en: [`“Place your hope in the Lord, hold fast to His way, and He shall exalt you.”`]
+  },
+  author: {
+    sv: [`— Obadja 1:15`],
+    en: [`— Obadiah 1:15`]
+  },
+  image: "psalms_55-23_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '349
+{
+  quote: {
+    sv: [`“Fruktas Herren är början till vishet; alla som följer hans väg har ett gott förstånd.”`],
+    en: [`“The fear of the Lord is the beginning of wisdom; all who follow His way have good understanding.”`]
+  },
+  author: {
+    sv: [`— Jona 1:17`],
+    en: [`— Jonah 1:17`]
+  },
+  image: "proverbs_9-10_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '350
+{
+  quote: {
+    sv: [`“Herren är min klippa, min borg och min räddare; min Gud, min tillflykt, i honom förtröstade jag.”`],
+    en: [`“The Lord is my rock, my fortress, and my deliverer; my God, my refuge, in Him I trust.”`]
+  },
+  author: {
+    sv: [`— Nahum 1:7`],
+    en: [`— Nahum 1:7`  ]
+  },
+  image: "psalms_18-2_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '351
+{
+  quote: {
+    sv: [`“När jag är rädd, sätter jag mitt förtroende till dig.”`],
+    en: [`“When I am afraid, I put my trust in You.”`]
+  },
+  author: {
+    sv: [`— Habackuk 2:4`],
+    en: [`— Habakkuk 2:4`]
+  },
+  image: "psalms_56-3_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '352
+{
+  quote: {
+    sv: [`“Jag förtröstar på Gud, jag gläder mig, jag sjunger till hans namn.”`],
+    en: [`“I trust in God, I rejoice, I sing praises to His name.”`]
+  },
+  author: {
+    sv: [`— Habackuk 3:18`],
+    en: [`— Habakkuk 3:18`]
+  },
+  image: "psalms_56-4_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '353
+{
+  quote: {
+    sv: [`“Rädda mig, o Gud, från mina fiender; skydda mig från dem som står emot mig.”`],
+    en: [`“Deliver me, O God, from my enemies; protect me from those who rise against me.”`]
+  },
+  author: {
+    sv: [`— Sefanja 3:17`],
+    en: [`— Zephaniah 3:17`]
+  },
+  image: "psalms_59-1_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '354
+{
+  quote: {
+    sv: [`“Men jag skall sjunga om din styrka, varje morgon lovsjunga din nåd.”`],
+    en: [`“But I will sing of Your strength, every morning I will praise Your steadfast love.”`]
+  },
+  author: {
+    sv: [`— Haggai 1:13`],
+    en: [`— Haggai 1:13`]
+  },
+  image: "psalms_59-16_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '355
+{
+  quote: {
+    sv: [`“Gud är min styrka, jag förtröstar på honom och hans nåd skall vara min glädje.”`],
+    en: [`“God is my strength, I trust in Him, and His grace shall be my joy.”`]
+  },
+  author: {
+    sv: [`— Haggai 2:4-5`],
+    en: [`— Haggai 2:4-5`]
+  },
+  image: "psalms_59-17_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '356
+{
+  quote: {
+    sv: [`“Han är min klippa och min frälsning, min befästning; jag skall inte vackla.”`],
+    en: [`“Then he said to me, “This is the word of the Lord to Zerubbabel, saying, ‘Not by might nor by power, but by My Spirit,’ says the Lord of armies.”`]
+  },
+  author: {
+    sv: [`— Sakarja 2:8`],
+    en: [`— Zechariah 2:8`]
+
+  },
+  image: "psalms_62-6_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '357
+{
+  quote: {
+    sv: [`“Endast hos Gud finner jag stillhet; mitt hopp kommer från honom.”`],
+    en: [`“Only in God is my soul at rest; my hope comes from Him.”`]
+  },
+  author: {
+    sv: [`— Sakarja 4:6`],
+    en: [`— Zechariah 4:6`]
+  },
+  image: "psalms_62-7_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '358
+{
+  quote: {
+    sv: [`“Lita på honom vid alla tider, folket, utgjut era hjärtan inför honom; Gud är vår tillflykt.”`],
+    en: [`“Bring the whole tithe into the storehouse, that there may be food in my house. Test me in this,” says the Lord Almighty, “and see if I will not throw open the floodgates of heaven and pour out so much blessing that there will not be room enough to store it.”`]
+  },
+  author: {
+    sv: [`— Malaki 3:10`],
+    en: [`— Malachi 3:10`]
+  },
+  image: "psalms_62-8_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '359
+{
+  quote: {
+    sv: [`“Många säger: ’Vem kan ge oss gott?’ Herre, låt ditt ansikte lysa över oss.”`],
+    en: [`“Many ask, ‘Who can show us good?’ Lord, let Your face shine upon us.”`]
+  },
+  author: {
+    sv: [`— Apostlagärningarna 20:35`],
+    en: [`— Acts 20:35`]
+  },
+  image: "psalms_63-3_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '360
+{
+  quote: {
+    sv: [`“Gud är vår styrka och vår tillflykt i alla tider.”`],
+    en: [`“God is our strength and refuge at all times.”`]
+  },
+  author: {
+    sv: [`— Kolosserbrevet 3:12`],
+    en: [`— Colossians 3:12`]
+  },
+  image: "psalms_73-26_pexels.jpg",
+  credit: "Pexels.com"
+},
+// '361
+{
+  quote: {
+    sv: [`“Må Herren låta oss se hans verk, och må han bevara hans härlighet över oss. Må Herren ge oss sin välvilja varje dag och bevara vårt verk.”`],
+    en: [`“May the Lord show us His works, and may He preserve His glory over us. May the Lord give us His favor each day and sustain our work.”`]
+  },
+  author: {
+    sv: [`— Kolosserbrevet 3:4`],
+    en: [`— Colossians 3:4`]
+  },
+  image: "psalms_90-17_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '362
+{
+  quote: {
+    sv: [`“Den som bor i den Högstes skydd, under den Allsmäktiges skugga, han säger till Herren: ’Min tillflykt och min borg, min Gud, som jag förtröstar på.’”`],
+    en: [`“He who dwells in the shelter of the Most High, under the shadow of the Almighty, says to the Lord: ‘My refuge and my fortress, my God, in whom I trust.’”`]
+  },
+  author: {
+    sv: [`— Kolosserbrevet 3:16`],
+    en: [`— Colossians 3:16`]
+  },
+  image: "psalms_91-1_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '363
+{
+  quote: {
+    sv: [`“Han skall ge sina änglar befallning om dig, att de bevarar dig på alla dina vägar.”`],
+    en: [`“He shall command His angels concerning you, to guard you in all your ways.”`]
+  },
+  author: {
+    sv: [`— Kolosserbrevet 3:23-24`],
+    en: [`— Colossians 4:23-24`]
+  },
+  image: "psalms_91-11_pexels.jpg",
+  credit: "Pexels.com"
+},
+
+// '364
+{
+  quote: {
+    sv: [`“De skall bära dig på händer, så att du inte stöter din fot mot någon sten.”`],
+    en: [`“They shall lift you up in their hands, so that you will not strike your foot against a stone.”`]
+  },
+  author: {
+    sv: [`— Kolosserbrevet 3:4`],
+    en: [`— Colossians 3:4`]
+  },
+  image: "psalms_91-12_pexels.jpg",
+  credit: "Pexels.com"
+},
+];
+
+// General quotes
+const dailyQuoteContainer = document.getElementById("daily-general-quote-container");
+const dailyQuoteParagraph = document.getElementById("daily-general-quote");
 const dailyQuoteSubtext = document.getElementById("subtext");
-const dailyQuoteAuthor = document.getElementById("quote-author");
+const dailyQuoteAuthor = document.getElementById("general-quote-author");
 
 // Get todays day of the year (-1)
 function getDayOfYearIndex(date = new Date()) {
@@ -2591,14 +7885,16 @@ function getDayOfYearIndex(date = new Date()) {
 }
 
 const dailyQuotesIndexMax = dailyQuotes.length;
+const dailyBibleQuotesIndexMax = bibleQuotes.length;
 
 // get random dailyQuotes Index number
 function getRandomDailyQuotesIndexNumber(dailyQuotesIndexMax) {
   return Math.floor(Math.random() * dailyQuotesIndexMax);
 }
 
+var todayIndex = getDayOfYearIndex();
+
 function getQuoteForToday() {
-  const todayIndex = getDayOfYearIndex();
   let dailyQuoteToPrint = dailyQuotes[0];
 
   if (!dailyQuotes[todayIndex]) {
@@ -2628,3 +7924,110 @@ function getRandomDailyQuote() {
 dailyQuoteContainer.addEventListener("click", function (e) {
   getRandomDailyQuote();
 });
+
+// Bible quotes
+const bibleQuoteContainerIcon = document.getElementById("quote-container-icon");
+const dailyBibleQuoteContainer = document.getElementById("daily-bible-quote-container");
+const dailyBibleBlockQuote = document.getElementById("bible-block-quote");
+const dailyBibleQuoteParagraph = document.getElementById("daily-bible-quote");
+const dailyBibleQuoteAuthor = document.getElementById("bible-quote-author");
+const dailyBibleQuoteCredit = document.getElementById("bible-quote-credit");
+
+let currentBibleQuote = bibleQuotes[todayIndex]
+
+dailyBibleBlockQuote.style.backgroundImage = `url('./media/img/${currentBibleQuote.image}')`;
+dailyBibleBlockQuote.style.backgroundSize = "cover";       // make it cover
+dailyBibleBlockQuote.style.backgroundRepeat = "no-repeat"; // prevent tiling
+dailyBibleBlockQuote.style.backgroundPosition = "center";  // center the image
+dailyBibleBlockQuote.style.backgroundColor = "rgba(0,0,0,0.1)";
+dailyBibleBlockQuote.style.backgroundBlendMode = "darken";
+
+languageSelectElement.addEventListener('change', function() {
+
+  dailyBibleQuoteParagraph.innerText = currentBibleQuote.quote[sessionStorage.getItem("languageVariable")];
+  dailyBibleQuoteAuthor.innerText = currentBibleQuote.author[sessionStorage.getItem("languageVariable")];
+});
+
+// Get random bible quote when clicking inside the quote box.
+
+function getRandomDailyBibleQuote() {
+  let randomBibleQuoteIndexNumber = getRandomDailyQuotesIndexNumber(dailyBibleQuotesIndexMax);
+
+  currentBibleQuote = bibleQuotes[randomBibleQuoteIndexNumber];
+
+  dailyBibleQuoteParagraph.innerText = currentBibleQuote.quote[sessionStorage.getItem("languageVariable")];
+  dailyBibleQuoteAuthor.innerText = currentBibleQuote.author[sessionStorage.getItem("languageVariable")];
+  dailyBibleBlockQuote.style.backgroundImage = `url('./media/img/${currentBibleQuote.image}')`;
+}
+
+dailyBibleQuoteContainer.addEventListener("click", function (e) {
+  getRandomDailyBibleQuote();
+});
+
+// Get Bible quote when clicking on pidgeon icon
+bibleQuoteContainerIcon.addEventListener("click", function () {
+  if (dailyBibleQuoteContainer.style.opacity === "0" || dailyBibleQuoteContainer.style.opacity === "") {
+    dailyBibleQuoteContainer.style.display = "flex";
+    dailyBibleQuoteParagraph.style.opacity = "0";
+    dailyBibleQuoteAuthor.style.opacity = "0";
+    dailyBibleQuoteContainer.style.opacity = "1";
+    bibleQuoteContainerIcon.style.opacity = "0.8"
+    dailyBibleQuoteCredit.style.display = "flex";
+    dailyBibleQuoteCredit.style.opacity = "0";
+    dailyBibleQuoteCredit.innerHTML = bibleQuotes[todayIndex].quote;
+    dailyBibleQuoteCredit.innerHTML = bibleQuotes[todayIndex].author;
+    dailyBibleQuoteCredit.innerHTML = bibleQuotes[todayIndex].credit;
+    dailyBibleQuoteCredit.style.marginBottom = "0px";
+
+  // Hide credit text after 1.9 seconds
+    setTimeout(() => {
+    dailyBibleQuoteCredit.style.marginBottom = "-17px";
+  }, 500);
+
+    setTimeout(() => {
+    dailyBibleQuoteCredit.style.opacity = "1";
+
+  }, 550);
+
+  setTimeout(() => {
+    dailyBibleQuoteParagraph.style.opacity = "1"
+    dailyBibleQuoteAuthor.style.opacity = "1"
+  }, 1000);
+
+  setTimeout(() => {
+    dailyBibleQuoteCredit.style.opacity = "0";
+  }, 1900);
+
+  setTimeout(() => {
+    dailyBibleQuoteCredit.style.marginBottom = "0px";
+    dailyBibleQuoteCredit.style.transition = "margin-bottom 0.4s ease";
+  }, 2100);
+
+  } else {
+    dailyBibleQuoteCredit.style.display = "none";
+    bibleQuoteContainerIcon.style.opacity = "0.3"
+    dailyBibleQuoteContainer.style.opacity = "0";
+    dailyBibleQuoteContainer.style.display = "none";
+  }
+});
+
+  dailyBibleQuoteParagraph.innerText = currentBibleQuote.quote[sessionStorage.getItem("languageVariable")];
+  dailyBibleQuoteAuthor.innerText = currentBibleQuote.author[sessionStorage.getItem("languageVariable")];
+  dailyBibleBlockQuote.style.backgroundImage = `url('./media/img/${currentBibleQuote.image}')`;
+
+  function getBibleQuoteForToday() {
+
+  let dailyBibleQuoteToPrint = bibleQuotes[0];
+
+    console.log("bibleQuotes[todayIndex] = ", bibleQuotes[todayIndex]);
+
+  if (!bibleQuotes[todayIndex]) {
+    dailyBibleQuoteToPrint =
+      bibleQuotes[getRandomDailyQuotesIndexNumber(dailyQuotesIndexMax)];
+  } else {
+    dailyBibleQuoteToPrint = bibleQuotes[todayIndex];
+  }
+
+  dailyBibleQuoteParagraph.innerText = dailyBibleQuoteToPrint.quote
+  dailyBibleQuoteAuthor.innerText = dailyBibleQuoteToPrint.author;
+}
