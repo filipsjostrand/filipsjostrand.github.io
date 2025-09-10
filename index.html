@@ -145,14 +145,28 @@
 
                 <!-- _ _ _ Top 3 Todos (end) -->
 
-                <div id="todo-quote-container">
-                  <blockquote id="block-quote">
-                    <p id="daily-quote"></p>
+                <div class="todo-quote-container" id="daily-general-quote-container">
+                  <blockquote class="block-quote">
+                    <p class="daily-quote" id="daily-general-quote"></p>
                     <p id="subtext"></p>
-                    <footer id="quote-author">
+                    <footer class="quote-author" id="general-quote-author">
                     </footer>
                   </blockquote>
 
+                </div>
+
+                <div id="quote-container-icon">
+                  🕊️
+                </div>
+
+                <!-- Default: display: none -->
+                <div class="todo-quote-container" id="daily-bible-quote-container">
+                  <blockquote class="block-quote" id="bible-block-quote">
+                    <p class="daily-quote" id="daily-bible-quote"></p>
+                    <footer class="quote-author" id="bible-quote-author">
+                    </footer>
+                    <p id="bible-quote-credit"></p>
+                  </blockquote>
                 </div>
 
           </div>
@@ -893,3 +907,4 @@
     <script async src="./scripts/contact-form.js"></script>
 </body>
 </html>
+
