@@ -1015,7 +1015,7 @@ li.bullet-point-size-two, li {
   }
 
   #block-quote {
-    width: 350px;
+    max-width: 350px;
   }
 
   #subtext {
@@ -1151,7 +1151,7 @@ li.bullet-point-size-two, li {
   }
 
   .block-quote {
-    width: 300px;
+    max-width: 300px;
   }
 
   #subtext {
