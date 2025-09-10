@@ -1014,8 +1014,8 @@ li.bullet-point-size-two, li {
     margin-top: 20rem;
   }
 
-  #block-quote {
-    max-width: 350px;
+  .block-quote {
+    width: 350px;
   }
 
   #subtext {
@@ -1151,7 +1151,7 @@ li.bullet-point-size-two, li {
   }
 
   .block-quote {
-    max-width: 300px;
+    width: 300px;
   }
 
   #subtext {
@@ -1335,3 +1335,4 @@ li.bullet-point-size-two, li {
     grid-template-columns: auto auto auto auto auto auto auto;
   }
 }
+
