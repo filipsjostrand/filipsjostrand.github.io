@@ -1784,7 +1784,8 @@ const dailyQuotes = [
 
   // '252
   {
-    quote: `“When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us”`,
+    quote: `“When one door of happiness closes, another opens; 
+    but often we look so long at the closed door that we do not see the one which has been opened for us”`,
     subtext: ``,
     author: "— Helen Keller",
   },
