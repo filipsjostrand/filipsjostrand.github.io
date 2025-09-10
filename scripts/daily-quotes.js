@@ -7871,8 +7871,6 @@ const bibleQuotes = [
 },
 ];
 
-document.addEventListener('DOMContentLoaded', function () {
-
 // General quotes
 const dailyQuoteContainer = document.getElementById("daily-general-quote-container");
 const dailyQuoteParagraph = document.getElementById("daily-general-quote");
@@ -8035,5 +8033,3 @@ dailyBibleQuoteContainer.addEventListener("click", function (e) {
   dailyBibleQuoteParagraph.innerText = dailyBibleQuoteToPrint.quote
   dailyBibleQuoteAuthor.innerText = dailyBibleQuoteToPrint.author;
 }
-
-});
