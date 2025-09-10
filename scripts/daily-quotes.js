@@ -7965,53 +7965,58 @@ dailyBibleQuoteContainer.addEventListener("click", function (e) {
   getRandomDailyBibleQuote();
 });
 
-// Get Bible quote when clicking on pidgeon icon
-bibleQuoteContainerIcon.addEventListener("click", function () {
-  if (dailyBibleQuoteContainer.style.opacity === "0" || dailyBibleQuoteContainer.style.opacity === "") {
-    dailyBibleQuoteContainer.style.display = "flex";
-    dailyBibleQuoteParagraph.style.opacity = "0";
-    dailyBibleQuoteAuthor.style.opacity = "0";
-    dailyBibleQuoteContainer.style.opacity = "1";
-    bibleQuoteContainerIcon.style.opacity = "0.8"
-    dailyBibleQuoteCredit.style.display = "flex";
-    dailyBibleQuoteCredit.style.opacity = "0";
-    dailyBibleQuoteCredit.innerHTML = bibleQuotes[todayIndex].quote;
-    dailyBibleQuoteCredit.innerHTML = bibleQuotes[todayIndex].author;
-    dailyBibleQuoteCredit.innerHTML = bibleQuotes[todayIndex].credit;
-    dailyBibleQuoteCredit.style.marginBottom = "0px";
 
-  // Hide credit text after 1.9 seconds
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Get Bible quote when clicking on pidgeon icon
+  bibleQuoteContainerIcon.addEventListener("click", function () {
+    if (dailyBibleQuoteContainer.style.opacity === "0" || dailyBibleQuoteContainer.style.opacity === "") {
+      dailyBibleQuoteContainer.style.display = "flex";
+      dailyBibleQuoteParagraph.style.opacity = "0";
+      dailyBibleQuoteAuthor.style.opacity = "0";
+      dailyBibleQuoteContainer.style.opacity = "1";
+      bibleQuoteContainerIcon.style.opacity = "0.8"
+      dailyBibleQuoteCredit.style.display = "flex";
+      dailyBibleQuoteCredit.style.opacity = "0";
+      dailyBibleQuoteCredit.innerHTML = bibleQuotes[todayIndex].quote;
+      dailyBibleQuoteCredit.innerHTML = bibleQuotes[todayIndex].author;
+      dailyBibleQuoteCredit.innerHTML = bibleQuotes[todayIndex].credit;
+      dailyBibleQuoteCredit.style.marginBottom = "0px";
+  
+    // Hide credit text after 1.9 seconds
+      setTimeout(() => {
+      dailyBibleQuoteCredit.style.marginBottom = "-17px";
+    }, 500);
+  
+      setTimeout(() => {
+      dailyBibleQuoteCredit.style.opacity = "1";
+  
+    }, 550);
+  
     setTimeout(() => {
-    dailyBibleQuoteCredit.style.marginBottom = "-17px";
-  }, 500);
-
+      dailyBibleQuoteParagraph.style.opacity = "1"
+      dailyBibleQuoteAuthor.style.opacity = "1"
+    }, 1000);
+  
     setTimeout(() => {
-    dailyBibleQuoteCredit.style.opacity = "1";
+      dailyBibleQuoteCredit.style.opacity = "0";
+    }, 1900);
+  
+    setTimeout(() => {
+      dailyBibleQuoteCredit.style.marginBottom = "0px";
+      dailyBibleQuoteCredit.style.transition = "margin-bottom 0.4s ease";
+    }, 2100);
+  
+    } else {
+      dailyBibleQuoteCredit.style.display = "none";
+      bibleQuoteContainerIcon.style.opacity = "0.3"
+      dailyBibleQuoteContainer.style.opacity = "0";
+      dailyBibleQuoteContainer.style.display = "none";
+    }
+  });
 
-  }, 550);
-
-  setTimeout(() => {
-    dailyBibleQuoteParagraph.style.opacity = "1"
-    dailyBibleQuoteAuthor.style.opacity = "1"
-  }, 1000);
-
-  setTimeout(() => {
-    dailyBibleQuoteCredit.style.opacity = "0";
-  }, 1900);
-
-  setTimeout(() => {
-    dailyBibleQuoteCredit.style.marginBottom = "0px";
-    dailyBibleQuoteCredit.style.transition = "margin-bottom 0.4s ease";
-  }, 2100);
-
-  } else {
-    dailyBibleQuoteCredit.style.display = "none";
-    bibleQuoteContainerIcon.style.opacity = "0.3"
-    dailyBibleQuoteContainer.style.opacity = "0";
-    dailyBibleQuoteContainer.style.display = "none";
-  }
 });
-
+  
   dailyBibleQuoteParagraph.innerText = currentBibleQuote.quote[sessionStorage.getItem("languageVariable")];
   dailyBibleQuoteAuthor.innerText = currentBibleQuote.author[sessionStorage.getItem("languageVariable")];
   dailyBibleBlockQuote.style.backgroundImage = `url('./media/img/${currentBibleQuote.image}')`;
