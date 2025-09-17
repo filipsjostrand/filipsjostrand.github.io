@@ -7927,7 +7927,7 @@ dailyQuoteContainer.addEventListener("click", function (e) {
 });
 
 // Bible quotes
-const bibleQuoteContainerIcon = document.getElementById("quote-container-icon");
+var bibleQuoteContainerIcon = document.getElementById("quote-container-icon");
 const dailyBibleQuoteContainer = document.getElementById("daily-bible-quote-container");
 const dailyBibleBlockQuote = document.getElementById("bible-block-quote");
 const dailyBibleQuoteParagraph = document.getElementById("daily-bible-quote");
@@ -8040,4 +8040,4 @@ bibleQuoteContainerIcon.addEventListener("click", () => {
 
 if (!bibleQuoteContainerIcon) {
   console.warn("Pigeon icon element not found!");
-}
+};
