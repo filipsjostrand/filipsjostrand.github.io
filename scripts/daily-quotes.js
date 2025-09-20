@@ -3057,7 +3057,6 @@ const bibleQuotes = [
     credit: "Pixabay (Pexels.com)"
   },
 
-
   // '29
   {
     quote: {
@@ -3078,15 +3077,15 @@ const bibleQuotes = [
     credit: "Pixabay (Pexels.com)"
   },
 
-
-
   // '30
   {
     quote: {
       sv: [`“Orden träffade dem i hjärtat, och de frågade Petrus och de andra apostlarna: "Bröder, vad skall vi göra?"
+
         Petrus svarade: "Omvänd er och låt er alla döpas i Jesu Kristi namn, så att ni får förlåtelse för era synder. Då får ni den heliga ande som gåva. Ty löftet gäller för er och era barn och alla dem långt borta som Herren vår Gud vill kalla."”`],
       en: [`“When the people heard this, they were cut to the heart and said to Peter and the other apostles, ‘Brothers, what shall we do?’
-          Peter replied, ‘Repent and be baptised, every one of you, in the name of Jesus Christ for the forgiveness of your sins. And you will receive the gift of the Holy Spirit. 39 The promise is for you and your children and for all who are far off – for all whom the Lord our God will call.’”`]
+
+        Peter replied, ‘Repent and be baptised, every one of you, in the name of Jesus Christ for the forgiveness of your sins. And you will receive the gift of the Holy Spirit. 39 The promise is for you and your children and for all who are far off – for all whom the Lord our God will call.’”`]
     },
     author: {
       sv: [`— Apostlagärningarna 2:37-39`],
@@ -3112,7 +3111,7 @@ const bibleQuotes = [
       sv: [`— Judasbrevet 1:2`],
       en: [`— Jude 1:2`]
     },
-    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
@@ -3164,7 +3163,7 @@ const bibleQuotes = [
       sv: [`— Klagovisorna 3:22-30`],
       en: [`— Lamentations 3:22-30`]
     },
-    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
@@ -3178,7 +3177,7 @@ const bibleQuotes = [
       sv: [`— Lukasevangeliet 1:37`],
       en: [`— Luke 1:37`]
     },
-    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
@@ -3192,7 +3191,7 @@ const bibleQuotes = [
       sv: [`— Markusevangeliet 10:27`],
       en: [`— Mark 10:27`]
     },
-    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
@@ -3219,7 +3218,7 @@ const bibleQuotes = [
       sv: [`— Matteusevangeliet 5:4-10`],
       en: [`— Matthew 5:4-10`]
     },
-    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
@@ -3233,7 +3232,7 @@ const bibleQuotes = [
       sv: [`— Mika 7:7`],
       en: [`— Micah 7:7`]
     },
-    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
@@ -3247,7 +3246,7 @@ const bibleQuotes = [
       sv: [`— Ordspråksboken 6:6`],
       en: [`— Proverbs 6:6`]
     },
-    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
@@ -3261,7 +3260,7 @@ const bibleQuotes = [
       sv: [`— Predikaren 4:9`],
       en: [`— Ecclesiastes 4:9`]
     },
-    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
@@ -3275,7 +3274,7 @@ const bibleQuotes = [
       sv: [`— Psaltaren 4:9`],
       en: [`— Psalm 4:8`]
     },
-    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
@@ -3289,7 +3288,7 @@ const bibleQuotes = [
       sv: [`— Romarbrevet 6:23`],
       en: [`— Romans 6:23`]
     },
-    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
@@ -3303,7 +3302,7 @@ const bibleQuotes = [
       sv: [`— Domarboken 5:31`],
       en: [`— Judges 5:31`]
     },
-    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
@@ -3317,7 +3316,7 @@ const bibleQuotes = [
       sv: [`— Rut 2:4`],
       en: [`— Ruth 2:4`]
     },
-    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
@@ -3333,11 +3332,9 @@ const bibleQuotes = [
       sv: [`— 1 Samuelsboken 16:7`],
       en: [`— 1 Samuel 16:7`]
     },
-    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
     credit: "Stijn Dikstra (Pexels.com)"
   },
-
-
 
   // '44
   {
@@ -3349,7 +3346,7 @@ const bibleQuotes = [
       sv: [`— 1 Johannesbrevet 4:7-8`],
       en: [`— 1 Johannesbrevet 4:7-8`]
     },
-    image: "ocean_view_stijn_dikstra_pexels.jpg",
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
@@ -3368,21 +3365,18 @@ const bibleQuotes = [
     credit: "Ave Calvar Martinez (Pexels.com)"
   },
 
-  // Kontrollerat hit
-      // x Ej Kontroll
-
   // '46
   {
     quote: {
-      sv: [`“Kung Salomo lät föra trä från Almug-träden till templet och till kungens palats, och gjorde harpor och lyror åt sångarna.”`],
-      en: [`“King Solomon used the almug wood to make supports for the temple of the Lord and for the royal palace, and to make harps and lyres for the musicians.”`]
+      sv: [`“Så ge nu din tjänare ett lydigt hjärta, så att han kan vara domare för ditt folk och skilja mellan gott och ont. Ty vem förmår väl annars vara domare över detta ditt stora folk?`],
+      en: [`“So give your servant a discerning heart to govern your people and to distinguish between right and wrong. For who is able to govern this great people of yours?””`]
     },
     author: {
-      sv: [`— 1 Kungaboken 10:11–12`],
-      en: [`— 1 Kings 10:11–12`]
+      sv: [`— 1 Kungaboken 3:9`],
+      en: [`— 1 Kings 3:9`]
     },
-    image: "temple_music_pixabay.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
   },
 
   // '47
@@ -3397,8 +3391,8 @@ const bibleQuotes = [
       sv: [`— Ordspråksboken 16:3`],
       en: [`— Proverbs 16:3`]
     },
-    image: "jan_pixabay_pexels.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
   },
 
   // '48
@@ -3417,8 +3411,8 @@ const bibleQuotes = [
       sv: [`— Ordspråksboken 3:5-6`],
       en: [`— Proverbs 3:5-6`]
     },
-    image: "feb_pixabay_pexels.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
   },
 
   // '49
@@ -3431,8 +3425,8 @@ const bibleQuotes = [
       sv: [`— Johannesevangeliet 3:34`],
       en: [`— John 3:34`]
     },
-    image: "feb_pixabay_pexels.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
   },
 
     // '50
@@ -3445,234 +3439,310 @@ const bibleQuotes = [
       sv: [`— 2 Kungaboken 20:5`],
       en: [`— 2 Kings 20:5`]
     },
-    image: "feb_pixabay_pexels.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
+    credit: "Stijn Dikstra (Pexels.com)"
   },
 
     // '51
   {
     quote: {
-      sv: [`“Men Gud bevisar sin kärlek till oss g...”`],
-      en: [`“But God demonstrates his own love for us in t...”`]
+      sv: [`“Ty Gud har inte gett oss modlöshetens ande, utan kraftens, kärlekens och självbesinningens. Skäms alltså inte för förvittnesbördet om vår Herre och inte heller för mig som är fånge för hans hans skull, utan lid för evangeliet du också med kraften från Gud. Han har räddat oss och kallat oss med en helig kallelse, inte på grund av våra gärningar utan genom sitt beslut och sin nåd, som han skänkte oss i Kristus Jesus redan före tidens början men som har blivit uppenbar nu när vår frälsare Kristus Jesus trätt fram. Han har utplånat döden och dragit liv och oförgänglighet fram i ljuset genom evangeliet,”`],
+      en: [`“For the Spirit God gave us does not make us timid, but gives us power, love and self-discipline. 8 So do not be ashamed of the testimony about our Lord or of me his prisoner. Rather, join with me in suffering for the gospel, by the power of God. 9 He has saved us and called us to a holy life – not because of anything we have done but because of his own purpose and grace. This grace was given us in Christ Jesus before the beginning of time, 10 but it has now been revealed through the appearing of our Saviour, Christ Jesus, who has destroyed death and has brought life and immortality to light through the gospel.”`]
     },
     author: {
-      sv: [`— Romarbr..`],
-      en: [`— Romans..`]
+      sv: [`— 2 Timotheus 1:7-10`],
+      en: [`— 2 Timothy 1:7-10`]
     },
-    image: "jan_pixabay_pexels.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "feb_ocean_view_stijn_dikstra_pexels",
+    credit: "Stijn Dikstra (Pexels.com)"
   },
 
 // '52
 {
   quote: {
-    sv: [`“Var starka och tappa inte modet, för ert arbete har sin lön.”`],
+    sv: [`“Men var ni frimodiga, låt inte modet falla, ty ert verk skall få sin lön.”`],
     en: [`“But as for you, be strong and do not give up, for your work will be rewarded.”`]
   },
   author: {
     sv: [`— 2 Krönikeboken 15:7`],
     en: [`— 2 Chronicles 15:7`]
   },
-  image: "strength_reward_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
+  credit: "Stijn Dikstra (Pexels.com)"
 },
-
-// _ _ _
 
 // '53
 {
   quote: {
-    sv: [`“Herren väckte upp andan hos Kyros, kung av Persien, så att han lät utropa...”`],
-    en: [`“The Lord moved the heart of Cyrus king of Persia to make a proclamation...”`]
+    sv: [`“Stig upp, ty denna uppgift åligger dig, och vi vill vara med dig. Var frimodig och grip dig verket an.”`],
+    en: [`“Rise up; this matter is in your hands. We will support you, so take courage and do it.”`]
   },
   author: {
-    sv: [`— Esra 1:1`],
-    en: [`— Ezra 1:1`]
+    sv: [`— Esra 10:4`],
+    en: [`— Ezra 10:4`]
   },
-  image: "proclamation_scroll_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
+  credit: "Stijn Dikstra (Pexels.com)"
 },
 
 // '54
 {
   quote: {
-    sv: [`“Glädjen i Herren är er styrka.”`],
-    en: [`“The joy of the Lord is your strength.”`]
+    sv: [`“Och han sade vidare till dem: "Gå bort och ät er bästa mat och drick ert sötaste vin, och sänd omkring gåvor av det till dem som inte hjar något tillagat åt sig,
+      ty denna dag är helgad åt vår Herre. Och var inte bedrövade, ty fröjd i Herren är er starkhet."”`],
+    en: [`“Nehemiah said, ‘Go and enjoy choice food and sweet drinks, and send some to those who have nothing prepared.
+      This day is holy to our Lord. Do not grieve, for the joy of the Lord is your strength.’”`]
   },
   author: {
     sv: [`— Nehemja 8:10`],
     en: [`— Nehemiah 8:10`]
   },
-  image: "joy_strength_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
+  credit: "Stijn Dikstra (Pexels.com)"
 },
 
 // '55
 {
   quote: {
-    sv: [`“Kanske har du blivit drottning just för en tid som denna.”`],
-    en: [`“And who knows but that you have come to your royal position for such a time as this?”`]
+    sv: [`“Nej, om du tiger stilla vid detta tillfälle, så skall nog hjälp och räddning beredas judarna från något annat håll,
+      men du och din faders hus, ni skall förgöras.
+      Vem vet om du inte just för en sådan tid som denna har nått kunglig värdighet.”`],
+    en: [`“For if you remain silent at this time, relief and deliverance for the Jews will arise from another place,
+      but you and your father’s family will perish.
+      And who knows but that you have come to your royal position for such a time as this?’”`]
   },
   author: {
     sv: [`— Ester 4:14`],
     en: [`— Esther 4:14`]
   },
-  image: "purpose_crown_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
+  credit: "Stijn Dikstra (Pexels.com)"
 },
 
 // '56
 {
   quote: {
-    sv: [`“Stark som döden är kärleken.”`],
-    en: [`“Love is as strong as death.”`]
+    sv: [`“Ha mig som signetring vid ditt hjärta,
+      som en signetring på din arm.
+    Ty kärleken är stark som döden,
+      dess längtan obetvinglig som dödsriket,
+    dess glöd är som eldens glöd,
+      en Herrens låga är den.
+    De största vatten förmår ej utsläcka kärleken,
+      strömmar kan inte dränka den.
+    Om någon ville ge
+      alla ägodelar i sitt hus för kärleken,
+      så skulle han ändå bli försmådd.”`],
+    en: [`“Place me like a seal over your heart,
+        like a seal on your arm;
+    for love is as strong as death,
+        its jealousy unyielding as the grave.
+    It burns like blazing fire,
+        like a mighty flame.
+    Many waters cannot quench love;
+        rivers cannot sweep it away.
+    If one were to give
+        all the wealth of one’s house for love,
+        it would be utterly scorned.”`]
   },
   author: {
-    sv: [`— Höga visan 8:6`],
-    en: [`— Song of Songs 8:6`]
+    sv: [`— Höga visan 8:6-7`],
+    en: [`— Song of Songs 8:6-7`]
   },
-  image: "love_fire_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
+  credit: "Stijn Dikstra (Pexels.com)"
 },
 
 // '57
 {
   quote: {
-    sv: [`“Jag ska ge er ett nytt hjärta och låta er få en ny ande.”`],
-    en: [`“I will give you a new heart and put a new spirit in you.”`]
+    sv: [`“Och jag skall ge er ett nytt hjärta och låta en ny ande komma i ert bröst. Jag skall ta bort stenhjärtat ur er kropp och ge er ett hjärta av kött.”`],
+    en: [`“I will give you a new heart and put a new spirit in you; I will remove from you your heart of stone and give you a heart of flesh.”`]
   },
   author: {
     sv: [`— Hesekiel 36:26`],
     en: [`— Ezekiel 36:26`]
   },
-  image: "new_heart_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
+  credit: "Stijn Dikstra (Pexels.com)"
 },
 
 // '58
 {
   quote: {
-    sv: [`“Men folket som känner sin Gud ska stå fasta och handla.”`],
-    en: [`“But the people who know their God will firmly resist and act.”`]
+    sv: [`“Och dem som har kränkt förbundet skall han med hala ord locka till helt avfall, men de av folket, som känner Gud, skall stå fasta och hålla ut.”`],
+    en: [`“With flattery he will corrupt those who have violated the covenant, but the people who know their God will firmly resist him.”`]
   },
   author: {
     sv: [`— Daniel 11:32`],
     en: [`— Daniel 11:32`]
   },
-  image: "faith_action_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
+  credit: "Stijn Dikstra (Pexels.com)"
 },
 
 // '59
 {
   quote: {
-    sv: [`“Jag ska hela deras avfall och älska dem av hjärtat.”`],
-    en: [`“I will heal their waywardness and love them freely.”`]
+    sv: [`“Hos Assur skall vi ej mer söka vår frälsning,
+        vi skall inte vidare stiga till häst.
+    Våra händers verk skall vi
+      inte mer kalla för vår Gud.
+      Ty hos dig är det som den faderlöse får barmhärtighet.
+
+    Ja, deras avfällighet vill jag hela,
+      jag vill bevisa dem kärlek av hjärtat,
+      ty min vrede har vänt sig ifrån dem.”`],
+    en: [`“Assyria cannot save us;
+        we will not mount war-horses.
+    We will never again say “Our gods”
+        to what our own hands have made,
+        for in you the fatherless find compassion.’
+
+    ‘I will heal their waywardness
+        and love them freely,
+        for my anger has turned away from them.”`]
   },
   author: {
-    sv: [`— Hosea 14:4`],
-    en: [`— Hosea 14:4`]
+    sv: [`— Hosea 14:4-5`],
+    en: [`— Hosea 14:3-4`]
   },
-  image: "healing_love_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
+  credit: "Stijn Dikstra (Pexels.com)"
 },
 
 // '60
 {
   quote: {
-    sv: [`“Och det ska ske att var och en som åkallar Herrens namn ska bli frälst.”`],
-    en: [`“And everyone who calls on the name of the Lord will be saved.”`]
+    sv: [`“Men det skall ske att var och en som åkallar Herrens namn, han skall bli frälst. ...”`],
+    en: [`“And everyone who calls on the name of the Lord will be saved. ...”`]
   },
   author: {
     sv: [`— Joel 2:32`],
     en: [`— Joel 2:32`]
   },
-  image: "salvation_call_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
+// March
 // '61
 {
   quote: {
-    sv: [`“Sök det goda och inte det onda, så att ni får leva.”`],
-    en: [`“Seek good, not evil, that you may live.”`]
+    sv: [`“Sök gott är, och inte vad ont är,
+      för att ni må leva.
+    Då ska Herren, herrskarkornas Gud, vara med er,
+      så som ni menar honom vara.”`],
+    en: [`“Seek good, not evil,
+        that you may live.
+    Then the Lord God Almighty will be with you,
+        just as you say he is.”`]
   },
   author: {
     sv: [`— Amos 5:14`],
     en: [`— Amos 5:14`]
   },
-  image: "seek_good_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '62
 {
   quote: {
-    sv: [`“Herrens dag är nära, den kommer som en förödelse från den Allsmäktige.”`],
-    en: [`“The day of the Lord is near for all nations. As you have done, it will be done to you.”`]
+    sv: [`“Ty Herrens dag är nära
+      för alla hednafolk.
+    Som du har gjort, så skall man också göra mot dig,
+      dina gärningar skall komma över ditt eget huvud.”`],
+    en: [`“The day of the Lord is near
+    for all nations.
+  As you have done, it will be done to you;
+    your deeds will return upon your own head.”`]
   },
   author: {
     sv: [`— Obadja 1:15`],
     en: [`— Obadiah 1:15`]
   },
-  image: "day_of_lord_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '63
 {
   quote: {
-    sv: [`“Men Herren lät en stor fisk sluka Jona, och han var i fiskens buk i tre dagar och tre nätter.”`],
-    en: [`“Now the Lord provided a huge fish to swallow Jonah, and Jonah was in the belly of the fish three days and three nights.”`]
+    sv: [`“Jag åkallade Herren i min nöd,
+      och han svarade mig.
+    Från dödsrikets buk ropade jag,
+    och du hörde min röst.”`],
+    en: [`“He said:
+    ‘In my distress I called to the Lord,
+        and he answered me.
+    From deep in the realm of the dead I called for help,
+        and you listened to my cry.”`]
   },
   author: {
-    sv: [`— Jona 1:17`],
-    en: [`— Jonah 1:17`]
+    sv: [`— Jona 2:3`],
+    en: [`— Jonah 2:2`]
   },
-  image: "jonah_fish_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '64
 {
   quote: {
-    sv: [`“Herren är god, en tillflykt på nödens dag.”`],
-    en: [`“The Lord is good, a refuge in times of trouble.”`]
+    sv: [`“Herren är god,
+      ett värn i nödens tid, och
+    han låter vårda om dem som förtröstar på honom.”`],
+    en: [`“The Lord is good,
+        a refuge in times of trouble.
+    He cares for those who trust in him,”`]
   },
   author: {
     sv: [`— Nahum 1:7`],
     en: [`— Nahum 1:7`]
   },
-  image: "refuge_storm_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '65
 {
   quote: {
-    sv: [`“Den rättfärdige ska leva genom sin tro.”`],
-    en: [`“The righteous person will live by his faith.”`]
+    sv: [`“Se, uppblåst och
+      orättrådig är dennes själ i honom,
+      men den rättfärdige skall leva genom sin tro.”`],
+    en: [`“‘See, the enemy is puffed up;
+    his desires are not upright –
+    but the righteous person will live by his faithfulness.”`]
   },
   author: {
     sv: [`— Habackuk 2:4`],
     en: [`— Habakkuk 2:4`]
   },
-  image: "faith_life_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '66
 {
   quote: {
-    sv: [`“Herren din Gud är mitt ibland dig, en hjälte som frälser.”`],
-    en: [`“The Lord your God is with you, the Mighty Warrior who saves.”`]
+    sv: [`“Herren, din Gud, bor i dig,
+        en hjälte som kan frälsa.
+    Han gläder sig över dig med lust,
+      han tiger stilla i sin kärlek,
+      han fröjdas över dig med jubel.”`],
+    en: [`“The Lord your God is with you,
+        the Mighty Warrior who saves.
+    He will take great delight in you;
+        in his love he will no longer rebuke you,
+        but will rejoice over you with singing.’”`]
   },
   author: {
     sv: [`— Sefanja 3:17`],
     en: [`— Zephaniah 3:17`]
   },
-  image: "warrior_savior_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // _ _ _
@@ -3680,15 +3750,15 @@ const bibleQuotes = [
 // '67
 {
   quote: {
-    sv: [`“Jag är med er, säger Herren.”`],
-    en: [`“I am with you, declares the Lord.”`]
+    sv: [`“Då sade Haggai, Herrens sändebud, efter Herrens uppdrag, till folket så: Jag är med er, säger Herren.”`],
+    en: [`“Then Haggai, the Lord’s messenger, gave this message of the Lord to the people: ‘I am with you,’ declares the Lord.”`]
   },
   author: {
     sv: [`— Haggai 1:13`],
     en: [`— Haggai 1:13`]
   },
-  image: "presence_light_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '68
@@ -3701,13 +3771,9 @@ const bibleQuotes = [
     sv: [`— Sakarja 4:6`],
     en: [`— Zechariah 4:6`]
   },
-  image: "spirit_power_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
-
-
-  // _ _ _
-  // ' _ _ _
 
   // '69
   {
@@ -3719,8 +3785,8 @@ const bibleQuotes = [
       sv: [`— Romarbrevet 8:28`],
       en: [`— Romans 8:28`]
     },
-    image: "march_img.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "march_life_of_pix_pexels.jpg",
+    credit: "Life Of Pix (Pexels.com)"
   },
 
     // '70
@@ -3733,8 +3799,8 @@ const bibleQuotes = [
       sv: [`— Hebreerbrevet 9:12`],
       en: [`— Hebrews 9:12`]
     },
-    image: "covenant_light_pixabay.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "march_life_of_pix_pexels.jpg",
+    credit: "Life Of Pix (Pexels.com)"
   },
 
     // '71
@@ -3747,8 +3813,8 @@ const bibleQuotes = [
       sv: [`— Hebreerbrevet 9:15`],
       en: [`— Hebrews 9:15`]
     },
-    image: "covenant_light_pixabay.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "march_life_of_pix_pexels.jpg",
+    credit: "Life Of Pix (Pexels.com)"
   },
 
     // '72
@@ -3761,8 +3827,8 @@ const bibleQuotes = [
       sv: [`— Jakobsbrevet 1:12`],
       en: [`— James 1:12`]
     },
-    image: "covenant_light_pixabay.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "march_life_of_pix_pexels.jpg",
+    credit: "Life Of Pix (Pexels.com)"
   },
 
     // '73
@@ -3775,8 +3841,8 @@ const bibleQuotes = [
       sv: [`— Jakobsbrevet 1:17-18`],
       en: [`— James 1:17-18`]
     },
-    image: "covenant_light_pixabay.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "march_life_of_pix_pexels.jpg",
+    credit: "Life Of Pix (Pexels.com)"
   },
 
     // '74
@@ -3792,22 +3858,22 @@ const bibleQuotes = [
         Se, jag låter min hjälp närma sig,
         den är ej långt borta, och min frälsning dröjer inte. ...”`],
       en: [`“Calling a bird of prey from the east,
-          The man who executes My counsel, from a far country.
-          Indeed I have spoken it;
-          I will also bring it to pass.
-          I have purposed it;
-          I will also do it.
+        The man who executes My counsel, from a far country.
+        Indeed I have spoken it;
+        I will also bring it to pass.
+        I have purposed it;
+        I will also do it.
 
-          Listen to Me, you stubborn-hearted,
-          Who are far from righteousness:          I bring My righteousness near, it shall not be far off;
-          My salvation shall not linger. ...”`]
+        Listen to Me, you stubborn-hearted,
+        Who are far from righteousness:          I bring My righteousness near, it shall not be far off;
+        My salvation shall not linger. ...”`]
     },
     author: {
       sv: [`— Jesaja 46:11-13`],
       en: [`— Isaiah 46:11-13`]
     },
-    image: "covenant_light_pixabay.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "march_life_of_pix_pexels.jpg",
+    credit: "Life Of Pix (Pexels.com)"
   },
 
       // '75
@@ -3820,8 +3886,8 @@ const bibleQuotes = [
       sv: [`— Johannesevangeliet 1:1-5`],
       en: [`— John 1:1-5`]
     },
-    image: "covenant_light_pixabay.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "march_life_of_pix_pexels.jpg",
+    credit: "Life Of Pix (Pexels.com)"
   },
       // '76
   {
@@ -3833,69 +3899,80 @@ const bibleQuotes = [
       sv: [`— Markusevangeliet 10:14-16`],
       en: [`— Mark 10:14-16`]
     },
-    image: "covenant_light_pixabay.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "march_life_of_pix_pexels.jpg",
+    credit: "Life Of Pix (Pexels.com)"
   },
-
 
 // '77
 {
   quote: {
-    sv: [`“Herren själv ska gå före dig. Han ska vara med dig, han ska inte lämna dig eller överge dig. Var inte rädd eller förfärad.”`],
-    en: [`“And the Lord, he it is that doth go before thee; he will be with thee, he will not fail thee, neither forsake thee: fear not, neither be dismayed.”`]
+    sv: [`“Och Herren är den som går framför dig. Han ska vara med dig, han ska inte lämna dig eller överge dig. Du må inte frukta och inte vara förfärad.”`],
+    en: [`“The Lord himself goes before you and will be with you; he will never leave you nor forsake you. Do not be afraid; do not be discouraged.”`]
   },
   author: {
     sv: [`— 5 Mosebok 31:8`],
     en: [`— Deuteronomy 31:8`]
   },
-  image: "guidance_path_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+    image: "march_life_of_pix_pexels.jpg",
+    credit: "Life Of Pix (Pexels.com)"
 },
 
 // '78
 {
   quote: {
     sv: [
-      `“Vaka, stå fasta i tron, var modiga och starka. Låt allt hos er ske i kärlek.”`
+      `“Vet ni inte att er kropp är ett tempel för den helige anden, som ni har inom er och som ni har fått från Gud? Ni tillhör inte er själva. Gud har köpt er och priset är betalt. Ära då Gud mer er kropp.”`
     ],
     en: [
-      `“Watch ye, stand fast in the faith, quit you like men, be strong. Let all your things be done with charity.”`
+      `“Do you not know that your bodies are temples of the Holy Spirit, who is in you, whom you have received from God? You are not your own; you were bought at a price. Therefore honour God with your bodies.”`
     ]
   },
   author: {
-    sv: [`— 1 Korinthierbrevet 16:13–14`],
-    en: [`— 1 Corinthians 16:13–14`]
+    sv: [`— 1 Korinthierbrevet 6:19-20`],
+    en: [`— 1 Corinthians 6:19-20`]
   },
-  image: "faith_strength_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '79
 {
   quote: {
-    sv: [`“Se alltså noga till hur ni lever, att ni inte lever som ovisa människor utan som visa.”`],
-    en: [`“See then that ye walk circumspectly, not as fools, but as wise.”`]
+    sv: [`“En gång var ni mörker, men i Herren har ni nu blivit ljus. Lev som ljusets barn — ljuset bär frukt överallt där det finns godhet, rättfärdighet och sanning — och tänk på vad Herren vill ha. Ta inte del i mörkrets ofruktbara gärningar. Mer än så, avslöja dem — vad sådant folk har för sig i skymundan är en skam till och med att tala om. Men när alltsammans avslöjas av ljuset, blir det synligt, för överallt där något blir synligt finns ljus. Därför heter det:
+
+      "Vakna, du som sover,
+          stå upp från de döda,
+          och Kristus skall lysa över dig."
+
+      Se alltså noga upp med hur ni lever, inte som ovisa människor utan som visa.”`],
+    en: [`“For you were once darkness, but now you are light in the Lord. Live as children of light (for the fruit of the light consists in all goodness, righteousness and truth) and find out what pleases the Lord. Have nothing to do with the fruitless deeds of darkness, but rather expose them. It is shameful even to mention what the disobedient do in secret. But everything exposed by the light becomes visible — and everything that is illuminated becomes a light. This is why it is said:
+
+      ‘Wake up, sleeper,
+        rise from the dead,
+        and Christ will shine on you.’
+
+      Be very careful, then, how you live — not as unwise but as wise,”`]
   },
   author: {
-    sv: [`— Efesierbrevet 5:15`],
-    en: [`— Ephesians 5:15`]
+    sv: [`— Efesierbrevet 5:8-15`],
+    en: [`— Ephesians 5:8-15`]
   },
-  image: "wisdom_walk_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '80
 {
   quote: {
-    sv: [`“Fadern själv älskar er, för ni har älskat mig och trott att jag har utgått från Gud.”`],
-    en: [`“For the Father himself loveth you, because ye have loved me, and have believed that I came out from God.”`]
+    sv: [`“ty Fadern själv älskar er, eftersom ni har älskat mig och trott att jag kommer från Gud.”`],
+    en: [`“No, the Father himself loves you because you have loved me and have believed that I came from God.”`]
   },
   author: {
     sv: [`— Johannesevangeliet 16:27`],
     en: [`— John 16:27`]
   },
-  image: "father_love_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '81
@@ -3908,123 +3985,141 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 6:33`],
     en: [`— Matthew 6:33`]
   },
-  image: "kingdom_priority_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '82
 {
   quote: {
-    sv: [`“Som hjorten trängtar efter vattenbäckar, så trängtar min själ efter dig, o Gud.”`],
-    en: [`“As the hart panteth after the water brooks, so panteth my soul after thee, O God.”`]
+    sv: [`“Som hjorten längtar efter vatten,
+      så längtar min själ efter dig, o Gud.”`],
+    en: [`“As the deer pants for streams of water,
+      so my soul pants for you, my God.”`]
   },
   author: {
     sv: [`— Psaltaren 42:1`],
     en: [`— Psalm 42:1`]
   },
-  image: "longing_water_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
-  // ' _ _ _
-
-  // '83
+// '83
 
   {
     quote: {
-      sv: [`“Hos var och en framträder Anden så att den blir till nytta. Den ene får genom Anden gåvan att meddela vishet, den andre kan med samma Andes hjälp meddela kunskap. En får tron genom Anden, en annan genom samma Ande gåvan att bota,”`],
-      en: [`“Now to each one the manifestation of the Spirit is given for the common good. To one there is given through the Spirit a message of wisdom, to another a message of knowledge by means of the same Spirit, to another faith by the same Spirit, to another gifts of healing by that one Spirit,”`]
+      sv: [`“Verksamheterna är olika, men Gud är densamme, han som verkar i allt och överallt.
+
+          Hos var och en framträder Anden så att den blir till nytta. Den ene får genom Anden gåvan att meddela vishet, den andre kan med samma Andes hjälp meddela kunskap. "En får tron genom Anden, en annan, genom samma Ande gåvan att bota, en annan får kraft att göra under. En får förmågan att tala profetiskt", en annan att skilja mellan olika andar. En kan tala olika slags tungotal, en annan kan tolka tungotal. Allt detta åstadkommer en och samma Ande genom att fördela sina gåvor på var och en så som den själv vill.”`],
+      en: [`“There are different kinds of working, but in all of them and in everyone it is the same God at work.
+
+          Now to each one the manifestation of the Spirit is given for the common good. To one there is given through the Spirit a message of wisdom, to another a message of knowledge by means of the same Spirit, to another faith by the same Spirit, to another gifts of healing by that one Spirit, to another miraculous powers, to another prophecy, to another distinguishing between spirits, to another speaking in different kinds of tongues, and to still another the interpretation of tongues. All these are the work of one and the same Spirit, and he distributes them to each one, just as he determines.”`]
     },
     author: {
-      sv: [`— 1 Korinthierbrevet	12:7-9`],
-      en: [`— 1 Corinthians 12:7-9`]
+      sv: [`— 1 Korinthierbrevet 12:6-11`],
+      en: [`— 1 Corinthians 12:6-11`]
     },
-    image: "jan_pixabay_pexels.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "march_life_of_pix_pexels.jpg",
+    credit: "Life Of Pix (Pexels.com)"
   },
 
   // '84
   {
     quote: {
-      sv: [`“Frukta inte, för jag är med dig. Se dig inte ängsligt om, för jag är din Gud. Jag styrker dig, jag hjälper dig, jag stödjer dig med min rättfärdighets högra hand.”`],
-      en: [`“Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness.”`]
+      sv: [`“frukta inte, ty jag är med dig.
+        var ej modfälld, ty jag är din Gud.
+      Jag styrker dig och jag hjälper dig,
+        jag håller dig uppe med min rättfärdighets högra hand.”`],
+      en: [`“So do not fear, for I am with you;
+          do not be dismayed, for I am your God.
+      I will strengthen you and help you;
+          I will uphold you with my righteous right hand.”`]
     },
     author: {
       sv: [`— Jesaja 41:10`],
       en: [`— Isaiah 41:10`]
     },
-    image: "strength_hand_pixabay.jpg",
-    credit: "Pixabay (Pexels.com)"
+    image: "march_life_of_pix_pexels.jpg",
+    credit: "Life Of Pix (Pexels.com)"
   },
 
 // '85
 {
   quote: {
-    sv: [`“Om du hör Herrens, din Guds, röst och gör det som är rätt i hans ögon, lyssnar till hans bud och håller alla hans stadgar, då ska jag inte lägga på dig någon av de sjukdomar som jag lade på egyptierna, för jag är Herren, din läkare.”`],
-    en: [`“If thou wilt diligently hearken to the voice of the Lord thy God... I will put none of these diseases upon thee... for I am the Lord that healeth thee.”`]
+    sv: [`“Om du hör Herrens, din Guds, röst och gör det som är rätt i hans ögon och lyssnar till hans bud och håller alla hans stadgar, så skall jag inte lägga på dig någon av de sjukdomar som jag lade på egyptierna, ty jag är Herren, din läkare.”`],
+    en: [`“He said, ‘If you listen carefully to the Lord your God and do what is right in his eyes, if you pay attention to his commands and keep all his decrees, I will not bring on you any of the diseases I brought on the Egyptians, for I am the Lord, who heals you.’”`]
   },
   author: {
     sv: [`— 2 Mosebok 15:26`],
     en: [`— Exodus 15:26`]
   },
-  image: "healing_light_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '86
 {
   quote: {
-    sv: [`“Hedra din far och din mor, så som Herren din Gud har befallt dig, för att du ska få leva länge och det ska gå dig väl i det land som Herren din Gud ger dig.”`],
-    en: [`“Honour thy father and thy mother, as the Lord thy God hath commanded thee; that thy days may be prolonged...”`]
+    sv: [`“Hedra din fader och din moder, som Herren din Gud har befallt dig, för att du ska få leva länge och det ska gå dig väl i det land som Herren din Gud ger dig.”`],
+    en: [`“‘Honour your father and your mother, as the Lord your God has commanded you, so that you may live long and that it may go well with you in the land the Lord your God is giving you.”`]
   },
   author: {
     sv: [`— 5 Mosebok 5:16`],
     en: [`— Deuteronomy 5:16`]
   },
-  image: "family_honor_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '87
 {
   quote: {
-    sv: [`“Vet ni inte att ni är Guds tempel och att Guds Ande bor i er?”`],
-    en: [`“Know ye not that ye are the temple of God, and that the Spirit of God dwelleth in you?”`]
+    sv: [`“Förstår ni inte att ni är Guds tempel och att Guds ande bor i er?”`],
+    en: [`“Don’t you know that you yourselves are God’s temple and that God’s Spirit lives among you?”`]
   },
   author: {
     sv: [`— 1 Korinthierbrevet 3:16`],
     en: [`— 1 Corinthians 3:16`]
   },
-  image: "temple_spirit_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '88
 {
   quote: {
-    sv: [`“Gör därför allt ni kan för att i er tro visa dygd, i dygden kunskap, i kunskapen självbehärskning, i självbehärskningen uthållighet, i uthålligheten gudsfruktan, i gudsfruktan broderlig omtanke, i omtanken kärlek. Om allt detta finns hos er och får växa till, gör det er inte overksamma eller utan frukt i kunskapen om vår Herre Jesus Kristus.”`],
-    en: [`“Add to your faith virtue; and to virtue knowledge; and to knowledge temperance; and to temperance patience; and to patience godliness; and to godliness brotherly kindness; and to brotherly kindness charity.”`]
+    sv: [`“Nåd och frid åt er i allt rikare mått genom kunskap om Gud och Jesus, vår herre.
+
+      Ty allt som leder till liv och gudsfruktan har hans gudomliga makt skänkt oss genom kunskapen om honom som i sin härlighet och kraft har kallat oss. Han har gett oss sina stora och dyrbara löften, för att ni tack vare dem skall bli delaktiga av gudomlig natur, sedan ni kommit undan det fördärv som begäret drar med sig i denna värld.
+
+      Sök därför med all iver att till er tro foga styrka, till styrkan kunskap, till kunskapen självbehärskning, till självbehärskningen uthållighet, till uthålligheten gudsfruktan, 'till gudsfruktan broderlig omtanke och till omtanken kärlek. Ty om allt detta finns hos er och får växa till, blir er kunskap om vår herre Jesus Kristus inte overksam utan bär frukt. Men den som saknar detta ser ingenting i sin närsynthet; han har glömt hur han blev renad från sina tidigare synder.”`],
+    en: [`“Grace and peace be yours in abundance through the knowledge of God and of Jesus our Lord.
+
+        His divine power has given us everything we need for a godly life through our knowledge of him who called us by his own glory and goodness. Through these he has given us his very great and precious promises, so that through them you may participate in the divine nature, having escaped the corruption in the world caused by evil desires.
+
+        For this very reason, make every effort to add to your faith goodness; and to goodness, knowledge; and to knowledge, self-control; and to self-control, perseverance; and to perseverance, godliness; and to godliness, mutual affection; and to mutual affection, love. For if you possess these qualities in increasing measure, they will keep you from being ineffective and unproductive in your knowledge of our Lord Jesus Christ. But whoever does not have them is short-sighted and blind, forgetting that they have been cleansed from their past sins.”`]
   },
   author: {
-    sv: [`— 2 Petrusbrevet 1:5–9`],
-    en: [`— 2 Peter 1:5–9`]
+    sv: [`— 2 Petrusbrevet 1:2–9`],
+    en: [`— 2 Peter 1:2–9`]
   },
-  image: "growth_faith_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '89
 {
   quote: {
-    sv: [`“Av nåd är ni frälsta genom tron, inte av er själva, Guds gåva är det.”`],
-    en: [`“For by grace are ye saved through faith; and that not of yourselves: it is the gift of God.”`]
+    sv: [`“Men Gud, som är rik på barmhärtighet, har älskat oss med så stor kärlek att fast vi var döda genom våra överträdelser har han gjort oss levande tillsammans med Kristus — av nåd är nu frälsta — och uppväckt oss med honom och gett os en plats i himlen genom Kristis Jesus. Därmed ville han för kommande tider visa den överväldigande rika nåden i sin godhet mot oss genom Kristus Jesus. Ty av nåd är ni frälsta genom tron, inte av er själva, Guds gåva är det. Det beror inte på gärningar, ingen skall kunna berömma sig. Vi är hans verk, skapade genom Kristus Jesus till att göra de goda gärningar som Gud från början har bestämt oss till.”`],
+    en: [`“But because of his great love for us, God, who is rich in mercy, made us alive with Christ even when we were dead in transgressions — it is by grace you have been saved. And God raised us up with Christ and seated us with him in the heavenly realms in Christ Jesus, in order that in the coming ages he might show the incomparable riches of his grace, expressed in his kindness to us in Christ Jesus. For it is by grace you have been saved, through faith — and this is not from yourselves, it is the gift of God — not by works, so that no one can boast. For we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.”`]
   },
   author: {
-    sv: [`— Efesierbrevet 2:8`],
-    en: [`— Ephesians 2:8`]
+    sv: [`— Efesierbrevet 2:4-10`],
+    en: [`— Ephesians 2:4-10`]
   },
-  image: "grace_gift_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '90
@@ -4033,322 +4128,408 @@ const bibleQuotes = [
     sv: [`“Gör er inga bekymmer, utan när ni åkallar och ber, tacka då Gud och låt honom få veta alla era önskningar. Då skall Guds frid, som är långt mera värd än allt vi tänker, ge era hjärtan och era tankar skydd i Kristus Jesus.
       Och så, mina bröder: det som är sant, det som är upphöjt, rätt och rent, det som är värt att älska och akta, allt som kallas dygd och allt som förtjänar beröm, ta fasta på allt detta.”`],
     en: [`“Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.
-      Finally, brothers and sisters, whatever is true, whatever is noble, whatever is right, whatever is pure, whatever is lovely, whatever is admirable – if anything is excellent or praiseworthy – think about such things.”`]
+      Finally, brothers and sisters, whatever is true, whatever is noble, whatever is right, whatever is pure, whatever is lovely, whatever is admirable — if anything is excellent or praiseworthy — think about such things.”`]
   },
   author: {
     sv: [`— Filipperbrevet 4:6-8`],
     en: [`— Philippians 4:6-8`]
   },
-  image: "prayer_peace_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
 // '91
 {
   quote: {
-    sv: [`“Tron är en övertygelse om det man hoppas, en visshet om det man inte ser.”`],
-    en: [`“Now faith is the substance of things hoped for, the evidence of things not seen.”`]
+    sv: [`“Tron är grunden för det vi hoppas på; den ger oss visshet om det vi inte kan se.”`],
+    en: [`“Now faith is confidence in what we hope for and assurance about what we do not see.”`]
   },
   author: {
     sv: [`— Hebreerbrevet 11:1`],
     en: [`— Hebrews 11:1`]
   },
-  image: "faith_hope_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "march_life_of_pix_pexels.jpg",
+  credit: "Life Of Pix (Pexels.com)"
 },
 
+// april
 // '92
 {
   quote: {
-    sv: [`“Frukta inte, för jag är med dig. Se dig inte ängsligt om, för jag är din Gud. Jag styrker dig, jag hjälper dig, jag stödjer dig med min rättfärdighets högra hand.”`],
-    en: [`“Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness.”`]
+    sv: [`“frukta inte, ty jag är med dig,
+        var ej modfälld, ty jag är din Gud.
+      Jag styrker dig och jag hjälper dig,
+        jag håller dig uppe med min rättfärdighets högra hand.”`],
+    en: [`“So do not fear, for I am with you;
+        do not be dismayed, for I am your God.
+      I will strengthen you and help you;
+        I will uphold you with my righteous right hand.”`]
   },
   author: {
     sv: [`— Jesaja 41:10`],
     en: [`— Isaiah 41:10`]
   },
-  image: "strength_hand_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '93
 {
   quote: {
-    sv: [`“Om de hör och tjänar honom, får de leva sina dagar i lycka och sina år i glädje.”`],
-    en: [`“If they obey and serve him, they shall spend their days in prosperity, and their years in pleasures.”`]
+    sv: [`“Om de hör på honom och underkastar sig,
+      så får de framleva sina dagar i lycka
+      och sina år i ljuvlig ro.”`],
+    en: [`“If they obey and serve him,
+    they will spend the rest of their days in prosperity
+    and their years in contentment.”`]
   },
   author: {
     sv: [`— Job 36:11`],
     en: [`— Job 36:11`]
   },
-  image: "obedience_prosperity_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '94
 {
   quote: {
-    sv: [`“Jag är vinstocken, ni är grenarna. Den som förblir i mig och jag i honom, han bär rik frukt. Utan mig kan ni ingenting göra.”`],
-    en: [`“I am the vine, ye are the branches: He that abideth in me, and I in him, the same bringeth forth much fruit: for without me ye can do nothing.”`]
+    sv: [`“Jag är vinstocken, ni är grenarna. Om någon är kvar i mig och jag i honom, bär han rik frukt: utan mig kan ni ingenting göra.”`],
+    en: [`“I am the vine; you are the branches. If you remain in me and I in you, you will bear much fruit; apart from me you can do nothing.”`]
   },
   author: {
     sv: [`— Johannesevangeliet 15:5`],
     en: [`— John 15:5`]
   },
-  image: "vine_branches_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
+
+
 
 // '95
 {
   quote: {
-    sv: [`“Saliga är de renhjärtade, de ska se Gud.”`],
-    en: [`“Blessed are the pure in heart: for they shall see God.”`]
+    sv: [`“Kom till mig, alla ni som är tyngda av bördor; jag skall skänka er vila. Ta på er mitt ok och lär av mig, som har ett milt och ödmjukt hjärta, så skall ni finna vila för er själ.
+      Mitt ok är skonsamt och min börda är lätt.”`],
+    en: [`“Come to me, all you who are weary and burdened, and I will give you rest. Take my yoke upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your souls.
+      For my yoke is easy and my burden is light.”`]
   },
   author: {
-    sv: [`— Matteusevangeliet 5:8`],
-    en: [`— Matthew 5:8`]
+    sv: [`— Matteusevangeliet 11:28-30`],
+    en: [`— Matthew 11:28-30`]
   },
-  image: "pure_heart_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '96
 {
   quote: {
-    sv: [`“Som vatten speglar ansiktet, så speglar hjärtat människan.”`],
-    en: [`“As in water face answereth to face, so the heart of man to man.”`]
+    sv: [`“Järn ger skärpa åt järn,
+      så skärper den ena människan den andra.
+
+    Den som vårdar sitt fikonträd, han får äta dess frukt,
+      och den som vårdar sig om sin herre, han kommer till ära.
+
+    Som spegelbilden i vattnet liknar ansiktet,
+    så avspeglar den ena människans hjärta den andras.”`],
+    en: [`“As iron sharpens iron,
+      so one person sharpens another.
+
+    The one who guards a fig tree will eat its fruit,
+      and whoever protects their master will be honored.
+
+    As water reflects the face,
+      so one’s life reflects the heart.”`]
   },
   author: {
-    sv: [`— Ordspråksboken 27:19`],
-    en: [`— Proverbs 27:19`]
+    sv: [`— Ordspråksboken 27:17-19`],
+    en: [`— Proverbs 27:17-19`]
   },
-  image: "reflection_heart_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '97
 {
   quote: {
-    sv: [`“Gud ska föra varje gärning fram i domen, allt som är fördolt, vare sig det är gott eller ont.”`],
-    en: [`“For God shall bring every work into judgment, with every secret thing, whether it be good, or whether it be evil.”`]
+    sv: [`“Ty Gud ska dra alla gärningar till doms,
+      när han dömer allt vad förborgat är,
+      vare sig det är gott eller ont.”`],
+    en: [`“For God will bring every deed into judgment,
+      including every hidden thing,
+      whether it is good or evil.”`]
   },
   author: {
     sv: [`— Predikaren 12:14`],
     en: [`— Ecclesiastes 12:14`]
   },
-  image: "judgment_light_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '98
 {
   quote: {
-    sv: [`“Herren är nära dem som har ett förkrossat hjärta, han frälser dem som har en bedrövad ande.”`],
-    en: [`“The Lord is nigh unto them that are of a broken heart; and saveth such as be of a contrite spirit.”`]
+    sv: [`“När de rättfärdiga ropar, då hör Herren
+      och räddar dem ur deras nöd.
+      Herren är nära dem som har ett förkrossat hjärta,
+      och frälser dem som har en bedrövad ande.”`],
+    en: [`“The righteous cry out, and the Lord hears them;
+      he delivers them from all their troubles.
+      The Lord is close to the brokenhearted
+      and saves those who are crushed in spirit.”`]
   },
   author: {
-    sv: [`— Psaltaren 34:18`],
-    en: [`— Psalm 34:18`]
+    sv: [`— Psaltaren 34:18-19`],
+    en: [`— Psalm 34:17-18`]
   },
-  image: "broken_heart_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '99
 {
   quote: {
-    sv: [`“Vad ska vi då säga om detta? Är Gud för oss, vem kan då vara emot oss?”`],
-    en: [`“What shall we then say to these things? If God be for us, who can be against us?”`]
+    sv: [`“Vad innebär nu detta? Om Gud är för oss, vem kan då vara mot oss?”`],
+    en: [`“What, then, shall we say in response to these things? If God is for us, who can be against us?”`]
   },
   author: {
     sv: [`— Romarbrevet 8:31`],
     en: [`— Romans 8:31`]
   },
-  image: "god_for_us_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '100
 {
   quote: {
-    sv: [`“Herren talade med Mose ansikte mot ansikte, som en människa talar med en annan. Sedan vände Mose tillbaka till lägret, men hans tjänare Josua, Nuns son, en ung man, lämnade inte tältet.”`],
-    en: [`“And the Lord spake unto Moses face to face, as a man speaketh unto his friend. And he turned again into the camp: but his servant Joshua, the son of Nun, a young man, departed not out of the tabernacle.”`]
+    sv: [`“Och klart är att ingen blir rättfärdig i Guds ögon genom lagen, ty den rättfärdige skall leva genom tron, och lagen bygger inte på tron: det heter ju att den som fullgör buden skall leva genom dem. Kristus har friköpt oss från lagens förbannelse genom att för vår skull ta förbannelsen på sig, som det står skrivet: Förbannad är var och en som hängs upp på en träpåle. Så skulle hedningarna genom Kristus Jesus få den välsignelse som gavs åt Abraham och vi sedan få den utlovade Anden på grund av tron.”`],
+    en: [`“Clearly no one who relies on the law is justified before God, because “the righteous will live by faith.”[a] 12 The law is not based on faith; on the contrary, it says, “The person who does these things will live by them.”[b] 13 Christ redeemed us from the curse of the law by becoming a curse for us, for it is written: “Cursed is everyone who is hung on a pole.”[c] 14 He redeemed us in order that the blessing given to Abraham might come to the Gentiles through Christ Jesus, so that by faith we might receive the promise of the Spirit.”`]
   },
   author: {
-    sv: [`— 2 Mosebok 33:11`],
-    en: [`— Exodus 33:11`]
+    sv: [`— Galaterbrevet 3:11-14`],
+    en: [`— Galatians 3:11-14`]
   },
-  image: "moses_tent_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '101
 {
   quote: {
-    sv: [`“Du ska inte mörda. Du ska inte begå äktenskapsbrott. Du ska inte stjäla. Du ska inte bära falskt vittnesbörd mot din nästa.”`],
-    en: [`“Thou shalt not kill. Neither shalt thou commit adultery. Neither shalt thou steal. Neither shalt thou bear false witness against thy neighbour.”`]
+    sv: [`“Du ska inte dräpa.
+
+      Du ska inte begå äktenskapsbrott.
+
+      Du ska inte heller stjäla.
+
+      Du ska inte heller bära falskt vittnesbörd mot din nästa.”`],
+    en: [`“You shall not murder.
+
+      “You shall not commit adultery.
+
+      “You shall not steal.
+
+      “You shall not give false testimony against your neighbor.”`]
   },
   author: {
     sv: [`— 5 Mosebok 5:17–20`],
     en: [`— Deuteronomy 5:17–20`]
   },
-  image: "commandments_stone_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '102
 {
   quote: {
-    sv: [`“Kärleken är tålig och mild, kärleken avundas inte, den skryter inte, den är inte uppblåst.”`],
-    en: [`“Charity suffereth long, and is kind; charity envieth not; charity vaunteth not itself, is not puffed up.”`]
+    sv: [`“Kärleken är tålmodig och god, kärleken är inte stridslysten, inte skrytsam och inte uppblåst. Den är inte utmanande, inte självisk, den brusar inte upp, den vill ingen något ont.
+
+      Den finner inte glädje i orätten, men gläds med sanningen. Allt bär den, allt tror den, allt hoppas den, allt uthärdar den.”`],
+    en: [`“ Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs.
+
+      Love does not delight in evil but rejoices with the truth. It always protects, always trusts, always hopes, always perseveres.”`]
   },
   author: {
-    sv: [`— 1 Korinthierbrevet 13:4`],
-    en: [`— 1 Corinthians 13:4`]
+    sv: [`— 1 Korinthierbrevet 13:4-7`],
+    en: [`— 1 Corinthians 13:4-7`]
   },
-  image: "love_patience_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '103
 {
   quote: {
-    sv: [`“Framför allt ska ni veta att ingen profetia i Skriften har kommit till genom egen tolkning.”`],
-    en: [`“Knowing this first, that no prophecy of the scripture is of any private interpretation.”`]
+    sv: [`Väx till i nåd och i kunskap om vår herre och frälsare Jesus Kristus. Hans är härligheten, nu och till evighetens dag, amen”`],
+    en: [`“But grow in the grace and knowledge of our Lord and Savior Jesus Christ. To him be glory both now and forever! Amen.”`]
   },
   author: {
-    sv: [`— 2 Petrusbrevet 1:20`],
-    en: [`— 2 Peter 1:20`]
+    sv: [`— 2 Petrusbrevet 3:18`],
+    en: [`— 2 Peter 3:18`]
   },
-  image: "scripture_light_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '104
 {
   quote: {
-    sv: [`“Låt er förnyas till ande och sinne.”`],
-    en: [`“And be renewed in the spirit of your mind.”`]
+    sv: [`“Se till att ni förnyas i ande och förstånd och att ni klär er i den nya människan, som har skapats efter Guds bild, med den rättfärdighet och den helighet som hör sanningen till.”`],
+    en: [`“You were taught, with regard to your former way of life, to put off your old self, which is being corrupted by its deceitful desires;
+
+      to be made new in the attitude of your minds; and to put on the new self, created to be like God in true righteousness and holiness.”`]
   },
   author: {
-    sv: [`— Efesierbrevet 4:23`],
-    en: [`— Ephesians 4:23`]
+    sv: [`— Efesierbrevet 4:23-24`],
+    en: [`— Ephesians 4:22-24`]
   },
-  image: "renewal_mind_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '105
 {
   quote: {
-    sv: [`“För övrigt, bröder, allt som är sant och värdigt, rätt och rent, allt som är värt att älska och uppskatta, allt som kallas dygd och förtjänar beröm, tänk på allt sådant.”`],
-    en: [`“Finally, brethren, whatsoever things are true, whatsoever things are honest, whatsoever things are just, whatsoever things are pure... think on these things.”`]
+    sv: [`“Och så, mina bröder, det som är sant, det som är upphöjt, rätt och rent, det som är värt att älska och akta, allt som kallas dygd och allt som förtjänar beröm, ta fasta på allt detta.”`],
+    en: [`“Finally, brothers and sisters, whatever is true, whatever is noble, whatever is right, whatever is pure, whatever is lovely, whatever is admirable—if anything is excellent or praiseworthy—think about such things.”`]
   },
   author: {
     sv: [`— Filipperbrevet 4:8`],
     en: [`— Philippians 4:8`]
   },
-  image: "thoughts_pure_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '106
 {
   quote: {
-    sv: [`“Men utan tro är det omöjligt att behaga Gud. Den som vill komma till Gud måste tro att han finns och att han belönar dem som söker honom.”`],
-    en: [`“But without faith it is impossible to please him: for he that cometh to God must believe that he is, and that he is a rewarder of them that diligently seek him.”`]
+    sv: [`“De har besegrat honom
+      genom Lammets blod
+      och genom sitt vittnesbörds ord.
+    De älskade inte sitt liv mer än
+      att de kunde gå i döden.”`],
+    en: [`“They triumphed over him
+      by the blood of the Lamb
+      and by the word of their testimony;
+    they did not love their lives so much
+      as to shrink from death.”`]
   },
   author: {
-    sv: [`— Hebreerbrevet 11:6`],
-    en: [`— Hebrews 11:6`]
+    sv: [`— Uppenbarelseboken 12:11`],
+    en: [`— Revelations 12:11`]
   },
-  image: "faith_reward_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '107
 {
   quote: {
-    sv: [`“Tänk inte på det som har hänt, bry er inte om det som förr har varit.”`],
-    en: [`“Remember ye not the former things, neither consider the things of old.”`]
+    sv: [`“Tänk inte på vad förr har varit, bry er inte om vad fordom har skett.
+
+      Se jag vill göra något nytt. Redan nu visar det sig — märker ni det inte? Ja, jag ska göra en väg i öknen, och strömmar i ödemarken,”`],
+    en: [`““Forget the former things;
+      do not dwell on the past.
+
+    See, I am doing a new thing!
+      Now it springs up; do you not perceive it?
+    I am making a way in the wilderness
+      and streams in the wasteland.”`]
   },
   author: {
-    sv: [`— Jesaja 43:18`],
-    en: [`— Isaiah 43:18`]
+    sv: [`— Jesaja 43:18-19`],
+    en: [`— Isaiah 43:18-19`]
   },
-  image: "new_beginning_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '108
 {
   quote: {
-    sv: [`“Ingen har större kärlek än att han ger sitt liv för sina vänner.”`],
-    en: [`“Greater love hath no man than this, that a man lay down his life for his friends.”`]
+    sv: [`“Liksom Fadern har älskat mig, så har jag älskat er. Bli kvar i min kärlek. Om ni håller mina bud, blir ni kvar i min kärlek, så som jag har hållit min faders bud och är kvar i hans kärlek.”`],
+    en: [`“As the Father has loved me, so have I loved you. Now remain in my love. 10 If you keep my commands, you will remain in my love, just as I have kept my Father’s commands and remain in his love.”`]
   },
   author: {
-    sv: [`— Johannesevangeliet 15:13`],
-    en: [`— John 15:13`]
+    sv: [`— Johannesevangeliet 15:9-10`],
+    en: [`— John 15:9-10`]
   },
-  image: "sacrifice_love_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '109
 {
   quote: {
-    sv: [`“Ty där din skatt är, där kommer också ditt hjärta att vara.”`],
-    en: [`“For where your treasure is, there will your heart be also.”`]
+    sv: [`“Samla inte skatter här på jorden, där mal och mask förstör och tjuvar bryter sig in och stjäl. Samla skatter i himlen, där varken mal eller mask förstör och inga tjuvar bryter sig in och stjäl. Ty där din skatt är, där kommer också ditt hjärta att vara.”`],
+    en: [`“Do not store up for yourselves treasures on earth, where moths and vermin destroy, and where thieves break in and steal. But store up for yourselves treasures in heaven, where moths and vermin do not destroy, and where thieves do not break in and steal. For where your treasure is, there your heart will be also.”`]
   },
   author: {
-    sv: [`— Matteusevangeliet 6:21`],
-    en: [`— Matthew 6:21`]
+    sv: [`— Matteusevangeliet 6:19-21`],
+    en: [`— Matthew 6:19-21`]
   },
-  image: "treasure_heart_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '110
 {
   quote: {
-    sv: [`“Människofruktan har med sig snaror, men den som förtröstar på Herren blir beskyddad.”`],
-    en: [`“The fear of man bringeth a snare: but whoso putteth his trust in the Lord shall be safe.”`]
+    sv: [`“Människofruktan har med sig snaror,
+      men den som förtröstar på Herren blir beskyddad.
+
+      Många söker en furstes välvilja,
+      men av Herren får var och en sin rätt.”`],
+    en: [`“Fear of man will prove to be a snare,
+      but whoever trusts in the Lord is kept safe.
+
+    Many seek an audience with a ruler,
+      but it is from the Lord that one gets justice.”`]
   },
   author: {
-    sv: [`— Ordspråksboken 29:25`],
-    en: [`— Proverbs 29:25`]
+    sv: [`— Ordspråksboken 29:25-26`],
+    en: [`— Proverbs 29:25-26`]
   },
-  image: "trust_safety_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
+
+  // Kontrollerat hit
+    // x Ej Kontroll
 
 // '111
 {
   quote: {
-    sv: [`“Ha din glädje i Herren, han ska ge dig vad ditt hjärta begär.”`],
-    en: [`“Delight thyself also in the Lord: and he shall give thee the desires of thine heart.”`]
+    sv: [`“Men inte bara för dem ber jag, utan också för alla som genom deras ord tror på mig. Jag ber att de alla skall bli ett och att liksom du, fader, är i mig och jag i dig, också de skall vara i oss. Då skall världen tro på att du har sänt mig.”`],
+    en: [`“My prayer is not for them alone. I pray also for those who will believe in me through their message, that all of them may be one, Father, just as you are in me and I am in you. May they also be in us so that the world may believe that you have sent me.”`]
   },
   author: {
-    sv: [`— Psaltaren 37:4`],
-    en: [`— Psalm 37:4`]
+    sv: [`— Johannesevangeliet 17:20-21`],
+    en: [`— John 17:20-21`]
   },
-  image: "delight_joy_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '112
 {
   quote: {
-    sv: [`“Var glada i hoppet, tåliga i lidandet, uthålliga i bönen.”`],
-    en: [`“Rejoicing in hope; patient in tribulation; continuing instant in prayer.”`]
+    sv: [`“Gläd er i hoppet, var uthålliga i lidandet och ihärdiga i bönen. Hjälp Guds heliga med vad de behöver, vinnlägg er om gästfrihet. Välsigna dem som förföljer er, välsigna dem och förbanna dem inte.”`],
+    en: [`“Be joyful in hope, patient in affliction, faithful in prayer. Share with the Lord’s people who are in need. Practice hospitality.
+
+    Bless those who persecute you; bless and do not curse.”`]
   },
   author: {
-    sv: [`— Romarbrevet 12:12`],
-    en: [`— Romans 12:12`]
+    sv: [`— Romarbrevet 12:12-14`],
+    en: [`— Romans 12:12-14`]
   },
-  image: "hope_prayer_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '113
@@ -4361,8 +4542,8 @@ const bibleQuotes = [
     sv: [`— 5 Mosebok 5:21`],
     en: [`— Deuteronomy 5:21`]
   },
-  image: "contentment_peace_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '114
@@ -4375,8 +4556,8 @@ const bibleQuotes = [
     sv: [`— 1 Korinthierbrevet 15:10`],
     en: [`— 1 Corinthians 15:10`]
   },
-  image: "grace_identity_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '115
@@ -4389,8 +4570,8 @@ const bibleQuotes = [
     sv: [`— Efesierbrevet 4:31`],
     en: [`— Ephesians 4:31`]
   },
-  image: "peace_words_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '116
@@ -4403,8 +4584,8 @@ const bibleQuotes = [
     sv: [`— Jesaja 60:22`],
     en: [`— Isaiah 60:22`]
   },
-  image: "growth_nation_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '117
@@ -4417,8 +4598,8 @@ const bibleQuotes = [
     sv: [`— Johannesevangeliet 16:8`],
     en: [`— John 16:8`]
   },
-  image: "spirit_conviction_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '118
@@ -4431,8 +4612,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 6:26`],
     en: [`— Matthew 6:26`]
   },
-  image: "birds_trust_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '119
@@ -4445,8 +4626,8 @@ const bibleQuotes = [
     sv: [`— Ordspråksboken 31:25`],
     en: [`— Proverbs 31:25`]
   },
-  image: "strength_dignity_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '120
@@ -4459,8 +4640,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 37:23`],
     en: [`— Psalm 37:23`]
   },
-  image: "path_guidance_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '121
@@ -4473,8 +4654,8 @@ const bibleQuotes = [
     sv: [`— Romarbrevet 14:23`],
     en: [`— Romans 14:23`]
   },
-  image: "faith_conscience_pixabay.jpg",
-  credit: "Pixabay (Pexels.com)"
+  image: "apr_vladimir_kudinov_pexels.jpg",
+  credit: "Vladimir Kudinov (Pexels.com)"
 },
 
 // '122
@@ -4487,8 +4668,8 @@ const bibleQuotes = [
       sv: [`— Matteusevangeliet 5:11-12`],
       en: [`— Matthew 5:11-12`]
     },
-    image: "ocean_view_stijn_dikstra_pexels.jpg",
-    credit: "Stijn Dikstra (Pexels.com)"
+    image: "may_pexels-pixabay-315998.jpg",
+    credit: "Pixabay (Pexels.com)"
   },
 
 // '123
@@ -4501,8 +4682,8 @@ const bibleQuotes = [
     sv: [`— 1 Johannesbrevet 3:1`],
     en: [`— 1 John 3:1`]
   },
-  image: "sunrise_mountains_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '124
@@ -4515,8 +4696,8 @@ const bibleQuotes = [
     sv: [`— 1 Johannesbrevet 3:22`],
     en: [`— 1 John 3:22`]
   },
-  image: "prayer_hands_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '125
@@ -4529,8 +4710,8 @@ const bibleQuotes = [
     sv: [`— 1 Johannesbrevet 4:11`],
     en: [`— 1 John 4:11`]
   },
-  image: "community_embrace_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '126
@@ -4543,8 +4724,8 @@ const bibleQuotes = [
     sv: [`— 1 Johannesbrevet 5:12-14`],
     en: [`— 1 John 5:12-14`]
   },
-  image: "eternal_light_path_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '127
@@ -4557,8 +4738,8 @@ const bibleQuotes = [
     sv: [`— 1 Korinthierbrevet 10:13`],
     en: [`— 1 Corinthians 10:13`]
   },
-  image: "forest_path_escape_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 // '128
 {
@@ -4570,8 +4751,8 @@ const bibleQuotes = [
     sv: [`— 1 Korinthierbrevet 13:7-8`],
     en: [`— 1 Corinthians 13:7-8`]
   },
-  image: "heart_in_hands_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '129
@@ -4584,8 +4765,8 @@ const bibleQuotes = [
     sv: [`— 1 Korinthierbrevet 15:58`],
     en: [`— 1 Corinthians 15:58`]
   },
-  image: "sunrise_over_fields_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '130
@@ -4598,8 +4779,8 @@ const bibleQuotes = [
     sv: [`— 2 Korinthierbrevet 1:20`],
     en: [`— 2 Corinthians 1:20`]
   },
-  image: "light_through_clouds_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '131
@@ -4609,11 +4790,11 @@ const bibleQuotes = [
     en: [`“Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom.”`]
   },
   author: {
-    sv: [`— 2 Korinthierbrevet 3:17`],
-    en: [`— 2 Corinthians 3:17`]
+    sv: [`— 2 Korinthierbrevet 3:17-18?`],
+    en: [`— 2 Corinthians 3:17-18?`]
   },
-  image: "open_skies_freedom_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '132
@@ -4626,8 +4807,8 @@ const bibleQuotes = [
     sv: [`— 2 Korinthierbrevet 4:16-18`],
     en: [`— 2 Corinthians 4:16-18`]
   },
-  image: "eternal_light_mountains_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 // '133
 {
@@ -4636,11 +4817,11 @@ const bibleQuotes = [
     en: [`“All this is from God, who reconciled us to himself through Christ and gave us the ministry of reconciliation.”`]
   },
   author: {
-    sv: [`— 2 Korinthierbrevet 5:18`],
-    en: [`— 2 Corinthians 5:18`]
+    sv: [`— 2 Korinthierbrevet 5:17-18?`],
+    en: [`— 2 Corinthians 5:17-18?`]
   },
-  image: "bridge_over_river_peace_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '134
@@ -4653,8 +4834,8 @@ const bibleQuotes = [
     sv: [`— 2 Korinthierbrevet 5:7`],
     en: [`— 2 Corinthians 5:7`]
   },
-  image: "misty_path_faith_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '135
@@ -4667,8 +4848,8 @@ const bibleQuotes = [
     sv: [`— 1 Krönikerboken 4:10`],
     en: [`— 1 Chronicles 4:10`]
   },
-  image: "wide_landscape_blessing_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '136
@@ -4681,8 +4862,8 @@ const bibleQuotes = [
     sv: [`— 1 Mosebok 1:31`],
     en: [`— Genesis 1:31`]
   },
-  image: "creation_landscape_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '137
@@ -4695,8 +4876,8 @@ const bibleQuotes = [
     sv: [`— 1 Mosebok 18:14`],
     en: [`— Genesis 18:14`]
   },
-  image: "desert_sky_promise_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 // '138
 {
@@ -4708,8 +4889,8 @@ const bibleQuotes = [
     sv: [`— 1 Mosebok 28:15`],
     en: [`— Genesis 28:15`]
   },
-  image: "journey_home_path_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '139
@@ -4722,8 +4903,8 @@ const bibleQuotes = [
     sv: [`— 2 Mosebok 20:3`],
     en: [`— Exodus 20:3`]
   },
-  image: "mountain_commandments_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '140
@@ -4736,8 +4917,8 @@ const bibleQuotes = [
     sv: [`— 2 Mosebok 20:8`],
     en: [`— Exodus 20:8`]
   },
-  image: "sabbath_rest_peace_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '141
@@ -4750,8 +4931,8 @@ const bibleQuotes = [
     sv: [`— 2 Mosebok 31:6`],
     en: [`— Exodus 31:6`]
   },
-  image: "hands_of_craftsmanship_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '142
@@ -4764,8 +4945,8 @@ const bibleQuotes = [
     sv: [`— 4 Mosebok 6:24-26`],
     en: [`— Numbers 6:24-26`]
   },
-  image: "peaceful_light_blessing_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 // '143
 {
@@ -4777,8 +4958,8 @@ const bibleQuotes = [
     sv: [`— 5 Mosebok 6:6-7`],
     en: [`— Deuteronomy 6:6-7`]
   },
-  image: "family_walk_path_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '144
@@ -4791,8 +4972,8 @@ const bibleQuotes = [
     sv: [`— 5 Mosebok 31:6`],
     en: [`— Deuteronomy 31:6`]
   },
-  image: "mountain_strength_sunrise_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '145
@@ -4805,8 +4986,8 @@ const bibleQuotes = [
     sv: [`— 1 Petrusbrevet 2:9`],
     en: [`— 1 Peter 2:9`]
   },
-  image: "light_through_darkness_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '146
@@ -4819,8 +5000,8 @@ const bibleQuotes = [
     sv: [`— 2 Petrusbrevet 1:13`],
     en: [`— 2 Peter 1:13`]
   },
-  image: "tent_in_wilderness_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '147
@@ -4833,8 +5014,8 @@ const bibleQuotes = [
     sv: [`— 2 Samuelsboken 7:28-29`],
     en: [`— 2 Samuel 7:28-29`]
   },
-  image: "home_blessing_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '148
@@ -4847,8 +5028,8 @@ const bibleQuotes = [
     sv: [`— 2 Samuelsboken 22:7`],
     en: [`— 2 Samuel 22:7`]
   },
-  image: "cry_to_heaven_temple_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '149
@@ -4861,8 +5042,8 @@ const bibleQuotes = [
     sv: [`— 2 Timotheusbrevet 2:15`],
     en: [`— 2 Timothy 2:15`]
   },
-  image: "study_scripture_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '150
@@ -4875,8 +5056,8 @@ const bibleQuotes = [
     sv: [`— Efesierbrevet 3:17-19`],
     en: [`— Ephesians 3:17-19`]
   },
-  image: "heart_roots_love_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '151
@@ -4889,8 +5070,8 @@ const bibleQuotes = [
     sv: [`— Filipperbrevet 1:6`],
     en: [`— Philippians 1:6`]
   },
-  image: "sunrise_new_beginning_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '152
@@ -4903,9 +5084,11 @@ const bibleQuotes = [
     sv: [`— Filipperbrevet 2:5`],
     en: [`— Philippians 2:5`]
   },
-  image: "humble_spirit_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "may_pexels-pixabay-315998.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
+
+// June
 // '153
 {
   quote: {
@@ -4916,8 +5099,8 @@ const bibleQuotes = [
     sv: [`— Filipperbrevet 2:12-14`],
     en: [`— Philippians 2:12-14`]
   },
-  image: "stars_in_darkness_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '154
@@ -4930,8 +5113,8 @@ const bibleQuotes = [
     sv: [`— Filipperbrevet 3:7-8`],
     en: [`— Philippians 3:7-8`]
   },
-  image: "treasure_in_field_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '155
@@ -4944,8 +5127,8 @@ const bibleQuotes = [
     sv: [`— Filipperbrevet 3:13-14`],
     en: [`— Philippians 3:13-14`]
   },
-  image: "runner_toward_sun_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '156
@@ -4958,8 +5141,8 @@ const bibleQuotes = [
     sv: [`— Galaterbrevet 3:26-27`],
     en: [`— Galatians 3:26-27`]
   },
-  image: "baptism_water_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '157
@@ -4972,8 +5155,8 @@ const bibleQuotes = [
     sv: [`— Galaterbrevet 4:7`],
     en: [`— Galatians 4:7`]
   },
-  image: "sunrise_inheritance_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 // '158
 {
@@ -4985,8 +5168,8 @@ const bibleQuotes = [
     sv: [`— Hebreerbrevet 10:19-23`],
     en: [`— Hebrews 10:19-23`]
   },
-  image: "holy_place_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '159
@@ -4999,8 +5182,8 @@ const bibleQuotes = [
     sv: [`— Hebreerbrevet 10:24-25`],
     en: [`— Hebrews 10:24-25`]
   },
-  image: "community_gathering_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '160
@@ -5013,8 +5196,8 @@ const bibleQuotes = [
     sv: [`— Hebreerbrevet 11:6`],
     en: [`— Hebrews 11:6`]
   },
-  image: "faith_reward_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '161
@@ -5027,8 +5210,8 @@ const bibleQuotes = [
     sv: [`— Hebreerbrevet 12:1-2`],
     en: [`— Hebrews 12:1-2`]
   },
-  image: "race_perseverance_clouds_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '162
@@ -5041,8 +5224,8 @@ const bibleQuotes = [
     sv: [`— Jakobsbrevet 4:10`],
     en: [`— James 4:10`]
   },
-  image: "humble_light_rise_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 // '163
 {
@@ -5054,8 +5237,8 @@ const bibleQuotes = [
     sv: [`— Jakobsbrevet 4:14-15`],
     en: [`— James 4:14-15`]
   },
-  image: "morning_mist_valley_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '164
@@ -5068,8 +5251,8 @@ const bibleQuotes = [
     sv: [`— Jakobsbrevet 5:15-16`],
     en: [`— James 5:15-16`]
   },
-  image: "healing_prayer_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '165
@@ -5082,8 +5265,8 @@ const bibleQuotes = [
     sv: [`— Jeremia 17:7`],
     en: [`— Jeremiah 17:7`]
   },
-  image: "tree_by_water_trust_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '166
@@ -5096,8 +5279,8 @@ const bibleQuotes = [
     sv: [`— Jeremia 18:6`],
     en: [`— Jeremiah 18:6`]
   },
-  image: "potter_hands_clay_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '167
@@ -5110,8 +5293,8 @@ const bibleQuotes = [
     sv: [`— Jeremia 29:12`],
     en: [`— Jeremiah 29:12`]
   },
-  image: "prayer_connection_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 // '168
 {
@@ -5123,8 +5306,8 @@ const bibleQuotes = [
     sv: [`— Jeremia 30:17`],
     en: [`— Jeremiah 30:17`]
   },
-  image: "healing_sky_restoration_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '169
@@ -5137,8 +5320,8 @@ const bibleQuotes = [
     sv: [`— Jeremia 31:3`],
     en: [`— Jeremiah 31:3`]
   },
-  image: "eternal_love_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '170
@@ -5151,8 +5334,8 @@ const bibleQuotes = [
     sv: [`— Jesaja 1:18`],
     en: [`— Isaiah 1:18`]
   },
-  image: "snow_white_redemption_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '171
@@ -5165,8 +5348,8 @@ const bibleQuotes = [
     sv: [`— Jesaja 12:2`],
     en: [`— Isaiah 12:2`]
   },
-  image: "strength_safety_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '172
@@ -5179,8 +5362,8 @@ const bibleQuotes = [
     sv: [`— Jesaja 26:3`],
     en: [`— Isaiah 26:3`]
   },
-  image: "peaceful_mind_trust_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 // '173
 {
@@ -5192,8 +5375,8 @@ const bibleQuotes = [
     sv: [`— Jesaja 27:6`],
     en: [`— Isaiah 27:6`]
   },
-  image: "blossoming_tree_fruit_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '174
@@ -5206,8 +5389,8 @@ const bibleQuotes = [
     sv: [`— Jesaja 32:18`],
     en: [`— Isaiah 32:18`]
   },
-  image: "peaceful_home_sunset_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '175
@@ -5220,8 +5403,8 @@ const bibleQuotes = [
     sv: [`— Jesaja 41:13`],
     en: [`— Isaiah 41:13`]
   },
-  image: "hand_in_hand_help_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '176
@@ -5234,8 +5417,8 @@ const bibleQuotes = [
     sv: [`— Jesaja 42:16`],
     en: [`— Isaiah 42:16`]
   },
-  image: "light_in_dark_path_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '177
@@ -5248,8 +5431,8 @@ const bibleQuotes = [
     sv: [`— Jesaja 43:2`],
     en: [`— Isaiah 43:2`]
   },
-  image: "fire_and_water_protection_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 // '178
 {
@@ -5261,8 +5444,8 @@ const bibleQuotes = [
     sv: [`— Jesaja 44:8`],
     en: [`— Isaiah 44:8`]
   },
-  image: "rock_of_refuge_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '179
@@ -5275,8 +5458,8 @@ const bibleQuotes = [
     sv: [`— Jesaja 54:10`],
     en: [`— Isaiah 54:10`]
   },
-  image: "mountains_unshaken_love_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '180
@@ -5289,8 +5472,8 @@ const bibleQuotes = [
     sv: [`— Jesaja 55:1`],
     en: [`— Isaiah 55:1`]
   },
-  image: "living_water_invitation_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '181
@@ -5303,8 +5486,8 @@ const bibleQuotes = [
     sv: [`— Jesaja 55:6`],
     en: [`— Isaiah 55:6`]
   },
-  image: "sunrise_seek_god_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
 
 // '182
@@ -5317,9 +5500,11 @@ const bibleQuotes = [
     sv: [`— Jesaja 58:9`],
     en: [`— Isaiah 58:9`]
   },
-  image: "call_and_answer_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
 },
+
+//July
 // '183
 {
   quote: {
@@ -5330,8 +5515,8 @@ const bibleQuotes = [
     sv: [`— Jesaja 59:1`],
     en: [`— Isaiah 59:1`]
   },
-  image: "mighty_arm_rescue_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '184
@@ -5344,8 +5529,8 @@ const bibleQuotes = [
     sv: [`— Jesaja 65:24`],
     en: [`— Isaiah 65:24`]
   },
-  image: "divine_response_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '185
@@ -5358,8 +5543,8 @@ const bibleQuotes = [
     sv: [`— Job 22:28`],
     en: [`— Job 22:28`]
   },
-  image: "path_of_light_decision_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '186
@@ -5372,8 +5557,8 @@ const bibleQuotes = [
     sv: [`— Johannesevangeliet 11:25-26`],
     en: [`— John 11:25-26`]
   },
-  image: "resurrection_life_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '187
@@ -5386,8 +5571,8 @@ const bibleQuotes = [
     sv: [`— Johannesevangeliet 11:35`],
     en: [`— John 11:35`]
   },
-  image: "tears_of_compassion_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 // '188
 {
@@ -5399,8 +5584,8 @@ const bibleQuotes = [
     sv: [`— Johannesevangeliet 14:13-14`],
     en: [`— John 14:13-14`]
   },
-  image: "prayer_in_name_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '189
@@ -5413,8 +5598,8 @@ const bibleQuotes = [
     sv: [`— Johannesevangeliet 14:26-27`],
     en: [`— John 14:26-27`]
   },
-  image: "holy_spirit_peace_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '190
@@ -5427,8 +5612,8 @@ const bibleQuotes = [
     sv: [`— Johannesevangeliet 16:13`],
     en: [`— John 16:13`]
   },
-  image: "spirit_of_truth_path_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '191
@@ -5441,8 +5626,8 @@ const bibleQuotes = [
     sv: [`— Johannesevangeliet 16:33`],
     en: [`— John 16:33`]
   },
-  image: "overcome_world_peace_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '192
@@ -5455,8 +5640,8 @@ const bibleQuotes = [
     sv: [`— Johannesevangeliet 21:17`],
     en: [`— John 21:17`]
   },
-  image: "shepherd_love_restoration_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 // '193
 {
@@ -5468,8 +5653,8 @@ const bibleQuotes = [
     sv: [`— Josua 1:5`],
     en: [`— Joshua 1:5`]
   },
-  image: "god_with_you_strength_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '194
@@ -5482,8 +5667,8 @@ const bibleQuotes = [
     sv: [`— Josua 1:7`],
     en: [`— Joshua 1:7`]
   },
-  image: "courageous_path_success_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '195
@@ -5496,8 +5681,8 @@ const bibleQuotes = [
     sv: [`— Josua 21:45`],
     en: [`— Joshua 21:45`]
   },
-  image: "fulfilled_promises_sky_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '196
@@ -5510,8 +5695,8 @@ const bibleQuotes = [
     sv: [`— Josua 23:10`],
     en: [`— Joshua 23:10`]
   },
-  image: "battle_victory_god_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '197
@@ -5524,8 +5709,8 @@ const bibleQuotes = [
     sv: [`— Judasbrevet 24–25`],
     en: [`— Jude 24–25`]
   },
-  image: "glory_majesty_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 // '198
 {
@@ -5537,8 +5722,8 @@ const bibleQuotes = [
     sv: [`— Lukasevangeliet 6:37–38`],
     en: [`— Luke 6:37–38`]
   },
-  image: "grace_and_measure_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '199
@@ -5551,8 +5736,8 @@ const bibleQuotes = [
     sv: [`— Lukasevangeliet 11:1`],
     en: [`— Luke 11:1`]
   },
-  image: "teach_us_to_pray_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '200
@@ -5565,8 +5750,8 @@ const bibleQuotes = [
     sv: [`— Lukasevangeliet 11:4`],
     en: [`— Luke 11:4`]
   },
-  image: "forgiveness_prayer_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '201
@@ -5579,8 +5764,8 @@ const bibleQuotes = [
     sv: [`— Lukasevangeliet 15:7`],
     en: [`— Luke 15:7`]
   },
-  image: "heavenly_rejoicing_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '202
@@ -5593,8 +5778,8 @@ const bibleQuotes = [
     sv: [`— Lukasevangeliet 15:31–32`],
     en: [`— Luke 15:31–32`]
   },
-  image: "lost_found_celebration_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 // '203
 {
@@ -5606,8 +5791,8 @@ const bibleQuotes = [
     sv: [`— Lukasevangeliet 16:10`],
     en: [`— Luke 16:10`]
   },
-  image: "faithful_steward_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '204
@@ -5620,8 +5805,8 @@ const bibleQuotes = [
     sv: [`— Lukasevangeliet 17:20–21`],
     en: [`— Luke 17:20–21`]
   },
-  image: "kingdom_within_peace_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '205
@@ -5634,8 +5819,8 @@ const bibleQuotes = [
     sv: [`— Lukasevangeliet 18:10–13`],
     en: [`— Luke 18:10–13`]
   },
-  image: "humble_prayer_temple_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '206
@@ -5648,8 +5833,8 @@ const bibleQuotes = [
     sv: [`— Lukasevangeliet 19:37–38`],
     en: [`— Luke 19:37–38`]
   },
-  image: "triumphal_entry_praise_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '207
@@ -5662,8 +5847,8 @@ const bibleQuotes = [
     sv: [`— Lukasevangeliet 22:39–40`],
     en: [`— Luke 22:39–40`]
   },
-  image: "garden_prayer_night_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 // '208
 {
@@ -5675,8 +5860,8 @@ const bibleQuotes = [
     sv: [`— Lukasevangeliet 23:41–43`],
     en: [`— Luke 23:41–43`]
   },
-  image: "cross_mercy_paradise_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '209
@@ -5689,8 +5874,8 @@ const bibleQuotes = [
     sv: [`— Markusevangeliet 1:35`],
     en: [`— Mark 1:35`]
   },
-  image: "solitary_prayer_dawn_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '210
@@ -5703,8 +5888,8 @@ const bibleQuotes = [
     sv: [`— Markusevangeliet 1:41`],
     en: [`— Mark 1:41`]
   },
-  image: "healing_touch_mercy_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '211
@@ -5717,8 +5902,8 @@ const bibleQuotes = [
     sv: [`— Markusevangeliet 4:11`],
     en: [`— Mark 4:11`]
   },
-  image: "kingdom_secret_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
 
 // '212
@@ -5731,9 +5916,11 @@ const bibleQuotes = [
     sv: [`— Markusevangeliet 4:39`],
     en: [`— Mark 4:39`]
   },
-  image: "storm_calm_peace_pexels.jpg",
-  credit: "Pexels.com"
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
 },
+
+//august
 // '213
 {
   quote: {
@@ -5744,8 +5931,8 @@ const bibleQuotes = [
     sv: [`— Markusevangeliet 6:50`],
     en: [`— Mark 6:50`]
   },
-  image: "storm_boat_calm_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '214
@@ -5758,8 +5945,8 @@ const bibleQuotes = [
     sv: [`— Markusevangeliet 11:24`],
     en: [`— Mark 11:24`]
   },
-  image: "faith_prayer_receive_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '215
@@ -5772,8 +5959,8 @@ const bibleQuotes = [
     sv: [`— Markusevangeliet 16:6`],
     en: [`— Mark 16:6`]
   },
-  image: "empty_tomb_resurrection_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '216
@@ -5786,8 +5973,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 5:13`],
     en: [`— Matthew 5:13`]
   },
-  image: "salt_of_earth_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '217
@@ -5800,8 +5987,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 5:14`],
     en: [`— Matthew 5:14`]
   },
-  image: "city_on_hill_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 // '218
 {
@@ -5813,8 +6000,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 6:9–13`],
     en: [`— Matthew 6:9–13`]
   },
-  image: "lord_prayer_sky_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '219
@@ -5827,22 +6014,22 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 6:25`],
     en: [`— Matthew 6:25`]
   },
-  image: "do_not_worry_lilies_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '220
 {
   quote: {
-    sv: [`“Bekymra er alltså inte för morgondagen. Den ska själv bära sitt bekymmer. Var dag har nog av sin egen plåga.”`],
+    sv: [`“Gör er därför inga bekymmer för morgondagen. Den får själv bära sina bekymmer. Var dag har nog av sin egen plåga.”`],
     en: [`“Therefore do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.”`]
   },
   author: {
     sv: [`— Matteusevangeliet 6:34`],
     en: [`— Matthew 6:34`]
   },
-  image: "sunrise_daily_grace_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '221
@@ -5855,8 +6042,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 7:7`],
     en: [`— Matthew 7:7`]
   },
-  image: "ask_seek_knock_door_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '222
@@ -5869,8 +6056,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 7:12`],
     en: [`— Matthew 7:12`]
   },
-  image: "golden_rule_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 // '223
 {
@@ -5882,8 +6069,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 7:13–14`],
     en: [`— Matthew 7:13–14`]
   },
-  image: "narrow_path_life_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '224
@@ -5896,8 +6083,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 7:24–25`],
     en: [`— Matthew 7:24–25`]
   },
-  image: "house_on_rock_storm_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '225
@@ -5910,8 +6097,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 10:29–31`],
     en: [`— Matthew 10:29–31`]
   },
-  image: "sparrows_care_value_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '226
@@ -5924,8 +6111,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 13:23`],
     en: [`— Matthew 13:23`]
   },
-  image: "fruitful_field_growth_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '227
@@ -5938,8 +6125,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 13:44`],
     en: [`— Matthew 13:44`]
   },
-  image: "hidden_treasure_field_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 // '228
 {
@@ -5951,8 +6138,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 15:10–11`],
     en: [`— Matthew 15:10–11`]
   },
-  image: "heart_and_words_purity_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '229
@@ -5965,8 +6152,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 15:24`],
     en: [`— Matthew 15:24`]
   },
-  image: "lost_sheep_path_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '230
@@ -5979,8 +6166,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 16:24–25`],
     en: [`— Matthew 16:24–25`]
   },
-  image: "cross_discipleship_path_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '231
@@ -5993,8 +6180,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 17:20`],
     en: [`— Matthew 17:20`]
   },
-  image: "mustard_seed_faith_mountain_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '232
@@ -6007,8 +6194,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 18:4`],
     en: [`— Matthew 18:4`]
   },
-  image: "childlike_humility_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 // '233
 {
@@ -6020,8 +6207,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 18:12–14`],
     en: [`— Matthew 18:12–14`]
   },
-  image: "lost_sheep_found_joy_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '234
@@ -6034,8 +6221,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 18:19–20`],
     en: [`— Matthew 18:19–20`]
   },
-  image: "gathered_in_prayer_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '235
@@ -6048,8 +6235,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 18:21–22`],
     en: [`— Matthew 18:21–22`]
   },
-  image: "forgiveness_abundant_grace_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '236
@@ -6062,8 +6249,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 19:16–21`],
     en: [`— Matthew 19:16–21`]
   },
-  image: "eternal_life_calling_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '237
@@ -6076,8 +6263,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 19:26`],
     en: [`— Matthew 19:26`]
   },
-  image: "all_things_possible_god_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 // '238
 {
@@ -6089,8 +6276,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 20:13–16`],
     en: [`— Matthew 20:13–16`]
   },
-  image: "vineyard_workers_grace_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '239
@@ -6103,8 +6290,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 20:25–28`],
     en: [`— Matthew 20:25–28`]
   },
-  image: "servant_leadership_cross_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '240
@@ -6117,8 +6304,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 21:22`],
     en: [`— Matthew 21:22`]
   },
-  image: "faith_prayer_receive_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '241
@@ -6131,8 +6318,8 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 21:28–31`],
     en: [`— Matthew 21:28–31`]
   },
-  image: "obedience_change_heart_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
 
 // '242
@@ -6145,9 +6332,11 @@ const bibleQuotes = [
     sv: [`— Matteusevangeliet 22:31–32`],
     en: [`— Matthew 22:31–32`]
   },
-  image: "god_of_living_light_pexels.jpg",
-  credit: "Pexels.com"
+  image: "aug_pexels-pixabay-462162.jpg",
+  credit: "Pixabay (Pexels.com)"
 },
+
+//sept
 // '243
 {
   quote: {
@@ -6476,16 +6665,21 @@ const bibleQuotes = [
   credit: "Jahoo Clouseau (Pexels.com)"
 },
 
-// ok Här
-
 // '264
 {
   quote: {
-    sv: [`“Jag älskar dig, Herre, min styrka! Herren är min klippa, min borg och min räddare, min Gud, klippan där jag tar min tillflykt, min sköld och min frälsnings horn, min fasta borg.”`],
-    en: [`“I love you, Lord, my strength. The Lord is my rock, my fortress and my deliverer; my God is my rock, in whom I take refuge, my shield and the horn of my salvation, my stronghold.”`]
+    sv: [`“Han sade:
+      Hjärtligen kär har jag dig, Herre, min starkhet,
+
+      Herre, mitt bergfäst, min borg, min räddare, min Gud, min klippa, till vilken jag tar min tillflykt, min sköld och min frälsnings horn, mitt värn.”`],
+    en: [`“I love you, Lord, my strength.
+
+  The Lord is my rock, my fortress and my deliverer;
+    my God is my rock, in whom I take refuge,
+    my shield[b] and the horn[c] of my salvation, my stronghold.”`]
   },
   author: {
-    sv: [`— Psaltaren 18:1-2`],
+    sv: [`— Psaltaren 18:2-3`],
     en: [`— Psalm 18:1-2`]
   },
   image: "sep_jahoo_clouseau_pexels.jpg",
@@ -6495,12 +6689,18 @@ const bibleQuotes = [
 // '265
 {
   quote: {
-    sv: [`“Himlen vittnar om Guds härlighet, himlavalvet förkunnar hans händers verk.”`],
-    en: [`“The heavens declare the glory of God; the skies proclaim the work of his hands.”`]
+    sv: [`“Himlarna förtäljer Guds ära,
+        och fästet förkunnar hans händers verk.
+      Den ena dagen talar om det till den andra,
+        och den ena natten kungör för den andra.”`],
+    en: [`“The heavens declare the glory of God;
+        the skies proclaim the work of his hands.
+      Day after day they pour forth speech;
+        night after night they reveal knowledge.”`]
   },
   author: {
-    sv: [`— Psaltaren 19:2`],
-    en: [`— Psalm 19:2`]
+    sv: [`— Psaltaren 19:2-3`],
+    en: [`— Psalm 19:1-2`]
   },
   image: "sep_jahoo_clouseau_pexels.jpg",
   credit: "Jahoo Clouseau (Pexels.com)"
@@ -6509,12 +6709,16 @@ const bibleQuotes = [
 // '266
 {
   quote: {
-    sv: [`“Låt min muns ord och mitt hjärtas tankar behaga dig, Herre, min klippa och min återlösare.”`],
-    en: [`“May these words of my mouth and this meditation of my heart be pleasing in your sight, Lord, my Rock and my Redeemer.”`]
+    sv: [`“Låt min muns tal behaga dig
+      och mitt hjärtas tankar,
+      Herre, min klippa och min förlossare.”`],
+    en: [`“May these words of my mouth and this meditation of my heart
+    be pleasing in your sight,
+    Lord, my Rock and my Redeemer.”`]
   },
   author: {
     sv: [`— Psaltaren 19:15`],
-    en: [`— Psalm 19:15`]
+    en: [`— Psalm 19:14`]
   },
   image: "sep_jahoo_clouseau_pexels.jpg",
   credit: "Jahoo Clouseau (Pexels.com)"
@@ -6523,11 +6727,21 @@ const bibleQuotes = [
 // '267
 {
   quote: {
-    sv: [`“Må han ge dig vad ditt hjärta begär och fullborda alla dina planer. Vi skall jubla över din seger och i vår Guds namn resa våra fanor. Herren må uppfylla alla dina böner.”`],
-    en: [`“May he give you the desire of your heart and make all your plans succeed. May we shout for joy over your victory and lift up our banners in the name of our God. May the Lord grant all your requests.”`]
+    sv: [`“Må han ge dig vad ditt hjärta begär
+        och fullborda alla dina rådslag.
+      Må vi få jubla över din seger
+        och i vår Guds namn resa upp baneret.
+
+      Må Herren uppfylla alla dina böner.”`],
+    en: [`“May he give you the desire of your heart
+        and make all your plans succeed.
+      May we shout for joy over your victory
+        and lift up our banners in the name of our God.
+
+      May the Lord grant all your requests.”`]
   },
   author: {
-    sv: [`— Psaltaren 20:4-5`],
+    sv: [`— Psaltaren 20:5-6`],
     en: [`— Psalm 20:4-5`]
   },
   image: "sep_jahoo_clouseau_pexels.jpg",
@@ -6537,12 +6751,18 @@ const bibleQuotes = [
 // '268
 {
   quote: {
-    sv: [`“Herren är mitt ljus och min frälsning, för vem skulle jag frukta? Herren är mitt livs värn, för vem skulle jag vara rädd?”`],
-    en: [`“The Lord is my light and my salvation— whom shall I fear? The Lord is the stronghold of my life— of whom shall I be afraid?”`]
+    sv: [`“Herren är mitt ljus och min frälsning,
+        för vem skulle jag frukta?
+      Herren är mitt livs värn,
+        för vem skulle jag rädas?”`],
+    en: [`“The Lord is my light and my salvation—
+        whom shall I fear?
+      The Lord is the stronghold of my life—
+        of whom shall I be afraid?”`]
   },
   author: {
-    sv: [`— Psaltaren 27:1-2`],
-    en: [`— Psalm 27:1-2`]
+    sv: [`— Psaltaren 27:1`],
+    en: [`— Psalm 27:1`]
   },
   image: "sep_jahoo_clouseau_pexels.jpg",
   credit: "Jahoo Clouseau (Pexels.com)"
@@ -6551,8 +6771,18 @@ const bibleQuotes = [
 // '269
 {
   quote: {
-    sv: [`“När de onda kommer emot mig för att äta upp mig, mina motståndare och fiender, då är det de som snavar och faller.”`],
-    en: [`“When the wicked advance against me to devour me, it is my enemies and my foes who will stumble and fall.”`]
+    sv: [`“Ett har jag begärt av Herren,
+        efter det strävar jag:
+      att jag må få bo i Herrens hus
+        i alla mina livsdagar,
+      för att skåda Herrens ljuvlighet
+        och betrakta hans tempel.”`],
+    en: [`“One thing I ask from the Lord,
+        this only do I seek:
+      that I may dwell in the house of the Lord
+        all the days of my life,
+      to gaze on the beauty of the Lord
+        and to seek him in his temple.”`]
   },
   author: {
     sv: [`— Psaltaren 27:4`],
@@ -6565,12 +6795,12 @@ const bibleQuotes = [
 // '270
 {
   quote: {
-    sv: [`“Ge mig inte i mina ovänners våld! Falska vittnen har stått upp mot mig, de andas våld.”`],
-    en: [`“Do not turn me over to the desire of my foes, for false witnesses rise up against me, spouting malicious accusations.”`]
+    sv: [`“Ni skall alltså veta att de som tror, de är söner till Abraham. Skriften förutsåg att Gud skulle göra hedningarna rättfärdiga på grund av deras tro, och därför lät den redan Abraham få budskapet: Med dig skall alla folk bli välsignade tillsammans med Abraham, som trodde.”`],
+    en: [`“Understand, then, that those who have faith are children of Abraham. Scripture foresaw that God would justify the Gentiles by faith, and announced the gospel in advance to Abraham: “All nations will be blessed through you.” So those who rely on faith are blessed along with Abraham, the man of faith.”`]
   },
   author: {
-    sv: [`— Psaltaren 27:12-14`],
-    en: [`— Psalm 27:12-14`]
+    sv: [`— Galaterbrevet 3:7-9`],
+    en: [`— Galatians 3:7-9`]
   },
   image: "sep_jahoo_clouseau_pexels.jpg",
   credit: "Jahoo Clouseau (Pexels.com)"
@@ -6579,12 +6809,21 @@ const bibleQuotes = [
 // '271
 {
   quote: {
-    sv: [`“Jag tror att jag skall få se Herrens godhet i de levandes land. Hoppas på Herren! Var stark och frimodig i ditt hjärta, ja, hoppas på Herren!”`],
-    en: [`“I remain confident of this: I will see the goodness of the Lord in the land of the living. Wait for the Lord; be strong and take heart and wait for the Lord.”`]
+    sv: [`“Ja, Jag tror förvisso att jag skall få se Herrens goda
+      i de levandes land.
+    Hoppas på Herren,
+      var frimodig och oförfärad i ditt hjärta,
+      ja, hoppas på Herren.”`],
+    en: [`“I remain confident of this:
+    I will see the goodness of the Lord
+    in the land of the living.
+  Wait for the Lord;
+    be strong and take heart
+    and wait for the Lord.”`]
   },
   author: {
-    sv: [`— Psaltaren 27:4`],
-    en: [`— Psalm 27:4`]
+    sv: [`— Psaltaren 27:13-14`],
+    en: [`— Psalm 27:13-14`]
   },
   image: "sep_jahoo_clouseau_pexels.jpg",
   credit: "Jahoo Clouseau (Pexels.com)"
@@ -6593,8 +6832,10 @@ const bibleQuotes = [
 // '272
 {
   quote: {
-    sv: [`“Ett har jag begärt av Herren, det längtar jag efter: att få bo i Herrens hus i alla mina livsdagar, att skåda Herrens ljuvlighet och söka svar i hans tempel.”`],
-    en: [`“One thing I ask from the Lord, this only do I seek: that I may dwell in the house of the Lord all the days of my life, to gaze on the beauty of the Lord and to seek him in his temple.”`]
+    sv: [`“Herren ska ge makt åt sitt folk,
+      Herren skall välsigna sitt folk med frid.”`],
+    en: [`“The Lord gives strength to his people;
+      the Lord blesses his people with peace.”`]
   },
   author: {
     sv: [`— Psaltaren 29:11`],
@@ -6603,197 +6844,291 @@ const bibleQuotes = [
   image: "sep_jahoo_clouseau_pexels.jpg",
   credit: "Jahoo Clouseau (Pexels.com)"
 },
+
 // '273
 {
   quote: {
-    sv: [`“Herren skall ge kraft åt sitt folk, Herren skall välsigna sitt folk med frid.”`],
-    en: [`“The Lord gives strength to his people; the Lord blesses his people with peace.”`]
+    sv: [`“Och Herren ska göra dig till huvud och inte till svans, du skall alltid ligga över och aldrig ligga under, om du hör Herrens, din Guds, bud, som jag i dag ger dig, för att du skall hålla och göra efter dem,”`],
+    en: [`“The Lord will make you the head, not the tail. If you pay attention to the commands of the Lord your God that I give you this day and carefully follow them, you will always be at the top, never at the bottom.”`]
   },
   author: {
-
+    sv: [`— 5 Mosebok 28:13`],
+    en: [`— Deuteronomy 28:13`]
   },
-  image: "psalm_29-11_pexels.jpg",
-  credit: "Pexels.com"
+  image: "sep_jahoo_clouseau_pexels.jpg",
+  credit: "Jahoo Clouseau (Pexels.com)"
 },
 
+// October
 // '274
 {
   quote: {
-    sv: [`“När jag levde i trygghet, sade jag: ‘Aldrig skall jag vackla.’”`],
-    en: [`“When I felt secure, I said, ‘I will never be shaken.’”`]
+    sv: [`“Ty ett ögonblick varar hans vrede,
+      men hela livet hans nåd.
+    Om aftonen gästar gråt,
+      men om morgonen kommer jubel.’”`],
+    en: [`“For his anger lasts only a moment,
+    but his favor lasts a lifetime;
+  weeping may stay for the night,
+    but rejoicing comes in the morning.’”`]
   },
   author: {
     sv: [`— Psaltaren 30:6`],
     en: [`— Psalm 30:6`]
   },
-  image: "psalm_30-6_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '275
 {
   quote: {
-    sv: [`“Var starka, fatta mod, alla ni som hoppas på Herren!”`],
-    en: [`“Be strong and take heart, all you who hope in the Lord.”`]
+    sv: [`“Var frimodiga och oförfärade i era hjärtan,
+      alla ni som sätter ert hopp till Herren.”`],
+    en: [`“Be strong and take heart,
+      all you who hope in the Lord.”`]
   },
   author: {
-    sv: [`— Psaltaren 31:24`],
+    sv: [`— Psaltaren 31:25`],
     en: [`— Psalm 31:24`]
   },
-  image: "psalm_31-24_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '276
 {
   quote: {
-    sv: [`“Du är mitt beskydd, du bevarar mig från nöd, du låter jubel över räddning omge mig. Jag vill ge dig insikt och lära dig den väg du skall gå. Jag vill ge dig råd, min blick skall följa dig.”`],
-    en: [`“You are my hiding place; you will protect me from trouble and surround me with songs of deliverance. I will instruct you and teach you in the way you should go; I will counsel you with my loving eye on you.”`]
+    sv: [`“Du är mitt beskydd,
+      för nöd bevarar du mig,
+      med räddningens ljubel omger du mig, Sela.
+
+    Jag vill lära dig och undervisa dig och lära dig om den väg du skall vandra,
+      jag vill ge dig råd och låta mitt öga vaka över dig.”`],
+    en: [`“You are my hiding place;
+    you will protect me from trouble
+    and surround me with songs of deliverance.
+
+  I will instruct you and teach you in the way you should go;
+    I will counsel you with my loving eye on you.”`]
   },
   author: {
     sv: [`— Psaltaren 32:7-8`],
     en: [`— Psalm 32:7-8`]
   },
-  image: "psalm_32-7_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
+
 // '277
 {
   quote: {
-    sv: [`“Smaka och se att Herren är god. Salig är den människa som flyr till honom.”`],
-    en: [`“Taste and see that the Lord is good; blessed is the one who takes refuge in him.”`]
+    sv: [`“Jag sökte Herren, och han svarade mig,
+      och ur all min förskräckelse räddade han mig.”`],
+    en: [`“I sought the Lord, and he answered me;
+      he delivered me from all my fears.”`]
   },
   author: {
-    sv: [`— Psaltaren 34:4`],
+    sv: [`— Psaltaren 34:5`],
     en: [`— Psalm 34:4`]
   },
-  image: "psalm_34-8_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '278
 {
   quote: {
-    sv: [`“Jag sökte Herren, och han svarade mig, han räddade mig från allt jag fruktade.”`],
-    en: [`“I sought the Lord, and he answered me; he delivered me from all my fears.”`]
+    sv: [`“Nu blir det alltså ingen fällande dom för dem som tillhör Kristus Jesus. Ty den Andliga lag som gäller för livet i Kristus Jesus har gjort mig fri från syndens och dödens lag. Det som lagen inte kunde göra, eftersom den kom till korta inför vår köttsliga natur, det gjorde Gud. Då han lät sin egen Son bli lik en syndfull människa och sända honom som ett syndoffer, dömde han synden i människan. Därmed kunde lagens krav på rättfärdighet uppfyllas hos oss som lever efter vår ande och inte efter vår köttsliga natur. Ty de som lever efter köttet har dess sinnelag, men de som lever efter anden är andligt sinnade.
+
+      De som lever efter sin köttsliga natur tänker på det som hör till köttet, men de som lever efter Anden tänker på det som hör till Anden. Köttets sinne är död, men Andens sinne är liv och frid.”`],
+    en: [`“Therefore, there is now no condemnation for those who are in Christ Jesus, because through Christ Jesus the law of the Spirit who gives life has set you free from the law of sin and death. 3 For what the law was powerless to do because it was weakened by the flesh, God did by sending his own Son in the likeness of sinful flesh to be a sin offering. And so he condemned sin in the flesh, in order that the righteous requirement of the law might be fully met in us, who do not live according to the flesh but according to the Spirit.
+
+      Those who live according to the flesh have their minds set on what the flesh desires; but those who live in accordance with the Spirit have their minds set on what the Spirit desires. The mind governed by the flesh is death, but the mind governed by the Spirit is life and peace.”`]
   },
   author: {
-    sv: [`— Psaltaren 34:8`],
-    en: [`— Psalm 34:8`]
+    sv: [`— Romarbrevet 8:1-6`],
+    en: [`— Romans 8:1-6`]
   },
-  image: "psalm_34-4_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '279
 {
   quote: {
-    sv: [`“Var stilla inför Herren och vänta på honom. Upprörs inte över den som har framgång, över den som gör upp onda planer.”`],
-    en: [`“Be still before the Lord and wait patiently for him; do not fret when people succeed in their ways, when they carry out their wicked schemes.”`]
+    sv: [`“Förtrösta på Herren och gör vad gott är,
+  bli kvar i landet och bemöda dig om redbarhet.
+  och ha din lust i Herren:
+    då skall skall han ge dig vad ditt hjärta begär.
+
+  Befall din väg åt Herren och förtrösta på honom
+    förtrösta på honom — han skall göra det.
+  Han skall låta din rättfärdighet gå fram som ljuset, och din rätt som middagens sken.”`],
+    en: [`“Trust in the Lord and do good;
+    dwell in the land and enjoy safe pasture.
+  Take delight in the Lord,
+    and he will give you the desires of your heart.
+
+  Commit your way to the Lord;
+    trust in him and he will do this:
+  He will make your righteous reward shine like the dawn,
+    your vindication like the noonday sun.”`]
   },
   author: {
-    sv: [`— Psaltaren 37:7`],
-    en: [`— Psalm 37:7`]
+    sv: [`— Psaltaren 37:3-6`],
+    en: [`— Psalm 37:3-6`]
   },
-  image: "psalm_37-7_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
-// '290
+
+// '280
 {
   quote: {
-    sv: [`“De rättfärdigas räddning kommer från Herren, han är deras tillflykt i nödens tid. Herren hjälper dem och befriar dem, han befriar dem från de ogudaktiga och frälsar dem, ty de tar sin tillflykt till honom.”`],
-    en: [`“The salvation of the righteous comes from the Lord; he is their stronghold in time of trouble. The Lord helps them and delivers them; he delivers them from the wicked and saves them, because they take refuge in him.”`]
+    sv: [`“Till de rättfärdiga kommer frälsningen från Herren, han är deras värn i nödens tid.
+
+      Herren hjälper dem och befriar dem, han befriar dem från de ogudaktiga och frälser dem, ty de tar sin tillflykt till honom.”`],
+    en: [`“The salvation of the righteous comes from the Lord; he is their stronghold in time of trouble.
+
+    The Lord helps them and delivers them; he delivers them from the wicked and saves them, because they take refuge in him.”`]
   },
   author: {
     sv: [`— Psaltaren 37:39-40`],
     en: [`— Psalm 37:39-40`]
   },
-  image: "psalm_37-39_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '281
 {
   quote: {
-    sv: [`“Slaktoffer och matoffer begärde du inte, men du har öppnat mina öron. Brännoffer och syndoffer begärde du inte.”`],
-    en: [`“Sacrifice and offering you did not desire—but my ears you have opened—burnt offerings and sin offerings you did not require.”`]
+    sv: [`“Och ni yngre, underordna er dem som är äldst. Men för er alla gäller: klä er i ödmjukhet mot varandra, ty Gud står emot de högmodiga, men de ödmjuka ger han nåd.
+
+      Böj er alltså ödmjukt under Guds starka hand, så att han upphöjer er när tiden är inne,
+
+      och kasta alla era bekymmer på honom, ty han sörjer för er.”`],
+    en: [`“In the same way, you who are younger, submit yourselves to your elders. All of you, clothe yourselves with humility toward one another, because,
+
+      “God opposes the proud
+          but shows favor to the humble.”
+
+      Humble yourselves, therefore, under God’s mighty hand, that he may lift you up in due time. Cast all your anxiety on him because he cares for you.”`]
   },
   author: {
-    sv: [`— Psaltaren 40:6`],
-    en: [`— Psalm 40:6`]
+    sv: [`— 1 Petrusbrevet 5:5-7`],
+    en: [`— 1 Peter 5:5-7`]
   },
-  image: "psalm_40-6_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '282
 {
   quote: {
-    sv: [`“Min själ är bedrövad i mig, därför tänker jag på dig från Jordans land och Hermons höjder, från Misars berg.”`],
-    en: [`“My soul is downcast within me; therefore I will remember you from the land of the Jordan, the heights of Hermon—from Mount Mizar.”`]
+    sv: [`“Varför är du så bedrövad, min själ,
+      och så orolig i mig?
+    Hoppas på Gud,
+      ty jag skall åter få tacka honom
+      för frälsning genom honom.”`],
+    en: [`“Why, my soul, are you downcast?
+      Why so disturbed within me?
+    Put your hope in God,
+      for I will yet praise him,
+      my Savior and my God.”`]
   },
   author: {
     sv: [`— Psaltaren 42:6`],
     en: [`— Psalm 42:6`]
   },
-  image: "psalm_42-6_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '283
 {
   quote: {
-    sv: [`“Jag vill säga till Gud, min klippa: Varför har du glömt mig? Varför måste jag gå sörjande, plågad av fienden?”`],
-    en: [`“I say to God my Rock, ‘Why have you forgotten me? Why must I go about mourning, oppressed by the enemy?’”`]
+    sv: [`“Djup ropar till djup,
+      vid dånet av dina vattenfall.
+    Alla dina svallande böljor
+      går fram över mig.
+
+    Om dagen må Herren ge mig sin nåd,
+    och om natten vill jag sjunga till hans ära
+    och be till mitt livs Gud.”`],
+    en: [`“Deep calls to deep
+    in the roar of your waterfalls;
+  all your waves and breakers
+    have swept over me.
+
+  By day the Lord directs his love,
+    at night his song is with me—
+    a prayer to the God of my life.”`]
   },
   author: {
-    sv: [`— Psaltaren 42:9`],
-    en: [`— Psalm 42:9`]
+    sv: [`— Psaltaren 42:8-9`],
+    en: [`— Psalm 42:7-8`]
   },
-  image: "psalm_42-9_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
+
 // '284
 {
   quote: {
-    sv: [`“Gud är vår tillflykt och vår starkhet, en hjälp i nöden, väl beprövad. Därför skall vi inte frukta, om än jorden skakar och bergen störtar ner i havets djup, om än dess vågor brusar och svallar och bergen darrar vid dess uppror.”`],
-    en: [`“God is our refuge and strength, an ever-present help in trouble. Therefore we will not fear, though the earth give way and the mountains fall into the heart of the sea, though its waters roar and foam and the mountains quake with their surging.”`]
+    sv: [`“Gud är vår tillflykt och vår starkhet, en hjälp i nöden, väl beprövad.”`],
+    en: [`“God is our refuge and strength, an ever-present help in trouble.”`]
   },
   author: {
-    sv: [`— Psaltaren 46:1-3`],
-    en: [`— Psalm 46:1-3`]
+    sv: [`— Psaltaren 46:2`],
+    en: [`— Psalm 46:1`]
   },
-  image: "psalm_46-1_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '285
 {
   quote: {
-    sv: [`“Bli stilla och besinna att jag är Gud, upphöjd bland hednafolken, upphöjd på jorden.”`],
-    en: [`“Be still, and know that I am God; I will be exalted among the nations, I will be exalted in the earth.”`]
+    sv: [`“Bli stilla och besinna att jag är Gud,
+      hög blir jag bland hedningarna, hög på jorden.
+
+      Herren Sebaot är med oss,
+      Jakobs Gud är vår borg. Sela.”`],
+    en: [`“He says, “Be still, and know that I am God;
+    I will be exalted among the nations,
+    I will be exalted in the earth.”
+
+  The Lord Almighty is with us;
+    the God of Jacob is our fortress.”`]
   },
   author: {
-    sv: [`— Psaltaren 46:10-11`],
+    sv: [`— Psaltaren 46:11-12`],
     en: [`— Psalm 46:10-11`]
   },
-  image: "psalm_46-10_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '286
 {
   quote: {
-    sv: [`“Kalla på mig på nödens dag, så skall jag rädda dig, och du skall ära mig.”`],
-    en: [`“Call on me in the day of trouble; I will deliver you, and you will honor me.”`]
+    sv: [`“Och åkalla på mig på nöden,
+      så vill jag hjälpa dig, och du skall prisa mig.”`],
+    en: [`“and call on me in the day of trouble;
+    I will deliver you, and you will honor me.”`]
   },
   author: {
     sv: [`— Psaltaren 50:15`],
     en: [`— Psalm 50:15`]
   },
-  image: "psalm_50-15_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
+
+// ok Här
+
 // '287
 {
   quote: {
@@ -6804,8 +7139,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 51:10`],
     en: [`— Psalm 51:10`]
   },
-  image: "psalm_51-10_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '288
@@ -6818,8 +7153,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 55:22-23`],
     en: [`— Psalm 55:22-23`]
   },
-  image: "psalm_55-22_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '289
@@ -6832,8 +7167,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 56:3-4`],
     en: [`— Psalm 56:3-4`]
   },
-  image: "psalm_56-3_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 // '290
 {
@@ -6845,8 +7180,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 59:17`],
     en: [`— Psalm 59:17`]
   },
-  image: "psalm_59-17_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '291
@@ -6859,8 +7194,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 62:6-9`],
     en: [`— Psalm 62:6-9`]
   },
-  image: "psalm_62-6_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '292
@@ -6873,8 +7208,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 63:3`],
     en: [`— Psalm 63:3`]
   },
-  image: "psalm_63-3_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '293
@@ -6887,8 +7222,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 73:26`],
     en: [`— Psalm 73:26`]
   },
-  image: "psalm_46-1_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '294
@@ -6901,8 +7236,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 90:17`],
     en: [`— Psalm 90:17`]
   },
-  image: "psalm_27-1_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 // '295
 {
@@ -6914,8 +7249,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 91:1`],
     en: [`— Psalm 91:1`]
   },
-  image: "psalm_27-12_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '296
@@ -6928,8 +7263,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 91:11`],
     en: [`— Psalm 91:11`]
   },
-  image: "psalm_27-4_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '297
@@ -6942,8 +7277,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 91:14`],
     en: [`— Psalm 91:14`]
   },
-  image: "psalm_34-8_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '298
@@ -6956,8 +7291,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 96:11-12`],
     en: [`— Psalm 96:11-12`]
   },
-  image: "proverbs_15-13_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '299
@@ -6970,8 +7305,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 100:4`],
     en: [`— Psalm 100:4`]
   },
-  image: "proverbs_17-17_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 // '300
 {
@@ -6983,8 +7318,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 103:2-5`],
     en: [`— Psalm 103:2-5`]
   },
-  image: "proverbs_17-22_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '301
@@ -6997,8 +7332,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 103:12`],
     en: [`— Psalm 103:12`]
   },
-  image: "proverbs_3-24_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '302
@@ -7011,8 +7346,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 104:34`],
     en: [`— Psalm 104:34`]
   },
-  image: "proverbs_4-10_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '303
@@ -7025,8 +7360,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 107:1`],
     en: [`— Psalm 107:1`]
   },
-  image: "proverbs_15-1_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
 
 // '304
@@ -7039,9 +7374,11 @@ const bibleQuotes = [
     sv: [`— Psaltaren 107:29`],
     en: [`— Psalm 107:29`]
   },
-  image: "proverbs_18-24_pexels.jpg",
-  credit: "Pexels.com"
+  image: "oct_pexels-josh-hild-1270765-12373448.jpg",
+  credit: "Josh Hild (Pexels.com)"
 },
+
+// November
 // '305
 {
   quote: {
@@ -7052,8 +7389,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 107:38`],
     en: [`— Psalms 107:38`]
   },
-  image: "psalms_16-6_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '306
@@ -7066,11 +7403,39 @@ const bibleQuotes = [
     sv: [`— Psaltaren 118:24`],
     en: [`— Psalms 118:24`]
   },
-  image: "psalms_17-6_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
-// '307 August
+// '307
+{
+  quote: {
+    sv: [`“Lev inte för pengar; nöj er med vad ni har. Gud själv har sagt:
+
+      Jag ska aldrig överge dig,
+          aldrig svika dig.
+
+      och därför kan vi tryggt säga:
+
+      Herren är min hjälpare, jag skall aldrig frukta.
+          Vad kan en människa göra mig?”`],
+    en: [`“Keep your lives free from the love of money and be content with what you have, because God has said,
+
+      “Never will I leave you;
+          never will I forsake you.”
+
+      So we say with confidence,
+
+      “The Lord is my helper; I will not be afraid.
+          What can mere mortals do to me?”`]
+  },
+  author: {
+    sv: [`— Hebreerbrevet 13:5-6`],
+    en: [`— Hebrews 13:5-6`]
+  },
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
+},
 
 // '308
 {
@@ -7082,8 +7447,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 119:14`],
     en: [`— Psalms 119:14`]
   },
-  image: "psalms_18-1_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '309
@@ -7096,8 +7461,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 119:50`],
     en: [`— Psalms 119:50`]
   },
-  image: "psalms_19-2_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '310
@@ -7110,8 +7475,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 119:90`],
     en: [`— Psalms 119:90`]
   },
-  image: "psalms_19-15_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 // '311
 {
@@ -7123,8 +7488,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 121:1-4`],
     en: [`— Psalms 121:1-4`]
   },
-  image: "psalms_20-4_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '312
@@ -7137,8 +7502,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 122:1`],
     en: [`— Psalms 122:1`]
   },
-  image: "psalms_27-1_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '313
@@ -7151,8 +7516,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 125:1`],
     en: [`— Psalms 125:1`]
   },
-  image: "psalms_27-2_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '314
@@ -7165,8 +7530,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 137:1 (valfritt)`],
     en: [`— Psalms 137:1 (optional)`]
   },
-  image: "psalms_23-3_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '315
@@ -7179,8 +7544,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 138:3`],
     en: [`— Psalms 138:3`]
   },
-  image: "psalms_37-7_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '316
@@ -7193,8 +7558,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 139:4-10`],
     en: [`— Psalms 139:4-10`]
   },
-  image: "psalms_37-39_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '317
@@ -7207,8 +7572,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 139:14`],
     en: [`— Psalms 139:14`]
   },
-  image: "psalms_40-6_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '318
@@ -7221,8 +7586,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 139:17`],
     en: [`— Psalms 139:17`]
   },
-  image: "psalms_25-1_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '319
@@ -7235,8 +7600,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 143:8`],
     en: [`— Psalms 143:8`]
   },
-  image: "psalms_27-12_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '320
@@ -7249,8 +7614,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 145:17`],
     en: [`— Psalms 145:17`]
   },
-  image: "psalms_17-6_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 // '321
 {
@@ -7262,8 +7627,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 145:18-19`],
     en: [`— Psalms 145:18-19`]
   },
-  image: "psalms_18-1_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '322
@@ -7276,8 +7641,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 146:5-6`],
     en: [`— Psalms 146:5-6`]
   },
-  image: "psalms_19-2_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '323
@@ -7290,8 +7655,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 149:4`],
     en: [`— Psalms 149:4`]
   },
-  image: "psalms_19-15_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '324
@@ -7304,8 +7669,8 @@ const bibleQuotes = [
     sv: [`— Romarbrevet 1:17`],
     en: [`— Romans 1:17`]
   },
-  image: "psalms_20-4_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '325
@@ -7318,8 +7683,8 @@ const bibleQuotes = [
     sv: [`— Romarbrevet 4:6-7`],
     en: [`— Romans 4:6-7`]
   },
-  image: "psalms_27-1_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 // '326
 {
@@ -7331,8 +7696,8 @@ const bibleQuotes = [
     sv: [`— Romarbrevet 8:35`],
     en: [`— Romans 8:35`]
   },
-  image: "psalms_27-12_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '327
@@ -7345,8 +7710,8 @@ const bibleQuotes = [
     sv: [`— Romarbrevet 8:38-39`],
     en: [`— Romans 8:38-39`]
   },
-  image: "psalms_27-4_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '328
@@ -7359,8 +7724,8 @@ const bibleQuotes = [
     sv: [`— Romarbrevet 10:17`],
     en: [`— Romans 10:17`]
   },
-  image: "psalms_29-11_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '329
@@ -7373,8 +7738,8 @@ const bibleQuotes = [
     sv: [`— Romarbrevet 12:3`],
     en: [`— Romans 12:3`]
   },
-  image: "psalms_30-6_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '330
@@ -7387,8 +7752,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 12:10`],
     en: [`— Psalms 12:10`]
   },
-  image: "psalms_31-24_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 // '331
 {
@@ -7400,8 +7765,8 @@ const bibleQuotes = [
     sv: [`— Psaltaren 15:13`],
     en: [`— Psalms 15:13`]
   },
-  image: "psalms_32-7_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '332
@@ -7414,8 +7779,8 @@ const bibleQuotes = [
     sv: [`— Rut 2:12`],
     en: [`— Ruth 2:12`]
   },
-  image: "psalms_32-8_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '333
@@ -7428,8 +7793,8 @@ const bibleQuotes = [
     sv: [`— 2 Krönikeboken 7:14`],
     en: [`— 2 Chronicles 7:14`]
   },
-  image: "psalms_17-13_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
 // '334
@@ -7442,10 +7807,11 @@ const bibleQuotes = [
     sv: [`— 2 Krönikeboken 16:19`],
     en: [`— 2 Chronicles 16:19`]
   },
-  image: "psalms_34-8_pexels.jpg",
-  credit: "Pexels.com"
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
 },
 
+// December
 // '335
 {
   quote: {
@@ -7456,8 +7822,8 @@ const bibleQuotes = [
     sv: [`— 2 Krönikeboken 16:25-29`],
     en: [`— 2 Chronicles 16:25-29`]
   },
-  image: "psalms_34-4_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 // '336
 {
@@ -7469,8 +7835,8 @@ const bibleQuotes = [
     sv: [`— Esra 1:1`],
     en: [`— Ezra 1:1`]
   },
-  image: "psalms_37-7_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '337
@@ -7483,8 +7849,8 @@ const bibleQuotes = [
     sv: [`— Nehemja 1:11`],
     en: [`— Nehemiah 1:11`]
   },
-  image: "psalms_37-39_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '338
@@ -7497,8 +7863,8 @@ const bibleQuotes = [
     sv: [`— Nehemja 8:10`],
     en: [`— Nehemiah 8:10`]
   },
-  image: "psalms_37-40_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '339
@@ -7511,8 +7877,8 @@ const bibleQuotes = [
     sv: [`— Ester 4:14`],
     en: [`— Esther 4:14`]
   },
-  image: "psalms_40-6_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '340
@@ -7525,8 +7891,8 @@ const bibleQuotes = [
     sv: [`— Höga visan 8:8`],
     en: [`— Song of Solomon 8:8`]
   },
-  image: "psalms_42-6_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 // '341
 {
@@ -7538,8 +7904,8 @@ const bibleQuotes = [
     sv: [`— Höga visan 4:13-14`],
     en: [`— Song of Solomon 4:13-14`]
   },
-  image: "psalms_42-9_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '342
@@ -7552,8 +7918,8 @@ const bibleQuotes = [
     sv: [`— Hesekiel 36:26`],
     en: [`— Ezekiel 36:26`]
   },
-  image: "psalms_46-1_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '343
@@ -7566,8 +7932,8 @@ const bibleQuotes = [
     sv: [`— Hesekiel 37:5`],
     en: [`— Ezekiel 37:5`]
   },
-  image: "psalms_46-2_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '344
@@ -7580,8 +7946,8 @@ const bibleQuotes = [
     sv: [`— Daniel 11:32`],
     en: [`— Daniel 11:32`]
   },
-  image: "psalms_46-3_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '345
@@ -7594,8 +7960,8 @@ const bibleQuotes = [
     sv: [`— Hosea 4:14`],
     en: [`— Hosea 4:14`]
   },
-  image: "psalms_50-15_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '346
@@ -7614,8 +7980,8 @@ const bibleQuotes = [
     sv: [`— Joel 2:32`],
     en: [`— Joel 2:32`]
   },
-  image: "psalms_51-10_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '347
@@ -7628,8 +7994,8 @@ const bibleQuotes = [
     sv: [`— Amos 5:14`],
     en: [`— Amos 5:14`]
   },
-  image: "psalms_55-22_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '348
@@ -7642,8 +8008,8 @@ const bibleQuotes = [
     sv: [`— Obadja 1:15`],
     en: [`— Obadiah 1:15`]
   },
-  image: "psalms_55-23_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '349
@@ -7656,8 +8022,8 @@ const bibleQuotes = [
     sv: [`— Jona 1:17`],
     en: [`— Jonah 1:17`]
   },
-  image: "proverbs_9-10_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '350
@@ -7670,8 +8036,8 @@ const bibleQuotes = [
     sv: [`— Nahum 1:7`],
     en: [`— Nahum 1:7`  ]
   },
-  image: "psalms_18-2_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '351
@@ -7684,8 +8050,8 @@ const bibleQuotes = [
     sv: [`— Habackuk 2:4`],
     en: [`— Habakkuk 2:4`]
   },
-  image: "psalms_56-3_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '352
@@ -7698,8 +8064,8 @@ const bibleQuotes = [
     sv: [`— Habackuk 3:18`],
     en: [`— Habakkuk 3:18`]
   },
-  image: "psalms_56-4_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '353
@@ -7712,8 +8078,8 @@ const bibleQuotes = [
     sv: [`— Sefanja 3:17`],
     en: [`— Zephaniah 3:17`]
   },
-  image: "psalms_59-1_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '354
@@ -7726,8 +8092,8 @@ const bibleQuotes = [
     sv: [`— Haggai 1:13`],
     en: [`— Haggai 1:13`]
   },
-  image: "psalms_59-16_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '355
@@ -7740,8 +8106,8 @@ const bibleQuotes = [
     sv: [`— Haggai 2:4-5`],
     en: [`— Haggai 2:4-5`]
   },
-  image: "psalms_59-17_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '356
@@ -7755,8 +8121,8 @@ const bibleQuotes = [
     en: [`— Zechariah 2:8`]
 
   },
-  image: "psalms_62-6_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '357
@@ -7769,8 +8135,8 @@ const bibleQuotes = [
     sv: [`— Sakarja 4:6`],
     en: [`— Zechariah 4:6`]
   },
-  image: "psalms_62-7_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '358
@@ -7783,8 +8149,8 @@ const bibleQuotes = [
     sv: [`— Malaki 3:10`],
     en: [`— Malachi 3:10`]
   },
-  image: "psalms_62-8_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '359
@@ -7797,8 +8163,8 @@ const bibleQuotes = [
     sv: [`— Apostlagärningarna 20:35`],
     en: [`— Acts 20:35`]
   },
-  image: "psalms_63-3_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '360
@@ -7811,8 +8177,8 @@ const bibleQuotes = [
     sv: [`— Kolosserbrevet 3:12`],
     en: [`— Colossians 3:12`]
   },
-  image: "psalms_73-26_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 // '361
 {
@@ -7824,8 +8190,8 @@ const bibleQuotes = [
     sv: [`— Kolosserbrevet 3:4`],
     en: [`— Colossians 3:4`]
   },
-  image: "psalms_90-17_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '362
@@ -7838,8 +8204,8 @@ const bibleQuotes = [
     sv: [`— Kolosserbrevet 3:16`],
     en: [`— Colossians 3:16`]
   },
-  image: "psalms_91-1_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '363
@@ -7852,8 +8218,8 @@ const bibleQuotes = [
     sv: [`— Kolosserbrevet 3:23-24`],
     en: [`— Colossians 4:23-24`]
   },
-  image: "psalms_91-11_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '364
@@ -7866,8 +8232,8 @@ const bibleQuotes = [
     sv: [`— Kolosserbrevet 3:4`],
     en: [`— Colossians 3:4`]
   },
-  image: "psalms_91-12_pexels.jpg",
-  credit: "Pexels.com"
+  image: "dec_pexels-sandzoutdoor-15406472.jpg",
+  credit: "Sandz Outdoor (Pexels.com)"
 },
 ];
 
