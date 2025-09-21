@@ -8333,7 +8333,7 @@ dailyBibleQuoteContainer.addEventListener("click", function (e) {
 
 
   // Get Bible quote when clicking on pidgeon icon
-  bibleQuoteContainerIcon.addEventListener("mousedown", function () {
+  bibleQuoteContainerIcon.addEventListener("click", function () {
     if (dailyBibleQuoteContainer.style.opacity === "0" || dailyBibleQuoteContainer.style.opacity === "") {
       dailyBibleQuoteContainer.style.display = "flex";
       dailyBibleQuoteParagraph.style.opacity = "0";
