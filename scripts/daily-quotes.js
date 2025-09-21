@@ -8402,4 +8402,8 @@ document.addEventListener("DOMContentLoaded", function () {
     dailyBibleQuoteAuthor.innerText = dailyBibleQuoteToPrint.author;
   }
 
+  bibleQuoteContainerIcon.addEventListener("click", () => {
+    console.log("Pigeon icon active!");
+  });
+  
 });
