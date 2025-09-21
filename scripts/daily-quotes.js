@@ -8344,9 +8344,7 @@ document.addEventListener("DOMContentLoaded", function () {
         bibleQuoteContainerIcon.style.opacity = "0.8"
         dailyBibleQuoteCredit.style.display = "flex";
         dailyBibleQuoteCredit.style.opacity = "0";
-        dailyBibleQuoteCredit.innerHTML = bibleQuotes[todayIndex].quote;
-        dailyBibleQuoteCredit.innerHTML = bibleQuotes[todayIndex].author;
-        dailyBibleQuoteCredit.innerHTML = bibleQuotes[todayIndex].credit;
+        dailyBibleQuoteCredit.innerHTML = `<div>${bibleQuotes[todayIndex].credit}</div>`;        
         dailyBibleQuoteCredit.style.marginBottom = "0px";
     
       // Hide credit text after 1.9 seconds
