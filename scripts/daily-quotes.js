@@ -6671,7 +6671,7 @@ const bibleQuotes = [
     sv: [`“Han sade:
       Hjärtligen kär har jag dig, Herre, min starkhet,
 
-      Herre, mitt bergfäst, min borg, min räddare, min Gud, min klippa, till vilken jag tar min tillflykt, min sköld och min frälsnings horn, mitt värn.”`],
+      Herre, mitt bergfäste, min borg, min räddare, min Gud, min klippa, till vilken jag tar min tillflykt, min sköld och min frälsnings horn, mitt värn.”`],
     en: [`“I love you, Lord, my strength.
 
   The Lord is my rock, my fortress and my deliverer;
