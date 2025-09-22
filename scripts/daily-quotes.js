@@ -8344,6 +8344,7 @@ dailyBibleQuoteContainer.addEventListener("click", function (e) {
       dailyBibleQuoteCredit.style.opacity = "0";
       dailyBibleQuoteCredit.innerHTML = `<div>${bibleQuotes[todayIndex].credit}</div>`;        
       dailyBibleQuoteCredit.style.marginBottom = "0px";
+      console.log("Pigeon icon active!");
   
     // Hide credit text after 1.9 seconds
       setTimeout(() => {
@@ -8397,7 +8398,3 @@ dailyBibleQuoteContainer.addEventListener("click", function (e) {
   dailyBibleQuoteParagraph.innerText = dailyBibleQuoteToPrint.quote
   dailyBibleQuoteAuthor.innerText = dailyBibleQuoteToPrint.author;
 };
-
-  bibleQuoteContainerIcon.addEventListener("click", () => {
-    console.log("Pigeon icon active!");
-  });
