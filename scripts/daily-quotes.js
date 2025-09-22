@@ -1869,7 +1869,7 @@ const dailyQuotes = [
 
   // '264
   {
-    quote: `“Its the people with the greatest reasons who achieve the most, not the most disciplined”`,
+    quote: `“it´s the people with the greatest reasons who achieve the most, not the most disciplined”`,
     subtext: ``,
     author: "",
   },
