@@ -7029,8 +7029,8 @@ author: {
   och ha din lust i Herren:
     då skall han ge dig vad ditt hjärta begär.
 
-  Befall din väg åt Herren och förtrösta på honom
-    förtrösta på honom — han skall göra det.
+  Befall din väg åt Herren
+    och förtrösta på honom — han skall göra det.
   Han skall låta din rättfärdighet gå fram som ljuset, och din rätt som middagens sken.”`],
     en: [`“Trust in the Lord and do good;
     dwell in the land and enjoy safe pasture.
