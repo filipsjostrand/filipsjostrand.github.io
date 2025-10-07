@@ -7181,7 +7181,7 @@ author: {
 // '286
 {
   quote: {
-    sv: [`“Och åkalla på mig på nöden,
+    sv: [`“Och åkalla mig i nöden,
       så vill jag hjälpa dig, och du skall prisa mig.”`],
     en: [`“and call on me in the day of trouble;
     I will deliver you, and you will honor me.”`]
