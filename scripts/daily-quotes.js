@@ -2711,7 +2711,7 @@ const bibleQuotes = [
   // '9
   {
     quote: {
-      sv: [`“En psalm av David.
+      sv: [`“En Psalm av David.
 
           Herren är min herde,
               mig skall intet fattas.
@@ -2724,7 +2724,7 @@ const bibleQuotes = [
           fruktar jag intet ont,
               ty du är med mig.
           Din käpp och stav, de tröstar mig.”`],
-                en: [`“A psalm of David.
+                en: [`“A Psalm of David.
 
           The Lord is my shepherd, I lack nothing.
               He makes me lie down in green pastures,
@@ -3241,7 +3241,7 @@ const bibleQuotes = [
   // '37
   {
     quote: {
-      sv: [`“Gå bort till myuran, du late, se hur hon gör, och bli vi.”`],
+      sv: [`“Gå bort till myran, du late, se hur hon gör, och bli vis.”`],
       en: [`“Go to the ant, you sluggard; consider its ways and be wise!”`]
     },
     author: {
@@ -5071,13 +5071,11 @@ author: {
   credit: "Pixabay (Pexels.com)"
 },
 
-  // Kontrollerat hit
-
 // '147
 {
   quote: {
-    sv: [`“Herren, min Gud! Du är Gud, och dina ord är sanning. Du har lovat mig dessa goda ting. Välsigna nu din tjänares hus, så att det består inför dig för evigt.”`],
-    en: [`“Sovereign Lord, you are God! Your covenant is trustworthy, and you have promised these good things to your servant. Now bless the house of your servant, that it may continue forever in your sight.”`]
+    sv: [`“Och nu, Herre, Herre du är Gud, och dina ord är sanning. Och då du har lovat din tjänare detta goda. Så må du i nåd Välsigna din tjänares hus, så att det förblir evinnerligen inför dig. Ja, du Herre, Herre har lovat det, och genom din välsignelse skall din tjänares hus bli välsignat evinnerligen.”`],
+    en: [`“Sovereign Lord, you are God! Your covenant is trustworthy, and you have promised these good things to your servant. 29 Now be pleased to bless the house of your servant, that it may continue forever in your sight; for you, Sovereign Lord, have spoken, and with your blessing the house of your servant will be blessed forever.”`]
   },
   author: {
     sv: [`— 2 Samuelsboken 7:28-29`],
@@ -5090,8 +5088,14 @@ author: {
 // '148
 {
   quote: {
-    sv: [`“I min nöd åkallade jag Herren, jag ropade till min Gud. Från sitt tempel hörde han min röst, mitt rop nådde hans öron.”`],
-    en: [`“In my distress I called to the Lord; I called out to my God. From his temple he heard my voice; my cry came to his ears.”`]
+    sv: [`“Men jag åkallade Herren i min nöd,
+        ja jag gick med min åkallan till min Gud.
+      Och han hörde från sin himmelska boning min röst,
+        och mitt rop kom till hans öron.”`],
+    en: [`“In my distress I called to the Lord;
+        I called out to my God.
+      From his temple he heard my voice;
+        my cry came to his ears.”`]
   },
   author: {
     sv: [`— 2 Samuelsboken 22:7`],
@@ -5100,6 +5104,8 @@ author: {
   image: "may_pexels-pixabay-315998.jpg",
   credit: "Pixabay (Pexels.com)"
 },
+
+  // Kontrollerat hit
 
 // '149
 {
@@ -7533,17 +7539,23 @@ author: {
   credit: "Josh Hild (Pexels.com)"
 },
 
-// ok Här
-
 // '301
 {
   quote: {
-    sv: [`“Den som bygger sitt hus med rättfärdighet får lycka och frid, men den som handlar våldsamt fördärvar sitt eget hem.”`],
-    en: [`“He who builds his house with righteousness finds happiness and peace, but he who acts violently destroys his own home.”`]
+    sv: [`“Så långt som öster är från väster
+      låter han våra överträdelser vara från oss.
+
+      Som en fader förbarmar sig över barnen,
+        så förbarmar sig Herren över dem som fruktar honom.”`],
+    en: [`“as far as the east is from the west,
+      so far has he removed our transgressions from us.
+
+      As a father has compassion on his children,
+        so the Lord has compassion on those who fear him;”`]
   },
   author: {
-    sv: [`— Psaltaren 103:12`],
-    en: [`— Psalm 103:12`]
+    sv: [`— Psaltaren 103:12-13`],
+    en: [`— Psalm 103:12-13`]
   },
   image: "oct_pexels-josh-hild-1270765-12373448.jpg",
   credit: "Josh Hild (Pexels.com)"
@@ -7552,12 +7564,22 @@ author: {
 // '302
 {
   quote: {
-    sv: [`“Den som tar till vara på kunskap finner liv, men den som föraktar råd lider förlust.”`],
-    en: [`“He who treasures knowledge finds life, but he who despises counsel suffers loss.”`]
+    sv: [`“Det är de som hör ordet, men värdsliga bekymmer, rikedomens lockelser
+      och alla möjliga begär tränger in och kväver ordet, så att det inte bär frukt.
+
+      Men de som tagit emot sådden i den goda jorden,
+      det är sådana som här ordet och tar det till sig
+      och bär frukt trettiofalt, sextiofalt och hundrafalt.”`],
+    en: [`“ Still others, like seed sown among thorns, hear the word;
+      but the worries of this life, the deceitfulness of wealth and the desires
+      for other things come in and choke the word, making it unfruitful.
+
+      Others, like seed sown on good soil, hear the word, accept it,
+      and produce a crop—some thirty, some sixty, some a hundred times what was sown.””`]
   },
   author: {
-    sv: [`— Psaltaren 104:34`],
-    en: [`— Psalm 104:34`]
+    sv: [`— Markusevangeliet 4:18-20`],
+    en: [`— Mark 4:18-20`]
   },
   image: "oct_pexels-josh-hild-1270765-12373448.jpg",
   credit: "Josh Hild (Pexels.com)"
@@ -7566,8 +7588,10 @@ author: {
 // '303
 {
   quote: {
-    sv: [`“Den milda svarar lugnar vrede, men det hårda ordet väcker vrede.”`],
-    en: [`“A gentle answer turns away wrath, but a harsh word stirs up anger.”`]
+    sv: [`“Tacka Herren, ty han är god,
+      ty hans nåd varar evinnerligen.”`],
+    en: [`“Give thanks to the Lord, for he is good;
+      his love endures forever.”`]
   },
   author: {
     sv: [`— Psaltaren 107:1`],
@@ -7580,12 +7604,28 @@ author: {
 // '304
 {
   quote: {
-    sv: [`“Den som har många vänner går miste om förtroende, men en vän står honom nära i nöd.”`],
-    en: [`“He who has many friends suffers lack of trust, but a friend sticks closer than a brother.”`]
+    sv: [`“Men de ropade till Herren i sin nöd.
+        och han förde dem ut ur deras trångmål.
+      Han förbytte stormen i lugn,
+        så att böljorna omkring dem tystnade.
+
+      Och de blev glada att det blev stilla,
+        och han förde dem till den hamn dit de ville.
+
+      Det må räcka Herren för hans nåd
+      och för hans under med människors barn.”`],
+    en: [`“hen they cried out to the Lord in their trouble,
+        and he brought them out of their distress.
+      He stilled the storm to a whisper;
+        the waves of the sea[a] were hushed.
+      They were glad when it grew calm,
+        and he guided them to their desired haven.
+      Let them give thanks to the Lord for his unfailing love
+        and his wonderful deeds for mankind.”`]
   },
   author: {
-    sv: [`— Psaltaren 107:29`],
-    en: [`— Psalm 107:29`]
+    sv: [`— Psaltaren 107:28-31`],
+    en: [`— Psalm 107:28-31`]
   },
   image: "oct_pexels-josh-hild-1270765-12373448.jpg",
   credit: "Josh Hild (Pexels.com)"
@@ -7595,12 +7635,12 @@ author: {
 // '305
 {
   quote: {
-    sv: [`“Du delar mitt arv med glädje, du bevarar mitt lott i trygghet. Jag vilar i frid, ty du leder mig på rätt väg.”`],
-    en: [`“You make known to me the path of life; in your presence there is fullness of joy; at your right hand are pleasures forevermore.”`]
+    sv: [`“Lägg därför bort allt slags ondska, falskhet och förställning, avudnd och förtal. Som nyfödda barn skall ni längta efter den rena, andliga mjöljken, för att växa genom den och blio räddade. Ni har ju fått smaka Herrens godhet.”`],
+    en: [`“Therefore, rid yourselves of all malice and all deceit, hypocrisy, envy, and slander of every kind. Like newborn babies, crave pure spiritual milk, so that by it you may grow up in your salvation, now that you have tasted that the Lord is good.”`]
   },
   author: {
-    sv: [`— Psaltaren 107:38`],
-    en: [`— Psalms 107:38`]
+    sv: [`— 1 Petrusbrevet 2:1-3`],
+    en: [`— 1 Peter 2:1-3`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -7609,12 +7649,14 @@ author: {
 // '306
 {
   quote: {
-    sv: [`“Jag ropar till dig, Herre, för du tar emot mig och lyssnar till min röst.”`],
-    en: [`“I call upon you, Lord, for you hear me; incline your ear to me.”`]
+    sv: [`“Detta är den dag som Herren har gjort,
+      låt oss på den fröjdas och vara glada.”`],
+    en: [`“The Lord has done it this very day;
+      let us rejoice today and be glad.”`]
   },
   author: {
     sv: [`— Psaltaren 118:24`],
-    en: [`— Psalms 118:24`]
+    en: [`— Psalm 118:24`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -7653,12 +7695,22 @@ author: {
 // '308
 {
   quote: {
-    sv: [`“Herren är min klippa, min borg, min räddare. Min Gud är min klippa, hos honom söker jag skydd.”`],
-    en: [`“The Lord is my rock, my fortress, and my deliverer; my God is my rock, in whom I take refuge.”`]
+    sv: [`“Jag fröjdar mig över dina vittnesbörds väg
+      som över alla skatter.
+    Jag vill begrunda dina befallningar
+      och skåda på dina stigar.
+    Jag har min lust i dina stadgar,
+      jag glömmer inte ditt ord.”`],
+    en: [`“I rejoice in following your statutes
+      as one rejoices in great riches.
+    I meditate on your precepts
+      and consider your ways.
+    I delight in your decrees;
+      I will not neglect your word.”`]
   },
   author: {
-    sv: [`— Psaltaren 119:14`],
-    en: [`— Psalms 119:14`]
+    sv: [`— Psaltaren 119:14-16`],
+    en: [`— Psalm 119:14-16`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -7667,12 +7719,18 @@ author: {
 // '309
 {
   quote: {
-    sv: [`“Himlens himlar vittnar om Guds härlighet, himlen förkunnar hans händers verk.”`],
-    en: [`“The heavens declare the glory of God, and the sky above proclaims his handiwork.”`]
+    sv: [`“Tänk på ordet till din tjänare,
+        eftersom du har givit mig hopp.
+      Det är min tröst i mitt lidande
+        att ditt tal behåller mig vid liv.”`],
+    en: [`“Remember your word to your servant,
+        for you have given me hope.
+      My comfort in my suffering is this:
+        Your promise preserves my life.”`]
   },
   author: {
-    sv: [`— Psaltaren 119:50`],
-    en: [`— Psalms 119:50`]
+    sv: [`— Psaltaren 119:49-50`],
+    en: [`— Psalm 119:49-50`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -7681,25 +7739,62 @@ author: {
 // '310
 {
   quote: {
-    sv: [`“Låt orden från min mun och tanken i mitt hjärta vara behaglig inför dig, Herre, min klippa och min frälsare.”`],
-    en: [`“Let the words of my mouth and the meditation of my heart be acceptable in your sight, O Lord, my rock and my redeemer.”`]
+    sv: [`“och det som världen ser ner på, det som ringaktas, ja som inte finns till, just det utvalde Gud för att göra slut på det som finns till, så att ingen människa skulle kunna vara stolt inför Gud. Genom honom finns ni i Kristus Jesus, som har blivit vår vishet från Gud, vår rättfärdighet, vår helighet och vår frihet. Som det står skrivet: Den stolte ska ha sin stolthet i Herren.”`],
+    en: [`“so that no one may boast before him. It is because of him that you are in Christ Jesus, who has become for us wisdom from God—that is, our righteousness, holiness and redemption. Therefore, as it is written: “Let the one who boasts boast in the Lord.”`]
   },
   author: {
-    sv: [`— Psaltaren 119:90`],
-    en: [`— Psalms 119:90`]
+    sv: [`— 1 Korinthierbrevet 1:29-31`],
+    en: [`— 1 Corinthians 1:29-31`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
 },
+
 // '311
 {
   quote: {
-    sv: [`“Må han ge dig det som ditt hjärta önskar och låta alla dina planer lyckas.”`],
-    en: [`“May he grant you your heart’s desire and fulfill all your plans.”`]
+    sv: [`“Jag lyfter mina ögon upp till bergen:
+      varifrån skall min hjälp komma?
+      Min hjälp kommer från Herren
+      som har gjort himmel och jord.
+
+      Inte skall han låta min fot vackla,
+      inte slumrar han som bevarar dig!
+      Nej, han som bevarar Israel,
+      han slumrar inte, han sover inte.
+
+      Herren är den som bevarar dig,
+      Herren är ditt skydd på din högra sida.
+      Solen skall inte skada dig om dagen,
+      ej heller månen om natten.
+
+      Herren skall bevara dig för allt ont,
+      han skall bevara din själ.
+      Herren skall bevara din utgång och din ingång,
+      från nu och till evig tid.”`],
+    en: [`“I lift up my eyes to the mountains—
+    where does my help come from?
+  My help comes from the Lord,
+    the Maker of heaven and earth.
+
+  He will not let your foot slip—
+    he who watches over you will not slumber;
+  indeed, he who watches over Israel
+    will neither slumber nor sleep.
+
+  The Lord watches over you—
+    the Lord is your shade at your right hand;
+  the sun will not harm you by day,
+    nor the moon by night.
+
+  The Lord will keep you from all harm—
+    he will watch over your life;
+  the Lord will watch over your coming and going
+    both now and forevermore.”`]
   },
   author: {
-    sv: [`— Psaltaren 121:1-4`],
-    en: [`— Psalms 121:1-4`]
+    sv: [`— Psaltaren 121:1-8`],
+    en: [`— Psalm 121:1-8`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -7708,12 +7803,20 @@ author: {
 // '312
 {
   quote: {
-    sv: [`“Herren är mitt ljus och min frälsning; vem behöver jag frukta?”`],
-    en: [`“The Lord is my light and my salvation; whom shall I fear?”`]
+    sv: [`“Döm inte, så blir ni inte dömda, Ty med den dom som ni dömer med skall ni dömas, och med det mått som ni mäter med skall det mätas upp åt er.
+
+      Varför ser du flisan i din broders öga, när du inte märker bjälken i ditt eget? Och hur kan du säga till din broder: åt mig ta bort flisan i ditt öga - du som har en bjälke i ditt öga? Hycklare, ta först bort bjälken ur ditt eget öga, så kan du se klart och ta bort flisan ur din broders.
+
+      Ge inte det som är heligt åt hundarna och kasta inte pärlor åt svinen; de trampar på dem och vänder sig om och sliter sönder er.”`],
+    en: [`“Do not judge, or you too will be judged. For in the same way you judge others, you will be judged, and with the measure you use, it will be measured to you.
+
+    Why do you look at the speck of sawdust in your brother’s eye and pay no attention to the plank in your own eye? 4 How can you say to your brother, ‘Let me take the speck out of your eye,’ when all the time there is a plank in your own eye? 5 You hypocrite, first take the plank out of your own eye, and then you will see clearly to remove the speck from your brother’s eye.
+
+    Do not give dogs what is sacred; do not throw your pearls to pigs. If you do, they may trample them under their feet, and turn and tear you to pieces.”`]
   },
   author: {
-    sv: [`— Psaltaren 122:1`],
-    en: [`— Psalms 122:1`]
+    sv: [`— Matteusevangeliet 7:1-6`],
+    en: [`— Matthew 7:1-6`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -7722,12 +7825,20 @@ author: {
 // '313
 {
   quote: {
-    sv: [`“När de onda smider planer mot mig, litar jag på Herren.”`],
-    en: [`“Though the wicked plot against me, I trust in the Lord.”`]
+    sv: [`“De som förtröstar på Herren, de liknar Sions berg,
+        som inte vacklar, utan förblir evinnerligen
+      Jerusalem omhägnas av berg,
+        och Herren omhägnar sitt folk,
+        från nu och till evig tid.”`],
+    en: [`“Those who trust in the Lord are like Mount Zion,
+        which cannot be shaken but endures forever.
+      As the mountains surround Jerusalem,
+        so the Lord surrounds his people
+        both now and forevermore.”`]
   },
   author: {
-    sv: [`— Psaltaren 125:1`],
-    en: [`— Psalms 125:1`]
+    sv: [`— Psaltaren 125:1-2`],
+    en: [`— Psalm 125:1-2`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -7736,12 +7847,14 @@ author: {
 // '314
 {
   quote: {
-    sv: [`“Herren bevarar min väg, leder mig på rätta stigar för sitt namns skull.”`],
-    en: [`“The Lord preserves my way and guides me in paths of righteousness for his name’s sake.”`]
+    sv: [`“När jag ropade, svarade du mig,
+        du gav mig frimodighet, och min själ fick kraft.”`],
+    en: [`“When I called, you answered me;
+        you greatly emboldened me.”`]
   },
   author: {
-    sv: [`— Psaltaren 137:1 (valfritt)`],
-    en: [`— Psalms 137:1 (optional)`]
+    sv: [`— Psaltaren 138:3`],
+    en: [`— Psalm 138:3`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -7750,26 +7863,62 @@ author: {
 // '315
 {
   quote: {
-    sv: [`“Ge mig frid, Herre, och hjälp mig stå fast i ditt löfte.”`],
-    en: [`“Give me peace, Lord, and help me stand firm in your promise.”`]
+    sv: [`“Om än min väg går genom nöd,
+        så behåller du mig vid liv,
+      du räcker ut din hand tillskydd mot mina fienders vrede,
+        och din högra hand frälser mig.”`],
+    en: [`“Though I walk in the midst of trouble,
+        you preserve my life.
+      You stretch out your hand against the anger of my foes;
+        with your right hand you save me.”`]
   },
   author: {
-    sv: [`— Psaltaren 138:3`],
-    en: [`— Psalms 138:3`]
+    sv: [`— Psaltaren 138:7`],
+    en: [`— Psalm 138:7`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
 },
 
+// ok Här
+
 // '316
 {
   quote: {
-    sv: [`“De som väntar på Herren får ärva landet och njuta av frid.”`],
-    en: [`“The salvation of the righteous comes from the Lord; he is their stronghold in time of trouble.”`]
+    sv: [`“Ty förrän ett ord är på min tunga,
+        se så känner du, Herre, det till fullo.
+      Du omsluter mig på alla sidor
+        och håller mig i din hand.
+      En sådan kunskap är mig alltför underbar,
+        den är mig för hög, jag kan inte begripa den.
+
+      Vart skall jag gå för din Ande,
+        och vart skall jag fly för ditt ansikte?
+      For jag upp till himmelen, så är du där,
+        och bäddade jag åt mig i dödsriket, se, så är du också där.
+      Du tog morgonrodnadens vingar,
+        gjorde mig en boning ytterst i havet,
+      så skulle också där din hand leda mig
+        och din högra hand fatta mig.”`],
+    en: [`“Before a word is on my tongue
+        you, Lord, know it completely.
+      You hem me in behind and before,
+        and you lay your hand upon me.
+      Such knowledge is too wonderful for me,
+        too lofty for me to attain.
+
+      Where can I go from your Spirit?
+        Where can I flee from your presence?
+      If I go up to the heavens, you are there;
+        if I make my bed in the depths, you are there.
+      If I rise on the wings of the dawn,
+        if I settle on the far side of the sea,
+      even there your hand will guide me,
+        your right hand will hold me fast.”`]
   },
   author: {
     sv: [`— Psaltaren 139:4-10`],
-    en: [`— Psalms 139:4-10`]
+    en: [`— Psalm 139:4-10`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
