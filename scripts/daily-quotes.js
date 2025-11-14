@@ -7880,8 +7880,6 @@ author: {
   credit: "kristen munk (Pexels.com)"
 },
 
-// ok Här
-
 // '316
 {
   quote: {
@@ -7927,12 +7925,32 @@ author: {
 // '317
 {
   quote: {
-    sv: [`“Herre, du är min styrka och min klippa; jag hoppas på dig.”`],
-    en: [`“Lord, you are my strength and my rock; I put my hope in you.”`]
+    sv: [`“Jag tackar dig för att jag är danad så övermåttan underbart.
+        Ja, underbara är dina verk,
+        min själ vet det väl.
+      Benen i min kropp var inte gömda för dig,
+        när jag bereddes i det fördolda,
+        när jag bildades i jordens djup.
+      Dina ögon såg mig, när jag ännu knappast var formad,
+        alla mina dagar blev uppskrivna i din bok,
+        de var bestämda, förrän någon av dem hade kommit.
+      Hur outgrundliga är inte för mig dina tankar,
+        o Gud, hur stor är inte deras mångfald!”`],
+    en: [`“I praise you because I am fearfully and wonderfully made;
+        your works are wonderful,
+        I know that full well.
+      My frame was not hidden from you
+        when I was made in the secret place,
+        when I was woven together in the depths of the earth.
+      Your eyes saw my unformed body;
+        all the days ordained for me were written in your book
+        before one of them came to be.
+      How precious to me are your thoughts,[a] God!
+        How vast is the sum of them!.”`]
   },
   author: {
-    sv: [`— Psaltaren 139:14`],
-    en: [`— Psalms 139:14`]
+    sv: [`— Psaltaren 139:14-17`],
+    en: [`— Psalm 139:14-17`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -7941,12 +7959,12 @@ author: {
 // '318
 {
   quote: {
-    sv: [`“Vid ditt namn lyfter jag min själ, Herre, min Gud.”`],
-    en: [`“I lift up my soul to you, Lord my God.”`]
+    sv: [`“Jag kan leva fattigt och jag kan leva i överflöd. Jag har verkligen erfarenhet av allt: Att vara mätt och att hungra, att leva i överflöd och att lida brist. Allt förmår jag genom honom som ger mig kraft”`],
+    en: [`“I know what it is to be in need, and I know what it is to have plenty. I have learned the secret of being content in any and every situation, whether well fed or hungry, whether living in plenty or in want. 13 I can do all this through him who gives me strength.”`]
   },
   author: {
-    sv: [`— Psaltaren 139:17`],
-    en: [`— Psalms 139:17`]
+    sv: [`— Filipperbrevet 4:12-13`],
+    en: [`— Philippians 4:12-13`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
