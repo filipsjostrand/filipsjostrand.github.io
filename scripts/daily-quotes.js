@@ -7973,12 +7973,30 @@ author: {
 // '319
 {
   quote: {
-    sv: [`“Hjälp mig, Herre, att hålla fast vid din väg, trots faror omkring mig.”`],
-    en: [`“Help me, Lord, to hold fast to your way, even amidst dangers around me.”`]
+    sv: [`“Låt mig tidigt erfara din nåd,
+      ty jag förtröstar på dig.
+    Kungör mig den väg som jag bör vandra,
+      ty till dig upplyfter jag min själ.
+    Rädda mig från mina fiender,
+      Herre hos dig söker jag skydd.
+    Lär mig att göra din vilja,
+      ty du är min Gud,
+    må din gode Ande
+      leda mig på jämn mark.”`],
+    en: [`“Let the morning bring me word of your unfailing love,
+      for I have put my trust in you.
+    Show me the way I should go,
+      for to you I entrust my life.
+    Rescue me from my enemies, Lord,
+      for I hide myself in you.
+    Teach me to do your will,
+      for you are my God;
+    may your good Spirit
+      lead me on level ground.”`]
   },
   author: {
-    sv: [`— Psaltaren 143:8`],
-    en: [`— Psalms 143:8`]
+    sv: [`— Psaltaren 143:8-10`],
+    en: [`— Psalm 143:8-10`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -7987,25 +8005,53 @@ author: {
 // '320
 {
   quote: {
-    sv: [`“Hjärtat fröjdas när man möts i vänskap, och Herren vakar över oss.”`],
-    en: [`“The heart rejoices in friendship, and the Lord watches over us.”`]
+    sv: [`“Herren är rättfärdig i alla sina vägar
+      och nådig i alla sina verk.
+    Herren är nära alla dem som åkallar honom,
+      alla dem som åkallar honom uppriktigt.
+    Han gör vad de gudfruktiga begär
+      och hör deras rop och frälser dem.”`],
+    en: [`“The Lord is righteous in all his ways
+      and faithful in all he does.
+    The Lord is near to all who call on him,
+      to all who call on him in truth.
+    He fulfills the desires of those who fear him;
+      he hears their cry and saves them.”`]
   },
   author: {
-    sv: [`— Psaltaren 145:17`],
-    en: [`— Psalms 145:17`]
+    sv: [`— Psaltaren 145:17-19`],
+    en: [`— Psalm 145:17-19`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
 },
+
 // '321
 {
   quote: {
-    sv: [`“Jag älskar dig, Herre, min styrka. Herren är min klippa, min borg och min räddare.”`],
-    en: [`“I love you, Lord, my strength. The Lord is my rock, my fortress, and my deliverer.”`]
+    sv: [`“Vi förkunnar, som det står i skriften,
+
+      vad inget öga sett
+        och inget öra hört
+      och vad ingen människa har anat,
+        det som Gud har berett åt dem som älskar honom.
+
+      Och för oss har Gud uppenbarat det
+      genom Anden som utforskar allt, också djupen hos Gud.”`],
+    en: [`“However, as it is written:
+
+      What no eye has seen,
+          what no ear has heard,
+      and what no human mind has conceived —
+          the things God has prepared for those who love him—
+
+      these are the things God has revealed to us by his Spirit.
+
+      The Spirit searches all things, even the deep things of God.”`]
   },
   author: {
-    sv: [`— Psaltaren 145:18-19`],
-    en: [`— Psalms 145:18-19`]
+    sv: [`— 1 Korinthierbrevet 2:9-10`],
+    en: [`— 1 Corinthians 2:9-10`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -8014,12 +8060,12 @@ author: {
 // '322
 {
   quote: {
-    sv: [`“Himlens himlar berättar om Guds ära, himlavalvet förkunnar hans händers verk.”`],
-    en: [`“The heavens declare the glory of God; the skies proclaim the work of his hands.”`]
+    sv: [`“Varför säger ni 'Herre, herre' när ni kallar på mig, om ni ändå inte gör som jag säger? Den som kommer till mig och hör mina ord och handlar efter dem - vem är han lik, det skall jag visa er. Han är lik en man som när han bygger ett hus gräver djupt och lägger grunden på berg. När floden svämmar över, vräker sig vattnet mot huset men förmår inte rubba det, eftersom det är väl byggt.”`],
+    en: [`“Why do you call me, ‘Lord, Lord,’ and do not do what I say? 47 As for everyone who comes to me and hears my words and puts them into practice, I will show you what they are like. 48 They are like a man building a house, who dug down deep and laid the foundation on rock. When a flood came, the torrent struck that house but could not shake it, because it was well built.”`]
   },
   author: {
-    sv: [`— Psaltaren 146:5-6`],
-    en: [`— Psalms 146:5-6`]
+    sv: [`— Lukasevangeliet 6:46-48`],
+    en: [`— Luke 6:46-48`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -8028,12 +8074,22 @@ author: {
 // '323
 {
   quote: {
-    sv: [`“Mina ord och mina tankar skall vara rena inför dig, Herre.”`],
-    en: [`“May my words and thoughts be pure before you, Lord.”`]
+    sv: [`Må Israel glädja sig över sin skapare,
+        Sions barn fröjda sig över sin konung.
+      Må de lova hans namn under dans,
+        till puka och harpa må de lovsjunga honom.
+      Ty Herren har behag till sitt folk,
+        han smyckar de ödmjuka med frälsning.”`],
+    en: [`“Let Israel rejoice in their Maker;
+        let the people of Zion be glad in their King.
+      Let them praise his name with dancing
+        and make music to him with timbrel and harp.
+      For the Lord takes delight in his people;
+        he crowns the humble with victory.”`]
   },
   author: {
-    sv: [`— Psaltaren 149:4`],
-    en: [`— Psalms 149:4`]
+    sv: [`— Psaltaren 149:2-4`],
+    en: [`— Psalm 149:2-4`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -8042,12 +8098,12 @@ author: {
 // '324
 {
   quote: {
-    sv: [`“Må han uppfylla dina önskningar och göra att alla dina planer lyckas.”`],
-    en: [`“May he grant you your heart’s desire and make all your plans succeed.”`]
+    sv: [`“Jag skäms inte för evangeliet. Det är en Guds kraft som räddar var och en som tror, juden främst men också greken. I evangeliet uppenbaras nämligen en rättfärdighet från Gud, genom tro till tro, som det står skrivet: Den rättfärdige skall leva genom tron.”`],
+    en: [`“For I am not ashamed of the gospel, because it is the power of God that brings salvation to everyone who believes: first to the Jew, then to the Gentile. For in the gospel the righteousness of God is revealed—a righteousness that is by faith from first to last, just as it is written: “The righteous will live by faith.”`]
   },
   author: {
-    sv: [`— Romarbrevet 1:17`],
-    en: [`— Romans 1:17`]
+    sv: [`— Romarbrevet 1:16-17`],
+    en: [`— Romans 1:16-17`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -8056,8 +8112,16 @@ author: {
 // '325
 {
   quote: {
-    sv: [`“Herren är mitt ljus och min räddning, vem skulle jag frukta?”`],
-    en: [`“The Lord is my light and my salvation—whom shall I fear?”`]
+    sv: [`“Så prisar också David den människa salig som Gud räknar som rättfärdig oberoende av hennes gärningar.
+
+      Saliga de
+        vilkas överträdelser är förlåtna
+        och vilkas synder är utplånade”`],
+    en: [`“David says the same thing when he speaks of the blessedness of the one to whom God credits righteousness apart from works:
+
+    “Blessed are those
+      whose transgressions are forgiven,
+      whose sins are covered.”`]
   },
   author: {
     sv: [`— Romarbrevet 4:6-7`],
@@ -8066,15 +8130,18 @@ author: {
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
 },
+
 // '326
 {
   quote: {
-    sv: [`“Håll dig undan från de som gör ont, för de lurar mig med sina planer.”`],
-    en: [`“Turn away from those who do evil, for they plot against me.”`]
+    sv: [`“Men om vi hoppas på det vi inte ser, då väntar vi uthålligt. På samma sätt är det när Anden stöder oss i vår svaghet. Vi vet ju inte hur vår bön egentligen bör vara, men Anden vädjar för oss med rop utan ord, och han som utforskar våra hjärtan vet vad Anden menar, eftersom Anden vädjar för de heliga så som Gud vill.”`],
+    en: [`“But if we hope for what we do not yet have, we wait for it patiently.
+
+    In the same way, the Spirit helps us in our weakness. We do not know what we ought to pray for, but the Spirit himself intercedes for us through wordless groans. And he who searches our hearts knows the mind of the Spirit, because the Spirit intercedes for God’s people in accordance with the will of God.”`]
   },
   author: {
-    sv: [`— Romarbrevet 8:35`],
-    en: [`— Romans 8:35`]
+    sv: [`— Romarbrevet 8:25-27`],
+    en: [`— Romans 8:25-27`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -8083,8 +8150,8 @@ author: {
 // '327
 {
   quote: {
-    sv: [`“En sak har jag begärt av Herren, det söker jag: att få bo i Herrens hus alla dagar i mitt liv, att betrakta Herrens skönhet och begrunda hans tempel.”`],
-    en: [`“One thing I ask from the Lord, this only do I seek: that I may dwell in the house of the Lord all the days of my life, to gaze on the beauty of the Lord and to seek him in his temple.”`]
+    sv: [`“Ty jag är viss om att varken död eller liv, varken änglar eller andemakter, varken något som finns eller något som kommer, varken krafter i höjden eller krafter i djupet eller något annat i skapelsen skall kunna skilja oss från Guds kärlek i Kristus Jesus, vår Herre.”`],
+    en: [`“For I am convinced that neither death nor life, neither angels nor demons,[a] neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord.”`]
   },
   author: {
     sv: [`— Romarbrevet 8:38-39`],
@@ -8097,26 +8164,28 @@ author: {
 // '328
 {
   quote: {
-    sv: [`“Herren ger sina vänner fred, han omsluter dem med lycka.”`],
-    en: [`“The Lord gives his friends peace; he surrounds them with happiness.”`]
+    sv: [`“Ty om du med din mun bekänner att Jesus är herre, och i ditt hjärta tror att Gud har uppväckt honom från de döda, skall du bli räddad. Hjärtats tro leder till rättfärdighet och munnens bekännelse leder till räddning”`],
+    en: [`“If you declare with your mouth, “Jesus is Lord,” and believe in your heart that God raised him from the dead, you will be saved. 10 For it is with your heart that you believe and are justified, and it is with your mouth that you profess your faith and are saved.”`]
   },
   author: {
-    sv: [`— Romarbrevet 10:17`],
-    en: [`— Romans 10:17`]
+    sv: [`— Romarbrevet 10:9-10`],
+    en: [`— Romans 10:9-10`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
 },
 
+
+
 // '329
 {
   quote: {
-    sv: [`“Fröjda dig i Herren, och han skall ge dig det du begär.”`],
-    en: [`“Delight yourself in the Lord, and he will give you the desires of your heart.”`]
+    sv: [`“I kraft av den nåd jag har fått säger jag till var och en av er: ha inte för höga tankar om er själva utan tänk som man bör tänka, med självbesinning, så att var och en rättar sig efter det mått av tro som Gud har tilldelat honom. Ty liksom vi har en enda kropp men många lemmar, alla med olika uppgifter, så utgör vi, fast många, en enda kropp i Kristus, men var för sig är vi lemmar som är till för varandra.”`],
+    en: [`“For by the grace given me I say to every one of you: Do not think of yourself more highly than you ought, but rather think of yourself with sober judgment, in accordance with the faith God has distributed to each of you. For just as each of us has one body with many members, and these members do not all have the same function, so in Christ we, though many, form one body, and each member belongs to all the others.”`]
   },
   author: {
-    sv: [`— Romarbrevet 12:3`],
-    en: [`— Romans 12:3`]
+    sv: [`— Romarbrevet 12:3-5`],
+    en: [`— Romans 12:3-5`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -8125,25 +8194,26 @@ author: {
 // '330
 {
   quote: {
-    sv: [`“Var stark och tag mod, alla ni som hoppas på Herren.”`],
-    en: [`“Be strong and take heart, all you who hope in the Lord.”`]
+    sv: [`“Vi har olika gåvor allt efter den nåd vi har fått: profetisk gåva i förhållande till vår tro, tjänandets gåva hos den som tjänar, undervisningens gåva i förhållande till vår tro, tjänandets gåva i förhållande till vår tro, tjänandets gåva hos den som tjänar, undervisningens gåva hos den som undervisar, tröstens gåva hos den som tröstar och förmanar, gåvan att frikostigt dela med sig, att vara nitisk som ledare och att med glatt hjärta visa barmhärtighet.”`],
+    en: [`“We have different gifts, according to the grace given to each of us. If your gift is prophesying, then prophesy in accordance with your[a] faith; 7 if it is serving, then serve; if it is teaching, then teach; 8 if it is to encourage, then give encouragement; if it is giving, then give generously; if it is to lead,[b] do it diligently; if it is to show mercy, do it cheerfully.”`],
   },
   author: {
-    sv: [`— Psaltaren 12:10`],
-    en: [`— Psalms 12:10`]
+    sv: [`— Romarbrevet 12:6-8`],
+    en: [`— Romans 12:6-8`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
 },
+
 // '331
 {
   quote: {
-    sv: [`“Du är min tillflykt, du bevarar mig från nöd, du omsluter mig med frälsningens glädje.”`],
-    en: [`“You are my refuge; you preserve me from trouble, and surround me with the joy of salvation.”`]
+    sv: [`“Er kärlek skall vara uppriktig. Avsky det onda, håll fast vid det goda. Visa varandra tillgivenhet och broderlig kärlek, överträffa varandra i ömsesidig aktning. Slappna inte i er iver, håll er brinnande i anden. Tjäna Herren.”`],
+    en: [`“Love must be sincere. Hate what is evil; cling to what is good. Be devoted to one another in love. Honor one another above yourselves. Never be lacking in zeal, but keep your spiritual fervor, serving the Lord.”`],
   },
   author: {
-    sv: [`— Psaltaren 15:13`],
-    en: [`— Psalms 15:13`]
+    sv: [`— Romarbrevet 12:9-11`],
+    en: [`— Romans 12:9-11`]
   },
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
@@ -8152,8 +8222,8 @@ author: {
 // '332
 {
   quote: {
-    sv: [`“Jag vill lära dig och visa dig vägen du skall gå; jag vill ge dig råd och se till dig.”`],
-    en: [`“I will instruct you and show you the way you should go; I will give you counsel and watch over you.”`]
+    sv: [`“Må Herren löna dig för vad du har gjort. Ja, må full lön tillfalla dig från Herren, Israels Gud, till vilken du har kommit för att finna tillflykt under hans vingar.”`],
+    en: [`“May the Lord repay you for what you have done. May you be richly rewarded by the Lord, the God of Israel, under whose wings you have come to take refuge.”`]
   },
   author: {
     sv: [`— Rut 2:12`],
@@ -8162,6 +8232,8 @@ author: {
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
 },
+
+// ok Här
 
 // '333
 {
