@@ -3097,8 +3097,6 @@ const bibleQuotes = [
     credit: "Pixabay (Pexels.com)"
   },
 
-
-
   // _ _ _
 
   // 'Feb
@@ -3338,6 +3336,7 @@ const bibleQuotes = [
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
+  // Alla hjärtans dag
   // '44
   {
     quote: {
@@ -3352,7 +3351,6 @@ const bibleQuotes = [
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
-  // Alla hjärtans dag
   // '45
   {
     quote: {
@@ -3558,12 +3556,12 @@ const bibleQuotes = [
 // '57
 {
   quote: {
-    sv: [`“Och jag skall ge er ett nytt hjärta och låta en ny ande komma i ert bröst. Jag skall ta bort stenhjärtat ur er kropp och ge er ett hjärta av kött.”`],
-    en: [`“I will give you a new heart and put a new spirit in you; I will remove from you your heart of stone and give you a heart of flesh.”`]
+    sv: [`“Kom ihåg: den som sår snålt får en snål skörd och den som sår rikligt får en riklig skörd. Var och en skall ge som han har beslutat i sitt hjärta, inte med olust eller av tvång, ty Gud älskar en glad givare. Gud förmår ge er allt gott i överflöd, så att ni alltid har allt vad ni behöver och själva kan ge i överflöd till varje gott ändamål.”`],
+    en: [`“Remember this: Whoever sows sparingly will also reap sparingly, and whoever sows generously will also reap generously. Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver. And God is able to bless you abundantly, so that in all things at all times, having all that you need, you will abound in every good work.”`]
   },
   author: {
-    sv: [`— Hesekiel 36:26`],
-    en: [`— Ezekiel 36:26`]
+    sv: [`— 2 Korinthierbrevet 9:6-8`],
+    en: [`— 2 Corinthians 9:6-8`]
   },
   image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
   credit: "Stijn Dikstra (Pexels.com)"
@@ -3616,8 +3614,20 @@ const bibleQuotes = [
 // '60
 {
   quote: {
-    sv: [`“Men det skall ske att var och en som åkallar Herrens namn, han skall bli frälst. ...”`],
-    en: [`“And everyone who calls on the name of the Lord will be saved. ...”`]
+    sv: [`“Men det skall ske att var och en som åkallar
+        Herrens namn, han skall bli frälst.
+      Ty på Sions berg och i Jerusalem
+        skall finnas en räddad skara,
+        som Herren har sagt,
+      och till dem som kommit undan
+        skall höra de som Herren kallar.”`],
+    en: [`“And everyone who calls
+        on the name of the Lord will be saved;
+      for on Mount Zion and in Jerusalem
+        there will be deliverance,
+        as the Lord has said,
+      even among the survivors
+        whom the Lord calls.”`]
   },
   author: {
     sv: [`— Joel 2:32`],
@@ -5105,12 +5115,10 @@ author: {
   credit: "Pixabay (Pexels.com)"
 },
 
-  // Kontrollerat hit
-
 // '149
 {
   quote: {
-    sv: [`“Gör allt du kan för att bestå provet inför Gud, som en arbetare som inte behöver skämmas utan rätt delar sanningens ord.”`],
+    sv: [`“Gör allt du kan för att bestå provet inför Gud, som en arbetare som inte har något att skämmas för, en som rätt utlägger sanningens ord.”`],
     en: [`“Do your best to present yourself to God as one approved, a worker who does not need to be ashamed and who correctly handles the word of truth.”`]
   },
   author: {
@@ -5124,8 +5132,8 @@ author: {
 // '150
 {
   quote: {
-    sv: [`“Må Kristus bo i era hjärtan genom tron, och må ni stå fasta i kärlekens rot och grund. Då ska ni tillsammans med alla de heliga kunna fatta bredden och längden och höjden och djupet, och lära känna Kristi kärlek som går långt utöver all kunskap. Så ska ni bli helt uppfyllda av Guds fullhet.”`],
-    en: [`“So that Christ may dwell in your hearts through faith. And I pray that you, being rooted and established in love, may have power, together with all the Lord’s holy people, to grasp how wide and long and high and deep is the love of Christ.”`]
+    sv: [`“Så att Kristus genom tron kan bo i era hjärtan med kärlek. Stå fasta och var stadigt rotade i honom, så att ni tillsammans med alla de heliga förmår fatta bredden och längden och höjden och djupet och lära känna Kristi kärlek som är väldigare än all kunskap, tillss hela Guds fullhet uppfyller er.”`],
+    en: [`“so that Christ may dwell in your hearts through faith. And I pray that you, being rooted and established in love, may have power, together with all the Lord’s holy people, to grasp how wide and long and high and deep is the love of Christ, and to know this love that surpasses knowledge—that you may be filled to the measure of all the fullness of God.”`]
   },
   author: {
     sv: [`— Efesierbrevet 3:17-19`],
@@ -5138,7 +5146,7 @@ author: {
 // '151
 {
   quote: {
-    sv: [`“Han som har börjat ett gott verk i er ska också fullborda det till Kristi Jesu dag.”`],
+    sv: [`“och jag är övertygad om att han som har börjat ett gott verk i er också skall fullborda det till Kristi Jesu dag.”`],
     en: [`“He who began a good work in you will carry it on to completion until the day of Christ Jesus.”`]
   },
   author: {
@@ -5152,12 +5160,16 @@ author: {
 // '152
 {
   quote: {
-    sv: [`“Låt det sinnelag råda hos er som också fanns hos Kristus Jesus.”`],
-    en: [`“Let this mind be in you which was also in Christ Jesus.”`]
+    sv: [`“Tänk inte bara på ert eget bästa utan också på andras.
+
+        Låt det sinnelag råda hos er som också fanns hos Kristus Jesus.”`],
+    en: [`“not looking to your own interests but each of you to the interests of the others.
+
+        In your relationships with one another, have the same mindset as Christ Jesus:”`]
   },
   author: {
-    sv: [`— Filipperbrevet 2:5`],
-    en: [`— Philippians 2:5`]
+    sv: [`— Filipperbrevet 2:4-5`],
+    en: [`— Philippians 2:4-5`]
   },
   image: "may_pexels-pixabay-315998.jpg",
   credit: "Pixabay (Pexels.com)"
@@ -5167,7 +5179,7 @@ author: {
 // '153
 {
   quote: {
-    sv: [`“Arbeta med fruktan och bävan på er frälsning, inte bara som när jag var hos er utan ännu mer nu när jag är långt borta. Ty det är Gud som verkar i er så att ni både i vilja och gärning förverkligar hans syfte. Gör allting utan knot och utan förbehåll.”`],
+    sv: [`“Därför, mina kära, ni som alltid har varit lydiga: arbeta med fruktan och bävan på er frälsning, inte bara så som när jag var hos er utan ännu mer nu när jag är långt borta. Ty det är Gud som verkar i er så att ni både i vilja och gärning förverkligar hans syfte. Gör allting utan knot och utan förbehåll.”`],
     en: [`“Continue to work out your salvation with fear and trembling, not only in my presence but much more in my absence. For it is God who works in you to will and to act in order to fulfill his good purpose. Do everything without grumbling or arguing.”`]
   },
   author: {
@@ -5181,8 +5193,8 @@ author: {
 // '154
 {
   quote: {
-    sv: [`“Men allt det som var en vinst för mig räknar jag nu som förlust för Kristi skull. Jag räknar allt som förlust jämfört med det överlägsna i att känna Kristus Jesus, min Herre.”`],
-    en: [`“But whatever were gains to me I now consider loss for the sake of Christ. I consider everything a loss because of the surpassing worth of knowing Christ Jesus my Lord.”`]
+    sv: [`“Men allt sådant som var en vinst för mig har jag för Kristi skull kommit att räkna som en ren förlust. Ja, Jag räknar faktiskt allt som förlust jämfört med det som är långt mera värt, kunskapaen om min herre Kristus Jesus. För hans skull har allt det andra förlorat sitt värde för mig. Jag kastar det på sophögen för att vinna Kristus”`],
+    en: [`“But whatever were gains to me I now consider loss for the sake of Christ. What is more, I consider everything a loss because of the surpassing worth of knowing Christ Jesus my Lord, for whose sake I have lost all things. I consider them garbage, that I may gain Christ”`]
   },
   author: {
     sv: [`— Filipperbrevet 3:7-8`],
@@ -5195,8 +5207,8 @@ author: {
 // '155
 {
   quote: {
-    sv: [`“Jag glömmer det som ligger bakom och sträcker mig mot det som ligger framför. Jag jagar mot målet för att vinna segerpriset, den himmelska kallelsen från Gud i Kristus Jesus.”`],
-    en: [`“Forgetting what is behind and straining toward what is ahead, I press on toward the goal to win the prize for which God has called me heavenward in Christ Jesus.”`]
+    sv: [`“Bröder, jag menar inte att jag har det i min hand, men ett är säkert: jag glömmer det som ligger bakom mig och sträcker mig mot det som ligger framför mig och löper mot målet för att vinna det pris där uppe som Gud har kallat oss till genom Kristus Jesus.”`],
+    en: [`“Brothers and sisters, I do not consider myself yet to have taken hold of it. But one thing I do: Forgetting what is behind and straining toward what is ahead, I press on toward the goal to win the prize for which God has called me heavenward in Christ Jesus.”`]
   },
   author: {
     sv: [`— Filipperbrevet 3:13-14`],
@@ -5205,6 +5217,8 @@ author: {
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
 },
+
+  // Kontrollerat hit
 
 // '156
 {
@@ -6543,13 +6557,13 @@ author: {
       skall ingenting förskräcka dig och
       sedan du har lagt dig, skall du sova sött.”`],
     en: [`“My son, do not let wisdom and understanding out of your sight,
-    preserve sound judgment and discretion;
-    they will be life for you,
-    an ornament to grace your neck.
-    Then you will go on your way in safety,
-    and your foot will not stumble.
-    When you lie down, you will not be afraid;
-    when you lie down, your sleep will be sweet.”`]
+      preserve sound judgment and discretion;
+      they will be life for you,
+      an ornament to grace your neck.
+      Then you will go on your way in safety,
+      and your foot will not stumble.
+      When you lie down, you will not be afraid;
+      when you lie down, your sleep will be sweet.”`]
   },
   author: {
     sv: [`— Ordspråksboken 3:21-24`],
@@ -8233,13 +8247,43 @@ author: {
   credit: "kristen munk (Pexels.com)"
 },
 
-// ok Här
-
 // '333
 {
   quote: {
-    sv: [`“Småglada hjärtan ger glädje, men ett sorgset sinne bryter ner.”`],
-    en: [`“A cheerful heart brings joy, but a crushed spirit dries up the bones.”`]
+    sv: [`“Lovad vare Herren, ty han är god,
+        ty hans nåd varar evinnerligen,
+      och säg: 'Fräls oss, du vår frälsningens Gud,
+        församla oss och rädda oss från hedningarna,
+      så att vi får prisa ditt heliga namn
+        och berämma oss av ditt lov'.
+      Lovad vare Herren, Israels Gud,
+        från evighet till evighet!
+
+      Och allt folket sade: "Amen" och lovad vare Herren.”`],
+    en: [`“Give thanks to the Lord, for he is good;
+        his love endures forever.
+      Cry out, “Save us, God our Savior;
+        gather us and deliver us from the nations,
+    that we may give thanks to your holy name,
+        and glory in your praise.”
+      Praise be to the Lord, the God of Israel,
+        from everlasting to everlasting.
+
+    Then all the people said “Amen” and “Praise the Lord.””`]
+  },
+  author: {
+    sv: [`— 1 Krönikeboken 16:34-36`],
+    en: [`— 1 Chronicles 16:34-36`]
+  },
+  image: "nov_pexels-kristenmunk-2463851.jpg",
+  credit: "kristen munk (Pexels.com)"
+},
+
+// '334
+{
+  quote: {
+    sv: [`“men mitt folk, det som är uppkallat efter mitt namn, då ödmjukar sig och ber och söker mitt ansikte och omvänder sig från sina onda vägar, så vill jag höra det från himmelen och förlåta deras synd, och skaffa bot åt deras land.”`],
+    en: [`“if my people, who are called by my name, will humble themselves and pray and seek my face and turn from their wicked ways, then I will hear from heaven, and I will forgive their sin and will heal their land.”`]
   },
   author: {
     sv: [`— 2 Krönikeboken 7:14`],
@@ -8249,43 +8293,30 @@ author: {
   credit: "kristen munk (Pexels.com)"
 },
 
-// '334
-{
-  quote: {
-    sv: [`“Smaka och se att Herren är god, lycklig är den som tar sin tillflykt till honom.”`],
-    en: [`“Taste and see that the Lord is good; blessed is the one who takes refuge in him.”`]
-  },
-  author: {
-    sv: [`— 2 Krönikeboken 16:19`],
-    en: [`— 2 Chronicles 16:19`]
-  },
-  image: "nov_pexels-kristenmunk-2463851.jpg",
-  credit: "kristen munk (Pexels.com)"
-},
-
 // December
 // '335
 {
   quote: {
-    sv: [`“Ropa till Gud i din nöd, och han skall höra dig.”`],
-    en: [`“Call to God in your distress, and He will hear you.”`]
+    sv: [`“Ty om ni vänder om till Herren, skall era bröder och era barn finna barmhärtighet inför dem som håller dem fångna, så att de får vända tillbaka till detta land. Ty Herren, er Gud är nådig och barmhärtig, och han skall inte vända sitt ansikte från er, om ni vänder om till honom.”`],
+    en: [`“If you return to the Lord, then your fellow Israelites and your children will be shown compassion by their captors and will return to this land, for the Lord your God is gracious and compassionate. He will not turn his face from you if you return to him.”`]
   },
   author: {
-    sv: [`— 2 Krönikeboken 16:25-29`],
-    en: [`— 2 Chronicles 16:25-29`]
+    sv: [`— 2 Krönikeboken 30:9`],
+    en: [`— 2 Chronicles 30:9`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
 },
+
 // '336
 {
   quote: {
-    sv: [`“Var stilla inför Herren och vänta på honom; bli inte upprörd över den som lyckas i sitt liv.”`],
-    en: [`“Be still before the Lord and wait for Him; do not be upset over the one who prospers in their way.”`]
+    sv: [`“Därför fastade vi och sökte hjälp av vår Gud, och han bönhörde oss.”`],
+    en: [`“So we fasted and petitioned our God about this, and he answered our prayer.”`]
   },
   author: {
-    sv: [`— Esra 1:1`],
-    en: [`— Ezra 1:1`]
+    sv: [`— Esra 8:23`],
+    en: [`— Ezra 8:23`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8294,12 +8325,12 @@ author: {
 // '337
 {
   quote: {
-    sv: [`“Men de rättfärdiga skall ärvas landet och få bo i evig frid.”`],
-    en: [`“But the righteous shall inherit the land and dwell in everlasting peace.”`]
+    sv: [`“Men i din stora barmhärtighet gjorde du inte alldeles slut på dem och övergav fem inte. Ty du är en nådig och barmhärtig Gud.”`],
+    en: [`“But in your great mercy you did not put an end to them or abandon them, for you are a gracious and merciful God.”`]
   },
   author: {
-    sv: [`— Nehemja 1:11`],
-    en: [`— Nehemiah 1:11`]
+    sv: [`— Nehemja 9:31`],
+    en: [`— Nehemiah 9:31`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8308,26 +8339,27 @@ author: {
 // '338
 {
   quote: {
-    sv: [`“Herren hjälper dem i deras nöd, han blir deras tillflykt och räddning.”`],
-    en: [`“The Lord helps them in their trouble; He becomes their refuge and salvation.”`]
+    sv: [`“Låt alla människor se hur födragsamma ni är. Herren är nära.”`],
+    en: [`“Let your gentleness be evident to all. The Lord is near.”`]
   },
   author: {
-    sv: [`— Nehemja 8:10`],
-    en: [`— Nehemiah 8:10`]
+    sv: [`— Filipperbrevet 4:5`],
+    en: [`— Philippians 4:5`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
 },
 
 // '339
+
 {
   quote: {
-    sv: [`“Herre, jag vet att du hör mig, du är min styrka och min räddning.”`],
-    en: [`“Lord, I know that You hear me; You are my strength and my salvation.”`]
+    sv: [`“Inte får tjänaren något tackför att han gör vad han är ålagd. På samma sätt med er: när ni har gjort allt som åligger er, skall ni säga: Vi är odugliga tjänare, vi har bara gjort vad vi är skyldiga att göra.”`],
+    en: [`“Will he thank the servant because he did what he was told to do? So you also, when you have done everything you were told to do, should say, ‘We are unworthy servants; we have only done our duty.”`]
   },
   author: {
-    sv: [`— Ester 4:14`],
-    en: [`— Esther 4:14`]
+    sv: [`— Lukasevangeliet 17:9-10`],
+    en: [`— Luke 17:9-10`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8336,25 +8368,54 @@ author: {
 // '340
 {
   quote: {
-    sv: [`“Vid floden där jag finner ro, vid hans vatten finner jag styrka.”`],
-    en: [`“By the river where I find rest, by His waters I find strength.”`]
+    sv: [`“Till dess morgonvinden blåser
+        och skuggorna flyr,
+      vill jag gå bort till myrraberget,
+        till den rökelsedoftande höjden.
+      Du är skön alltigenom, min älskade,
+        på dig finns ingen fläck.”`],
+    en: [`“Until the day breaks
+    and the shadows flee,
+      I will go to the mountain of myrrh
+        and to the hill of incense.
+      You are altogether beautiful, my darling;
+        there is no flaw in you.”`]
   },
   author: {
-    sv: [`— Höga visan 8:8`],
-    en: [`— Song of Solomon 8:8`]
+    sv: [`— Höga visan 4:6-7`],
+    en: [`— Song of Solomon (Song of Songs) 4:6-7`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
 },
+
 // '341
 {
   quote: {
-    sv: [`“Jag ropar till Gud, min klippa; varför glömmer du mig?”`],
-    en: [`“I cry to God, my rock; why have You forgotten me?”`]
+    sv: [`“Som en park av granatträd skjuter du upp,
+      med de ädlaste frukter,
+      med cyperblommor och nardusplantor,
+        med nardus och saffran, kalmus
+      och kanel och rökelseträd av alla slag,
+      med mynta och aloe och de yppersta kryddor av alla slag.
+    Ja, en källa i lustgården är du,
+      en brunn med friskt vatten
+      och ett rinnande flöde från Libanon.”`],
+    en: [`“Your plants are an orchard of pomegranates
+    with choice fruits,
+    with henna and nard,
+      nard and saffron,
+    calamus and cinnamon,
+    with every kind of incense tree,
+    with myrrh and aloes
+    and all the finest spices.
+  You are a garden fountain,
+    a well of flowing water
+    streaming down from Lebanon.”`]
   },
   author: {
-    sv: [`— Höga visan 4:13-14`],
-    en: [`— Song of Solomon 4:13-14`]
+    sv: [`— Höga visan 4:13-15`],
+    en: [`— Song of Solomon (Song of Songs) 4:13-15`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8363,12 +8424,12 @@ author: {
 // '342
 {
   quote: {
-    sv: [`“Gud är vår tillflykt och styrka, en hjälp i nöden som alltid är nära.”`],
-    en: [`“God is our refuge and strength, an ever-present help in trouble.”`]
+    sv: [`“Och jag skall ge er ett nytt hjärta och låta en ny ande komma i ert bröst. Jag skall ta bort stenhjärtat ur er kropp och ge er ett hjärta av kött. Jag skall låta min Ande komma i ert bröst och göra så, att ni vandrar efter mina stadgar och håller mina lagar och gör efter dem.”`],
+    en: [`“I will give you a new heart and put a new spirit in you; I will remove from you your heart of stone and give you a heart of flesh. And I will put my Spirit in you and move you to follow my decrees and be careful to keep my laws.”`]
   },
   author: {
-    sv: [`— Hesekiel 36:26`],
-    en: [`— Ezekiel 36:26`]
+    sv: [`— Hesekiel 36:26-27`],
+    en: [`— Ezekiel 36:26-27`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8377,12 +8438,12 @@ author: {
 // '343
 {
   quote: {
-    sv: [`“Därför behöver vi inte frukta, även om jorden skakar och bergen faller i havets djup.”`],
-    en: [`“Therefore we do not need to fear, even if the earth shakes and the mountains fall into the depths of the sea.”`]
+    sv: [`“Då sade han till mig: "Profetera över dessa ben och säg till dem: Ni förtorkade ben, hör Herrens ord: Så säger Herren, Herren till dess ben: Se , jag skall låta ande komma in i er, så att ni åter blir levande”`],
+    en: [`“Then he said to me, “Prophesy to these bones and say to them, ‘Dry bones, hear the word of the Lord! This is what the Sovereign Lord says to these bones: I will make breath enter you, and you will come to life.”`]
   },
   author: {
-    sv: [`— Hesekiel 37:5`],
-    en: [`— Ezekiel 37:5`]
+    sv: [`— Hesekiel 37:4-5`],
+    en: [`— Ezekiel 37:4-5`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8391,12 +8452,16 @@ author: {
 // '344
 {
   quote: {
-    sv: [`“Vattnet brusar, bergen skakar, men Herren i Sion är vår hjälp.”`],
-    en: [`“The waters roar, the mountains tremble, but the Lord in Zion is our help.”`]
+    sv: [`“Han uppenbarar det som är djupt och förborgat,
+        han vet vad som är i mörkret,
+        och hos honom bor ljuset.”`],
+    en: [`“He reveals deep and hidden things;
+        he knows what lies in darkness,
+        and light dwells with him.”`]
   },
   author: {
-    sv: [`— Daniel 11:32`],
-    en: [`— Daniel 11:32`]
+    sv: [`— Daniel 2:22`],
+    en: [`— Daniel 2:22`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8405,12 +8470,16 @@ author: {
 // '345
 {
   quote: {
-    sv: [`“Ring till mig på nödsdagar, jag skall rädda dig och du skall prisa mig.”`],
-    en: [`“Call upon Me in the day of trouble; I will rescue you, and you shall glorify Me.”`]
+    sv: [`“Lösaktighet
+      och vin och must
+        tar bort förståndet.”`],
+    en: [`“ to prostitution;
+      old wine and new wine
+        take away their understanding”`]
   },
   author: {
-    sv: [`— Hosea 4:14`],
-    en: [`— Hosea 4:14`]
+    sv: [`— Hosea 4:11`],
+    en: [`— Hosea 4:11`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8419,18 +8488,12 @@ author: {
 // '346
 {
   quote: {
-    sv: [`“Skapa i mig ett rent hjärta, o Gud, och förnya en stadig ande inom mig.”`],
-    en: [`“And everyone who calls
-        on the name of the Lord will be saved;
-    for on Mount Zion and in Jerusalem
-        there will be deliverance,
-        as the Lord has said,
-    even among the survivors
-        whom the Lord calls.”`]
+    sv: [`“Må hoppets Gud fylla er tro med all glädje och frid och ge er ett allt rikare hopp genom den heliga andens kraft.”`],
+    en: [`“May the God of hope fill you with all joy and peace as you trust in him, so that you may overflow with hope by the power of the Holy Spirit.”`]
   },
   author: {
-    sv: [`— Joel 2:32`],
-    en: [`— Joel 2:32`]
+    sv: [`— Romarbrevet 15:13`],
+    en: [`— Romans 15:13`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8439,12 +8502,18 @@ author: {
 // '347
 {
   quote: {
-    sv: [`“Kasta din börda på Herren, han skall försörja dig; han skall aldrig låta den rättfärdige vackla.”`],
-    en: [`“Cast your burden upon the Lord, He shall sustain you; He shall never let the righteous be moved.”`]
+    sv: [`“Du behöver då ej frukta för plötslig skräck,
+        ej för ovädret, när det kommer över de ogudaktiga.
+      Ty Herren skall då vara ditt hopp,
+        och han skall bevara din fot för snaran.”`],
+    en: [`“Have no fear of sudden disaster
+        or of the ruin that overtakes the wicked,
+      for the Lord will be at your side
+        and will keep your foot from being snared.”`]
   },
   author: {
-    sv: [`— Amos 5:14`],
-    en: [`— Amos 5:14`]
+    sv: [`— Ordspråksboken 3:25-26`],
+    en: [`— Proverbs 3:25-26`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8453,12 +8522,12 @@ author: {
 // '348
 {
   quote: {
-    sv: [`“Sätt ditt hopp till Herren, håll fast vid hans väg, och han skall upphöja dig.”`],
-    en: [`“Place your hope in the Lord, hold fast to His way, and He shall exalt you.”`]
+    sv: [`“Men när Guds, vår frälsares, godhet och kärlek till människorna blev uppenbara, räddade han oss — inte därför att vi gjort några rättfärdiga gärningar, utan därför att han är barmhärtig — och han gjorde det med det vad som återföder och förnyar genom den heliga anden. Genom Jesus Kristus, vår frälsare, har han låtit Anden strömma över oss, för att vi genom Guds nåd skall bli rättfärdiga och, så som det är vårt hopp, vinna evigt liv.”`],
+    en: [`“ But when the kindness and love of God our Savior appeared, he saved us, not because of righteous things we had done, but because of his mercy. He saved us through the washing of rebirth and renewal by the Holy Spirit, whom he poured out on us generously through Jesus Christ our Savior, so that, having been justified by his grace, we might become heirs having the hope of eternal life.”`]
   },
   author: {
-    sv: [`— Obadja 1:15`],
-    en: [`— Obadiah 1:15`]
+    sv: [`— Titusbrevet 3:4-7`],
+    en: [`— Titus 3:4-7`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8467,12 +8536,22 @@ author: {
 // '349
 {
   quote: {
-    sv: [`“Fruktas Herren är början till vishet; alla som följer hans väg har ett gott förstånd.”`],
-    en: [`“The fear of the Lord is the beginning of wisdom; all who follow His way have good understanding.”`]
+    sv: [`“När min själ försmäktade i mig,
+        då tänkte jag på Herren,
+      och min bön kom till dig,
+        i ditt heliga tempel.
+      De som håller sig till fåfänglig avgudar,
+        de låter sin nåds Gud fara.”`],
+    en: [`“Those who cling to worthless idols
+        turn away from God’s love for them.
+      But I, with shouts of grateful praise,
+        will sacrifice to you.
+      What I have vowed I will make good.
+        I will say, ‘Salvation comes from the Lord.”`]
   },
   author: {
-    sv: [`— Jona 1:17`],
-    en: [`— Jonah 1:17`]
+    sv: [`— Jona 2:8-9`],
+    en: [`— Jonah 2:8-9`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8481,12 +8560,16 @@ author: {
 // '350
 {
   quote: {
-    sv: [`“Herren är min klippa, min borg och min räddare; min Gud, min tillflykt, i honom förtröstade jag.”`],
-    en: [`“The Lord is my rock, my fortress, and my deliverer; my God, my refuge, in Him I trust.”`]
+    sv: [`“och ofta har anden kastat honom både i eld och i vatten för att ta livet av honom. Men förbarma dig över oss och hjälp oss, om du kan. Jesus sade: Om jag kan? Allt är möjligt för den som tror. Då ropade pojkens far: Jag tror, Hjälp min otro!?”`],
+    en: [`“It has often thrown him into fire or water to kill him. But if you can do anything, take pity on us and help us.”
+
+        ‘If you can’?” said Jesus. “Everything is possible for one who believes.”
+
+        Immediately the boy’s father exclaimed, I do believe; help me overcome my unbelief!`]
   },
   author: {
-    sv: [`— Nahum 1:7`],
-    en: [`— Nahum 1:7`  ]
+    sv: [`— Markusevangeliet 9:22-24`],
+    en: [`— Mark 9:22-24`  ]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8495,12 +8578,26 @@ author: {
 // '351
 {
   quote: {
-    sv: [`“När jag är rädd, sätter jag mitt förtroende till dig.”`],
-    en: [`“When I am afraid, I put my trust in You.”`]
-  },
+    sv: [`“Jesus stannade och sade: Kalla hit honom. De gjorde det och sade till den blinde: Var lugn, stig upp, han kallar på dig. Då kastade han av sig manteln och sprang upp och kom fram till Jesus,
+
+      och Jesus frågade honom: Vad vill du att jag skall göra för dig?
+
+      Den blinde sade: Rabbouni, gör så att jag kan se igen.
+
+      Jesus sade: Gå, din tro har hjälpt dig. Genast kunde mannen se, och han följde honom på vägen.”`],
+    en: [`“Jesus stopped and said, “Call him.”
+
+        So they called to the blind man, “Cheer up! On your feet! He’s calling you.” Throwing his cloak aside, he jumped to his feet and came to Jesus.
+
+        “What do you want me to do for you?” Jesus asked him.
+
+        The blind man said, “Rabbi, I want to see.”
+
+        “Go,” said Jesus, “your faith has healed you.” Immediately he received his sight and followed Jesus along the road.”`]
+        },
   author: {
-    sv: [`— Habackuk 2:4`],
-    en: [`— Habakkuk 2:4`]
+    sv: [`— Markusevangeliet 10:49-52`],
+    en: [`— Mark 10:49-52`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8509,12 +8606,13 @@ author: {
 // '352
 {
   quote: {
-    sv: [`“Jag förtröstar på Gud, jag gläder mig, jag sjunger till hans namn.”`],
+    sv: [`“Likväl vill jag glädja mig i Herren och fröjda mig i min frälsnings Gud.
+      Herren, Herren är min starkhet, han gör mina fötter som hindens och låter mig gå fram över mina höjder.”`],
     en: [`“I trust in God, I rejoice, I sing praises to His name.”`]
   },
   author: {
-    sv: [`— Habackuk 3:18`],
-    en: [`— Habakkuk 3:18`]
+    sv: [`— Habackuk 3:18-19`],
+    en: [`— Habakkuk 3:18-19`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8523,12 +8621,12 @@ author: {
 // '353
 {
   quote: {
-    sv: [`“Rädda mig, o Gud, från mina fiender; skydda mig från dem som står emot mig.”`],
+    sv: [`“Ty om ni förlåter människorna deras överträdelser, skall er himmelska fader också förlåta er.”`],
     en: [`“Deliver me, O God, from my enemies; protect me from those who rise against me.”`]
   },
   author: {
-    sv: [`— Sefanja 3:17`],
-    en: [`— Zephaniah 3:17`]
+    sv: [`— Matteusevangeliet 6:14`],
+    en: [`— Matthew 6:14`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8537,12 +8635,12 @@ author: {
 // '354
 {
   quote: {
-    sv: [`“Men jag skall sjunga om din styrka, varje morgon lovsjunga din nåd.”`],
+    sv: [`“Gå och lär er vad som menas med orden: Barmhärtighet vill jag se och inte offer. Ty jag har inte kommit för att kalla rättfärdiga, utan syndare.”`],
     en: [`“But I will sing of Your strength, every morning I will praise Your steadfast love.”`]
   },
   author: {
-    sv: [`— Haggai 1:13`],
-    en: [`— Haggai 1:13`]
+    sv: [`— Matteusevangeliet 9:13`],
+    en: [`— Matthew 9:13`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8551,12 +8649,26 @@ author: {
 // '355
 {
   quote: {
-    sv: [`“Gud är min styrka, jag förtröstar på honom och hans nåd skall vara min glädje.”`],
-    en: [`“God is my strength, I trust in Him, and His grace shall be my joy.”`]
+    sv: [`“Som regnet må min lära drypa,
+        som daggen mitt tal flöda,
+      som rikligt regn på grönska
+        och som en regnskur på gräsets brodd.
+
+      Ty Herrens namn vill jag förkunna.
+        Ja, ge ära åt vår Gud.”`],
+    en: [`“Listen, you heavens, and I will speak;
+        hear, you earth, the words of my mouth.
+      Let my teaching fall like rain
+        and my words descend like dew,
+      like showers on new grass,
+        like abundant rain on tender plants.
+
+      I will proclaim the name of the Lord.
+        Oh, praise the greatness of our God!”`]
   },
   author: {
-    sv: [`— Haggai 2:4-5`],
-    en: [`— Haggai 2:4-5`]
+    sv: [`— 5 Mosebok 32:1-3`],
+    en: [`— Deuteronomy 32:1-3`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8565,12 +8677,23 @@ author: {
 // '356
 {
   quote: {
-    sv: [`“Han är min klippa och min frälsning, min befästning; jag skall inte vackla.”`],
-    en: [`“Then he said to me, “This is the word of the Lord to Zerubbabel, saying, ‘Not by might nor by power, but by My Spirit,’ says the Lord of armies.”`]
+    sv: [`“Herrens ande är över mig,
+        ty han har smort mig
+        till att frambära ett glädjebud till de fattiga.
+      Han har sänt mig att förkunna befrielse för de fångna
+        och syn för de blinda,
+      att ge de förtryckta frihet
+        och förkunna året som Herren har valt.”`],
+    en: [`““The Spirit of the Lord is on me,
+        because he has anointed me
+        to proclaim good news to the poor.
+      He has sent me to proclaim freedom for the prisoners
+        and recovery of sight for the blind,
+      to set the oppressed free,”`]
   },
   author: {
-    sv: [`— Sakarja 2:8`],
-    en: [`— Zechariah 2:8`]
+    sv: [`— Lukasevangeliet 4:18`],
+    en: [`— Luke 4:18`]
 
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
@@ -8580,12 +8703,21 @@ author: {
 // '357
 {
   quote: {
-    sv: [`“Endast hos Gud finner jag stillhet; mitt hopp kommer från honom.”`],
-    en: [`“Only in God is my soul at rest; my hope comes from Him.”`]
+    sv: [`“Saliga är ni, när man för Människosonens skull hatar er
+        och stöter bort er och smädar er
+          och gör ert namn avskytt.
+
+        Gläd er på den dagen och dansa av fröjd, ty er lön blir stor i himlen. På samma sätt gjorde ju deras fäder med profeterna.”`],
+    en: [`“Blessed are you when people hate you,
+        when they exclude you and insult you
+        and reject your name as evil,
+            because of the Son of Man.
+
+        “Rejoice in that day and leap for joy, because great is your reward in heaven. For that is how their ancestors treated the prophets.”`]
   },
   author: {
-    sv: [`— Sakarja 4:6`],
-    en: [`— Zechariah 4:6`]
+    sv: [`— Lukasevangeliet 6:22-23`],
+    en: [`— Luke 6:22-23`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8594,7 +8726,7 @@ author: {
 // '358
 {
   quote: {
-    sv: [`“Lita på honom vid alla tider, folket, utgjut era hjärtan inför honom; Gud är vår tillflykt.”`],
+    sv: [`“För full Tionde till förrådshuset, så att i mitt hus fins mat, och pröva så hurdan jag sedan blir, säger Herren Sebaot. Förvisso skall jag då öppna himmelens fönster över er och utgjuta över er riklig välsignelse.”`],
     en: [`“Bring the whole tithe into the storehouse, that there may be food in my house. Test me in this,” says the Lord Almighty, “and see if I will not throw open the floodgates of heaven and pour out so much blessing that there will not be room enough to store it.”`]
   },
   author: {
@@ -8608,8 +8740,10 @@ author: {
 // '359
 {
   quote: {
-    sv: [`“Många säger: ’Vem kan ge oss gott?’ Herre, låt ditt ansikte lysa över oss.”`],
-    en: [`“Many ask, ‘Who can show us good?’ Lord, let Your face shine upon us.”`]
+    sv: [`“I allt har jag visat er att ni genom er tro, genom att arbeta på ett sådant sätt, skall ta er an de svaga
+        med herren Jesu egna ord i minne: Det är saligare att ge än att få.”`],
+    en: [`“In everything I did, I showed you that by this kind of hard work we must help the weak,
+        remembering the words the Lord Jesus himself said: ‘It is more blessed to give than to receive.’ ””`]
   },
   author: {
     sv: [`— Apostlagärningarna 20:35`],
@@ -8622,25 +8756,26 @@ author: {
 // '360
 {
   quote: {
-    sv: [`“Gud är vår styrka och vår tillflykt i alla tider.”`],
-    en: [`“God is our strength and refuge at all times.”`]
+    sv: [`“Som Guds utvalda, heliga och älskade skall ni alltså klä er i innerlig medkänsla, vänlighet, ödmjukhet, mildhet och tålamod. Ha fördrag med varandra och var överseende om ni har något att förebrå någon. Liksom Herren har förlåtit er skall också ni förlåta. Men över allt detta skall ni ha kärleken, det band som ger fullkomlighet.”`],
+    en: [`“Therefore, as God’s chosen people, holy and dearly loved, clothe yourselves with compassion, kindness, humility, gentleness and patience. Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you. And over all these virtues put on love, which binds them all together in perfect unity.”`]
   },
   author: {
-    sv: [`— Kolosserbrevet 3:12`],
-    en: [`— Colossians 3:12`]
+    sv: [`— Kolosserbrevet 3:12-14`],
+    en: [`— Colossians 3:12-14`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
 },
+
 // '361
 {
   quote: {
-    sv: [`“Må Herren låta oss se hans verk, och må han bevara hans härlighet över oss. Må Herren ge oss sin välvilja varje dag och bevara vårt verk.”`],
+    sv: [`“Låt Kristi frid råda i era hjärtan, den som ni kallades till som lemmar i en och samma kropp. Visa er tacksamhet. Låt Kristi ord bo hos er i hela sin rikedom och med all sin vishet. Lär och vägled varandra, med psalmer, hymner och andlig sång i kraft av nåden, och sjung Guds lov i era hjärtan. Låt allt vad ni gör i ord och handling ske i herren Jesu namn och tacka fadern genom honom..”`],
     en: [`“May the Lord show us His works, and may He preserve His glory over us. May the Lord give us His favor each day and sustain our work.”`]
   },
   author: {
-    sv: [`— Kolosserbrevet 3:4`],
-    en: [`— Colossians 3:4`]
+    sv: [`— Kolosserbrevet 3:14-17`],
+    en: [`— Colossians 3:14-17`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8649,12 +8784,16 @@ author: {
 // '362
 {
   quote: {
-    sv: [`“Den som bor i den Högstes skydd, under den Allsmäktiges skugga, han säger till Herren: ’Min tillflykt och min borg, min Gud, som jag förtröstar på.’”`],
-    en: [`“He who dwells in the shelter of the Most High, under the shadow of the Almighty, says to the Lord: ‘My refuge and my fortress, my God, in whom I trust.’”`]
+    sv: [`“Min Gud skall med sin härliga rikedom i Kristus Jesusfylla alla era behov.
+
+          Härligheten tillhör vår Gud och fader i evigheters evighet, amen.’”`],
+    en: [`“And my God will meet all your needs according to the riches of his glory in Christ Jesus.
+
+        To our God and Father be glory for ever and ever. Amen.’”`]
   },
   author: {
-    sv: [`— Kolosserbrevet 3:16`],
-    en: [`— Colossians 3:16`]
+    sv: [`— Filipperbrevet 4:19-20`],
+    en: [`— Philippians 4:19-20`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8663,12 +8802,12 @@ author: {
 // '363
 {
   quote: {
-    sv: [`“Han skall ge sina änglar befallning om dig, att de bevarar dig på alla dina vägar.”`],
-    en: [`“He shall command His angels concerning you, to guard you in all your ways.”`]
+    sv: [`“Visa klokhet i umgänget med de utomstående och ta väl vara på tiden. Lägg alltid era ord väl och ge dem sälta; ni måste veta hur ni skall svara var och en.”`],
+    en: [`“Be wise in the way you act toward outsiders; make the most of every opportunity. Let your conversation be always full of grace, seasoned with salt, so that you may know how to answer everyone.”`]
   },
   author: {
-    sv: [`— Kolosserbrevet 3:23-24`],
-    en: [`— Colossians 4:23-24`]
+    sv: [`— Kolosserbrevet 4:5-6`],
+    en: [`— Colossians 4:5-6`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
@@ -8677,12 +8816,12 @@ author: {
 // '364
 {
   quote: {
-    sv: [`“De skall bära dig på händer, så att du inte stöter din fot mot någon sten.”`],
-    en: [`“They shall lift you up in their hands, so that you will not strike your foot against a stone.”`]
+    sv: [`“Men till er som vill lyssna säger jag: Älska era fiender, gör gott mot dem som hatar er. Välsigna dem som förbannar er och be för dem som skymfar er. Slår någon dig på ena kinden, vänd också fram den andra. Tar någon ifrån dig manteln, så hindra honom inte från att ta skjortan också. Ge åt alla som ber dig, och tar någon det som är ditt, så kräv det inte tillbaka. Så som ni vill att andra skall göra mot er, så skall ni göra mot dem.”`],
+    en: [`“Be wise in the way you act toward outsiders; make the most of every opportunity. Let your conversation be always full of grace, seasoned with salt, so that you may know how to answer everyone.”`]
   },
   author: {
-    sv: [`— Kolosserbrevet 3:4`],
-    en: [`— Colossians 3:4`]
+    sv: [`— Lukasevangeliet 6:27`],
+    en: [`— Luke 6:27`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
