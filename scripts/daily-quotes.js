@@ -8178,8 +8178,8 @@ author: {
 // '328
 {
   quote: {
-    sv: [`“Ty om du med din mun bekänner att Jesus är herre, och i ditt hjärta tror att Gud har uppväckt honom från de döda, skall du bli räddad. Hjärtats tro leder till rättfärdighet och munnens bekännelse leder till räddning”`],
-    en: [`“If you declare with your mouth, “Jesus is Lord,” and believe in your heart that God raised him from the dead, you will be saved. 10 For it is with your heart that you believe and are justified, and it is with your mouth that you profess your faith and are saved.”`]
+    sv: [`“Ty om du med din mun bekänner att Jesus är herre, och i ditt hjärta tror att Gud har uppväckt honom från de döda, skall du bli räddad. Hjärtats tro leder till rättfärdighet och munnens bekännelse leder till räddning.”`],
+    en: [`“If you declare with your mouth, “Jesus is Lord,” and believe in your heart that God raised him from the dead, you will be saved. For it is with your heart that you believe and are justified, and it is with your mouth that you profess your faith and are saved.”`]
   },
   author: {
     sv: [`— Romarbrevet 10:9-10`],
@@ -8188,8 +8188,6 @@ author: {
   image: "nov_pexels-kristenmunk-2463851.jpg",
   credit: "kristen munk (Pexels.com)"
 },
-
-
 
 // '329
 {
