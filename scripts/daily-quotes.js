@@ -3195,8 +3195,6 @@ const bibleQuotes = [
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
-
-
   // '35
   {
     quote: {
@@ -5218,17 +5216,15 @@ author: {
   credit: "Troy Squillaci (Pexels.com)"
 },
 
-  // Kontrollerat hit
-
 // '156
 {
   quote: {
-    sv: [`“Alla ni som tror på Jesus Kristus och lever i gemenskap med honom är Guds barn. Om ni är döpta in i gemenskapen med Kristus, har ni ju blivit lika Kristus själv.”`],
-    en: [`“So in Christ Jesus you are all children of God through faith, for all of you who were baptized into Christ have clothed yourselves with Christ.”`]
+    sv: [`“Alla ni nämligen genom tron Guds söner, i Kristus Jesus. Är ni döptadöpta in i Kristus, har ni också iklätt er Kristus. Nu är ingen längre jude eller grek, slav eller fri, man eller kvinna. Alla är ni ett i Kristus Jesus. Men om ni tillhör Kristus, är ni också avkomlingar till Abraham och arvtagare enligt löftet.”`],
+    en: [`“So in Christ Jesus you are all children of God through faith, for all of you who were baptized into Christ have clothed yourselves with Christ. There is neither Jew nor Gentile, neither slave nor free, nor is there male and female, for you are all one in Christ Jesus. If you belong to Christ, then you are Abraham’s seed, and heirs according to the promise.”`]
   },
   author: {
-    sv: [`— Galaterbrevet 3:26-27`],
-    en: [`— Galatians 3:26-27`]
+    sv: [`— Galaterbrevet 3:26-29`],
+    en: [`— Galatians 3:26-29`]
   },
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
@@ -5237,39 +5233,42 @@ author: {
 // '157
 {
   quote: {
-    sv: [`“Du är inte längre slav utan son, och är du son är du också arvinge, insatt av Gud.”`],
-    en: [`“So you are no longer a slave, but God’s child; and since you are his child, God has made you also an heir.”`]
+    sv: [`“Håll er vakna, stå fasta i tron, var manliga och starka. Gör allting i kärlek.”`],
+    en: [`“Be on your guard; stand firm in the faith; be courageous; be strong. Do everything in love.”`]
   },
   author: {
-    sv: [`— Galaterbrevet 4:7`],
-    en: [`— Galatians 4:7`]
-  },
-  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
-  credit: "Troy Squillaci (Pexels.com)"
-},
-// '158
-{
-  quote: {
-    sv: [`“Bröder, vi har alltså genom Jesu blod frimodighet att gå in i det allra heligaste på den nya och levande väg som han har öppnat för oss genom förhänget, det vill säga sin kropp. Vi har en stor överstepräst över Guds hus. Låt oss därför träda fram med uppriktigt hjärta i full trosvisshet, med hjärtan renade från ont samvete och kroppar tvättade i rent vatten. Låt oss orubbligt hålla fast vid hoppets bekännelse, för han som har gett oss löftet är trofast.”`],
-    en: [`“Therefore, brothers and sisters, since we have confidence to enter the Most Holy Place by the blood of Jesus, by a new and living way opened for us through the curtain, that is, his body, and since we have a great priest over the house of God, let us draw near to God with a sincere heart and with the full assurance that faith brings, having our hearts sprinkled to cleanse us from a guilty conscience and our bodies washed with pure water. Let us hold unswervingly to the hope we profess, for he who promised is faithful.”`]
-  },
-  author: {
-    sv: [`— Hebreerbrevet 10:19-23`],
-    en: [`— Hebrews 10:19-23`]
+    sv: [`— 1 Korinthierbrevet 16:13-14`],
+    en: [`— 1 Corinthians 16:13-14`]
   },
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
 },
 
+// '158
+{
+  quote: {
+    sv: [`“Vi har en stor överstepräst som är satt at råda över Guds hus. Låt oss därför träda fram inför Gud med uppriktigt hjärta och i full trosvisshet, med ett hjärta som renats och inte vet av någon synd och med en kropp som badats i klart vatten. Låt oss orubbligt fortsätta att bekänna vårt hopp, ty han som gav oss löftena är trofast. Låt oss ge akt på varandra och sporra varandra till kärlek och goda gärningar”`],
+    en: [`“and since we have a great priest over the house of God, let us draw near to God with a sincere heart and with the full assurance that faith brings, having our hearts sprinkled to cleanse us from a guilty conscience and having our bodies washed with pure water. Let us hold unswervingly to the hope we profess, for he who promised is faithful. And let us consider how we may spur one another on toward love and good deeds”`]
+  },
+  author: {
+    sv: [`— Hebreerbrevet 10:21-24`],
+    en: [`— Hebrews 10:21-24`]
+  },
+  image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
+  credit: "Troy Squillaci (Pexels.com)"
+},
+
+
+
 // '159
 {
   quote: {
-    sv: [`“Låt oss ge akt på varandra och sporra varandra till kärlek och goda gärningar. Och låt oss inte överge våra sammankomster, så som några brukar göra, utan i stället uppmuntra varandra, och det så mycket mer som ni ser att dagen närmar sig.”`],
-    en: [`“Let us consider how we may spur one another on toward love and good deeds, not giving up meeting together, as some are in the habit of doing, but encouraging one another—and all the more as you see the Day approaching.”`]
+    sv: [`“Kroppsövningar är nyttiga på sitt sätt, men gudsfruktan är nyttig på alla sätt, med sitt löfte om liv både för denna tiden och den kommande. Detta är ett ord att lite på och värt att ta till sig.”`],
+    en: [`“For physical training is of some value, but godliness has value for all things, holding promise for both the present life and the life to come. This is a trustworthy saying that deserves full acceptance.”`]
   },
   author: {
-    sv: [`— Hebreerbrevet 10:24-25`],
-    en: [`— Hebrews 10:24-25`]
+    sv: [`— 1 Timotheusbrevet 4:8-9`],
+    en: [`— 1 Timothy 4:8-9`]
   },
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
@@ -5278,7 +5277,7 @@ author: {
 // '160
 {
   quote: {
-    sv: [`“Utan tro är det omöjligt att behaga Gud. Den som vill komma till honom måste tro att han finns och att han belönar dem som söker honom.”`],
+    sv: [`“Utan tro kan ingen finna nåd hos honom. Ty den som nalkas honom måste tro att han finns och att han lönar dem som söker honom.”`],
     en: [`“And without faith it is impossible to please God, because anyone who comes to him must believe that he exists and that he rewards those who earnestly seek him.”`]
   },
   author: {
@@ -5292,8 +5291,8 @@ author: {
 // '161
 {
   quote: {
-    sv: [`“Låt oss därför, omgivna av en sådan sky av vittnen, lägga bort allt som tynger och särskilt synden som snärjer oss så hårt, och löpa uthålligt i det lopp vi har framför oss. Låt oss ha blicken fäst vid Jesus, trons upphovsman och fullkomnare.”`],
-    en: [`“Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off everything that hinders and the sin that so easily entangles. And let us run with perseverance the race marked out for us, fixing our eyes on Jesus, the pioneer and perfecter of faith.”`]
+    sv: [`“När vi nu är omgivna av en sådan sky av vittnen, låt oss då , även vi, befria oss från allt som tynger, all synd som ansätter oss, och hålla ut i det lopp vi har framför oss. Låt oss ha blicken fäst vid Jesus, trons upphovsman och fullkomnare. För att vinna den glädje som väntade honom uthärdade han korset utan att bry sig om skammen och sitter nu till höger om Guds tron.”`],
+    en: [`“Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off everything that hinders and the sin that so easily entangles. And let us run with perseverance the race marked out for us, fixing our eyes on Jesus, the pioneer and perfecter of faith. For the joy set before him he endured the cross, scorning its shame, and sat down at the right hand of the throne of God.”`]
   },
   author: {
     sv: [`— Hebreerbrevet 12:1-2`],
@@ -5306,7 +5305,7 @@ author: {
 // '162
 {
   quote: {
-    sv: [`“Ödmjuka er inför Herren, så ska han upphöja er.”`],
+    sv: [`“Ödmjuka er inför Herren, och han ska han upphöja er.”`],
     en: [`“Humble yourselves before the Lord, and he will lift you up.”`]
   },
   author: {
@@ -5316,6 +5315,7 @@ author: {
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
 },
+
 // '163
 {
   quote: {
@@ -5333,7 +5333,7 @@ author: {
 // '164
 {
   quote: {
-    sv: [`“Trons bön ska rädda den sjuke, och Herren ska resa honom upp. Har han syndat, ska han få förlåtelse. Bekänn därför era synder för varandra och be för varandra, så att ni blir botade. En rättfärdig människas bön är verksam och har kraft.”`],
+    sv: [`“Deras bön i tro skall rädda den sjuke, och Herren skall göra honom frisk. Och har han syndat, skall han få förlåtelse. Bekänn därför era synder för varandra, och be för varandra att ni skall bli botade. Den rättfärdiges bön har kraft och gör därför stor verkan.”`],
     en: [`“The prayer offered in faith will make the sick person well; the Lord will raise them up. If they have sinned, they will be forgiven. Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous person is powerful and effective.”`]
   },
   author: {
@@ -5343,6 +5343,8 @@ author: {
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
 },
+
+// ok här
 
 // '165
 {
@@ -8130,7 +8132,7 @@ author: {
 
       Saliga de
         vilkas överträdelser är förlåtna
-        och vilkas synder är utplånade”`],
+        och vilkas synder är utplånade.”`],
     en: [`“David says the same thing when he speaks of the blessedness of the one to whom God credits righteousness apart from works:
 
     “Blessed are those
@@ -8148,10 +8150,12 @@ author: {
 // '326
 {
   quote: {
-    sv: [`“Men om vi hoppas på det vi inte ser, då väntar vi uthålligt. På samma sätt är det när Anden stöder oss i vår svaghet. Vi vet ju inte hur vår bön egentligen bör vara, men Anden vädjar för oss med rop utan ord, och han som utforskar våra hjärtan vet vad Anden menar, eftersom Anden vädjar för de heliga så som Gud vill.”`],
+    sv: [`“Men om vi hoppas på det vi inte ser, då väntar vi uthålligt.
+
+      På samma sätt är det när Anden stöder oss i vår svaghet. Vi vet ju inte hur vår bön egentligen bör vara, men Anden vädjar för oss med rop utan ord, och han som utforskar våra hjärtan vet vad Anden menar, eftersom Anden vädjar för de heliga så som Gud vill.”`],
     en: [`“But if we hope for what we do not yet have, we wait for it patiently.
 
-    In the same way, the Spirit helps us in our weakness. We do not know what we ought to pray for, but the Spirit himself intercedes for us through wordless groans. And he who searches our hearts knows the mind of the Spirit, because the Spirit intercedes for God’s people in accordance with the will of God.”`]
+      In the same way, the Spirit helps us in our weakness. We do not know what we ought to pray for, but the Spirit himself intercedes for us through wordless groans. And he who searches our hearts knows the mind of the Spirit, because the Spirit intercedes for God’s people in accordance with the will of God.”`]
   },
   author: {
     sv: [`— Romarbrevet 8:25-27`],
@@ -8189,6 +8193,7 @@ author: {
   credit: "kristen munk (Pexels.com)"
 },
 
+
 // '329
 {
   quote: {
@@ -8206,8 +8211,8 @@ author: {
 // '330
 {
   quote: {
-    sv: [`“Vi har olika gåvor allt efter den nåd vi har fått: profetisk gåva i förhållande till vår tro, tjänandets gåva hos den som tjänar, undervisningens gåva i förhållande till vår tro, tjänandets gåva i förhållande till vår tro, tjänandets gåva hos den som tjänar, undervisningens gåva hos den som undervisar, tröstens gåva hos den som tröstar och förmanar, gåvan att frikostigt dela med sig, att vara nitisk som ledare och att med glatt hjärta visa barmhärtighet.”`],
-    en: [`“We have different gifts, according to the grace given to each of us. If your gift is prophesying, then prophesy in accordance with your[a] faith; 7 if it is serving, then serve; if it is teaching, then teach; 8 if it is to encourage, then give encouragement; if it is giving, then give generously; if it is to lead,[b] do it diligently; if it is to show mercy, do it cheerfully.”`],
+    sv: [`“Vi har olika gåvor allt efter den nåd vi har fått: profetisk gåva i förhållande till vår tro, tjänandets gåva hos den som tjänar, undervisningens gåva hos den som undervisar, tröstens gåva hos den som tröstar och förmanar, gåvan att frikostigt dela med sig, att vara nitisk som ledare och att med glatt hjärta visa barmhärtighet.”`],
+    en: [`“We have different gifts, according to the grace given to each of us. If your gift is prophesying, then prophesy in accordance with your faith; if it is serving, then serve; if it is teaching, then teach; if it is to encourage, then give encouragement; if it is giving, then give generously; if it is to lead, do it diligently; if it is to show mercy, do it cheerfully.”`],
   },
   author: {
     sv: [`— Romarbrevet 12:6-8`],
