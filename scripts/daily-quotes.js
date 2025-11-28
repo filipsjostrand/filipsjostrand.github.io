@@ -2344,7 +2344,7 @@ const dailyQuotes = [
 
   // '331
   {
-    quote: `“the heart that loves is always young”`,
+    quote: `“The heart that loves is always young.”`,
     subtext: ``,
     author: "— Greek proverb",
   },
