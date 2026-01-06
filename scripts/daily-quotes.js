@@ -2655,7 +2655,7 @@ const bibleQuotes = [
   // '5
   {
     quote: {
-      sv: [`“Ty den Ande som Gud har gett oss gör oss inte modlösa, utan är kraftens, kärlekens och självbehärskningens Ande.”`],
+      sv: [`“Ty Gud har inte gett oss modlöshetens ande, utan kraftens, kärlekens och självbehärskningens.”`],
       en: [`“for God gave us a spirit not of fear but of power and love and self-control.”`]
     },
     author: {
