@@ -4894,7 +4894,7 @@ author: {
     en: [`“Jabez cried out to the God of Israel, “Oh, that you would bless me and enlarge my territory! Let your hand be with me, and keep me from harm so that I will be free from pain.” And God granted his request.”`]
   },
   author: {
-    sv: [`— 1 Krönikerboken 4:10`],
+    sv: [`— 1 Krönikeboken 4:10`],
     en: [`— 1 Chronicles 4:10`]
   },
   image: "may_pexels-pixabay-315998.jpg",
@@ -5258,8 +5258,6 @@ author: {
   credit: "Troy Squillaci (Pexels.com)"
 },
 
-
-
 // '159
 {
   quote: {
@@ -5344,13 +5342,13 @@ author: {
   credit: "Troy Squillaci (Pexels.com)"
 },
 
-// ok här
-
 // '165
 {
   quote: {
-    sv: [`“Välsignad är den man som litar till Herren, som litar helt till Herren.”`],
-    en: [`“Blessed is the one who trusts in the Lord, whose confidence is in him.”`]
+    sv: [`“Men välsignad är den man som förtröstar till Herren,
+      den som har Herren till sin förtröstan.”`],
+    en: [`“But blessed is the one who trusts in the Lord,
+    whose confidence is in him.”`]
   },
   author: {
     sv: [`— Jeremia 17:7`],
@@ -5363,12 +5361,16 @@ author: {
 // '166
 {
   quote: {
-    sv: [`“Som leran i krukmakarens hand, så är ni i min hand.”`],
-    en: [`“Like clay in the hand of the potter, so are you in my hand.”`]
+    sv: [`“Då gick jag ned till krukmakarens hus och fann honom upptagen med arbete på drejskivan. Och när kärlek som krukmakaren höll på att göra av leret misslyckades i hans hand, började han om igen, och gjorde av det ett annat kärl så, som han ville ha det gjort.
+
+      Och Herrens ord kom till mig; han sade: Skulle jag inte kunna göra med er, ni av Israels hus, så som denne krukmakare gör? Säger Herren. Jo, som leret är i krukmakarens hand, så är också ni i min hand, ni av Israels hus.”`],
+    en: [`“So I went down to the potter’s house, and I saw him working at the wheel. But the pot he was shaping from the clay was marred in his hands; so the potter formed it into another pot, shaping it as seemed best to him.
+
+      Then the word of the Lord came to me. He said, “Can I not do with you, Israel, as this potter does?” declares the Lord. “Like clay in the hand of the potter, so are you in my hand, Israel.”`]
   },
   author: {
-    sv: [`— Jeremia 18:6`],
-    en: [`— Jeremiah 18:6`]
+    sv: [`— Jeremia 18:3-6`],
+    en: [`— Jeremiah 18:3-6`]
   },
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
@@ -5377,21 +5379,30 @@ author: {
 // '167
 {
   quote: {
-    sv: [`“Ni ska kalla på mig och komma och be till mig, och jag ska lyssna på er.”`],
-    en: [`“Then you will call on me and come and pray to me, and I will listen to you.”`]
+    sv: [`“Jag vet väl vilka tankar jag har för er, säger Herren, nämligen fridens tankar och inte ofärdens, till att ge er en framtid och ett hopp. Och ni skall åkalla på mig och gå och be till mig, och jag vill höra på er.”`],
+    en: [`“ For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future. Then you will call on me and come and pray to me, and I will listen to you.”`]
   },
   author: {
-    sv: [`— Jeremia 29:12`],
+    sv: [`— Jeremia 29:11-12`],
     en: [`— Jeremiah 29:12`]
   },
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
 },
+
 // '168
 {
   quote: {
-    sv: [`“Jag skall ge dig hälsa och läka dina sår, säger Herren, ty de har kallat dig ’den fördrivna’, ’Sion som ingen frågar efter’.”`],
-    en: [`“But I will restore you to health and heal your wounds,’ declares the Lord, ‘because you are called an outcast, Zion for whom no one cares.”`]
+    sv: [`“Ty jag vill hela dina sår
+        och läka dig från de sår du har fått,
+      säger Herren,
+      då man nu kallar dig ’den fördrivna’,
+        det Sion som ingen frågar efter’.”`],
+    en: [`“But I will restore you to health
+        and heal your wounds,’
+      declares the Lord,
+      ‘because you are called an outcast,
+        Zion for whom no one cares.’”`]
   },
   author: {
     sv: [`— Jeremia 30:17`],
@@ -5404,12 +5415,26 @@ author: {
 // '169
 {
   quote: {
-    sv: [`“Med evig kärlek har jag älskat dig, därför har jag dragit dig till mig i trofasthet.”`],
-    en: [`“I have loved you with an everlasting love; I have drawn you with unfailing kindness.”`]
+    sv: [`“Fjärran ifrån uppenbarade sig Herren för mig:
+
+        Ja, med evig kärlek har jag älskat dig,
+          därför låter jag min nåd förbli över dig.
+        Ännu en gång skall jag upprätta dig,
+          så att du blir upprättad, du jungfru Israel.
+        Ännu en gång skall du få utrusta dig med puka
+          och dra ut i dans bland dem som gör sig glada.”`],
+    en: [`“The Lord appeared to us in the past, saying:
+
+        “I have loved you with an everlasting love;
+          I have drawn you with unfailing kindness.
+        I will build you up again,
+          and you, Virgin Israel, will be rebuilt.
+        Again you will take up your timbrels
+          and go out to dance with the joyful.”`]
   },
   author: {
-    sv: [`— Jeremia 31:3`],
-    en: [`— Jeremiah 31:3`]
+    sv: [`— Jeremia 31:3-4`],
+    en: [`— Jeremiah 31:3-4`]
   },
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
@@ -5418,12 +5443,21 @@ author: {
 // '170
 {
   quote: {
-    sv: [`“Kom, låt oss gå till rätta med varandra, säger Herren. Om era synder än är blodröda, skall de bli snövita, om de än är röda som scharlakan, skall de bli vita som ull.”`],
-    en: [`“Come now, let us settle the matter,” says the Lord. “Though your sins are like scarlet, they shall be as white as snow; though they are red as crimson, they shall be like wool.”`]
+    sv: [`“Herre, du är min Gud,
+        jag vill upphöja dig,
+      jag vill prisa ditt namn,
+        ty du gör underbara ting,
+        du utför rådslut från fordom tid,
+        fasta och bestående.”`],
+    en: [`“Lord, you are my God;
+        I will exalt you and praise your name,
+      for in perfect faithfulness
+        you have done wonderful things,
+        things planned long ago.”`]
   },
   author: {
-    sv: [`— Jesaja 1:18`],
-    en: [`— Isaiah 1:18`]
+    sv: [`— Jesaja 25:1`],
+    en: [`— Isaiah 25:1`]
   },
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
@@ -5432,8 +5466,14 @@ author: {
 // '171
 {
   quote: {
-    sv: [`“Gud är min frälsning, jag är trygg och utan fruktan. Herren är min styrka och min lovsång, han blev min frälsning.”`],
-    en: [`“Surely God is my salvation; I will trust and not be afraid. The Lord, the Lord himself, is my strength and my defense; he has become my salvation.”`]
+    sv: [`“Se, Gud är min frälsning,
+        jag är trygg och fruktar icke;
+      ty Herren, Herren är min starkhet och min lovsång,
+        och han blev mig till frälsning.”`],
+    en: [`“Surely God is my salvation;
+        I will trust and not be afraid.
+      The Lord, the Lord himself, is my strength and my defense;
+        he has become my salvation.”`]
   },
   author: {
     sv: [`— Jesaja 12:2`],
@@ -5446,8 +5486,18 @@ author: {
 // '172
 {
   quote: {
-    sv: [`“Den som är ståndaktig i sitt sinne bevarar du i frid, ty han förtröstar på dig.”`],
-    en: [`“You will keep in perfect peace those whose minds are steadfast, because they trust in you.”`]
+    sv: [`“Den som är fast i sitt sinne
+      bevarar du i frid, i frid;
+      ty på dig förtröstar han.
+      Förtrösta då på Herren
+      till evig tid;
+      ty Herren, Herren
+      är en evig klippa.”`],
+    en: [`“You will keep in perfect peace
+      those whose minds are steadfast,
+      because they trust in you.
+      Trust in the Lord forever,
+      for the Lord, the Lord himself, is the Rock eternal.”`]
   },
   author: {
     sv: [`— Jesaja 26:3`],
@@ -5456,15 +5506,30 @@ author: {
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
 },
+
 // '173
 {
   quote: {
-    sv: [`“I kommande dagar ska Jakob slå rot, Israel grönska och blomstra. De ska fylla hela världen med frukt.”`],
-    en: [`“In days to come Jacob will take root, Israel will bud and blossom and fill all the world with fruit.”`]
-  },
+    sv: [`“Stå upp, var ljus, ty ditt ljus kommer,
+        och Herrens härlighet går upp över dig.
+      Se, mörker övertäcker jorden
+        och töcken folken,
+      men över dig uppgår Herren,
+        och hans härlighet uppenbaras över dig.
+      Och folken skola vandra i ditt ljus
+        och konungarna i glansen som går upp över dig.”`],
+    en: [`“Arise, shine, for your light has come,
+        and the glory of the Lord rises upon you.
+      See, darkness covers the earth
+        and thick darkness is over the peoples,
+      but the Lord rises upon you
+        and his glory appears over you.
+      Nations will come to your light,
+        and kings to the brightness of your dawn”`]
+      },
   author: {
-    sv: [`— Jesaja 27:6`],
-    en: [`— Isaiah 27:6`]
+    sv: [`— Jesaja 60:1-3`],
+    en: [`— Isaiah 60:1-3`]
   },
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
@@ -5473,22 +5538,42 @@ author: {
 // '174
 {
   quote: {
-    sv: [`“Mitt folk ska bo i fridens boning, i trygga hem och i säkra viloplatser.”`],
-    en: [`“My people will live in peaceful dwelling places, in secure homes, in undisturbed places of rest.”`]
+    sv: [`“En kung skall uppstå, som skall regera med rättfärdighet,
+      och härskare som skall härska med rättvisa.
+      Var och en av dem skall vara
+      såsom en tillflykt i stormen,
+      ett skydd mot störtskuren;
+      de skola vara såsom vattenbäckar i en ödemark,
+      såsom skuggan av en väldig klippa
+      i ett törstigt land.”`],
+    en: [`“See, a king will reign in righteousness
+        and rulers will rule with justice.
+      Each one will be like a shelter from the wind
+        and a refuge from the storm,
+      like streams of water in the desert
+        and the shadow of a great rock in a thirsty land.”`]
   },
   author: {
-    sv: [`— Jesaja 32:18`],
-    en: [`— Isaiah 32:18`]
+    sv: [`— Jesaja 32:1-2`],
+    en: [`— Isaiah 32:1-2`]
   },
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
 },
 
+
+
 // '175
 {
   quote: {
-    sv: [`“Ty jag är Herren, din Gud, som håller dig vid din högra hand och säger till dig: Frukta inte, jag hjälper dig.”`],
-    en: [`“For I am the Lord your God who takes hold of your right hand and says to you, Do not fear; I will help you.”`]
+    sv: [`“Ty jag är Herren, din Gud,
+        som håller dig vid din högra hand
+      och säger till dig: Frukta inte,
+        jag hjälper dig.”`],
+    en: [`“For I am the Lord your God
+        who takes hold of your right hand
+      and says to you, Do not fear;
+        I will help you.”`]
   },
   author: {
     sv: [`— Jesaja 41:13`],
@@ -5501,8 +5586,18 @@ author: {
 // '176
 {
   quote: {
-    sv: [`“Jag ska föra de blinda på en väg som de inte känner, och leda dem på stigar de inte känner till. Jag ska göra mörker till ljus inför dem och krokiga vägar raka. Detta ska jag göra och inte överge dem.”`],
-    en: [`“I will lead the blind by ways they have not known, along unfamiliar paths I will guide them; I will turn the darkness into light before them and make the rough places smooth. These are the things I will do; I will not forsake them.”`]
+    sv: [`“Och de blinda skall jag leda på en väg som de inte känner;
+        på stigar som de inte känner skall jag föra dem.
+      Jag skall göra mörkret framför dem till ljus
+        och det som är ojämnt till jämn mark.
+      Detta är vad jag skall göra,
+        och jag skall ej frångå mitt ord.”`],
+    en: [`“I will lead the blind by ways they have not known,
+        along unfamiliar paths I will guide them;
+       I will turn the darkness into light before them
+        and make the rough places smooth.
+      These are the things I will do;
+        I will not forsake them.”`]
   },
   author: {
     sv: [`— Jesaja 42:16`],
@@ -5515,8 +5610,20 @@ author: {
 // '177
 {
   quote: {
-    sv: [`“När du går genom vatten är jag med dig, genom strömmar ska de inte dränka dig. När du går genom eld ska du inte bli bränd, lågan ska inte skada dig.”`],
-    en: [`“When you pass through the waters, I will be with you; and when you pass through the rivers, they will not sweep over you. When you walk through the fire, you will not be burned; the flames will not set you ablaze.”`]
+    sv: [`“Om du än måste gå genom vatten,
+      så är jag med dig,
+    eller genom strömmar,
+      så skall de icke dränka dig;
+    måste du än gå genom eld,
+      så skall du ej bli svedd,
+      och lågorna skall ej förtära dig.”`],
+    en: [`“When you pass through the waters,
+    I will be with you;
+  and when you pass through the rivers,
+    they will not sweep over you.
+  When you walk through the fire,
+    you will not be burned;
+    the flames will not set you ablaze.”`]
   },
   author: {
     sv: [`— Jesaja 43:2`],
@@ -5525,11 +5632,18 @@ author: {
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
 },
+
 // '178
 {
   quote: {
-    sv: [`“Frukta inte, var inte förskräckta. Har jag inte låtit er höra det och förkunnat det för länge sedan? Ni är mina vittnen. Finns det någon annan Gud än jag? Nej, det finns ingen annan klippa, jag vet ingen.”`],
-    en: [`“Do not tremble, do not be afraid. Did I not proclaim this and foretell it long ago? You are my witnesses. Is there any God besides me? No, there is no other Rock; I know not one.”`]
+    sv: [`“Frukta inte och var inte förskräckta.
+        Har jag inte för länge sedan låtit dig höra om detta och förkunnat det?
+      Ni är ju mina vittnen. Finns väl någon Gud förutom mig?
+        Nej, ingen annan klippa finns, jag vet ingen.”`],
+    en: [`“Do not tremble, do not be afraid.
+        Did I not proclaim this and foretell it long ago?
+      You are my witnesses. Is there any God besides me?
+        No, there is no other Rock; I know not one.”`]
   },
   author: {
     sv: [`— Jesaja 44:8`],
@@ -5542,8 +5656,16 @@ author: {
 // '179
 {
   quote: {
-    sv: [`“Om än bergen viker bort och höjderna vacklar, ska min nåd inte vika från dig och mitt fredsförbund inte rubbas, säger Herren, din förbarmare.”`],
-    en: [`“Though the mountains be shaken and the hills be removed, yet my unfailing love for you will not be shaken nor my covenant of peace be removed,” says the Lord, who has compassion on you.”`]
+    sv: [`“Ja, om bergen viker bort
+        och höjderna vacklar,
+      så skall min nåd inte vika ifrån dig
+        och mitt fridsförbund inte vackla,
+        säger Herren, din förbarmare.”`],
+    en: [`“Though the mountains be shaken
+        and the hills be removed,
+      yet my unfailing love for you will not be shaken
+        nor my covenant of peace be removed,”
+        says the Lord, who has compassion on you.”`]
   },
   author: {
     sv: [`— Jesaja 54:10`],
@@ -5556,8 +5678,18 @@ author: {
 // '180
 {
   quote: {
-    sv: [`“Kom, alla ni som törstar, kom hit och få vatten! Kom, även om ni inte har pengar! Köp säd och ät. Kom och köp säd utan pengar, vin och mjölk utan att betala.”`],
-    en: [`“Come, all you who are thirsty, come to the waters; and you who have no money, come, buy and eat! Come, buy wine and milk without money and without cost.”`]
+    sv: [`“Upp, alla ni som är törstiga,
+        kom hit och få vatten.
+      Och ni som inga pengar har pengar!
+        Kom hit och hämta säd och ät.
+      Ja, kom hit och hämta säd utan pengar,
+        och för intet både vin och mjölk.”`],
+    en: [`“Come, all you who are thirsty,
+        come to the waters;
+      and you who have no money,
+        come, buy and eat!
+      Come, buy wine and milk
+        without money and without cost.”`]
   },
   author: {
     sv: [`— Jesaja 55:1`],
@@ -5570,12 +5702,29 @@ author: {
 // '181
 {
   quote: {
-    sv: [`“Sök Herren medan han låter sig finnas, åkalla honom medan han är nära.”`],
-    en: [`“Seek the Lord while he may be found; call on him while he is near.”`]
+    sv: [`“Sök Herren, medan han låter sig finnas.
+        Åkalla honom, medan han är nära.
+        Må den ogudaktige överge sin väg
+        och den orättfärdige sina tankar
+        och vända om till Herren, så skall han förbarma sig över honom,
+        och till vår Gud, ty han skall skänka mycken förlåtelse.
+
+        'Se, mina tankar är inte edra tankar,
+        och era vägar är inte mina vägar', säger Herren.”`],
+    en: [`“Seek the Lord while he may be found;
+        call on him while he is near.
+      Let the wicked forsake their ways
+        and the unrighteous their thoughts.
+      Let them turn to the Lord, and he will have mercy on them,
+        and to our God, for he will freely pardon.
+
+        'For my thoughts are not your thoughts,
+          neither are your ways my ways,'
+        declares the Lord.”`]
   },
   author: {
-    sv: [`— Jesaja 55:6`],
-    en: [`— Isaiah 55:6`]
+    sv: [`— Jesaja 55:6-8`],
+    en: [`— Isaiah 55:6-8`]
   },
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
@@ -5584,12 +5733,27 @@ author: {
 // '182
 {
   quote: {
-    sv: [`“När du ropar ska Herren svara. När du ropar: ’Här är jag!’ ska han säga: ’Jag är här.’”`],
-    en: [`“Then you will call, and the Lord will answer; you will cry for help, and he will say: ‘Here am I.’”`]
+    sv: [`“Då skall Herren svara, när du åkallar honom;
+        när du ropar, skall han säga: 'Se, här är jag.'
+        Om hos dig inte får finnas någon som pålägger ok
+        och pekar finger och talar vad fördärvligt är,
+        om du delar med dig av din nödtorft åt den hungrige
+        och mättar den som är i betryck,
+        då skall ljus gå upp för dig i mörkret,
+        och din natt skall bliva lik middagens sken.”`],
+    en: [`“Then you will call, and the Lord will answer;
+        you will cry for help, and he will say: Here am I.
+
+        “If you do away with the yoke of oppression,
+          with the pointing finger and malicious talk,
+        and if you spend yourselves in behalf of the hungry
+          and satisfy the needs of the oppressed,
+        then your light will rise in the darkness,
+          and your night will become like the noonday.”`]
   },
   author: {
-    sv: [`— Jesaja 58:9`],
-    en: [`— Isaiah 58:9`]
+    sv: [`— Jesaja 58:9-10`],
+    en: [`— Isaiah 58:9-10`]
   },
   image: "jun_pexels-troy-squillaci-1303476-2521619.jpg",
   credit: "Troy Squillaci (Pexels.com)"
@@ -5599,12 +5763,22 @@ author: {
 // '183
 {
   quote: {
-    sv: [`“Herrens arm är inte för svag för att rädda, hans öra inte för dövt för att höra.”`],
-    en: [`“Surely the arm of the Lord is not too short to save, nor his ear too dull to hear.”`]
+    sv: [`“Se, Herrens arm är inte för kort för att rädda,
+        hans öra inte för tillslutet så att han ej kan höra.
+      Nej, det är era missgärningar som skiljer er
+        och er Gud från varandra,
+      och era synder döljer hans ansikte för er,
+        så att han inte hör er.”`],
+    en: [`“Surely the arm of the Lord is not too short to save,
+        nor his ear too dull to hear.
+      But your iniquities have separated
+        you from your God;
+      your sins have hidden his face from you,
+          so that he will not hear.”`]
   },
   author: {
-    sv: [`— Jesaja 59:1`],
-    en: [`— Isaiah 59:1`]
+    sv: [`— Jesaja 59:1-2`],
+    en: [`— Isaiah 59:1-2`]
   },
   image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
   credit: "Petra Nesti (Pexels.com)"
@@ -5613,12 +5787,23 @@ author: {
 // '184
 {
   quote: {
-    sv: [`“Innan de ropar ska jag svara, medan de ännu talar ska jag höra.”`],
-    en: [`“Before they call I will answer; while they are still speaking I will hear.”`]
+    sv: [`“De skall inte möda sig förgäves,
+    och barnen som de föder drabbas ej av plötslig död.
+  ty de är ett släkte av Herrens välsignade,
+    och deras avkomlingar få leva kvar bland dem.
+  Och det skall ske, att innan de ropar,
+    skall jag svara,
+    och medan de ännu tala, skall jag höra.”`],
+    en: [`“They will not labor in vain,
+    nor will they bear children doomed to misfortune;
+  for they will be a people blessed by the Lord,
+    they and their descendants with them.
+  Before they call I will answer;
+    while they are still speaking I will hear.”`]
   },
   author: {
-    sv: [`— Jesaja 65:24`],
-    en: [`— Isaiah 65:24`]
+    sv: [`— Jesaja 65:23-24`],
+    en: [`— Isaiah 65:23-24`]
   },
   image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
   credit: "Petra Nesti (Pexels.com)"
@@ -5627,12 +5812,22 @@ author: {
 // '185
 {
   quote: {
-    sv: [`“Allt vad du beslutar skall gå dig väl, och ljus skall skina på dina vägar.”`],
-    en: [`“What you decide on will be done, and light will shine on your ways.”`]
+    sv: [`“När du då ber till honom, skall han höra dig,
+      och de löften du gör skall du få infria.
+    Allt vad du besluter skall då lyckas för dig,
+      och ljus skall skina på dina vägar.
+    Om de leda mot djupet och du då beder: ”Uppåt!”,
+      så frälsar han mannen som har ödmjukat sig.”`],
+    en: [`“You will pray to him, and he will hear you,
+      and you will fulfill your vows.
+    What you decide on will be done,
+      and light will shine on your ways.
+    When people are brought low and you say, ‘Lift them up!’
+      then he will save the downcast.”`]
   },
   author: {
-    sv: [`— Job 22:28`],
-    en: [`— Job 22:28`]
+    sv: [`— Job 22:27-29`],
+    en: [`— Job 22:27-29`]
   },
   image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
   credit: "Petra Nesti (Pexels.com)"
@@ -5641,8 +5836,8 @@ author: {
 // '186
 {
   quote: {
-    sv: [`“Jesus sade: ’Jag är uppståndelsen och livet. Den som tror på mig ska leva om han än dör, och den som lever och tror på mig ska aldrig någonsin dö. Tror du detta?’”`],
-    en: [`“Jesus said, ‘I am the resurrection and the life. The one who believes in me will live, even though they die; and whoever lives by believing in me will never die. Do you believe this?’”`]
+    sv: [`“Då sade Jesus till henne: ’Jag är uppståndelsen och livet. Den som tror på mig skall leva om han än dör, och den som lever och tror på mig skall aldrig någonsin dö. Tror du detta?’”`],
+    en: [`“Jesus said to her, “I am the resurrection and the life. The one who believes in me will live, even though they die; and whoever lives by believing in me will never die. Do you believe this?”`]
   },
   author: {
     sv: [`— Johannesevangeliet 11:25-26`],
@@ -5655,35 +5850,45 @@ author: {
 // '187
 {
   quote: {
-    sv: [`“Jesus grät.”`],
-    en: [`“Jesus wept.”`]
+    sv: [`“Jesus sade till henne: ’Har jag inte sagt dig att om du tror, skall du få se Guds härlighet?'
+
+        De tog bort stenen, och Jesus lyfte blicken mot himlen och sade 'Fader jag tackar dig för att du ha hört mig.' Själv visste jag att du alltid hör mig, men jag säger detta med tanke på alla dem som står här, för att de skall tro på att du har sänt mig.
+
+        Sedan ropade han med hög röst: 'Lasaros, kom ut.'”`],
+    en: [`“Then Jesus said, “Did I not tell you that if you believe, you will see the glory of God?”
+
+        So they took away the stone. Then Jesus looked up and said, “Father, I thank you that you have heard me. I knew that you always hear me, but I said this for the benefit of the people standing here, that they may believe that you sent me.”
+
+        When he had said this, Jesus called in a loud voice, “Lazarus, come out!””`]
   },
   author: {
-    sv: [`— Johannesevangeliet 11:35`],
-    en: [`— John 11:35`]
-  },
-  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
-  credit: "Petra Nesti (Pexels.com)"
-},
-// '188
-{
-  quote: {
-    sv: [`“Och vad ni än ber om i mitt namn skall jag göra, så att Fadern blir förhärligad genom Sonen. Om ni ber om något i mitt namn skall jag göra det.”`],
-    en: [`“And I will do whatever you ask in my name, so that the Father may be glorified in the Son. You may ask me for anything in my name, and I will do it.”`]
-  },
-  author: {
-    sv: [`— Johannesevangeliet 14:13-14`],
-    en: [`— John 14:13-14`]
+    sv: [`— Johannesevangeliet 11:40-43`],
+    en: [`— John 11:40-43`]
   },
   image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
   credit: "Petra Nesti (Pexels.com)"
 },
 
+// '188
+{
+  quote: {
+    sv: [`“Sannerligen, jag säger er: den som tror på mig, han skall utföra gärningar som jag, och ännu större. Ty jag går till Fadern, och vad ni än ber om i mitt namn skall jag göra, så att Fadern blir förhärligad genom Sonen. Om ni ber om något i mitt namn skall jag göra det.”`],
+    en: [`“Very truly I tell you, whoever believes in me will do the works I have been doing, and they will do even greater things than these, because I am going to the Father. And I will do whatever you ask in my name, so that the Father may be glorified in the Son. You may ask me for anything in my name, and I will do it”`]
+  },
+  author: {
+    sv: [`— Johannesevangeliet 14:12-14`],
+    en: [`— John 14:12-14`]
+  },
+  image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
+  credit: "Petra Nesti (Pexels.com)"
+},
+
+
 // '189
 {
   quote: {
-    sv: [`“Men Hjälparen, den heliga anden som Fadern skall sända i mitt namn, han skall lära er allt och påminna er om allt som jag har sagt er. Frid lämnar jag kvar åt er, min frid ger jag er. Jag ger er inte det som världen ger.”`],
-    en: [`“But the Advocate, the Holy Spirit, whom the Father will send in my name, will teach you all things and will remind you of everything I have said to you. Peace I leave with you; my peace I give you. I do not give to you as the world gives.”`]
+    sv: [`“Men Hjälparen, den heliga anden som Fadern skall sända i mitt namn, han skall lära er allt och påminna er om allt som jag har sagt er. Frid lämnar jag kvar åt er, min frid ger jag er. Jag ger er inte det som världen ger. Känn ingen oro och tappa inte modet.”`],
+    en: [`“But the Advocate, the Holy Spirit, whom the Father will send in my name, will teach you all things and will remind you of everything I have said to you. Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid.”`]
   },
   author: {
     sv: [`— Johannesevangeliet 14:26-27`],
@@ -5696,12 +5901,12 @@ author: {
 // '190
 {
   quote: {
-    sv: [`“Men när han kommer, sanningens Ande, skall han vägleda er med hela sanningen. Han skall inte tala av sig själv, utan bara säga det han hör, och han skall förkunna för er vad som kommer.”`],
-    en: [`“But when he, the Spirit of truth, comes, he will guide you into all the truth. He will not speak on his own; he will speak only what he hears, and he will tell you what is yet to come.”`]
+    sv: [`“Men när han kommer, sanningens ande, skall han vägleda er med hela sanningen; Han skall inte tala av sig själv utan förkunna det han hör och låta er veta vad som kommer ske. Han skall förhärliga mig, ty av mig skall han ta emot det han låter er veta. Allt vad Fadern har är mitt; därför säger jag att det är av mig han tar emot det han skall låta er veta.”`],
+    en: [`“But when he, the Spirit of truth, comes, he will guide you into all the truth. He will not speak on his own; he will speak only what he hears, and he will tell you what is yet to come. He will glorify me because it is from me that he will receive what he will make known to you. All that belongs to the Father is mine. That is why I said the Spirit will receive from me what he will make known to you.”`]
   },
   author: {
-    sv: [`— Johannesevangeliet 16:13`],
-    en: [`— John 16:13`]
+    sv: [`— Johannesevangeliet 16:13-15`],
+    en: [`— John 16:13-15`]
   },
   image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
   credit: "Petra Nesti (Pexels.com)"
@@ -5710,7 +5915,7 @@ author: {
 // '191
 {
   quote: {
-    sv: [`“Detta har jag sagt er för att ni skall ha frid i mig. I världen får ni lida, men var vid gott mod: jag har övervunnit världen.”`],
+    sv: [`“Detta har jag sagt er för att ni skall ha frid i mig. I världen får ni lida, men var inte oroliga, jag har besegrat världen.”`],
     en: [`“I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world.”`]
   },
   author: {
@@ -5724,7 +5929,7 @@ author: {
 // '192
 {
   quote: {
-    sv: [`“Han sade till honom för tredje gången: ’Simon, Johannes son, älskar du mig?’ Petrus blev bedrövad över att Jesus för tredje gången frågade: ’Älskar du mig?’ och han svarade: ’Herre, du vet allt. Du vet att jag har dig kär.’ Jesus sade: ’För mina får på bete.’”`],
+    sv: [`“Och han frågade honom för tredje gången: ’Simon, Johannes son, har du mig kär?’ Petrus blev bedrövad när Jesus för tredje gången frågade: ’Har du mig kär?’ och han svarade: ’Herre, du vet allt. Du vet att jag har dig kär.’ Jesus sade: ’För mina får på bete.’”`],
     en: [`“The third time he said to him, ‘Simon son of John, do you love me?’ Peter was hurt because Jesus asked him the third time, ‘Do you love me?’ He said, ‘Lord, you know all things; you know that I love you.’ Jesus said, ‘Feed my sheep.’”`]
   },
   author: {
@@ -5734,10 +5939,11 @@ author: {
   image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
   credit: "Petra Nesti (Pexels.com)"
 },
+
 // '193
 {
   quote: {
-    sv: [`“Ingen skall kunna stå dig emot i alla dina livsdagar. Såsom jag har varit med Mose, så skall jag ock vara med dig; jag skall icke lämna dig eller övergiva dig.”`],
+    sv: [`“Ingen skall kunna stå dig emot i alla dina livsdagar. Som jag har varit med Mose, så skall jag också vara med dig. jag skall inte lämna dig eller överge dig.”`],
     en: [`“No one will be able to stand against you all the days of your life. As I was with Moses, so I will be with you; I will never leave you nor forsake you.”`]
   },
   author: {
@@ -5751,7 +5957,7 @@ author: {
 // '194
 {
   quote: {
-    sv: [`“Var tapper och stark! Följ troget den lag som min tjänare Mose gav dig. Vik inte av från den åt vare sig höger eller vänster, så får du framgång i allt vad du gör.”`],
+    sv: [`“Du må endast vara helt frimodig och oförfärad att i all avseenden hålla den lag som min tjänare Mose har gett dig och göra efter den. Vik inte av från den, vare sig åt höger eller åt vänster, för att du må ha framgång i allt vad du vad du företar dig.”`],
     en: [`“Be strong and very courageous. Be careful to obey all the law my servant Moses gave you; do not turn from it to the right or to the left, that you may be successful wherever you go.”`]
   },
   author: {
@@ -5762,10 +5968,11 @@ author: {
   credit: "Petra Nesti (Pexels.com)"
 },
 
+
 // '195
 {
   quote: {
-    sv: [`“Av allt det goda som Herren hade lovat Israels folk gick inte ett enda löfte om intet. Allt gick i uppfyllelse.”`],
+    sv: [`“Ingenting uteblev av allt det goda som Herren hade lovat Israels hus. Det gick allt i fullbordan.”`],
     en: [`“Not one of all the Lord’s good promises to Israel failed; every one was fulfilled.”`]
   },
   author: {
@@ -5779,12 +5986,12 @@ author: {
 // '196
 {
   quote: {
-    sv: [`“En enda man bland er kunde jaga tusen, ty Herren, er Gud, strider för er, så som han har lovat er.”`],
-    en: [`“One of you routs a thousand, because the Lord your God fights for you, just as he promised.”`]
+    sv: [`“En enda man bland er jagade tusen framför sig, ty Herren, er Gud, stred själv för er, såsom han hade lovat er. Så ha nu noga akt på er själva, så att ni älsken Herren, er Gud.”`],
+    en: [`“One of you routs a thousand, because the Lord your God fights for you, just as he promised. 11 So be very careful to love the Lord your God.”`]
   },
   author: {
-    sv: [`— Josua 23:10`],
-    en: [`— Joshua 23:10`]
+    sv: [`— Josua 23:10-11`],
+    en: [`— Joshua 23:10-11`]
   },
   image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
   credit: "Petra Nesti (Pexels.com)"
@@ -5793,8 +6000,8 @@ author: {
 // '197
 {
   quote: {
-    sv: [`“Han som kan bevara er från fall och ställa er inför sin härlighet, fläckfria och jublande — honom tillhör härlighet och majestät, styrka och makt, före all tids början, nu och i all evighet. Amen.”`],
-    en: [`“To him who is able to keep you from stumbling and to present you before his glorious presence without fault and with great joy — to the only God our Savior be glory, majesty, power and authority, through Jesus Christ our Lord, before all ages, now and forevermore! Amen.”`]
+    sv: [`“Han som kan skydda er från fall och ställa er inför sin härlighet, fläckfria och jublande, den ende Guden som har räddat oss genom vår herre Jesus Kristus, hans är härligheten, storheten, styrkan och makten, före all tids början, nu och i all evighet, amen.”`],
+    en: [`“To him who is able to keep you from stumbling and to present you before his glorious presence without fault and with great joy— to the only God our Savior be glory, majesty, power and authority, through Jesus Christ our Lord, before all ages, now and forevermore! Amen.”`]
   },
   author: {
     sv: [`— Judasbrevet 24–25`],
@@ -5803,10 +6010,11 @@ author: {
   image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
   credit: "Petra Nesti (Pexels.com)"
 },
+
 // '198
 {
   quote: {
-    sv: [`“Döm inte, så skall ni inte bli dömda. Fördöm inte, så skall ni inte bli fördömda. Förlåt, så skall ni få förlåtelse. Ge, så skall ni få. Ett gott mått, packat, skakat och rågat skall ni få i er famn. Ty med det mått som ni mäter med skall det mätas upp åt er.”`],
+    sv: [`“Döm inte, så skall ni inte bli dömda. Förklara ingen skyldig, så skall ni inte bli fördömda. Frikänn, så skall ni bli frikända. Ge, så skall ni få. Ett gott mått, packat, skakat och rågat skall ni få i er mantel. Med det mått som ni mäter med skall det mätas upp åt er.”`],
     en: [`“Do not judge, and you will not be judged. Do not condemn, and you will not be condemned. Forgive, and you will be forgiven. Give, and it will be given to you. A good measure, pressed down, shaken together and running over, will be poured into your lap. For with the measure you use, it will be measured to you.”`]
   },
   author: {
@@ -5820,8 +6028,8 @@ author: {
 // '199
 {
   quote: {
-    sv: [`“En gång var Jesus på en plats där han bad. När han slutade sade en av hans lärjungar till honom: ’Herre, lär oss att be, liksom Johannes lärde sina lärjungar.’”`],
-    en: [`“One day Jesus was praying in a certain place. When he finished, one of his disciples said to him, ‘Lord, teach us to pray, just as John taught his disciples.’”`]
+    sv: [`“En gång hade Jesus stannat på ett ställe för att be. När han slutade, sade en av hans lärjungar till honom: ’Herre, lär oss att be, liksom Johannes lärde sina lärjungar.’”`],
+    en: [`“One day Jesus was praying in a certain place. When he finished, one of his disciples said to him, ’Lord, teach us to pray, just as John taught his disciples.’`]
   },
   author: {
     sv: [`— Lukasevangeliet 11:1`],
@@ -5834,12 +6042,28 @@ author: {
 // '200
 {
   quote: {
-    sv: [`“Förlåt oss våra synder, ty också vi förlåter var och en som står i skuld till oss. Och för oss inte in i frestelse.”`],
-    en: [`“Forgive us our sins, for we also forgive everyone who sins against us. And lead us not into temptation.”`]
+    sv: [`“Då sade han till dem: 'När ni ber skall ni säga:
+
+          Fader,
+          låt ditt namn bli helgat.
+          Låt ditt rike komma.
+          Ge oss var dag vårt bröd för dagen som kommer.
+          Och förlåt oss våra synder,
+              ty också vi förlåter var och en som står i skuld till oss.
+          Och utsätt oss inte för prövning.”`],
+    en: [`“He said to them, “When you pray, say:
+
+          ‘Father,
+          hallowed be your name,
+          your kingdom come.
+          Give us each day our daily bread.
+          Forgive us our sins,
+              for we also forgive everyone who sins against us.
+          And lead us not into temptation.’”`]
   },
   author: {
-    sv: [`— Lukasevangeliet 11:4`],
-    en: [`— Luke 11:4`]
+    sv: [`— Lukasevangeliet 11:2-4`],
+    en: [`— Luke 11:2-4`]
   },
   image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
   credit: "Petra Nesti (Pexels.com)"
@@ -5848,8 +6072,8 @@ author: {
 // '201
 {
   quote: {
-    sv: [`“Jag säger er: På samma sätt blir det glädje i himlen över en enda syndare som omvänder sig, mer än över nittionio rättfärdiga som inte behöver omvända sig.”`],
-    en: [`“I tell you that in the same way there will be more rejoicing in heaven over one sinner who repents than over ninety-nine righteous persons who do not need to repent.”`]
+    sv: [`“Jag säger er: På samma sätt blir det större glädje i himlen över en enda syndare som omvänder sig, än över nittionio rättfärdiga som inte behöver omvända sig.”`],
+    en: [`“ I tell you that in the same way there will be more rejoicing in heaven over one sinner who repents than over ninety-nine righteous persons who do not need to repent.”`]
   },
   author: {
     sv: [`— Lukasevangeliet 15:7`],
@@ -5862,8 +6086,8 @@ author: {
 // '202
 {
   quote: {
-    sv: [`“Mitt barn, du är alltid hos mig, och allt mitt är ditt. Men nu måste vi hålla fest och vara glada, för din bror var död och har fått liv igen, han var förlorad och är återfunnen.”`],
-    en: [`“My son, you are always with me, and everything I have is yours. But we had to celebrate and be glad, because this brother of yours was dead and is alive again; he was lost and is found.”`]
+    sv: [`“Fadern sade till honom: ’Mitt barn, du är alltid hos mig, och allt mitt är ditt. Men nu måste vi hålla fest och vara glada, för din bror var död och lever igen, han var förlorad och är återfunnen.”`],
+    en: [`“My son,’ the father said, ‘you are always with me, and everything I have is yours. But we had to celebrate and be glad, because this brother of yours was dead and is alive again; he was lost and is found.’”`]
   },
   author: {
     sv: [`— Lukasevangeliet 15:31–32`],
@@ -5872,10 +6096,11 @@ author: {
   image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
   credit: "Petra Nesti (Pexels.com)"
 },
+
 // '203
 {
   quote: {
-    sv: [`“Den som är trogen i det lilla är också trogen i det stora, och den som är ohederlig i det lilla är också ohederlig i det stora.”`],
+    sv: [`“Den som är trogen i smått är också trogen också i stort, och den som är ohederlig i smått är ohederlig också i stort.”`],
     en: [`“Whoever can be trusted with very little can also be trusted with much, and whoever is dishonest with very little will also be dishonest with much.”`]
   },
   author: {
@@ -5889,8 +6114,8 @@ author: {
 // '204
 {
   quote: {
-    sv: [`“Guds rike kommer inte så att man kan se det med ögonen. Inte heller ska man kunna säga: ’Här är det’ eller ’Där är det’. Nej, Guds rike är mitt ibland er.”`],
-    en: [`“The kingdom of God is not something that can be observed, nor will people say, ‘Here it is,’ or ‘There it is,’ because the kingdom of God is in your midst.”`]
+    sv: [`“Tillfrågad av fariseerna om när Guds rike skulle komma svarade han: Guds rike kommer inte på ett sådant sätt att man kan se det med sina ögon. Ingen kan säga: Här är det, eller: Där är det. Nej, Guds rike är inom er.”`],
+    en: [`“Once, on being asked by the Pharisees when the kingdom of God would come, Jesus replied, “The coming of the kingdom of God is not something that can be observed, nor will people say, ‘Here it is,’ or ‘There it is,’ because the kingdom of God is in your midst.”`]
   },
   author: {
     sv: [`— Lukasevangeliet 17:20–21`],
@@ -5903,8 +6128,12 @@ author: {
 // '205
 {
   quote: {
-    sv: [`“Två män gick upp till templet för att be, den ene var farisé och den andre tullindrivare. Farisén stod och bad för sig själv: ’Jag tackar dig, Gud, för att jag inte är som andra människor – tjuvar, bedragare, äktenskapsbrytare – eller som den där tullindrivaren.’ Men tullindrivaren stod långt borta och ville inte ens lyfta blicken mot himlen, utan slog sig för bröstet och sade: ’Gud, var nådig mot mig, en syndare.’”`],
-    en: [`“Two men went up to the temple to pray, one a Pharisee and the other a tax collector. The Pharisee stood by himself and prayed: ‘God, I thank you that I am not like other people—robbers, evildoers, adulterers—or even like this tax collector.’ But the tax collector stood at a distance. He would not even look up to heaven, but beat his breast and said, ‘God, have mercy on me, a sinner.’”`]
+    sv: [`“Två män gick upp till templet för att be, den ene var farisé, den andre tullindrivare. Farisén ställde sig och bad för sig själv: ’Jag tackar dig, Gud, för att jag inte är som andra människor, tjuvar, och bedragare och horkarlar, eller som tullindrivaren där. Jag fastar två gånger i veckan, jag lämnar tionde av allt jag köper.’
+
+        Men tullindrivaren stod avsides och vågade inte ens lyfta blicken mot himlen utan slog med händerna mot bröstet och sade: ’Gud, var nådig mot mig syndare.’”`],
+    en: [`“Two men went up to the temple to pray, one a Pharisee and the other a tax collector. The Pharisee stood by himself and prayed: ‘God, I thank you that I am not like other people—robbers, evildoers, adulterers—or even like this tax collector. I fast twice a week and give a tenth of all I get.’
+
+        “But the tax collector stood at a distance. He would not even look up to heaven, but beat his breast and said, ‘God, have mercy on me, a sinner.’”`]
   },
   author: {
     sv: [`— Lukasevangeliet 18:10–13`],
@@ -5917,8 +6146,16 @@ author: {
 // '206
 {
   quote: {
-    sv: [`“När han närmade sig sluttningen av Olivberget började hela skaran av lärjungar i sin glädje prisa Gud med hög röst för alla de underverk de hade sett. De sade: ’Välsignad är han som kommer, konungen, i Herrens namn! Fred i himlen och ära i höjden!’”`],
-    en: [`“When he came near the place where the road goes down the Mount of Olives, the whole crowd of disciples began joyfully to praise God in loud voices for all the miracles they had seen: ‘Blessed is the king who comes in the name of the Lord! Peace in heaven and glory in the highest!’”`]
+    sv: [`“Då han närmade sig staden och var på väg ner från Olivberget, började hela skaran av lärjungar i sin glädje ljudligt prisa Gud för alla de underverk de hade sett:
+
+    ’Välsignad är han som kommer, konungen, i Herrens namn.
+
+    Fred i himlen och ära i höjden.’”`],
+    en: [`“When he came near the place where the road goes down the Mount of Olives, the whole crowd of disciples began joyfully to praise God in loud voices for all the miracles they had seen:
+
+    “Blessed is the king who comes in the name of the Lord!”
+
+    “Peace in heaven and glory in the highest!”`]
   },
   author: {
     sv: [`— Lukasevangeliet 19:37–38`],
@@ -5931,7 +6168,7 @@ author: {
 // '207
 {
   quote: {
-    sv: [`“Jesus gick ut som vanligt till Olivberget, och lärjungarna följde honom. När han kom dit sade han till dem: ’Be att ni inte kommer i frestelse.’”`],
+    sv: [`“Sedan gick han ut ur staden och begav sig som vanligt till Olivberget, och lärjungarna följde med. När han kom dit, sade han till dem: ’Be att ni inte utsätts för prövning.’”`],
     en: [`“Jesus went out as usual to the Mount of Olives, and his disciples followed him. On reaching the place, he said to them, ‘Pray that you will not fall into temptation.’”`]
   },
   author: {
@@ -5941,11 +6178,20 @@ author: {
   image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
   credit: "Petra Nesti (Pexels.com)"
 },
+
 // '208
 {
   quote: {
-    sv: [`“Vi har dömts med rätta, vi får vad vi har förtjänat. Men han har inte gjort något ont.” Och han sade: “Jesus, tänk på mig när du kommer med ditt rike.” Jesus svarade: “Sannerligen, redan i dag skall du vara med mig i paradiset.”`],
-    en: [`“We are punished justly, for we are getting what our deeds deserve. But this man has done nothing wrong.” Then he said, “Jesus, remember me when you come into your kingdom.” Jesus answered him, “Truly I tell you, today you will be with me in paradise.”`]
+    sv: [`“Vi har dömts med rätta, vi får vad vi har förtjänat. Men han har inte gjort något ont.’
+
+        Och han sade: ‘Jesus, tänk på mig, när du kommer med ditt rike.’
+
+        Jesus svarade: ‘Sannerligen, redan i dag skall du vara med mig i paradiset.’”`],
+    en: [`“We are punished justly, for we are getting what our deeds deserve. But this man has done nothing wrong.”
+
+        Then he said, ‘Jesus, remember me when you come into your kingdom.’
+
+        Jesus answered him, ‘Truly I tell you, today you will be with me in paradise.’”`]
   },
   author: {
     sv: [`— Lukasevangeliet 23:41–43`],
@@ -5958,7 +6204,7 @@ author: {
 // '209
 {
   quote: {
-    sv: [`“Tidigt nästa morgon, medan det ännu var mörkt, gick han bort till en enslig plats, och där bad han.”`],
+    sv: [`“Tidigt nästa morgon, medan det ännu var mörkt, gav han sig av därifrån och gick bort till en enslig plats, och där bad han.”`],
     en: [`“Very early in the morning, while it was still dark, Jesus got up, left the house and went off to a solitary place, where he prayed.”`]
   },
   author: {
@@ -5972,8 +6218,8 @@ author: {
 // '210
 {
   quote: {
-    sv: [`“Fylld av medlidande räckte Jesus ut handen, rörde vid honom och sade: ’Jag vill. Bli ren!’”`],
-    en: [`“Filled with compassion, Jesus reached out his hand and touched the man. ‘I am willing,’ he said. ‘Be clean!’”`]
+    sv: [`“Jesus greps av vrede, sträckte ut handen och tog honom och sade: ’Jag vill. Bli ren!’ Och genast försvann spetälskan, och han blev ren.”`],
+    en: [`“Jesus was indignant. He reached out his hand and touched the man. ‘I am willing,’ he said. ‘Be clean!’”`]
   },
   author: {
     sv: [`— Markusevangeliet 1:41`],
@@ -5986,7 +6232,7 @@ author: {
 // '211
 {
   quote: {
-    sv: [`“Jesus sade till dem: ’Ni får veta hemligheten om Guds rike, men för dem utanför sker allting i liknelser.’”`],
+    sv: [`“Han sade: ’Ni har fått veta Guds rikes hemlighet, men för dessa som står utanför är allt bara liknelser.’”`],
     en: [`“He told them, ‘The secret of the kingdom of God has been given to you. But to those on the outside everything is said in parables.’”`]
   },
   author: {
@@ -6000,12 +6246,20 @@ author: {
 // '212
 {
   quote: {
-    sv: [`“Han vaknade och talade strängt till vinden och sade till sjön: ’Tig! Var tyst!’ Då lade sig vinden, och det blev alldeles stilla.”`],
-    en: [`“He got up, rebuked the wind and said to the waves, ‘Quiet! Be still!’ Then the wind died down and it was completely calm.”`]
+    sv: [`“Han vaknade och hutade åt vinden och sade till sjön: »Tig! Håll tyst!« Vinden lade sig och det blev alldeles lugnt.
+
+      Och han sade till dem: »Varför är ni rädda? Har ni ännu ingen tro?«
+
+      Då greps de av stor fruktan och sade till varandra: »Vem är han? Till och med vinden och sjön lyder honom.”`],
+    en: [`“He got up, rebuked the wind and said to the waves, ‘Quiet! Be still!’ Then the wind died down and it was completely calm.
+
+      He said to his disciples, ‘Why are you so afraid? Do you still have no faith?’
+
+      They were terrified and asked each other, ‘Who is this? Even the wind and the waves obey him!’”`]
   },
   author: {
-    sv: [`— Markusevangeliet 4:39`],
-    en: [`— Mark 4:39`]
+    sv: [`— Markusevangeliet 4:39-41`],
+    en: [`— Mark 4:39-41`]
   },
   image: "jul_pexels-petra-nesti-1766376-20303235.jpg",
   credit: "Petra Nesti (Pexels.com)"
@@ -6015,12 +6269,12 @@ author: {
 // '213
 {
   quote: {
-    sv: [`“Men Jesus sade genast till dem: ’Var lugna, det är jag. Var inte rädda.’”`],
-    en: [`“But Jesus immediately said to them: ‘Take courage! It is I. Don’t be afraid.’”`]
+    sv: [`“Stå kvar vid det som du har lärt mig och fått visshet om. Kom ihåg vilka lärare du har haft och att du ända sedan dina barnaår är hemma i de heliga skrifterna; de förmår ge dig den kunskap du behöver för att bli räddad genom tron på Jesus Kristus. Varje bok i skriften är inspirerad av Gud och till nytta när man undervisar, vederlägger, vägleder och fostrar till ett rättfärdigt liv, så att den som tillhör Gud blir fri från sina brister och rustad för alla slags goda gärningar.”`],
+    en: [`“But as for you, continue in what you have learned and have become convinced of, because you know those from whom you learned it, and how from infancy you have known the Holy Scriptures, which are able to make you wise for salvation through faith in Christ Jesus. All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.”`]
   },
   author: {
-    sv: [`— Markusevangeliet 6:50`],
-    en: [`— Mark 6:50`]
+    sv: [`— 2 Timotheusbrevet 3:14-17`],
+    en: [`— 2 Timothy 3:14-17`]
   },
   image: "aug_pexels-pixabay-462162.jpg",
   credit: "Pixabay (Pexels.com)"
@@ -6029,12 +6283,12 @@ author: {
 // '214
 {
   quote: {
-    sv: [`“Därför säger jag er: Allt vad ni ber om i er bön, tro att ni har fått det, så skall det bli ert.”`],
-    en: [`“Therefore I tell you, whatever you ask for in prayer, believe that you have received it, and it will be yours.”`]
+    sv: [`“Därför säger jag er: tro att ni ska få allt det ni ber om i er bön, då blir det så. Och när ni ber ska ni förlåta dem som ni har något otalt med. Då skall också er fader i himlen förlåta er era överträdelser.”`],
+    en: [`“Therefore I tell you, whatever you ask for in prayer, believe that you have received it, and it will be yours. And when you stand praying, if you hold anything against anyone, forgive them, so that your Father in heaven may forgive you your sins.”`]
   },
   author: {
-    sv: [`— Markusevangeliet 11:24`],
-    en: [`— Mark 11:24`]
+    sv: [`— Markusevangeliet 11:24-25`],
+    en: [`— Mark 11:24-25`]
   },
   image: "aug_pexels-pixabay-462162.jpg",
   credit: "Pixabay (Pexels.com)"
@@ -6043,12 +6297,12 @@ author: {
 // '215
 {
   quote: {
-    sv: [`“Men han sade till dem: ’Var inte förskräckta! Ni söker Jesus från Nasaret, den korsfäste. Han har uppstått, han är inte här. Se, här är platsen där de lade honom.’”`],
-    en: [`“Don’t be alarmed,” he said. “You are looking for Jesus the Nazarene, who was crucified. He has risen! He is not here. See the place where they laid him.”`]
+    sv: [`“Mina kära, sätt inte tro till alla andar utan pröva om de kommer från Gud, ty många falska profeter har gått ut i världen.”`],
+    en: [`“Dear friends, do not believe every spirit, but test the spirits to see whether they are from God, because many false prophets have gone out into the world.”`]
   },
   author: {
-    sv: [`— Markusevangeliet 16:6`],
-    en: [`— Mark 16:6`]
+    sv: [`— 1 Johannesbrevet 4:1`],
+    en: [`— 1 John 4:1`]
   },
   image: "aug_pexels-pixabay-462162.jpg",
   credit: "Pixabay (Pexels.com)"
@@ -6057,7 +6311,7 @@ author: {
 // '216
 {
   quote: {
-    sv: [`“Ni är jordens salt. Men om saltet mister sin sälta, hur skall man då få det salt igen? Det duger inte till annat än att kastas bort och trampas ner av människorna.”`],
+    sv: [`“Ni är jordens salt. Men om saltet mister sin kraft, hur skall man få det salt igen? Det duger inte till annat än att kastas bort och trampas av människorna.”`],
     en: [`“You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again? It is no longer good for anything, except to be thrown out and trampled underfoot.”`]
   },
   author: {
@@ -6071,7 +6325,7 @@ author: {
 // '217
 {
   quote: {
-    sv: [`“Ni är världens ljus. En stad som ligger på ett berg kan inte döljas.”`],
+    sv: [`“Ni är världens ljus. En stad uppe på ett berg kan inte döljas.”`],
     en: [`“You are the light of the world. A town built on a hill cannot be hidden.”`]
   },
   author: {
@@ -6081,10 +6335,13 @@ author: {
   image: "aug_pexels-pixabay-462162.jpg",
   credit: "Pixabay (Pexels.com)"
 },
+
+
+
 // '218
 {
   quote: {
-    sv: [`“Så ska ni be: Vår Far i himlen, låt ditt namn bli helgat. Låt ditt rike komma. Låt din vilja ske, på jorden som i himlen. Ge oss i dag vårt dagliga bröd. Och förlåt oss våra skulder, så som vi förlåter dem som står i skuld till oss. Och för oss inte in i frestelse, utan fräls oss från det onda.”`],
+    sv: [`“Så skall ni be: Vår Fader, du som är i himlen, låt ditt namn bli helgat. Låt ditt rike komma. Låt din vilja ske, på jorden så som i himlen. Ge oss i dag vårt bröd för dagen som kommer. Och förlåt oss våra skulder, liksom vi har förlåtit dem som står i skuld till oss. Och utsätt oss inte för prövning, utan rädda oss från det onda.”`],
     en: [`“This, then, is how you should pray: Our Father in heaven, hallowed be your name. Your kingdom come, your will be done, on earth as it is in heaven. Give us today our daily bread. And forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us from the evil one.”`]
   },
   author: {
@@ -6098,7 +6355,7 @@ author: {
 // '219
 {
   quote: {
-    sv: [`“Därför säger jag er: Bekymra er inte för ert liv, vad ni ska äta eller dricka, inte heller för er kropp, vad ni ska ha på er. Är inte livet mer än maten och kroppen mer än kläderna?”`],
+    sv: [`“Därför säger jag er: Bekymra er inte för mat och dryck att leva av eller för kläder att sätta på kroppen. Är inte livet mer än födan och kroppen mer än kläderna?”`],
     en: [`“Therefore I tell you, do not worry about your life, what you will eat or drink; or about your body, what you will wear. Is not life more than food, and the body more than clothes?”`]
   },
   author: {
@@ -6140,7 +6397,7 @@ author: {
 // '222
 {
   quote: {
-    sv: [`“Allt vad ni vill att människorna ska göra för er, det ska ni också göra för dem. Detta är lagen och profeterna.”`],
+    sv: [`“Allt vad ni vill att människorna ska göra för er, det ska ni också göra för dem. Det är vad lagen och profeterna säger.”`],
     en: [`“So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets.”`]
   },
   author: {
@@ -6150,6 +6407,7 @@ author: {
   image: "aug_pexels-pixabay-462162.jpg",
   credit: "Pixabay (Pexels.com)"
 },
+
 // '223
 {
   quote: {
@@ -6181,7 +6439,7 @@ author: {
 // '225
 {
   quote: {
-    sv: [`“Säljs inte två sparvar för ett öre? Och ändå faller ingen av dem till marken utan er Faders vilja. På er är till och med alla hårstrån räknade. Var alltså inte rädda. Ni är mer värda än många sparvar.”`],
+    sv: [`“Säljs inte två sparvar för en kopparslant? Men ingen av dem till marken utan att er Faders vet om det. Och på er är till och med hårstråna räknade. Var alltså inte rädda. Ni är mer värda än aldrig så många sparvar.”`],
     en: [`“Are not two sparrows sold for a penny? Yet not one of them will fall to the ground outside your Father’s care. And even the very hairs of your head are all numbered. So don’t be afraid; you are worth more than many sparrows.”`]
   },
   author: {
@@ -6195,7 +6453,7 @@ author: {
 // '226
 {
   quote: {
-    sv: [`“Den som hör ordet och förstår det, han bär frukt: hundrafalt, sextiofalt och trettiofalt.”`],
+    sv: [`“Men sådden i den goda jorden, det är den som hör ordet och förstår, och han bär frukt: hundrafalt och sextiofalt och trettiofalt.”`],
     en: [`“The one who hears the word and understands it produces a crop, yielding a hundred, sixty or thirty times what was sown.”`]
   },
   author: {
@@ -6219,10 +6477,11 @@ author: {
   image: "aug_pexels-pixabay-462162.jpg",
   credit: "Pixabay (Pexels.com)"
 },
+
 // '228
 {
   quote: {
-    sv: [`“Lyssna och förstå: Det är inte det som går in i munnen som gör människan oren, utan det som går ut ur munnen — det gör människan oren.”`],
+    sv: [`“Sedan kallade han till sig folket och sade: Lyssna och försök att förstå. Det är inte det som kommer in i munnen som gör människan oren. Men det som går ut ur munnen, det gör människan oren.”`],
     en: [`“Listen and understand: What goes into someone’s mouth does not defile them, but what comes out of their mouth, that is what defiles them.”`]
   },
   author: {
@@ -6236,7 +6495,7 @@ author: {
 // '229
 {
   quote: {
-    sv: [`“Jag är inte sänd till andra än de förlorade fåren av Israels folk.”`],
+    sv: [`“Jag har inte blivit sänd till andra än de förlorade fåren av Israels folk.”`],
     en: [`“I was sent only to the lost sheep of Israel.”`]
   },
   author: {
@@ -6250,8 +6509,8 @@ author: {
 // '230
 {
   quote: {
-    sv: [`“Om någon vill följa mig, skall han förneka sig själv och ta sitt kors och följa mig. Den som vill rädda sitt liv skall mista det, men den som mister sitt liv för min skull skall finna det.”`],
-    en: [`“Whoever wants to be my disciple must deny themselves and take up their cross and follow me. For whoever wants to save their life will lose it, but whoever loses their life for me will find it.”`]
+    sv: [`“Sedan sade Jesus till lärljungarna. Om någon vill gå i mina spår, måste han förneka sig själv och ta sitt kors och följa mig. Ty den som vill rädda sitt liv skall mista det, men den som mister sitt liv för min skull, han skall finna det.”`],
+    en: [`“Then Jesus said to his disciples, “Whoever wants to be my disciple must deny themselves and take up their cross and follow me. For whoever wants to save their life will lose it, but whoever loses their life for me will find it.”`]
   },
   author: {
     sv: [`— Matteusevangeliet 16:24–25`],
@@ -6264,8 +6523,8 @@ author: {
 // '231
 {
   quote: {
-    sv: [`“Om ni har tro som ett senapskorn, skall ni säga till detta berg: Flytta dig härifrån dit bort, och det skall flytta sig. Ingenting skall vara omöjligt för er.”`],
-    en: [`“If you have faith as small as a mustard seed, you can say to this mountain, ‘Move from here to there,’ and it will move. Nothing will be impossible for you.”`]
+    sv: [`“Han svarade: Därför att er tro är svag. Sannerligen, om ni har tro som ett senapskorn, kan ni säga till det här berget: Flytta dig dit bort, och det kommer att flytta sig. Ingenting blir omöjligt för er.”`],
+    en: [`“He replied, “Because you have so little faith. Truly I tell you, if you have faith as small as a mustard seed, you can say to this mountain, ‘Move from here to there,’ and it will move. Nothing will be impossible for you.”`]
   },
   author: {
     sv: [`— Matteusevangeliet 17:20`],
@@ -6278,16 +6537,17 @@ author: {
 // '232
 {
   quote: {
-    sv: [`“Den som ödmjukar sig som detta barn, han är den störste i himmelriket.”`],
-    en: [`“Whoever humbles himself like this child is the greatest in the kingdom of heaven.”`]
+    sv: [`“De som gör sig själva små som det här barnet är störst i himmelriket. Och den som i mitt namn tar emot ett sådant barn tar emot mig.”`],
+    en: [`“Therefore, whoever takes the lowly position of this child is the greatest in the kingdom of heaven. And whoever welcomes one such child in my name welcomes me.”`]
   },
   author: {
-    sv: [`— Matteusevangeliet 18:4`],
-    en: [`— Matthew 18:4`]
+    sv: [`— Matteusevangeliet 18:4-5`],
+    en: [`— Matthew 18:4-5`]
   },
   image: "aug_pexels-pixabay-462162.jpg",
   credit: "Pixabay (Pexels.com)"
 },
+
 // '233
 {
   quote: {
@@ -6333,12 +6593,36 @@ author: {
 // '236
 {
   quote: {
-    sv: [`“En man kom fram till Jesus och frågade: ’Mästare, vad skall jag göra för att få evigt liv?’ Jesus svarade: ’Om du vill gå in i livet, håll buden.’ Mannen sade: ’Vilka?’ Jesus svarade: ’Du skall inte mörda. Du skall inte begå äktenskapsbrott. Du skall inte stjäla. Du skall inte vittna falskt. Visa aktning för din far och din mor, och älska din nästa som dig själv.’ Mannen sade: ’Allt detta har jag hållit. Vad fattas mig?’ Jesus svarade: ’Om du vill vara fullkomlig, gå och sälj allt du har och ge åt de fattiga. Då får du en skatt i himlen. Kom sedan och följ mig.’”`],
-    en: [`“A man came up to Jesus and asked, ‘Teacher, what good thing must I do to get eternal life?’ Jesus replied, ‘If you want to enter life, keep the commandments.’ ‘Which ones?’ he inquired. Jesus replied, ‘You shall not murder, you shall not commit adultery, you shall not steal, you shall not give false testimony, honor your father and mother, and love your neighbor as yourself.’ ‘All these I have kept,’ the young man said. ‘What do I still lack?’ Jesus answered, ‘If you want to be perfect, go, sell your possessions and give to the poor, and you will have treasure in heaven. Then come, follow me.’”`]
+    sv: [`“Då kom en man kom fram till honom och frågade: ’Mästare, vad skall jag göra för gott för att få evigt liv?’
+
+        Jesus sade: Varför frågar du mig om vad som är gott? Det finns bara en som är god. Men vill du gå in i livet, så håll budorden.’
+
+        — ’Vilka?’ frågade han,
+
+        och Jesus svarade: ’Du skall inte dräpa. Du skall inte bryta ett äktenskap. Du skall inte stjäla. Du skall inte vittna falskt. Visa aktning för din far och din mor, och Du skall älska din nästa som dig själv.’
+
+        Då sade den unge mannen: ’Allt detta har jag hållit. Vad är det som fattas?’
+
+        Jesus svarade: ’Om du vill bli fullkomlig, gå och sälj allt du har och ge åt de fattiga. Då får du en skatt i himlen. Kom sedan och följ mig.’
+
+        När ynglingen hörde svaret gick han sin väg bedrövad, för han ägde mycket.”`],
+    en: [`“Just then a man came up to Jesus and asked, “Teacher, what good thing must I do to get eternal life?”
+
+        “Why do you ask me about what is good?” Jesus replied. “There is only One who is good. If you want to enter life, keep the commandments.”
+
+        “Which ones?” he inquired.
+
+        Jesus replied, “‘You shall not murder, you shall not commit adultery, you shall not steal, you shall not give false testimony, honor your father and mother,’ and ‘love your neighbor as yourself.’[b]”
+
+        “All these I have kept,” the young man said. “What do I still lack?”
+
+        Jesus answered, “If you want to be perfect, go, sell your possessions and give to the poor, and you will have treasure in heaven. Then come, follow me.”
+
+        When the young man heard this, he went away sad, because he had great wealth.”`]
   },
   author: {
-    sv: [`— Matteusevangeliet 19:16–21`],
-    en: [`— Matthew 19:16–21`]
+    sv: [`— Matteusevangeliet 19:16–22`],
+    en: [`— Matthew 19:16–22`]
   },
   image: "aug_pexels-pixabay-462162.jpg",
   credit: "Pixabay (Pexels.com)"
@@ -6357,6 +6641,7 @@ author: {
   image: "aug_pexels-pixabay-462162.jpg",
   credit: "Pixabay (Pexels.com)"
 },
+
 // '238
 {
   quote: {
@@ -6374,8 +6659,8 @@ author: {
 // '239
 {
   quote: {
-    sv: [`“Ni vet att härskarna är herrar över sina folk och att furstarna har makten över folken. Men så är det inte hos er. Den som vill vara stor bland er skall vara de andras tjänare, och den som vill vara den främste bland er skall vara de andras slav. Så har Människosonen inte kommit för att bli tjänad utan för att tjäna och ge sitt liv till lösen för många.”`],
-    en: [`“You know that the rulers of the Gentiles lord it over them, and their high officials exercise authority over them. Not so with you. Instead, whoever wants to become great among you must be your servant, and whoever wants to be first must be your slave—just as the Son of Man did not come to be served, but to serve, and to give his life as a ransom for many.”`]
+    sv: [`“Men Jesus kallade till sig dem och sade: Ni vet att härskarna är herrar över sina folk och att furstarna har makten över folken. Men så är det inte hos er. Den som vill vara stor bland er skall vara de andras tjänare, och den som vill vara den förste bland er skall vara de andras slav. Så har Människosonen inte kommit för att bli tjänad utan för att tjäna och ge sitt liv till lösen för många.”`],
+    en: [`“Jesus called them together and said, “You know that the rulers of the Gentiles lord it over them, and their high officials exercise authority over them. Not so with you. Instead, whoever wants to become great among you must be your servant, and whoever wants to be first must be your slave— just as the Son of Man did not come to be served, but to serve, and to give his life as a ransom for many.”`]
   },
   author: {
     sv: [`— Matteusevangeliet 20:25–28`],
@@ -6388,7 +6673,7 @@ author: {
 // '240
 {
   quote: {
-    sv: [`“Allt vad ni ber om i er bön, tro att ni har fått det, så skall det bli ert.”`],
+    sv: [`“Allt vad ni ber om i era böner skall ni få, om nu tror.”`],
     en: [`“If you believe, you will receive whatever you ask for in prayer.”`]
   },
   author: {
@@ -6402,8 +6687,28 @@ author: {
 // '241
 {
   quote: {
-    sv: [`“En man hade två söner. Han gick till den första och sade: ’Min son, gå och arbeta i vingården i dag.’ Han svarade: ’Jag vill inte.’ Men sedan ångrade han sig och gick. Fadern gick till den andre och sade samma sak. Han svarade: ’Ja, herre’, men han gick inte. Vem av de två gjorde faderns vilja?”`],
-    en: [`“There was a man who had two sons. He went to the first and said, ‘Son, go and work today in the vineyard.’ ‘I will not,’ he answered, but later he changed his mind and went. Then the father went to the other son and said the same thing. He answered, ‘I will, sir,’ but he did not go. Which of the two did what his father wanted?”`]
+    sv: [`“Vad säger ni om det här: En man hade två söner. Han vände sig till den ene och sade: ‘Min son, gå ut och arbeta i vingården i dag.’
+
+        Han svarade: ‘Nej, det vill jag inte’, men sedan ångrade han sig och gick.
+
+        Mannen vände sig till den andre och sade samma sak. Han svarade: ‘Jag skall gå herre’, men han gick inte.
+
+        Vilken av de båda gjorde som fadern ville?
+
+        De svarade: Den förste.
+
+        Då sade Jesus till dem: Sannerligen tullindrivare och horor skall komma före er till Guds rike.”`],
+    en: [`“What do you think? There was a man who had two sons. He went to the first and said, ‘Son, go and work today in the vineyard.’
+
+        “‘I will not,’ he answered, but later he changed his mind and went.
+
+        “Then the father went to the other son and said the same thing. He answered, ‘I will, sir,’ but he did not go.
+
+        “Which of the two did what his father wanted?”
+
+        “The first,” they answered.
+
+        Jesus said to them, “Truly I tell you, the tax collectors and the prostitutes are entering the kingdom of God ahead of you.”`]
   },
   author: {
     sv: [`— Matteusevangeliet 21:28–31`],
@@ -6416,8 +6721,8 @@ author: {
 // '242
 {
   quote: {
-    sv: [`“Har ni aldrig läst vad Gud sade till er: ’Jag är Abrahams Gud och Isaks Gud och Jakobs Gud’? Han är inte de dödas Gud utan de levandes.”`],
-    en: [`“Have you not read what God said to you, ‘I am the God of Abraham, the God of Isaac, and the God of Jacob’? He is not the God of the dead but of the living.”`]
+    sv: [`“Och vad de dödas uppståndelse beträffar, så har ni väl läst vad Gud har sagt till er: ’Jag är Abrahams Gud och Isaks Gud och Jakobs Gud’. Gud är inte en gud för de dödada utan för levande.”`],
+    en: [`“But about the resurrection of the dead—have you not read what God said to you, ‘I am the God of Abraham, the God of Isaac, and the God of Jacob’? He is not the God of the dead but of the living.”`]
   },
   author: {
     sv: [`— Matteusevangeliet 22:31–32`],
@@ -6431,7 +6736,7 @@ author: {
 // '243
 {
   quote: {
-    sv: [`“Mästare, vilket är det största budet i lagen?” Han svarade: “Du skall älska Herren din Gud med hela ditt hjärta och med hela din själ och med hela ditt förstånd. Det är det största och första budet. Sedan kommer ett av samma slag: Du skall älska din nästa som dig själv. På dessa två bud hänger hela lagen och profeterna.”`],
+    sv: [`“Mästare, vilket är det största budet i lagen?” Han svarade honom: “Du skall älska Herren din Gud, med hela ditt hjärta och med hela din själ och med hela ditt förstånd. Det är det största och första budet. Sedan kommer ett av samma slag: Du skall älska din nästa som dig själv. På dessa båda bud vilar hela lagen och profeterna.”`],
     en: [`“Teacher, which is the greatest commandment in the Law?” Jesus replied: “‘Love the Lord your God with all your heart and with all your soul and with all your mind.’ This is the first and greatest commandment. And the second is like it: ‘Love your neighbor as yourself.’ All the Law and the Prophets hang on these two commandments.”`]
   },
   author: {
@@ -6459,7 +6764,7 @@ author: {
 // '245
 {
   quote: {
-    sv: [`“Håll er därför vakna, ty ni vet inte vilken dag er Herre kommer. Tänk på detta: om husets herre visste när på natten tjuven kom, skulle han hålla sig vaken och inte låta någon bryta sig in i hans hus. Var därför beredda också ni, ty i en stund när ni inte väntar det kommer Människosonen.”`],
+    sv: [`“Håll er därför vakna, ty ni vet inte vilken dag er Herre kommer. Det förstår ni ju att om husägaren visste vid vilken tid på natten tjuven kom, skulle han hålla sig vaken och hindra honom från att bryta sig in i huset. Därför måste också ni vara beredda, ty när ni minst anar det, då kommer Människosonen.”`],
     en: [`“Therefore keep watch, because you do not know on what day your Lord will come. But understand this: if the owner of the house had known at what time of night the thief was coming, he would have kept watch and would not have let his house be broken into. So you also must be ready, because the Son of Man will come at an hour when you do not expect him.”`]
   },
   author: {
@@ -6473,7 +6778,7 @@ author: {
 // '246
 {
   quote: {
-    sv: [`“Jag var hungrig, och ni gav mig att äta. Jag var törstig, och ni gav mig att dricka. Jag var främling, och ni tog emot mig. Jag var naken, och ni gav mig kläder. Jag var sjuk, och ni besökte mig. Jag satt i fängelse, och ni kom till mig.”`],
+    sv: [`“Jag var hungrig, och ni gav mig att äta. Jag var törstig, och ni gav mig att dricka. Jag var hemlös, och ni tog emot mig. Jag var naken, och ni gav mig kläder. Jag var sjuk, och ni såg till mig. Jag satt i fängelse, och ni besökte mig.”`],
     en: [`“For I was hungry and you gave me something to eat, I was thirsty and you gave me something to drink, I was a stranger and you invited me in, I needed clothes and you clothed me, I was sick and you looked after me, I was in prison and you came to visit me.”`]
   },
   author: {
@@ -6487,7 +6792,7 @@ author: {
 // '247
 {
   quote: {
-    sv: [`“Medan Jesus var i Betania hos Simon den spetälske, kom en kvinna fram till honom med en alabasterflaska dyrbar olja och hällde den över hans huvud där han låg till bords. När lärjungarna såg det blev de upprörda och sade: ’Vilket slöseri! Den kunde ha sålts för mycket pengar och getts åt de fattiga.’ Jesus märkte det och sade till dem: ’Varför oroar ni kvinnan? Hon har gjort en god gärning mot mig. Hon har hällt denna olja över min kropp i förväg för min begravning. Sannerligen, överallt i världen där detta evangelium förkunnas, skall man också berätta vad hon gjorde och komma ihåg henne.’”`],
+    sv: [`“Medan Jesus befann sig i Betania hos Simon den spetälske, kom en kvinna fram till honom med en flaska dyrbar balsam och hällde ut den över hans huvud, där han låg till bords. Då blev lärjungarna förargade och sade: ’Vilket slöseri! För det där hade man ju kunnat få mycket pengar och ge åt de fattiga.’ Jesus märkte det och sade till dem: ’Varför gör ni kvinnan ledsen? Hon har gjort en god gärning mot mig. De fattiga har ni alltid hos er, men mig har ni inte alltid. När hon hällde denna balsam över min kropp, förberedde hon min begravning. Sannerligen, överallt i världen där evangeliet förkunnas, skall man också berätta vad hon gjorde och komma ihåg henne.’”`],
     en: [`“While Jesus was in Bethany at the home of Simon the Leper, a woman came to him with an alabaster jar of very expensive perfume, which she poured on his head as he was reclining at the table. When the disciples saw this, they were indignant. ‘Why this waste?’ they asked. ‘This perfume could have been sold at a high price and the money given to the poor.’ Aware of this, Jesus said to them, ‘Why are you bothering this woman? She has done a beautiful thing to me. When she poured this perfume on my body, she did it to prepare me for burial. Truly I tell you, wherever this gospel is preached throughout the world, what she has done will also be told, in memory of her.’”`]
   },
   author: {
@@ -6497,6 +6802,7 @@ author: {
   image: "sep_jahoo_clouseau_pexels.jpg",
   credit: "Jahoo Clouseau (Pexels.com)"
 },
+
 // '248
 {
   quote: {
@@ -6514,7 +6820,7 @@ author: {
 // '249
 {
   quote: {
-    sv: [`“Gläd dig inte över mig, du min fiende! Ty om jag än har fallit, så reser jag mig igen. Om jag än sitter i mörker, är Herren mitt ljus.”`],
+    sv: [`“Gläds inte över mig, ni mina fiendeer. Om jag än har fallit, skall jag dock stå upp igen, om jag än sitter i mörkret, är dock Herren mitt ljus.”`],
     en: [`“Do not gloat over me, my enemy! Though I have fallen, I will rise. Though I sit in darkness, the Lord will be my light.”`]
   },
   author: {
@@ -7651,7 +7957,7 @@ author: {
 // '305
 {
   quote: {
-    sv: [`“Lägg därför bort allt slags ondska, falskhet och förställning, avudnd och förtal. Som nyfödda barn skall ni längta efter den rena, andliga mjöljken, för att växa genom den och blio räddade. Ni har ju fått smaka Herrens godhet.”`],
+    sv: [`“Lägg därför bort allt slags ondska, falskhet och förställning, avudnd och förtal. Som nyfödda barn skall ni längta efter den rena, andliga mjölken, för att växa genom den och bli räddade. Ni har ju fått smaka Herrens godhet.”`],
     en: [`“Therefore, rid yourselves of all malice and all deceit, hypocrisy, envy, and slander of every kind. Like newborn babies, crave pure spiritual milk, so that by it you may grow up in your salvation, now that you have tasted that the Lord is good.”`]
   },
   author: {
@@ -8258,7 +8564,7 @@ author: {
       och säg: 'Fräls oss, du vår frälsningens Gud,
         församla oss och rädda oss från hedningarna,
       så att vi får prisa ditt heliga namn
-        och berämma oss av ditt lov'.
+        och berömma oss av ditt lov'.
       Lovad vare Herren, Israels Gud,
         från evighet till evighet!
 
@@ -8357,7 +8663,7 @@ author: {
 
 {
   quote: {
-    sv: [`“Inte får tjänaren något tackför att han gör vad han är ålagd. På samma sätt med er: när ni har gjort allt som åligger er, skall ni säga: Vi är odugliga tjänare, vi har bara gjort vad vi är skyldiga att göra.”`],
+    sv: [`“Inte får tjänaren något tack för att han gör vad han är ålagd. På samma sätt med er: när ni har gjort allt som åligger er, skall ni säga: Vi är odugliga tjänare, vi har bara gjort vad vi är skyldiga att göra.”`],
     en: [`“Will he thank the servant because he did what he was told to do? So you also, when you have done everything you were told to do, should say, ‘We are unworthy servants; we have only done our duty.”`]
   },
   author: {
@@ -8441,7 +8747,7 @@ author: {
 // '343
 {
   quote: {
-    sv: [`“Då sade han till mig: "Profetera över dessa ben och säg till dem: Ni förtorkade ben, hör Herrens ord: Så säger Herren, Herren till dess ben: Se , jag skall låta ande komma in i er, så att ni åter blir levande”`],
+    sv: [`“Då sade han till mig: "Profetera över dessa ben och säg till dem: Ni förtorkade ben, hör Herrens ord: Så säger Herren, Herren till dessa ben: Se , jag skall låta ande komma in i er, så att ni åter blir levande”`],
     en: [`“Then he said to me, “Prophesy to these bones and say to them, ‘Dry bones, hear the word of the Lord! This is what the Sovereign Lord says to these bones: I will make breath enter you, and you will come to life.”`]
   },
   author: {
@@ -8525,7 +8831,7 @@ author: {
 // '348
 {
   quote: {
-    sv: [`“Men när Guds, vår frälsares, godhet och kärlek till människorna blev uppenbara, räddade han oss — inte därför att vi gjort några rättfärdiga gärningar, utan därför att han är barmhärtig — och han gjorde det med det vad som återföder och förnyar genom den heliga anden. Genom Jesus Kristus, vår frälsare, har han låtit Anden strömma över oss, för att vi genom Guds nåd skall bli rättfärdiga och, så som det är vårt hopp, vinna evigt liv.”`],
+    sv: [`“Men när Guds, vår frälsares, godhet och kärlek till människorna blev uppenbara, räddade han oss — inte därför att vi gjort några rättfärdiga gärningar, utan därför att han är barmhärtig — och han gjorde det med det bad som återföder och förnyar genom den heliga anden. Genom Jesus Kristus, vår frälsare, har han låtit Anden strömma över oss, för att vi genom Guds nåd skall bli rättfärdiga och, så som det är vårt hopp, vinna evigt liv.”`],
     en: [`“ But when the kindness and love of God our Savior appeared, he saved us, not because of righteous things we had done, but because of his mercy. He saved us through the washing of rebirth and renewal by the Holy Spirit, whom he poured out on us generously through Jesus Christ our Savior, so that, having been justified by his grace, we might become heirs having the hope of eternal life.”`]
   },
   author: {
@@ -8543,7 +8849,7 @@ author: {
         då tänkte jag på Herren,
       och min bön kom till dig,
         i ditt heliga tempel.
-      De som håller sig till fåfänglig avgudar,
+      De som håller sig till fåfängliga avgudar,
         de låter sin nåds Gud fara.”`],
     en: [`“Those who cling to worthless idols
         turn away from God’s love for them.
@@ -8729,7 +9035,7 @@ author: {
 // '358
 {
   quote: {
-    sv: [`“För full Tionde till förrådshuset, så att i mitt hus fins mat, och pröva så hurdan jag sedan blir, säger Herren Sebaot. Förvisso skall jag då öppna himmelens fönster över er och utgjuta över er riklig välsignelse.”`],
+    sv: [`“För full Tionde till förrådshuset, så att i mitt hus finns mat, och pröva så hurdan jag sedan blir, säger Herren Sebaot. Förvisso skall jag då öppna himmelens fönster över er och utgjuta över er riklig välsignelse.”`],
     en: [`“Bring the whole tithe into the storehouse, that there may be food in my house. Test me in this,” says the Lord Almighty, “and see if I will not throw open the floodgates of heaven and pour out so much blessing that there will not be room enough to store it.”`]
   },
   author: {
@@ -8773,7 +9079,7 @@ author: {
 // '361
 {
   quote: {
-    sv: [`“Låt Kristi frid råda i era hjärtan, den som ni kallades till som lemmar i en och samma kropp. Visa er tacksamhet. Låt Kristi ord bo hos er i hela sin rikedom och med all sin vishet. Lär och vägled varandra, med psalmer, hymner och andlig sång i kraft av nåden, och sjung Guds lov i era hjärtan. Låt allt vad ni gör i ord och handling ske i herren Jesu namn och tacka fadern genom honom..”`],
+    sv: [`“Låt Kristi frid råda i era hjärtan, den som ni kallades till som lemmar i en och samma kropp. Visa er tacksamhet. Låt Kristi ord bo hos er i hela sin rikedom och med all sin vishet. Lär och vägled varandra, med psalmer, hymner och andlig sång i kraft av nåden, och sjung Guds lov i era hjärtan. Låt allt vad ni gör i ord och handling ske i herren Jesu namn och tacka fadern genom honom.”`],
     en: [`“May the Lord show us His works, and may He preserve His glory over us. May the Lord give us His favor each day and sustain our work.”`]
   },
   author: {
@@ -8787,7 +9093,7 @@ author: {
 // '362
 {
   quote: {
-    sv: [`“Min Gud skall med sin härliga rikedom i Kristus Jesusfylla alla era behov.
+    sv: [`“Min Gud skall med sin härliga rikedom i Kristus Jesus fylla alla era behov.
 
           Härligheten tillhör vår Gud och fader i evigheters evighet, amen.’”`],
     en: [`“And my God will meet all your needs according to the riches of his glory in Christ Jesus.
