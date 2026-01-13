@@ -2788,7 +2788,7 @@ const bibleQuotes = [
   // '12
   {
     quote: {
-      sv: [`“Så har vi lärt känna den kärlek som Gud har till oss och tror på den. Gud är kärlek, och den som förblir i kärleken förblir i Gud och Gud i honom.”`],
+      sv: [`“Och vi hart lärt känna den kärlek som Gud har till oss och tror på den. Gud är kärlek, och den som förblir i kärleken förblir i Gud och Gud i honom.”`],
       en: [`“And so we know and rely on the love God has for us. God is love. Whoever lives in love lives in God, and God in them.”`]
     },
     author: {
