@@ -2802,12 +2802,12 @@ const bibleQuotes = [
   // '13
   {
     quote: {
-      sv: [`“Genom honom finns ni i Kristus Jesus, som har blivit vår vishet från Gud, vår rättfärdighet, vår helighet och vår frihet.”`],
-      en: [`“It is because of him that you are in Christ Jesus, who has become for us wisdom from God—that is, our righteousness, holiness and redemption.”`]
+      sv: [`“Genom honom finns ni i Kristus Jesus, som har blivit vår vishet från Gud, vår rättfärdighet, vår helighet och vår frihet. Som det står skrivet: Den stolte skall ha sin stolthet i Herren. ”`],
+      en: [`“It is because of him that you are in Christ Jesus, who has become for us wisdom from God—that is, our righteousness, holiness and redemption. Therefore, as it is written: “Let the one who boasts boast in the Lord.”`]
     },
     author: {
-      sv: [`— 1 Korinthierbrevet 1:30`],
-      en: [`— 1 Corinthians 1:30`]
+      sv: [`— 1 Korinthierbrevet 1:30-31`],
+      en: [`— 1 Corinthians 1:30-31`]
     },
     image: "jan_pixabay_pexels.jpg",
     credit: "Pixabay (Pexels.com)"
