@@ -2816,7 +2816,7 @@ const bibleQuotes = [
   // '14
   {
     quote: {
-      sv: [`“Men var var ni frimodiga, låt inte modet falla, ty ert verk ska få sin lön.”`],
+      sv: [`“Men var ni frimodiga, låt inte modet falla, ty ert verk skall få sin lön.”`],
       en: [`“But as for you, be strong and do not give up, for your work will be rewarded.”`]
     },
     author: {
