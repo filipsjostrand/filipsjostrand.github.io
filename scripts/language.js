@@ -712,10 +712,6 @@ const filipDesc = {
   sv: `Konsult | Programmerare | Ingenjör | Läxhjälpare | Lagledare | Författare`,
   en: `Consultant | Programmer | Engineer | Homework Helper | Team Leader | Writer`,
 }
-const consultantButton = {
-  sv: `Konsultande`,
-  en: `Consulting`,
-}
 const employmentsButton = {
   sv: `Anställningar`,
   en: `Employments`,
@@ -1075,7 +1071,6 @@ const userMessagePlaceholder = {
           document.getElementById('about-por').innerHTML = aboutPor[selectedLanguage];
           document.getElementById('about-contact-info').innerHTML = aboutContactInfo[selectedLanguage];
           document.getElementById('filip-desc').innerHTML = filipDesc[selectedLanguage];
-          document.getElementById('consultant-button').innerHTML = consultantButton[selectedLanguage];
           document.getElementById('employment-button').innerHTML = employmentsButton[selectedLanguage];
           document.getElementById('edu-button').innerHTML = eduButton[selectedLanguage];
           document.getElementById('ref-button').innerHTML = refButton[selectedLanguage];
@@ -1124,6 +1119,7 @@ const userMessagePlaceholder = {
 
           changeFlagImage();
         }
+
 
 
 
