@@ -108,6 +108,9 @@
       inset 1px 1px 2px 2px rgba(0, 0, 0, 0.6);
   }
 
+    #button-container {
+        margin-left: 3%;
+    }
 
 /* Computer screens and larger (start) */
 @media screen and (min-width: 1024px) {
@@ -291,6 +294,7 @@
 
     }
     /* Mobile screens (end) */
+
 
 
 
