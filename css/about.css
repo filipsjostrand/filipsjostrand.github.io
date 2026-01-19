@@ -184,11 +184,14 @@
         align-items: center;
     }
 
+    #button-container {
+        margin-left: 3%;
+    }
+    
     #button-wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 4px;
-        margin-left: 3%;
         padding-top: 14px;
         padding-left: 5px;
         padding-right: 5px;
@@ -287,6 +290,7 @@
 
     }
     /* Mobile screens (end) */
+
 
 
 
