@@ -88,7 +88,6 @@
     font-size: 97%;
 }
 
-#consultant-button,
 #employment-button,
 #edu-button,
 #ref-button {
@@ -101,7 +100,6 @@
     color: rgb(2, 6, 17);
 }
 
-#consultant-button:active,
 #employment-button:active,
 #edu-button:active,
 #ref-button:active {
@@ -154,7 +152,6 @@
         background-size: 225px 225px; /* Adjust the size of the grid */
     }
 
-    #consultant-button,
     #employment-button,
     #edu-button,
     #ref-button {
@@ -289,4 +286,3 @@
 
     }
     /* Mobile screens (end) */
-
