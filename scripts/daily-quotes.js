@@ -5040,7 +5040,7 @@ author: {
 // '144
 {
   quote: {
-    sv: [`“Var frimodiga och oförfärade, frukta inte och var inte förskräckta för dem rädd .Ty Herren, din Gud, går själv med dig. Han skall inte lämna dig eller överge dig.”`],
+    sv: [`“Var frimodiga och oförfärade, frukta inte och var inte förskräckta för dem. Ty Herren, din Gud, går själv med dig. Han skall inte lämna dig eller överge dig.”`],
     en: [`“Be strong and courageous. Do not be afraid or terrified because of them, for the Lord your God goes with you; he will never leave you nor forsake you.”`]
   },
   author: {
