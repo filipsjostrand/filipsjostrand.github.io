@@ -2655,12 +2655,14 @@ const bibleQuotes = [
   // '5
   {
     quote: {
-      sv: [`“Ty Gud har inte gett oss modlöshetens ande, utan kraftens, kärlekens och självbehärskningens.”`],
-      en: [`“for God gave us a spirit not of fear but of power and love and self-control.”`]
+      sv: [`“Före fall går högmod i mannens hjärta,
+          och ödmjukhet går före ära”`],
+      en: [`“Before a downfall the heart is haughty,
+          but humility comes before honor.”`]
     },
     author: {
-      sv: [`— 2 Timotheosbrevet 1:7`],
-      en: [`— 2 Timothy 1:7`]
+      sv: [`— Ordspråksboken 18:12`],
+      en: [`— Proverbs 18:12`]
     },
     image: "jan_pixabay_pexels.jpg",
     credit: "Pixabay (Pexels.com)"
@@ -3451,7 +3453,7 @@ const bibleQuotes = [
       sv: [`— 2 Timotheus 1:7-10`],
       en: [`— 2 Timothy 1:7-10`]
     },
-    image: "feb_ocean_view_stijn_dikstra_pexels",
+    image: "feb_ocean_view_stijn_dikstra_pexels.jpg",
     credit: "Stijn Dikstra (Pexels.com)"
   },
 
