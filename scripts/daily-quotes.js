@@ -3488,7 +3488,7 @@ const bibleQuotes = [
 // '54
 {
   quote: {
-    sv: [`“Och han sade vidare till dem: "Gå bort och ät er bästa mat och drick ert sötaste vin, och sänd omkring gåvor av det till dem som inte hjar något tillagat åt sig,
+    sv: [`“Och han sade vidare till dem: "Gå bort och ät er bästa mat och drick ert sötaste vin, och sänd omkring gåvor av det till dem som inte har något tillagat åt sig,
       ty denna dag är helgad åt vår Herre. Och var inte bedrövade, ty fröjd i Herren är er starkhet."”`],
     en: [`“Nehemiah said, ‘Go and enjoy choice food and sweet drinks, and send some to those who have nothing prepared.
       This day is holy to our Lord. Do not grieve, for the joy of the Lord is your strength.’”`]
