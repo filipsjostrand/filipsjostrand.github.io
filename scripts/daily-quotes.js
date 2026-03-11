@@ -2582,6 +2582,7 @@ const dailyQuotes = [
 
 
 // Object to map days of the week to image paths (Bible quotes)
+// Object to map days of the week to image paths (Bible quotes)
 const bibleQuotes = [
   // '0
   {
@@ -3791,7 +3792,7 @@ const bibleQuotes = [
   {
     quote: {
       sv: [`“Vi vet att Gud på allt sätt hjälper dem som älskar honom att nå det goda, dem som han har kallat efter sin plan.”`],
-      en: [`“And we know that in all things God works for the good of those who love him, who[a] have been called according to his purpose.”`]
+      en: [`“And we know that in all things God works for the good of those who love him, who have been called according to his purpose.”`]
     },
     author: {
       sv: [`— Romarbrevet 8:28`],
@@ -3805,7 +3806,7 @@ const bibleQuotes = [
   {
     quote: {
       sv: [`“Och med sitt eget blod, inte med blod från bockar och kalvar, har han en gång för alla trätt in i helgedomen och vunnit befrielse åt oss för evigt.”`],
-      en: [`“He did not enter by means of the blood of goats and calves; but he entered the Most Holy Place once for all by his own blood, thus obtaining[a] eternal redemption.”`]
+      en: [`“He did not enter by means of the blood of goats and calves; but he entered the Most Holy Place once for all by his own blood, thus obtaining eternal redemption.”`]
     },
     author: {
       sv: [`— Hebreerbrevet 9:12`],
@@ -4319,7 +4320,7 @@ const bibleQuotes = [
 {
   quote: {
     sv: [`“Och klart är att ingen blir rättfärdig i Guds ögon genom lagen, ty den rättfärdige skall leva genom tron, och lagen bygger inte på tron: det heter ju att den som fullgör buden skall leva genom dem. Kristus har friköpt oss från lagens förbannelse genom att för vår skull ta förbannelsen på sig, som det står skrivet: Förbannad är var och en som hängs upp på en träpåle. Så skulle hedningarna genom Kristus Jesus få den välsignelse som gavs åt Abraham och vi sedan få den utlovade Anden på grund av tron.”`],
-    en: [`“Clearly no one who relies on the law is justified before God, because “the righteous will live by faith.”[a] 12 The law is not based on faith; on the contrary, it says, “The person who does these things will live by them.”[b] 13 Christ redeemed us from the curse of the law by becoming a curse for us, for it is written: “Cursed is everyone who is hung on a pole.”[c] 14 He redeemed us in order that the blessing given to Abraham might come to the Gentiles through Christ Jesus, so that by faith we might receive the promise of the Spirit.”`]
+    en: [`“Clearly no one who relies on the law is justified before God, because “the righteous will live by faith.” The law is not based on faith; on the contrary, it says, “The person who does these things will live by them.” Christ redeemed us from the curse of the law by becoming a curse for us, for it is written: “Cursed is everyone who is hung on a pole.” He redeemed us in order that the blessing given to Abraham might come to the Gentiles through Christ Jesus, so that by faith we might receive the promise of the Spirit.”`]
   },
   author: {
     sv: [`— Galaterbrevet 3:11-14`],
@@ -4769,7 +4770,7 @@ const bibleQuotes = [
 {
   quote: {
     sv: [`“Men i vår herre Jesu Kristi namn uppmanar jag er, bröder, att vara överens och inte dela upp er i olika läger, utan återigen stå eniga i tankar och åsikter.”`],
-    en: [`“I appeal to you, brothers and sisters,[a] in the name of our Lord Jesus Christ, that all of you agree with one another in what you say and that there be no divisions among you, but that you be perfectly united in mind and thought.”`]
+    en: [`“I appeal to you, brothers and sisters, in the name of our Lord Jesus Christ, that all of you agree with one another in what you say and that there be no divisions among you, but that you be perfectly united in mind and thought.”`]
   },
   author: {
     sv: [`— 1 Korinthierbrevet 1:10`],
@@ -6614,7 +6615,7 @@ author: {
 
         “Which ones?” he inquired.
 
-        Jesus replied, “‘You shall not murder, you shall not commit adultery, you shall not steal, you shall not give false testimony, honor your father and mother,’ and ‘love your neighbor as yourself.’[b]”
+        Jesus replied, “‘You shall not murder, you shall not commit adultery, you shall not steal, you shall not give false testimony, honor your father and mother,’ and ‘love your neighbor as yourself.’”
 
         “All these I have kept,” the young man said. “What do I still lack?”
 
@@ -7075,7 +7076,7 @@ author: {
 
   The Lord is my rock, my fortress and my deliverer;
     my God is my rock, in whom I take refuge,
-    my shield[b] and the horn[c] of my salvation, my stronghold.”`]
+    my shield and the horn of my salvation, my stronghold.”`]
   },
   author: {
     sv: [`— Psaltaren 18:2-3`],
@@ -7941,7 +7942,7 @@ author: {
     en: [`“hen they cried out to the Lord in their trouble,
         and he brought them out of their distress.
       He stilled the storm to a whisper;
-        the waves of the sea[a] were hushed.
+        the waves of the sea were hushed.
       They were glad when it grew calm,
         and he guided them to their desired haven.
       Let them give thanks to the Lord for his unfailing love
@@ -8269,7 +8270,7 @@ author: {
       Your eyes saw my unformed body;
         all the days ordained for me were written in your book
         before one of them came to be.
-      How precious to me are your thoughts,[a] God!
+      How precious to me are your thoughts, God!
         How vast is the sum of them!.”`]
   },
   author: {
@@ -8477,7 +8478,7 @@ author: {
 {
   quote: {
     sv: [`“Ty jag är viss om att varken död eller liv, varken änglar eller andemakter, varken något som finns eller något som kommer, varken krafter i höjden eller krafter i djupet eller något annat i skapelsen skall kunna skilja oss från Guds kärlek i Kristus Jesus, vår Herre.”`],
-    en: [`“For I am convinced that neither death nor life, neither angels nor demons,[a] neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord.”`]
+    en: [`“For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord.”`]
   },
   author: {
     sv: [`— Romarbrevet 8:38-39`],
