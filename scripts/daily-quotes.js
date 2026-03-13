@@ -3819,7 +3819,7 @@ const bibleQuotes = [
     // '71
   {
     quote: {
-      sv: [`“Därför är det ett nytt förbund som Kristus förmedlar, för att de kallade ska få det utlovade eviga arvet, sedan han dött för att befria dem från överträdelserna under det förra förbundet.”`],
+      sv: [`“Därför är det ett nytt förbund som Kristus förmedlar, för att de kallade skall få det utlovade eviga arvet, sedan han dött för att befria dem från överträdelserna under det förra förbundet.”`],
       en: [`“For this reason Christ is the mediator of a new covenant, that those who are called may receive the promised eternal inheritance—now that he has died as a ransom to set them free from the sins committed under the first covenant.”`]
     },
     author: {
