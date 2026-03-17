@@ -5364,7 +5364,7 @@ author: {
 // '166
 {
   quote: {
-    sv: [`“Då gick jag ned till krukmakarens hus och fann honom upptagen med arbete på drejskivan. Och när kärlek som krukmakaren höll på att göra av leret misslyckades i hans hand, började han om igen, och gjorde av det ett annat kärl så, som han ville ha det gjort.
+    sv: [`“Då gick jag ned till krukmakarens hus och fann honom upptagen med arbete på drejskivan. Och när kärlet som krukmakaren höll på att göra av leret misslyckades i hans hand, började han om igen, och gjorde av det ett annat kärl så, som han ville ha det gjort.
 
       Och Herrens ord kom till mig; han sade: Skulle jag inte kunna göra med er, ni av Israels hus, så som denne krukmakare gör? Säger Herren. Jo, som leret är i krukmakarens hand, så är också ni i min hand, ni av Israels hus.”`],
     en: [`“So I went down to the potter’s house, and I saw him working at the wheel. But the pot he was shaping from the clay was marred in his hands; so the potter formed it into another pot, shaping it as seemed best to him.
