@@ -2883,7 +2883,7 @@ const bibleQuotes = [
   // '18
   {
     quote: {
-      sv: [`“Till leviterna skall du så tala och säga: När ni av Israelse barn tar emot den tionde som jag har bestämt att ni skall få av dem som er arvedel, så skall ni av den ge en offergåva åt Herren, en tionde av tionden.
+      sv: [`“Till leviterna skall du så tala och säga: När ni av Israels barn tar emot den tionde som jag har bestämt att ni skall få av dem som er arvedel, så skall ni av den ge en offergåva åt Herren, en tionde av tionden.
         När ni får Israels barn att ge er tionde, ska ni ge en tionde av den till Herren som ett offer.”`],
       en: [`“Speak to the Levites and say to them: ‘When you receive from the Israelites the tithe I give you as your inheritance, you must present a tenth of that tithe as the Lord’s offering.”`]
     },
@@ -3447,7 +3447,7 @@ const bibleQuotes = [
     // '51
   {
     quote: {
-      sv: [`“Ty Gud har inte gett oss modlöshetens ande, utan kraftens, kärlekens och självbesinningens. Skäms alltså inte för för vittnesbördet om vår Herre och inte heller för mig som är fånge för hans hans skull, utan lid för evangeliet du också med kraften från Gud. Han har räddat oss och kallat oss med en helig kallelse, inte på grund av våra gärningar utan genom sitt beslut och sin nåd, som han skänkte oss i Kristus Jesus redan före tidens början men som har blivit uppenbar nu när vår frälsare Kristus Jesus trätt fram. Han har utplånat döden och dragit liv och oförgänglighet fram i ljuset genom evangeliet,”`],
+      sv: [`“Ty Gud har inte gett oss modlöshetens ande, utan kraftens, kärlekens och självbesinningens. Skäms alltså inte för vittnesbördet om vår Herre och inte heller för mig som är fånge för hans skull, utan lid för evangeliet du också med kraften från Gud. Han har räddat oss och kallat oss med en helig kallelse, inte på grund av våra gärningar utan genom sitt beslut och sin nåd, som han skänkte oss i Kristus Jesus redan före tidens början men som har blivit uppenbar nu när vår frälsare Kristus Jesus trätt fram. Han har utplånat döden och dragit liv och oförgänglighet fram i ljuset genom evangeliet,”`],
       en: [`“For the Spirit God gave us does not make us timid, but gives us power, love and self-discipline. 8 So do not be ashamed of the testimony about our Lord or of me his prisoner. Rather, join with me in suffering for the gospel, by the power of God. 9 He has saved us and called us to a holy life – not because of anything we have done but because of his own purpose and grace. This grace was given us in Christ Jesus before the beginning of time, 10 but it has now been revealed through the appearing of our Saviour, Christ Jesus, who has destroyed death and has brought life and immortality to light through the gospel.”`]
     },
     author: {
@@ -4573,7 +4573,7 @@ const bibleQuotes = [
 // '115
 {
   quote: {
-    sv: [`Gör er av med all elakhet, vrede och häftighet, med skymford och förolämpningaroch och all annan ondska. Var goda mot varandra, visa medkänsla och förlåt varandra, liksom Gud har förlåtit er i Kristus.”`],
+    sv: [`Gör er av med all elakhet, vrede och häftighet, med skymford och förolämpningar och all annan ondska. Var goda mot varandra, visa medkänsla och förlåt varandra, liksom Gud har förlåtit er i Kristus.”`],
     en: [`“Get rid of all bitterness, rage and anger, brawling and slander, along with every form of malice. Be kind and compassionate to one another, forgiving each other, just as in Christ God forgave you.”`]
   },
   author: {
@@ -4709,7 +4709,7 @@ const bibleQuotes = [
 // '124
 {
   quote: {
-    sv: [`“Mina kära, om hjärtat inte dömer oss kan vi inför honom övertyga det om att Gud är större än vårt hjärta och förstår allt. Mina kära, om hjärtat inte dömer oss, kan vi stå frimodig inför Gud. Och vad vi än ber om får vi av honom, eftersom vi håller hans bud och gör det som behagar honom. Och detta är hans bud: att vi skall tro på hans son Jesu Kristi namn och älska varandra så som han har befallt oss. Den som håller Guds bud förblir i honom. Och att han förblir i oss vet vi av anden som han har gett oss.”`],
+    sv: [`“Mina kära, om hjärtat inte dömer oss kan vi inför honom övertyga det om att Gud är större än vårt hjärta och förstår allt. Mina kära, om hjärtat inte dömer oss, kan vi stå frimodiga inför Gud. Och vad vi än ber om får vi av honom, eftersom vi håller hans bud och gör det som behagar honom. Och detta är hans bud: att vi skall tro på hans son Jesu Kristi namn och älska varandra så som han har befallt oss. Den som håller Guds bud förblir i honom. Och att han förblir i oss vet vi av anden som han har gett oss.”`],
     en: [`“Dear friends, if our hearts do not condemn us, we have confidence before God and receive from him anything we ask, because we keep his commands and do what pleases him. And this is his command: to believe in the name of his Son, Jesus Christ, and to love one another as he commanded us. The one who keeps God’s commands lives in him, and he in them. And this is how we know that he lives in us: We know it by the Spirit he gave us.”`]
   },
   author: {
@@ -4835,7 +4835,7 @@ const bibleQuotes = [
   quote: {
     sv: [`“Allt detta sker för er skull, för att nåden skall nå allt fler och hos allt fler väcka en överflödande tacksamhet, till Guds ära.
 
-        Därför ger jag inte upp. Ävenom min yttre människa bryts ner, förnyas min inre människa dag för dag. Mona kortvariga lidanden väger ju oändligt lätt mot den överväldigande, eviga härlighet de bereder åt mig, som inte riktar blicken mot det osynliga. Det synliga är förgängligt, men det osynliga är evigt.”`],
+        Därför ger jag inte upp. Även om min yttre människa bryts ner, förnyas min inre människa dag för dag. Mina kortvariga lidanden väger ju oändligt lätt mot den överväldigande, eviga härlighet de bereder åt mig, som inte riktar blicken mot det osynliga. Det synliga är förgängligt, men det osynliga är evigt.”`],
     en: [`“All this is for your benefit, so that the grace that is reaching more and more people may cause thanksgiving to overflow to the glory of God.
 
         Therefore we do not lose heart. Though outwardly we are wasting away, yet inwardly we are being renewed day by day. 17 For our light and momentary troubles are achieving for us an eternal glory that far outweighs them all. So we fix our eyes not on what is seen, but on what is unseen, since what is seen is temporary, but what is unseen is eternal.”`]
@@ -4985,7 +4985,7 @@ author: {
   quote: {
     sv: [`“Du bereder för mig ett bord
         i mina ovänners åsyn,
-      du smörjer mitt huvudet med olja
+      du smörjer mitt huvud med olja
         och låter min bägare flöda över.
       Godhet endast och nåd skall följa mig
         i alla mina livsdagar,
@@ -5133,7 +5133,7 @@ author: {
 // '150
 {
   quote: {
-    sv: [`“Så att Kristus genom tron kan bo i era hjärtan med kärlek. Stå fasta och var stadigt rotade i honom, så att ni tillsammans med alla de heliga förmår fatta bredden och längden och höjden och djupet och lära känna Kristi kärlek som är väldigare än all kunskap, tillss hela Guds fullhet uppfyller er.”`],
+    sv: [`“Så att Kristus genom tron kan bo i era hjärtan med kärlek. Stå fasta och var stadigt rotade i honom, så att ni tillsammans med alla de heliga förmår fatta bredden och längden och höjden och djupet och lära känna Kristi kärlek som är väldigare än all kunskap, tills hela Guds fullhet uppfyller er.”`],
     en: [`“so that Christ may dwell in your hearts through faith. And I pray that you, being rooted and established in love, may have power, together with all the Lord’s holy people, to grasp how wide and long and high and deep is the love of Christ, and to know this love that surpasses knowledge—that you may be filled to the measure of all the fullness of God.”`]
   },
   author: {
@@ -5194,7 +5194,7 @@ author: {
 // '154
 {
   quote: {
-    sv: [`“Men allt sådant som var en vinst för mig har jag för Kristi skull kommit att räkna som en ren förlust. Ja, Jag räknar faktiskt allt som förlust jämfört med det som är långt mera värt, kunskapaen om min herre Kristus Jesus. För hans skull har allt det andra förlorat sitt värde för mig. Jag kastar det på sophögen för att vinna Kristus”`],
+    sv: [`“Men allt sådant som var en vinst för mig har jag för Kristi skull kommit att räkna som en ren förlust. Ja, Jag räknar faktiskt allt som förlust jämfört med det som är långt mera värt, kunskapen om min herre Kristus Jesus. För hans skull har allt det andra förlorat sitt värde för mig. Jag kastar det på sophögen för att vinna Kristus”`],
     en: [`“But whatever were gains to me I now consider loss for the sake of Christ. What is more, I consider everything a loss because of the surpassing worth of knowing Christ Jesus my Lord, for whose sake I have lost all things. I consider them garbage, that I may gain Christ”`]
   },
   author: {
@@ -5222,7 +5222,7 @@ author: {
 // '156
 {
   quote: {
-    sv: [`“Alla ni nämligen genom tron Guds söner, i Kristus Jesus. Är ni döptadöpta in i Kristus, har ni också iklätt er Kristus. Nu är ingen längre jude eller grek, slav eller fri, man eller kvinna. Alla är ni ett i Kristus Jesus. Men om ni tillhör Kristus, är ni också avkomlingar till Abraham och arvtagare enligt löftet.”`],
+    sv: [`“Alla ni nämligen genom tron Guds söner, i Kristus Jesus. Är ni döpta in i Kristus, har ni också iklätt er Kristus. Nu är ingen längre jude eller grek, slav eller fri, man eller kvinna. Alla är ni ett i Kristus Jesus. Men om ni tillhör Kristus, är ni också avkomlingar till Abraham och arvtagare enligt löftet.”`],
     en: [`“So in Christ Jesus you are all children of God through faith, for all of you who were baptized into Christ have clothed yourselves with Christ. There is neither Jew nor Gentile, neither slave nor free, nor is there male and female, for you are all one in Christ Jesus. If you belong to Christ, then you are Abraham’s seed, and heirs according to the promise.”`]
   },
   author: {
@@ -5264,7 +5264,7 @@ author: {
 // '159
 {
   quote: {
-    sv: [`“Kroppsövningar är nyttiga på sitt sätt, men gudsfruktan är nyttig på alla sätt, med sitt löfte om liv både för denna tiden och den kommande. Detta är ett ord att lite på och värt att ta till sig.”`],
+    sv: [`“Kroppsövningar är nyttiga på sitt sätt, men gudsfruktan är nyttig på alla sätt, med sitt löfte om liv både för denna tiden och den kommande. Detta är ett ord att lita på och värt att ta till sig.”`],
     en: [`“For physical training is of some value, but godliness has value for all things, holding promise for both the present life and the life to come. This is a trustworthy saying that deserves full acceptance.”`]
   },
   author: {
@@ -5292,7 +5292,7 @@ author: {
 // '161
 {
   quote: {
-    sv: [`“När vi nu är omgivna av en sådan sky av vittnen, låt oss då , även vi, befria oss från allt som tynger, all synd som ansätter oss, och hålla ut i det lopp vi har framför oss. Låt oss ha blicken fäst vid Jesus, trons upphovsman och fullkomnare. För att vinna den glädje som väntade honom uthärdade han korset utan att bry sig om skammen och sitter nu till höger om Guds tron.”`],
+    sv: [`“När vi nu är omgivna av en sådan sky av vittnen, låt oss då, även vi, befria oss från allt som tynger, all synd som ansätter oss, och hålla ut i det lopp vi har framför oss. Låt oss ha blicken fäst vid Jesus, trons upphovsman och fullkomnare. För att vinna den glädje som väntade honom uthärdade han korset utan att bry sig om skammen och sitter nu till höger om Guds tron.”`],
     en: [`“Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off everything that hinders and the sin that so easily entangles. And let us run with perseverance the race marked out for us, fixing our eyes on Jesus, the pioneer and perfecter of faith. For the joy set before him he endured the cross, scorning its shame, and sat down at the right hand of the throne of God.”`]
   },
   author: {
@@ -5820,7 +5820,7 @@ author: {
     Allt vad du besluter skall då lyckas för dig,
       och ljus skall skina på dina vägar.
     Om de leda mot djupet och du då beder: ”Uppåt!”,
-      så frälsar han mannen som har ödmjukat sig.”`],
+      så frälser han mannen som har ödmjukat sig.”`],
     en: [`“You will pray to him, and he will hear you,
       and you will fulfill your vows.
     What you decide on will be done,
@@ -5855,7 +5855,7 @@ author: {
   quote: {
     sv: [`“Jesus sade till henne: ’Har jag inte sagt dig att om du tror, skall du få se Guds härlighet?'
 
-        De tog bort stenen, och Jesus lyfte blicken mot himlen och sade 'Fader jag tackar dig för att du ha hört mig.' Själv visste jag att du alltid hör mig, men jag säger detta med tanke på alla dem som står här, för att de skall tro på att du har sänt mig.
+        De tog bort stenen, och Jesus lyfte blicken mot himlen och sade 'Fader jag tackar dig för att du har hört mig.' Själv visste jag att du alltid hör mig, men jag säger detta med tanke på alla dem som står här, för att de skall tro på att du har sänt mig.
 
         Sedan ropade han med hög röst: 'Lasaros, kom ut.'”`],
     en: [`“Then Jesus said, “Did I not tell you that if you believe, you will see the glory of God?”
@@ -5989,7 +5989,7 @@ author: {
 // '196
 {
   quote: {
-    sv: [`“En enda man bland er jagade tusen framför sig, ty Herren, er Gud, stred själv för er, såsom han hade lovat er. Så ha nu noga akt på er själva, så att ni älsken Herren, er Gud.”`],
+    sv: [`“En enda man bland er jagade tusen framför sig, ty Herren, er Gud, stred själv för er, såsom han hade lovat er. Så ha nu noga akt på er själva, så att ni älskar Herren, er Gud.”`],
     en: [`“One of you routs a thousand, because the Lord your God fights for you, just as he promised. 11 So be very careful to love the Lord your God.”`]
   },
   author: {
@@ -6512,7 +6512,7 @@ author: {
 // '230
 {
   quote: {
-    sv: [`“Sedan sade Jesus till lärljungarna. Om någon vill gå i mina spår, måste han förneka sig själv och ta sitt kors och följa mig. Ty den som vill rädda sitt liv skall mista det, men den som mister sitt liv för min skull, han skall finna det.”`],
+    sv: [`“Sedan sade Jesus till sina lärjungar. Om någon vill gå i mina spår, måste han förneka sig själv och ta sitt kors och följa mig. Ty den som vill rädda sitt liv skall mista det, men den som mister sitt liv för min skull, han skall finna det.”`],
     en: [`“Then Jesus said to his disciples, “Whoever wants to be my disciple must deny themselves and take up their cross and follow me. For whoever wants to save their life will lose it, but whoever loses their life for me will find it.”`]
   },
   author: {
@@ -6823,7 +6823,7 @@ author: {
 // '249
 {
   quote: {
-    sv: [`“Gläds inte över mig, ni mina fiendeer. Om jag än har fallit, skall jag dock stå upp igen, om jag än sitter i mörkret, är dock Herren mitt ljus.”`],
+    sv: [`“Gläds inte över mig, ni mina fiender. Om jag än har fallit, skall jag dock stå upp igen, om jag än sitter i mörkret, är dock Herren mitt ljus.”`],
     en: [`“Do not gloat over me, my enemy! Though I have fallen, I will rise. Though I sit in darkness, the Lord will be my light.”`]
   },
   author: {
@@ -6860,7 +6860,7 @@ author: {
 {
   quote: {
     sv: [`“Min son, låt detta inte vika ifrån dina ögon,
-      ta klokhet och och eftertänksamhet i akt,
+      ta klokhet och eftertänksamhet i akt,
       så skall de bli din själ till liv och
       bli ett smycke för din hals.
       Då skall du vandra din väg fram i trygghet, och
@@ -7299,7 +7299,7 @@ author: {
   quote: {
     sv: [`“Du är mitt beskydd,
       för nöd bevarar du mig,
-      med räddningens ljubel omger du mig, Sela.
+      med räddningens jubel omger du mig, Sela.
 
     Jag vill lära dig och undervisa dig och lära dig om den väg du skall vandra,
       jag vill ge dig råd och låta mitt öga vaka över dig.”`],
@@ -7560,7 +7560,7 @@ author: {
 // '289
 {
   quote: {
-    sv: [`“Men när fruktan kommer över mig, sätter jag min förtröstarn till dig. Med Guds hjälp ska jag få prisa hans ord, på Gud, vars ord jag prisar, på Gud förtröstar jag och skall inte frukta. Vad kan det som är kött göra mig?”`],
+    sv: [`“Men när fruktan kommer över mig, sätter jag min förtröstan till dig. Med Guds hjälp ska jag få prisa hans ord, på Gud, vars ord jag prisar, på Gud förtröstar jag och skall inte frukta. Vad kan det som är kött göra mig?”`],
     en: [`“When I am afraid, I put my trust in you. In God, whose word I praise— in God I trust and am not afraid. What can mere mortals do to me?”`]
   },
   author: {
@@ -7960,7 +7960,7 @@ author: {
 // '305
 {
   quote: {
-    sv: [`“Lägg därför bort allt slags ondska, falskhet och förställning, avudnd och förtal. Som nyfödda barn skall ni längta efter den rena, andliga mjölken, för att växa genom den och bli räddade. Ni har ju fått smaka Herrens godhet.”`],
+    sv: [`“Lägg därför bort allt slags ondska, falskhet och förställning, avund och förtal. Som nyfödda barn skall ni längta efter den rena, andliga mjölken, för att växa genom den och bli räddade. Ni har ju fått smaka Herrens godhet.”`],
     en: [`“Therefore, rid yourselves of all malice and all deceit, hypocrisy, envy, and slander of every kind. Like newborn babies, crave pure spiritual milk, so that by it you may grow up in your salvation, now that you have tasted that the Lord is good.”`]
   },
   author: {
@@ -8190,7 +8190,7 @@ author: {
   quote: {
     sv: [`“Om än min väg går genom nöd,
         så behåller du mig vid liv,
-      du räcker ut din hand tillskydd mot mina fienders vrede,
+      du räcker ut din hand till skydd mot mina fienders vrede,
         och din högra hand frälser mig.”`],
     en: [`“Though I walk in the midst of trouble,
         you preserve my life.
@@ -8651,7 +8651,7 @@ author: {
 // '338
 {
   quote: {
-    sv: [`“Låt alla människor se hur födragsamma ni är. Herren är nära.”`],
+    sv: [`“Låt alla människor se hur fördragsamma ni är. Herren är nära.”`],
     en: [`“Let your gentleness be evident to all. The Lord is near.”`]
   },
   author: {
@@ -8750,7 +8750,7 @@ author: {
 // '343
 {
   quote: {
-    sv: [`“Då sade han till mig: "Profetera över dessa ben och säg till dem: Ni förtorkade ben, hör Herrens ord: Så säger Herren, Herren till dessa ben: Se , jag skall låta ande komma in i er, så att ni åter blir levande”`],
+    sv: [`“Då sade han till mig: "Profetera över dessa ben och säg till dem: Ni förtorkade ben, hör Herrens ord: Så säger Herren, Herren till dessa ben: Se, jag skall låta ande komma in i er, så att ni åter blir levande”`],
     en: [`“Then he said to me, “Prophesy to these bones and say to them, ‘Dry bones, hear the word of the Lord! This is what the Sovereign Lord says to these bones: I will make breath enter you, and you will come to life.”`]
   },
   author: {
@@ -8881,7 +8881,7 @@ author: {
   },
   author: {
     sv: [`— Markusevangeliet 9:22-24`],
-    en: [`— Mark 9:22-24`  ]
+    en: [`— Mark 9:22-24`]
   },
   image: "dec_pexels-sandzoutdoor-15406472.jpg",
   credit: "Sandz Outdoor (Pexels.com)"
