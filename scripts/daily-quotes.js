@@ -7748,7 +7748,7 @@ author: {
 // '296
 {
   quote: {
-    sv: [`“Ty du har sagt: "Du, HERRE, är mitt skygd",
+    sv: [`“Ty du har sagt: "Du, HERRE, är mitt skydd",
       och du har gjort den Högste till din tillflykt.
     Ingen olycka skall drabba dig, och
       ingen plåga skall närma sig din hydda.
