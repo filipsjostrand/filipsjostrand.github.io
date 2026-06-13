@@ -2777,7 +2777,7 @@ const bibleQuotes = [
   // '11
   {
     quote: {
-      sv: [`“Men Gud bevisar sin kärlek till oss genom att Kristus dog i vårt ställe, medan vi ännu var syndare.”`],
+      sv: [`“Men Gud bevisar sin kärlek till oss genom att Kristus dog för oss, medan vi ännu var syndare.”`],
       en: [`“But God demonstrates his own love for us in this: While we were still sinners, Christ died for us.”`]
     },
     author: {
@@ -3642,7 +3642,7 @@ const bibleQuotes = [
 // '61
 {
   quote: {
-    sv: [`“Sök gott är, och inte vad ont är,
+    sv: [`“Sök vad gott är, och inte vad ont är,
       för att ni må leva.
     Då ska Herren, herrskarkornas Gud, vara med er,
       så som ni menar honom vara.”`],
@@ -5796,7 +5796,7 @@ author: {
     och deras avkomlingar få leva kvar bland dem.
   Och det skall ske, att innan de ropar,
     skall jag svara,
-    och medan de ännu tala, skall jag höra.”`],
+    och medan de ännu talar, skall jag höra.”`],
     en: [`“They will not labor in vain,
     nor will they bear children doomed to misfortune;
   for they will be a people blessed by the Lord,
