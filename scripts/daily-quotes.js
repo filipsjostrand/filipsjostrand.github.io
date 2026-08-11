@@ -6103,7 +6103,7 @@ author: {
 // '203
 {
   quote: {
-    sv: [`“Den som är trogen i smått är också trogen också i stort, och den som är ohederlig i smått är ohederlig också i stort.”`],
+    sv: [`“Den som är trogen i smått är trogen också i stort, och den som är ohederlig i smått är ohederlig också i stort.”`],
     en: [`“Whoever can be trusted with very little can also be trusted with much, and whoever is dishonest with very little will also be dishonest with much.”`]
   },
   author: {
