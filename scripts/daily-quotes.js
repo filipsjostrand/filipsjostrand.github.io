@@ -6596,7 +6596,7 @@ author: {
 // '236
 {
   quote: {
-    sv: [`“Då kom en man kom fram till honom och frågade: ’Mästare, vad skall jag göra för gott för att få evigt liv?’
+    sv: [`“Då kom en man fram till honom och frågade: ’Mästare, vad skall jag göra för gott för att få evigt liv?’
 
         Jesus sade: Varför frågar du mig om vad som är gott? Det finns bara en som är god. Men vill du gå in i livet, så håll budorden.’
 
@@ -8284,7 +8284,7 @@ author: {
 // '318
 {
   quote: {
-    sv: [`“Jag kan leva fattigt och jag kan leva i överflöd. Jag har verkligen erfarenhet av allt: Att vara mätt och att hungra, att leva i överflöd och att lida brist. Allt förmår jag genom honom som ger mig kraft”`],
+    sv: [`“Jag kan leva fattigt och jag kan leva i överflöd. Jag har verkligen erfarenhet av allt: Att vara mätt och att hungra, att leva i överflöd och att lida brist. Allt förmår jag genom honom som ger mig kraft.”`],
     en: [`“I know what it is to be in need, and I know what it is to have plenty. I have learned the secret of being content in any and every situation, whether well fed or hungry, whether living in plenty or in want. 13 I can do all this through him who gives me strength.”`]
   },
   author: {
