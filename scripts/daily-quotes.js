@@ -6724,7 +6724,7 @@ author: {
 // '242
 {
   quote: {
-    sv: [`“Och vad de dödas uppståndelse beträffar, så har ni väl läst vad Gud har sagt till er: ’Jag är Abrahams Gud och Isaks Gud och Jakobs Gud’. Gud är inte en gud för de dödada utan för levande.”`],
+    sv: [`“Och vad de dödas uppståndelse beträffar, så har ni väl läst vad Gud har sagt till er: ’Jag är Abrahams Gud och Isaks Gud och Jakobs Gud’. Gud är inte en gud för de döda utan för levande.”`],
     en: [`“But about the resurrection of the dead—have you not read what God said to you, ‘I am the God of Abraham, the God of Isaac, and the God of Jacob’? He is not the God of the dead but of the living.”`]
   },
   author: {
@@ -7937,7 +7937,7 @@ author: {
       Och de blev glada att det blev stilla,
         och han förde dem till den hamn dit de ville.
 
-      Det må räcka Herren för hans nåd
+      Det må tacka Herren för hans nåd
       och för hans under med människors barn.”`],
     en: [`“hen they cried out to the Lord in their trouble,
         and he brought them out of their distress.
