@@ -7027,7 +7027,7 @@ author: {
 // '262
 {
   quote: {
-    sv: [`“Ja, en lott har tillfallit mig i det ljuvliga, ja ett arv som behagar mig väl. Jag vill lova Herren, ty han ger mig råd. Ännu om nätterna manar mig mitt innersta. Jag har haft Herren för mina ögonen alltid, ja, han är på min högra sida, jag skall inte vackla.”`],
+    sv: [`“Ja, en lott har tillfallit mig i det ljuvliga, ja ett arv som behagar mig väl. Jag vill lova Herren, ty han ger mig råd. Ännu om nätterna manar mig mitt innersta. Jag har haft Herren för mina ögon alltid, ja, han är på min högra sida, jag skall inte vackla.”`],
     en: [`“The boundary lines have fallen for me in pleasant places; surely I have a delightful inheritance. I will praise the Lord, who counsels me; even at night my heart instructs me. I keep my eyes always on the Lord. With him at my right hand, I will not be shaken.”`]
   },
   author: {
