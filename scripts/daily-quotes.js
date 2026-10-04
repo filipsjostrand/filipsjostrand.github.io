@@ -6676,7 +6676,7 @@ author: {
 // '240
 {
   quote: {
-    sv: [`“Allt vad ni ber om i era böner skall ni få, om nu tror.”`],
+    sv: [`“Allt vad ni ber om i era böner skall ni få, om ni tror.”`],
     en: [`“If you believe, you will receive whatever you ask for in prayer.”`]
   },
   author: {
