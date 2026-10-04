@@ -7301,7 +7301,7 @@ author: {
       för nöd bevarar du mig,
       med räddningens jubel omger du mig, Sela.
 
-    Jag vill lära dig och undervisa dig och lära dig om den väg du skall vandra,
+    Jag vill lära dig och undervisa dig om den väg du skall vandra,
       jag vill ge dig råd och låta mitt öga vaka över dig.”`],
     en: [`“You are my hiding place;
     you will protect me from trouble
