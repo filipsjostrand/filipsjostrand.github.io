@@ -5222,7 +5222,7 @@ author: {
 // '156
 {
   quote: {
-    sv: [`“Alla ni nämligen genom tron Guds söner, i Kristus Jesus. Är ni döpta in i Kristus, har ni också iklätt er Kristus. Nu är ingen längre jude eller grek, slav eller fri, man eller kvinna. Alla är ni ett i Kristus Jesus. Men om ni tillhör Kristus, är ni också avkomlingar till Abraham och arvtagare enligt löftet.”`],
+    sv: [`“Alla är ni nämligen genom tron Guds söner, i Kristus Jesus. Är ni döpta in i Kristus, har ni också iklätt er Kristus. Nu är ingen längre jude eller grek, slav eller fri, man eller kvinna. Alla är ni ett i Kristus Jesus. Men om ni tillhör Kristus, är ni också avkomlingar till Abraham och arvtagare enligt löftet.”`],
     en: [`“So in Christ Jesus you are all children of God through faith, for all of you who were baptized into Christ have clothed yourselves with Christ. There is neither Jew nor Gentile, neither slave nor free, nor is there male and female, for you are all one in Christ Jesus. If you belong to Christ, then you are Abraham’s seed, and heirs according to the promise.”`]
   },
   author: {
