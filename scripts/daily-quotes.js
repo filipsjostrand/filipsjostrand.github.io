@@ -7893,7 +7893,7 @@ author: {
       och alla möjliga begär tränger in och kväver ordet, så att det inte bär frukt.
 
       Men de som tagit emot sådden i den goda jorden,
-      det är sådana som här ordet och tar det till sig
+      det är sådana som hör ordet och tar det till sig
       och bär frukt trettiofalt, sextiofalt och hundrafalt.”`],
     en: [`“ Still others, like seed sown among thorns, hear the word;
       but the worries of this life, the deceitfulness of wealth and the desires
@@ -7937,7 +7937,7 @@ author: {
       Och de blev glada att det blev stilla,
         och han förde dem till den hamn dit de ville.
 
-      Det må tacka Herren för hans nåd
+      De må tacka Herren för hans nåd
       och för hans under med människors barn.”`],
     en: [`“hen they cried out to the Lord in their trouble,
         and he brought them out of their distress.
